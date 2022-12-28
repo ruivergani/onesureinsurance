@@ -1,0 +1,33 @@
+.btn{
+    display: inline-flex;
+    padding: 0px 2.8rem;
+    line-height: 4.8rem;
+    border-radius: 0.4rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 1px solid transparent;
+    align-items: center;
+    gap: 1rem;
+    transition: color .3s, background-color .3s;
+    font-weight: 700;
+    &-primary{
+        background-color: $brand-dark-blue;
+        border-color: $brand-dark-blue;
+        &:hover{
+            background-color: $brand-dark-red;
+            border-color: $brand-dark-red;
+        }
+    }
+    &-outline{
+        background-color: transparent !important;
+        border-color: $brand-dark-blue;
+        color: $brand-dark-blue;
+        &:hover{
+            color: $brand-dark-red;
+            border-color: $brand-dark-red;
+        }
+    }
+
+
+}
