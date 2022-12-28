@@ -192,7 +192,7 @@
         }
     }
 }
-.card-blog{
+.card-post-blog{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -293,7 +293,7 @@
         }
     }
 }
-.card-product-page{
+.card-product{
     display: block;
     width: 100%;
     max-width: 28rem;
@@ -379,7 +379,7 @@
         }
     }
 }
-.card-horizontal-lg{
+.card-product-lg{
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -602,5 +602,104 @@
             border-color: $white;
         }
 
+    }
+}
+// Modal
+.modal{
+    position: fixed;
+    top: -3rem;
+    left: 0;
+    z-index: 2023; // top of the site
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; // hide with opacity otherwise we can not make the transition with modal
+    pointer-events: none; // cancel click area
+    transition: opacity .3s;
+    .overlay{
+        position: fixed; // does not apply the display flex
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .box{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 50.8rem;
+        border: 1px solid #F1F0F5;
+        background-color: $white;
+        border-radius: 0.4rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // to go down to make transition up
+        transform: translateY(50px);
+        transition: transform .3s;
+        .close{
+            position: absolute;
+            top: 24px;
+            right: 2.4rem;
+        }
+        span{
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 130%;
+            letter-spacing: 0.12em;
+            color: #868E96;
+            margin-bottom: 2rem;
+            align-self: start;
+            padding-left: 5rem;
+        }
+        h2{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 2.8rem;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: -0.04em;
+            color: #343A40;
+            max-width: 41rem;
+        }
+        form{
+            width: 100%;
+            max-width: 37rem;
+            margin-top: 4rem;
+            .form-group{
+                margin-bottom: 2.5rem;
+            }
+            .btn{
+                width: 100%;
+                max-width: 37rem;
+                justify-content: center;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+.form-group{
+    label{
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        letter-spacing: -0.01em;
+        color: #343a40;
+        display: inline-block;
+        padding-bottom: 0.5rem;
+    }
+    input{
+        width: 37rem;
+        border: 1px solid #CED4DA;
+        border-radius: 0.8rem;
+        padding: 1.3rem 2rem;
     }
 }
