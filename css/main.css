@@ -110,6 +110,7 @@ p {
   -webkit-transition: color 0.3s, background-color 0.3s;
   transition: color 0.3s, background-color 0.3s;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .btn-primary {
   background-color: #003478;
@@ -762,4 +763,39 @@ p {
 }
 .search-secondary:hover {
   border: 1px solid #3E75C3;
+}
+
+.large-cta {
+  width: 100%;
+  max-width: 121.6rem;
+  height: 17.9rem;
+  padding-left: 7rem;
+  background-image: url(../assets/bg/bg-faq.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 7rem;
+}
+.large-cta .text {
+  width: 100%;
+  max-width: 79.7rem;
+}
+.large-cta .text span {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #003478;
+}
+.large-cta .text h3 {
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 112%;
+  letter-spacing: -1px;
+  color: #33303E;
 }

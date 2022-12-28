@@ -12,6 +12,7 @@
     gap: 1rem;
     transition: color .3s, background-color .3s;
     font-weight: 700;
+    text-transform: uppercase;
     &-primary{
         background-color: $brand-dark-blue;
         border-color: $brand-dark-blue;
@@ -536,5 +537,40 @@
     transition: border-color .3s;
     &:hover{
         border: 1px solid #3E75C3;
+    }
+}
+// CTA
+.large-cta{
+    width: 100%;
+    max-width: 121.6rem;
+    height: 17.9rem;
+    padding-left: 7rem;
+    background-image: url(../assets/bg/bg-faq.jpg);
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    .text{
+        width: 100%;
+        max-width: 79.7rem;
+        span{
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 150%;
+            color: $brand-dark-blue;
+        }
+        h3{
+            margin-top: 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 3.6rem;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $grey-600;
+        }
+
+    }
+    .btn{
+        
     }
 }
