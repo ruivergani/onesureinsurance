@@ -191,6 +191,108 @@
         }
     }
 }
+.card-blog{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 38rem;
+    border-radius: 0.8rem;
+    &:hover{
+        .image{
+            img{
+                transform: scale(1.04);
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+        .info{
+            h6{
+                color: $brand-dark-blue;
+            }
+        }
+    }
+    .image{
+        position: relative;
+        width: 100%;
+        max-width: 38rem;
+        height: 24rem;
+        overflow: hidden;
+        border-top-right-radius: 0.8rem;
+        border-top-left-radius: 0.8rem;
+        img{
+            transition: all .3s ease-in;
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // cover size img
+            border-top-right-radius: 0.8rem;
+            border-top-left-radius: 0.8rem;
+        }
+    }
+    .categories{
+        position: absolute;
+        right: 0;
+        top: 20rem;
+        span{
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        background-color: $brand-dark-blue;
+        padding: 1rem 2rem 1rem 5rem;
+        border-top-left-radius: 3rem;
+    }
+    .info{
+        border: 0.1rem solid #C6C5CE;
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        padding: 2rem 3rem;
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            li{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                img{
+                    width: 100%;
+                    max-width: 1.6rem;
+                }
+                span{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 1.7rem;
+                    color: $grey-600;
+                    opacity: 0.7;
+                }
+            }
+        }
+        h6{
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: $brand-black;
+        }
+        p{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: $grey-500;
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+    }
+}
 // Category title
 .categorie{
     font-family: 'Inter', sans-serif;
@@ -207,4 +309,12 @@
     font-size: 1.4rem;
     line-height: 1.5rem;
     color: $grey-400;
+}
+.read-more{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: $brand-dark-blue;
+    opacity: 0.7;
 }
