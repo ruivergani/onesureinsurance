@@ -121,6 +121,76 @@
         }
     }
 }
+.card-type-default{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 28rem;
+    background-color: $brand-light-blue;
+    padding-bottom: 3rem;
+    border-radius: 0.8rem;
+    &:hover{
+        .image{
+            img{
+                transform: scale(1.04);
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+        .info{
+            h6{
+                color: $brand-dark-blue;
+            }
+        }
+    }
+    .icon{
+        position: absolute;
+        top: 18rem;
+        right: 2.5rem;
+    }
+    .image{
+        position: relative;
+        width: 100%;
+        max-width: 28rem;
+        height: 21rem;
+        overflow: hidden;
+        border-top-right-radius: 0.8rem;
+        border-top-left-radius: 0.8rem;
+        img{
+            transition: all .3s ease-in;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // cover size img
+            border-top-right-radius: 0.8rem;
+            border-top-left-radius: 0.8rem;
+        }
+    }
+    .info{
+        width: 100%;
+        flex: 1;
+        padding-top: 4rem;
+        padding-left: 2.5rem;
+        h6{
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            /* brand/dark-blue */
+            color: $brand-black;
+        }
+        p{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+            color: $brand-black;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
 // Category title
 .categorie{
     font-family: 'Inter', sans-serif;
@@ -130,4 +200,11 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: $brand-dark-blue;
+}
+.small-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    color: $grey-400;
 }
