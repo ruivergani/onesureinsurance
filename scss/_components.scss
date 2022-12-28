@@ -404,3 +404,48 @@
     color: $brand-dark-blue;
     opacity: 0.7;
 }
+// Search
+.search{
+    width: 100%;
+    max-width: 28rem;
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+    input{
+        border: 1px solid rgba(51, 48, 62, 0.5);
+        border-radius: 0.4rem;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        flex: 1; // max possible
+        background-color: transparent;
+        padding: 0 1.6rem;
+        height: 100%;
+        font-family: 'Inter', sans-serif;
+        font-size: 1.6rem;
+        color: $grey-600;
+        transition: border .3s ease;
+        &::placeholder{
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 150%;
+            color: rgba(51, 48, 62, 0.5);
+        }
+        &:focus{
+            border: 1px solid $brand-dark-blue;
+        }
+    }
+    button{
+        width: 3.6rem;
+        height: 3.6rem;
+        margin-left: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $brand-dark-blue;
+        border-radius: 0.4rem;
+        transition: filter .3s ease;
+        &:hover{
+            filter: brightness(0.8)
+        }
+    }
+}
