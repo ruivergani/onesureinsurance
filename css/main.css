@@ -428,6 +428,99 @@ p {
   margin-bottom: 1rem;
 }
 
+.card-product-page {
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  height: 38rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.card-product-page:hover {
+  height: 42rem;
+}
+.card-product-page:hover .info .learn-more {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.card-product-page:hover .image img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.card-product-page .image {
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  height: 22rem;
+  overflow: hidden;
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+.card-product-page .image img {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
+}
+.card-product-page .info {
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card-product-page .info h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: #003478;
+  margin-bottom: 0.8rem;
+}
+.card-product-page .info p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #4E4B59;
+  margin-bottom: 1.5rem;
+}
+.card-product-page .info .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+}
+.card-product-page .info .learn-more span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  text-decoration-line: underline;
+  color: #33303E;
+}
+
 .categorie {
   font-family: "Inter", sans-serif;
   font-weight: 700;
