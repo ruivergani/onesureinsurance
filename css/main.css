@@ -119,6 +119,15 @@ p {
   background-color: #C00037;
   border-color: #C00037;
 }
+.btn-primary-lg {
+  padding: 0px 5.8rem;
+  background-color: #003478;
+  border-color: #003478;
+}
+.btn-primary-lg:hover {
+  background-color: #C00037;
+  border-color: #C00037;
+}
 .btn-outline {
   background-color: transparent !important;
   border-color: #003478;
@@ -127,4 +136,113 @@ p {
 .btn-outline:hover {
   color: #C00037;
   border-color: #C00037;
+}
+
+.card-post-default {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 38.4rem;
+  gap: 1.6rem;
+}
+.card-post-default:hover .image img {
+  -webkit-transform: scale(1.04);
+  transform: scale(1.04);
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.card-post-default:hover .info h6 {
+  color: #003478;
+}
+.card-post-default .image {
+  position: relative;
+  width: 100%;
+  max-width: 38.4rem;
+  height: 20rem;
+  overflow: hidden;
+  border-radius: 0.8rem;
+}
+.card-post-default .image img {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+.card-post-default .info {
+  width: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.card-post-default .info h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 120%;
+  color: #33303E;
+  margin: 0.8rem 0rem;
+}
+.card-post-default .info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+.card-post-default .info ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.card-post-default .info ul li span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #4E4B59;
+}
+.card-post-default .info ul li:not(:first-child)::after {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  /* Gray Colors/300 */
+  background-color: #5F5C6B;
+  position: absolute;
+  border-radius: 50%;
+  left: -1.5rem;
+}
+
+.categorie {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 105%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #003478;
 }

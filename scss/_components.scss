@@ -1,3 +1,4 @@
+// Buttons
 .btn{
     display: inline-flex;
     padding: 0px 2.8rem;
@@ -19,6 +20,15 @@
             border-color: $brand-dark-red;
         }
     }
+    &-primary-lg{
+        padding: 0px 5.8rem;
+        background-color: $brand-dark-blue;
+        border-color: $brand-dark-blue;
+        &:hover{
+            background-color: $brand-dark-red;
+            border-color: $brand-dark-red;
+        }
+    }
     &-outline{
         background-color: transparent !important;
         border-color: $brand-dark-blue;
@@ -30,4 +40,94 @@
     }
 
 
+
+}
+// Cards
+.card-post-default{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 38.4rem;
+    gap: 1.6rem;
+    &:hover{
+        .image{
+            img{
+                transform: scale(1.04);
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+        .info{
+            h6{
+                color: $brand-dark-blue;
+            }
+        }
+    }
+    .image{
+        position: relative;
+        width: 100%;
+        max-width: 38.4rem;
+        height: 20rem;
+        overflow: hidden;
+        border-radius: 0.8rem;
+        img{
+            transition: all .3s ease-in;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; // cover size img
+            border-radius: 0.8rem;
+        }
+    }
+    .info{
+        width: 100%;
+        flex: 1;
+        h6{
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 1.8rem;
+            line-height: 120%;
+            color: $grey-600;
+            margin: 0.8rem 0rem;
+        }
+        ul{
+            @include flex(row, center, flex-start);
+            gap: 2.4rem;
+            li{
+                position: relative;
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+                span{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 150%;
+                    color: $grey-500;
+                }
+                &:not(:first-child){
+                    &::after{
+                        content: "";
+                        width: 0.6rem;
+                        height: 0.6rem;
+                        /* Gray Colors/300 */
+                        background-color: $grey-400;
+                        position: absolute;
+                        border-radius: 50%;
+                        left: -1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// Category title
+.categorie{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 105%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $brand-dark-blue;
 }
