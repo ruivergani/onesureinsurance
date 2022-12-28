@@ -574,3 +574,33 @@
         
     }
 }
+.small-cta{
+    width: 100%;
+    max-width: 80rem;
+    height: 11.8rem;
+    padding-left: 7rem;
+    background-image: url(../assets/bg/bg-cta.jpg);
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    .text{
+        width: 100%;
+        max-width: 38.3rem;
+        h3{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 120%;
+            color: $white;
+        }
+
+    }
+    .btn{
+        color: $grey-600;
+        &-primary{
+            background-color: $white;
+            border-color: $white;
+        }
+
+    }
+}
