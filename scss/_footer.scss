@@ -1,0 +1,172 @@
+footer{
+    background-color: $white;
+    padding-top: 4rem;
+    border-top: 1px solid rgba(0, 52, 120, 0.5);
+    .container{
+        .top-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(0, 52, 120, 0.3);
+            padding-bottom: 4rem;
+            .logo-footer{
+                img{
+                    width: 100%;
+                    max-width: 10rem;
+                }
+            }
+            .share{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                span{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    color: $brand-dark-blue;
+                }
+                ul{
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    li{
+                        a{
+                            img{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-footer{
+            padding: 7rem 0rem;
+            border-bottom: 1px solid rgba(0, 52, 120, 0.3);
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            nav{
+                display: flex;
+                align-items: flex-start;
+                gap: 7rem;
+                width: 100%;
+                .item{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 20px;
+                    flex-direction: column;
+                    max-width: 28rem;
+                    strong{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.5rem;
+                        line-height: 2.2rem;
+                        color: $brand-dark-blue;
+                    }
+                    ul{
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 20px;
+                        flex-direction: column;
+                        li{
+                            a{
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 400;
+                                font-size: 1.4rem;
+                                line-height: 2.1rem;
+                                color: $brand-dark-blue;
+                                opacity: 0.9;
+                            }
+                        }
+                    }
+                }
+            }
+            .item-contact{
+                max-width: 28rem;
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                flex-direction: column;
+                strong{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    color: $brand-dark-blue;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 20px;
+                    flex-direction: column;
+                    li{
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 1rem;
+                            span{
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 400;
+                                font-size: 1.4rem;
+                                line-height: 2.1rem;
+                                color: $grey-600;
+                                opacity: 0.9;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .bottom-footer{
+            padding-top: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p{
+                width: 100%;
+                max-width: 87rem;
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 150%;
+            }
+            .js-support{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                border-radius: 12rem;
+                background-color: $brand-dark-blue;
+                color: $white;
+                padding: 1rem 2rem;
+                transition: all .3s ease-in-out;
+                span{
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                }
+                &:hover{
+                    background-color: $brand-blue;
+                }
+            }
+            .js-btn-scroll-top{
+                border: 1.5px solid #003478;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.4;
+                border-radius: 50%;
+                width: 3.7rem;
+                height: 3.7rem;
+                transition: all .3s ease;
+                &:hover{
+                    opacity: 1;
+                }
+                img{
+                    max-width: 1.3rem;
+                }
+            }
+        }
+    }
+}
