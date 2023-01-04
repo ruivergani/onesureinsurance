@@ -974,3 +974,124 @@ p {
   border-radius: 0.8rem;
   padding: 1.3rem 2rem;
 }
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2022;
+  background-color: #FFFFFF;
+  border-bottom: 0.5px solid rgba(0, 52, 120, 0.5);
+}
+header .nav-top {
+  padding: 20px 0px;
+  border-bottom: 0.5px solid rgba(0, 52, 120, 0.5);
+}
+header .nav-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  gap: 4.5rem;
+}
+header .nav-top ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+header .nav-top ul li a img {
+  width: 100%;
+  max-width: 2.2rem;
+}
+header .nav-top ul li a span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 100%;
+  color: #33303E;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .nav-top ul li a:hover span {
+  color: #5F5C6B;
+}
+header .nav-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 11rem;
+}
+header .nav-bottom a img {
+  width: 100%;
+  max-width: 8.2rem;
+}
+header .nav-bottom nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 104.6rem;
+}
+header .nav-bottom nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+header .nav-bottom nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+header .nav-bottom nav ul li a span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #33303E;
+  text-transform: uppercase;
+}
+header .nav-bottom nav ul li a img {
+  width: 100%;
+  max-width: 2.2rem;
+}
+header .nav-bottom nav .hamburger {
+  display: none;
+  margin-left: 2rem;
+}
+header .nav-bottom nav .hamburger.is-active .hamburger-inner, header .nav-bottom nav .hamburger.is-active .hamburger-inner::before, header .nav-bottom nav .hamburger.is-active .hamburger-inner::after {
+  background-color: white;
+}
+header .nav-bottom nav .hamburger .hamburger-inner, header .nav-bottom nav .hamburger .hamburger-inner::before, header .nav-bottom nav .hamburger .hamburger-inner::after {
+  background-color: white;
+}
