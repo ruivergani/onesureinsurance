@@ -1515,3 +1515,106 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     bottom: 30px;
   }
 }
+
+.s-hero {
+  width: 100%;
+  height: 66.4rem;
+  padding-top: 8rem;
+  background: linear-gradient(45.08deg, rgba(11, 110, 182, 0.6) -0.6%, rgba(0, 215, 215, 0) 72.53%);
+  background: linear-gradient(100.52deg, #00A5F0 5.63%, #00D7D7 95.75%);
+}
+.s-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.s-hero .container h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-size: 8.8rem;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+}
+.s-hero .container h2 {
+  padding-bottom: 1.5rem;
+  font-family: "IBM Plex Sans";
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  color: #FFFFFF;
+}
+.s-hero .container ul {
+  margin-top: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  gap: 2.5rem;
+}
+.s-hero .container ul li {
+  width: 100%;
+  max-width: 15rem;
+  height: 16.8rem;
+  background-color: #F0F4F9;
+  border-radius: 0.6rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.s-hero .container ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 4.3rem;
+}
+.s-hero .container ul li a i {
+  color: #003478;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.s-hero .container ul li a span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+  color: #16243D;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.s-hero .container ul li:hover {
+  background-color: #FFFFFF;
+}
+.s-hero .container ul li:hover a i {
+  color: #C00037;
+}
+.s-hero .container ul li:hover a span {
+  color: #C00037;
+}
