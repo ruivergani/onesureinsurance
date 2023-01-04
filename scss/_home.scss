@@ -7,25 +7,29 @@
     background-size: cover;
     .container{
         @include flex(column, flex-start, flex-start);
-        h1{
-            font-family: 'IBM Plex Sans', sans-serif;
-            font-weight: 700;
-            font-size: 8.8rem;
-            line-height: 100%;
-            letter-spacing: -0.02em;
-            color: $white;
-        }
-        h2{
-            padding-bottom: 1.5rem;
-            font-family: 'IBM Plex Sans';
-            font-weight: 300;
-            font-size: 4rem;
-            line-height: 100%;
-            letter-spacing: -0.01em;
-            color: $white;
-
+        .heading{
+            width: 100%;
+            h1{
+                font-family: 'IBM Plex Sans', sans-serif;
+                font-weight: 700;
+                font-size: 8.8rem;
+                line-height: 100%;
+                letter-spacing: -0.02em;
+                color: $white;
+            }
+            h2{
+                padding-bottom: 1.5rem;
+                font-family: 'IBM Plex Sans';
+                font-weight: 300;
+                font-size: 4rem;
+                line-height: 100%;
+                letter-spacing: -0.01em;
+                color: $white;
+    
+            }
         }
         ul{
+            width: 100%;
             margin-top: 5.5rem;
             display: flex;
             align-items: flex-start;
@@ -74,4 +78,100 @@
         }
     }
     // Responsive
+    @media (max-width: 850px){
+        .container{
+            .heading{
+                h1{
+                    font-size: 6.8rem;
+                }
+                h2{
+                    font-size: 3.3rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 790px){
+        padding-top: 6rem;
+        height: 85rem;
+        .container{
+            ul{
+                margin-top: 4rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2rem 0rem;
+                justify-items: center;
+                align-items: center;
+                .item-card{
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+    @media (max-width: 600px){
+        .container{
+            .heading{
+                h1{
+                    font-size: 4.3rem;
+                    text-align: center;
+                    width: 100%;
+                }
+                h2{
+                    font-size: 2.5rem;
+                    text-align: center;
+                    font-weight: 400;
+                }
+            }
+            ul{
+                grid-template-columns: 1fr;
+                grid-gap: 1rem 0rem;
+                .item-card{
+                    max-width: 70%;
+                }
+                li{
+                    background-color: $white;
+                    height: 13.8rem;
+                    a{
+                        padding-top: 3.3rem;
+                        gap: 2rem;
+                        i{
+                            font-size: 1.8em;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                li:nth-child(3){
+                    display: none;
+                }
+                li:nth-child(4){
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (max-width: 375px){
+        .container{
+            .heading{
+                h1{
+                    font-size: 3.9rem;
+                }
+                h2{
+                    font-size: 2.3rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 320px){
+        .container{
+            .heading{
+                h1{
+                    font-size: 3.3rem;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
 }
