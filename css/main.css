@@ -1172,6 +1172,8 @@ header .menu-mobile {
 }
 
 footer {
+  position: relative;
+  width: 100%;
   background-color: #FFFFFF;
   padding-top: 4rem;
   border-top: 1px solid rgba(0, 52, 120, 0.5);
@@ -1338,7 +1340,7 @@ footer .container .main-footer .item-contact ul li a span {
   opacity: 0.9;
 }
 footer .container .bottom-footer {
-  padding-top: 2.5rem;
+  padding: 2.5rem 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1402,4 +1404,114 @@ footer .container .bottom-footer .js-btn-scroll-top:hover {
 }
 footer .container .bottom-footer .js-btn-scroll-top img {
   max-width: 1.3rem;
+}
+@media (max-width: 998px) {
+  footer .container .main-footer {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  footer .container .main-footer nav {
+    gap: 3rem;
+  }
+  footer .container .bottom-footer p {
+    max-width: 550px;
+  }
+}
+@media (max-width: 950px) {
+  footer .container .main-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  footer .container .main-footer nav {
+    gap: 6rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  footer .container .main-footer nav .item {
+    gap: 1.5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer .container .main-footer nav .item ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  footer .container .main-footer .item-contact {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  footer .container .main-footer .item-contact ul {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+@media (max-width: 740px) {
+  footer {
+    padding-top: 2rem;
+  }
+  footer .container .top-footer {
+    padding-bottom: 2rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  footer .container .top-footer .share {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  footer .container .main-footer {
+    padding: 4rem;
+  }
+  footer .container .main-footer nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 3rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  footer .container .bottom-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 3rem;
+    position: relative;
+  }
+  footer .container .bottom-footer p {
+    text-align: center;
+  }
+  footer .container .bottom-footer .js-btn-scroll-top {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+  }
 }

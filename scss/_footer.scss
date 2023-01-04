@@ -1,4 +1,6 @@
 footer{
+    position: relative;
+    width: 100%;
     background-color: $white;
     padding-top: 4rem;
     border-top: 1px solid rgba(0, 52, 120, 0.5);
@@ -30,13 +32,6 @@ footer{
                     display: flex;
                     align-items: center;
                     gap: 30px;
-                    li{
-                        a{
-                            img{
-
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -121,7 +116,7 @@ footer{
             }
         }
         .bottom-footer{
-            padding-top: 2.5rem;
+            padding: 2.5rem 0px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -165,6 +160,86 @@ footer{
                 }
                 img{
                     max-width: 1.3rem;
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 998px){
+        .container{
+            .main-footer{
+                justify-content: flex-start;
+                nav{
+                    gap: 3rem;
+                }
+            }
+            .bottom-footer{
+                p{
+                    max-width: 550px;
+                }
+            }
+        }
+    }
+    @media (max-width: 950px){
+        .container{
+            .main-footer{
+                flex-direction: column;
+                align-items: center;
+                gap: 4rem;
+                nav{
+                    gap: 6rem;
+                    justify-content: center;
+                    .item{
+                        gap: 1.5rem;
+                        align-items: center;
+                        ul{
+                            align-items: center;
+                            gap: 1.5rem;
+                        }
+                    }
+                }
+                .item-contact{
+                    align-items: center;
+                    ul{
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 740px){
+        padding-top: 2rem;
+        .container{
+            .top-footer{
+                padding-bottom: 2rem;
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                .share{
+                    flex-direction: column;
+                }
+            }
+            .main-footer{
+                padding: 4rem;
+                nav{
+                    flex-direction: column;
+                    gap: 3rem;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .bottom-footer{
+                flex-direction: column;
+                justify-content: center;
+                gap: 3rem;
+                position: relative;
+                p{
+                    text-align: center;
+                }
+                .js-btn-scroll-top{
+                    position: absolute;
+                    right: 20px;
+                    bottom: 30px;
                 }
             }
         }
