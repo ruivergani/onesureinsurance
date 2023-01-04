@@ -1,6 +1,6 @@
 .nav-top{
     padding: 20px 0px;
-    border-bottom: 0.5px solid rgba(0, 52, 120, 0.5);
+    border-bottom: 0.5px solid rgba(0, 52, 120, 0.3);
     ul{
         display: flex;
         align-items: center;
@@ -52,9 +52,8 @@ header{
     flex-direction: column;
     background-color: $white;
     transition: all .4s ease-in-out;
-    border-bottom: 0.5px solid rgba(0, 52, 120, 0.5);
     &.changeHeight{
-        border-bottom: 1px solid rgba(0, 52, 120, 0.5);
+        border-bottom: 0.5px solid rgba(0, 52, 120, 0.2);
     }
     .container{
         display: flex;
