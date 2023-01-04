@@ -1118,6 +1118,19 @@ header nav .hamburger.is-active .hamburger-inner, header nav .hamburger.is-activ
 header nav .hamburger .hamburger-inner, header nav .hamburger .hamburger-inner::before, header nav .hamburger .hamburger-inner::after {
   background-color: #33303E;
 }
+header .menu-mobile {
+  position: absolute;
+  width: 100%;
+  top: 10rem;
+  height: calc(100vh - 100px);
+  background-color: rgb(10, 6, 21);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  padding: 4rem 1.5rem;
+}
 @media (max-width: 1100px) {
   header nav {
     max-width: 87%;
@@ -1144,4 +1157,16 @@ header nav .hamburger .hamburger-inner, header nav .hamburger .hamburger-inner::
     display: none;
     pointer-events: none;
   }
+}
+@media (max-width: 668px) {
+  header nav .hamburger {
+    margin-left: 0px;
+    padding: 0px;
+  }
+}
+
+.menu-opened header .menu-mobile {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
