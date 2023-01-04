@@ -11,7 +11,6 @@
 html,
 body{
     font-size: 62.5%;
-    overflow-x: hidden; // no scroll barra lateral x eixo
     scroll-behavior: smooth;
     @include responsive(1300px){ //macbook small size
         font-size: 58%;
