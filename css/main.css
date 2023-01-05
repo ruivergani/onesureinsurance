@@ -2396,3 +2396,22 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     margin-top: 1rem;
   }
 }
+
+.s-articles {
+  padding: 10.7rem 0px;
+}
+.s-articles .container .title h2, .s-articles .container .title p {
+  max-width: 45rem;
+}
+.s-articles .container .posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 9rem;
+}

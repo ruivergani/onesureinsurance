@@ -658,3 +658,20 @@
         
     }
 }
+//Section Articles
+.s-articles{
+    padding: 10.7rem 0px;
+    .container{
+        .title{
+            h2,p{
+                max-width: 45rem;
+            }
+        }
+        .posts{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 9rem;
+        }
+    }
+}
