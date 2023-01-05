@@ -186,7 +186,8 @@
         height: 23.6rem;
         box-shadow: 0px 0px 40px rgba(122, 119, 134, 0.1);
         border-radius: 0.6rem;
-        padding: 5rem;
+        padding: 5rem !important;
+        text-align: center;
     }
     // Responsive
     @media (max-width: 1160px){
@@ -299,6 +300,8 @@
         }
     }
     @media (max-width: 991px){
+        padding-top: 6rem;
+        padding-bottom: 3rem;
         .container{
             gap: 4rem;
         }
@@ -315,7 +318,6 @@
         display: none;
         pointer-events: none;
     }
-
 }
 //Section Logos
 .s-logos{
@@ -336,7 +338,7 @@
             }
             h5{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 700;
+                font-weight: 600;
                 font-size: 1.8rem;
                 line-height: 120%;
                 /* or 22px */
@@ -374,19 +376,23 @@
     }
     @media (max-width: 991px){
         padding-top: 6rem;
+        padding-bottom: 6rem;
         .container{
             flex-direction: column;
             gap: 3rem;
             .title{
                 h5{
                     max-width: 100%;
+                    font-size: 2.8rem;
                 }
             }
         }
     }
     // Mobile Device
     @media (max-width: 480px){
+        padding-bottom: 0px;
         .container{
+            padding-top: 1rem !important;
             border: none;
             background: linear-gradient(0deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
             .title{
@@ -417,7 +423,6 @@
 }
 //Section Insurance Types
 .s-insurance{
-    display: none;
     padding-bottom: 10.7rem;
     .container{
         display: flex;
@@ -430,6 +435,9 @@
             align-items: center;
             justify-content: center;
             gap: 3rem;
+            h6{
+                display: none;
+            }
             h2{
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
@@ -440,6 +448,7 @@
                 width: 100%;
                 max-width: 35rem;
                 text-align: right;
+                text-transform: uppercase;
             }
             p{
                 width: 100%;
@@ -459,5 +468,67 @@
         }
     }
     // Responsive
-
+    @media (max-width: 991px){
+        .container{
+            .all-cards-type{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            gap: 5rem;
+            .title{
+                h2{
+                    font-size: 2.8rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+            .all-cards-type{
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 3rem;
+            }
+        }
+    }
+    @media(max-width: 480px){
+        padding-bottom: 6rem;
+        padding-top: 6rem;
+        .container{
+            gap: 3rem;
+            .title{
+                flex-direction: column;
+                gap: 1rem;
+                h6{
+                    display: block;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    line-height: 112%;
+                    text-align: center;
+                    letter-spacing: -1px;
+                    color: $grey-200;
+                    opacity: 0.8;
+                }
+                h2{
+                    font-size: 28px;
+                    text-align: center;
+                    text-transform: none;
+                    max-width: 27rem;
+                }
+                p, img{
+                    display: none;
+                }
+            }
+            .all-cards-type{
+                grid-template-columns: 1fr;
+                grid-gap: 3rem;
+            }
+            button{
+                margin-top: 1rem;
+            }
+        }
+    }
+    
 }

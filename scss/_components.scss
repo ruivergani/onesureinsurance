@@ -202,6 +202,32 @@
             margin-bottom: 1rem;
         }
     }
+    // Responsive
+    @media (max-width: 480px){
+        display: flex;
+        padding: 2rem 3.5rem;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+        .image{
+            display: none;
+        }
+        .icon{
+            position: relative;
+            top: 0px;
+            right: 0px;
+        }
+        .info{
+            padding: 0px;
+            p{
+                display: none;
+            }
+            span{
+                display: none;
+            }
+        }
+    }
 }
 .card-post-blog{
     position: relative;
