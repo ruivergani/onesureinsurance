@@ -297,6 +297,23 @@ p {
   position: absolute;
   top: 18rem;
   right: 2.5rem;
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.card-type-default .icon i {
+  font-size: 1.5em;
+  color: #003478;
 }
 .card-type-default .image {
   position: relative;
@@ -1968,4 +1985,62 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   .s-logos .container .title h5 {
     max-width: 100%;
   }
+}
+
+.s-insurance {
+  padding-bottom: 10.7rem;
+}
+.s-insurance .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 9rem;
+}
+.s-insurance .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.s-insurance .container .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 112%;
+  letter-spacing: -1px;
+  color: #003478;
+  width: 100%;
+  max-width: 35rem;
+  text-align: right;
+}
+.s-insurance .container .title p {
+  width: 100%;
+  max-width: 35rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 150%;
+  letter-spacing: -0.5px;
+  color: #33303E;
+}
+.s-insurance .container .all-cards-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 6rem 3.2rem;
 }
