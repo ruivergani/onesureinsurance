@@ -28,20 +28,24 @@
 
 // Script for Swipper Slide
 var swiper = new Swiper(".slide-logos", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 32,
+  pagination: {
+    el: ".s-logos .container .swiper-pagination",
+    clickable: true,
+  },
   breakpoints:{
     320 : {
-        slidesPerView: 1.3,
-        spaceBetween: 16,
+        slidesPerView: 1,
+        spaceBetween: 60,
     },
-    600: {
+    768: {
       slidesPerView: 2.3,
-      spaceBetween: 15,
+      spaceBetween: 30,
     },
     1200: {
         slidesPerView: 3,
-        spaceBetween: 32,
+        spaceBetween: 90,
     }
   }
 });

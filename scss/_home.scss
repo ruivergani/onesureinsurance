@@ -318,6 +318,7 @@
 }
 //Section Logos
 .s-logos{
+    padding-bottom: 10.7rem;
     .container{
         padding: 9rem 0px;
         border-top: 2px solid $brand-light-blue;
@@ -344,15 +345,36 @@
         .slide-logos{
             overflow: hidden;
             .swiper-wrapper{
+                width: 100%;
                 align-items: center;
-                justify-content: center;
                 .swiper-slide{
-                    margin-right: 8rem !important;
                     width: auto !important;
-                    img{
-                        width: 100%;
-                        max-width: 15rem;
+                    .card-image{
+                       width: 100%;
+                       max-width: 30rem;
+                       height: 8rem;
+                       display: flex;
+                       align-items: center;
+                       justify-content: center;
                     }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 1200px){
+        .container{
+            padding: 4rem 1.5rem !important;
+        }
+    }
+    @media (max-width: 991px){
+        padding-top: 6rem;
+        .container{
+            flex-direction: column;
+            gap: 3rem;
+            .text{
+                h5{
+                    max-width: 100%;
                 }
             }
         }
