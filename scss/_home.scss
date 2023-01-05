@@ -430,37 +430,6 @@
         flex-direction: column;
         justify-content: center;
         gap: 9rem;
-        .title{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 3rem;
-            h6{
-                display: none;
-            }
-            h2{
-                font-family: 'Poppins', sans-serif;
-                font-weight: 600;
-                font-size: 3.6rem;
-                line-height: 112%;
-                letter-spacing: -1px;
-                color: $brand-dark-blue;
-                width: 100%;
-                max-width: 35rem;
-                text-align: right;
-                text-transform: uppercase;
-            }
-            p{
-                width: 100%;
-                max-width: 35rem;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                font-size: 1.8rem;
-                line-height: 150%;
-                letter-spacing: -0.5px;
-                color: $grey-600;
-            }
-        }
         .all-cards-type{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -531,4 +500,16 @@
         }
     }
     
+}
+//Section About Us
+.s-about{
+    background: rgba(240, 244, 249, 0.7);
+    padding: 9rem 0px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9rem;
+        
+    }
 }
