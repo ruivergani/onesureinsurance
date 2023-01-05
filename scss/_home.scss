@@ -188,4 +188,19 @@
         border-radius: 0.6rem;
         padding: 5rem;
     }
+    // Responsive
+    @media (max-width: 1160px){
+        .container{
+            max-width: 90%;
+        }
+    }
+    @media (max-width: 790px){
+        margin-top: -3rem;
+    }
+    @media (max-width: 618px){
+        margin-top: 3rem;
+    }
+    @media (max-width: 600px){
+        margin-top: -10rem;
+    }
 }

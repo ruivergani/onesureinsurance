@@ -1137,6 +1137,9 @@ header .menu-mobile {
   }
 }
 @media (max-width: 1050px) {
+  header .container {
+    padding: 0px 1.5rem !important;
+  }
   header .container .logo img {
     max-width: 10rem;
   }
@@ -1159,9 +1162,6 @@ header .menu-mobile {
   }
 }
 @media (max-width: 668px) {
-  header .container {
-    padding: 0px 1.5rem !important;
-  }
   header nav .hamburger {
     margin-left: 0px;
     padding: 0px;
@@ -1727,4 +1727,24 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   box-shadow: 0px 0px 40px rgba(122, 119, 134, 0.1);
   border-radius: 0.6rem;
   padding: 5rem;
+}
+@media (max-width: 1160px) {
+  .s-trustpilot .container {
+    max-width: 90%;
+  }
+}
+@media (max-width: 790px) {
+  .s-trustpilot {
+    margin-top: -3rem;
+  }
+}
+@media (max-width: 618px) {
+  .s-trustpilot {
+    margin-top: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .s-trustpilot {
+    margin-top: -10rem;
+  }
 }
