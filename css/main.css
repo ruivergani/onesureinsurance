@@ -1780,6 +1780,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   text-align: center;
   letter-spacing: -1px;
   color: #003478;
+  text-transform: uppercase;
 }
 .s-call .all-cards {
   display: -webkit-box;
@@ -1907,11 +1908,11 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   justify-content: center;
   gap: 9rem;
 }
-.s-logos .container .text {
+.s-logos .container .title {
   border-left: 3px solid #003478;
   padding-left: 2rem;
 }
-.s-logos .container .text h5 {
+.s-logos .container .title h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
@@ -1964,7 +1965,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     flex-direction: column;
     gap: 3rem;
   }
-  .s-logos .container .text h5 {
+  .s-logos .container .title h5 {
     max-width: 100%;
   }
 }

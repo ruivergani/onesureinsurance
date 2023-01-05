@@ -226,6 +226,7 @@
             text-align: center;
             letter-spacing: -1px;
             color: $brand-dark-blue;
+            text-transform: uppercase;
         }
     }
     .all-cards{
@@ -327,7 +328,7 @@
         align-items: center;
         justify-content: center;
         gap: 9rem;
-        .text{
+        .title{
             border-left: 3px solid #003478;
             padding-left: 2rem;
             h5{
@@ -372,7 +373,7 @@
         .container{
             flex-direction: column;
             gap: 3rem;
-            .text{
+            .title{
                 h5{
                     max-width: 100%;
                 }
