@@ -1929,6 +1929,9 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   border-left: 3px solid #003478;
   padding-left: 2rem;
 }
+.s-logos .container .title h6 {
+  display: none;
+}
 .s-logos .container .title h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -1939,6 +1942,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   color: #003478;
   width: 100%;
   max-width: 15.2rem;
+  text-transform: uppercase;
 }
 .s-logos .container .slide-logos {
   overflow: hidden;
@@ -1986,8 +1990,39 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     max-width: 100%;
   }
 }
+@media (max-width: 480px) {
+  .s-logos .container {
+    border: none;
+    background: -webkit-gradient(linear, left bottom, left top, from(#F7F7FA), to(rgba(247, 247, 250, 0)));
+    background: linear-gradient(0deg, #F7F7FA 0%, rgba(247, 247, 250, 0) 100%);
+  }
+  .s-logos .container .title {
+    border: none;
+    padding: 0px;
+  }
+  .s-logos .container .title h6 {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #C6C5CE;
+    opacity: 0.8;
+    padding-bottom: 1rem;
+  }
+  .s-logos .container .title h5 {
+    text-transform: none;
+    font-size: 2.8rem;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+}
 
 .s-insurance {
+  display: none;
   padding-bottom: 10.7rem;
 }
 .s-insurance .container {
