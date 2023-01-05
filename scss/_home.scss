@@ -510,6 +510,36 @@
         flex-direction: column;
         align-items: center;
         gap: 9rem;
-        
+        .main{
+            display: flex;
+            align-items: center;
+            gap: 120px;
+            .image{
+                width: 100%;
+                max-width: 38.4rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .text{
+                width: 100%;
+                max-width: 50.6rem;
+                p{
+                    line-height: 175%;
+                }
+                ul{
+                    padding: 3rem 0px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 1rem;
+                    }
+                }
+                button{
+                    margin-top: 2.5rem;
+                }
+            }
+        }
     }
 }
