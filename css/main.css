@@ -1057,6 +1057,7 @@ header .container {
   -ms-flex-pack: justify;
   justify-content: space-between;
   height: 11rem;
+  padding: 0px !important;
 }
 header .container .logo img {
   width: 100%;
@@ -1158,6 +1159,9 @@ header .menu-mobile {
   }
 }
 @media (max-width: 668px) {
+  header .container {
+    padding: 0px 1.5rem !important;
+  }
   header nav .hamburger {
     margin-left: 0px;
     padding: 0px;
@@ -1702,4 +1706,25 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   .s-hero .container .heading h2 {
     font-size: 2rem;
   }
+}
+
+.s-trustpilot {
+  margin-top: -10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.s-trustpilot .container {
+  background: #FFFFFF;
+  height: 23.6rem;
+  -webkit-box-shadow: 0px 0px 40px rgba(122, 119, 134, 0.1);
+  box-shadow: 0px 0px 40px rgba(122, 119, 134, 0.1);
+  border-radius: 0.6rem;
+  padding: 5rem;
 }
