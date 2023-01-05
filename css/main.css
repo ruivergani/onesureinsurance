@@ -2211,6 +2211,9 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   align-items: center;
   gap: 9rem;
 }
+.s-about .container .title h6 {
+  display: none;
+}
 .s-about .container .main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2218,7 +2221,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 120px;
+  gap: 12rem;
 }
 .s-about .container .main .image {
   width: 100%;
@@ -2251,4 +2254,145 @@ footer .container .bottom-footer .js-btn-scroll-top img {
 }
 .s-about .container .main .text button {
   margin-top: 2.5rem;
+}
+@media (max-width: 991px) {
+  .s-about .container {
+    gap: 6rem;
+  }
+  .s-about .container .main {
+    gap: 2rem;
+  }
+  .s-about .container .main .image {
+    max-width: 33rem;
+  }
+}
+@media (max-width: 780px) {
+  .s-about .container {
+    gap: 4rem;
+  }
+  .s-about .container .title h2 {
+    font-size: 2.8rem;
+  }
+  .s-about .container .title p {
+    font-size: 1.6rem;
+  }
+  .s-about .container .main {
+    gap: 3rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+  .s-about .container .main .image {
+    max-width: 38rem;
+  }
+  .s-about .container .main .text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .s-about {
+    padding: 6rem 0px;
+  }
+  .s-about .container .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .s-about .container .title h6 {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #C6C5CE;
+    opacity: 0.8;
+  }
+  .s-about .container .title h2 {
+    font-size: 28px;
+    text-align: center;
+    max-width: 100%;
+    text-transform: none;
+  }
+  .s-about .container .title p, .s-about .container .title img {
+    display: none;
+  }
+  .s-about .container .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .s-about .container .main .image {
+    max-width: 27rem;
+  }
+  .s-about .container .main .text {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .s-about .container .main .text p {
+    line-height: 150%;
+    font-size: 1.8rem;
+  }
+  .s-about .container .main .text ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2rem 0px;
+  }
+  .s-about .container .main .text ul li {
+    padding-bottom: 1rem;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .s-about .container .main .text ul li p {
+    font-size: 1.6rem;
+  }
+  .s-about .container .main .text ul li img {
+    margin-top: 4px;
+  }
+  .s-about .container .main .text .none {
+    display: none;
+  }
+  .s-about .container .main .text button {
+    margin-top: 1rem;
+  }
 }
