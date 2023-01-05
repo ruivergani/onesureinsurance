@@ -1748,3 +1748,132 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     margin-top: -10rem;
   }
 }
+
+.s-call {
+  padding: 10.7rem 0px;
+}
+.s-call .container {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 6rem;
+}
+.s-call .title h2 {
+  width: 100%;
+  max-width: 42rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3.6rem;
+  line-height: 112%;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #003478;
+}
+.s-call .all-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 3.4rem;
+}
+.s-call .all-cards h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 112%;
+  letter-spacing: -0.5px;
+  color: #00449E;
+  margin-bottom: 1.5rem;
+}
+.s-call .all-cards .btn {
+  gap: 1.5rem;
+}
+.s-call .all-cards .btn-primary-lg {
+  padding: 0px 5.3rem;
+}
+.s-call .all-cards .card-01 {
+  border-radius: 0.6rem;
+  background-color: #F0F4F9;
+  min-width: 38.4rem;
+  height: 17.1rem;
+  padding: 0px 6.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.s-call .all-cards .card-01 .text p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 112%;
+  letter-spacing: -0.5px;
+  color: #00449E;
+}
+.s-call .all-cards .card-02 {
+  border-radius: 0.6rem;
+  background-color: #F0F4F9;
+  min-width: 38.4rem;
+  height: 17.1rem;
+  padding: 0px 4.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.s-call .all-cards .card-03 {
+  border-radius: 0.6rem;
+  background-color: #F0F4F9;
+  min-width: 38.4rem;
+  height: 17.1rem;
+  padding: 0px 6.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 1050px) {
+  .s-call .container {
+    padding: 0px 1.5rem !important;
+  }
+}
