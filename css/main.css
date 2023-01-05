@@ -1819,12 +1819,12 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-.s-call .all-cards .card-01 {
-  padding: 0px 6.9rem;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.s-call .all-cards .card-01 {
+  padding: 0px 6.9rem;
   gap: 2rem;
 }
 .s-call .all-cards .card-01 .text p {
@@ -1837,9 +1837,6 @@ footer .container .bottom-footer .js-btn-scroll-top img {
 }
 .s-call .all-cards .card-02 {
   padding: 0px 4.8rem;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1847,9 +1844,6 @@ footer .container .bottom-footer .js-btn-scroll-top img {
 }
 .s-call .all-cards .card-03 {
   padding: 0px 6.9rem;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;

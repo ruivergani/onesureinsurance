@@ -26,6 +26,30 @@
 //    html.classList.remove('show-modal'); // selecting 
 // })
 
+// Script for Swipper Slide
+var swiper = new Swiper(".slide-logos", {
+  slidesPerView: 3,
+  spaceBetween: 32,
+  pagination: {
+    el: ".s-card-depoimentos .container .top .swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    320 : {
+        slidesPerView: 1.3,
+        spaceBetween: 16,
+    },
+    600: {
+      slidesPerView: 2.3,
+      spaceBetween: 15,
+    },
+    1200: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+    }
+  }
+});
+
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
 btnScrollTop.addEventListener('click', () => {
