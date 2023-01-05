@@ -60,7 +60,6 @@ header{
         align-items: center;
         justify-content: space-between;
         height: 11rem;
-        padding: 0px !important; 
         .logo{
             img{
                 width: 100%;
@@ -131,7 +130,6 @@ header{
     }
     @media(max-width: 1050px){
         .container{
-            padding: 0px 1.5rem !important;
             .logo{
                 img{
                     max-width: 10rem;
@@ -155,7 +153,6 @@ header{
         }
     }
     @media (max-width: 668px){
-       
         nav{
             .hamburger{
                 margin-left: 0px;
