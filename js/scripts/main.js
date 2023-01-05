@@ -28,12 +28,8 @@
 
 // Script for Swipper Slide
 var swiper = new Swiper(".slide-logos", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 32,
-  pagination: {
-    el: ".s-card-depoimentos .container .top .swiper-pagination",
-    clickable: true,
-  },
   breakpoints:{
     320 : {
         slidesPerView: 1.3,

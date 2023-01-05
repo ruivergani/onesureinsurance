@@ -316,3 +316,45 @@
     }
 
 }
+//Section Logos
+.s-logos{
+    .container{
+        padding: 9rem 0px;
+        border-top: 2px solid $brand-light-blue;
+        border-bottom: 2px solid $brand-light-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9rem;
+        .text{
+            border-left: 3px solid #003478;
+            padding-left: 2rem;
+            h5{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 120%;
+                /* or 22px */
+                letter-spacing: -0.5px;
+                color: $brand-dark-blue;
+                width: 100%;
+                max-width: 15.2rem;
+            }
+        }
+        .slide-logos{
+            overflow: hidden;
+            .swiper-wrapper{
+                align-items: center;
+                justify-content: center;
+                .swiper-slide{
+                    margin-right: 8rem !important;
+                    width: auto !important;
+                    img{
+                        width: 100%;
+                        max-width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+}
