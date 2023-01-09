@@ -9,8 +9,12 @@
     text-transform: uppercase;
 }
 .s-breadcrumbs{
+    position: sticky;
+    top: 10rem;
+    z-index: 2023;
     background-color: $brand-light-blue;
     padding: 1.5rem 0px;
+    border-bottom: 0.5px solid rgba(0, 52, 120, 0.2);
     .container{
         display: flex;
         align-items: center;
