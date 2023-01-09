@@ -184,7 +184,7 @@
         flex: 1;
         padding-top: 4rem;
         padding-left: 2.5rem;
-        h6{
+        h4{
             font-family: 'Inter', sans-serif;
             font-weight: 600;
             font-size: 1.8rem;
@@ -310,7 +310,7 @@
                 }
             }
         }
-        h6{
+        h5{
             margin-bottom: 2rem;
             margin-top: 3rem;
             font-family: 'Inter', sans-serif;
@@ -324,8 +324,7 @@
             font-weight: 400;
             font-size: 1.6rem;
             line-height: 1.9rem;
-            color: $grey-500;
-            opacity: 0.7;
+            color: $grey-400;
             margin-bottom: 1rem;
         }
     }

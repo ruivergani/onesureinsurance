@@ -342,7 +342,7 @@ p {
   padding-top: 4rem;
   padding-left: 2.5rem;
 }
-.card-type-default .info h6 {
+.card-type-default .info h4 {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
@@ -491,7 +491,7 @@ p {
   color: #33303E;
   opacity: 0.7;
 }
-.card-post-blog .info h6 {
+.card-post-blog .info h5 {
   margin-bottom: 2rem;
   margin-top: 3rem;
   font-family: "Inter", sans-serif;
@@ -505,8 +505,7 @@ p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.9rem;
-  color: #4E4B59;
-  opacity: 0.7;
+  color: #5F5C6B;
   margin-bottom: 1rem;
 }
 
@@ -1966,7 +1965,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   justify-content: center;
   gap: 3.4rem;
 }
-.s-call .all-cards h4 {
+.s-call .all-cards h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
