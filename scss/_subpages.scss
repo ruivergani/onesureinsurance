@@ -281,4 +281,13 @@
         }
     }
 }
-// Section 
+// Section Newsletter
+.s-newsletter{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
