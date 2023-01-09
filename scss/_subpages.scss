@@ -8,6 +8,7 @@
     color: #868E96;
     text-transform: uppercase;
 }
+// Section Breadcrumbs
 .s-breadcrumbs{
     position: sticky;
     top: 10rem;
@@ -69,6 +70,7 @@
         }
     }
 }
+// Section Product
 .s-hero-product{
     padding-top: 7rem;
     background: url('../assets/bg/bg-product.jpg') no-repeat center center;
@@ -190,4 +192,26 @@
             }
         }
     }
+}
+// Section Trustpilot
+.s-trustpilot-product{
+    background-color: $white;
+    width: 100%;
+    padding: 9rem 0px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h3{
+            width: 100%;
+            max-width: 26.4rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+            letter-spacing: -0.5px;
+            color: $grey-600;
+        }
+    }
+
 }
