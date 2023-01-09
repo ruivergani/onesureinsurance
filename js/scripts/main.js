@@ -16,7 +16,7 @@
 //    html.classList.remove('show-modal'); // selecting 
 // })
 
-// Script for Swipper Slide
+// Script for Swipper Slide Logos
 var swiper = new Swiper(".slide-logos", {
   slidesPerView: 1,
   spaceBetween: 32,
@@ -37,6 +37,47 @@ var swiper = new Swiper(".slide-logos", {
         slidesPerView: 3,
         spaceBetween: 90,
     }
+  }
+});
+// Swiper Slide Products Page
+var slide_product = new Swiper(".slide-product", {
+  slidesPerView: 4,
+  spaceBetween: 32,
+  pagination: {
+    el: ".s-slide-product .container .top .ctrl-slide .swiper-pagination",
+    clickable: true,
+  },
+  // navigation section 
+  navigation: {
+    nextEl: ".s-slide-product .top .btn-next",
+    prevEl: ".s-slide-product .top .btn-prev",
+  },
+  // smooth pagination
+  speed: 600,
+  // responsive part of the slide
+  breakpoints: {
+    // mobile
+    275: {
+      slidesPerView: 1.1, // part of the other slide
+      spaceBetween: 20,
+    },
+    // tablet
+    560: {
+      slidesPerView: 1.5
+    },
+    768: {
+      slidesPerView: 2.1
+    },
+    991: {
+      slidesPerView: 2.5
+    },
+    1150: {
+      slidesPerView: 3.5
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 32
+    },
   }
 });
 
