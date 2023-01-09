@@ -955,8 +955,8 @@ p {
     line-height: 112%;
     text-align: center;
     letter-spacing: -1px;
-    color: #C6C5CE;
-    opacity: 0.8;
+    color: #7A7786;
+    opacity: 0.9;
   }
 }
 
@@ -1125,6 +1125,7 @@ p {
 }
 .title h6 {
   display: none;
+  color: #7A7786;
 }
 .title h2 {
   font-family: "Poppins", sans-serif;
@@ -2177,7 +2178,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     line-height: 112%;
     text-align: center;
     letter-spacing: -1px;
-    color: #C6C5CE;
+    color: #7A7786;
     opacity: 0.8;
     padding-bottom: 1rem;
   }
@@ -2257,7 +2258,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     line-height: 112%;
     text-align: center;
     letter-spacing: -1px;
-    color: #C6C5CE;
+    color: #7A7786;
     opacity: 0.8;
   }
   .s-insurance .container .title h2 {
@@ -2412,8 +2413,8 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     line-height: 112%;
     text-align: center;
     letter-spacing: -1px;
-    color: #C6C5CE;
-    opacity: 0.8;
+    color: #7A7786;
+    opacity: 0.9;
   }
   .s-about .container .title h2 {
     font-size: 28px;
@@ -2548,8 +2549,8 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     line-height: 112%;
     text-align: center;
     letter-spacing: -1px;
-    color: #C6C5CE;
-    opacity: 0.8;
+    color: #7A7786;
+    opacity: 0.9;
   }
   .s-articles .container .posts {
     grid-template-columns: 1fr;

@@ -657,8 +657,8 @@
                 line-height: 112%;
                 text-align: center;
                 letter-spacing: -1px;
-                color: #C6C5CE;
-                opacity: 0.8;
+                color: $grey-300;
+                opacity: 0.9;
             }
         }
     }
@@ -799,6 +799,7 @@
     gap: 3rem;
     h6{
         display: none;
+        color: $grey-300;
     }
     h2{
         font-family: 'Poppins', sans-serif;
