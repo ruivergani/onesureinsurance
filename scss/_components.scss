@@ -333,22 +333,13 @@
     display: block;
     width: 100%;
     max-width: 28rem;
-    height: 38rem;
+    height: 42rem;
     position: relative;
-    overflow: hidden;
     background-color: $white;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
     transition: all .3s ease-in-out;
     &:hover{
-        height: 42rem;
-        .info{
-            .learn-more{
-                pointer-events: all;
-                opacity: 1;
-                transform: translateX(0px); // put to back to left side
-            }
-        }
         .image{
             img{
                 transform: scale(1.04);
@@ -395,15 +386,10 @@
             margin-bottom: 1.5rem;
         }
         .learn-more{
-            
             display: flex;
             align-items: center;
             gap: 1rem;
-            // hide the state default
-            pointer-events: none;
-            opacity: 0;
             transition: all .3s ease;
-            transform: translateX(-10px); // put to right side
             span{
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
