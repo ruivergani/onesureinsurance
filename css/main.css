@@ -859,6 +859,7 @@ p {
   -ms-flex-align: center;
   align-items: center;
   gap: 7rem;
+  border-radius: 3rem;
 }
 .large-cta .text {
   width: 100%;
@@ -870,6 +871,7 @@ p {
   font-size: 1.4rem;
   line-height: 150%;
   color: #003478;
+  text-transform: uppercase;
 }
 .large-cta .text h3 {
   margin-top: 1rem;
@@ -879,6 +881,83 @@ p {
   line-height: 112%;
   letter-spacing: -1px;
   color: #33303E;
+}
+@media (max-width: 1150px) {
+  .large-cta {
+    gap: 3rem;
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .large-cta {
+    padding-left: 1rem;
+    gap: 3rem;
+    height: 15rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 3rem;
+  }
+  .large-cta .text {
+    max-width: 36rem;
+  }
+  .large-cta .text h3 {
+    font-size: 2.6rem;
+  }
+  .large-cta .text span {
+    text-transform: none;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .large-cta {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 3rem;
+    background-image: none;
+    padding: 0px;
+  }
+  .large-cta .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+  }
+  .large-cta .text h3 {
+    font-size: 2.8rem;
+    color: #003478;
+  }
+  .large-cta .text span {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 112%;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #C6C5CE;
+    opacity: 0.8;
+  }
 }
 
 .small-cta {
