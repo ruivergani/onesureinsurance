@@ -220,6 +220,64 @@
     background-color: $brand-light-blue;
     padding: 9rem 0rem;
     .container{
-
+        .top{
+            padding-bottom: 5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4{
+                width: 100%;
+                max-width: 42.3rem;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 120%;
+                color: $grey-600;
+            }
+            .ctrl-slide{
+                display: flex;
+                align-items: center;
+                flex: 1;
+                justify-content: space-between;
+                max-width: 18.4rem;
+                .swiper-pagination{
+                    position: relative; // by default is absolute
+                    bottom: 3px; // by default pagination
+                    margin-right: 4rem;
+                    width: auto; // by default pagination
+                    .swiper-pagination-bullet{
+                        background-color: $brand-dark-blue;
+                        width: 2.4rem;
+                        height: 3px;
+                        border-radius: 0px;
+                        opacity: 0.25;
+                        transition: all .3s ease;
+                        // active class by default
+                        &-active{
+                            opacity: 1;
+                        }
+                    }
+                }
+                .ctrl{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    .btn-prev{
+                        transform: rotate(180deg);
+                        margin-top: -0.1rem;
+                    }
+                    // class by default from swiper pagination
+                    .swiper-button-disabled{
+                        opacity: 0.25;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+        .slide-product{
+            // hide other slides (more than 4)
+            overflow: hidden;
+            position: relative;
+        }
     }
 }
