@@ -1,68 +1,58 @@
 // MT Product Page
-
-
-
-// .top-details{
-//     position: relative;
-//     z-index: 1;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     .breadcrumbs{
-//         display: flex;
-//         align-items: center;
-//         gap: 4rem;
-//         flex: 1;
-//         width: 100%;
-//         li{
-//             position: relative;
-//             // arrow right
-//             &:not(:last-child){
-//                 &:after{
-//                     content: "";
-//                     position: absolute;
-//                     right: -25px;
-//                     top: 4px;
-//                     width: 10px;
-//                     height: 10px;
-//                     background: url("../img/arrow-breadcrumb.svg") no-repeat center center;
-//                 }
-//             }
-//             a{
-//                 display: block;
-//                 font-family: 'Atyp BL Text', sans-serif;
-//                 font-weight: 600;
-//                 font-size: 15px;
-//                 line-height: 105%;
-//                 color: #9995A6;
-//                 transition: all .3s;
-//                 &:hover{
-//                     color: white;
-//                 }
-//             }
-//             span{
-//                 font-family: 'Atyp BL Text', sans-serif;
-//                 font-weight: 600;
-//                 font-size: 1.5rem;
-//                 line-height: 105%;
-//                 /* identical to box height, or 16px */
-//                 color: #FFFFFF;
-//             }
-//         }
-//     }
-//     a{
-//         display: flex;
-//         align-items: center;
-//         gap: 1.4rem;
-//         font-family: 'Atyp BL Text', sans-serif;
-//         font-weight: 600;
-//         font-size: 1.6rem;
-//         line-height: 100%;
-//         opacity: 0.6;
-//         transition: opacity .4s ease;
-//         color: #FFFFFF;
-//         &:hover{
-//             opacity: 1;
-//         }
-//     }
-// }
+.s-breadcrumbs{
+    background-color: $brand-light-blue;
+    padding: 1.5rem 0px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            li{
+                position: relative;
+                &:not(:last-child){
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        right: -20px;
+                        top: 4px;
+                        width: 10px;
+                        height: 10px;
+                        background: url("../assets/icons/icon-arrow-breadcrumb.svg") no-repeat center center;
+                    }
+                }
+                a{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    line-height: 130%;
+                    letter-spacing: -0.04em;
+                    color: $grey-400;
+                    transition: all 0.3s;
+                }
+                &:hover{
+                    a{
+                        color: $grey-600;
+                    }
+                }
+            }
+        }
+        a{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 130%;
+            letter-spacing: -0.04em;
+            color: $grey-400;
+            transition: all 0.3s;
+            i{
+                margin-right: 1.5rem;
+            }
+            &:hover{
+                color: $grey-600;
+            }
+        }
+    }
+}
