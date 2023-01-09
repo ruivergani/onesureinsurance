@@ -1,4 +1,13 @@
 // MT Product Page
+.sm-text-product{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.12em;
+    color: #868E96;
+    text-transform: uppercase;
+}
 .s-breadcrumbs{
     background-color: $brand-light-blue;
     padding: 1.5rem 0px;
@@ -52,6 +61,128 @@
             }
             &:hover{
                 color: $grey-600;
+            }
+        }
+    }
+}
+.s-hero-product{
+    padding-top: 7rem;
+    background: url('../assets/bg/bg-product.jpg') no-repeat center center;
+    background-size: cover;
+    height: 55rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .product{
+            width: 100%;
+            max-width: 111.5rem;
+            background-color: $white;
+            border-radius: 0.6rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 6rem;
+            padding: 4rem 5rem;
+            .left-text{
+                width: 100%;
+                max-width: 44.6rem;
+                display: flex;
+                flex-direction: column;
+                h1{
+                    width: 100%;
+                    max-width: 41rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 112%;
+                    letter-spacing: -1px;
+                    color: $grey-500;
+                    margin-top: 1.5rem;
+                    margin-bottom: 3rem;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                    padding-bottom: 3.5rem;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5rem;
+                        img{
+                            width: 100%;
+                            max-width: 2rem;
+                        }
+                        p{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.6rem;
+                            line-height: 1.9rem;
+                            color: #363843;
+                        }
+                    }
+                }
+                .btn{
+                    margin: 0 auto;
+                }
+            }
+            .right-text{
+                width: 100%;
+                max-width: 44.6rem;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                flex-direction: column;
+                h2{
+                    width: 100%;
+                    max-width: 41rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 112%;
+                    letter-spacing: -1px;
+                    color: $grey-500;
+                    margin-top: 1.5rem;
+                    margin-bottom: 3rem;
+                    span{
+                        color: $brand-blue;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 700;
+                        font-size: 3rem;
+                        line-height: 112%;
+                        text-align: right;
+                        letter-spacing: -1px;
+                        margin-left: 0.5rem;
+                    }
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1.5rem;
+                    flex-direction: column;
+                    padding-bottom: 2.8rem;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 1.5rem;
+                        img{
+                            width: 100%;
+                            max-width: 4rem;
+                        }
+                        p{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.6rem;
+                            line-height: 1.9rem;
+                            color: #363843;
+                        }
+                    }
+                }
+                button{
+                    margin: 0 auto;
+                    gap: 1.5rem;
+                }
             }
         }
     }
