@@ -9,6 +9,7 @@
         @include flex(column, flex-start, flex-start);
         .heading{
             width: 100%;
+            max-width: 82rem;
             h1{
                 font-family: 'IBM Plex Sans', sans-serif;
                 font-weight: 700;
@@ -30,6 +31,7 @@
         }
         ul{
             width: 100%;
+            max-width: 85rem;
             margin-top: 5.5rem;
             display: flex;
             align-items: flex-start;

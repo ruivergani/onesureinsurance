@@ -1714,6 +1714,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
 }
 .s-hero .container .heading {
   width: 100%;
+  max-width: 82rem;
 }
 .s-hero .container .heading h1 {
   font-family: "IBM Plex Sans", sans-serif;
@@ -1734,6 +1735,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
 }
 .s-hero .container ul {
   width: 100%;
+  max-width: 85rem;
   margin-top: 5.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
