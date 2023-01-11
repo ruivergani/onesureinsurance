@@ -376,15 +376,26 @@
     }
     
 }
+.s-logos {
+    padding-bottom: 7.7rem;
+}
 // Section Content
 .s-content{
     padding-bottom: 9rem;
+    position: relative;
     .container{
         .js-nav-product{
             display: flex;
             align-items: flex-start;
             gap: 30px;
-            padding-bottom: 8rem;
+            padding-bottom: 3rem;
+            margin-bottom: 4rem;
+            position: sticky;
+            background-color: $white;
+            top: 150px;
+            padding-top: 3rem;
+            z-index: 2019;
+            left: 0;
             li{
                 a{
                     p{
@@ -410,6 +421,7 @@
         }
         .tab-product-content{
             .text-content{
+                padding-top: 1rem;
                 display: none; // Hide for tab navigation only
                 &.active{
                     display: block;
@@ -475,7 +487,6 @@
     }
     
 }
-
 // Section Cover
 .s-cover{
     padding-bottom: 9rem;
