@@ -17,12 +17,15 @@
 // })
 
 // Script for the FAQs open
-const question = document.querySelector('.js-question');
+const question = document.querySelectorAll('.js-question'); // all cards question
 if(question){ // Check if the question exists or not
-  question.addEventListener('click', () => {
-    question.parentElement.classList.toggle('active');
+  question.forEach(function(event){
+    event.addEventListener('click', () => {
+      event.parentElement.classList.toggle('active');
+    });
   });
 }
+
 // Script for Swipper Slide Logos
 var swiper = new Swiper(".slide-logos", {
   slidesPerView: 1,
