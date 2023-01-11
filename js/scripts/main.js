@@ -16,6 +16,28 @@
 //    html.classList.remove('show-modal'); // selecting 
 // })
 
+// Script for the Tabs
+const allFilters = document.querySelectorAll('.js-nav-product li a');
+const tabPane = document.querySelectorAll('.text-content');
+if(allFilters && tabPane){
+  // get the click of the nav for the tabs
+  allFilters.forEach((filter, index) =>
+    filter.addEventListener('click', (Event) => {
+      Event.preventDefault();
+      // remove active from all others
+      allFilters.forEach(item => {
+        item.classList.remove('active');
+      })
+      tabPane.forEach(item => {
+        item.classList.remove('active');
+      })
+      // add active when click
+      tabPane[index].classList.add('active'); // link the index from the nav to the tab
+      filter.classList.add('active'); // add active to the nav buttons
+    })
+  );
+}
+
 // Script for the FAQs open
 const question = document.querySelectorAll('.js-question'); // all cards question
 if(question){ // Check if the question exists or not
