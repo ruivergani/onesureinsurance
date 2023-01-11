@@ -637,3 +637,34 @@
         }
     }
 }
+// Section Articles
+.s-articles{
+    background-color: $brand-light-blue;
+    padding: 9rem 0rem;
+    .container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        .text-top{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h4{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 120%;
+                color: $grey-600;
+            }
+        }
+        .article-cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 0px 36px;
+            width: 100%;
+        }
+    }
+}
