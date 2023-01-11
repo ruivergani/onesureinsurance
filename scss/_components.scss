@@ -338,6 +338,8 @@
     background-color: $white;
     border-bottom-left-radius: 0.8rem;
     border-bottom-right-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
     transition: all .3s ease-in-out;
     &:hover{
         .image{
