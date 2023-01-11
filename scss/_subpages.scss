@@ -376,7 +376,105 @@
     }
     
 }
-
+// Section Content
+.s-content{
+    padding-bottom: 9rem;
+    .container{
+        .js-nav-product{
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            padding-bottom: 8rem;
+            li{
+                a{
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 175%;
+                        color: $grey-400;
+                        transition: all .3s;
+                        padding-bottom: 10px;
+                        &:hover{
+                            color: $brand-dark-blue;
+                        }
+                    }
+                    &.active{
+                        p{
+                            border-bottom: 2px solid rgba(0, 52, 120, 0.3);
+                        }
+                    }
+                    
+                }
+            }
+        }
+        .tab-product-content{
+            .text-content{
+                display: none; // Hide for tab navigation only
+                &.active{
+                    display: block;
+                    animation: fadeUp .4s forwards;
+                }
+                width: 100%;
+                blockquote{
+                    p{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.8rem;
+                        line-height: 175%;
+                        color: $grey-300;
+                        margin-bottom: 0px;
+                    }
+                    margin-bottom: 4rem;
+                    border-left: 2px solid rgba(92, 31, 166, 0.15);
+                    padding-left: 2.4rem;
+                }
+                h1,
+                h2,
+                h3,
+                h4, 
+                h5,
+                h6{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 120%;
+                    color: $grey-600;
+                    margin-bottom: 2rem;
+                    margin-top: 3rem;
+                }
+                p{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 175%;
+                    color: $grey-400;
+                    margin-bottom: 1.6rem;
+                }
+                ul{
+                    margin-bottom: 4rem;
+                    li{
+                        margin-bottom: 1.2rem;
+                        display: flex;
+                        align-items: flex-start;
+                        &:before{
+                            content: "";
+                            width: 4px;
+                            height: 4px;
+                            display: inline-block;
+                            background-color: #9995A6;
+                            margin-top: 1rem;
+                            margin-right: 1.6rem;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
 
 // Section Cover
 .s-cover{
