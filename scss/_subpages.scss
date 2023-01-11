@@ -545,3 +545,93 @@
         }
     }
 }
+// Section FAQs
+.s-faqs{
+    padding-bottom: 9rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 9rem;
+        h4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 120%;
+            color: $grey-600;
+        }
+        .b-container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+            .question{
+                width: 100%;
+                min-width: 90rem; // change responsive
+                background-color: $white;
+                transition: all .3s;
+                border: 1px solid rgba(240, 244, 249, 0.9);
+                border-radius: 0.6rem;
+                .title{
+                    width: 100%;
+                    background-color: $brand-light-blue;
+                    height: 8rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                    border-radius: 4px;
+                    transition: all .3s;
+                    cursor: pointer;
+                    strong{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 1.8rem;
+                        line-height: 130%;
+                        color: $grey-600;
+                    }
+                    i{
+                        font-size: 20px;
+                        color: $brand-blue;
+                        transition: transform .3s;
+                    }
+                    &:hover{
+                        background-color: rgba(0, 69, 158, 0.2);
+                    }
+                }
+                p{
+                    max-width: 90rem;
+                    padding-bottom: 2rem;
+                    display: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 150%;
+                    color: $grey-500;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
+                    border-radius: 4px;
+                    padding-top: 2rem;
+                }
+                // JS open FAQs
+                &.active{
+                    height: auto;
+                    .title{
+                        strong{
+                            color: $brand-blue;
+
+                        }
+                        i{
+                            transform: rotate(180deg);
+                        }
+                    }
+                    p{
+                        display: block;
+                        animation: fadeLeft .3s forwards
+                    }
+                }
+            }
+        }
+    }
+}
