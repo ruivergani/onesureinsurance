@@ -53,10 +53,6 @@ if (question) {
 var swiper = new Swiper(".slide-logos", {
   slidesPerView: 1,
   spaceBetween: 32,
-  pagination: {
-    el: ".s-logos .container .swiper-pagination",
-    clickable: true,
-  },
   breakpoints: {
     320: {
       slidesPerView: 1,

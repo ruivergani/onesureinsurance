@@ -630,25 +630,26 @@
 
 }
 .s-logos {
-    display: none;
     padding-bottom: 7.7rem;
+    @media (max-width: 768px){
+        padding-bottom: 4rem;
+    }
 }
 // Section Content
 .s-content{
-    display: none;
     padding-bottom: 9rem;
     position: relative;
     .container{
         .js-nav-product{
             display: flex;
             align-items: flex-start;
-            gap: 30px;
+            gap: 3rem;
+            padding-top: 3rem;
             padding-bottom: 3rem;
             margin-bottom: 4rem;
             position: sticky;
             background-color: $white;
             top: 150px;
-            padding-top: 3rem;
             z-index: 2019;
             left: 0;
             li{
@@ -740,7 +741,74 @@
         }
         
     }
-    
+    // Responsive
+    @media (max-width: 768px){
+        padding-bottom: 4rem;
+        .container{
+            .js-nav-product{
+                overflow-x: scroll;
+                width: 100%;
+                margin-bottom: 3rem;
+                top: 13.8rem;
+                padding-top: 3rem;
+                padding-bottom: 2rem;
+                border-bottom: 2px solid $brand-light-blue;
+                li{
+                    flex: 1;
+                    min-width: 45% !important;
+                    a{
+                        p{
+                            font-size: 1.6rem;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+            .tab-product-content{
+                .text-content{
+                    blockquote{
+                        p{
+                            font-size: 1.6rem;
+                            line-height: 150%;
+                        }
+                        margin-bottom: 2rem;
+                        padding-left: 2rem;
+                    }
+                    h1,
+                    h2,
+                    h3,
+                    h4, 
+                    h5,
+                    h6{
+                        font-size: 24px;
+                        margin-bottom: 1rem;
+                        margin-top: 1.5rem;
+                    }
+                    p{
+                        font-size: 16px;
+                        line-height: 150%;
+                        margin-bottom: 1.6rem;
+                    }
+                    ul{
+                        margin-bottom: 2rem;
+                        li{
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 320px){
+        .container{
+            .js-nav-product{
+                li{
+                    flex: 1;
+                    max-width: 55% !important;
+                }
+            }
+        }
+    }
 }
 // Section Cover
 .s-cover{
