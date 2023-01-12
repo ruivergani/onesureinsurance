@@ -69,6 +69,14 @@
             }
         }
     }
+    // Responsive
+    @media(max-width:425px){
+        .container{
+            .back{
+                display: none;
+            }
+        }
+    }
 }
 // Section Product
 .s-hero-product{
@@ -192,6 +200,7 @@
             }
         }
     }
+    display: none;
 }
 // Section Trustpilot
 .s-trustpilot-product{
@@ -213,10 +222,11 @@
             color: $grey-600;
         }
     }
-
+    display: none;
 }
 // Section Motor Trade Slide
 .s-slide-product{
+    display: none;
     background-color: $brand-light-blue;
     padding: 9rem 0rem;
     .container{
@@ -283,6 +293,7 @@
 }
 // Section Newsletter
 .s-newsletter{
+    display: none;
     padding-top: 9rem;
     padding-bottom: 9rem;
     .container{
@@ -293,9 +304,9 @@
 }
 // Section Bespoke
 .s-bespoke{
-    background: url(../assets/bg/bg-bespoke.jpg) no-repeat;
+    display: none;
+    background: url(../assets/bg/bg-bespoke.jpg) no-repeat left top;
     padding: 9rem 0px;
-
     .text-top{
         display: flex;
         align-items: center;
@@ -374,13 +385,18 @@
             border-radius: 0.8rem;
         }
     }
-    
+    // Responsive
+    @media (min-width: 1600px){
+        background-size: cover;
+    }
 }
 .s-logos {
+    display: none;;
     padding-bottom: 7.7rem;
 }
 // Section Content
 .s-content{
+    display: none;
     padding-bottom: 9rem;
     position: relative;
     .container{
@@ -489,6 +505,7 @@
 }
 // Section Cover
 .s-cover{
+    display: none;
     padding-bottom: 9rem;
     .container{
         padding-top: 9rem;
@@ -551,6 +568,7 @@
 }
 // Section Why Us
 .s-why{
+    display: none;
     border-top: 0.5px solid rgba(0, 52, 120, 0.5);
     border-bottom: 0.5px solid rgba(0, 52, 120, 0.5);
     padding: 9rem 0rem;
@@ -598,6 +616,7 @@
 }
 // Section Optional Extras
 .s-extras-opt{
+    display: none;
     padding: 9rem 0px;
     .container{
         background-color: $brand-light-blue;
@@ -656,6 +675,7 @@
 }
 // Section FAQs
 .s-faqs{
+    display: none;
     padding-bottom: 9rem;
     .container{
         display: flex;
@@ -748,6 +768,7 @@
 }
 // Section Articles
 .s-articles{
+    display: none;
     background-color: $brand-light-blue;
     padding: 9rem 0rem;
     .container{
