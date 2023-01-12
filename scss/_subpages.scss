@@ -1076,7 +1076,6 @@
 }
 // Section FAQs
 .s-faqs{
-    display: none;
     padding-bottom: 9rem;
     .container{
         display: flex;
@@ -1095,9 +1094,10 @@
             align-items: center;
             flex-direction: column;
             gap: 3rem;
+            width: 100%;
+            max-width: 80rem;
             .question{
                 width: 100%;
-                min-width: 900px; // change responsive
                 background-color: $white;
                 transition: all .3s;
                 border: 1px solid rgba(240, 244, 249, 0.9);
@@ -1134,6 +1134,7 @@
                     max-width: 899px;
                     padding-bottom: 2rem;
                     display: none;
+                    pointer-events: none;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 400;
                     font-size: 1.6rem;
@@ -1160,8 +1161,26 @@
                     }
                     p{
                         display: block;
+                        pointer-events: all;
                         animation: fadeLeft .3s forwards
                     }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 768px){
+        padding-bottom: 4rem;
+        .container{
+            gap: 3rem;
+            h4{
+                font-size: 28px;
+                text-align: center;
+            }
+            .b-container{
+                gap: 2rem;
+                .question{
+                    min-width: 320px;
                 }
             }
         }
