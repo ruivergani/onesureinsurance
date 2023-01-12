@@ -200,7 +200,82 @@
             }
         }
     }
-    display: none;
+    // Responsive
+    @media (max-width: 991px){
+        padding-top: 4rem;
+    }
+    @media (max-width: 768px){
+        .container{
+            .product{
+                flex-direction: column;
+                gap: 2rem;
+                padding: 2rem 3rem;
+                .right-text{
+                    max-width: 100%;
+                    align-items: center;
+                    text-align: center;
+                }
+                .img-line, .left-text{
+                    display: none;
+                }
+            }
+
+        }
+    }
+    @media (max-width: 480px){
+        height: 41rem;
+        padding-top: 3rem;
+        .container{
+            .product{
+               padding: 2rem;
+               .right-text{
+                    .sm-text-product {
+                        font-size: 1.3rem;
+                    }
+                    h2{
+                        font-size: 2.8rem;
+                        max-width: 100%;
+                        margin-bottom: 1.5rem;
+                    }
+                    ul{
+                        padding-bottom: 2rem;
+                        align-items: flex-start;
+                        gap: 1rem;
+                        li{
+                            gap: 1rem;
+                        }
+                    }
+                    button{
+                        gap: 1rem;
+                        padding: 0px 2rem;
+                    }
+               }
+            }
+        }
+    }
+    @media (max-width: 320px){
+        height: 40rem;
+        .container{
+            .product{
+                .right-text{
+                    ul{
+                        li{
+                            p{
+                                font-size: 1.6rem;
+                            }
+                            span{
+                                color: $brand-blue;
+                                font-weight: 500;
+                            }
+                            img{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 // Section Trustpilot
 .s-trustpilot-product{
