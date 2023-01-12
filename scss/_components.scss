@@ -402,6 +402,19 @@
             }
         }
     }
+    // Responsive
+    @media (max-width: 600px){
+        height: 10rem;
+        .image{
+            display: none;
+        }
+        .info{
+            padding-left: 2rem;
+            p{
+                display: none;
+            }
+        }
+    }
 }
 .card-product-lg{
     display: flex;

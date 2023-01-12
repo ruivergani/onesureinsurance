@@ -322,10 +322,12 @@
             gap: 2rem;
         }
     }
+    @media (max-width: 991px){
+        padding: 6rem 0px;
+    }
 }
 // Section Motor Trade Slide
 .s-slide-product{
-    display: none;
     background-color: $brand-light-blue;
     padding: 9rem 0rem;
     .container{
@@ -334,6 +336,9 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            h6{
+                display: none;
+            }
             h4{
                 width: 100%;
                 max-width: 42.3rem;
@@ -388,6 +393,61 @@
             overflow: hidden;
             position: relative;
         }
+    }
+    // Responsive
+    @media (max-width: 1400px){
+        padding: 6rem 0px;
+        .container{
+            .top{
+                .ctrl-slide{
+                    max-width: 25rem;
+                    .ctrl{
+                        gap: 2rem;
+                        .btn-prev{
+                            margin-top: -0.8rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+    padding: 4rem 0px;
+    .container{
+        .top{
+            padding-bottom: 3rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            h4{
+                font-size: 28px;
+                max-width: 100%;
+                text-align: center;
+            }
+            h6{
+                display: block;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 2.4rem;
+                line-height: 112%;
+                text-align: center;
+                letter-spacing: -1px;
+                color: $grey-300;
+                opacity: 0.8;
+            }
+            .ctrl-slide{
+                max-width: 100%;
+                margin-top: 1rem;
+                .ctrl{
+                    gap: 2rem;
+                    .btn-prev{
+                        margin-top: -0.8rem !important;
+                    }
+                }
+            }
+        }
+    }
     }
 }
 // Section Newsletter

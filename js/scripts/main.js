@@ -92,20 +92,24 @@ var slide_product = new Swiper(".slide-product", {
     // mobile
     275: {
       slidesPerView: 1.1, // part of the other slide
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     // tablet
-    560: {
-      slidesPerView: 1.5,
+    320: {
+      slidesPerView: 1.4,
+      spaceBetween: 15,
+    },
+    480: {
+      slidesPerView: 2.2,
+      spaceBetween: 15,
     },
     768: {
-      slidesPerView: 2.1,
+      slidesPerView: 3,
+      spaceBetween: 15,
     },
     991: {
-      slidesPerView: 2.5,
-    },
-    1150: {
-      slidesPerView: 3.5,
+      slidesPerView: 4,
+      spaceBetween: 15,
     },
     1200: {
       slidesPerView: 4,
