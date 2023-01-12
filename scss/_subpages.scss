@@ -966,7 +966,6 @@
 }
 // Section Optional Extras
 .s-extras-opt{
-    display: none;
     padding: 9rem 0px;
     .container{
         background-color: $brand-light-blue;
@@ -975,6 +974,9 @@
         flex-direction: column;
         align-items: center;
         padding: 8rem 0rem;
+        h6{
+            display: none;
+        }
         h4{
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -991,7 +993,6 @@
                 a{
                     display: flex;
                     gap: 2rem;
-
                     i{
                         font-size: 3rem;
                         color: $brand-dark-blue;
@@ -1019,6 +1020,34 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 768px){
+        padding: 4rem 0px;
+        .container{
+            border-radius: 0px;
+            background-color: $white;
+            h6{
+                display: block;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 2.4rem;
+                line-height: 112%;
+                text-align: center;
+                letter-spacing: -1px;
+                color: $grey-300;
+                opacity: 0.8;
+            }
+            h4{
+                margin-bottom: 3rem;
+                font-size: 28px;
+                text-align: center;
+            }
+            ul{
+                grid-template-columns: 1fr;
+                gap: 30px 0px;
             }
         }
     }
