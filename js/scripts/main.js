@@ -1,20 +1,23 @@
 // Configure the modal
-// const btnOpenModal = document.querySelector('.js-open-modal');
-// const btnCloseModal = document.querySelector('.js-close');
+const btnOpenModal = document.querySelector('.js-open-modal');
+const btnCloseModal = document.querySelector('.js-close');
 
-// btnOpenModal.addEventListener('click', (Event) => {
-//   Event.preventDefault();
-//   let html = document.documentElement;
-//    // add the class to the html (not to the specific element)
-//    html.classList.add('show-modal'); // selecting
-// })
-
-// btnCloseModal.addEventListener('click', (Event) => {
-//   Event.preventDefault();
-//   let html = document.documentElement;
-//    // add the class to the html (not to the specific element)
-//    html.classList.remove('show-modal'); // selecting
-// })
+if(btnOpenModal){
+  btnOpenModal.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.documentElement;
+     // add the class to the html (not to the specific element)
+     html.classList.add('show-modal'); // selecting
+  })
+}
+if (btnCloseModal){
+  btnCloseModal.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.documentElement;
+     // add the class to the html (not to the specific element)
+     html.classList.remove('show-modal'); // selecting
+  })
+}
 
 // Script for the Tab Navigation
 const allFilters = document.querySelectorAll(".js-nav-product li a");
