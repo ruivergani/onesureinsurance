@@ -205,6 +205,7 @@
         padding-top: 4rem;
     }
     @media (max-width: 768px){
+        height: 48rem;
         .container{
             .product{
                 flex-direction: column;
@@ -297,7 +298,24 @@
             color: $grey-600;
         }
     }
-    display: none;
+    // Responsive
+    @media (max-width: 480px){
+        padding: 4rem 0px;
+        .container{
+            max-width: 32rem;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 40px rgba(122, 119, 134, 0.1);
+            border-radius: 6px;
+            height: 22rem;
+            justify-content: center;
+            h3{
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 768px){
+
+    }
 }
 // Section Motor Trade Slide
 .s-slide-product{
