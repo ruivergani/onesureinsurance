@@ -70,7 +70,7 @@
         }
     }
     // Responsive
-    @media(max-width:425px){
+    @media(max-width:480px){
         .container{
             .back{
                 display: none;
@@ -452,6 +452,7 @@
 }
 // Section Newsletter
 .s-newsletter{
+    display: none;
     padding-top: 9rem;
     padding-bottom: 9rem;
     .container{
@@ -549,7 +550,7 @@
     }
 }
 .s-logos {
-    display: none;;
+    display: none;
     padding-bottom: 7.7rem;
 }
 // Section Content
@@ -926,7 +927,6 @@
 }
 // Section Articles
 .s-articles{
-    display: none;
     background-color: $brand-light-blue;
     padding: 9rem 0rem;
     .container{
@@ -947,12 +947,58 @@
                 line-height: 120%;
                 color: $grey-600;
             }
+            h6{
+                display: none;
+            }
         }
         .article-cards{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 0px 36px;
             width: 100%;
+        }
+    }
+    // Responsive
+    @media (max-width: 991px){
+        padding: 4rem 0px;
+        .container{
+            .article-cards{
+                grid-gap: 0px 15px;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            gap: 2rem;
+            .text-top{
+                flex-direction: column;
+                justify-content: center;
+                gap: 1rem;
+                p{
+                    display: none;
+                }
+                h6{
+                    display: block;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    line-height: 112%;
+                    text-align: center;
+                    letter-spacing: -1px;
+                    color: $grey-300;
+                    opacity: 0.8;
+                }
+                h4{
+                    font-size: 28px;
+                }
+            }
+            .article-cards{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 3rem;
+                justify-content: center;
+            }
         }
     }
 }

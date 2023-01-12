@@ -121,6 +121,23 @@
             }
         }
     }
+    // Responsive
+    @media (max-width: 480px){
+        align-items: center;
+        .image{
+            height: 17rem;
+        }
+        .info{
+            text-align: center;
+            h6{
+                font-size: 1.6rem;
+            }
+            ul{
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 }
 .card-type-default{
     position: relative;
