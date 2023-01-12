@@ -452,13 +452,15 @@
 }
 // Section Newsletter
 .s-newsletter{
-    display: none;
     padding-top: 9rem;
     padding-bottom: 9rem;
     .container{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    @media (max-width: 768px){
+        padding: 4rem 0px;
     }
 }
 // Section Bespoke
@@ -713,9 +715,6 @@
                     img{
                         width: 100%;
                         max-width: 2rem;
-                    }
-                    p{
-                        
                     }
                 }
             }
