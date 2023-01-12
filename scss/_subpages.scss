@@ -439,6 +439,9 @@
             .ctrl-slide{
                 max-width: 100%;
                 margin-top: 1rem;
+                .swiper-pagination{
+                    display: none;
+                }
                 .ctrl{
                     gap: 2rem;
                     .btn-prev{
