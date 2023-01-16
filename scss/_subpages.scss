@@ -643,10 +643,14 @@
         padding-bottom: 4rem;
     }
 }
-// Section Content
-.s-content{
-    padding-bottom: 9rem;
-    position: relative;
+// Table of Contents
+.s-table-contents{
+    // Sticky Position
+    top: 150px;
+    position: sticky;
+    width: 100%;
+    z-index: 2019;
+    left: 0;
     .container{
         .js-nav-product{
             display: flex;
@@ -655,11 +659,7 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
             margin-bottom: 4rem;
-            position: sticky;
             background-color: $white;
-            top: 150px;
-            z-index: 2019;
-            left: 0;
             li{
                 a{
                     p{
@@ -683,14 +683,31 @@
                 }
             }
         }
+        // Mobile Dropdown configuration
+        .select-custom{
+           display: none; // hide normal view
+        }
+    }
+    // Responsive
+    @media (max-width: 1300px){
+        .container{
+            .js-nav-product{
+                top: 140px;
+            }
+        }
+    }
+    @media (max-width: 560px){
+
+    }
+}
+// Section Content
+.s-content{
+    scroll-margin-top: 320px;
+    padding-bottom: 9rem;
+    .container{
         .tab-product-content{
             .text-content{
                 padding-top: 1rem;
-                display: none; // Hide for tab navigation only
-                &.active{
-                    display: block;
-                    animation: fadeUp .4s forwards;
-                }
                 width: 100%;
                 blockquote{
                     p{
@@ -746,39 +763,12 @@
                     }
                 }
             }
-        }
-        
+        }  
     }
     // Responsive
-    @media (max-width: 1300px){
-        .container{
-            .js-nav-product{
-                top: 140px;
-            }
-        }
-    }
     @media (max-width: 768px){
         padding-bottom: 4rem;
         .container{
-            .js-nav-product{
-                overflow-x: scroll;
-                width: 100%;
-                margin-bottom: 3rem;
-                top: 13.8rem;
-                padding-top: 3rem;
-                padding-bottom: 2rem;
-                border-bottom: 2px solid $brand-light-blue;
-                li{
-                    flex: 1;
-                    min-width: 45% !important;
-                    a{
-                        p{
-                            font-size: 1.6rem;
-                            line-height: 150%;
-                        }
-                    }
-                }
-            }
             .tab-product-content{
                 .text-content{
                     blockquote{
@@ -814,19 +804,11 @@
             }
         }
     }
-    @media (max-width: 320px){
-        .container{
-            .js-nav-product{
-                li{
-                    flex: 1;
-                    max-width: 55% !important;
-                }
-            }
-        }
-    }
+    
 }
 // Section Cover
 .s-cover{
+    scroll-margin-top: 320px;
     border-top: 2px solid #F0F4F9;
     padding: 9rem 0px;
     .container{
@@ -910,6 +892,7 @@
 }
 // Section Why Us
 .s-why{
+    scroll-margin-top: 320px;
     border-top: 0.5px solid rgba(0, 52, 120, 0.5);
     border-bottom: 0.5px solid rgba(0, 52, 120, 0.5);
     padding: 9rem 0rem;
@@ -981,7 +964,8 @@
 }
 // Section Optional Extras
 .s-extras-opt{
-    padding: 9rem 0px;
+    padding-bottom: 9rem;
+    scroll-margin-top: 320px;
     .container{
         background-color: $brand-light-blue;
         border-radius: 1rem;
@@ -1084,7 +1068,8 @@
 }
 // Section FAQs
 .s-faqs{
-    padding-bottom: 9rem;
+    scroll-margin-top: 320px;
+    padding: 9rem 0px;
     .container{
         display: flex;
         flex-direction: column;
@@ -1196,6 +1181,7 @@
 }
 // Section Articles
 .s-articles{
+    scroll-margin-top: 320px;
     background-color: $brand-light-blue;
     padding: 9rem 0rem;
     .container{
