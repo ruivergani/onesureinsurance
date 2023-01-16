@@ -1024,7 +1024,7 @@
     }
     // Responsive
     @media (max-width: 768px){
-        padding: 4rem 0px;
+        padding-bottom: 4rem;
         .container{
             border-radius: 0px;
             background-color: $white;
@@ -1163,7 +1163,7 @@
     }
     // Responsive
     @media (max-width: 768px){
-        padding-bottom: 4rem;
+        padding: 4rem 0px;
         .container{
             gap: 3rem;
             h4{
