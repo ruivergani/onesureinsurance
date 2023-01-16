@@ -651,6 +651,7 @@
     width: 100%;
     z-index: 2019;
     left: 0;
+    background-color: $white;
     .container{
         // Navigation Desktop
         .js-nav-product{
@@ -660,7 +661,6 @@
             padding-top: 3rem;
             padding-bottom: 3rem;
             margin-bottom: 4rem;
-            background-color: $white;
             li{
                 a{
                     p{
@@ -691,11 +691,7 @@
     }
     // Responsive
     @media (max-width: 1300px){
-        .container{
-            .js-nav-product{
-                top: 140px;
-            }
-        }
+        top: 140px;
     }
     @media (max-width: 800px){
         position: initial; // reset the sticky position (mobile not recommended)
@@ -896,7 +892,7 @@
 }
 // Section Cover
 .s-cover{
-    scroll-margin-top: 320px;
+    scroll-margin-top: 21rem;
     border-top: 2px solid #F0F4F9;
     padding: 9rem 0px;
     .container{
@@ -1156,7 +1152,7 @@
 }
 // Section FAQs
 .s-faqs{
-    scroll-margin-top: 320px;
+    scroll-margin-top: 22rem;
     padding: 9rem 0px;
     .container{
         display: flex;

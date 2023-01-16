@@ -21,11 +21,26 @@ if (btnCloseModal){
 
 // Script for the FAQs open
 const question = document.querySelectorAll(".js-question"); // all cards question
+// Check if the question exists or not
 if (question) {
-  // Check if the question exists or not
   question.forEach(function (event) {
     event.addEventListener("click", () => {
       event.parentElement.classList.toggle("active");
+    });
+  });
+}
+
+// Script for Table of Contents
+const itemContent = document.querySelectorAll('.js-nav-product li a'); // all items from table content
+if(itemContent){
+  itemContent.forEach(function (event) {
+    event.addEventListener("click", () => {
+      // remove active from all others
+      itemContent.forEach(item => {
+        item.classList.remove("active");
+      })
+      // add active when click
+      event.classList.add("active");
     });
   });
 }
