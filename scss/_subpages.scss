@@ -70,7 +70,7 @@
         }
     }
     // Responsive
-    @media(max-width:480px){
+    @media(max-width:600px){
         .container{
             .back{
                 display: none;
@@ -108,7 +108,6 @@
                 }
                 h1{
                     width: 100%;
-                    max-width: 41rem;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 700;
                     font-size: 30px;
@@ -164,6 +163,7 @@
                     color: $grey-500;
                     margin-top: 1.5rem;
                     margin-bottom: 3rem;
+                    text-align: right;
                     span{
                         color: $brand-blue;
                         font-family: 'Poppins', sans-serif;
@@ -220,6 +220,9 @@
                     max-width: 100%;
                     align-items: center;
                     text-align: center;
+                    h2{
+                        text-align: center;
+                    }
                 }
                 .img-line, .left-text{
                     display: none;
