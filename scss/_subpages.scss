@@ -652,6 +652,7 @@
     z-index: 2019;
     left: 0;
     .container{
+        // Navigation Desktop
         .js-nav-product{
             display: flex;
             align-items: flex-start;
@@ -696,8 +697,95 @@
             }
         }
     }
-    @media (max-width: 560px){
-
+    @media (max-width: 800px){
+        position: initial; // reset the sticky position (mobile not recommended)
+        .container{
+            .js-nav-product{
+                display: none;
+            }
+            .select-custom{
+                display: block;
+                position: relative;
+                margin-bottom: 2rem;
+                // make active the dropdown select option
+                &.active{
+                    .item-selected{
+                        border-radius: 1rem 1rem 0 0;
+                    }
+                    .dropdown-select{
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+                }
+                // main item 
+                .item-selected{
+                    cursor: pointer;
+                    width: 100%;
+                    height: 5.6rem;
+                    border: 1px solid #a0afba;
+                    border-radius: 1rem;
+                    background: url("../assets/icons/arrow-down-select.svg") no-repeat right 2.4rem center; // position the arrow in the right side
+                    padding: 0 2rem;
+                    display: flex; 
+                    align-items: center;
+                    span{
+                        color: #7a7d80;
+                        opacity: 0.6;
+                        font-size: 1.6rem;
+                        margin-right: 0.4rem;
+                    }
+                    strong{
+                        font-size: 1.6rem;
+                        color: #7a7d80;
+                        font-weight: 600;
+                    }   
+                }
+                .dropdown-select{
+                    position: absolute;
+                    z-index: 2;
+                    width: 100%;
+                    height: 22.3rem;
+                    border: 1px solid #a0afba;
+                    background-color: white;
+                    border-top: 0;
+                    padding: 21px;
+                    top: 5.6rem;
+                    // configuration for JS (open/close dropdown)
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all .3s;
+                    // hide all elements which are not part of the dropdown
+                    overflow-y: auto; // barra the rolagem
+                     // customize the bar y
+                     &::-webkit-scrollbar-track{
+                        // the whole area
+                        background-color: transparent;
+                    }
+                    &::-webkit-scrollbar{
+                        width: 5px;
+                        background-color: transparent;
+                    }
+                    &::-webkit-scrollbar-thumb{
+                        // the scrollbar itself
+                        background-color: $brand-blue;
+                        border-radius: 0.5rem;
+                    }
+                    li{
+                        &:first-child{
+                            button{
+                                padding-top: 0px;
+                            }
+                        }
+                        button{
+                            padding: 1.2rem;
+                        }
+                        p{
+                            padding: 1.5rem 0px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // Section Content
