@@ -19,6 +19,13 @@ if (btnCloseModal){
   })
 }
 
+// Script for the Mobile Button
+const btnDropdownSelect = document.querySelector('.js-open-select-custom');
+const dropdownArea = document.querySelector('.select-custom');
+btnDropdownSelect.addEventListener('click', () => {
+  dropdownArea.classList.toggle('active');
+});
+
 // Script for the FAQs open
 const question = document.querySelectorAll(".js-question"); // all cards question
 // Check if the question exists or not
