@@ -463,7 +463,6 @@
         width: 100%;
         max-width: 37.2rem;
         flex: 1;
-        
         h4{
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -480,6 +479,44 @@
             color: $grey-500;
             margin-bottom: 3.5rem;
         }
+    }
+    // Responsive
+    @media (max-width: 991px){
+        height: 28rem;
+        border-radius: 2rem;
+        .image{
+            max-width: 30rem;
+            height: 28rem;
+        }
+        .info{
+            max-width: 50rem;
+            h4{
+                margin-bottom: 1rem;
+            }
+            p{
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0px;
+        text-align: center;
+        .image{
+            display: none;
+        }
+        .info{
+            max-width: 80%;
+            h4{
+                font-size: 2.8rem;
+            }
+            p{
+                line-height: 150%;
+                font-size: 16px;
+            }
+        }
+
     }
 }
 // Category title
