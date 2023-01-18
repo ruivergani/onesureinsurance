@@ -116,7 +116,7 @@ var slide_product = new Swiper(".slide-product", {
     },
   },
 });
-// Swiper Slide Products Page
+// Swiper Slide Van Page
 var slide_product = new Swiper(".slide-van", {
   slidesPerView: 4,
   spaceBetween: 32,
