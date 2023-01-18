@@ -154,6 +154,69 @@
             .right-content{
                 width: 100%;
                 max-width: 31.3rem;
+                display: flex;
+                gap: 4rem;
+                flex-direction: column;
+                .search{
+                    width: 100%;
+                    max-width: 100%;
+                }
+                .t-content{
+                    padding: 3rem;
+                    border: 1px solid #C6C5CE;
+                    border-radius: 0.4rem;
+                    .title-contents{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                        line-height: 150%;
+                        color: $brand-blue;
+                        margin-bottom: 4rem;
+                        text-transform: uppercase;
+                    }
+                    ul{
+                        width: 100%;
+                        margin-bottom: 4rem;
+                        padding-bottom: 4rem;
+                        position: relative;
+                        &:after{
+                            content: "";
+                            height: 2px;
+                            width: 100%;
+                            background: url("../assets/icons/line-topics.svg") no-repeat center center;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                        }
+                        li{
+                            margin-bottom: 1.6rem;
+                            display: flex;
+                            align-items: flex-start;
+                            a{
+                                span{
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 150%;
+                                    color: $grey-500;
+                                }
+                            }
+                            &:before{
+                                content: "";
+                                width: 4px;
+                                height: 4px;
+                                display: inline-block;
+                                background-color: #9995A6;
+                                margin-top: 1rem;
+                                margin-right: 1.6rem;
+                            }
+                        }
+                    }
+                    button{
+                        display: flex;
+                        gap: 1.5rem;
+                    }
+                }
             }
         }
     }
