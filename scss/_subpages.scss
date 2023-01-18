@@ -70,13 +70,21 @@
         }
     }
     // Responsive
-    @media(max-width:600px){
+    @media(max-width: 768px){
         .container{
+            align-items: center;
+            justify-content: center;
+            ul{
+                flex-direction: column;
+                gap: 1rem; 
+                align-items: center; 
+            }
             .back{
                 display: none;
             }
         }
     }
+
 }
 // Section Product
 .s-hero-product{
