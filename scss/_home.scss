@@ -44,6 +44,7 @@
                 background-color: $brand-light-blue;
                 border-radius: 0.4rem;
                 transition: all 0.3s ease-in-out;
+
                 a{
                     display: flex;
                     align-items: center;
@@ -526,8 +527,19 @@
             .image{
                 width: 100%;
                 max-width: 38.4rem;
+                border-radius: 1.2rem;
                 img{
                     width: 100%;
+                    transition: all .3s ease-in-out;
+                    object-fit: cover; // cover size img
+                    border-radius: 1.2rem;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.01);
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                    }
                 }
             }
             .text{
