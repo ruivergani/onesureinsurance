@@ -192,6 +192,7 @@
                             margin-bottom: 1.6rem;
                             display: flex;
                             align-items: flex-start;
+                            transition: all .3s;
                             a{
                                 span{
                                     font-family: 'Inter', sans-serif;
@@ -203,12 +204,19 @@
                             }
                             &:before{
                                 content: "";
-                                width: 4px;
+                                width: 8px;
                                 height: 4px;
                                 display: inline-block;
                                 background-color: #9995A6;
                                 margin-top: 1rem;
                                 margin-right: 1.6rem;
+                            }
+                            &:hover{
+                                a{
+                                    span{
+                                        color: $grey-600;
+                                    }
+                                }
                             }
                         }
                     }
@@ -236,6 +244,7 @@
                             display: flex;
                             align-items: flex-start;
                             margin-bottom: 1.6rem;
+                            transition: all .3s;
                             a{
                                 span{
                                     font-family: 'Inter', sans-serif;
@@ -247,12 +256,19 @@
                             }
                             &:before{
                                 content: "";
-                                width: 4px;
+                                width: 8px;
                                 height: 4px;
                                 display: inline-block;
                                 background-color: #9995A6;
                                 margin-top: 1rem;
                                 margin-right: 1.6rem;
+                            }
+                            &:hover{
+                                a{
+                                    span{
+                                        color: $grey-600;
+                                    }
+                                }
                             }
                         }
                     }
