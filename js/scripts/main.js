@@ -22,9 +22,11 @@ if (btnCloseModal){
 // Script for the Mobile Button
 const btnDropdownSelect = document.querySelector('.js-open-select-custom');
 const dropdownArea = document.querySelector('.select-custom');
-btnDropdownSelect.addEventListener('click', () => {
-  dropdownArea.classList.toggle('active');
-});
+if(btnDropdownSelect){
+  btnDropdownSelect.addEventListener('click', () => {
+    dropdownArea.classList.toggle('active');
+  });
+}
 
 // Script for the FAQs open
 const question = document.querySelectorAll(".js-question"); // all cards question
@@ -181,7 +183,7 @@ menuButton.addEventListener("click", () => {
 // Menu Header Change >20 scroll
 const header = document.getElementById("js-header");
 function fixedMenu() {
-  if (window.pageYOffset > 60) {
+  if (window.pageYOffset > 50) {
     header.classList.add("changeHeight");
   } else {
     header.classList.remove("changeHeight");
