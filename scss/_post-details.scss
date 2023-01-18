@@ -25,7 +25,7 @@
                 span{
                     font-family: 'Inter', sans-serif;
                     font-weight: 600;
-                    font-size: 14px;
+                    font-size: 15px;
                     line-height: 150%;
                     color: $grey-500;
                 }
@@ -46,6 +46,114 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.info-post-general{
+    .container{
+        h1{
+            width: 100%;
+            max-width: 104rem;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $grey-600;
+            text-transform: uppercase;
+            margin-bottom: 4rem;
+        }
+        .info-post-bottom{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .left-content{
+                width: 100%;
+                max-width: 83.2rem;
+                .image{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 3.3rem;
+                    margin-bottom: 4rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        max-width: 49rem;
+                        border-radius: 1rem;
+                        object-fit: cover;
+                    }
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.8rem;
+                        line-height: 175%;
+                        color: $grey-500;
+                    }
+                }
+                .content-post{
+                    margin-bottom: 15rem;
+                    width: 100%;
+                    blockquote{
+                        p{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.8rem;
+                            line-height: 175%;
+                            color: $grey-400;
+                            margin-bottom: 0px;
+                        }
+                        margin-bottom: 4rem;
+                        border-left: 2px solid rgba(92, 31, 166, 0.15);
+                        padding-left: 2.4rem;
+                    }
+                    h2,
+                    h3,
+                    h4, 
+                    h5,
+                    h6{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 600;
+                        font-size: 32px;
+                        line-height: 120%;
+                        color: $grey-500;
+                        margin-bottom: 2rem;
+                        margin-top: 2rem;
+                    }
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 175%;
+                        color: $grey-500;
+                        margin-bottom: 1.6rem;
+                    }
+                    ul{
+                        margin-bottom: 4rem;
+                        li{
+                            margin-bottom: 1.2rem;
+                            display: flex;
+                            align-items: flex-start;
+                            font-size: 18px;
+                            line-height: 175%;
+                            color: $grey-400;
+                            &:before{
+                                content: "";
+                                width: 4px;
+                                height: 4px;
+                                display: inline-block;
+                                background-color: #9995A6;
+                                margin-top: 1rem;
+                                margin-right: 1.6rem;
+                                transition: all .3s;
+                            }
+                        }
+                    }
+                }
+            }
+            .right-content{
+                width: 100%;
+                max-width: 31.3rem;
             }
         }
     }
