@@ -153,6 +153,9 @@
             }
             .right-content{
                 width: 100%;
+                position: sticky;
+                top: 180px;
+                margin-bottom: 4rem;
                 max-width: 31.3rem;
                 display: flex;
                 gap: 4rem;
@@ -167,6 +170,7 @@
                     border-radius: 0.4rem;
                     position: relative;
                     transition: all 0.3s;
+                    
                     .title-contents{
                         font-family: 'Inter', sans-serif;
                         font-weight: 700;
@@ -373,5 +377,4 @@
             }
         }
     }
-    
 }
