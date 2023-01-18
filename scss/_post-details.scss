@@ -165,6 +165,8 @@
                     padding: 3rem;
                     border: 1px solid #C6C5CE;
                     border-radius: 0.4rem;
+                    position: relative;
+                    transition: all 0.3s;
                     .title-contents{
                         font-family: 'Inter', sans-serif;
                         font-weight: 700;
@@ -224,11 +226,15 @@
                         display: flex;
                         gap: 1.5rem;
                     }
+                    &:hover{
+                        border: 1px solid $grey-500;
+                    }
                 }
                 .related-articles{
                     padding: 3rem;
                     border: 1px solid #C6C5CE;
                     border-radius: 0.4rem;
+                    transition: all 0.3s;
                     .title-articles{
                         font-family: 'Inter', sans-serif;
                         font-weight: 700;
@@ -271,6 +277,9 @@
                                 }
                             }
                         }
+                    }
+                    &:hover{
+                        border: 1px solid $grey-500;
                     }
                 }
             }
