@@ -1144,8 +1144,13 @@
         }
     }
     // Responsive
+    @media (max-width: 1200px){
+        .container{
+            padding: 4rem 1.5rem !important;
+        }
+    }
     @media (max-width: 768px){
-        padding-bottom: 4rem;
+        padding-bottom: 4rem !important;
         .container{
             border-radius: 0px;
             background-color: $white;
@@ -1179,11 +1184,6 @@
                     }
                 }
             }
-        }
-    }
-    @media (max-width: 1200px){
-        .container{
-            padding: 2rem 1.5rem !important;
         }
     }
 }
