@@ -363,8 +363,11 @@
     border-bottom-right-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.8rem;
-    transition: all .3s ease-in-out;
+    border: 1px solid $white;
+    transition: all .3s;
     &:hover{
+        border: 1px solid $grey-200;
+        
         .image{
             img{
                 transform: scale(1.04);
