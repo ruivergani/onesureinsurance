@@ -1,0 +1,41 @@
+// Section Hero
+.s-blog-hero{
+    padding: 5rem 0px;
+    background: url(../assets/bg/blog-index-bg.jpg) no-repeat center center;
+    background-size: cover;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: visible;
+    }
+    .s-blog-hero-title{
+        width: 100%;
+        max-width: 72.8rem;
+        h1, p{
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+        h1{
+            max-width: 53rem;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $white;
+            margin-bottom: 3rem;
+        }
+        p{
+            max-width: 72.8rem;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: -0.5px;
+            color: $white;
+        }
+    }
+    .s-blog-hero-search{
+        width: 100%;
+        max-width: 403px;
+    }
+}
