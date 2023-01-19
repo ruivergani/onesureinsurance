@@ -225,4 +225,37 @@
             }
         }
     }
+    // Responsive
+    @media (max-width: 1200px){
+        .container{
+            .side-category{
+                max-width: 28rem;
+            }
+            .s-all{
+                .all{
+                    grid-gap: 15px 15px;
+                }
+            }
+        }
+    }
+    @media (max-width: 1030px){
+        .container{
+            align-items: center;
+            justify-content: center;
+            .side-category{
+                display: none;
+            }
+        }
+    }
+    @media (max-width: 625px){
+        .container{
+            .s-all{
+                gap: 4rem;
+                .all{
+                    grid-template-columns: 1fr;
+                    grid-gap: 2rem;
+                }
+            }
+        }
+    }
 }
