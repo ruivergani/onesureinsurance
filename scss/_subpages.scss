@@ -344,7 +344,7 @@
 // Section Motor Trade Slide
 .s-slide-product{
     background-color: $brand-light-blue;
-    padding: 9rem 0rem;
+    padding: 6rem 0rem;
     .container{
         .top{
             padding-bottom: 5rem;
@@ -470,8 +470,7 @@
 }
 // Section Newsletter
 .s-newsletter{
-    padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding: 6rem 0px;
     .container{
         display: flex;
         align-items: center;
@@ -485,7 +484,7 @@
 .s-bespoke{
     scroll-margin-top: 215px;
     background: url(../assets/bg/bg-bespoke.webp) no-repeat left top;
-    padding: 9rem 0px;
+    padding: 6rem 0px;
     .text-top{
         display: flex;
         align-items: center;
@@ -662,7 +661,7 @@
 
 }
 .s-logos {
-    padding-bottom: 7.7rem;
+    padding-bottom: 6rem;
     @media (max-width: 768px){
         padding-bottom: 4rem;
     }
@@ -814,8 +813,8 @@
 }
 // Section Content
 .s-content{
-    scroll-margin-top: 320px;
-    padding-bottom: 9rem;
+    scroll-margin-top: 18rem;
+    padding-bottom: 6rem;
     .container{
         .tab-product-content{
             .text-content{
@@ -925,9 +924,9 @@
 }
 // Section Cover
 .s-cover{
-    scroll-margin-top: 21rem;
+    scroll-margin-top: 16rem;
     border-top: 2px solid #F0F4F9;
-    padding: 9rem 0px;
+    padding: 6rem 0px;
     .container{
         display: flex;
         align-items: flex-start;
@@ -1019,8 +1018,8 @@
 }
 // Section Optional Extras
 .s-extras-opt{
-    padding-bottom: 9rem;
-    scroll-margin-top: 320px;
+    padding-bottom: 6rem;
+    scroll-margin-top: 27rem;
     .container{
         background-color: $brand-light-blue;
         border-radius: 1rem;
@@ -1123,13 +1122,13 @@
 }
 // Section FAQs
 .padding-top{
-    padding-top: 9rem !important;
+    padding-top: 6rem !important;
 }
 .padding-bottom{
-    padding-bottom: 9rem !important;
+    padding-bottom: 6rem !important;
 }
 .s-faqs{
-    scroll-margin-top: 22rem;
+    scroll-margin-top: 16rem;
     //padding: 9rem 0px;
     .container{
         display: flex;
@@ -1244,7 +1243,7 @@
 .s-articles{
     scroll-margin-top: 320px;
     background-color: $brand-light-blue;
-    padding: 9rem 0rem;
+    padding: 6rem 0rem;
     .container{
         display: flex;
         align-items: center;
