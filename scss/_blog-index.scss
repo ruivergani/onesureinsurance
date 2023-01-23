@@ -158,8 +158,12 @@
             background: linear-gradient(180deg, #EFF3F6 0%, rgba(239, 243, 246, 0) 66.37%);
             width: 100%;
             min-height: 100vh;
+            height: 100%;
             max-width: 39.2rem;
             border-right: 2px solid #F0F4F9;
+            // Sticky Position
+            position: sticky;
+            top: 150px;
             ul{
                 display: flex;
                 flex-direction: column;
