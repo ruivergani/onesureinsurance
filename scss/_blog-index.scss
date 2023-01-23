@@ -263,3 +263,129 @@
         }
     }
 }
+// Section Resources Index
+.s-resources-blog{
+    padding-bottom: 9rem;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .resources-blog-left{
+            width: 100%;
+            max-width: 80rem;
+            h4{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 3rem;
+                line-height: 120%;
+                color: $grey-600;
+                padding-bottom: 1.5rem;
+                border-bottom: 1px solid rgba(0, 52, 120, 0.3);
+            }
+            ul{
+                margin-top: 3rem;
+                margin-bottom: 5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                li{
+                    padding-top: 1.5rem;
+                    padding-bottom: 1.5rem;
+                    &:not(:last-child){
+                        border-bottom: 1px solid rgba(0, 52, 120, 0.3);
+                    }
+                    a{
+                        p{
+                            width: 100%;
+                            max-width: 56rem;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 500;
+                            font-size: 1.8rem;
+                            line-height: 112%;
+                            letter-spacing: -0.5px;
+                            color: $grey-600;
+                            transition: all .3s;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            p{
+                                color: $grey-300;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .resources-blog-right{
+            width: 100%;
+            max-width: 38.4rem;
+            background: #F0F4F9;
+            border-radius: 0.6rem;
+            padding: 4rem 3rem 4rem 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            h5{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 2rem;
+                line-height: 112%;
+                letter-spacing: -0.5px;
+                color: $grey-600;
+            }
+            .form-subscribe{
+                display: flex;
+                align-items: center;
+                input{
+                    padding: 1.5rem;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    border: 0.5px solid $grey-200;
+                }
+                button{
+                    background-color: $brand-blue;
+                    color: $white;
+                    padding: 1.5rem;
+                    border-top-right-radius: 3px;
+                    border-end-end-radius: 3px;
+                    border: 0.5px solid $brand-blue;
+                }
+            }
+            ul{
+                display: flex;
+                gap: 1rem;
+                flex-direction: column;
+                li{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 1rem;
+                    &:before{
+                        content: "";
+                        width: 6px;
+                        height: 4px;
+                        display: inline-block;
+                        background-color: #9995A6;
+                        margin-top: 1.3rem;
+                        margin-right: 1.6rem;
+                        transition: all .3s;
+                    }
+                    p{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                        line-height: 150%;
+                        color: $grey-400;
+                    }
+                }
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: $grey-400;
+            }
+        }
+    }
+}
