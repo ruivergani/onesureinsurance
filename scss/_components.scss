@@ -356,7 +356,7 @@
     display: block;
     width: 100%;
     max-width: 28rem;
-    height: 42rem;
+    height: 38rem;
     position: relative;
     background-color: $white;
     border-bottom-left-radius: 0.8rem;
@@ -367,7 +367,6 @@
     transition: all .3s;
     &:hover{
         border: 1px solid $grey-200;
-        
         .image{
             img{
                 transform: scale(1.04);
@@ -380,7 +379,7 @@
         position: relative;
         width: 100%;
         max-width: 28rem;
-        height: 22rem;
+        height: 18rem;
         overflow: hidden;
         border-top-right-radius: 0.8rem;
         border-top-left-radius: 0.8rem;
