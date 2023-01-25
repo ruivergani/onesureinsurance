@@ -1828,4 +1828,61 @@
             }
         }
     }
+     // Responsive
+     @media (max-width: 1400px){
+        .container{
+            .top{
+                .ctrl-slide{
+                    max-width: 25rem;
+                    .ctrl{
+                        gap: 2rem;
+                        .btn-prev{
+                            margin-top: 0.1px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 768px){
+        padding: 4rem 0px;
+        .container{
+            .top{
+                padding-bottom: 3rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                h4{
+                    font-size: 2.8rem;
+                    max-width: 100%;
+                    text-align: center;
+                }
+                h6{
+                    display: block;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    line-height: 112%;
+                    text-align: center;
+                    letter-spacing: -0.1rem;
+                    color: $grey-300;
+                    opacity: 0.8;
+                }
+                .ctrl-slide{
+                    max-width: 100%;
+                    margin-top: 1rem;
+                    .swiper-pagination{
+                        display: none;
+                    }
+                    .ctrl{
+                        gap: 2rem;
+                        .btn-prev{
+                            margin-top: -0.8rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
