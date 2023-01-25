@@ -1730,4 +1730,42 @@
             }
         }
     }
+    @media (max-width: 991px){
+        padding-bottom: 4rem;
+        .container{
+            justify-content: center;
+            ul{
+                grid-template-columns: 1fr;
+                justify-items: center;
+                li{
+                    text-align: center;
+                    .text-bottom{
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 560px){
+        .container{
+            h3{
+                font-size: 2.6rem;
+            }
+            p{
+                font-size: 1.6rem;
+            }
+            ul{
+                margin-top: 1rem;
+                li{
+                    .text-bottom{
+                        flex-direction: column;
+                        p{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
