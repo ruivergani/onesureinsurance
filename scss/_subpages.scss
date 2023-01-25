@@ -1655,4 +1655,15 @@
             color: $brand-dark-blue;
         }
     }
+    // Responsive
+    @media (max-width: 1100px){
+        padding-bottom: 4rem;
+        .card-dark-blue{
+            flex-direction: column;
+            gap: 2rem;
+            h3{
+                font-size: 2rem;
+            }
+        }
+    }
 }
