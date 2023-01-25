@@ -130,13 +130,6 @@ header{
         }
     }
     @media(max-width: 1050px){
-        .container{
-            .logo{
-                img{
-                    max-width: 20rem;
-                }
-            }
-        }
         nav{
             .hamburger{
                 display: block;
@@ -154,6 +147,13 @@ header{
         }
     }
     @media (max-width: 668px){
+        .container{
+            .logo{
+                img{
+                    max-width: 20rem;
+                }
+            }
+        }
         nav{
             .hamburger{
                 margin-left: 0px;
