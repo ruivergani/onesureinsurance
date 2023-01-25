@@ -616,6 +616,10 @@
 }
 .card-about{
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     img{
         width: 100%;
         max-width: 20rem;
@@ -628,6 +632,7 @@
     h6{
         font-weight: 600;
         font-size: 1.8rem;
+        margin-top: 1rem;
     }
     p{
         font-weight: 400;
