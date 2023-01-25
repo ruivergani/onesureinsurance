@@ -1633,3 +1633,26 @@
         }
     }
 }
+.s-card-blue{
+    padding-bottom: 6rem;
+    .card-dark-blue{
+        background-color: $brand-dark-blue;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem 6rem;
+        h3{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 2.4rem;
+            text-align: center;
+            letter-spacing: -0.05rem;
+            color: $white;
+        }
+        .btn-primary{
+            background-color: $white;
+            color: $brand-dark-blue;
+        }
+    }
+}
