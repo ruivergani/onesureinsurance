@@ -1584,4 +1584,52 @@
             max-width: 45rem;
         }
     }
+    // Responsive
+    @media (max-width: 1024px){
+        .container{
+            align-items: center;
+            .image-right{
+                max-width: 35rem;
+            }
+        }
+    }
+    @media (max-width: 991px){
+        padding: 3rem 0px;
+        .container{
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 3rem;
+            .s-about-us-text-left{
+                max-width: 70rem;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+    @media (max-width: 560px){
+        .container{
+            .s-about-us-text-left{
+                h2{
+                    font-size: 2.6rem;
+                }
+                ul{
+                    li{
+                        align-items: flex-start;
+                        img{
+                            margin-top: 0.5rem;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+            .image-right{
+                max-width: 25rem;
+            }
+        }
+    }
 }
