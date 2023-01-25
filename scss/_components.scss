@@ -614,6 +614,32 @@
 
     }
 }
+.card-about{
+    background-color: transparent;
+    img{
+        width: 100%;
+        max-width: 20rem;
+    }
+    h6,p{
+        font-family: 'Inter', sans-serif;
+        color: $brand-blue;
+        line-height: 175%;
+    }
+    h6{
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+    p{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 175%;
+    }
+    @media (max-width: 560px){
+        img{
+            max-width: 15rem;
+        }
+    }
+}
 // Category title
 .categorie{
     font-family: 'Inter', sans-serif;

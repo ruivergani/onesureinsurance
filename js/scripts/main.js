@@ -163,6 +163,52 @@ var slide_product = new Swiper(".slide-van", {
     },
   },
 });
+// Swiper Slide About Us
+var slide_product = new Swiper(".slide-about", {
+  slidesPerView: 4,
+  spaceBetween: 32,
+  pagination: {
+    el: ".s-slide-about .container .top .ctrl-slide .swiper-pagination",
+    clickable: true,
+  },
+  // navigation section
+  navigation: {
+    nextEl: ".s-slide-about .top .btn-next",
+    prevEl: ".s-slide-about .top .btn-prev",
+  },
+  // smooth pagination
+  speed: 600,
+  // responsive part of the slide
+  breakpoints: {
+    // mobile
+    275: {
+      slidesPerView: 1.1, // part of the other slide
+      spaceBetween: 15,
+    },
+    // tablet
+    320: {
+      slidesPerView: 1.4,
+      spaceBetween: 15,
+    },
+    480: {
+      slidesPerView: 2.2,
+      spaceBetween: 15,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    991: {
+      slidesPerView: 4,
+      spaceBetween: 15,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 32,
+    },
+  },
+});
+
 
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
