@@ -1667,3 +1667,67 @@
         }
     }
 }
+.s-protect-business{
+    padding-bottom: 6rem;
+    .container{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-direction: column;
+        h3, p{
+            max-width: 43rem;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        h3{
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 120%;
+            color: $grey-600;
+        }
+        ul{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.5rem;
+            width: 100%;
+            max-width: 120rem;
+            margin-top: 4rem;
+            li{
+                width: 100%;
+                max-width: 59rem;
+                background: #FFFFFF;
+                border: 2px solid rgba(0, 52, 120, 0.2);
+                border-radius: 3px;
+                padding: 3rem 5rem;
+                h4{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    font-size: 2rem;
+                    line-height: 130%;
+                    letter-spacing: -0.5px;
+                    color: $brand-blue;
+                    text-transform: uppercase;
+                    margin-bottom: 2rem;
+                }
+                .text-bottom{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 2rem;
+                    img{
+                        width: 100%;
+                        max-width: 7rem;
+                    }
+                    p{
+                        max-width: 36rem;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.6rem;
+                        line-height: 150%;
+                        color: $grey-400;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
