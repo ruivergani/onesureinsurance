@@ -13,11 +13,11 @@ body{
     font-size: 62.5%;
     scroll-behavior: smooth;
     
-    @media (max-width: 1300px){ //macbook small size
+    @media (max-width: 1440px){ //macbook small size
         font-size: 58%;
     }
     @media (max-width:600px){
-        font-size: 58%;
+        font-size: 55%;
     }
 }
 img{
