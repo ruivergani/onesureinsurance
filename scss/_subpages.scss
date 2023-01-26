@@ -492,10 +492,12 @@
         h6{
             display: none;
         }
+        h4,p{
+            font-family: 'Poppins', sans-serif;
+        }
         h4{
             width: 100%;
             max-width: 38rem;
-            font-family: 'Poppins', sans-serif;
             font-weight: 600;
             font-size: 3rem;
             line-height: 120%;
@@ -504,7 +506,6 @@
         p{
             width: 100%;
             max-width: 29rem;
-            font-family: 'Poppins', sans-serif;
             font-weight: 400;
             font-size: 1.6rem;
             line-height: 150%;
@@ -542,8 +543,10 @@
                         max-width: 3.2rem;
                         margin-bottom: 1.5rem;
                     }
-                    h5{
+                    h5,p{
                         font-family: 'Poppins', sans-serif;
+                    }
+                    h5{
                         font-weight: 600;
                         font-size: 1.8rem;
                         line-height: 130%;
@@ -551,7 +554,6 @@
                         margin-bottom: 1rem;
                     }
                     p{
-                        font-family: 'Poppins', sans-serif;
                         font-weight: 400;
                         font-size: 1.6rem;
                         line-height: 150%;
@@ -1049,22 +1051,24 @@
                     i{
                         font-size: 3rem;
                         color: $brand-dark-blue;
+                        transition: all .3s;
                     }
                     .text{
-                        h5{
+                        h5,p{
                             font-family: 'Inter', sans-serif;
+                            line-height: 130%;
+                            transition: all .3s;
+                        }
+                        h5{
                             font-weight: 600;
                             font-size: 2rem;
-                            line-height: 130%;
                             color: $grey-600;
                             margin-bottom: 1rem;
                         }
                         p{
                             color: $brand-dark-blue;
-                            font-family: 'Inter', sans-serif;
                             font-weight: 800;
                             font-size: 1.6rem;
-                            line-height: 130%;
                             text-transform: uppercase;
                             i{
                                 font-size: 1.4rem;
@@ -1072,7 +1076,24 @@
                             }
                         }
                     }
+                    &:hover{
+                        i{
+                            color: $brand-blue;
+                        }
+                        .text{
+                            h5{
+                                color: $grey-400;
+                            }
+                            p{
+                                color: $brand-blue;
+                                i{
+                                    color: $brand-blue;
+                                }
+                            }
+                        }
+                    }
                 }
+
             }
         }
     }
@@ -1173,6 +1194,7 @@
                         font-size: 1.8rem;
                         line-height: 130%;
                         color: $grey-600;
+                        transition: all .3s;
                     }
                     i{
                         font-size: 2rem;
@@ -1181,6 +1203,9 @@
                     }
                     &:hover{
                         background-color: rgba(0, 69, 158, 0.2);
+                        strong{
+                            color: $brand-blue;
+                        }
                     }
                 }
                 p{
@@ -1642,6 +1667,8 @@
         align-items: center;
         justify-content: space-between;
         padding: 2rem 6rem;
+        transition: all .3s;
+        border: 2px solid rgba(0, 52, 120);
         h3{
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
@@ -1653,6 +1680,13 @@
         .btn-primary{
             background-color: $white;
             color: $brand-dark-blue;
+        }
+        &:hover{
+            border: 2px solid rgba(0, 52, 120);
+            background-color: white;
+            h3{
+                color: $brand-dark-blue;
+            }
         }
     }
     // Responsive
@@ -1699,6 +1733,7 @@
                 border: 2px solid rgba(0, 52, 120, 0.2);
                 border-radius: 3px;
                 padding: 3rem 5rem;
+                transition: all .3s;
                 h4{
                     font-family: 'Inter', sans-serif;
                     font-weight: 600;
@@ -1726,6 +1761,9 @@
                         color: $grey-400;
                         text-align: left;
                     }
+                }
+                &:hover{
+                    border: 2px solid rgba(0, 52, 120);
                 }
             }
         }
