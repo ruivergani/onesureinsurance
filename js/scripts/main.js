@@ -235,3 +235,33 @@ function fixedMenu() {
   }
 }
 document.addEventListener("scroll", fixedMenu);
+
+// Sub Menu Configuration
+const btnMenu = document.querySelectorAll('.js-btn-menu');
+const MenuDropdown = document.querySelectorAll('.js-menu');
+
+// link which menu dropdown you need to click
+btnMenu.forEach((btn, index) => {
+  btn.addEventListener('mouseenter', (event) => {
+    event.preventDefault(); // negar o comportamento da tag A
+    // remove from all the active
+    MenuDropdown.forEach(itemMenu => {
+      itemMenu.classList.remove('active');
+      // if the user leave mouse from the menu section => close the event
+      itemMenu.addEventListener('mouseleave', () => {
+        itemMenu.classList.remove('active');
+        btnMenu.forEach(itemBtn => {
+          itemBtn.classList.remove('active');
+        })
+      })
+    })
+    // remove the class active from all
+    btnMenu.forEach(itemBtn => {
+      itemBtn.classList.remove('active');
+    })
+    // put active class to one menu
+    btn.classList.add('active');
+    // add active
+    MenuDropdown[index].classList.add('active');
+  })
+})

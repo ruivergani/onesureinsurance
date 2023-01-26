@@ -1,6 +1,9 @@
 .nav-top{
     padding: 20px 0px;
     border-bottom: 0.5px solid rgba(0, 52, 120, 0.3);
+    z-index: 5;
+    background-color: $white;
+    position: relative;
     ul{
         display: flex;
         align-items: center;
@@ -90,12 +93,23 @@ header{
                         line-height: 2.2rem;
                         color: $grey-600;
                         text-transform: uppercase;
+                        transition: all .3s;
                     }
                     img{
                         width: 100%;
                         max-width: 2.2rem;
+                        transition: transform .3s;
+                    }
+                    &.active{
+                        span{
+                            color: $brand-blue;
+                        }
+                        img{
+                            transform: rotate(180deg); // rotate the arrow 180 degrees
+                        }
                     }
                 }
+                
             }
         }
         // Hambuger configuration from lib 
@@ -170,4 +184,69 @@ header{
       }
     }
 }
-    
+// Sub Dropdown Menu
+.dropdown-sub-menu{
+    border-top: 0.5px solid rgba(0,52,120,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: $white;
+    width: 100%;
+    margin-top: 16.3rem; // height of current menu
+    //padding-top: 3.3rem;
+    // hide menus and apply transition
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(12px);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%); // come from top
+    transition: all .3s;
+    &.active{
+        opacity: 1;
+        transform: translateY(0%); // come from top
+        pointer-events: all;
+    }
+    .area-menu{
+        border-bottom: 5.5rem solid $brand-light-blue;
+        min-height: 50rem;
+        .container{
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            width: 100%;
+            .item{
+                width: 100%;
+                strong{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    line-height: 2.2rem;
+                    color: $brand-blue;
+                    padding-bottom: 3rem;
+                    border-bottom: 0.5px solid #C6C5CE;
+                    display: block;
+                }
+                ul{
+                    padding-top: 3rem;
+                    // using grid to display 
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap: 20px 0px;
+                    li{
+                        a{
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                            line-height: 2.2rem;
+                            color: $brand-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Responsive do not display this menu
+    @media (max-width: 991px){
+        display: none;  
+    }
+}
