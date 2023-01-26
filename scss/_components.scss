@@ -623,6 +623,14 @@
     img{
         width: 100%;
         max-width: 20rem;
+        border: 1px solid transparent;
+        transition: all .3s;
+        border-radius: 1rem;
+    }
+    &:hover{
+        img{
+            border: 1px solid $brand-blue;
+        }
     }
     h6,p{
         font-family: 'Inter', sans-serif;
@@ -632,7 +640,7 @@
     h6{
         font-weight: 600;
         font-size: 1.8rem;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
     }
     p{
         font-weight: 400;

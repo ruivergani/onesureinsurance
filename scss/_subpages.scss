@@ -565,15 +565,20 @@
         // Image
         .bespoke-img{
             width: 100%;
-            height: 100%;
             max-width: 30rem;
             position: absolute;
             top: -5rem;
-            right: 0px;
-            border-radius: 0.8rem;
-            transition: all .3s;
             overflow: hidden;
-            object-fit: cover; // cover size img
+            height: 39rem;
+            right: 0px;
+            border-radius: 2rem;
+            img{
+                transition: all .3s ease-in;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // cover size img
+                border-radius: 2rem;
+            }
             &:hover{
                 transform: scale(1.02);
                 -o-object-fit: cover;
@@ -660,7 +665,6 @@
         background-size: cover;
         margin-bottom: 9rem;
     }
-
 }
 .s-logos {
     padding-bottom: 6rem;
@@ -1605,8 +1609,27 @@
             }
         }
         .image-right{
+            position: relative;
             width: 100%;
+            height: 50rem;
             max-width: 45rem;
+            overflow: hidden;
+            border-radius: 2rem;
+            img{
+                transition: all .3s ease-in;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; // cover size img
+                border-top-right-radius: 0.8rem;
+                border-top-left-radius: 0.8rem;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.04);
+                    -o-object-fit: cover;
+                    object-fit: cover;
+                }
+            }
         }
     }
     // Responsive
@@ -1708,6 +1731,7 @@
         align-items: center;
         gap: 2rem;
         flex-direction: column;
+        overflow-x: visible;
         h3, p{
             max-width: 43rem;
             font-family: 'Poppins', sans-serif;
