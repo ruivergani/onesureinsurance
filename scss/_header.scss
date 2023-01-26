@@ -59,16 +59,87 @@ header{
     &.changeHeight{
         border-bottom: 0.5px solid rgba(0, 52, 120, 0.2);
         height: 8rem;
+        .container{
+            .dropdown-sub-menu{
+                top: 7.8rem;
+            }
+        }
     }
     .container{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        overflow-x: visible;
         height: 11rem;
+        z-index: 2023;
         .logo{
             img{
                 width: 100%;
                 max-width: 8.3rem !important;
+            }
+        }
+        // Sub Dropdown Menu
+        .dropdown-sub-menu{
+            border-top: 0.5px solid rgba(0,52,120,.3);
+            position: absolute;
+            top: 9.8rem;
+            left: 0;
+            z-index: 2023;
+            background-color: $white;
+            width: 100%;
+            padding-top: 10rem; // height of current menu
+            // hide menus and apply transition
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            backdrop-filter: blur(12px);
+            opacity: 0;
+            pointer-events: none;
+            transition: all .3s;
+            &.active{
+                opacity: 1;
+                pointer-events: all;
+                z-index: -2000;
+            }
+            .area-menu{
+                border-bottom: 5.5rem solid $brand-light-blue;
+                min-height: 50rem;
+                .container{
+                    padding-top: 5rem;
+                    padding-bottom: 5rem;
+                    width: 100%;
+                    .item{
+                        width: 100%;
+                        strong{
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            line-height: 2.2rem;
+                            color: $brand-blue;
+                            padding-bottom: 3rem;
+                            border-bottom: 0.5px solid #C6C5CE;
+                            display: block;
+                        }
+                        ul{
+                            padding-top: 3rem;
+                            // using grid to display 
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            grid-gap: 20px 0px;
+                            li{
+                                a{
+                                    font-family: 'Poppins', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 1.5rem;
+                                    line-height: 2.2rem;
+                                    color: $brand-blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // Responsive do not display this menu
+            @media (max-width: 991px){
+                display: none;  
             }
         }
     } 
@@ -176,6 +247,7 @@ header{
             }
         }
     }
+    
 }
 .menu-opened{
     header{
@@ -183,72 +255,5 @@ header{
         opacity: 1;
         transform: translateY(0%);
       }
-    }
-}
-// Sub Dropdown Menu
-.dropdown-sub-menu{
-    border-top: 0.5px solid rgba(0,52,120,.3);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    background-color: $white;
-    width: 100%;
-    padding-top: 16.3rem; // height of current menu
-    transition: all .3s;
-    //padding-top: 3.3rem;
-    // hide menus and apply transition
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    backdrop-filter: blur(12px);
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-100%); // come from top
-    transition: all .3s;
-    &.active{
-        opacity: 1;
-        transform: translateY(0%); // come from top
-        pointer-events: all;
-    }
-    .area-menu{
-        border-bottom: 5.5rem solid $brand-light-blue;
-        min-height: 50rem;
-        .container{
-            padding-top: 5rem;
-            padding-bottom: 5rem;
-            width: 100%;
-            .item{
-                width: 100%;
-                strong{
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
-                    font-size: 1.5rem;
-                    line-height: 2.2rem;
-                    color: $brand-blue;
-                    padding-bottom: 3rem;
-                    border-bottom: 0.5px solid #C6C5CE;
-                    display: block;
-                }
-                ul{
-                    padding-top: 3rem;
-                    // using grid to display 
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    grid-gap: 20px 0px;
-                    li{
-                        a{
-                            font-family: 'Poppins', sans-serif;
-                            font-weight: 500;
-                            font-size: 1.5rem;
-                            line-height: 2.2rem;
-                            color: $brand-blue;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    // Responsive do not display this menu
-    @media (max-width: 991px){
-        display: none;  
     }
 }
