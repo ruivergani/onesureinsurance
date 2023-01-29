@@ -137,6 +137,45 @@ header{
                     }
                 }
             }
+            // Business Menu Configuration
+            &.business{
+                padding-top: 6rem;
+                .area-menu{
+                    .container{
+                        padding-top: 0rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        .item{
+                            max-width: 38.4rem;
+                            ul{
+                                width: 100%;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &.resources{
+                padding-top: 6rem;
+                .area-menu{
+                    .container{
+                        padding-top: 0rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        .item{
+                            max-width: 38.4rem;
+                            ul{
+                                width: 100%;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-gap: 20px;
+                            }
+                        }
+                    }
+                }
+            }
             // Responsive do not display this menu
             @media (max-width: 991px){
                 display: none;  
