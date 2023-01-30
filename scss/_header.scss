@@ -157,7 +157,7 @@ header{
                     }
                 }
             }
-            &.resources{
+            &.resources, &.existing{
                 padding-top: 6rem;
                 .area-menu{
                     .container{
@@ -176,6 +176,7 @@ header{
                     }
                 }
             }
+
             // Responsive do not display this menu
             @media (max-width: 991px){
                 display: none;  
