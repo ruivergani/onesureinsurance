@@ -176,7 +176,6 @@ header{
                     }
                 }
             }
-
             // Responsive do not display this menu
             @media (max-width: 991px){
                 display: none;  
@@ -286,8 +285,7 @@ header{
                 padding: 0px;
             }
         }
-    }
-    
+    } 
 }
 .menu-opened{
     header{
