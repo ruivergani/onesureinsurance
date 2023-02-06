@@ -42,42 +42,59 @@
         <nav>
           <div class="item">
             <strong>Useful Links</strong>
-            <ul>
+            <!-- Dynamic Menu --> 
+            <?php
+              $args = array(
+                'menu' => 'Footer Useful Links',
+                'theme_location' => 'footer-useful-links',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
+            <!-- <ul>
               <li><a href="#">Resources</a></li>
               <li><a href="#">Contact Us</a></li>
               <li><a href="#">Claims</a></li>
               <li><a href="#">Renewals</a></li>
-            </ul>
+            </ul> -->
           </div>
           <div class="item">
             <strong>Insurance Types</strong>
-            <ul>
+            <!-- Dynamic Menu --> 
+            <?php
+              $args = array(
+                'menu' => 'Footer Insurance Types',
+                'theme_location' => 'footer-insurance-types',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
+            <!-- <ul>
               <li><a href="#">Motor Trade Insurance</a></li>
               <li><a href="#">Motorbike Insurance</a></li>
               <li><a href="#">Van Insurance</a></li>
               <li><a href="#">HGV Insurance</a></li>
               <li><a href="#">Car Insurance</a></li>
-            </ul>
+            </ul> -->
           </div>
           <div class="item">
             <strong>Corporate Info</strong>
-            <ul>
+            <!-- Dynamic Menu --> 
+            <?php
+              $args = array(
+                'menu' => 'Footer Corporate Info',
+                'theme_location' => 'footer-corporate',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
+            <!-- <ul>
               <li><a href="#">Privacy Policy</a></li>
               <li><a href="#">Cookie Policy</a></li>
               <li><a href="#">Terms & Conditions</a></li>
               <li><a href="#">Modern Slavery Act</a></li>
               <li><a href="#">Press</a></li>
-            </ul>
-          </div>
-          <div class="item">
-            <strong>Corporate Info</strong>
-            <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Modern Slavery Act</a></li>
-              <li><a href="#">Press</a></li>
-            </ul>
+            </ul> -->
           </div>
         </nav>
         <div class="item-contact">

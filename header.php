@@ -191,7 +191,16 @@
                   </div>
                   <div class="item">
                     <strong>Commercial Vehicle</strong>
-                    <ul>
+                     <!-- Dynamic Menu --> 
+                     <?php
+                      $args = array(
+                        'menu' => 'Header Business Commercial',
+                        'theme_location' => 'header-business-commercial',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                     ?>
+                    <!-- <ul>
                       <li><a href="#">HGV | Lorry Insurance</a></li>
                       <li><a href="#">Courier Insurance</a></li>
                       <li><a href="#">Commercial Van Insurance</a></li>
@@ -199,17 +208,26 @@
                       <li><a href="#">Special Types Insurance</a></li>
                       <li><a href="#">Goods in Transit</a></li>
                       <li><a href="#">Taxi Insurance</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Other</strong>
-                    <ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Business Other',
+                        'theme_location' => 'header-business-commercial',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                     ?>
+                    <!-- <ul>
                       <li><a href="#">Commercial Insurance</a></li>
                       <li><a href="#">Employer Insurance</a></li>
                       <li><a href="#">Shop Insurance</a></li>
                       <li><a href="#">Restaurant & Pub Insurancee</a></li>
                       <li><a href="#">Hotel Insurance</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                 </div>
               </div>
@@ -227,34 +245,62 @@
                 <div class="container">
                   <div class="item">
                     <strong>Useful Links</strong>
-                    <ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Resource Links',
+                        'theme_location' => 'header-resource-links',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- <ul>
                       <li><a href="#">About Us</a></li>
                       <li><a href="#">Code of Conduct</a></li>
                       <li><a href="#">Reviews</a></li>
                       <li><a href="#">Insurance Dictionary</a></li>
                       <li><a href="#">Our Community</a></li>
                       <li><a href="#">Existing Customers Guides</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Popular Articles</strong>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Resource Articles',
+                        'theme_location' => 'header-resource-articles',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- 
                     <ul>
                       <li><a href="#">Article 01</a></li>
                       <li><a href="#">Article 02</a></li>
                       <li><a href="#">Article 03</a></li>
                       <li><a href="#">Article 04</a></li>
                       <li><a href="#">Article 05</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Frequently Asked Questions</strong>
-                    <ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Resource Faq',
+                        'theme_location' => 'header-resource-faq',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- <ul>
                       <li><a href="#">01 Question</a></li>
                       <li><a href="#">02 Question</a></li>
                       <li><a href="#">03 Question</a></li>
                       <li><a href="#">04 Question</a></li>
                       <li><a href="#">05 Question</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                 </div>
               </div>
@@ -272,30 +318,57 @@
                 <div class="container">
                   <div class="item">
                     <strong>Existing Customers</strong>
-                    <ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Existing Customers',
+                        'theme_location' => 'header-existing_customers',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- <ul>
                       <li><a href="#">My Account</a></li>
                       <li><a href="#">Claims</a></li>
                       <li><a href="#">Renewals</a></li>
                       <li><a href="#">Payments</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Guides</strong>
-                    <ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Existing Customers Guide',
+                        'theme_location' => 'header-existing_customers_guide',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- <ul>
                       <li><a href="#">How to upload my documents?</a></li>
                       <li><a href="#">Lorem ipsum...</a></li>
                       <li><a href="#">Lorem ipsum...</a></li>
                       <li><a href="#">Lorem ipsum...</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Lorem ipsum ...</strong>
-                    <ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Existing Customers Contact',
+                        'theme_location' => 'header-existing_contact_guide',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- <ul>
                       <li><a href="#">Customer Service</a></li>
                       <li><a href="#">Complaints</a></li>
                       <li><a href="#">Contact Us</a></li>
                       <li><a href="#">Leave us a review</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                 </div>
               </div>
