@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Motor Trade Insurance - Call One Sure & Get A Traders' Policy From Just £46.19 Per Month. Within Just 30 Minutes, You Could Have Motor Traders' Insurance Set Up & Ready To Go. Policy To Suit Your Needs. Friendly Team. Save Time & Money.">
+  <meta name="description" content="<?php //the_field('description_page'); ?>">
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="<?php echo get_template_directory_uri()?>/favicon.png">
   <!-- Font Awesome Links -->
@@ -28,17 +28,17 @@
   <![endif]-->
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://metatags.io/">
-  <meta property="og:title" content="One Sure Insurance">
-  <meta property="og:description" content="One Sure are the completely independent insurance provider, we provide insurance for cars, vans, homes, bikes, caravans, tradesmen, and more.">
-  <meta property="og:image" content="<?php echo get_template_directory_uri()?>screenshot.png">
+  <meta property="og:url" content="<?php get_home_url(); ?>">
+  <meta property="og:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
+  <meta property="og:description" content="<?php //the_field('description_page'); ?>">
+  <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://metatags.io/">
-  <meta property="twitter:title" content="One Sure Insurance">
-  <meta property="twitter:description" content="One Sure are the completely independent insurance provider, we provide insurance for cars, vans, homes, bikes, caravans, tradesmen, and more.">
-  <meta property="twitter:image" content="<?php echo get_template_directory_uri()?>screenshot.png">
+  <meta property="twitter:url" content="<?php get_home_url(); ?>">
+  <meta property="twitter:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
+  <meta property="twitter:description" content="<?php //the_field('description_page'); ?>">
+  <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- Function WP HEAD -->
   <?php wp_head(); ?>
 </head>
