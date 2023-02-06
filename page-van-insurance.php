@@ -625,7 +625,7 @@
   <!-- Section Newsletter -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="motor-trade.html" class="large-cta" data-aos="zoom-in">
+      <a href="#" class="large-cta" data-aos="zoom-in">
         <div class="text">
             <span>We Are Confident Of Our Pricing That We Challenge You To Beat Our Guarantee</span>
             <h3>We Are Britains Cheapest Motor Trade Insurer* </h3>

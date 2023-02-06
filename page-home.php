@@ -93,40 +93,8 @@
     </div>
   </section>
 
-  <!-- Section Logos Slide -->
-  <section class="s-logos" id="s-logos">
-    <div class="container">
-      <div class="title" data-aos="fade-right">
-        <h6>Lorem ipsum is simply</h6>
-        <h5>Our Accreditations</h5>
-      </div>
-      <!-- Swipper -->
-      <div class="slide-logos" data-aos="fade-left">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="logo company" title="logo company" loading="lazy">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri()?>/assets/logo-company02.svg" alt="logo company" title="logo company" loading="lazy">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri()?>/assets/logo-company03.svg" alt="logo company" title="logo company" loading="lazy">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card-image">
-                <img src="<?php echo get_template_directory_uri()?>/assets/logo-company04.svg" alt="logo company" title="logo company" loading="lazy">
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </section>
+  <!-- Section Company Logos -->
+  <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
 
   <!-- Section Types of Insurance -->
   <section class="s-insurance" id="s-insurance">
@@ -373,21 +341,8 @@
     </div>
   </section>
 
-  <!-- Section Newsletter -->
-  <div class="s-newsletter">
-    <div class="container">
-      <a href="#" class="large-cta" data-aos="zoom-in">
-        <div class="text">
-            <span>We Are Confident Of Our Pricing That We Challenge You To Beat Our Guarantee</span>
-            <h3>We Are Britains Cheapest Motor Trade Insurer* </h3>
-        </div>
-        <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
-        </button>
-      </a>
-    </div>
-  </div>
+  <!-- Section CTA Desktop -->
+  <?php include(TEMPLATEPATH .'/includes/section-cta-desktop.php') ?>
 
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
