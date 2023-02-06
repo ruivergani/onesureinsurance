@@ -18,7 +18,7 @@
       </div>
       <ul class="card-hero">
         <li class="item-card" data-aos="fade-left" data-aos-delay="120">
-          <a href="<?php echo get_permalink(get_page_by_title('Motor Trade')) ?>">
+          <a href="<?php echo get_permalink(get_page_by_title('Motor Trade Insurance')) ?>">
             <i class="fa-solid fa-key fa-2x"></i>
             <span>Motor Trade</span>
           </a>
