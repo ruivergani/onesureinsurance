@@ -15,25 +15,25 @@
     </div>
     <ul class="card-hero">
       <li class="item-card" data-aos="fade-left" data-aos-delay="120">
-        <a href="<?php echo get_permalink(get_page_by_path('')) ?>">
+        <a href="<?php echo get_permalink(get_page_by_title('Motor Trade')) ?>">
           <i class="fa-solid fa-key fa-2x"></i>
           <span>Motor Trade</span>
         </a>
       </li>
       <li class="item-card" data-aos="fade-left" data-aos-delay="60">
-        <a href="<?php echo get_permalink(get_page_by_path('')) ?>">
+        <a href="<?php echo get_permalink(get_page_by_title('Van Insurance')) ?>">
           <i class="fa-solid fa-van-shuttle fa-2x"></i>
           <span>Van Insurance</span>
         </a>
       </li>
       <li class="item-card" data-aos="fade-left" data-aos-delay="30">
-        <a href="<?php echo get_permalink(get_page_by_path('')) ?>">
+        <a href="<?php echo get_permalink(get_page_by_title('HGV Insurance')) ?>">
           <i class="fa-solid fa-truck-front fa-2x"></i>
           <span>HGV & Lorry Insurance</span>
         </a>
       </li>
       <li class="item-card"  data-aos="fade-left" data-aos-delay="10">
-        <a href="<?php echo get_permalink(get_page_by_path('')) ?>">
+        <a href="<?php echo get_permalink(get_page_by_title('Car Insurance')) ?>">
           <i class="fa-solid fa-car fa-2x"></i>
           <span>Car Insurance</span>
         </a>

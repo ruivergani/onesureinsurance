@@ -1,6 +1,5 @@
-<!-- Give the name to the template -->
 <?php
-  // Template name: motor-trade-insurance
+  // Template name: motor-trader-insurance
 ?>
 
 <!-- Include Header -->

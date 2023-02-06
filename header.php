@@ -78,7 +78,7 @@
     <div class="container">
       <ul>
         <li>
-          <a href="#">
+          <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-question.svg" alt="icon question" title="icon question" loading="lazy">
             <span>Support</span>
           </a>
@@ -90,13 +90,13 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-paper.svg" alt="icon paper" title="icon paper" loading="lazy">
             <span>Claims</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-autorenew.svg" alt="icon renewals"  title="icon renewals" loading="lazy">
             <span>Renewals</span>
           </a>
@@ -278,7 +278,7 @@
             </div>
           </li>
           <li>
-            <a href="#" class="js-btn-menu">
+            <a href="<?php echo get_permalink(get_page_by_title('Contact')) ?>" class="js-btn-menu">
               <span>Contact Us</span>
             </a>
           </li>
