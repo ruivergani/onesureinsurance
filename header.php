@@ -120,6 +120,7 @@
       <nav id="nav">
         <!-- Menu List -->
         <ul>
+          <!-- Personal Menu --> 
           <li>
             <a href="#" class="js-btn-menu">
               <span>Personal</span>
@@ -131,23 +132,35 @@
                 <div class="container">
                   <div class="item">
                     <strong>Types of Insurance</strong>
-                    <ul>
-                      <li><a href="#">Car Insurance</a></li>
-                      <li><a href="#">Motorbike Insurance</a></li>
-                      <li><a href="#">Scooter Insurance</a></li>
-                      <li><a href="#">Van Insurance</a></li>
-                      <li><a href="#">Caravan Insurance</a></li>
-                      <li><a href="#">Motorhome Insurance</a></li>
-                      <li><a href="#">Home Insurance</a></li>
-                      <li><a href="#">Travel Insurance</a></li>
-                      <li><a href="#">Convicted Car Insurance</a></li>
-                      <li><a href="#">Convicted Van Insurance</a></li>
-                    </ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Personal',
+                        'theme_location' => 'header-personal',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- 
+                      <ul>
+                        <li><a href="#">Car Insurance</a></li>
+                        <li><a href="#">Motorbike Insurance</a></li>
+                        <li><a href="#">Scooter Insurance</a></li>
+                        <li><a href="#">Van Insurance</a></li>
+                        <li><a href="#">Caravan Insurance</a></li>
+                        <li><a href="#">Motorhome Insurance</a></li>
+                        <li><a href="#">Home Insurance</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Convicted Car Insurance</a></li>
+                        <li><a href="#">Convicted Van Insurance</a></li>
+                      </ul> 
+                    -->
                   </div>
                 </div>
               </div>
             </div>
           </li>
+          <!-- Business Menu -->
           <li>
             <a href="#" class="js-btn-menu">
               <span>Business</span>
@@ -159,13 +172,22 @@
                 <div class="container">
                   <div class="item">
                     <strong>Motor Trade</strong>
-                    <ul>
+                    <!-- Dynamic Menu --> 
+                    <?php
+                      $args = array(
+                        'menu' => 'Header Business Motor Trade',
+                        'theme_location' => 'header-business-motor-trade',
+                        'container' => false
+                      );
+                      wp_nav_menu( $args );
+                    ?>
+                    <!-- <ul>
                       <li><a href="#">Motor Trade Insurance</a></li>
                       <li><a href="#">Motor Trade Combined</a></li>
                       <li><a href="#">Mechanic Insurance</a></li>
                       <li><a href="#">Valeters Insurance</a></li>
                       <li><a href="#">MOT Service Insurance</a></li>
-                    </ul>
+                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Commercial Vehicle</strong>
@@ -193,6 +215,7 @@
               </div>
             </div>
           </li>
+          <!-- Resources Menu -->
           <li>
             <a href="#" class="js-btn-menu">
               <span>Resources</span>
@@ -237,6 +260,7 @@
               </div>
             </div>
           </li>
+          <!-- Existing Customers -->
           <li>
             <a href="#" class="js-btn-menu">
               <span>Existing Customers</span>
