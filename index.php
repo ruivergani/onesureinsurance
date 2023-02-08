@@ -132,7 +132,7 @@
                           <span><?php echo get_the_date('j, F'); ?></span>
                         </li>
                         <li>
-                          <span>12min of read</span>
+                          <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
                         </li>
                       </ul>
                   </div>

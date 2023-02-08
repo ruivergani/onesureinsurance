@@ -182,17 +182,27 @@
                 <img src="<?php echo get_template_directory_uri()?>/assets/bg/blog-post.webp" alt="blog post image example" title="blog post image example">
             </div>
             <div class="categories">
-                <span>Car Insurance</span>
+                <!-- Category Section -->
+                <?php
+                  $category = get_the_category($post -> ID); // return ID post
+                  if(!empty($category)){
+                    foreach($category as $nameCategory){
+                      echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+                    }
+                  }
+                ?>
             </div>
             <div class="info">
                 <ul>
                     <li>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-calendar-blog.svg" alt="icon calendar" title="icon calendar" loading="lazy">
-                        <span>July,2,2022 </span>
+                        <span><?php echo get_the_date('j, F'); ?></span>
                     </li>
                     <li>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-clock-blog.svg" alt="icon clock" title="icon clock" loading="lazy">
-                        <span>4 min read </span>
+                        <span>
+                          <?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?>
+                        </span>
                     </li>
                 </ul>
                 <h5><?php the_title(); ?></h5>
