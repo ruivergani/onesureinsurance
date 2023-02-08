@@ -175,25 +175,34 @@
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" data-aos="zoom-in">
         <p data-aos="fade-left"><?php the_field('subtitle_section_popular_articles') ?></p>
       </div>
+      <!-- All 3 Latest Blog Posts -->
       <div class="posts" data-aos="fade-up">
-          <!-- Card Post Blog Default --> 
-          <a href="<?php the_permalink();?>" class="card-post-blog">
-            <div class="image">
-                <img src="<?php echo get_template_directory_uri()?>/assets/bg/blog-post.webp" alt="blog post image example" title="blog post image example">
-            </div>
-            <div class="categories">
-                <!-- Category Section -->
-                <?php
-                  $category = get_the_category($post -> ID); // return ID post
-                  if(!empty($category)){
-                    foreach($category as $nameCategory){
-                      echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+          <?php 
+            // the query
+            $the_query = new WP_Query(array(
+              'posts_per_page' => 3,
+            )); 
+          ?>
+          <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+              <!-- Card Post Blog Default --> 
+              <a href="<?php the_permalink();?>" class="card-post-blog">
+                <div class="image">
+                  <?php the_post_thumbnail(); ?>
+                </div>
+                <div class="categories">
+                  <!-- Category Section -->
+                  <?php
+                    $category = get_the_category($post -> ID); // return ID post
+                    if(!empty($category)){
+                      foreach($category as $nameCategory){
+                        echo '<span>' .$nameCategory -> name.'</span>'; 
+                      }
                     }
-                  }
-                ?>
-            </div>
-            <div class="info">
-                <ul>
+                  ?>
+                </div>
+                <div class="info">
+                  <ul>
                     <li>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-calendar-blog.svg" alt="icon calendar" title="icon calendar" loading="lazy">
                         <span><?php echo get_the_date('j, F'); ?></span>
@@ -204,12 +213,17 @@
                           <?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?>
                         </span>
                     </li>
-                </ul>
-                <h5><?php the_title(); ?></h5>
-                <p>Lorem ipsum dolor sit amet consectetur. Enim pellentesque eget sed tortor.</p>
-                <span class="read-more">Read More</span>
-            </div>
-          </a>
+                  </ul>
+                  <h5><?php the_title(); ?></h5>
+                  <p>Lorem ipsum dolor sit amet consectetur. Enim pellentesque eget sed tortor.</p>
+                  <span class="read-more">Read More</span>
+                </div>
+              </a>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+          <?php else : ?>
+            <p><?php __('No Recent Posts'); ?></p>
+          <?php endif; ?>
       </div>
     </div>
   </section>
