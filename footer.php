@@ -7,33 +7,15 @@
           <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="logo one sure insurance" title="one sure insurance" loading="lazy">
         </a>
         <div class="share">
-          <span>Check our social media</span>
+          <span><?php the_field('title_social_media', 'options') ?></span>
           <ul>
-            <li>
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-youtube.svg" alt="icon youtube" title="icon youtube" loading="lazy">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-linkedin.svg" alt="icon linkedin" title="icon linkedin" loading="lazy">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-facebook.svg" alt="icon facebook" title="icon facebook" loading="lazy">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-instagram.svg" alt="icon instagram" title="icon instagram" loading="lazy">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-twitter.svg" alt="icon twitter" title="icon twitter">
-              </a>
-            </li>
+            <?php if( have_rows('register_social_media', 'options') ): while ( have_rows('register_social_media', 'options') ) : the_row(); ?>
+              <li>
+                <a href="<?php the_sub_field('url_social_media') ?>">
+                  <img src="<?php the_sub_field('icon_social_media') ?>" alt="icon youtube" title="icon youtube" loading="lazy">
+                </a>
+              </li>
+            <?php endwhile; else : endif;?>
           </ul>
         </div>
       </div>
@@ -103,19 +85,19 @@
             <li>
               <a href="#">
                 <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mail-footer.svg" alt="icon email footer" title="icon email footer" loading="lazy">
-                <span>needhelp@company.com</span>
+                <span><?php the_field('contact_us_email', 'options') ?></span>
               </a>
             </li>
             <li>
               <a href="#">
                 <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-location-footer.svg" alt="icon location footer" title="icon location footer" loading="lazy">
-                <span>Spitfire House, 142-154 Congleton Road, Talke, Stoke on Trent, ST7 1LX</span>
+                <span><?php the_field('contact_us_address', 'options') ?></span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="<?php the_field('terms_and_conditions', 'options') ?>">
                 <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-clock-footer.svg" alt="icon footer clock" title="icon footer clock" loading="lazy">
-                <span>Terms & Conditions</span>
+                <span>Terms and Conditions</span>
               </a>
             </li>
           </ul>
@@ -123,7 +105,7 @@
       </div>
       <!-- Bottom Section -->
       <div class="bottom-footer">
-        <p>© 2022 One Sure Insurance Limited. All Rights Reserved. One Sure Insurance Limited is authorised and regulated by the Financial Conduct Authority,under firm reference number 447730. You may check this on the FCA register by visiting theFCA website www.fca.org.uk/register</p>
+        <p><?php the_field('message_footer', 'options') ?></p>
         <button id="js-support" class="js-support" type="button">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-support-footer.svg" alt="icon support footer" title="icon support footer" loading="lazy">
           <span>Support</span>
