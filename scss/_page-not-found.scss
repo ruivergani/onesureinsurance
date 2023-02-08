@@ -1,0 +1,29 @@
+// ======= Page Not Found =====
+.page-not-found{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2.5rem;
+        h1{
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 3.4rem;
+            line-height: 120%;
+            color: $grey-600;    
+        }
+        p{
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 175%;
+            color: $grey-500;
+        }
+        a{
+            margin-top: 3rem;
+        }
+    }
+}

@@ -152,12 +152,12 @@ body {
   }
 }
 
-/* line 23, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_reset.scss */
+/* line 22, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_reset.scss */
 img {
   max-width: 100%;
 }
 
-/* line 26, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_reset.scss */
+/* line 25, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_reset.scss */
 button {
   background-color: transparent;
   cursor: pointer;
@@ -4111,6 +4111,44 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   .s-resources-blog .container .resources-blog-right .form-subscribe button {
     padding: 1rem;
   }
+}
+
+/* line 2, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-not-found.scss */
+.page-not-found {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+/* line 5, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-not-found.scss */
+.page-not-found .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* line 11, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-not-found.scss */
+.page-not-found .container h1 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 3.4rem;
+  line-height: 120%;
+  color: #33303E;
+}
+
+/* line 18, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-not-found.scss */
+.page-not-found .container p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 175%;
+  color: #4E4B59;
+}
+
+/* line 25, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-not-found.scss */
+.page-not-found .container a {
+  margin-top: 3rem;
 }
 
 /* line 2, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_subpages.scss */

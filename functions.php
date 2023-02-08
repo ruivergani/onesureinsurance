@@ -72,7 +72,6 @@ add_action('init', 'register_footer_insurance_types_menu');
 add_action('init', 'register_footer_corporate_menu');
 
 // Function to enable the Footer edit options in the WordPress acf_add_options_page
-
 acf_add_options_page(array(
 	'page_title' 	=> 'Edit Footer',
 	'menu_title'	=> 'Edit Footer',
