@@ -5,12 +5,16 @@
 <!-- Include Header -->
 <?php get_header(); ?>
 
+<!-- Include the Page Reference -->
+<?php
+  $blog_page = get_page_by_title('Blog');
+?>
 <!-- Section Hero -->
 <section class="s-blog-hero">
   <div class="container">
       <div class="s-blog-hero-title">
-          <h1>The Customer Service Blog</h1>
-          <p>Get tips and advice on delivering exceptional customer service, engaging and delighting your customers, and building a customer-centric company.</p>
+          <h1><?php the_field('blog_section_hero_title', $blog_page) ?></h1>
+          <p><?php the_field('blog_section_hero_subtitle', $blog_page) ?></p>
       </div>
       <div class="s-blog-hero-search">
           <form class="search-secondary">
@@ -28,19 +32,19 @@
   <div class="container">
       <ul>
           <li data-aos="fade-up">
-              <a href="<?php echo get_template_directory_uri()?>">
+              <a href="<?php echo get_permalink(get_page_by_title('Guides')) ?>">
                   <i class="fa-solid fa-newspaper"></i>
                   <p>Check our Guides</p>
               </a>
           </li>
           <li data-aos="fade-up" data-aos-delay="50">
-              <a href="<?php echo get_template_directory_uri()?>">
+              <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
                   <i class="fa-regular fa-message"></i>
                   <p>Find our Blog Resources</p>
               </a>
           </li>
           <li data-aos="fade-up" data-aos-delay="150">
-              <a href="<?php echo get_template_directory_uri()?>">
+              <a href="<?php echo get_permalink(get_page_by_title('FAQ')) ?>">
                   <i class="fa-solid fa-question"></i>
                   <p>Check our FAQs</p>
               </a>
@@ -93,13 +97,13 @@
               </li>
           </ul>
       </div>
-      <!-- List all articles -->
+      <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
           <div class="all">
             <!-- Begin Posts --> 
             <?php
               $config = array(
-                'posts_per_page' => '2',
+                'posts_per_page' => '9',
                 'post_type' => 'post',
                 'order' => 'DESC'
               );
@@ -109,18 +113,27 @@
             <?php if(have_posts()) : while ($query_posts -> have_posts()) : $query_posts -> the_post(); ?>
               <a href="<?php the_permalink(); ?>" class="card-post-default">
                   <div class="image">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/bg/01.webp" alt="image post default" title="image post default">
+                      <?php the_post_thumbnail(); ?>
                   </div>
                   <div class="info">
-                      <span class="categorie">Car Insurance</span>
+                      <!-- Category Section -->
+                      <?php
+                        $category = get_the_category($post -> ID); // return ID post
+                        if(!empty($category)){
+                          foreach($category as $nameCategory){
+                            echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+                          }
+                        }
+                      ?>
+                      <!-- End of Category Section -->
                       <h6><?php the_title(); ?></h6>
                       <ul>
-                          <li>
-                              <span>16, Fev</span>
-                          </li>
-                          <li>
-                              <span>12min of read</span>
-                          </li>
+                        <li>
+                          <span><?php echo get_the_date('j, F'); ?></span>
+                        </li>
+                        <li>
+                          <span>12min of read</span>
+                        </li>
                       </ul>
                   </div>
               </a>
