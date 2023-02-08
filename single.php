@@ -1,6 +1,9 @@
 <!-- Include Header -->
 <?php get_header(); ?>
 
+<!-- Create ranking of views post -->
+<?php setPostViews(get_the_ID()); ?> 
+
 <!-- Section Breadcrumbs -->
 <section class="s-breadcrumbs">
   <div class="container">
@@ -21,7 +24,7 @@
               </a>
           </li>
       </ul>
-      <a href="index.html" class="back" aria-label="return page">
+      <a href="<?php echo get_home_url() ?>" class="back" aria-label="return page">
         <i class="fa-solid fa-chevron-left"></i>
         Go Back to Home
       </a>
@@ -33,15 +36,15 @@
   <div class="container">
     <ul>
       <li>
-        <img src="./assets/icons/icon-user-blog.svg" alt="icon user blog" title="icon user blog">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user-blog.svg" alt="icon user blog" title="icon user blog">
         <span>Rafal Gemza</span>
       </li>
       <li>
-        <img src="./assets/icons/icon-clock-blog-post.svg" alt="icon clock blog" title="icon clock blog">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-clock-blog-post.svg" alt="icon clock blog" title="icon clock blog">
         <span>14, dez. 2022</span>
       </li>
       <li>
-        <img src="./assets/icons/icon-timer-post.svg" alt="icon timer blog" title="icon timer blog">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-timer-post.svg" alt="icon timer blog" title="icon timer blog">
         <span>4 min to read</span>
       </li>
     </ul>
@@ -56,7 +59,7 @@
       <!-- Left Content -->
       <div class="left-content">
         <div class="image">
-          <img src="./assets/bg/blog-post-hero.webp" alt="main image blog" title="main image blog">
+          <img src="<?php the_field('image_post_details_highlight') ?>" alt="main image blog" title="main image blog">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet.
             Maecenas a nulla sit amet. </p>
         </div>
@@ -87,7 +90,7 @@
         <form action="" class="search">
           <input type="text" placeholder="Search for article or theme">
           <button type="submit">
-            <img src="./assets/icons/icon-search-input.svg" alt="icon search" title="icon search">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-search-input.svg" alt="icon search" title="icon search">
           </button>
         </form>
         <!-- Table of Content -->
@@ -121,7 +124,7 @@
             </li>
           </ul>
           <button>
-            <img src="./assets/icons/icon-share-arrow.svg" alt="icon share arrow" title="icon share arrow">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-share-arrow.svg" alt="icon share arrow" title="icon share arrow">
             <span>Share</span>
           </button>
         </div>

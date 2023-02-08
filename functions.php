@@ -81,4 +81,22 @@ acf_add_options_page(array(
 	'redirect'		=> false
 ));
 
+// Add theme to support thumbnails
+add_theme_support('post-thumbnails');
+
+// function to view post accessed the most
+function setPostViews($postID){
+    // return ranking most clicked post
+    $countKey = 'post_views_count';
+    $count = get_post_meta($postID, $countKey, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $countKey);
+        add_post_meta($postID, $countKey, '0');
+    }
+    else{
+        $count++;
+        update_post_meta($postID, $countKey, $count);
+    }
+}
 ?>

@@ -1,3 +1,7 @@
+<?php
+  // Template name: blog
+?>
+
 <!-- Include Header -->
 <?php get_header(); ?>
 
@@ -92,13 +96,24 @@
       <!-- List all articles -->
       <div class="s-all" data-aos="fade-left">
           <div class="all">
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
+            <!-- Begin Posts --> 
+            <?php
+              $config = array(
+                'posts_per_page' => '2',
+                'post_type' => 'post',
+                'order' => 'DESC'
+              );
+              $query_posts = new WP_Query($config);
+            ?>
+            <!-- Repeater to get the variable query_posts -->
+            <?php if(have_posts()) : while ($query_posts -> have_posts()) : $query_posts -> the_post(); ?>
+              <a href="<?php the_permalink(); ?>" class="card-post-default">
                   <div class="image">
                       <img src="<?php echo get_template_directory_uri()?>/assets/bg/01.webp" alt="image post default" title="image post default">
                   </div>
                   <div class="info">
                       <span class="categorie">Car Insurance</span>
-                      <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
+                      <h6><?php the_title(); ?></h6>
                       <ul>
                           <li>
                               <span>16, Fev</span>
@@ -109,125 +124,8 @@
                       </ul>
                   </div>
               </a>
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
-                  <div class="image">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/bg/02.webp" alt="image post default" title="image post default">
-                  </div>
-                  <div class="info">
-                      <span class="categorie">Car Insurance</span>
-                      <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-                      <ul>
-                          <li>
-                              <span>16, Fev</span>
-                          </li>
-                          <li>
-                              <span>12min of read</span>
-                          </li>
-                      </ul>
-                  </div>
-              </a>
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
-                  <div class="image">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/bg/03.webp" alt="image post default" title="image post default">
-                  </div>
-                  <div class="info">
-                      <span class="categorie">Car Insurance</span>
-                      <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-                      <ul>
-                          <li>
-                              <span>16, Fev</span>
-                          </li>
-                          <li>
-                              <span>12min of read</span>
-                          </li>
-                      </ul>
-                  </div>
-              </a>
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
-                  <div class="image">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/bg/04.webp" alt="image post default" title="image post default">
-                  </div>
-                  <div class="info">
-                      <span class="categorie">Car Insurance</span>
-                      <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-                      <ul>
-                          <li>
-                              <span>16, Fev</span>
-                          </li>
-                          <li>
-                              <span>12min of read</span>
-                          </li>
-                      </ul>
-                  </div>
-              </a>
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
-                  <div class="image">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/bg/05.webp" alt="image post default" title="image post default">
-                  </div>
-                  <div class="info">
-                      <span class="categorie">Car Insurance</span>
-                      <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-                      <ul>
-                          <li>
-                              <span>16, Fev</span>
-                          </li>
-                          <li>
-                              <span>12min of read</span>
-                          </li>
-                      </ul>
-                  </div>
-              </a>
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
-                  <div class="image">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/bg/06.webp" alt="image post default" title="image post default">
-                  </div>
-                  <div class="info">
-                      <span class="categorie">Car Insurance</span>
-                      <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-                      <ul>
-                          <li>
-                              <span>16, Fev</span>
-                          </li>
-                          <li>
-                              <span>12min of read</span>
-                          </li>
-                      </ul>
-                  </div>
-              </a>
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
-                <div class="image">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/bg/05.webp" alt="image post default" title="image post default">
-                </div>
-                <div class="info">
-                    <span class="categorie">Car Insurance</span>
-                    <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-                    <ul>
-                        <li>
-                            <span>16, Fev</span>
-                        </li>
-                        <li>
-                            <span>12min of read</span>
-                        </li>
-                    </ul>
-                </div>
-              </a>
-              <a href="<?php echo get_template_directory_uri()?>motor-trade.html" class="card-post-default">
-                  <div class="image">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/bg/06.webp" alt="image post default" title="image post default">
-                  </div>
-                  <div class="info">
-                      <span class="categorie">Car Insurance</span>
-                      <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-                      <ul>
-                          <li>
-                              <span>16, Fev</span>
-                          </li>
-                          <li>
-                              <span>12min of read</span>
-                          </li>
-                      </ul>
-                  </div>
-              </a>
+            <?php endwhile; else : endif; wp_reset_query(); ?>
+            <!-- End Of Most Recent Posts -->
           </div>
           <button class="btn btn-outline" id="btn-outline">
               <i class="fa-solid fa-arrows-rotate"></i>

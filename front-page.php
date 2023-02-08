@@ -176,75 +176,30 @@
         <p data-aos="fade-left"><?php the_field('subtitle_section_popular_articles') ?></p>
       </div>
       <div class="posts" data-aos="fade-up">
-        <a href="#" class="card-post-blog">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/blog-post.webp" alt="blog post image example" title="blog post image example">
-          </div>
-          <div class="categories">
-              <span>Car Insurance</span>
-          </div>
-          <div class="info">
-              <ul>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-calendar-blog.svg" alt="icon calendar" title="icon calendar" loading="lazy">
-                      <span>July,2,2022 </span>
-                  </li>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-clock-blog.svg" alt="icon clock" title="icon clock" loading="lazy">
-                      <span>4 min read </span>
-                  </li>
-              </ul>
-              <h5>The 8 best things about insurance. </h5>
-              <p>Lorem ipsum dolor sit amet consectetur. Enim pellentesque eget sed tortor.</p>
-              <span class="read-more">Read More</span>
-          </div>
-        </a>
-        <a href="#" class="card-post-blog">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/blog-post.webp" alt="blog post image example" title="blog post image example" loading="lazy">
-          </div>
-          <div class="categories">
-              <span>Car Insurance</span>
-          </div>
-          <div class="info">
-              <ul>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-calendar-blog.svg" alt="icon calendar" title="icon calendar" loading="lazy">
-                      <span>July,2,2022 </span>
-                  </li>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-clock-blog.svg" alt="icon clock" title="icon clock" loading="lazy">
-                      <span>4 min read </span>
-                  </li>
-              </ul>
-              <h5>The 8 best things about insurance. </h5>
-              <p>Lorem ipsum dolor sit amet consectetur. Enim pellentesque eget sed tortor.</p>
-              <span class="read-more">Read More</span>
-          </div>
-        </a>
-        <a href="#" class="card-post-blog">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/blog-post.webp" alt="blog post image example" title="blog post image example" loading="lazy">
-          </div>
-          <div class="categories">
-              <span>Car Insurance</span>
-          </div>
-          <div class="info">
-              <ul>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-calendar-blog.svg" alt="icon calendar" title="icon calendar" loading="lazy">
-                      <span>July,2,2022 </span>
-                  </li>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-clock-blog.svg" alt="icon clock" title="icon clock" loading="lazy">
-                      <span>4 min read </span>
-                  </li>
-              </ul>
-              <h5>The 8 best things about insurance. </h5>
-              <p>Lorem ipsum dolor sit amet consectetur. Enim pellentesque eget sed tortor.</p>
-              <span class="read-more">Read More</span>
-          </div>
-        </a>
+          <!-- Card Post Blog Default --> 
+          <a href="<?php the_permalink();?>" class="card-post-blog">
+            <div class="image">
+                <img src="<?php echo get_template_directory_uri()?>/assets/bg/blog-post.webp" alt="blog post image example" title="blog post image example">
+            </div>
+            <div class="categories">
+                <span>Car Insurance</span>
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-calendar-blog.svg" alt="icon calendar" title="icon calendar" loading="lazy">
+                        <span>July,2,2022 </span>
+                    </li>
+                    <li>
+                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-clock-blog.svg" alt="icon clock" title="icon clock" loading="lazy">
+                        <span>4 min read </span>
+                    </li>
+                </ul>
+                <h5><?php the_title(); ?></h5>
+                <p>Lorem ipsum dolor sit amet consectetur. Enim pellentesque eget sed tortor.</p>
+                <span class="read-more">Read More</span>
+            </div>
+          </a>
       </div>
     </div>
   </section>
