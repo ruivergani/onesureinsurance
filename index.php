@@ -56,50 +56,20 @@
 <!-- Section Main Content -->
 <section class="s-main-content">
   <div class="container">
-      <!-- Main Tab Category -->
+      <!-- List all Tags by post -->
       <div class="side-category" data-aos="fade-right">
-          <ul>
-              <li>
-                  <a href="<?php echo get_template_directory_uri()?>">
-                      <p>Software & Systems</p>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
-                  </a>
-              </li>
-              <li>
-                  <a href="<?php echo get_template_directory_uri()?>">
-                      <p>Leading Service</p>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
-                  </a>
-              </li>
-              <li>
-                  <a href="<?php echo get_template_directory_uri()?>">
-                      <p>Tips & Templates</p>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
-                  </a>
-              </li>
-              <li>
-                  <a href="<?php echo get_template_directory_uri()?>">
-                      <p>Support Careers</p>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
-                  </a>
-              </li>
-              <li>
-                  <a href="<?php echo get_template_directory_uri()?>">
-                      <p>Scaling Service</p>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
-                  </a>
-              </li>
-              <li>
-                  <a href="<?php echo get_template_directory_uri()?>">
-                      <p>The Supportive</p>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
-                  </a>
-              </li>
-          </ul>
+        <ul>
+          <li>
+            <a href="<?php echo get_template_directory_uri()?>">
+              <p>Software & Systems</p>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
+            </a>
+          </li>
+        </ul>
       </div>
       <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
-          <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="9" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
+          <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="6" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
       </div>
   </div>
 </section>

@@ -221,6 +221,10 @@
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 60px 40px;
             }
+            .alm-btn-wrap{
+                display: flex;
+                margin-top: 5rem;
+            }
             .btn-outline{
                 justify-self: center;
                 margin: 0 auto;
