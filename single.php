@@ -71,29 +71,11 @@
         <div class="left-content">
           <div class="image">
             <img src="<?php the_field('image_post_details_highlight') ?>" alt="main image blog" title="main image blog">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet.
-              Maecenas a nulla sit amet. </p>
+            <p><?php the_excerpt(); ?></p>
           </div>
           <!-- Blog Structure based on WordPress -->
           <div class="content-post">
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
-            </blockquote>
-            <h2>Ambulance covers of fire on insurance serving?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-            <h3>Lorem ipsum dolot sit amet, consectetur adispiscing</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
-            <h2>Lorem ipsum dolot sit amet?</h2>
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-            <ul>
-              <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-              <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-              <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-              <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            </ul>
-            <h4>Conclusion</h4>
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
+            <?php the_content(); ?>
           </div>
         </div>
         <!-- Right Content -->
@@ -107,59 +89,44 @@
           <!-- Table of Content -->
           <div class="t-content">
             <h5 class="title-contents">Table of contents</h5>
+            <!-- Top Navigation -->
             <ul class="js-nav-blog-post">
-              <li>
-                <a href="" class="active">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
+              
             </ul>
-            <button>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-share-arrow.svg" alt="icon share arrow" title="icon share arrow">
-              <span>Share</span>
-            </button>
+            <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
+              <button>
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-share-arrow.svg" alt="icon share arrow" title="icon share arrow">
+                <span>Share</span>
+              </button>
+            </a>
           </div>
           <!-- Related Articles -->
-          <div class="related-articles">
-            <h5 class="title-articles">Related Articles</h5>
-            <ul>
-              <li>
-                <a href="">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  <span>Ambulance covers of fire on insurance serving?</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <?php
+            $categories = get_the_category();
+            $args = array(
+              'post_type' => 'post',
+              'order' => 'DESC',
+              'posts_per_page' => 3,
+              'cat' => $categories[0]->cat_ID, // return the first category of the post
+              'post__not_in' => array(get_the_ID()),
+            );
+            $the_query = new WP_Query($args);
+          ?>
+          <?php if ($the_query->have_posts()) : ?>
+            <div class="related-articles">
+              <h5 class="title-articles">Related Articles</h5>
+              <ul>
+                <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                  <li>
+                    <a href="<?php the_permalink(); ?>">
+                      <span><?php the_title(); ?></span>
+                    </a>
+                  </li>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+              </ul>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ if(btnDropdownSelect){
 // Script for the FAQs open
 const question = document.querySelectorAll(".js-question"); // all cards question
 // Check if the question exists or not
-if (question) {
+if(question){
   question.forEach(function (event) {
     event.addEventListener("click", () => {
       event.parentElement.classList.toggle("active");
@@ -51,6 +51,22 @@ if(itemContent){
       // add active when click
       event.classList.add("active");
     });
+  });
+}
+
+// Script for the Topics Navigation
+const listTopics = document.querySelector('.js-nav-blog-post');
+const topics = document.querySelectorAll('.info-post-general .container .info-post-bottom .left-content .content-post h2');
+
+if(listTopics){
+  topics.forEach(topic => {
+    let listElement = document.createElement('li');
+    listTopics.appendChild(listElement);
+
+    let ancorTopic = document.createElement('a');
+    ancorTopic.setAttribute('href', '#');
+    ancorTopic.textContent = topic.textContent;
+    listElement.appendChild(ancorTopic);
   });
 }
 

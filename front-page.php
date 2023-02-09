@@ -183,8 +183,8 @@
               'posts_per_page' => 3,
             )); 
           ?>
-          <?php if ( $the_query->have_posts() ) : ?>
-            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          <?php if ($the_query->have_posts()) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
               <!-- Card Post Blog Default --> 
               <a href="<?php the_permalink();?>" class="card-post-blog">
                 <div class="image">
