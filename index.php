@@ -74,70 +74,27 @@
   </div>
 </section>
 
-<!-- Section Logos Slide -->
-<section class="s-logos" id="s-logos">
-  <div class="container">
-    <div class="title" data-aos="fade-right">
-      <h6>Lorem ipsum is simply</h6>
-      <h5>Our Accreditations</h5>
-    </div>
-    <!-- Swipper -->
-    <div class="slide-logos" data-aos="fade-left">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="logo company" title="logo company" loading="lazy">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company02.svg" alt="logo company" title="logo company" loading="lazy">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company03.svg" alt="logo company" title="logo company" loading="lazy">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company04.svg" alt="logo company" title="logo company" loading="lazy">
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
+<!-- Section Company Logos -->
+<?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
 
 <!-- Section Resources Blog -->
 <section class="s-resources-blog">
   <div class="container">
     <div class="resources-blog-left">
-      <h4>Other Resources</h4>
+      <h4><?php the_field('title_resources', $blog_page) ?></h4>
       <ul data-aos="fade-up">
-        <li>
-          <a href="<?php echo get_template_directory_uri()?>">
-            <p>How to Scale Customer Support Without Compromising Service</p>
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo get_template_directory_uri()?>">
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Ornare id augue fames dui varius vitae lacinia.
-            </p>
-          </a>
-        </li>
-        <li>
-          <a href="<?php echo get_template_directory_uri()?>">
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Ornare id augue fames dui varius vitae lacinia.
-            </p>
-          </a>
-        </li>
+        <!-- Repeater List --> 
+        <?php if(have_rows('list_resources', $blog_page)): while (have_rows('list_resources', $blog_page)) : the_row(); ?>
+          <li>
+            <a href="<?php the_sub_field('link_to_the_page') ?>">
+              <p><?php the_sub_field('text_resources_list') ?></p>
+            </a>
+          </li>
+        <?php endwhile; else : endif;?>
       </ul>
-      <a href="<?php echo get_template_directory_uri()?>" class="small-cta" data-aos="zoom-in">
+      <a href="<?php the_field('link_cta', $blog_page) ?>" class="small-cta" data-aos="zoom-in">
         <div class="text">
-            <h3>We Are Britains Cheapest Motor Trade Insurer* </h3>
+            <h3><?php the_field('title_cta', $blog_page) ?></h3>
         </div>
         <button class="btn btn-primary">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward-black.svg" alt="icon forward arrow black" title="icon forward arrow black">
@@ -146,7 +103,7 @@
       </a>
     </div>
     <div class="resources-blog-right" data-aos="fade-left">
-      <h5>Get our best content in your inbox (CTA)</h5>
+      <h5><?php the_field('title_right_cta', $blog_page) ?></h5>
       <form class="form-subscribe">
         <input type="text" placeholder="Email address *" id="js-input-address">
         <button type="button" id="js-btn-address">
@@ -154,23 +111,16 @@
         </button>
       </form>
       <ul>
-        <li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </li>
-        <li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </li>
-        <li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur.
-          </p>
-        </li>
+        <!-- Repeater List --> 
+        <?php if(have_rows('list_right_cta', $blog_page)): while (have_rows('list_right_cta', $blog_page)) : the_row(); ?>
+          <li>
+            <p>
+              <?php the_sub_field('text_list_right_cta') ?>
+            </p>
+          </li>
+        <?php endwhile; else : endif;?>
       </ul>
-      <p>Lorem ipsum dolor sit amet consectetur. Ut etiam amet arcu donec placerat eu egestas amet eget.</p>
+      <p><?php the_field('description_right_cta', $blog_page) ?></p>
     </div>
   </div>
 </section>
