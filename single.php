@@ -9,22 +9,28 @@
   <div class="container">
       <ul>
           <li>
-              <a href="index.html" aria-label="home page">
+              <a href="<?php echo get_home_url(); ?>" aria-label="home page">
                   <i class="fa-solid fa-house"></i>
               </a>
           </li>
           <li>
-              <a href="index.html" aria-label="home page">
-                  Car Insurance
-              </a>
+            <!-- Category Section -->
+            <?php
+              $category = get_the_category($post -> ID); // return ID post
+              if(!empty($category)){
+                foreach($category as $nameCategory){
+                  echo '<a href="'.get_category_link($category[0]).'">' .$nameCategory -> name.'</a>'; 
+                }
+              }
+            ?>
           </li>
           <li>
-              <a href="details-post.html" aria-label="current page">
-                Ambulance Covers Of Fire On Insurance Serving
+              <a href="" aria-label="current page">
+                <?php the_title(); ?>
               </a>
           </li>
       </ul>
-      <a href="<?php echo get_home_url() ?>" class="back" aria-label="return page">
+      <a href="<?php echo get_home_url(); ?>" class="back" aria-label="return page">
         <i class="fa-solid fa-chevron-left"></i>
         Go Back to Home
       </a>
