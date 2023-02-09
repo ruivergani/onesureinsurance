@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="<?php //the_field('description_page'); ?>">
+  <meta name="description" content="<?php the_field('description_page'); ?>">
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="<?php echo get_template_directory_uri()?>/favicon.png">
   <!-- Font Awesome Links -->
@@ -17,28 +17,28 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/plugins.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/main.css">
   <title> 
-    <?php bloginfo('name')?> <?php wp_title('-') ?>
+    <?php bloginfo('name')?> <?php wp_title('|') ?>
   </title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php get_home_url(); ?>">
+  <meta property="og:title" content="<?php bloginfo('name')?> <?php wp_title('|') ?>">
+  <meta property="og:description" content="<?php the_field('description_page'); ?>">
+  <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="<?php get_home_url(); ?>">
+  <meta property="twitter:title" content="<?php bloginfo('name')?> <?php wp_title('|') ?>">
+  <meta property="twitter:description" content="<?php the_field('description_page'); ?>">
+  <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
   <!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="<?php get_home_url(); ?>">
-  <meta property="og:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
-  <meta property="og:description" content="<?php //the_field('description_page'); ?>">
-  <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="<?php get_home_url(); ?>">
-  <meta property="twitter:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
-  <meta property="twitter:description" content="<?php //the_field('description_page'); ?>">
-  <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- Function WP HEAD -->
   <?php wp_head(); ?>
 </head>
