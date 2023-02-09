@@ -260,6 +260,7 @@
     width: 100%;
     max-width: 38rem;
     border-radius: 0.8rem;
+    border: 0.01rem solid rgba(198, 197, 206, 0.5);
     &:hover{
         .image{
             img{
@@ -307,7 +308,7 @@
         border-top-left-radius: 3rem;
     }
     .info{
-        border: 0.1rem solid #C6C5CE;
+        
         border-bottom-left-radius: 0.8rem;
         border-bottom-right-radius: 0.8rem;
         padding: 2rem 3rem;

@@ -556,21 +556,22 @@ p {
   width: 100%;
   max-width: 38rem;
   border-radius: 0.8rem;
+  border: 0.01rem solid rgba(198, 197, 206, 0.5);
 }
 
-/* line 265, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 266, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog:hover .image img {
   transform: scale(1.04);
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-/* line 272, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 273, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog:hover .info h6 {
   color: #003478;
 }
 
-/* line 277, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 278, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .image {
   position: relative;
   width: 100%;
@@ -581,7 +582,7 @@ p {
   border-top-left-radius: 0.8rem;
 }
 
-/* line 285, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 286, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .image img {
   transition: all .3s ease-in;
   width: 100%;
@@ -591,7 +592,7 @@ p {
   border-top-left-radius: 0.8rem;
 }
 
-/* line 294, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 295, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .categories {
   position: absolute;
   right: 0;
@@ -601,7 +602,7 @@ p {
   border-top-left-radius: 3rem;
 }
 
-/* line 298, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 299, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .categories span {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
@@ -610,23 +611,22 @@ p {
   color: #FFFFFF;
 }
 
-/* line 309, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 310, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .info {
-  border: 0.1rem solid #C6C5CE;
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   padding: 2rem 3rem;
   width: 100%;
 }
 
-/* line 315, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 316, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .info ul {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-/* line 319, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 320, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .info ul li {
   display: flex;
   align-items: center;
@@ -634,13 +634,13 @@ p {
   width: 100%;
 }
 
-/* line 324, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 325, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .info ul li img {
   width: 100%;
   max-width: 1.6rem;
 }
 
-/* line 328, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 329, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .info ul li span {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
@@ -650,7 +650,7 @@ p {
   opacity: 0.7;
 }
 
-/* line 338, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 339, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .info h5 {
   margin-bottom: 2rem;
   margin-top: 3rem;
@@ -661,7 +661,7 @@ p {
   color: #16243D;
 }
 
-/* line 347, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 348, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-blog .info p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -671,7 +671,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* line 357, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 358, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product {
   display: block;
   width: 100%;
@@ -687,19 +687,19 @@ p {
   transition: all .3s;
 }
 
-/* line 370, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 371, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product:hover {
   border: 1px solid #C6C5CE;
 }
 
-/* line 373, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 374, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product:hover .image img {
   transform: scale(1.04);
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-/* line 380, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 381, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product .image {
   position: relative;
   width: 100%;
@@ -710,7 +710,7 @@ p {
   border-top-left-radius: 0.8rem;
 }
 
-/* line 388, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 389, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product .image img {
   transition: all .3s ease-in;
   width: 100%;
@@ -720,14 +720,14 @@ p {
   border-top-left-radius: 0.8rem;
 }
 
-/* line 397, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 398, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product .info {
   padding-top: 2rem;
   padding-left: 2.5rem;
   transition: all .3s;
 }
 
-/* line 401, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 402, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product .info h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -737,7 +737,7 @@ p {
   margin-bottom: 0.8rem;
 }
 
-/* line 409, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 410, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product .info p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -747,7 +747,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* line 417, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 418, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product .info .learn-more {
   display: flex;
   align-items: center;
@@ -755,7 +755,7 @@ p {
   transition: all .3s ease;
 }
 
-/* line 422, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 423, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product .info .learn-more span {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -766,25 +766,25 @@ p {
 }
 
 @media (max-width: 600px) {
-  /* line 357, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 358, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product {
     height: 10rem;
   }
-  /* line 435, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 436, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product .image {
     display: none;
   }
-  /* line 438, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 439, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product .info {
     padding-left: 2rem;
   }
-  /* line 440, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 441, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product .info p {
     display: none;
   }
 }
 
-/* line 446, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 447, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van {
   display: block;
   width: 100%;
@@ -799,14 +799,14 @@ p {
   transition: all .3s ease-in-out;
 }
 
-/* line 460, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 461, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van:hover .image img {
   transform: scale(1.04);
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-/* line 467, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 468, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van .image {
   position: relative;
   width: 100%;
@@ -817,7 +817,7 @@ p {
   border-top-left-radius: 0.8rem;
 }
 
-/* line 475, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 476, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van .image img {
   transition: all .3s ease-in;
   width: 100%;
@@ -827,14 +827,14 @@ p {
   border-top-left-radius: 0.8rem;
 }
 
-/* line 484, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 485, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van .info {
   padding-top: 2rem;
   padding-left: 2.5rem;
   transition: all .3s;
 }
 
-/* line 488, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 489, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van .info h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -844,7 +844,7 @@ p {
   margin-bottom: 0.8rem;
 }
 
-/* line 496, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 497, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van .info p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -854,7 +854,7 @@ p {
   margin-bottom: 1.5rem;
 }
 
-/* line 504, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 505, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van .info .learn-more {
   display: flex;
   align-items: center;
@@ -862,7 +862,7 @@ p {
   transition: all .3s ease;
 }
 
-/* line 509, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 510, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-van .info .learn-more span {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -873,25 +873,25 @@ p {
 }
 
 @media (max-width: 600px) {
-  /* line 446, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 447, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-van {
     height: 6rem;
   }
-  /* line 522, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 523, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-van .image {
     display: none;
   }
-  /* line 525, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 526, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-van .info {
     padding-left: 2rem;
   }
-  /* line 527, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 528, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-van .info p {
     display: none;
   }
 }
 
-/* line 533, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 534, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product-lg {
   display: flex;
   align-items: center;
@@ -905,7 +905,7 @@ p {
   border: 0.5px solid #C6C5CE;
 }
 
-/* line 544, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 545, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product-lg .image {
   position: relative;
   border-top-left-radius: 2rem;
@@ -916,7 +916,7 @@ p {
   overflow: hidden;
 }
 
-/* line 552, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 553, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product-lg .image img {
   transition: all .3s ease-in;
   width: 100%;
@@ -924,14 +924,14 @@ p {
   object-fit: cover;
 }
 
-/* line 559, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 560, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product-lg .info {
   width: 100%;
   max-width: 37.2rem;
   flex: 1;
 }
 
-/* line 563, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 564, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product-lg .info h4 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -941,7 +941,7 @@ p {
   margin-bottom: 2.5rem;
 }
 
-/* line 571, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 572, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-product-lg .info p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -952,58 +952,58 @@ p {
 }
 
 @media (max-width: 991px) {
-  /* line 533, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 534, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg {
     height: 28rem;
     border-radius: 2rem;
   }
-  /* line 584, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 585, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .image {
     max-width: 30rem;
     height: 28rem;
   }
-  /* line 588, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 589, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .info {
     max-width: 50rem;
   }
-  /* line 590, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 591, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .info h4 {
     margin-bottom: 1rem;
   }
-  /* line 593, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 594, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .info p {
     margin-bottom: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 533, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 534, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg {
     flex-direction: column;
     height: auto;
     padding: 2rem 0px;
     text-align: center;
   }
-  /* line 603, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 604, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .image {
     display: none;
   }
-  /* line 606, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 607, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .info {
     max-width: 80%;
   }
-  /* line 608, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 609, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .info h4 {
     font-size: 2.8rem;
   }
-  /* line 611, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 612, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-product-lg .info p {
     line-height: 150%;
     font-size: 1.6rem;
   }
 }
 
-/* line 619, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 620, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-about {
   background-color: transparent;
   display: flex;
@@ -1012,7 +1012,7 @@ p {
   flex-direction: column;
 }
 
-/* line 625, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 626, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-about img {
   width: 100%;
   max-width: 20rem;
@@ -1021,26 +1021,26 @@ p {
   border-radius: 1rem;
 }
 
-/* line 633, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 634, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-about:hover img {
   border: 1px solid #00449E;
 }
 
-/* line 637, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 638, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-about h6, .card-about p {
   font-family: 'Inter', sans-serif;
   color: #00449E;
   line-height: 175%;
 }
 
-/* line 642, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 643, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-about h6 {
   font-weight: 600;
   font-size: 1.8rem;
   margin-top: 1.5rem;
 }
 
-/* line 647, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 648, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-about p {
   font-weight: 400;
   font-size: 1.6rem;
@@ -1048,13 +1048,13 @@ p {
 }
 
 @media (max-width: 560px) {
-  /* line 653, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 654, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .card-about img {
     max-width: 15rem;
   }
 }
 
-/* line 659, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 660, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .categorie {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -1065,7 +1065,7 @@ p {
   color: #003478;
 }
 
-/* line 668, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 669, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .small-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -1074,7 +1074,7 @@ p {
   color: #5F5C6B;
 }
 
-/* line 675, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 676, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .read-more {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -1084,7 +1084,7 @@ p {
   opacity: 0.7;
 }
 
-/* line 684, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 685, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search {
   width: 100%;
   max-width: 28rem;
@@ -1093,7 +1093,7 @@ p {
   height: 3.6rem;
 }
 
-/* line 690, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 691, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search input {
   border: 1px solid rgba(51, 48, 62, 0.5);
   border-radius: 0.4rem;
@@ -1109,7 +1109,7 @@ p {
   transition: border .3s ease;
 }
 
-/* line 703, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 704, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search input::placeholder {
   font-weight: 400;
   font-size: 1.3rem;
@@ -1117,12 +1117,12 @@ p {
   color: rgba(51, 48, 62, 0.5);
 }
 
-/* line 709, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 710, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search input:focus {
   border: 1px solid #003478;
 }
 
-/* line 713, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 714, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search button {
   width: 3.6rem;
   height: 3.6rem;
@@ -1135,12 +1135,12 @@ p {
   transition: filter .3s ease;
 }
 
-/* line 723, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 724, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search button:hover {
   filter: brightness(0.8);
 }
 
-/* line 728, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 729, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search-secondary {
   background: #FFFFFF;
   border-radius: 12.2rem;
@@ -1156,7 +1156,7 @@ p {
   transition: border-color .3s;
 }
 
-/* line 739, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 740, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search-secondary input[type=text] {
   border: none;
   font-size: 1.5rem;
@@ -1166,12 +1166,12 @@ p {
   width: 80%;
 }
 
-/* line 746, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 747, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search-secondary input[type=text]::placeholder {
   color: #A0AFBA;
 }
 
-/* line 750, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 751, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search-secondary button {
   width: 4.2rem;
   height: 4.2rem;
@@ -1185,17 +1185,17 @@ p {
   transition: border-color .3s;
 }
 
-/* line 759, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 760, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search-secondary button:hover {
   border: 1px solid #3E75C3;
 }
 
-/* line 765, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 766, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .search-secondary:hover {
   border: 1px solid #3E75C3;
 }
 
-/* line 770, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 771, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .large-cta {
   width: 100%;
   max-width: 121.6rem;
@@ -1208,13 +1208,13 @@ p {
   border-radius: 3rem;
 }
 
-/* line 780, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 781, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .large-cta .text {
   width: 100%;
   max-width: 79.7rem;
 }
 
-/* line 783, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 784, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .large-cta .text span {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -1224,7 +1224,7 @@ p {
   text-transform: uppercase;
 }
 
-/* line 791, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 792, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .large-cta .text h3 {
   margin-top: 1rem;
   font-family: 'Poppins', sans-serif;
@@ -1236,7 +1236,7 @@ p {
 }
 
 @media (max-width: 1150px) {
-  /* line 770, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 771, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta {
     gap: 3rem;
     padding-left: 2rem;
@@ -1244,7 +1244,7 @@ p {
 }
 
 @media (max-width: 991px) {
-  /* line 770, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 771, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta {
     padding-left: 1rem;
     gap: 3rem;
@@ -1252,15 +1252,15 @@ p {
     justify-content: center;
     border-radius: 3rem;
   }
-  /* line 812, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 813, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta .text {
     max-width: 36rem;
   }
-  /* line 814, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 815, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta .text h3 {
     font-size: 2.6rem;
   }
-  /* line 817, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 818, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta .text span {
     text-transform: none;
     text-align: center;
@@ -1268,7 +1268,7 @@ p {
 }
 
 @media (max-width: 600px) {
-  /* line 770, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 771, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta {
     height: auto;
     flex-direction: column;
@@ -1278,7 +1278,7 @@ p {
     background-image: none;
     padding: 0px;
   }
-  /* line 831, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 832, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta .text {
     display: flex;
     flex-direction: column;
@@ -1287,12 +1287,12 @@ p {
     max-width: 100%;
     text-align: center;
   }
-  /* line 838, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 839, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta .text h3 {
     font-size: 2.8rem;
     color: #003478;
   }
-  /* line 842, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 843, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .large-cta .text span {
     display: block;
     font-family: "Poppins", sans-serif;
@@ -1306,7 +1306,7 @@ p {
   }
 }
 
-/* line 856, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 857, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .small-cta {
   width: 100%;
   max-width: 80rem;
@@ -1318,13 +1318,13 @@ p {
   gap: 7rem;
 }
 
-/* line 865, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 866, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .small-cta .text {
   width: 100%;
   max-width: 38.3rem;
 }
 
-/* line 868, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 869, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .small-cta .text h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -1333,19 +1333,19 @@ p {
   color: #FFFFFF;
 }
 
-/* line 877, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 878, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .small-cta .btn {
   color: #33303E;
 }
 
-/* line 879, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 880, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .small-cta .btn-primary {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
 }
 
 @media (max-width: 1300px) {
-  /* line 856, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 857, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .small-cta {
     padding-left: 3rem;
     gap: 4rem;
@@ -1354,7 +1354,7 @@ p {
 }
 
 @media (max-width: 720px) {
-  /* line 856, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 857, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .small-cta {
     background-image: none;
     display: flex;
@@ -1368,25 +1368,25 @@ p {
     background-color: #F0F4F9;
     height: 100%;
   }
-  /* line 904, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+  /* line 905, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
   .small-cta .text h3 {
     color: #00449E;
     font-size: 2.6rem;
   }
 }
 
-/* line 913, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 914, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .show-modal .modal {
   opacity: 1;
   pointer-events: all;
 }
 
-/* line 916, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 917, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .show-modal .modal .box {
   transform: translateY(0px);
 }
 
-/* line 922, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 923, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal {
   position: fixed;
   top: -3rem;
@@ -1402,7 +1402,7 @@ p {
   transition: opacity .3s;
 }
 
-/* line 935, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 936, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .overlay {
   position: fixed;
   top: 0;
@@ -1413,7 +1413,7 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 944, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 945, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .box {
   position: relative;
   z-index: 1;
@@ -1431,14 +1431,14 @@ p {
   transition: transform .3s;
 }
 
-/* line 960, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 961, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .box .close {
   position: absolute;
   top: 24px;
   right: 2.4rem;
 }
 
-/* line 965, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 966, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .box span {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -1451,7 +1451,7 @@ p {
   padding-left: 5rem;
 }
 
-/* line 976, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 977, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .box h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -1463,19 +1463,19 @@ p {
   max-width: 41rem;
 }
 
-/* line 986, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 987, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .box form {
   width: 100%;
   max-width: 37rem;
   margin-top: 4rem;
 }
 
-/* line 990, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 991, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .box form .form-group {
   margin-bottom: 2.5rem;
 }
 
-/* line 993, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 994, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .modal .box form .btn {
   width: 100%;
   max-width: 37rem;
@@ -1483,7 +1483,7 @@ p {
   margin-top: 1rem;
 }
 
-/* line 1003, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 1004, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .form-group label {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -1495,7 +1495,7 @@ p {
   padding-bottom: 0.5rem;
 }
 
-/* line 1013, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 1014, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .form-group input {
   width: 37rem;
   border: 1px solid #CED4DA;
@@ -1503,7 +1503,7 @@ p {
   padding: 1.3rem 2rem;
 }
 
-/* line 1020, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 1021, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .title {
   display: flex;
   align-items: center;
@@ -1511,13 +1511,13 @@ p {
   gap: 3rem;
 }
 
-/* line 1025, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 1026, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .title h6 {
   display: none;
   color: #7A7786;
 }
 
-/* line 1029, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 1030, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .title h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -1531,7 +1531,7 @@ p {
   text-transform: uppercase;
 }
 
-/* line 1041, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+/* line 1042, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .title p {
   width: 100%;
   max-width: 35rem;
