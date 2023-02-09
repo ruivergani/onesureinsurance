@@ -39,9 +39,9 @@
             border-color: $brand-dark-red;
         }
     }
-
-
-
+    &.done{
+        display: none;
+    }
 }
 // Cards
 .card-post-default{

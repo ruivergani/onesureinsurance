@@ -289,6 +289,11 @@ p {
   border-color: #C00037;
 }
 
+/* line 42, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
+.btn.done {
+  display: none;
+}
+
 /* line 47, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_components.scss */
 .card-post-default {
   display: flex;
@@ -3857,7 +3862,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
 }
 
 /* line 219, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_blog-index.scss */
-.s-main-content .container .s-all .all {
+.s-main-content .container .s-all .alm-listing {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 60px 40px;
@@ -3875,7 +3880,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     max-width: 28rem;
   }
   /* line 237, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_blog-index.scss */
-  .s-main-content .container .s-all .all {
+  .s-main-content .container .s-all .alm-listing {
     grid-gap: 15px 15px;
   }
 }
@@ -3898,7 +3903,7 @@ footer .container .bottom-footer .js-btn-scroll-top img {
     gap: 4rem;
   }
   /* line 256, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_blog-index.scss */
-  .s-main-content .container .s-all .all {
+  .s-main-content .container .s-all .alm-listing {
     grid-template-columns: 1fr;
     grid-gap: 2rem;
   }

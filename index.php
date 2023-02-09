@@ -99,51 +99,7 @@
       </div>
       <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
-          <div class="all">
-            <!-- Begin Posts --> 
-            <?php
-              $config = array(
-                'posts_per_page' => '9',
-                'post_type' => 'post',
-                'order' => 'DESC'
-              );
-              $query_posts = new WP_Query($config);
-            ?>
-            <!-- Repeater to get the variable query_posts -->
-            <?php if(have_posts()) : while ($query_posts -> have_posts()) : $query_posts -> the_post(); ?>
-              <a href="<?php the_permalink(); ?>" class="card-post-default">
-                  <div class="image">
-                      <?php the_post_thumbnail(); ?>
-                  </div>
-                  <div class="info">
-                      <!-- Category Section -->
-                      <?php
-                        $category = get_the_category($post -> ID); // return ID post
-                        if(!empty($category)){
-                          foreach($category as $nameCategory){
-                            echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
-                          }
-                        }
-                      ?>
-                      <!-- End of Category Section -->
-                      <h6><?php the_title(); ?></h6>
-                      <ul>
-                        <li>
-                          <span><?php echo get_the_date('j, F'); ?></span>
-                        </li>
-                        <li>
-                          <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
-                        </li>
-                      </ul>
-                  </div>
-              </a>
-            <?php endwhile; else : endif; wp_reset_query(); ?>
-            <!-- End Of Most Recent Posts -->
-          </div>
-          <button class="btn btn-outline" id="btn-outline">
-              <i class="fa-solid fa-arrows-rotate"></i>
-              LOAD MORE
-          </button>
+          <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="9" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
       </div>
   </div>
 </section>

@@ -216,7 +216,7 @@
             flex-direction: column;
             justify-content: center;
             gap: 8rem;
-            .all{
+            .alm-listing{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 60px 40px;
@@ -234,7 +234,7 @@
                 max-width: 28rem;
             }
             .s-all{
-                .all{
+                .alm-listing{
                     grid-gap: 15px 15px;
                 }
             }
@@ -253,7 +253,7 @@
         .container{
             .s-all{
                 gap: 4rem;
-                .all{
+                .alm-listing{
                     grid-template-columns: 1fr;
                     grid-gap: 2rem;
                 }
