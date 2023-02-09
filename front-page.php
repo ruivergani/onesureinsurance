@@ -215,7 +215,7 @@
                     </li>
                   </ul>
                   <h5><?php the_title(); ?></h5>
-                  <p>Lorem ipsum dolor sit amet consectetur. Enim pellentesque eget sed tortor.</p>
+                  <p><?php the_excerpt(); ?></p>
                   <span class="read-more">Read More</span>
                 </div>
               </a>
