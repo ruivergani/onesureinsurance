@@ -54,10 +54,8 @@ gulp.task('pluginjs', pluginsJS);
 // Browser Function
 function browser(){
     browserSync.init({
-        server: {
-            baseDir: './'
-        }
-    })
+        proxy: "localhost:10019/"
+      })
 }
 gulp.task('browser-sync', browser);
 
@@ -65,7 +63,7 @@ gulp.task('browser-sync', browser);
 function watch(){
     gulp.watch('scss/*.scss', compilaSass); // gulp.series('name-of-task') or use parrallel
     gulp.watch('css/lib/*.css', pluginsCSS);
-    gulp.watch('*.html').on('change', browserSync.reload); // refresh html when changes made
+    gulp.watch('*.php').on('change', browserSync.reload); // refresh html when changes made
     gulp.watch('js/scripts/*.js', gulpJS);
     gulp.watch('js/lib/*.js', pluginsJS);
 }
