@@ -27,55 +27,14 @@
   </div>
 </section>
 
-<!-- Section Links -->
-<section class="s-blog-links">
-  <div class="container">
-      <ul>
-          <li data-aos="fade-up">
-              <a href="<?php echo get_permalink(get_page_by_title('Guides')) ?>">
-                  <i class="fa-solid fa-newspaper"></i>
-                  <p>Check our Guides</p>
-              </a>
-          </li>
-          <li data-aos="fade-up" data-aos-delay="50">
-              <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
-                  <i class="fa-regular fa-message"></i>
-                  <p>Find our Blog Resources</p>
-              </a>
-          </li>
-          <li data-aos="fade-up" data-aos-delay="150">
-              <a href="<?php echo get_permalink(get_page_by_title('FAQ')) ?>">
-                  <i class="fa-solid fa-question"></i>
-                  <p>Check our FAQs</p>
-              </a>
-          </li>
-      </ul>
-  </div>
-</section>
+<!-- Section Include Links Blog -->
+<?php include(TEMPLATEPATH .'/includes/section-links-blog-index.php') ?>
 
 <!-- Section Main Content -->
 <section class="s-main-content">
   <div class="container">
-      <!-- List all Tags by post -->
-      <div class="side-category" data-aos="fade-right">
-        <ul>
-          <?php
-            $tags = get_tags(array(
-              'hide_empty' => false
-            ));
-            foreach($tags as $tag){
-          ?>
-            <li>
-              <a href="<?php echo get_tag_link($tag->term_id); ?>">
-                <p><?php echo $tag->name; ?></p>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
-              </a>
-            </li>
-          <?php 
-            }
-          ?>
-        </ul>
-      </div>
+      <!-- Section Include Side Tags -->
+      <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
       <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
           <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="6" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
