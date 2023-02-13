@@ -171,7 +171,6 @@
                     border-radius: 0.4rem;
                     position: relative;
                     transition: all 0.3s;
-                    
                     .title-contents{
                         font-family: 'Inter', sans-serif;
                         font-weight: 700;
@@ -201,6 +200,12 @@
                             align-items: flex-start;
                             transition: all .3s;
                             a{
+                                width: 100%;
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 500;
+                                font-size: 1.6rem;
+                                line-height: 150%;
+                                color: $grey-400;
                                 span{
                                     font-family: 'Inter', sans-serif;
                                     font-weight: 500;
@@ -208,18 +213,23 @@
                                     line-height: 150%;
                                     color: $grey-400;
                                 }
+                                &.active{
+                                    color: $grey-600;
+                                    font-weight: 600;
+                                }
                             }
                             &:before{
                                 content: "";
-                                width: 8px;
+                                width: 6px;
                                 height: 4px;
                                 display: inline-block;
                                 background-color: #9995A6;
                                 margin-top: 1rem;
-                                margin-right: 1.6rem;
+                                margin-right: 1.2rem;
                             }
                             &:hover{
                                 a{
+                                    color: $grey-600;
                                     span{
                                         color: $grey-600;
                                     }
@@ -257,6 +267,7 @@
                             margin-bottom: 1.6rem;
                             transition: all .3s;
                             a{
+                                width: 100%;
                                 span{
                                     font-family: 'Inter', sans-serif;
                                     font-weight: 500;
@@ -267,7 +278,7 @@
                             }
                             &:before{
                                 content: "";
-                                width: 8px;
+                                width: 6px;
                                 height: 4px;
                                 display: inline-block;
                                 background-color: #9995A6;

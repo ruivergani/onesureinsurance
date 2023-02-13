@@ -71,6 +71,7 @@
         <div class="left-content">
           <div class="image">
             <img src="<?php the_field('image_post_details_highlight') ?>" alt="main image blog" title="main image blog">
+            <!-- The Excerpt Message -->
             <p><?php the_excerpt(); ?></p>
           </div>
           <!-- Blog Structure based on WordPress -->

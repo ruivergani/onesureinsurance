@@ -57,7 +57,6 @@ if(itemContent){
 // Script for the Topics Navigation
 const listTopics = document.querySelector('.js-nav-blog-post');
 const topics = document.querySelectorAll('.info-post-general .container .info-post-bottom .left-content .content-post h2');
-
 if(listTopics){
   topics.forEach(topic => {
     let listElement = document.createElement('li');
@@ -65,9 +64,49 @@ if(listTopics){
 
     let ancorTopic = document.createElement('a');
     ancorTopic.setAttribute('href', '#');
-    ancorTopic.textContent = topic.textContent;
     listElement.appendChild(ancorTopic);
+
+    let textTopic = document.createElement('span');
+    ancorTopic.textContent = topic.textContent;
+    ancorTopic.appendChild(textTopic);
   });
+  const allTopics = document.querySelectorAll('.js-nav-blog-post li a');
+  allTopics[0].classList.add('active');
+
+  // Function to return the element position
+  function offset(el) {
+    if (document) {
+      const rect = el.getBoundingClientRect()
+      const scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+  }
+
+  // Function to scroll until the position H2
+  function handleScrollTop(position) {
+    if(document) {
+      const topics = document.querySelectorAll('.info-post-general .container .info-post-bottom .left-content .content-post h2')[position];
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: offset(topics).top - 110
+      })
+    }
+  }
+
+  // Map and make the event click in the topics to scroll based on layout
+  allTopics.forEach((item, index) => {
+    item.addEventListener('click', (event) => {
+      event.preventDefault();
+      allTopics.forEach(all => {
+        all.classList.remove('active');
+      })
+      item.classList.add('active');
+      handleScrollTop(index);
+    })
+  })
 }
 
 // Script for Swipper Slide Logos
