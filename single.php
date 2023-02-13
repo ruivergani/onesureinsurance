@@ -92,7 +92,6 @@
             <h5 class="title-contents">Table of contents</h5>
             <!-- Top Navigation -->
             <ul class="js-nav-blog-post">
-              
             </ul>
             <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
               <button>
