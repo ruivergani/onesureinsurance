@@ -9,8 +9,8 @@
         ?>
         <li>
             <a href="<?php echo get_tag_link($tag->term_id); ?>">
-            <p><?php echo $tag->name; ?></p>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
+                <p><?php echo $tag->name; ?></p>
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
             </a>
         </li>
         <?php 

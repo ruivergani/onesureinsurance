@@ -8,7 +8,7 @@
 <section class="s-blog-hero">
   <div class="container">
       <div class="s-blog-hero-title">
-          <h1>Our <?php echo single_cat_title(); ?> Articles</h1>
+          <h1>Our <?php echo single_tag_title(); ?> Articles</h1>
           <p><?php the_field('blog_section_hero_subtitle', $blog_page) ?></p>
       </div>
       <div class="s-blog-hero-search">
@@ -30,16 +30,15 @@
   <div class="container">
       <!-- Section Include Side Tags -->
       <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
-
       <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
           <div class="alm-listing">
             <?php   
-                $category = get_queried_object();
+                $tag = get_queried_object();
                 $args = array(
                     'post_type' => 'post',
                     'order' => 'DESC',
-                    'cat' => $category->term_id
+                    'tag' => $tag->slug
                 );
                 $the_query = new WP_Query($args);
             ?>
