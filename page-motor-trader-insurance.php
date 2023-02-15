@@ -68,7 +68,7 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product">
+  <section class="s-slide-product" id="s-slide-product">
     <div class="container">
       <div class="top">
         <h6><?php the_field('section_product_slide_title_mobile') ?></h6>
@@ -130,7 +130,7 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-content" title="cover section">
+          <a href="#s-slide-product" title="cover section">
             <p>Types of Insurance</p>
           </a>
         </li>
@@ -258,44 +258,29 @@
     </div>
   </section>
 
-  <!-- Section Bespoke -->
-  <section class="s-bespoke">
+  <!-- Section Why Us  -->
+  <section class="s-bespoke" id="s-bespoke">
       <div class="container">
         <div class="text-top">
-          <h6>Lorem ipsum is simply</h6>
-          <h4 data-aos="fade-right">Bespoke Motor Traders Insurance Policies</h4>
-          <p data-aos="fade-left">Custom-tailored to the individual needs and requirements of your business</p>
+          <h6><?php the_field('mobile_title_why_us_motortrade') ?></h6>
+          <h4 data-aos="fade-right"><?php the_field('title_why_us_motortrade') ?></h4>
+          <p data-aos="fade-left"><?php the_field('subtitle_why_us_motortrade') ?></p>
         </div>
         <div class="main-bespoke">
           <div class="text-bottom" data-aos="fade-right">
             <ul >
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-house-bespoke.svg" alt="icon house" title="icon house">
-                <h5>Trusted Panel of Underwriters</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-store-bespoke.svg" alt="icon store" title="icon store">
-                <h5>Make Changes When you Need To</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-finance-bespoke.svg" alt="icon finance" title="icon finance">
-                <h5>Renewals Made Hassle Free</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-policies-bespoke.svg" alt="icon policies" title="icon policies">
-                <h5>Policies From Just £450</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
+              <!-- Repeater Slide Cards --> 
+              <?php if( have_rows('create_cards_section_about_us_motortrade') ): while ( have_rows('create_cards_section_about_us_motortrade') ) : the_row(); ?>
+                <!-- Card -->
+                <li>
+                  <img src="<?php the_sub_field('icon_card_motortrade'); ?>" alt="icon house" title="icon house">
+                  <h5><?php the_sub_field('title_card_motortrade'); ?></h5>
+                  <p><?php the_sub_field('description_card_motortrade'); ?></p>
+                </li>
+              <?php endwhile; else : endif;?>
             </ul>
           </div>
-          <img src="<?php echo get_template_directory_uri()?>/assets/bg/bespoke-image.webp" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
+          <img src="<?php the_field('image_why_us_motortrade') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
         </div>
       </div>
   </section>
