@@ -8,16 +8,8 @@
 <section class="s-blog-hero">
   <div class="container">
       <div class="s-blog-hero-title">
-          <h1>Our <?php echo single_tag_title(); ?> Articles</h1>
-          <p><?php the_field('blog_section_hero_subtitle', $blog_page) ?></p>
-      </div>
-      <div class="s-blog-hero-search">
-          <form class="search-secondary">
-              <input type="text" placeholder="Search name or code" id="js-input-search">
-              <button type="button" id="js-btn-search">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-search-input-blue.svg" alt="icon search" title="icon search">
-              </button>
-          </form>
+          <h1>Results from your search</h1>
+          <p>Word searched:&nbsp;<?php echo get_query_var('s') ?></p>
       </div>
   </div>
 </section>
@@ -32,97 +24,59 @@
       <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
       <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
-          <div class="alm-listing">
-            <?php   
-                $tag = get_queried_object();
-                $args = array(
-                    'post_type' => 'post',
-                    'order' => 'DESC',
-                    'tag' => $tag->slug
-                );
-                $the_query = new WP_Query($args);
-            ?>
-            <?php if(have_posts()) : while($the_query->have_posts()) : $the_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>" class="card-post-default">
-                    <div class="image">
-                        <?php the_post_thumbnail(); ?>
-                    </div>
-                    <div class="info">
-                        <!-- Category Section -->
-                        <?php
-                        $category = get_the_category($post -> ID); // return ID post
-                        if(!empty($category)){
-                            foreach($category as $nameCategory){
-                            echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+        <!-- Code to create query and search for posts -->
+        <?php
+            global $query_string;
+            $query_args = explode("&", $query_string);
+            $search_query = array();
+
+            foreach($query_args as $key => $string) {
+                $query_split = explode("=", $string);
+                $search_query[$query_split[0]] = urldecode($query_split[1]);
+            }
+            $the_query = new WP_Query($search_query);
+            if ($the_query->have_posts()) : 
+        ?>
+            <div class="alm-listing">
+                <?php if(have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                    <a href="<?php the_permalink(); ?>" class="card-post-default">
+                        <div class="image">
+                            <?php the_post_thumbnail(); ?>
+                        </div>
+                        <div class="info">
+                            <!-- Category Section -->
+                            <?php
+                            $category = get_the_category($post -> ID); // return ID post
+                            if(!empty($category)){
+                                foreach($category as $nameCategory){
+                                echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+                                }
                             }
-                        }
-                        ?>
-                        <!-- End of Category Section -->
-                        <h6><?php the_title(); ?></h6>
-                        <ul>
-                        <li>
-                            <span><?php echo get_the_date('j, F'); ?></span>
-                        </li>
-                        <li>
-                            <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
-                        </li>
-                        </ul>
-                    </div>
-                </a>
-            <?php endwhile; else: endif; ?>
-          </div>
+                            ?>
+                            <!-- End of Category Section -->
+                            <h6><?php the_title(); ?></h6>
+                            <ul>
+                            <li>
+                                <span><?php echo get_the_date('j, F'); ?></span>
+                            </li>
+                            <li>
+                                <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
+                            </li>
+                            </ul>
+                        </div>
+                    </a>
+                <?php endwhile; else : endif; ?>
+            </div>
+        <?php wp_reset_postdata(); ?>
+        <!-- else -->
+        <?php else: ?>
+            <div class="empty-search">
+                <h2>Result not found</h2>
+                <p>It wasn't found any result based on your search.</p>
+            </div>
+        <?php endif; ?>
+        <!-- End of IF statement -->
       </div>
-  </div>
-</section>
-
-<!-- Section Company Logos -->
-<?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
-
-<!-- Section Resources Blog --> 
-<section class="s-resources-blog">
-  <div class="container">
-    <div class="resources-blog-left">
-      <h4><?php the_field('title_resources', $blog_page) ?></h4>
-      <ul data-aos="fade-up">
-        <!-- Repeater List --> 
-        <?php if(have_rows('list_resources', $blog_page)): while (have_rows('list_resources', $blog_page)) : the_row(); ?>
-          <li>
-            <a href="<?php the_sub_field('link_to_the_page') ?>">
-              <p><?php the_sub_field('text_resources_list') ?></p>
-            </a>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-      <a href="<?php the_field('link_cta', $blog_page) ?>" class="small-cta" data-aos="zoom-in">
-        <div class="text">
-            <h3><?php the_field('title_cta', $blog_page) ?></h3>
-        </div>
-        <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward-black.svg" alt="icon forward arrow black" title="icon forward arrow black">
-            Check here
-        </button>
-      </a>
-    </div>
-    <div class="resources-blog-right" data-aos="fade-left">
-      <h5><?php the_field('title_right_cta', $blog_page) ?></h5>
-      <form class="form-subscribe">
-        <input type="text" placeholder="Email address *" id="js-input-address">
-        <button type="button" id="js-btn-address">
-          Subscribe
-        </button>
-      </form>
-      <ul>
-        <!-- Repeater List --> 
-        <?php if(have_rows('list_right_cta', $blog_page)): while (have_rows('list_right_cta', $blog_page)) : the_row(); ?>
-          <li>
-            <p>
-              <?php the_sub_field('text_list_right_cta') ?>
-            </p>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-      <p><?php the_field('description_right_cta', $blog_page) ?></p>
-    </div>
   </div>
 </section>
 
