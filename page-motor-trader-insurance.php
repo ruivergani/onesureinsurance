@@ -89,7 +89,7 @@
       <!-- Swiper slide structure -->
       <div class="slide-product">
         <div class="swiper-wrapper">
-          <!-- Repeater Insurance Types --> 
+          <!-- Repeater Slide Cards --> 
           <?php if( have_rows('cards_product_slide_motortrade') ): while ( have_rows('cards_product_slide_motortrade') ) : the_row(); ?>
             <div class="swiper-slide">
               <!-- Card Product Type -->
@@ -113,21 +113,8 @@
     </div>
   </section>
 
-  <!-- Section Newsletter -->
-  <div class="s-newsletter">
-    <div class="container">
-      <a href="#" class="large-cta" data-aos="zoom-in">
-        <div class="text">
-            <span>We Are Confident Of Our Pricing That We Challenge You To Beat Our Guarantee</span>
-            <h3>We Are Britains Cheapest Motor Trade Insurer* </h3>
-        </div>
-        <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
-        </button>
-      </a>
-    </div>
-  </div>
+  <!-- Section CTA Desktop -->
+  <?php include(TEMPLATEPATH .'/includes/section-cta-desktop.php') ?>
 
    <!-- Section Company Logos -->
    <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
@@ -232,61 +219,27 @@
   <section class="s-cover" id="s-cover">
     <div class="container">
       <div class="cover-on" data-aos="fade-right">
-        <h6>What we can cover you for:</h6>
+        <h6><?php the_field('section_cover_motortrade_title'); ?></h6>
         <ul>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked.svg" alt="icon checked" title="icon checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked.svg" alt="icon checked" title="icon checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked.svg" alt="icon checked" title="icon checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked.svg" alt="icon checked" title="icon checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked.svg" alt="icon checked" title="icon checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked.svg" alt="icon checked" title="icon checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('section_cover_on') ): while ( have_rows('section_cover_on') ) : the_row(); ?>
+            <li>
+              <img src="<?php the_sub_field('icon_checked_cover_on'); ?>" alt="icon checked" title="icon checked">
+              <p><?php the_sub_field('text_cover_on'); ?></p>
+            </li>
+          <?php endwhile; else : endif;?>
         </ul>
       </div>
       <div class="cover-off" data-aos="fade-left">
         <h6>What's not included:</h6>
         <ul>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-circle.svg" alt="icon not checked" title="icon not checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-circle.svg" alt="icon not checked" title="icon not checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-circle.svg" alt="icon not checked" title="icon not checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-circle.svg" alt="icon not checked" title="icon not checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-circle.svg" alt="icon not checked" title="icon not checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
-          <li>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-circle.svg" alt="icon not checked" title="icon not checked">
-            <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium.</p>
-          </li>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('section_cover_off') ): while ( have_rows('section_cover_off') ) : the_row(); ?>
+            <li>
+              <img src="<?php the_sub_field('icon_checked_cover_off'); ?>" alt="icon not checked" title="icon not checked">
+              <p><?php the_sub_field('text_cover_off'); ?></p>
+            </li>
+          <?php endwhile; else : endif;?>
         </ul>
       </div>
     </div>
