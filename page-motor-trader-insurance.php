@@ -9,31 +9,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 
   <!-- Section Breadcrumbs -->
-  <section class="s-breadcrumbs">
-    <div class="container">
-        <ul>
-            <li>
-                <a href="<?php echo get_home_url(); ?>" aria-label="home page">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-            </li>
-            <li>
-                <a href="<?php echo get_home_url(); ?>" aria-label="home page">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="#" aria-label="current page">
-                    Motor Trade Insurance
-                </a>
-            </li>
-        </ul>
-        <a href="<?php echo get_home_url(); ?>" class="back" aria-label="return page">
-          <i class="fa-solid fa-chevron-left"></i>
-          Go Back to Home
-        </a>
-    </div>
-  </section>
+  <?php breadcrumbs(); ?>
 
   <!-- Section Hero -->
   <section class="s-hero-product">
@@ -330,6 +306,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
           <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
         </div>
+        <?php the_content(); ?>
       </div>
     </div>
   </section>

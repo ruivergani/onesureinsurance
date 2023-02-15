@@ -99,4 +99,37 @@ function setPostViews($postID){
         update_post_meta($postID, $countKey, $count);
     }
 }
+
+// Section to crate the breadcrumbs
+function breadcrumbs($id = null){
+    ?>
+    <section class="s-breadcrumbs">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="<?php echo get_home_url(); ?>" aria-label="home page">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <?php if(!empty($id)): ?>
+                    <li>
+                        <a href="<?php echo get_permalink( $id ); ?>" aria-label="home page">
+                            <?php echo get_the_title( $id ); ?>
+                        </a>
+                    </li>
+                <?php endif; ?>
+                <li>
+                    <a href="#" aria-label="current page">
+                    <?php the_title(); ?>
+                    </a>
+                </li>
+            </ul>
+            <a href="<?php echo get_home_url(); ?>" class="back" aria-label="return page">
+                <i class="fa-solid fa-chevron-left"></i>
+                Go Back to Home
+            </a>
+        </div>
+    </section>
+<?php }
+
 ?>
