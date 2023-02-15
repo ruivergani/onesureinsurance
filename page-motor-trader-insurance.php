@@ -248,64 +248,21 @@
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up">
     <div class="container">
-      <h6>Lorem ipsum is simply</h6>
-      <h4>Optional Extras Insurance</h4>
+      <h6><?php the_field('mobile_title_optional_extras') ?></h6>
+      <h4><?php the_field('title_optional_extras') ?></h4>
       <ul>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('section_optional_extras_cards') ): while ( have_rows('section_optional_extras_cards') ) : the_row(); ?>
+          <li>
+            <a href="<?php the_sub_field('link_for_card') ?>">
+              <i class="fa-solid fa-house"></i>
+              <div class="text">
+                <h5><?php the_sub_field('title_for_card') ?></h5>
+                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
+              </div>
+            </a>
+          </li>
+        <?php endwhile; else : endif;?>
       </ul>
     </div>
   </section>
