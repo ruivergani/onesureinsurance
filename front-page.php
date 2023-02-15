@@ -104,7 +104,7 @@
         <p data-aos="fade-left"><?php the_field('subtitle_section_all_types_insurance') ?></p>
       </div>
       <div class="all-cards-type" data-aos="fade-up">
-        <!-- Repetidor Insurance Types --> 
+        <!-- Repeater Insurance Types --> 
         <?php if( have_rows('register_insurance_types') ): while ( have_rows('register_insurance_types') ) : the_row(); ?>
           <a href="<?php the_sub_field('page_insurance_type') ?>" class="card-type-default">
             <div class="image">

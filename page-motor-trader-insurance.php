@@ -17,22 +17,16 @@
       <div class="product">
         <!-- Left Text Area -->
         <div class="left-text" data-aos="fade-right">
-          <span class="sm-text-product">get a quote</span>
-          <h1>Motor Trade Insurance. 
-            Find the right cover to suit you.</h1>
+          <span class="sm-text-product"><?php the_field('get_quote_subtitle') ?></span>
+          <h1><?php the_field('get_quote_title') ?></h1>
           <ul>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon green checked" title="icon green checked">
-              <p>We Offer Road Risk Policies!</p>
-            </li>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon green checked" title="icon green checked">
-              <p>Road Risks + Combined Premises</p>
-            </li>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon green checked" title="icon green checked">
-              <p>Prices From Just £50.40 Per Month</p>
-            </li>
+            <!-- Repeater Insurance Types --> 
+            <?php if( have_rows('get_quote_list') ): while ( have_rows('get_quote_list') ) : the_row(); ?>
+              <li>
+                <img src="<?php the_sub_field('icon_get_quote') ?>" alt="icon green checked" title="icon green checked">
+                <p><?php the_sub_field('text_get_quote') ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
           </ul>
           <button class="btn btn-primary-lg">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
@@ -42,16 +36,16 @@
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in">
         <!-- Right Text Area -->
         <div class="right-text" data-aos="fade-left">
-          <span class="sm-text-product">Call Us Today</span>
-          <h2>You can get a Traders Policy From Just <span>£50.40 Per Month</span></h2>
+          <span class="sm-text-product"><?php the_field('call_us_subtitle') ?></span>
+          <h2><?php the_field('call_us_title') ?></h2>
           <ul>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="icon phone" title="icon phone">
-              <p>Call our landline at <span>0800 081 5113</span></p>
+              <p>Call our landline at <span><?php the_field('landline_phone_call_us') ?></span></p>
             </li>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="icon mobile phone" title="icon mobile phone">
-              <p>Call your mobile at <span>03303139373</span></p>
+              <p>Call your mobile at <span><?php the_field('mobile_phone_call_us') ?></span></p>
             </li>
           </ul>
           <button class="btn btn-outline">
