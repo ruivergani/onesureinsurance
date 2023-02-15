@@ -71,8 +71,8 @@
   <section class="s-slide-product">
     <div class="container">
       <div class="top">
-        <h6>All Types of Insurance</h6>
-        <h4>We Cover The Majority Of Motor Trade Industries</h4>
+        <h6><?php the_field('section_product_slide_title_mobile') ?></h6>
+        <h4><?php the_field('section_product_slide_title') ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -89,102 +89,25 @@
       <!-- Swiper slide structure -->
       <div class="slide-product">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="#" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-product-page.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="#" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-product-page.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="#" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-product-page.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="#" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-product-page.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="#" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-product-page.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="#" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-product-page.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
+          <!-- Repeater Insurance Types --> 
+          <?php if( have_rows('cards_product_slide_motortrade') ): while ( have_rows('cards_product_slide_motortrade') ) : the_row(); ?>
+            <div class="swiper-slide">
+              <!-- Card Product Type -->
+              <a href="<?php the_sub_field('card_link') ?>" class="card-product">
+                <div class="image">
+                    <img src="<?php the_sub_field('image_card') ?>" alt="card product page" title="card product page">
+                </div>
+                <div class="info">
+                    <h6><?php the_sub_field('card_title') ?></h6>
+                    <p><?php the_sub_field('subtitle_card') ?></p>
+                    <div class="learn-more">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
+                        <span>Learn more</span>
+                    </div>
+                </div>
+              </a>
+            </div>
+          <?php endwhile; else : endif;?>
         </div>
       </div>
     </div>
