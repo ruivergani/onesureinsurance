@@ -288,48 +288,19 @@
   <!-- Section FAQs -->
   <section class="s-faqs padding-bottom padding-top" id="s-faqs" data-aos="fade-up">
     <div class="container">
-      <h4>Frequently Asked Questions</h4>
+      <h4><?php the_field('section_faqs_copy'); ?></h4>
       <div class="b-container">
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Do I need car insurance?</strong>
-            <i class="fa-solid fa-chevron-down"></i>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('section_faqs_repeater') ): while ( have_rows('section_faqs_repeater') ) : the_row(); ?>
+          <!-- Question Card -->
+          <div class="question">
+            <div class="title js-question">
+              <strong><?php the_sub_field('title_faq_motortrade'); ?></strong>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <p><?php the_sub_field('description_faq_motortrade'); ?></p>
           </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 02</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 03</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 04</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 05</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
+        <?php endwhile; else : endif;?>
       </div>
     </div>
   </section>
