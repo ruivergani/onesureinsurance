@@ -116,8 +116,8 @@
   <!-- Section CTA Desktop -->
   <?php include(TEMPLATEPATH .'/includes/section-cta-desktop.php') ?>
 
-   <!-- Section Company Logos -->
-   <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
+  <!-- Section Company Logos -->
+  <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
 
   <!-- Table of Contents -->
   <section class="s-table-contents">
@@ -306,68 +306,59 @@
   </section>
 
   <!-- Section Articles -->
-  <section class="s-articles" id="s-articles">
-    <div class="container">
-      <div class="text-top">
-        <h6>Check below some</h6>
-        <h4>Related Articles</h4>
-        <p>Check similar articles below 🚀</p>
+  <!-- Related Articles -->
+  <?php
+    $categories = get_the_category();
+    $args = array(
+      'post_type' => 'post',
+      'order' => 'DESC',
+      'posts_per_page' => 3,
+      'cat' => $categories[0]->cat_ID, // return the first category of the post
+      'post__not_in' => array(get_the_ID()),
+    );
+    $the_query = new WP_Query($args);
+  ?>
+  <?php if ($the_query->have_posts()) : ?>
+    <section class="s-articles" id="s-articles">
+      <div class="container">
+        <div class="text-top">
+          <h6><?php the_field('mobile_title_articles_motortrade'); ?>></h6>
+          <h4><?php the_field('title_section_articles_motortrade'); ?></h4>
+          <p><?php the_field('description_articles_motortrade'); ?></p>
+        </div>
+        <div class="article-cards">
+          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <a href="<?php the_permalink(); ?>" class="card-post-default">
+              <div class="image">
+                <?php the_post_thumbnail(); ?>
+              </div>
+              <div class="info">
+                <!-- Category Section -->
+                <?php
+                  $category = get_the_category($post -> ID); // return ID post
+                  if(!empty($category)){
+                    foreach($category as $nameCategory){
+                      echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+                    }
+                  }
+                ?>
+                <h6><?php the_title(); ?></h6>
+                <ul>
+                    <li>
+                        <span><?php echo get_the_date('j, F'); ?></span>
+                    </li>
+                    <li>
+                        <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
+                    </li>
+                </ul>
+              </div>
+            </a>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
+        </div>
       </div>
-      <div class="article-cards">
-        <a href="#" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  <?php endif; ?>
  
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
