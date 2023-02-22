@@ -13,17 +13,17 @@
     <section class="s-hero-about">
       <div class="container">
           <div class="s-hero-about-title">
-              <h1>About Us</h1>
+              <h1><?php the_field('title_section_hero_about_us_page') ?></h1>
               <ul>
                   <li>
-                      <a href="<?php echo get_home_url(); ?>">
-                          Home
-                      </a>
+                    <a href="<?php echo get_home_url(); ?>">
+                      Home
+                    </a>
                   </li>
                   <li>
-                      <a href="">
-                          About
-                      </a>
+                    <a href="" aria-label="current-page">
+                      <?php the_title(); ?>
+                    </a>
                   </li>
               </ul>
           </div>
@@ -34,31 +34,25 @@
     <section class="s-about-us-text">
       <div class="container">
           <div class="s-about-us-text-left" data-aos="fade-right">
-              <h2>One Sure Insurance are one of the UK’s fastest growing independently owned insurance</h2>
-              <p>One Sure Insurance are one of the UK's fastest growing independently owned insurance intermediaries
-              </p>
+              <h2><?php the_field('title_section_content_about_us') ?></h2>
+              <p><?php the_field('subtitle_section_content_about_us') ?></p>
               <ul>
+                <!-- Repeater Slide Cards --> 
+                <?php if( have_rows('list_section_content_about_us') ): while ( have_rows('list_section_content_about_us') ) : the_row(); ?>
                   <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon checked green" title="icon checked green">
-                      <p>Duis aute irure dolor in reprehenderit in vele cillum.</p>
+                    <img src="<?php the_sub_field('icon_list_about_us') ?>" alt="icon checked green" title="icon checked green">
+                    <p><?php the_sub_field('text_list_about_us') ?></p>
                   </li>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon checked green" title="icon checked green">
-                      <p>Duis aute irure dolor in reprehenderit in vele cillum.</p>
-                  </li>
-                  <li>
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon checked green" title="icon checked green">
-                      <p>Duis aute irure dolor in reprehenderit in vele cillum.</p>
-                  </li>
+                <?php endwhile; else : endif;?>
               </ul>
-              <p>Lorem ipsum dolor sit amet consectetur. Mauris a nascetur dui at sed amet scelerisque amet faucibus. Volutpat sed malesuada interdum in lectus congue pellentesque.</p>
+              <p><?php the_field('description_section_content_about_us') ?></p>
               <button class="btn btn-primary">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="icon arrow white" title="icon arrow white">
-                  LEARN MORE
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="icon arrow white" title="icon arrow white">
+                LEARN MORE
               </button>
           </div>
           <div class="image-right" data-aos="fade-left">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/about-us-image.jpg" alt="about us image" title="about us image">
+            <img src="<?php the_field('image_section_content_about_us') ?>" alt="about us image" title="about us image">
           </div>
       </div>
     </section>
@@ -79,37 +73,20 @@
     <!-- Section Protect Business -->
     <section class="s-protect-business">
       <div class="container">
-        <h3 data-aos="fade-up">Protecting you is our business</h3>
-        <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur. Massa molestie massa dictum rutrum senectus laoreet facilisi risus eget. </p>
+        <h3 data-aos="fade-up"><?php the_field('title_section_protect_about_us') ?></h3>
+        <p data-aos="fade-up"><?php the_field('subtitle_section_protect_about_us') ?></p>
         <ul data-aos="fade-up">
-          <li>
-            <h4>LIFE INSURANCE</h4>
-            <div class="text-bottom">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/about01.png" alt="about image" title="about image">
-              <p>Lorem ipsum dolor sit amet consectetur. Massa molestie massa dictum rutrum senectus laoreet facilisi risus eget. </p>
-            </div>
-          </li>
-          <li>
-            <h4>CAR INSURANCE</h4>
-            <div class="text-bottom">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/about02.png" alt="about image" title="about image">
-              <p>Lorem ipsum dolor sit amet consectetur. Massa molestie massa dictum rutrum senectus laoreet facilisi risus eget. </p>
-            </div>
-          </li>
-          <li>
-            <h4>HOME INSURANCE</h4>
-            <div class="text-bottom">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/about03.png" alt="about image" title="about image">
-              <p>Lorem ipsum dolor sit amet consectetur. Massa molestie massa dictum rutrum senectus laoreet facilisi risus eget. </p>
-            </div>
-          </li>
-          <li>
-            <h4>HEALTH INSURANCE</h4>
-            <div class="text-bottom">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/about04.png" alt="about image" title="about image">
-              <p>Lorem ipsum dolor sit amet consectetur. Massa molestie massa dictum rutrum senectus laoreet facilisi risus eget. </p>
-            </div>
-          </li>
+          <!-- Repeater --> 
+          <?php if( have_rows('cards_section_protect_about_us') ): while ( have_rows('cards_section_protect_about_us') ) : the_row(); ?>
+            <li>
+              <h4><?php the_sub_field('title_card_about_us') ?></h4>
+              <div class="text-bottom">
+                <img src="<?php the_sub_field('image_card_about_us') ?>" alt="about image" title="about image">
+                <p><?php the_sub_field('subtitle_card_about_us') ?> </p>
+              </div>
+            </li>
+          <?php endwhile; else : endif;?>
+          <!-- End Repeater --> 
         </ul>
       </div>
     </section>
@@ -135,54 +112,18 @@
         <!-- Swiper slide structure -->
         <div class="slide-about">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <!-- Card About Type -->
-              <a href="" class="card-about">
-                <img src="<?php echo get_template_directory_uri()?>/assets/bg/about-card-bitmap.png" alt="image bitmap" title="image bitmap">
-                <h6>Rafal Gemza</h6>
-                <p>Marketing Ex.</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- Card About Type -->
-              <a href="" class="card-about">
-                <img src="<?php echo get_template_directory_uri()?>/assets/bg/about-card-bitmap.png" alt="image bitmap" title="image bitmap">
-                <h6>Rafal Gemza</h6>
-                <p>Marketing Ex.</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- Card About Type -->
-              <a href="" class="card-about">
-                <img src="<?php echo get_template_directory_uri()?>/assets/bg/about-card-bitmap.png" alt="image bitmap" title="image bitmap">
-                <h6>Rafal Gemza</h6>
-                <p>Marketing Ex.</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- Card About Type -->
-              <a href="" class="card-about">
-                <img src="<?php echo get_template_directory_uri()?>/assets/bg/about-card-bitmap.png" alt="image bitmap" title="image bitmap">
-                <h6>Rafal Gemza</h6>
-                <p>Marketing Ex.</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- Card About Type -->
-              <a href="" class="card-about">
-                <img src="<?php echo get_template_directory_uri()?>/assets/bg/about-card-bitmap.png" alt="image bitmap" title="image bitmap">
-                <h6>Rafal Gemza</h6>
-                <p>Marketing Ex.</p>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <!-- Card About Type -->
-              <a href="" class="card-about">
-                <img src="<?php echo get_template_directory_uri()?>/assets/bg/about-card-bitmap.png" alt="image bitmap" title="image bitmap">
-                <h6>Rafal Gemza</h6>
-                <p>Marketing Ex.</p>
-              </a>
-            </div>
+            <!-- Repeater --> 
+            <?php if( have_rows('cards_staff_about_us') ): while ( have_rows('cards_staff_about_us') ) : the_row(); ?>
+              <div class="swiper-slide">
+                <!-- Card About Type -->
+                <a href="" class="card-about">
+                  <img src="<?php the_sub_field('image_staff_about_us') ?>" alt="image bitmap" title="image bitmap">
+                  <h6><?php the_sub_field('name_staff_about_us') ?></h6>
+                  <p><?php the_sub_field('position_staff_about_us') ?></p>
+                </a>
+              </div>
+            <?php endwhile; else : endif;?>
+            <!-- End Repeater --> 
           </div>
         </div>
       </div>
