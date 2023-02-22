@@ -10,31 +10,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
   
   <!-- Section Breadcrumbs -->
-  <section class="s-breadcrumbs">
-    <div class="container">
-        <ul>
-            <li>
-                <a href="index.html" aria-label="home page">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-            </li>
-            <li>
-                <a href="index.html" aria-label="home page">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="van-product.html" aria-label="current page">
-                    Personal & Commercial Van Insurance
-                </a>
-            </li>
-        </ul>
-        <a href="index.html" class="back" aria-label="return page">
-          <i class="fa-solid fa-chevron-left"></i>
-          Go Back to Home
-        </a>
-    </div>
-  </section>
+  <?php breadcrumbs(); ?>
 
   <!-- Section Hero -->
   <section class="s-hero-product">
@@ -42,22 +18,16 @@
       <div class="product">
         <!-- Left Text Area -->
         <div class="left-text" data-aos="fade-right">
-          <span class="sm-text-product">get a quote</span>
-          <h1>Van Insurance. <br>
-            Find the right cover to suit you.</h1>
+          <span class="sm-text-product"><?php the_field('get_quote_sub_title_van_insurance') ?></span>
+          <h1><?php the_field('get_quote_title_van_insurance') ?></h1>
           <ul>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon green checked" title="icon green checked">
-              <p>2 Months FREE Tools Insurance.</p>
-            </li>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon green checked" title="icon green checked">
-              <p>Compare 20+ Insurers Today.</p>
-            </li>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-green.svg" alt="icon green checked" title="icon green checked">
-              <p>Camper Vans Covered!</p>
-            </li>
+            <!-- Repeater List Section Hero --> 
+            <?php if( have_rows('list_get_quote_van_insurance') ): while ( have_rows('list_get_quote_van_insurance') ) : the_row(); ?>
+              <li>
+                <img src="<?php the_sub_field('icon_checked_van_insurance') ?>" alt="icon green checked" title="icon green checked">
+                <p><?php the_sub_field('text_van_insurance') ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
           </ul>
           <button class="btn btn-primary-lg">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
@@ -67,16 +37,16 @@
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in">
         <!-- Right Text Area -->
         <div class="right-text" data-aos="fade-left">
-          <span class="sm-text-product">Call Us Today</span>
-          <h2>Call Today For Our Best Price From Just <span>£130 Per Month</span></h2>
+          <span class="sm-text-product"><?php the_field('call_us_subtitle_van_insurance') ?></span>
+          <h2><?php the_field('call_us_title_van_insurance') ?></h2>
           <ul>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="icon phone" title="icon phone">
-              <p>Call our landline at <span>0800 081 5113</span></p>
+              <p>Call our landline at <span><?php the_field('landline_phone_van_insurance') ?></span></p>
             </li>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="icon mobile phone" title="icon mobile phone">
-              <p>Call your mobile at <span>03303139373</span></p>
+              <p>Call your mobile at <span><?php the_field('mobile_phone_van_insurance') ?></span></p>
             </li>
           </ul>
           <button class="btn btn-outline">
@@ -102,9 +72,8 @@
   <section class="s-slide-product">
     <div class="container">
       <div class="top">
-        <h6>All Types of Insurance</h6>
-        <h4>Find the best option for you!
-          Specialist for vans and pick-ups.</h4>
+        <h6><?php the_field('mobile_title_section_product_slide_van_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_slide_van_insurance') ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -121,102 +90,25 @@
       <!-- Swiper slide structure -->
       <div class="slide-product">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="motor-trade.html" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="motor-trade.html" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="motor-trade.html" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="motor-trade.html" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="motor-trade.html" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Product Type -->
-            <a href="motor-trade.html" class="card-product">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-                  <p>The most basic level of cover for those who buy, sell and trade cars and motorbikes from home.</p>
-                  <div class="learn-more">
-                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
-                      <span>Learn more</span>
-                  </div>
-              </div>
-            </a>
-          </div>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('card_product_slide_van_insurance') ): while ( have_rows('card_product_slide_van_insurance') ) : the_row(); ?>
+            <div class="swiper-slide">
+              <!-- Card Product Type -->
+              <a href="<?php the_sub_field('card_link_van_insurance') ?>" class="card-product">
+                <div class="image">
+                    <img src="<?php the_sub_field('image_card_van_insurance') ?>" alt="card product page" title="card product page">
+                </div>
+                <div class="info">
+                    <h6><?php the_sub_field('card_title_van_insurance') ?></h6>
+                    <p><?php the_sub_field('subtitle_card_van_insurance') ?></p>
+                    <div class="learn-more">
+                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
+                        <span>Learn more</span>
+                    </div>
+                </div>
+              </a>
+            </div>
+          <?php endwhile; else : endif;?>
         </div>
       </div>
     </div>
@@ -309,30 +201,7 @@
       <!-- Content Tab -->
       <div class="tab-product-content">
         <div class="text-content active">
-          <h2>Lorem ipsum dolor sit amet, consectetur?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
-          <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-          <h2>Lorem ipsum dolor sit amet, consectetur?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
-          <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-          <h2>Lorem ipsum dolor sit amet, consectetur?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
-          <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-          <h2>What does Personal Van Insurance cover?</h2>
-          <ul>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-          </ul>
-          <h2>What does Personal Van Insurance cover?</h2>
-          <ul>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-          </ul>
-
+          <?php the_content(); ?>
         </div>
       </div>
     </div>
@@ -342,40 +211,25 @@
   <section class="s-bespoke" id="s-why-us">
       <div class="container">
         <div class="text-top">
-          <h6>Lorem ipsum is simply</h6>
-          <h4 data-aos="fade-right">Why Choose Us?</h4>
-          <p data-aos="fade-left">Custom-tailored to the individual needs and requirements of your business</p>
+          <h6><?php the_field('mobile_title_section_why_us_van_insurance') ?></h6>
+          <h4 data-aos="fade-right"><?php the_field('title_section_why_us_van_insurance') ?></h4>
+          <p data-aos="fade-left"><?php the_field('subtitle_section_why_us_van_insurance') ?></p>
         </div>
         <div class="main-bespoke">
           <div class="text-bottom" data-aos="fade-right">
-            <ul >
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-house-bespoke.svg" alt="icon house" title="icon house">
-                <h5>Trusted Panel of Underwriters</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-store-bespoke.svg" alt="icon store" title="icon store">
-                <h5>Make Changes When you Need To</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-finance-bespoke.svg" alt="icon finance" title="icon finance">
-                <h5>Renewals Made Hassle Free</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
-              <!-- Card -->
-              <li>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-policies-bespoke.svg" alt="icon policies" title="icon policies">
-                <h5>Policies From Just £450</h5>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-              </li>
+            <ul>
+              <!-- Repeater Slide Cards --> 
+              <?php if( have_rows('cards_section_why_us_van_insurance') ): while ( have_rows('cards_section_why_us_van_insurance') ) : the_row(); ?>
+                <!-- Card -->
+                <li>
+                  <img src="<?php the_sub_field('icon_card_van_insurance'); ?>" alt="icon house" title="icon house">
+                  <h5><?php the_sub_field('title_why_us_card_van_insurance'); ?></h5>
+                  <p><?php the_sub_field('description_why_us_card_van_insurance'); ?></p>
+                </li>
+              <?php endwhile; else : endif;?>
             </ul>
           </div>
-          <img src="<?php echo get_template_directory_uri()?>/assets/bg/bespoke-image.webp" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
+          <img src="<?php the_field('image_section_why_us_van_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
         </div>
       </div>
   </section>
@@ -383,65 +237,21 @@
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up">
     <div class="container">
-      <h6>Lorem ipsum is simply</h6>
-      <h4>Optional Extras Insurance</h4>
+      <h6><?php the_field('mobile_title_section_optional_extras_van_insurance') ?></h6>
+      <h4><?php the_field('title_section_optional_extras_van_insurance') ?></h4>
       <ul>
-        <li>
-          <a href="motor-trade.html">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="motor-trade.html">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="motor-trade.html">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="motor-trade.html">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="motor-trade.html">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              
-            </div>
-          </a>
-        </li>
-        <li>
-          <a href="motor-trade.html">
-            <i class="fa-solid fa-house"></i>
-            <div class="text">
-              <h5>Home assistance</h5>
-              <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              
-            </div>
-          </a>
-        </li>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('section_optional_extras_cards_van_insurance') ): while ( have_rows('section_optional_extras_cards_van_insurance') ) : the_row(); ?>
+          <li>
+            <a href="<?php the_sub_field('link_card_optional_extras_van_insurance') ?>">
+              <i class="fa-solid fa-house"></i>
+              <div class="text">
+                <h5><?php the_sub_field('title_card_optional_extras_van_insurance') ?></h5>
+                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
+              </div>
+            </a>
+          </li>
+        <?php endwhile; else : endif;?>
       </ul>
     </div>
   </section>
@@ -449,48 +259,19 @@
   <!-- Section FAQs -->
   <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up">
     <div class="container">
-      <h4>Frequently Asked Questions</h4>
+      <h4><?php the_field('title_section_van_insurance') ?></h4>
       <div class="b-container">
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Do I need car insurance?</strong>
-            <i class="fa-solid fa-chevron-down"></i>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('section_faq_van_insurance') ): while ( have_rows('section_faq_van_insurance') ) : the_row(); ?>
+          <!-- Question Card -->
+          <div class="question">
+            <div class="title js-question">
+              <strong><?php the_sub_field('title_faq_van_insurance'); ?></strong>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <p><?php the_sub_field('description_faq_van_insurance'); ?></p>
           </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 02</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 03</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 04</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
-        <!-- Question Card -->
-        <div class="question">
-          <div class="title js-question">
-            <strong>Question 05</strong>
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <p>Car insurance is a legal requirement in the UK. Unless your car is SORN’d, you must at least have third-party only car insurance – this still applies if you don’t drive the car and keep it parked on a road, driveway or garage.</p>
-        </div>
+        <?php endwhile; else : endif;?>
       </div>
     </div>
   </section>
@@ -499,8 +280,8 @@
   <section class="s-slide-van">
     <div class="container">
       <div class="top">
-        <h6>All Types of Insurance</h6>
-        <h4>Personal & Commercial Van Insurance</h4>
+        <h6><?php the_field('mobile_title_section_slides_van_insurance'); ?></h6>
+        <h4><?php the_field('title_section_slides_van_insurance'); ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -517,61 +298,20 @@
       <!-- Swiper slide structure -->
       <div class="slide-van">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Card Van Type -->
-            <a href="motor-trade.html" class="card-van">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Van Type -->
-            <a href="motor-trade.html" class="card-van">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Van Type -->
-            <a href="motor-trade.html" class="card-van">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Van Type -->
-            <a href="motor-trade.html" class="card-van">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-              </div>
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <!-- Card Van Type -->
-            <a href="motor-trade.html" class="card-van">
-              <div class="image">
-                  <img src="<?php echo get_template_directory_uri()?>/assets/bg/van-card.webp" alt="card product page" title="card product page">
-              </div>
-              <div class="info">
-                  <h6>Mechanics Insurance</h6>
-              </div>
-            </a>
-          </div>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('section_slides_cards_van_insurance') ): while ( have_rows('section_slides_cards_van_insurance') ) : the_row(); ?>
+            <div class="swiper-slide">
+              <!-- Card Van Type -->
+              <a href="<?php the_sub_field('link_slide_card_van_insurance'); ?>" class="card-van">
+                <div class="image">
+                  <img src="<?php the_sub_field('image_slide_card_van_insurance'); ?>" alt="card product page" title="card product page">
+                </div>
+                <div class="info">
+                  <h6><?php the_sub_field('text_slide_card_van_insurance'); ?></h6>
+                </div>
+              </a>
+            </div>
+          <?php endwhile; else : endif;?>
         </div>
       </div>
     </div>
@@ -580,69 +320,58 @@
   <!-- Section CTA Desktop -->
   <?php include(TEMPLATEPATH .'/includes/section-cta-desktop.php') ?>
 
-  <!-- Section Articles -->
-  <section class="s-articles" id="s-articles">
-    <div class="container">
-      <div class="text-top">
-        <h6>Check below some</h6>
-        <h4>Related Articles</h4>
-        <p>Check similar articles below 🚀</p>
+  <!-- Section Related Articles Filter By Tag -->
+  <?php   
+    $tag = get_queried_object();
+    $args = array(
+        'post_type' => 'post',
+        'order' => 'DESC',
+        'posts_per_page' => 3,
+        'tag_id' => 18,
+    );
+    $the_query = new WP_Query($args);
+  ?>
+  <?php if ($the_query->have_posts()) : ?>
+    <section class="s-articles" id="s-articles">
+      <div class="container">
+        <div class="text-top">
+          <h6><?php the_field('mobile_title_section_articles_van_insurance'); ?></h6>
+          <h4><?php the_field('title_section_articles_van_insurance'); ?></h4>
+          <p><?php the_field('description_section_articles_van_insurance'); ?></p>
+        </div>
+        <div class="article-cards">
+          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <a href="<?php the_permalink(); ?>" class="card-post-default">
+              <div class="image">
+                <?php the_post_thumbnail(); ?>
+              </div>
+              <div class="info">
+                <!-- Category Section -->
+                <?php
+                  $category = get_the_category($post -> ID); // return ID post
+                  if(!empty($category)){
+                    foreach($category as $nameCategory){
+                      echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+                    }
+                  }
+                ?>
+                <h6><?php the_title(); ?></h6>
+                <ul>
+                    <li>
+                        <span><?php echo get_the_date('j, F'); ?></span>
+                    </li>
+                    <li>
+                        <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
+                    </li>
+                </ul>
+              </div>
+            </a>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
+        </div>
       </div>
-      <div class="article-cards">
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  <?php endif; ?>
 
 <!-- End loop -->
 <?php endwhile; else: endif; ?>

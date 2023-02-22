@@ -24,7 +24,6 @@
   <div class="container">
       <!-- Section Include Side Tags -->
       <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
-
       <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
           <div class="alm-listing">

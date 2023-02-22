@@ -305,16 +305,14 @@
     </div>
   </section>
 
-  <!-- Section Articles -->
-  <!-- Related Articles -->
-  <?php
-    $categories = get_the_category();
+  <!-- Section Related Articles Filter By Tag -->
+  <?php   
+    $tag = get_queried_object();
     $args = array(
-      'post_type' => 'post',
-      'order' => 'DESC',
-      'posts_per_page' => 3,
-      'cat' => $categories[0]->cat_ID, // return the first category of the post
-      'post__not_in' => array(get_the_ID()),
+        'post_type' => 'post',
+        'order' => 'DESC',
+        'posts_per_page' => 3,
+        'tag_id' => 20,
     );
     $the_query = new WP_Query($args);
   ?>
@@ -322,7 +320,7 @@
     <section class="s-articles" id="s-articles">
       <div class="container">
         <div class="text-top">
-          <h6><?php the_field('mobile_title_articles_motortrade'); ?>></h6>
+          <h6><?php the_field('mobile_title_articles_motortrade'); ?></h6>
           <h4><?php the_field('title_section_articles_motortrade'); ?></h4>
           <p><?php the_field('description_articles_motortrade'); ?></p>
         </div>
