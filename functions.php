@@ -10,6 +10,7 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action('admin_print_styles', 'print_emoji_styles');
+add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
 // Support Menu
 add_theme_support('menus');
@@ -113,7 +114,7 @@ function breadcrumbs($id = null){
                 </li>
                 <?php if(!empty($id)): ?>
                     <li>
-                        <a href="<?php echo get_permalink( $id ); ?>" aria-label="home page">
+                        <a href="<?php echo get_permalink( $id ); ?>" aria-label="previous page">
                             <?php echo get_the_title( $id ); ?>
                         </a>
                     </li>

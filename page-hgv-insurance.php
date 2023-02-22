@@ -10,31 +10,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   
   <!-- Section Breadcrumbs -->
-  <section class="s-breadcrumbs">
-    <div class="container">
-        <ul>
-            <li>
-                <a href="<?php echo get_home_url(); ?>" aria-label="home page">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-            </li>
-            <li>
-                <a href="<?php echo get_home_url(); ?>" aria-label="home page">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a href="van-product.html" aria-label="current page">
-                    Truck, Lorry & HGV Insurance
-                </a>
-            </li>
-        </ul>
-        <a href="<?php echo get_home_url(); ?>" class="back" aria-label="return page">
-          <i class="fa-solid fa-chevron-left"></i>
-          Go Back to Home
-        </a>
-    </div>
-  </section>
+  <?php breadcrumbs(); ?>
 
   <!-- Section Hero -->
   <section class="s-hero-product">
@@ -322,31 +298,7 @@
       <!-- Content Tab -->
       <div class="tab-product-content">
         <div class="text-content active">
-          <h2>Overview</h2>
-          <p>Ensuring you have the right cover in place will not only protect your livelihood but give you peace of mind during your shift. HGV insurance is what you’re looking for if you drive a heavy goods vehicle (HGV) as part of a business or drive your own lorry for work. On the other hand, if you own a large number of vehicles in operation, it may also be worth looking into whether fleet insurance could be a better option for your business.
-          </p>
-          <p>In a nutshell, HGV insurance can cover trucks, lorries, and loaded goods vehicles in the event of an accident that results in damage or injury. The level of cover needed will vary depending on the nature of your business, the vehicle you drive, your location, and the types of goods you carry.</p>
-          <h2>What licence do I need to operate an HGV?</h2>
-          <p>HGV operators with vehicles over 7.5 metric tonnes must have a class C+E commercial driving licence. If you passed your car driving test before 1st January 1997, we have good news: you can drive a category C1 vehicle up to 7.5 tonnes without further testing. 
-            However, those who have passed on or after 1st January 1997 will only be able to drive a category B vehicle up to 3.5 tonnes.</p>
-          <h2>What is an O licence?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta mollis. Maecenas a nulla sit amet est ultrices volutpat. Suspendisse potenti. Nulla sit amet dui turpis. Sed fermentum tincidunt orci a laoreet. Duis egestas ligula vitae consequat rhoncus. Proin tempor risus ac nunc dapibus tincidunt.</p>
-          <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-          <h2>What does Personal Van Insurance cover?</h2>
-          <ul>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-          </ul>
-          <h2>What does Personal Van Insurance cover?</h2>
-          <ul>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-            <li>Donec vitae interdum nisl. Proin tincidunt malesuada viverra.</li>
-          </ul>
-
+          <?php the_content(); ?>
         </div>
       </div>
     </div>
@@ -593,69 +545,58 @@
   <!-- Section CTA Desktop -->
   <?php include(TEMPLATEPATH .'/includes/section-cta-desktop.php') ?>
 
-  <!-- Section Articles -->
-  <section class="s-articles" id="s-articles">
-    <div class="container">
-      <div class="text-top">
-        <h6>Check below some</h6>
-        <h4>Related Articles</h4>
-        <p>Check similar articles below 🚀</p>
+  <!-- Section Related Articles Filter By Tag -->
+  <?php   
+    $tag = get_queried_object();
+    $args = array(
+        'post_type' => 'post',
+        'order' => 'DESC',
+        'posts_per_page' => 3,
+        'tag_id' => 18,
+    );
+    $the_query = new WP_Query($args);
+  ?>
+  <?php if ($the_query->have_posts()) : ?>
+    <section class="s-articles" id="s-articles">
+      <div class="container">
+        <div class="text-top">
+          <h6><?php the_field(''); ?></h6>
+          <h4><?php the_field(''); ?></h4>
+          <p><?php the_field(''); ?></p>
+        </div>
+        <div class="article-cards">
+          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <a href="<?php the_permalink(); ?>" class="card-post-default">
+              <div class="image">
+                <?php the_post_thumbnail(); ?>
+              </div>
+              <div class="info">
+                <!-- Category Section -->
+                <?php
+                  $category = get_the_category($post -> ID); // return ID post
+                  if(!empty($category)){
+                    foreach($category as $nameCategory){
+                      echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
+                    }
+                  }
+                ?>
+                <h6><?php the_title(); ?></h6>
+                <ul>
+                    <li>
+                        <span><?php echo get_the_date('j, F'); ?></span>
+                    </li>
+                    <li>
+                        <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
+                    </li>
+                </ul>
+              </div>
+            </a>
+          <?php endwhile; ?>
+          <?php wp_reset_postdata(); ?>
+        </div>
       </div>
-      <div class="article-cards">
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-        <a href="motor-trade.html" class="card-post-default">
-          <div class="image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-default.webp" alt="image post default" title="image post default">
-          </div>
-          <div class="info">
-              <span class="categorie">Car Insurance</span>
-              <h6>The Benefits of choosing One Sure as your Local Insurance Broker</h6>
-              <ul>
-                  <li>
-                      <span>16, Fev</span>
-                  </li>
-                  <li>
-                      <span>12min of read</span>
-                  </li>
-              </ul>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
+  <?php endif; ?>
 
  <!-- End loop -->
 <?php endwhile; else: endif; ?>

@@ -1,5 +1,5 @@
 <?php
-  // Template name: blog
+  // Template name: Blog
 ?>
 
 <!-- Include Header -->
