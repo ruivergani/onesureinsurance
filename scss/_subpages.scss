@@ -840,6 +840,15 @@
                     border-left: 0.2rem solid rgba(92, 31, 166, 0.15);
                     padding-left: 2.4rem;
                 }
+                strong{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.8rem;
+                    line-height: 175%;
+                    color: $grey-500;
+                    margin-right: 5px;
+                    margin-bottom: 1.6rem;
+                }
                 h1,
                 h2,
                 h3,
@@ -884,8 +893,8 @@
                         color: $grey-400;
                         &:before{
                             content: "";
-                            width: 0.4rem;
-                            height: 0.4rem;
+                            min-width: 0.4rem;
+                            min-height: 0.4rem;
                             display: inline-block;
                             background-color: #9995A6;
                             margin-top: 1rem;

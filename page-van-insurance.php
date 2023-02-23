@@ -115,7 +115,20 @@
   </section>
 
   <!-- Section CTA Desktop -->
-  <?php include(TEMPLATEPATH .'/includes/section-cta-desktop.php') ?>
+  <div class="s-newsletter">
+      <div class="container">
+        <a href="<?php the_field('link_cta_van_insurance') ?>" class="large-cta" data-aos="zoom-in">
+          <div class="text">
+              <span><?php the_field('subtitle_cta_van_insurance') ?></span>
+              <h3><?php the_field('title_cta_van_insurance') ?></h3>
+          </div>
+          <button class="btn btn-primary">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+              get a quote
+          </button>
+        </a>
+      </div>
+  </div>
 
   <!-- Section Company Logos -->
   <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
@@ -131,12 +144,12 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-benefits" title="benefits section">
+          <a href="#s-content" title="benefits section">
             <p>Personal</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="" title="commercial section">
+          <a href="#s-content" title="commercial section">
             <p>Commercial</p>
           </a>
         </li>
@@ -269,7 +282,9 @@
               <strong><?php the_sub_field('title_faq_van_insurance'); ?></strong>
               <i class="fa-solid fa-chevron-down"></i>
             </div>
-            <p><?php the_sub_field('description_faq_van_insurance'); ?></p>
+            <div class="question-content">
+              <?php the_sub_field('description_faq_van_insurance'); ?>
+            </div>
           </div>
         <?php endwhile; else : endif;?>
       </div>
@@ -318,7 +333,20 @@
   </section>
 
   <!-- Section CTA Desktop -->
-  <?php include(TEMPLATEPATH .'/includes/section-cta-desktop.php') ?>
+  <div class="s-newsletter">
+      <div class="container">
+        <a href="<?php the_field('link_cta_van_insurance') ?>" class="large-cta" data-aos="zoom-in">
+          <div class="text">
+              <span><?php the_field('subtitle_cta_van_insurance') ?></span>
+              <h3><?php the_field('title_cta_van_insurance') ?></h3>
+          </div>
+          <button class="btn btn-primary">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+              get a quote
+          </button>
+        </a>
+      </div>
+  </div>
 
   <!-- Section Related Articles Filter By Tag -->
   <?php   

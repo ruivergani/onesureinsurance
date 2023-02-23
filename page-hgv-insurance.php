@@ -117,13 +117,13 @@
   <!-- Section Newsletter -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="#" class="large-cta" data-aos="zoom-in">
+      <a href="<?php the_field('link_cta_hgv_insurance') ?>" class="large-cta" data-aos="zoom-in">
         <div class="text">
-            <span>We Are Confident Of Our Pricing That We Challenge You To Beat Our Guarantee</span>
-            <h3>We Are Britains Cheapest Motor Trade Insurer* </h3>
+          <span><?php the_field('subtitle_cta_hgv_insurance') ?></span>
+          <h3><?php the_field('title_cta_hgv_insurance') ?></h3>
         </div>
         <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
             get a quote
         </button>
       </a>
@@ -144,12 +144,12 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-benefits" title="benefits section">
+          <a href="#s-content" title="benefits section">
             <p>Personal</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="" title="commercial section">
+          <a href="#s-content" title="commercial section">
             <p>Commercial</p>
           </a>
         </li>
@@ -184,7 +184,7 @@
             </a>
           </li>
           <li>
-            <a href="#s-benefits">
+            <a href="#s-content">
               <p>Compare our cover</p>
             </a>
           </li>
@@ -282,7 +282,9 @@
               <strong><?php the_sub_field('title_card_faq_hgv_insurance') ?></strong>
               <i class="fa-solid fa-chevron-down"></i>
             </div>
-            <p><?php the_sub_field('description_card_faq_hgv_insurance') ?></p>
+            <div class="question-content">
+              <?php the_sub_field('description_card_faq_hgv_insurance') ?>
+            </div>
           </div>
         <?php endwhile; else : endif;?>
       </div>
