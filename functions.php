@@ -57,6 +57,9 @@ function register_footer_insurance_types_menu() {
 function register_footer_corporate_menu() {
     register_nav_menu('footer-corporate',__('Footer Corporate Info'));
 }
+function register_footer_about_menu() {
+    register_nav_menu('footer-about',__('Footer About One Sure'));
+}
 
 add_action('init', 'register_my_personal_menu');
 add_action('init', 'register_my_business_motortrade_menu');
@@ -71,6 +74,7 @@ add_action('init', 'register_my_existing_customers_contact_menu');
 add_action('init', 'register_footer_useful_links_menu');
 add_action('init', 'register_footer_insurance_types_menu');
 add_action('init', 'register_footer_corporate_menu');
+add_action('init', 'register_footer_about_menu');
 
 // Function to enable the Footer edit options in the WordPress acf_add_options_page
 acf_add_options_page(array(

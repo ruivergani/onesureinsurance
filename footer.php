@@ -33,12 +33,6 @@
               );
               wp_nav_menu( $args );
             ?>
-            <!-- <ul>
-              <li><a href="#">Resources</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Claims</a></li>
-              <li><a href="#">Renewals</a></li>
-            </ul> -->
           </div>
           <div class="item">
             <strong>Insurance Types</strong>
@@ -51,13 +45,6 @@
               );
               wp_nav_menu( $args );
             ?>
-            <!-- <ul>
-              <li><a href="#">Motor Trade Insurance</a></li>
-              <li><a href="#">Motorbike Insurance</a></li>
-              <li><a href="#">Van Insurance</a></li>
-              <li><a href="#">HGV Insurance</a></li>
-              <li><a href="#">Car Insurance</a></li>
-            </ul> -->
           </div>
           <div class="item">
             <strong>Corporate Info</strong>
@@ -70,13 +57,18 @@
               );
               wp_nav_menu( $args );
             ?>
-            <!-- <ul>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Cookie Policy</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Modern Slavery Act</a></li>
-              <li><a href="#">Press</a></li>
-            </ul> -->
+          </div>
+          <div class="item">
+            <strong>About One Sure</strong>
+            <!-- Dynamic Menu --> 
+            <?php
+              $args = array(
+                'menu' => 'Footer About One Sure',
+                'theme_location' => 'footer-about',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
           </div>
         </nav>
         <div class="item-contact">
