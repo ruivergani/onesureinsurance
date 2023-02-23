@@ -161,7 +161,7 @@
                 flex-direction: column;
                 h2{
                     width: 100%;
-                    max-width: 41rem;
+                    max-width: 43rem;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 700;
                     font-size: 3rem;
@@ -848,11 +848,20 @@
                 h6{
                     font-family: 'Poppins', sans-serif;
                     font-weight: 600;
-                    font-size: 3.2rem;
+                    font-size: 2.8rem;
                     line-height: 120%;
                     color: $grey-600;
                     margin-bottom: 2rem;
                     margin-top: 3rem;
+                }
+                h3{
+                    font-size: 2.4rem;
+                }
+                h4, h5{
+                    font-size: 2rem;
+                }
+                h6{
+                    font-size: 1.8rem;
                 }
                 p{
                     font-family: 'Poppins', sans-serif;
@@ -1154,7 +1163,7 @@
     padding-bottom: 6rem !important;
 }
 .s-faqs{
-    scroll-margin-top: 16rem;
+    scroll-margin-top: 17rem;
     //padding: 9rem 0px;
     .container{
         display: flex;
@@ -1213,20 +1222,63 @@
                         }
                     }
                 }
-                p{
-                    max-width: 89.9rem;
+                .question-content{
+                    max-width: 100%;
                     padding-bottom: 2rem;
                     display: none;
                     pointer-events: none;
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 400;
-                    font-size: 1.6rem;
-                    line-height: 150%;
-                    color: $grey-500;
                     padding-left: 4rem;
                     padding-right: 2rem;
                     border-radius: 0.4rem;
                     padding-top: 2rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    line-height: 175%;
+                    color: $grey-500;
+                    blockquote{
+                        p{
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.7rem;
+                            line-height: 175%;
+                            color: $grey-300;
+                            margin-bottom: 0px;
+                        }
+                        margin-bottom: 4rem;
+                        border-left: 0.2rem solid rgba(92, 31, 166, 0.15);
+                        padding-left: 2.4rem;
+                    }
+                    p{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.7rem;
+                        line-height: 175%;
+                        color: $grey-500;
+                    }
+                    ul{
+                        li{
+                            margin-bottom: 0.7rem;
+                            display: flex;
+                            align-items: flex-start;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.7rem;
+                            line-height: 175%;
+                            color: $grey-400;
+                            &:before{
+                                content: "";
+                                width: 0.4rem;
+                                height: 0.4rem;
+                                display: inline-block;
+                                background-color: #9995A6;
+                                margin-top: 1rem;
+                                margin-right: 1.6rem;
+                                transition: all .3s;
+                            }
+                        }
+                    }
+
                 }
                 // JS open FAQs
                 &.active{
@@ -1242,7 +1294,7 @@
                             transform: rotate(180deg);
                         }
                     }
-                    p{
+                    .question-content{
                         display: block;
                         pointer-events: all;
                         animation: fadeLeft .3s forwards
