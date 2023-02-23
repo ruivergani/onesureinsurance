@@ -3,7 +3,7 @@
   <div class="container">
       <ul>
          <li data-aos="fade-up">
-            <a href="<?php echo get_permalink(get_page_by_title('Blog')) ?>">
+            <a href="<?php echo get_permalink(234) ?>">
                 <i class="fa-solid fa-border-all"></i>
                 <p>All Posts</p>
             </a>

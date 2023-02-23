@@ -1,15 +1,12 @@
 <!-- Include Header -->
 <?php get_header(); ?>
-<!-- Include the Page Reference -->
-<?php
-  $blog_page = get_page_by_title('Blog');
-?>
+
 <!-- Section Hero -->
 <section class="s-blog-hero">
   <div class="container">
       <div class="s-blog-hero-title">
           <h1>Our <?php echo single_cat_title(); ?> Articles</h1>
-          <p><?php the_field('blog_section_hero_subtitle', $blog_page) ?></p>
+          <p><?php the_field('blog_section_hero_subtitle', 234) ?></p>
       </div>
       <!-- Section Include Search Code Blog -->
       <?php include(TEMPLATEPATH .'/includes/section-search-blog.php') ?>
@@ -76,10 +73,10 @@
 <section class="s-resources-blog">
   <div class="container">
     <div class="resources-blog-left">
-      <h4><?php the_field('title_resources', $blog_page) ?></h4>
+      <h4><?php the_field('title_resources', 234) ?></h4>
       <ul data-aos="fade-up">
         <!-- Repeater List --> 
-        <?php if(have_rows('list_resources', $blog_page)): while (have_rows('list_resources', $blog_page)) : the_row(); ?>
+        <?php if(have_rows('list_resources', 234)): while (have_rows('list_resources', 234)) : the_row(); ?>
           <li>
             <a href="<?php the_sub_field('link_to_the_page') ?>">
               <p><?php the_sub_field('text_resources_list') ?></p>
@@ -87,9 +84,9 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-      <a href="<?php the_field('link_cta', $blog_page) ?>" class="small-cta" data-aos="zoom-in">
+      <a href="<?php the_field('link_cta', 234) ?>" class="small-cta" data-aos="zoom-in">
         <div class="text">
-            <h3><?php the_field('title_cta', $blog_page) ?></h3>
+            <h3><?php the_field('title_cta', 234) ?></h3>
         </div>
         <button class="btn btn-primary">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward-black.svg" alt="icon forward arrow black" title="icon forward arrow black">
@@ -98,7 +95,7 @@
       </a>
     </div>
     <div class="resources-blog-right" data-aos="fade-left">
-      <h5><?php the_field('title_right_cta', $blog_page) ?></h5>
+      <h5><?php the_field('title_right_cta', 234) ?></h5>
       <form class="form-subscribe">
         <input type="text" placeholder="Email address *" id="js-input-address">
         <button type="button" id="js-btn-address">
@@ -107,7 +104,7 @@
       </form>
       <ul>
         <!-- Repeater List --> 
-        <?php if(have_rows('list_right_cta', $blog_page)): while (have_rows('list_right_cta', $blog_page)) : the_row(); ?>
+        <?php if(have_rows('list_right_cta', 234)): while (have_rows('list_right_cta', 234)) : the_row(); ?>
           <li>
             <p>
               <?php the_sub_field('text_list_right_cta') ?>
@@ -115,7 +112,7 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-      <p><?php the_field('description_right_cta', $blog_page) ?></p>
+      <p><?php the_field('description_right_cta', 234) ?></p>
     </div>
   </div>
 </section>
