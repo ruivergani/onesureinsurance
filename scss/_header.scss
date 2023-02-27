@@ -242,11 +242,110 @@ header{
         width: 100%;
         top: 10rem;
         height: calc(100vh - 100px);
-        background-color: rgb(10, 6, 21);
+        background-color: white;
         transform: translateY(100%);
         transition: all .3s ease;
         opacity: 0;
         padding: 4rem 1.5rem;
+        padding-top: 0px;
+        // Nav Top Configuration
+        .nav-top-mobile{
+            border-bottom: 0.5px solid rgba(0, 52, 120, 0.3);
+            background-color: $white;
+            width: 100%;
+            ul{
+                padding: 1.6rem 2.3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;
+                width: 100%;
+                li{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        img{
+                            width: 100%;
+                            max-width: 2.2rem;
+                        }
+                        span{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 500;
+                            font-size: 1.6rem;
+                            line-height: 100%;
+                            color: $grey-600;
+                            transition: all .3s;
+                        }
+                        &:hover{
+                            span{
+                                color: $grey-400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Menu Mobile Nav
+        .mobile-menu-list{
+            li{
+                background: #F0F4F9;
+                border-bottom: 0.5px solid rgba(0, 52, 120, 0.25);
+                position: relative;
+                a{
+                    padding: 15px 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    span{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 2.2rem;
+                        color: $brand-blue;
+                    }
+                    img{
+                        width: 100%;
+                        max-width: 1.6rem;
+                        transition: transform .3s;
+                    }
+                    &.active{
+                        img{
+                            transform: rotate(180deg); // rotate the arrow 180 degrees
+                        }
+                    }
+                }
+                // Sub Dropdown Menu Area
+                .dropdown-sub-menu-mobile{
+                    display: none;
+                    opacity: 0;
+                    transition: all .3s;
+                    transform: translateY(10%);
+                    pointer-events: none;
+                    width: 100%;
+                    ul{
+                        width: 100%;
+                        li{
+                            background-color: $white;
+                            a{
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 500;
+                                font-size: 1.6rem;
+                                line-height: 2.2rem;
+                                /* brand/blue */
+                                color: $brand-blue;
+                            }
+                        }
+                    }
+                    &.active{
+                        display: block;
+                        opacity: 1;
+                        transform: translateY(0%);
+                        pointer-events: all;
+                    }
+                }
+            }
+        }
     }
     // Responsive
     @media (max-width: 1100px){
@@ -287,6 +386,7 @@ header{
         }
     } 
 }
+// Configuration for menu mobile open
 .menu-opened{
     header{
       .menu-mobile{
@@ -295,3 +395,4 @@ header{
       }
     }
 }
+

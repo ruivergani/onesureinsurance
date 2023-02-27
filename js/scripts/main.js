@@ -28,6 +28,27 @@ if(btnDropdownSelect){
   });
 }
 
+// Script for the Mobile Sub Menu
+const btnMobileSubMenu = document.querySelectorAll('.js-mobile-menu-item');
+const subMenuDropdownArea = document.querySelectorAll('.js-menu-dropdown-mobile');
+btnMobileSubMenu.forEach((btn, index) => {
+  btn.addEventListener('click', (event) => {
+    event.preventDefault();
+    // remove from all the active
+    subMenuDropdownArea.forEach(itemMenu => {
+      itemMenu.classList.remove('active');
+    })
+    // remove the class active from all
+    btnMobileSubMenu.forEach(itemBtn => {
+      itemBtn.classList.remove('active')
+    })
+    // put active class to one sub menu
+    btn.classList.toggle('active');
+    // add active
+    subMenuDropdownArea[index].classList.toggle('active');
+  })
+})
+
 // Script for the FAQs open
 const question = document.querySelectorAll(".js-question"); // all cards question
 // Check if the question exists or not

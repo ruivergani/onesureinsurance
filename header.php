@@ -147,20 +147,6 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- 
-                      <ul>
-                        <li><a href="#">Car Insurance</a></li>
-                        <li><a href="#">Motorbike Insurance</a></li>
-                        <li><a href="#">Scooter Insurance</a></li>
-                        <li><a href="#">Van Insurance</a></li>
-                        <li><a href="#">Caravan Insurance</a></li>
-                        <li><a href="#">Motorhome Insurance</a></li>
-                        <li><a href="#">Home Insurance</a></li>
-                        <li><a href="#">Travel Insurance</a></li>
-                        <li><a href="#">Convicted Car Insurance</a></li>
-                        <li><a href="#">Convicted Van Insurance</a></li>
-                      </ul> 
-                    -->
                   </div>
                 </div>
               </div>
@@ -187,13 +173,6 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- <ul>
-                      <li><a href="#">Motor Trade Insurance</a></li>
-                      <li><a href="#">Motor Trade Combined</a></li>
-                      <li><a href="#">Mechanic Insurance</a></li>
-                      <li><a href="#">Valeters Insurance</a></li>
-                      <li><a href="#">MOT Service Insurance</a></li>
-                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Commercial Vehicle</strong>
@@ -260,14 +239,6 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- <ul>
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Code of Conduct</a></li>
-                      <li><a href="#">Reviews</a></li>
-                      <li><a href="#">Insurance Dictionary</a></li>
-                      <li><a href="#">Our Community</a></li>
-                      <li><a href="#">Existing Customers Guides</a></li>
-                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Popular Articles</strong>
@@ -280,14 +251,6 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- 
-                    <ul>
-                      <li><a href="#">Article 01</a></li>
-                      <li><a href="#">Article 02</a></li>
-                      <li><a href="#">Article 03</a></li>
-                      <li><a href="#">Article 04</a></li>
-                      <li><a href="#">Article 05</a></li>
-                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Frequently Asked Questions</strong>
@@ -300,13 +263,6 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- <ul>
-                      <li><a href="#">01 Question</a></li>
-                      <li><a href="#">02 Question</a></li>
-                      <li><a href="#">03 Question</a></li>
-                      <li><a href="#">04 Question</a></li>
-                      <li><a href="#">05 Question</a></li>
-                    </ul> -->
                   </div>
                 </div>
               </div>
@@ -333,12 +289,6 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- <ul>
-                      <li><a href="#">My Account</a></li>
-                      <li><a href="#">Claims</a></li>
-                      <li><a href="#">Renewals</a></li>
-                      <li><a href="#">Payments</a></li>
-                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Guides</strong>
@@ -351,12 +301,6 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- <ul>
-                      <li><a href="#">How to upload my documents?</a></li>
-                      <li><a href="#">Lorem ipsum...</a></li>
-                      <li><a href="#">Lorem ipsum...</a></li>
-                      <li><a href="#">Lorem ipsum...</a></li>
-                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Lorem ipsum ...</strong>
@@ -369,17 +313,12 @@
                       );
                       wp_nav_menu( $args );
                     ?>
-                    <!-- <ul>
-                      <li><a href="#">Customer Service</a></li>
-                      <li><a href="#">Complaints</a></li>
-                      <li><a href="#">Contact Us</a></li>
-                      <li><a href="#">Leave us a review</a></li>
-                    </ul> -->
                   </div>
                 </div>
               </div>
             </div>
           </li>
+          <!-- Contact Us -->
           <li>
             <a href="<?php echo get_permalink(get_page_by_title('Contact')) ?>" class="js-btn-menu">
               <span>Contact Us</span>
@@ -401,6 +340,122 @@
     </div>
     <!-- Menu Mobile -->
     <div class="menu-mobile">
-      test data
+      <!-- Top Navigation -->
+      <div class="nav-top-mobile">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user.svg" alt="icon user" title="icon user" loading="lazy">
+                <span>My Account</span>
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-paper.svg" alt="icon paper" title="icon paper" loading="lazy">
+                <span>Claims</span>
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-autorenew.svg" alt="icon renewals"  title="icon renewals" loading="lazy">
+                <span>Renewals</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+      <!-- Menu List -->
+      <ul class="mobile-menu-list">
+        <!-- Personal Menu -->
+        <li>
+          <a href="" class="js-mobile-menu-item">
+            <span>Personal</span>
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+          </a>
+          <!-- Sub Menu Dropdown Mobile -->
+          <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
+            <!-- Dynamic Menu --> 
+            <ul>
+              <li><a href="#">Car Insurance</a></li>
+              <li><a href="#">Motorbike Insurance</a></li>
+              <li><a href="#">Scooter Insurance</a></li>
+              <li><a href="#">Van Insurance</a></li>
+              <li><a href="#">Caravan Insurance</a></li>
+              <li><a href="#">Motorhome Insurance</a></li>
+              <li><a href="#">Home Insurance</a></li>
+              <li><a href="#">Travel Insurance</a></li>
+              <li><a href="#">Convicted Car Insurance</a></li>
+              <li><a href="#">Convicted Van Insurance</a></li>
+            </ul> 
+          </div>
+        </li>
+        <!-- Business Menu -->
+        <li>
+          <a href="" class="js-mobile-menu-item">
+            <span>Business</span>
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+          </a>
+          <!-- Sub Menu Dropdown Mobile -->
+          <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
+            <!-- Dynamic Menu --> 
+            <ul>
+              <li><a href="#">Motor Trade Insurance</a></li>
+              <li><a href="#">Motor Trade Combined</a></li>
+              <li><a href="#">Mechanic Insurance</a></li>
+              <li><a href="#">Valeters Insurance</a></li>
+              <li><a href="#">MOT Service Insurance</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Resources Menu -->
+        <li>
+          <a href="" class="js-mobile-menu-item"> 
+            <span>Resources</span>
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+          </a>
+          <!-- Sub Menu Dropdown Mobile -->
+          <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
+            <!-- Dynamic Menu --> 
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Code of Conduct</a></li>
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Insurance Dictionary</a></li>
+              <li><a href="#">Our Community</a></li>
+              <li><a href="#">Existing Customers Guides</a></li>
+            </ul> 
+          </div>
+        </li>
+        <!-- Existing Customers Menu -->
+        <li>
+          <a href="" class="js-mobile-menu-item">
+            <span>Existing Customers</span>
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+          </a>
+          <!-- Sub Menu Dropdown Mobile -->
+          <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
+            <!-- Dynamic Menu --> 
+            <ul>
+              <li><a href="#">My Account</a></li>
+              <li><a href="#">Claims</a></li>
+              <li><a href="#">Renewals</a></li>
+              <li><a href="#">Payments</a></li>
+            </ul>
+          </div>
+        </li>
+        <!-- Contact Us Menu -->
+        <li>
+          <a href="">
+            <span>Contact Us</span>
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+          </a>
+          <!-- Sub Menu Dropdown Mobile -->
+          <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
+            <!-- Dynamic Menu --> 
+            <ul>
+              <li><a href="#">Lorem Ipsum</a></li>
+            </ul> 
+          </div>
+        </li>
+      </ul>
     </div>
   </header>
