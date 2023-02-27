@@ -31,20 +31,21 @@ if(btnDropdownSelect){
 // Script for the Mobile Sub Menu
 const btnMobileSubMenu = document.querySelectorAll('.js-mobile-menu-item');
 const subMenuDropdownArea = document.querySelectorAll('.js-menu-dropdown-mobile');
+// link which menu dropdown you need to click
 btnMobileSubMenu.forEach((btn, index) => {
   btn.addEventListener('click', (event) => {
     event.preventDefault();
-    // remove from all the active
+    // Remove from all the active
     subMenuDropdownArea.forEach(itemMenu => {
       itemMenu.classList.remove('active');
     })
-    // remove the class active from all
+    // Remove the class active from all
     btnMobileSubMenu.forEach(itemBtn => {
-      itemBtn.classList.remove('active')
+      itemBtn.classList.remove('active');
     })
-    // put active class to one sub menu
+    // Put active class to one sub menu
     btn.classList.toggle('active');
-    // add active
+    // Add active
     subMenuDropdownArea[index].classList.toggle('active');
   })
 })
