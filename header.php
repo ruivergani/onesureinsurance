@@ -403,6 +403,14 @@
               <li><a href="#">Mechanic Insurance</a></li>
               <li><a href="#">Valeters Insurance</a></li>
               <li><a href="#">MOT Service Insurance</a></li>
+              <li class="sub-item-menu">
+                <a href="#">
+                  <span>Commercial Insurance</span>
+                  <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+                </a>
+
+                
+              </li>
             </ul>
           </div>
         </li>

@@ -35,10 +35,6 @@ const subMenuDropdownArea = document.querySelectorAll('.js-menu-dropdown-mobile'
 btnMobileSubMenu.forEach((btn, index) => {
   btn.addEventListener('click', (event) => {
     event.preventDefault();
-    // Remove from all the active
-    subMenuDropdownArea.forEach(itemMenu => {
-      itemMenu.classList.remove('active');
-    })
     // Remove the class active from all
     btnMobileSubMenu.forEach(itemBtn => {
       itemBtn.classList.remove('active');
@@ -300,6 +296,7 @@ const menuButton = document.getElementById("js-menu-button");
 menuButton.addEventListener("click", () => {
   menuButton.classList.toggle("is-active"); // add the CSS configuration on this button
   document.documentElement.classList.toggle("menu-opened");
+  document.body.classList.toggle('fixed-position');
 });
 
 // Menu Header Change >20 scroll

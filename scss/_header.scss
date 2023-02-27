@@ -64,6 +64,9 @@ header{
                 top: 7.8rem;
             }
         }
+        .menu-mobile{
+            top: 8rem;
+        }
     }
     .container{
         display: flex;
@@ -240,16 +243,22 @@ header{
     .menu-mobile{
         position: absolute;
         width: 100%;
-        top: 10rem;
-        height: calc(100vh - 100px);
+        top: 3rem;
+        min-height: calc(100vh - 100px);
+        overflow-y: auto;
+        border-bottom: 3px solid rgb(0,52,120);
         background-color: white;
         transform: translateY(100%);
         transition: all .3s ease;
+        overflow-y: auto;
         opacity: 0;
         padding: 4rem 1.5rem;
         padding-top: 0px;
         // Nav Top Configuration
         .nav-top-mobile{
+            position: sticky;
+            top: 0;
+            z-index: 2022;
             border-bottom: 0.5px solid rgba(0, 52, 120, 0.3);
             background-color: $white;
             width: 100%;
@@ -338,6 +347,19 @@ header{
                                 color: $brand-blue;
                             }
                         }
+                        // Sub Item Menu in the Business Page
+                        .sub-item-menu{
+                            a{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                padding-right: 20px;
+                                img{
+                                    max-width: 15px;
+                                }
+                            }
+                            
+                        }
                     }
                     &.active{
                         height: auto;
@@ -387,31 +409,32 @@ header{
             }
         }
     }
-    @media (max-width: 375px){
-        .menu-mobile{
-            .nav-top-mobile{
-                ul{
-                    padding: 2rem 1rem;
-                    gap: 1.5rem;
-                    li{
-                        a{
-                            gap: 0.5rem;
-                        }
+    
+}
+@media (max-width: 375px){
+    .menu-mobile{
+        .nav-top-mobile{
+            ul{
+                padding: 2rem 1rem;
+                gap: 1.5rem;
+                li{
+                    a{
+                        gap: 0.5rem;
                     }
                 }
             }
         }
     }
-    @media (max-width: 320px){
-        .menu-mobile{
-            .nav-top-mobile{
-                ul{
-                    padding: 2rem 0rem;
-                    gap: 1rem;
-                    li{
-                        a{
-                            gap: 0.5rem;
-                        }
+}
+@media (max-width: 320px){
+    .menu-mobile{
+        .nav-top-mobile{
+            ul{
+                padding: 2rem 0rem;
+                gap: 1rem;
+                li{
+                    a{
+                        gap: 0.5rem;
                     }
                 }
             }
@@ -421,9 +444,15 @@ header{
 // Configuration for menu mobile open
 .menu-opened{
     header{
+      padding-top: 2rem;
       .menu-mobile{
         opacity: 1;
         transform: translateY(0%);
+        position: relative;
+        top: 0rem;
       }
     }
+}
+.fixed-position {
+    position: fixed;
 }
