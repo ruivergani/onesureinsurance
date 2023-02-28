@@ -403,13 +403,29 @@
               <li><a href="#">Mechanic Insurance</a></li>
               <li><a href="#">Valeters Insurance</a></li>
               <li><a href="#">MOT Service Insurance</a></li>
+              <!-- Sub Menu Level 2 -->
               <li class="sub-item-menu">
-                <a href="#">
+                <a href="#" class="js-mobile-sub-item-menu">
                   <span>Commercial Insurance</span>
                   <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
                 </a>
-
-                
+                <ul class="sub-ul js-sub-area-level2">
+                  <li><a href="#">Sub Level 2</a></li>
+                  <li><a href="#">Sub Level 2</a></li>
+                  <li><a href="#">Sub Level 2</a></li>
+                </ul>
+              </li>
+              <!-- Sub Menu Level 2 -->
+              <li class="sub-item-menu">
+                <a href="#" class="js-mobile-sub-item-menu">
+                  <span>Sub Level menu 2</span>
+                  <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+                </a>
+                <ul class="sub-ul js-sub-area-level2">
+                  <li><a href="#">Sub Level 2</a></li>
+                  <li><a href="#">Sub Level 2</a></li>
+                  <li><a href="#">Sub Level 2</a></li>
+                </ul>
               </li>
             </ul>
           </div>
@@ -452,7 +468,7 @@
         </li>
         <!-- Contact Us Menu -->
         <li>
-          <a href="">
+          <a href="" class="js-mobile-menu-item">
             <span>Contact Us</span>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
           </a>
@@ -460,6 +476,8 @@
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
             <!-- Dynamic Menu --> 
             <ul>
+              <li><a href="#">Lorem Ipsum</a></li>
+              <li><a href="#">Lorem Ipsum</a></li>
               <li><a href="#">Lorem Ipsum</a></li>
             </ul> 
           </div>

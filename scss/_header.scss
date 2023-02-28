@@ -240,6 +240,7 @@ header{
             }
         }
     }
+    // Mobile Menu
     .menu-mobile{
         position: absolute;
         width: 100%;
@@ -317,6 +318,7 @@ header{
                         width: 100%;
                         max-width: 1.6rem;
                         transition: transform .3s;
+                        transform: rotate(0deg); 
                     }
                     &.active{
                         img{
@@ -326,7 +328,7 @@ header{
                 }
                 // Sub Dropdown Menu Area
                 .dropdown-sub-menu-mobile{
-                    // animatin
+                    // animation and hide 
                     transition: opacity 1s ease-out;
                     opacity: 0;
                     height: 0;
@@ -347,8 +349,9 @@ header{
                                 color: $brand-blue;
                             }
                         }
-                        // Sub Item Menu in the Business Page
+                        // Sub Item Menu - Level 2 in the Business Page
                         .sub-item-menu{
+                            background-color: $brand-light-blue;
                             a{
                                 display: flex;
                                 align-items: center;
@@ -358,7 +361,22 @@ header{
                                     max-width: 15px;
                                 }
                             }
-                            
+                            .sub-ul{
+                                // animation and hide 
+                                transition: opacity 1s ease-out;
+                                opacity: 0;
+                                height: 0;
+                                overflow: hidden;
+                                transition: all .3s;
+                                transform: translateY(10%);
+                                pointer-events: none;
+                                &.active{
+                                    height: auto;
+                                    opacity: 1;
+                                    transform: translateY(0%);
+                                    pointer-events: all;
+                                }
+                            }
                         }
                     }
                     &.active{

@@ -28,23 +28,44 @@ if(btnDropdownSelect){
   });
 }
 
-// Script for the Mobile Sub Menu
+// Script for the mobile sub menu
 const btnMobileSubMenu = document.querySelectorAll('.js-mobile-menu-item');
 const subMenuDropdownArea = document.querySelectorAll('.js-menu-dropdown-mobile');
 // link which menu dropdown you need to click
-btnMobileSubMenu.forEach((btn, index) => {
-  btn.addEventListener('click', (event) => {
-    event.preventDefault();
-    // Remove the class active from all
-    btnMobileSubMenu.forEach(itemBtn => {
-      itemBtn.classList.remove('active');
+if(btnMobileSubMenu){
+  btnMobileSubMenu.forEach((btn, index) => {
+    btn.addEventListener('click', (event) => {
+      event.preventDefault();
+      // Remove the class active from all
+      btnMobileSubMenu.forEach(itemBtn => {
+        itemBtn.classList.remove('active');
+      })
+      // Put active class to one sub menu
+      btn.classList.toggle('active');
+      // Add active
+      subMenuDropdownArea[index].classList.toggle('active');
     })
-    // Put active class to one sub menu
-    btn.classList.toggle('active');
-    // Add active
-    subMenuDropdownArea[index].classList.toggle('active');
   })
-})
+}
+
+// Script for the mobile sub menu level 2
+const btnMobileSubMenuLevel2 = document.querySelectorAll('.js-mobile-sub-item-menu');
+const subMenuDropdownAreaLevel2 = document.querySelectorAll('.js-sub-area-level2');
+if(btnMobileSubMenuLevel2){
+  btnMobileSubMenuLevel2.forEach((btn, index) => {
+    btn.addEventListener('click', (event) => {
+      event.preventDefault();
+      // Remove the class active from all
+      btnMobileSubMenuLevel2.forEach(itemBtn => {
+        itemBtn.classList.remove('active');
+      })
+      // Put active class to one sub menu
+      btn.classList.toggle('active');
+      // Add active class
+      subMenuDropdownAreaLevel2[index].classList.toggle('active');
+    })
+  })
+}
 
 // Script for the FAQs open
 const question = document.querySelectorAll(".js-question"); // all cards question
