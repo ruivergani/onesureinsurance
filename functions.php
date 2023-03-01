@@ -61,6 +61,28 @@ function register_footer_about_menu() {
     register_nav_menu('footer-about',__('Footer About One Sure'));
 }
 
+// Mobile Menu
+function register_mobile_personal_menu() {
+    register_nav_menu('mobile-personal',__('Mobile Menu - Personal'));
+}
+function register_mobile_resources_menu() {
+    register_nav_menu('mobile-resources',__('Mobile Menu - Resources'));
+}
+function register_mobile_existing_customers_menu() {
+    register_nav_menu('mobile-existing-customers',__('Mobile Menu - Existing Customers'));
+}
+function register_mobile_contact_us_menu() {
+    register_nav_menu('mobile-contact-us',__('Mobile Menu - Contact Us'));
+}
+function register_mobile_business_menu() {
+    register_nav_menu('mobile-business',__('Mobile Menu - Business'));
+}
+function register_mobile_business_commercial_insurance_menu() {
+    register_nav_menu('mobile-business-commercial-insurance',__('Mobile Menu - Business Commercial Insurance'));
+}
+function register_mobile_business_special_types_insurance_menu() {
+    register_nav_menu('mobile-business-special-types-insurance',__('Mobile Menu - Business Special Types Insurance'));
+}
 add_action('init', 'register_my_personal_menu');
 add_action('init', 'register_my_business_motortrade_menu');
 add_action('init', 'register_my_business_commercial_menu');
@@ -75,6 +97,13 @@ add_action('init', 'register_footer_useful_links_menu');
 add_action('init', 'register_footer_insurance_types_menu');
 add_action('init', 'register_footer_corporate_menu');
 add_action('init', 'register_footer_about_menu');
+add_action('init', 'register_mobile_personal_menu');
+add_action('init', 'register_mobile_resources_menu');
+add_action('init', 'register_mobile_existing_customers_menu');
+add_action('init', 'register_mobile_contact_us_menu');
+add_action('init', 'register_mobile_business_menu');
+add_action('init', 'register_mobile_business_commercial_insurance_menu');
+add_action('init', 'register_mobile_business_special_types_insurance_menu');
 
 // Function to enable the Footer edit options in the WordPress acf_add_options_page
 acf_add_options_page(array(

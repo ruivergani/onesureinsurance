@@ -373,19 +373,15 @@
           </a>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
-            <!-- Dynamic Menu --> 
-            <ul>
-              <li><a href="#">Car Insurance</a></li>
-              <li><a href="#">Motorbike Insurance</a></li>
-              <li><a href="#">Scooter Insurance</a></li>
-              <li><a href="#">Van Insurance</a></li>
-              <li><a href="#">Caravan Insurance</a></li>
-              <li><a href="#">Motorhome Insurance</a></li>
-              <li><a href="#">Home Insurance</a></li>
-              <li><a href="#">Travel Insurance</a></li>
-              <li><a href="#">Convicted Car Insurance</a></li>
-              <li><a href="#">Convicted Van Insurance</a></li>
-            </ul> 
+            <!-- Dynamic Menu -->
+            <?php
+              $args = array(
+                'menu' => 'Mobile Menu - Personal',
+                'theme_location' => 'mobile-personal',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
           </div>
         </li>
         <!-- Business Menu -->
@@ -396,36 +392,52 @@
           </a>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
-            <!-- Dynamic Menu --> 
+            <!-- Dynamic Menu -->
+            <?php
+              $args = array(
+                'menu' => 'Mobile Menu - Business',
+                'theme_location' => 'mobile-business',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
+            <!-- Sub Menu Level 2 --> 
             <ul>
-              <li><a href="#">Motor Trade Insurance</a></li>
-              <li><a href="#">Motor Trade Combined</a></li>
-              <li><a href="#">Mechanic Insurance</a></li>
-              <li><a href="#">Valeters Insurance</a></li>
-              <li><a href="#">MOT Service Insurance</a></li>
               <!-- Sub Menu Level 2 -->
               <li class="sub-item-menu">
                 <a href="#" class="js-mobile-sub-item-menu">
                   <span>Commercial Insurance</span>
                   <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
                 </a>
-                <ul class="sub-ul js-sub-area-level2">
-                  <li><a href="#">Sub Level 2</a></li>
-                  <li><a href="#">Sub Level 2</a></li>
-                  <li><a href="#">Sub Level 2</a></li>
-                </ul>
+                <div class="sub-ul js-sub-area-level2">
+                  <!-- Dynamic Menu -->
+                  <?php
+                    $args = array(
+                      'menu' => 'Mobile Menu - Business Commercial Insurance',
+                      'theme_location' => 'mobile-business-commercial-insurance',
+                      'container' => false
+                    );
+                    wp_nav_menu( $args );
+                  ?>
+                </div>
               </li>
               <!-- Sub Menu Level 2 -->
               <li class="sub-item-menu">
                 <a href="#" class="js-mobile-sub-item-menu">
-                  <span>Sub Level menu 2</span>
+                  <span>Special Types Insurance</span>
                   <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
                 </a>
-                <ul class="sub-ul js-sub-area-level2">
-                  <li><a href="#">Sub Level 2</a></li>
-                  <li><a href="#">Sub Level 2</a></li>
-                  <li><a href="#">Sub Level 2</a></li>
-                </ul>
+                <div class="sub-ul js-sub-area-level2">
+                  <!-- Dynamic Menu -->
+                  <?php
+                    $args = array(
+                      'menu' => 'Mobile Menu - Business Special Types Insurance',
+                      'theme_location' => 'mobile-business-special-types-insurance',
+                      'container' => false
+                    );
+                    wp_nav_menu( $args );
+                  ?>
+                </div>
               </li>
             </ul>
           </div>
@@ -438,15 +450,15 @@
           </a>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
-            <!-- Dynamic Menu --> 
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Code of Conduct</a></li>
-              <li><a href="#">Reviews</a></li>
-              <li><a href="#">Insurance Dictionary</a></li>
-              <li><a href="#">Our Community</a></li>
-              <li><a href="#">Existing Customers Guides</a></li>
-            </ul> 
+            <!-- Dynamic Menu -->
+            <?php
+              $args = array(
+                'menu' => 'Mobile Menu - Resources',
+                'theme_location' => 'mobile-resources',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
           </div>
         </li>
         <!-- Existing Customers Menu -->
@@ -457,13 +469,15 @@
           </a>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
-            <!-- Dynamic Menu --> 
-            <ul>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">Claims</a></li>
-              <li><a href="#">Renewals</a></li>
-              <li><a href="#">Payments</a></li>
-            </ul>
+            <!-- Dynamic Menu -->
+            <?php
+              $args = array(
+                'menu' => 'Mobile Menu - Existing Customers',
+                'theme_location' => 'mobile-existing-customers',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
           </div>
         </li>
         <!-- Contact Us Menu -->
@@ -474,12 +488,15 @@
           </a>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
-            <!-- Dynamic Menu --> 
-            <ul>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-              <li><a href="#">Lorem Ipsum</a></li>
-            </ul> 
+            <!-- Dynamic Menu -->
+            <?php
+              $args = array(
+                'menu' => 'Mobile Menu - Contact Us',
+                'theme_location' => 'mobile-contact-us',
+                'container' => false
+              );
+              wp_nav_menu( $args );
+            ?>
           </div>
         </li>
       </ul>
