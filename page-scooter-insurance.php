@@ -355,7 +355,7 @@
         'post_type' => 'post',
         'order' => 'DESC',
         'posts_per_page' => 3,
-        'tag_id' => 21,
+        'tag_id' => 22,
     );
     $the_query = new WP_Query($args);
   ?>
