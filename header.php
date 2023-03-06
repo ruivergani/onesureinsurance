@@ -163,11 +163,11 @@
               <div class="area-menu">
                 <div class="container">
                   <div class="item">
-                    <strong>Motor Trade</strong>
+                    <strong>Motor</strong>
                     <!-- Dynamic Menu --> 
                     <?php
                       $args = array(
-                        'menu' => 'Header Business Motor Trade',
+                        'menu' => 'Header Business Motor',
                         'theme_location' => 'header-business-motor-trade',
                         'container' => false
                       );
