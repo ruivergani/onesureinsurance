@@ -102,8 +102,8 @@
                     <h6><?php the_sub_field('card_title_van_insurance') ?></h6>
                     <p><?php the_sub_field('subtitle_card_van_insurance') ?></p>
                     <div class="learn-more">
-                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-circle-right-rounded.svg" alt="arrow right rounded" title="arrow right rounded">
                         <span>Learn more</span>
+                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
                     </div>
                 </div>
               </a>

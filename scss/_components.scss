@@ -422,11 +422,15 @@
             transition: all .3s ease;
             span{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 1.4rem;
                 line-height: 120%;
                 text-decoration-line: underline;
                 color: $grey-600;
+            }
+            img{
+                transform: rotate(-90deg);
+                max-width: 18px;
             }
         }
     }
