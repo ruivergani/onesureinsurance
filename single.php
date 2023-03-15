@@ -5,38 +5,38 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <!-- Create ranking of views post -->
-<?php setPostViews(get_the_ID()); ?> 
+<?php setPostViews(get_the_ID()); ?>
 
   <!-- Section Breadcrumbs -->
   <section class="s-breadcrumbs">
     <div class="container">
-        <ul>
-            <li>
-                <a href="<?php echo get_home_url(); ?>" aria-label="home page">
-                    <i class="fa-solid fa-house"></i>
-                </a>
-            </li>
-            <li>
-              <!-- Category Section -->
-              <?php
-                $category = get_the_category($post -> ID); // return ID post
-                if(!empty($category)){
-                  foreach($category as $nameCategory){
-                    echo '<a href="'.get_category_link($category[0]).'">' .$nameCategory -> name.'</a>'; 
-                  }
-                }
-              ?>
-            </li>
-            <li>
-                <a href="" aria-label="current page">
-                  <?php the_title(); ?>
-                </a>
-            </li>
-        </ul>
-        <a href="<?php echo get_home_url(); ?>" class="back" aria-label="return page">
-          <i class="fa-solid fa-chevron-left"></i>
-          Go Back to Home
-        </a>
+      <ul>
+        <li>
+          <a href="<?php echo get_home_url(); ?>" aria-label="home page">
+            <i class="fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li>
+        <!-- Category Section -->
+        <?php
+          $category = get_the_category($post -> ID); // return ID post
+          if(!empty($category)){
+            foreach($category as $nameCategory){
+              echo '<a href="'.get_category_link($category[0]).'">' .$nameCategory -> name.'</a>'; 
+            }
+          }
+        ?>
+        </li>
+        <li>
+          <a href="" aria-label="current page">
+            <?php the_title(); ?>
+          </a>
+        </li>
+      </ul>
+      <a href="<?php echo get_home_url(); ?>" class="back" aria-label="return page">
+        <i class="fa-solid fa-chevron-left"></i>
+        Go Back to Home
+      </a>
     </div>
   </section>
 
@@ -81,9 +81,9 @@
         </div>
         <!-- Right Content -->
         <div class="right-content">
-          <form action="" class="search">
-            <input type="text" placeholder="Search for article or theme">
-            <button type="submit">
+          <form action="<?php echo home_url(); ?>" class="search">
+            <input type="text" placeholder="Search for article or theme" id="js-input-search" name="s">
+            <button type="submit" id="js-btn-search" aria-label="submit button">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-search-input.svg" alt="icon search" title="icon search">
             </button>
           </form>

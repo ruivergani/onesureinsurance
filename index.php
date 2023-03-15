@@ -1,63 +1,63 @@
 <?php
   // Template name: Blog
 ?>
-
+ 
 <!-- Include Header -->
 <?php get_header(); ?>
 
 <!-- Section Hero -->
 <section class="s-blog-hero">
   <div class="container">
-      <div class="s-blog-hero-title">
-        <h1><?php the_field('blog_section_hero_title', 234) ?></h1>
-        <p><?php the_field('blog_section_hero_subtitle', 234) ?></p>
-      </div>
-      <!-- Section Include Search Code Blog -->
-      <?php include(TEMPLATEPATH .'/includes/section-search-blog.php') ?>
+    <div class="s-blog-hero-title">
+      <h1><?php the_field('blog_section_hero_title', 234) ?></h1>
+      <p><?php the_field('blog_section_hero_subtitle', 234) ?></p>
+    </div>
+    <!-- Section Include Search Code Blog -->
+    <?php include(TEMPLATEPATH .'/includes/section-search-blog.php') ?>
   </div>
 </section>
 
 <!-- Section Links -->
 <section class="s-blog-links">
   <div class="container">
-      <ul>
-          <li data-aos="fade-up" class="active">
-            <a href="<?php echo get_permalink(234) ?>">
-                <i class="fa-solid fa-border-all"></i>
-                <p>All Posts</p>
-            </a>
-          </li>
-          <li data-aos="fade-up">
-              <a href="<?php echo get_category_link('16'); ?>">
-                  <i class="fa-solid fa-newspaper"></i>
-                  <p>Check our Guides</p>
-              </a>
-          </li>
-          <li data-aos="fade-up" data-aos-delay="50">
-              <a href="<?php echo get_category_link('15'); ?>">
-                  <i class="fa-regular fa-message"></i>
-                  <p>Find our Blog Articles</p>
-              </a>
-          </li>
-          <li data-aos="fade-up" data-aos-delay="150">
-              <a href="<?php echo get_permalink(get_page_by_title('FAQ')) ?>">
-                  <i class="fa-solid fa-question"></i>
-                  <p>Check our FAQs</p>
-              </a>
-          </li>
-      </ul>
+    <ul>
+      <li data-aos="fade-up" class="active">
+        <a href="<?php echo get_permalink(234) ?>">
+          <i class="fa-solid fa-border-all"></i>
+          <p>All Posts</p>
+        </a>
+      </li>
+      <li data-aos="fade-up">
+        <a href="<?php echo get_category_link('16'); ?>">
+          <i class="fa-solid fa-newspaper"></i>
+          <p>Check our Guides</p>
+        </a>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="50">
+        <a href="<?php echo get_category_link('15'); ?>">
+          <i class="fa-regular fa-message"></i>
+          <p>Find our Blog Articles</p>
+        </a>
+      </li>
+      <li data-aos="fade-up" data-aos-delay="150">
+        <a href="<?php echo get_permalink(get_page_by_title('FAQ')) ?>">
+          <i class="fa-solid fa-question"></i>
+          <p>Check our FAQs</p>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
 
 <!-- Section Main Content -->
 <section class="s-main-content">
   <div class="container">
-      <!-- Section Include Side Tags -->
-      <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
-      <!-- List all posts -->
-      <div class="s-all" data-aos="fade-left">
-        <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="9" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
-      </div>
+    <!-- Section Include Side Tags -->
+    <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
+    <!-- List all posts -->
+    <div class="s-all" data-aos="fade-left">
+      <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="9" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
+    </div>
   </div>
 </section>
 
