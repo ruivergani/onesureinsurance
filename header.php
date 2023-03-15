@@ -12,6 +12,8 @@
   <meta name="googlebot" content="notranslate">
   <meta name="google" content="nositelinkssearchbox">
   <meta name="google" content="nopagereadaloud">
+  <meta property="og:locale" content="en_US"/>
+  <link rel="alternate" href="https://www.onesureinsurance.co.uk/" hreflang="en"/>
   <meta name="robots" content="noindex,nofollow">
   <link rel="canonical" href="https://www.onesureinsurance.co.uk/"/>
 

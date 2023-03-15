@@ -394,6 +394,14 @@
         }
     }
     // Responsive
+    @media (max-width: 1440px){
+        .container{
+            .resources-blog-right{
+                max-width: 41rem;
+                padding: 4rem 2rem 4rem 2.5rem;
+            }
+        }
+    }
     @media (max-width: 1150px){
         .container{
             .resources-blog-left{
@@ -447,6 +455,24 @@
                     }
                     button{
                         padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 320px){
+        .container{
+            .resources-blog-right{
+                .form-subscribe{
+                    flex-direction: column;
+                    button{
+                        padding: 1rem 9.2rem;
+                        border-top-right-radius: 0px;
+                        border-end-end-radius: 3px;
+                        border-end-start-radius: 3px;
+                    }
+                    input{
+                        padding: 1rem 3rem;
                     }
                 }
             }
