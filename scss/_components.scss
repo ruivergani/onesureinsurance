@@ -483,9 +483,12 @@
         }
     }
     .info{
-        padding-top: 2rem;
-        padding-left: 2.5rem;
+        padding: 1.5rem;
         transition: all .3s;
+        border: 2px solid #f0f4f9;
+        border-end-end-radius: 4px;
+        margin-top: -2px;
+        border-end-start-radius: 4px;
         h6{
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -493,6 +496,7 @@
             line-height: 120%;
             color: $brand-dark-blue;
             margin-bottom: 0.8rem;
+            text-align: center;
         }
         p{
             font-family: 'Poppins', sans-serif;
@@ -773,7 +777,7 @@
     max-width: 121.6rem;
     height: 17.9rem;
     padding-left: 7rem;
-    background-image: url(../assets/bg/bg-faq.webp);
+    background-image: url(../assets/bg/bg-cta-lg.jpg);
     display: flex;
     align-items: center;
     justify-content: center;

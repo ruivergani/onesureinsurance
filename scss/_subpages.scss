@@ -1478,8 +1478,9 @@
 // === Van Product Page ===
 // Section Motor Trade Slide
 .s-slide-van{
-    background-color: $brand-light-blue;
     padding: 6rem 0rem;
+    border-top: 0.2rem solid #f0f4f9;
+    border-bottom: 0.2rem solid #f0f4f9;
     .container{
         .top{
             padding-bottom: 5rem;
@@ -1491,7 +1492,7 @@
             }
             h4{
                 width: 100%;
-                max-width: 50rem;
+                max-width: 70rem;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 600;
                 font-size: 3rem;
