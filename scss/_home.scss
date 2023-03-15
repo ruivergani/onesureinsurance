@@ -394,7 +394,7 @@
     }
     // Mobile Device
     @media (max-width: 480px){
-        padding-bottom: 0px;
+        padding-bottom: 0px !important;
         .container{
             padding-top: 1rem !important;
             border: none;
@@ -729,7 +729,8 @@
         }
     }
     @media (max-width: 480px){
-        padding: 6rem 0px;
+        padding-top: 6rem;
+        padding-bottom: 0px;
         .container{
             .title{
                 flex-direction: column;
