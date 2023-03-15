@@ -34,20 +34,22 @@
     }
     // Responsive
     @media (max-width: 480px){
-        padding: 2rem 0px;
-        .container{
-            ul{
-                flex-direction: column;
-                gap: 1rem;
-                li{
-                    &:not(:last-child){
-                        &:after{
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
+        display: none;
+        pointer-events: none;
+        // padding: 2rem 0px;
+        // .container{
+        //     ul{
+        //         flex-direction: column;
+        //         gap: 1rem;
+        //         li{
+        //             &:not(:last-child){
+        //                 &:after{
+        //                     display: none;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 .info-post-general{
@@ -330,8 +332,9 @@
                     margin-bottom: 3rem;
                     max-width: 100%;
                     .image{
-                        gap: 3rem;
-                        margin-bottom: 3rem;
+                        gap: 2rem;
+                        flex-direction: column;
+                        margin-bottom: 2rem;
                         img{
                             max-width: 60rem;
                             margin: 0 auto;
@@ -356,8 +359,14 @@
             .info-post-bottom{
                 .left-content{
                     .image{
+                        gap: 1rem;
+                        flex-direction: column;
+                        margin-bottom: 1rem;
                         img{
                             max-width: 40rem;
+                        }
+                        p{
+                            font-size: 1.6rem;
                         }
                         margin-bottom: 2rem;
                         
@@ -388,5 +397,8 @@
                 }
             }
         }
+    }
+    @media (max-width: 480px){
+        padding-top: 4rem;
     }
 }

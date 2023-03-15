@@ -70,18 +70,21 @@
     }
     // Responsive
     @media(max-width: 768px){
-        .container{
-            align-items: center;
-            justify-content: center;
-            ul{
-                flex-direction: column;
-                gap: 1rem; 
-                align-items: center; 
-            }
-            .back{
-                display: none;
-            }
-        }
+        display: none;
+        pointer-events: none;
+        // .container{
+        //     align-items: center;
+        //     justify-content: center;
+        //     ul{
+        //         flex-direction: column;
+        //         gap: 1rem; 
+        //         align-items: center;
+        //         text-align: center;
+        //     }
+        //     .back{
+        //         display: none;
+        //     }
+        // }
     }
 
 }
