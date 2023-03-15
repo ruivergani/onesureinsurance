@@ -19,9 +19,7 @@
 
 <!-- Section Main Content -->
 <section class="s-main-content">
-  <div class="container">
-      <!-- Section Include Side Tags -->
-      <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
+  <div class="container-fluid">
       <!-- List all posts -->
       <div class="s-all" data-aos="fade-left">
         <!-- Code to create query and search for posts -->
