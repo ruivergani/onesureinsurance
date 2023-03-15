@@ -602,7 +602,7 @@
         background-color: $brand-light-blue;
         padding-bottom: 0px;
     }
-    @media (max-width: 1120px){
+    @media (max-width: 1150px){
         .main-bespoke{
             .bespoke-img{
                 max-width: 33rem;
@@ -610,7 +610,7 @@
             }
         }
     }
-    @media (max-width: 1100px){
+    @media (max-width: 1120px){
         .container{
             display: flex;
             align-items: center;
@@ -809,8 +809,8 @@
                     transition: all .3s;
                     // hide all elements which are not part of the dropdown
                     overflow-y: auto; // barra the rolagem
-                     // customize the bar y
-                     &::-webkit-scrollbar-track{
+                    // customize the bar y
+                    &::-webkit-scrollbar-track{
                         // the whole area
                         background-color: transparent;
                     }
@@ -837,6 +837,13 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .container{
+            .select-custom{
+                margin-top: 2rem;
             }
         }
     }

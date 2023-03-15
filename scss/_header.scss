@@ -255,6 +255,20 @@ header{
         opacity: 0;
         padding: 4rem 1.5rem;
         padding-top: 0px;
+        // customize the bar y
+        &::-webkit-scrollbar-track{
+            // the whole area
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar{
+            width: 0.5rem;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb{
+            // the scrollbar itself
+            background-color: $brand-blue;
+            border-radius: 0.5rem;
+        }
         // Nav Top Configuration
         .nav-top-mobile{
             position: sticky;
