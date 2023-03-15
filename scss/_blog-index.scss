@@ -156,7 +156,8 @@
         align-items: flex-start;
         justify-content: space-between;
         .side-category{
-            background: linear-gradient(180deg, #EFF3F6 0%, rgba(239, 243, 246, 0) 66.37%);
+            background: $brand-light-blue;
+            padding-bottom: 5px;
             width: 100%;
             min-height: 100vh;
             height: 100%;
