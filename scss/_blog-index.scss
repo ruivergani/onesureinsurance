@@ -367,8 +367,8 @@
                     gap: 1rem;
                     &:before{
                         content: "";
-                        width: 6px;
-                        height: 4px;
+                        min-width: 6px;
+                        min-height: 4px;
                         display: inline-block;
                         background-color: #9995A6;
                         margin-top: 1.3rem;
