@@ -1,0 +1,23 @@
+.s-title{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .container{
+        overflow-x: visible !important;
+        h1{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 112%;
+            letter-spacing: -1px;
+            color: $grey-600;
+        }
+    }
+    // Responsive
+    @media (max-width: 768px){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .container{
+            text-align: center;
+        }
+    }
+}
