@@ -91,7 +91,6 @@
   </div>
  </section>
 
-
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
 
