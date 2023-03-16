@@ -957,7 +957,7 @@
                 .text-content{
                     blockquote{
                         p{
-                            font-size: 1.6rem;
+                            font-size: 16px;
                             line-height: 150%;
                         }
                         margin-bottom: 2rem;
@@ -974,15 +974,15 @@
                         margin-top: 1.5rem;
                     }
                     p{
-                        font-size: 1.6rem;
+                        font-size: 16px;
                         line-height: 150%;
                         margin-bottom: 1.6rem;
                     }
                     ul{
                         margin-bottom: 2rem;
-                        font-size: 1.6rem;
+                        font-size: 16px;
                         li{
-                            font-size: 1.6rem;
+                            font-size: 16px;
                             margin-bottom: 1rem;
                         }
                     }
@@ -1271,7 +1271,7 @@
                         color: $grey-600;
                         transition: all .3s;
                         @media (max-width: 480px){
-                            font-size: 1.7rem;
+                            font-size: 16px;
                         }
                     }
                     i{
@@ -1301,7 +1301,7 @@
                     line-height: 175%;
                     color: $grey-500;
                     @media (max-width: 480px){
-                        font-size: 1.6rem;
+                        font-size: 16px;
                     }
                     blockquote{
                         p{
@@ -1312,7 +1312,7 @@
                             color: $grey-300;
                             margin-bottom: 0px;
                             @media (max-width: 480px){
-                                font-size: 1.6rem;
+                                font-size: 16px;
                             }
                         }
                         margin-bottom: 4rem;
@@ -1326,7 +1326,7 @@
                         line-height: 175%;
                         color: $grey-500;
                         @media (max-width: 480px){
-                            font-size: 1.6rem;
+                            font-size: 16px;
                         }
                     }
                     ul{
@@ -1350,7 +1350,7 @@
                                 transition: all .3s;
                             }
                             @media (max-width: 480px){
-                                font-size: 1.6rem;
+                                font-size: 16px;
                             }
                         }
                     }
