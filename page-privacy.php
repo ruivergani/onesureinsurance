@@ -77,7 +77,15 @@
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-file.svg" alt="icon file" title="icon file">
           <p>Group Privacy Policy [PDF: 116KB]</p>
         </div>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-download.svg" alt="icon download" title="icon download">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-download.svg" alt="icon download" title="icon download" class="icon-download">
+      </div>
+       <!-- Card Download PDF -->
+       <div class="card-download">
+        <div class="download-text">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-file.svg" alt="icon file" title="icon file">
+          <p>Group Privacy Policy [PDF: 116KB]</p>
+        </div>
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-download.svg" alt="icon download" title="icon download" class="icon-download">
       </div>
     </div>
   </div>
