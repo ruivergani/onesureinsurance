@@ -148,6 +148,62 @@ if(listTopics){
   })
 }
 
+
+// Script for the Topics Navigation Template Text
+const listTopics2 = document.querySelector('.js-nav-template-text');
+const topics2 = document.querySelectorAll('.s-page-text .container .left-page-text .content-post h2');
+if(listTopics2){
+  topics2.forEach(topic => {
+    let listElement2 = document.createElement('li');
+    listTopics2.appendChild(listElement2);
+
+    let ancorTopic2 = document.createElement('a');
+    ancorTopic2.setAttribute('href', '#');
+    listElement2.appendChild(ancorTopic2);
+
+    let textTopic2 = document.createElement('span');
+    ancorTopic2.textContent = topic.textContent;
+    ancorTopic2.appendChild(textTopic2);
+  });
+  const allTopics2 = document.querySelectorAll('.js-nav-template-text li a');
+  allTopics2[0].classList.add('active');
+
+  // Function to return the element position
+  function offset(el) {
+    if (document) {
+      const rect = el.getBoundingClientRect()
+      const scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+  }
+
+  // Function to scroll until the position H2
+  function handleScrollTop(position) {
+    if(document) {
+      const topics2 = document.querySelectorAll('.s-page-text .container .left-page-text .content-post h2')[position];
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: offset(topics2).top - 110
+      })
+    }
+  }
+
+  // Map and make the event click in the topics to scroll based on layout
+  allTopics2.forEach((item, index) => {
+    item.addEventListener('click', (event) => {
+      event.preventDefault();
+      allTopics2.forEach(all => {
+        all.classList.remove('active');
+      })
+      item.classList.add('active');
+      handleScrollTop(index);
+    })
+  })
+}
+
 // Script for Swipper Slide Logos
 var swiper = new Swiper(".slide-logos", {
   slidesPerView: 1,

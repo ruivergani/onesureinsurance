@@ -47,22 +47,7 @@
       <div class="table-of-content">
         <h5 class="table-of-content-title">Policy Content</h5>
         <!-- Top Navigation -->
-        <ul class="js-nav-blog-post">
-          <li>
-            <a href="">
-              <span>What information do we collect about you?</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>Why we use the information about you?</span>
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <span>How will we use the information about you?</span>
-            </a>
-          </li>
+        <ul class="js-nav-template-text">
         </ul>
         <a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
           <button>
