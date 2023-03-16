@@ -148,7 +148,6 @@ if(listTopics){
   })
 }
 
-
 // Script for the Topics Navigation Template Text
 const listTopics2 = document.querySelector('.js-nav-template-text');
 const topics2 = document.querySelectorAll('.s-page-text .container .left-page-text .content-post h2');
