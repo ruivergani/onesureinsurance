@@ -1,5 +1,5 @@
 <?php
-  // Template name: terms-policy
+  // Template name: cookie-policy
 ?>
 
 <!-- Include Header -->
