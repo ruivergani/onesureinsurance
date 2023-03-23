@@ -57,3 +57,68 @@
         }
     }
 }
+.s-rounded-cards{
+    width: 100%;
+    max-width: 73.2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -70px;
+    padding-bottom: 10rem;
+    .container{
+        display: flex;
+        align-items: center;
+        overflow-x: visible;
+        ul{
+            display: flex;
+            align-items: flex-start;
+            gap: 5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            li{
+                width: 25%;
+                max-width: 130px;
+                background-color: $white;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                flex-direction: column;
+                .cards-rounded{
+                    background-color: $white;
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all .3s;
+                    .circle-rounded{
+                        border: 1px solid #134384;
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 130%;
+                    text-align: center;
+                    letter-spacing: -0.5px;
+                    text-decoration-line: underline;
+                    color: $brand-blue;
+                }
+            }
+        }
+    }
+}
