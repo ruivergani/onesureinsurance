@@ -140,12 +140,12 @@
         width: 100%;
         max-width: 800px;
         border-top: 2px solid rgba(0, 52, 120, 0.5);
-        padding-top: 10rem;
         display: flex;
         align-items: flex-start;
         justify-content: center;
         gap: 3rem;
         .left-text-support, .right-text-support{
+            padding-top: 10rem;
             width: 100%;
             max-width: 38.4rem;
             display: flex;
@@ -155,7 +155,7 @@
             h2{
                 font-family: 'Inter', sans-serif;
                 font-weight: 600;
-                font-size: 32px;
+                font-size: 3.2rem;
                 line-height: 120%;
                 text-align: center;
                 color: #050110;
@@ -180,6 +180,17 @@
                         color: $grey-600;          
                     }
                 }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 600px){
+        .container{
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            .left-text-support, .right-text-support{
+                padding-top: 4rem;
             }
         }
     }
