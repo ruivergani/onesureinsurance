@@ -12,8 +12,8 @@
 <section class="s-hero-support">
   <div class="container">
     <div class="title-support">
-      <h1>Need help?</h1>
-      <p>Don’t worry - we’re here for you! Seach for help by typing your question in the box, or scroll down to pick the topic you need.</p>
+      <h1><?php the_field('title_page_support') ?></h1>
+      <p><?php the_field('subtitle_page_support') ?></p>
     </div>
     <!-- Section Include Search Code Blog -->
     <?php include(TEMPLATEPATH .'/includes/section-search-blog.php') ?> 
@@ -24,62 +24,17 @@
 <section class="s-rounded-cards">
   <div class="container">
     <ul>
-      <li>
-        <div class="cards-rounded">
-          <div class="circle-rounded">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-car-rounded.svg" alt="car rounded icon" title="car rounded icon">
+      <!-- Repeater Slide Cards --> 
+      <?php if( have_rows('cards_page_support') ): while ( have_rows('cards_page_support') ) : the_row(); ?>
+        <li>
+          <div class="cards-rounded">
+            <div class="circle-rounded">
+              <img src="<?php the_sub_field('card_image_support') ?>">
+            </div>
           </div>
-        </div>
-        <a href="">Car Insurance</a>
-      </li>
-      <li>
-        <div class="cards-rounded">
-          <div class="circle-rounded">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-lorry-rounded.svg" alt="lorry rounded icon" title="lorry rounded icon">
-          </div>
-        </div>
-        <a href="">HGV & Lorry Insurance</a>
-      </li>
-      <li>
-        <div class="cards-rounded">
-          <div class="circle-rounded">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-scooter-rounded.svg" alt="scooter rounded icon" title="scooter rounded icon">
-          </div>
-        </div>
-        <a href="">Scooter Insurance</a>
-      </li>
-      <li>
-        <div class="cards-rounded">
-          <div class="circle-rounded">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-van-rounded.svg" alt="van rounded icon" title="van rounded icon">
-          </div>
-        </div>
-        <a href="">Van Insurance</a>
-      </li>
-      <li>
-        <div class="cards-rounded">
-          <div class="circle-rounded">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-house-rounded.svg" alt="home rounded icon" title="home rounded icon">
-          </div>
-        </div>
-        <a href="">Home Insurance</a>
-      </li>
-      <li>
-        <div class="cards-rounded">
-          <div class="circle-rounded">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-motorcycle-rounded.svg" alt="motorbike rounded icon" title="motorbike rounded icon">
-          </div>
-        </div>
-        <a href="">Motorbike Insurance</a>
-      </li>
-      <li>
-        <div class="cards-rounded">
-          <div class="circle-rounded">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-caravan-rounded.svg" alt="caravan rounded icon" title="caravan rounded icon">
-          </div>
-        </div>
-        <a href="">Caravan Insurance</a>
-      </li>
+          <a href="<?php the_sub_field('card_link_support') ?>"><?php the_sub_field('card_title_support') ?></a>
+        </li>
+      <?php endwhile; else : endif;?>
     </ul>
   </div>
 </section>
@@ -90,46 +45,27 @@
     <div class="left-text-support">
       <h2>Trending questions</h2>
       <ul>
-        <li>
-          <a href="">
-            How do I contact One Sure Insurance?
-          </a>
-        </li>
-        <li>
-          <a href="">
-            How do I contact One Sure Insurance?
-          </a>
-        </li>
-        <li>
-          <a href="">
-            How do I contact One Sure Insurance?
-          </a>
-        </li>
-        <li>
-          <a href="">
-            How do I contact One Sure Insurance?
-          </a>
-        </li>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('text_left_support') ): while ( have_rows('text_left_support') ) : the_row(); ?>
+          <li>
+            <a href="<?php the_sub_field('link_left_support') ?>">
+              <?php the_sub_field('text_left_support_01') ?>
+            </a>
+          </li>
+        <?php endwhile; else : endif;?>
       </ul>
     </div>
     <div class="right-text-support">
       <h2>Featured Questions</h2>
       <ul>
-        <li>
-          <a href="">
-            Lorem ipsum dolor sit amet
-          </a>
-        </li>
-        <li>
-          <a href="">
-            Lorem ipsum dolor sit amet
-          </a>
-        </li>
-        <li>
-          <a href="">
-            Lorem ipsum dolor sit amet
-          </a>
-        </li>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('text_right_support') ): while ( have_rows('text_right_support') ) : the_row(); ?>
+          <li>
+            <a href="<?php the_sub_field('link_right_support') ?>">
+              <?php the_sub_field('text_right_support_01') ?>
+            </a>
+          </li>
+        <?php endwhile; else : endif;?>
       </ul>
     </div>
   </div>
@@ -139,18 +75,18 @@
 <section class="s-policy-support">
   <div class="container">
     <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-invoice-support-page.svg" alt="icon policy" title="icon policy" class="policy">
-    <h2>Manage your policy</h2>
+    <h2><?php the_field('title_policy_support') ?></h2>
     <ul>
-      <li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta</p>
-      </li>
-      <li>
-        <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-      </li>
+      <!-- Repeater Slide Cards --> 
+      <?php if( have_rows('text_policy_support') ): while ( have_rows('text_policy_support') ) : the_row(); ?>
+        <li>
+          <p><?php the_sub_field('paragraph_support') ?></p>
+        </li>
+      <?php endwhile; else : endif;?>
     </ul>
-    <button class="btn btn-primary">
+    <a class="btn btn-primary" href="">
       Log in to your account
-    </button>
+    </a>
   </div>
 </section>
 <!-- End loop -->
