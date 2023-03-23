@@ -20,6 +20,7 @@
   </div>
 </section>
 
+<!-- Section Cards Rounded -->
 <section class="s-rounded-cards">
   <div class="container">
     <ul>
@@ -83,6 +84,74 @@
   </div>
 </section>
 
+<!-- Section Text -->
+<section class="s-text-support">
+  <div class="container">
+    <div class="left-text-support">
+      <h2>Trending questions</h2>
+      <ul>
+        <li>
+          <a href="">
+            How do I contact One Sure Insurance?
+          </a>
+        </li>
+        <li>
+          <a href="">
+            How do I contact One Sure Insurance?
+          </a>
+        </li>
+        <li>
+          <a href="">
+            How do I contact One Sure Insurance?
+          </a>
+        </li>
+        <li>
+          <a href="">
+            How do I contact One Sure Insurance?
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-text-support">
+      <h2>Featured Questions</h2>
+      <ul>
+        <li>
+          <a href="">
+            Lorem ipsum dolor sit amet
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Lorem ipsum dolor sit amet
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Lorem ipsum dolor sit amet
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Section Policy -->
+<section class="s-policy-support">
+  <div class="container">
+    <h2>Manage your policy</h2>
+    <ul>
+      <li>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur elit id sapien porta</p>
+      </li>
+      <li>
+        <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
+      </li>
+    </ul>
+    <button class="btn btn-primary">
+      Log in to your account
+    </button>
+  </div>
+</section>
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
 
