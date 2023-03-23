@@ -40,6 +40,8 @@
     }
     // Responsive
     @media (max-width: 480px){
+        padding-top: 6rem;
+        height: 400px;
         .container{
             max-width: 100%;
             .title-support{
@@ -72,7 +74,7 @@
         ul{
             display: flex;
             align-items: flex-start;
-            gap: 5rem;
+            gap: 5rem 5rem;
             flex-wrap: wrap;
             justify-content: center;
             width: 100%;
@@ -118,6 +120,15 @@
                     text-decoration-line: underline;
                     color: $brand-blue;
                 }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 480px){
+        max-width: 100%;
+        .container{
+            ul{
+                gap: 1rem 8rem;
             }
         }
     }
