@@ -138,6 +138,7 @@
 <!-- Section Policy -->
 <section class="s-policy-support">
   <div class="container">
+    <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-invoice-support-page.svg" alt="icon policy" title="icon policy" class="policy">
     <h2>Manage your policy</h2>
     <ul>
       <li>
