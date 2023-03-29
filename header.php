@@ -62,21 +62,26 @@
         </button>
         <span>GET A QUOTE</span>
         <h2>Find the right cover to suit you. Fill the form to get a quote!</h2>
+        <!-- === FORM === -->
         <form action="" method="post">
             <div class="form-group">
-                <label for="name">Name:</label><br>
-                <input type="text" name="name" placeholder="Name" id="name">
+              <label for="name">Name:</label><br>
+              <input type="text" name="name" placeholder="Name" id="name">
             </div>
             <div class="form-group">
-                <label for="surname">Surname:</label><br>
-                <input type="text" name="surname" placeholder="Surname" id="surname">
+              <label for="surname">Surname:</label><br>
+              <input type="text" name="surname" placeholder="Surname" id="surname">
             </div>
             <div class="form-group">
-                <label for="phone">Phone Number:</label><br>
-                <input type="number" name="phone" id="phone">
+              <label for="phone">Phone Number:</label><br>
+              <input type="number" name="phone" id="phone">
             </div>
-            <button class="btn btn-primary">
-                NEXT STEPS
+            <!-- === HIDDEN INPUT === -->
+            <input type="hidden" name="gclid" id="gclid" value="">
+            <input type="hidden" name="CAMPAIGN" id="CAMPAIGN" value="">
+            <!-- === END OF HIDDEN INPUT === -->
+            <button class="btn btn-primary" type="submit">
+              NEXT STEPS
             </button>
         </form>
     </div>
