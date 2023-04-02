@@ -20,27 +20,45 @@
 </section>
 
 <!-- Section Cards Squared -->
-<section class="s-rounded-cards">
+<section class="s-squared-cards">
   <div class="container">
     <ul>
       <li>
         <div class="cards-squared">
-
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-support-page.svg" alt="icon phone" title="icon phone">
+          <a href="">Emergency Contact</a>
         </div>
       </li>
-
-
-      <!-- Repeater Slide Cards --> 
-      <?php if( have_rows('') ): while ( have_rows('') ) : the_row(); ?>
-        <li>
-          <div class="cards-rounded">
-            <div class="circle-rounded">
-              <img src="<?php the_sub_field('card_image_support') ?>">
-            </div>
-          </div>
-          <a href="<?php the_sub_field('') ?>"><?php the_sub_field('') ?></a>
-        </li>
-      <?php endwhile; else : endif;?>
+      <li>
+        <div class="cards-squared">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-newspaper-support.svg" alt="icon policy newspaper" title="icon policy newspaper">
+          <a href="">All abour your Policy</a>
+        </div>
+      </li>
+      <li>
+        <div class="cards-squared">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-wrench-support.svg" alt="icon wrench" title="icon wrench">
+          <a href="">Change or renew your policy</a>
+        </div>
+      </li>
+      <li>
+        <div class="cards-squared">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-policy-support.svg" alt="icon policy" title="icon policy">
+          <a href="">Our benefits and optional extras</a>
+        </div>
+      </li>
+      <li>
+        <div class="cards-squared">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-pen-support.svg" alt="icon pen" title="icon pen">
+          <a href="">Acidents and making claim</a>
+        </div>
+      </li>
+      <li>
+        <div class="cards-squared">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-handshake-support.svg" alt="icon handshake" title="icon handshake">
+          <a href="">Extra Support</a>
+        </div>
+      </li>
     </ul>
   </div>
 </section>

@@ -51,3 +51,78 @@
         }
     }
 }
+.s-squared-cards{
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: -70px;
+    padding-bottom: 9rem;
+    .container{
+        display: flex;
+        align-items: center;
+        overflow-x: visible;
+        ul{
+            display: flex;
+            align-items: flex-start;
+            gap: 3.2rem 3.2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            li{
+                cursor: pointer;
+                width: 25%;
+                max-width: 176px;
+                min-width: 176px;
+                background-color: $white;
+                border: 0.5px solid $brand-blue;
+                padding: 10px;
+                .cards-squared{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 20px;
+                    flex-direction: column;
+                    border: 0.5px solid $brand-blue;
+                    min-height: 164px;
+                    img{
+                        width: 100%;
+                        max-width: 3.5rem;
+                    }
+                    a{
+                        width: 100%;
+                        max-width: 14.1rem;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 130%;
+                        text-align: center;
+                        letter-spacing: -0.5px;
+                        text-decoration-line: underline;
+                        color: $brand-blue;
+                    }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 480px){
+        max-width: 100%;
+        padding-bottom: 4rem;
+        margin-top: -170px;
+        .container{
+            ul{
+                gap: 2rem;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                li{
+                    width: auto;
+                }
+            }
+        }
+    }
+
+}
