@@ -100,6 +100,168 @@
       </div>
     </div>
   </section>
+
+  <!-- Section FAQ Links -->
+  <div class="s-faq-links">
+    <div class="container">
+      <div class="f-top">
+        <div class="f-top-01">
+          <h4>Trending questions</h4>
+          <ul>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="f-top-02">
+          <h4>Trending questions</h4>
+          <ul>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="f-top-03">
+          <h4>Trending questions</h4>
+          <ul>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="f-bottom">
+        <div class="f-bottom-01">
+          <h4>Trending questions</h4>
+          <ul>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="f-bottom-02">
+          <h4>Trending questions</h4>
+          <ul>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="f-bottom-03">
+          <h4>Trending questions</h4>
+          <ul>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+            <li>
+              <a href="">
+                Lorem ipsum dolor sit.
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
 
