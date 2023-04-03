@@ -105,12 +105,12 @@
   <div class="s-faq-links">
     <div class="container">
       <div class="f-top">
-        <div class="f-top-01">
+        <div class="f-item">
           <h4>Trending questions</h4>
           <ul>
             <li>
               <a href="">
-                Lorem ipsum dolor sit.
+              How do I contact One Sure Insurance?
               </a>
             </li>
             <li>
@@ -130,12 +130,12 @@
             </li>
           </ul>
         </div>
-        <div class="f-top-02">
+        <div class="f-item">
           <h4>Trending questions</h4>
           <ul>
             <li>
               <a href="">
-                Lorem ipsum dolor sit.
+                How do I contact One Sure Insurance?
               </a>
             </li>
             <li>
@@ -155,12 +155,12 @@
             </li>
           </ul>
         </div>
-        <div class="f-top-03">
+        <div class="f-item">
           <h4>Trending questions</h4>
           <ul>
             <li>
               <a href="">
-                Lorem ipsum dolor sit.
+                How do I contact One Sure Insurance?
               </a>
             </li>
             <li>
@@ -182,7 +182,7 @@
         </div>
       </div>
       <div class="f-bottom">
-        <div class="f-bottom-01">
+        <div class="f-item">
           <h4>Trending questions</h4>
           <ul>
             <li>
@@ -207,7 +207,7 @@
             </li>
           </ul>
         </div>
-        <div class="f-bottom-02">
+        <div class="f-item">
           <h4>Trending questions</h4>
           <ul>
             <li>
@@ -232,7 +232,7 @@
             </li>
           </ul>
         </div>
-        <div class="f-bottom-03">
+        <div class="f-item">
           <h4>Trending questions</h4>
           <ul>
             <li>

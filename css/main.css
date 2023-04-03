@@ -8420,4 +8420,66 @@ footer .container .bottom-footer .js-btn-scroll-top img {
   animation: fadeIn .3s forwards;
 }
 
+/* line 267, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-faq.scss */
+.s-faq-links {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+/* line 270, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-faq.scss */
+.s-faq-links .container {
+  border-top: 1px solid #C6C5CE;
+  border-bottom: 1px solid #C6C5CE;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+
+/* line 280, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-faq.scss */
+.s-faq-links .container .f-top, .s-faq-links .container .f-bottom {
+  width: 100%;
+  max-width: 107.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
+}
+
+/* line 286, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-faq.scss */
+.s-faq-links .container .f-top .f-item, .s-faq-links .container .f-bottom .f-item {
+  width: 100%;
+  max-width: 31.2rem;
+}
+
+/* line 289, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-faq.scss */
+.s-faq-links .container .f-top .f-item h4, .s-faq-links .container .f-bottom .f-item h4 {
+  margin-bottom: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #050110;
+}
+
+/* line 297, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-faq.scss */
+.s-faq-links .container .f-top .f-item ul, .s-faq-links .container .f-bottom .f-item ul {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex-direction: column;
+}
+
+/* line 303, ../../../../../Users/ruiverganineto/Desktop/UiBoost/onesureinsurance-wordpress/app/public/wp-content/themes/theme-onesureinsurance/scss/_page-faq.scss */
+.s-faq-links .container .f-top .f-item ul li a, .s-faq-links .container .f-bottom .f-item ul li a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-decoration-line: underline;
+  color: #33303E;
+}
+
 /*# sourceMappingURL=main.css.map */

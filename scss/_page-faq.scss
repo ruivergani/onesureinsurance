@@ -261,4 +261,58 @@
             }
         }
     }
+    // Responsive
+
+}
+.s-faq-links{
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    .container{
+        border-top: 1px solid #C6C5CE;
+        border-bottom: 1px solid #C6C5CE;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 4rem;
+        width: 100%;
+        .f-top, .f-bottom{
+            width: 100%;
+            max-width: 107.6rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 32px;
+            .f-item{
+                width: 100%;
+                max-width: 31.2rem;
+                h4{
+                    margin-bottom: 30px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 120%;
+                    color: #050110;
+                }
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 15px;
+                    flex-direction: column;
+                    li{
+                        a{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 175%;
+                            text-decoration-line: underline;
+                            color: $grey-600;
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
 }
