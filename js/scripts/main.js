@@ -98,6 +98,17 @@ if(question){
   });
 }
 
+// Script for the FAQs open main page
+const question02 = document.querySelectorAll(".js-accordion-plus-item"); // all cards question
+// Check if the question exists or not
+if(question02){
+  question02.forEach(function (event) {
+    event.addEventListener("click", () => {
+      event.classList.toggle("active");
+    });
+  });
+}
+
 // Script for Table of Contents
 const itemContent = document.querySelectorAll('.js-nav-product li a'); // all items from table content
 if(itemContent){

@@ -19,7 +19,7 @@
         <ul>
           <li>
             <a href="">
-              <p>Software & Systems Software & Systems</p>
+              <p>Software & Systems</p>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-side-category.svg" alt="arrow right" title="arrow right">
             </a>
           </li>
@@ -49,8 +49,9 @@
           <!-- Each FAQ section -->
           <div class="faq-box">
             <h2>What is Lorem Ipsum?</h2>
+            <!-- Individual FAQ question -->
             <div class="accordion-plus">
-              <div class="accordion-plus-item">
+              <div class="accordion-plus-item js-accordion-plus-item" >
                 <h3>
                   <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-right-arrow-accordion.svg" alt="right arrow" title="right arrow" class="accordion-plus-arrow">
                   <span>Lorem Ipsum is simply dummy text of the printing?</span>
@@ -63,8 +64,24 @@
                 </div>
               </div>
             </div>
+            <!-- Individual FAQ question -->
             <div class="accordion-plus">
-              <div class="accordion-plus-item">
+              <div class="accordion-plus-item js-accordion-plus-item">
+                <h3>
+                  <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-right-arrow-accordion.svg" alt="right arrow" title="right arrow" class="accordion-plus-arrow">
+                  <span>Lorem Ipsum is simply dummy text of the printing?</span>
+                </h3>
+                <div class="accordion-plus-content">
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+                  <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+                  <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+                  <p>If you still can’t find an answer to your question, why not try our virtual assistant? Click the icon in the bottom right corner of your screen to start chatting! Alternatively, you can give our Customer Experience Team a call on +44 (0)330 124 0000 or drop us an email at customerservices@onesureinsurance.co.uk</p>
+                </div>
+              </div>
+            </div>
+            <!-- Individual FAQ question -->
+            <div class="accordion-plus">
+              <div class="accordion-plus-item js-accordion-plus-item">
                 <h3>
                   <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-right-arrow-accordion.svg" alt="right arrow" title="right arrow" class="accordion-plus-arrow">
                   <span>Lorem Ipsum is simply dummy text of the printing?</span>

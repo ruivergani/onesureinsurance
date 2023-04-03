@@ -180,9 +180,12 @@
                                 }
                             }
                             .accordion-plus-content{
-                                padding-left: 5.2rem;
+                                padding-left: 5.5rem;
                                 margin-bottom: 2.5rem;
                                 width: 100%;
+                                display: none;
+                                pointer-events: none;
+                                transition: all .3s;
                                 blockquote{
                                     p{
                                         font-family: 'Inter', sans-serif;
@@ -236,6 +239,20 @@
                                             transition: all .3s;
                                         }
                                     }
+                                }
+                            }
+                            // JS open FAQs
+                            &.active{
+                                height: auto;
+                                h3{
+                                    img{
+                                        transform: rotate(90deg);
+                                    }
+                                }
+                                .accordion-plus-content{
+                                    display: block;
+                                    pointer-events: all;
+                                    animation: fadeIn .3s forwards;
                                 }
                             }
                         }
