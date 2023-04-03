@@ -24,12 +24,13 @@
                 display: flex;
                 flex-direction: column;
                 li{
-                    padding-top: 15px;
-                    padding-bottom: 15px;
-                    padding-right: 15px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-right: 10px;
                     transition: all 0.3s;
                     display: flex;
                     align-items: flex-start;
+                    
                     &:before{
                         content: "";
                         min-width: 4px;
@@ -51,6 +52,8 @@
                             font-size: 1.6rem;
                             line-height: 150%;
                             color: $brand-blue;
+                            width: 100%;
+                            max-width: 160px;
                         }
                         img{
                             // hide the state default
@@ -81,6 +84,164 @@
         .main-content-faq{
             width: 100%;
             max-width: 87.9rem;
+            .title-main-content-faq{
+                width: 100%;
+                h1{
+                    width: 100%;
+                    max-width: 45rem;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 112%;
+                    letter-spacing: -1px;
+                    color: $grey-500;     
+                    margin-bottom: 3rem;
+                }
+                width: 100%;
+                blockquote{
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 1.8rem;
+                        line-height: 175%;
+                        color: $grey-500;
+                        margin-bottom: 0px;
+                    }
+                    margin-bottom: 4rem;
+                    border-left: 2px solid rgba(0, 69, 158, 0.2);
+                    padding-left: 2.4rem;
+                }
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    line-height: 175%;
+                    color: $grey-500;
+                    margin-bottom: 1.6rem;
+                }
+                ul{
+                    margin-bottom: 4rem;
+                    li{
+                        margin-bottom: 1.2rem;
+                        display: flex;
+                        align-items: flex-start;
+                        font-size: 1.8rem;
+                        line-height: 175%;
+                        color: $grey-500;
+                        &:before{
+                            content: "";
+                            min-width: 4px;
+                            min-height: 4px;
+                            display: inline-block;
+                            background-color: #9995A6;
+                            margin-top: 1rem;
+                            margin-right: 1.6rem;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
+            .all-faqs-section{
+                .faq-box{
+                    margin-top: 6rem;
+                    h2{
+                        padding-bottom: 2rem;
+                        width: 100%;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 500;
+                        font-size: 28px;
+                        line-height: 112%;
+                        letter-spacing: -1px;
+                        color: $grey-500;       
+                        border-bottom: 1px solid #C6C5CE;
+                    }
+                    .accordion-plus{
+                        width: 100%;
+                        border-bottom: 1px solid #C6C5CE;
+                        margin-top: 2.5rem;
+                        .accordion-plus-item{
+                            h3{
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                gap: 2.8rem;
+                                padding-bottom: 2.5rem;
+                                border-bottom: 1px solid transparent;
+                                span{
+                                    font-family: 'Poppins', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 112%;
+                                    letter-spacing: -1px;
+                                    color: $brand-blue;
+                                }
+                                img{
+                                    transition: all .3s;
+                                }
+                            }
+                            .accordion-plus-content{
+                                padding-left: 5.2rem;
+                                margin-bottom: 2.5rem;
+                                width: 100%;
+                                blockquote{
+                                    p{
+                                        font-family: 'Inter', sans-serif;
+                                        font-weight: 400;
+                                        font-size: 1.8rem;
+                                        line-height: 175%;
+                                        color: $grey-500;
+                                        margin-bottom: 0px;
+                                    }
+                                    margin-bottom: 4rem;
+                                    border-left: 2px solid rgba(0, 69, 158, 0.2);
+                                    padding-left: 2.4rem;
+                                }
+                                h4, 
+                                h5,
+                                h6{
+                                    font-family: 'Poppins', sans-serif;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    line-height: 112%;
+                                    letter-spacing: -1px;
+                                    color: $grey-600;
+                                    margin-bottom: 2rem;
+                                    margin-top: 2rem;
+                                }
+                                p{
+                                    font-family: 'Inter', sans-serif;
+                                    font-weight: 400;
+                                    font-size: 1.8rem;
+                                    line-height: 175%;
+                                    color: $grey-500;
+                                    margin-bottom: 1.6rem;
+                                }
+                                ul{
+                                    margin-bottom: 4rem;
+                                    li{
+                                        margin-bottom: 1.2rem;
+                                        display: flex;
+                                        align-items: flex-start;
+                                        font-size: 1.8rem;
+                                        line-height: 175%;
+                                        color: $grey-500;
+                                        &:before{
+                                            content: "";
+                                            min-width: 4px;
+                                            min-height: 4px;
+                                            display: inline-block;
+                                            background-color: #9995A6;
+                                            margin-top: 1rem;
+                                            margin-right: 1.6rem;
+                                            transition: all .3s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
