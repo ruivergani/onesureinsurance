@@ -19,6 +19,26 @@ if (btnCloseModal){
   })
 }
 
+// Configure the modal Support
+const btnOpenModalSupport = document.querySelector('.js-open-modal-support');
+const btnCloseModalSupport = document.querySelector('.js-close-support');
+if(btnOpenModalSupport){
+  btnOpenModalSupport.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.documentElement;
+     // add the class to the html (not to the specific element)
+     html.classList.add('show-modal-support'); // selecting
+  })
+}
+if (btnCloseModalSupport){
+  btnCloseModalSupport.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.documentElement;
+     // add the class to the html (not to the specific element)
+     html.classList.remove('show-modal-support'); // selecting
+  })
+}
+
 // Script for the Mobile Button
 const btnDropdownSelect = document.querySelector('.js-open-select-custom');
 const dropdownArea = document.querySelector('.select-custom');

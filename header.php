@@ -350,26 +350,26 @@
     <div class="menu-mobile">
       <!-- Top Navigation -->
       <div class="nav-top-mobile">
-          <ul>
-            <li>
-              <a href="#">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user.svg" alt="icon user" title="icon user" loading="lazy">
-                <span>My Account</span>
-              </a>
-            </li>
-            <li>
-              <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-paper.svg" alt="icon paper" title="icon paper" loading="lazy">
-                <span>Claims</span>
-              </a>
-            </li>
-            <li>
-              <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-autorenew.svg" alt="icon renewals"  title="icon renewals" loading="lazy">
-                <span>Renewals</span>
-              </a>
-            </li>
-          </ul>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user.svg" alt="icon user" title="icon user" loading="lazy">
+              <span>My Account</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-paper.svg" alt="icon paper" title="icon paper" loading="lazy">
+              <span>Claims</span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-autorenew.svg" alt="icon renewals"  title="icon renewals" loading="lazy">
+              <span>Renewals</span>
+            </a>
+          </li>
+        </ul>
       </div>
       <!-- Menu List -->
       <ul class="mobile-menu-list">

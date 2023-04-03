@@ -8,6 +8,34 @@
 <!-- Loop in the template -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 
+<!-- Modal Support Page -->
+<section class="modal-support">
+  <div class="overlay-support">
+  </div>
+  <div class="box-support">
+    <button class="close-support js-close-support">
+      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-modal.svg" alt="close button"  title="close button">
+    </button>
+    <span>GET IN TOUCH WITH US</span>
+    <h2>Emergency Contact</h2>
+    <p class="subtitle-p">If you need 24/7 emergency help at the roadside:</p>
+    <ul>
+      <li>
+        <p>After an accident in the UK - Call us on</p>
+        <span>0800 081 5113</span>
+      </li>
+      <li>
+        <p>Outside of the UK</p>
+        <span>0800 081 5113</span>
+      </li>
+      <li>
+        <p>If your car has broken down</p>
+        <span>0800 081 5113</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
 <!-- Section Hero -->
 <section class="s-hero-support-page">
   <div class="container">
@@ -26,7 +54,7 @@
       <li>
         <div class="cards-squared">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-support-page.svg" alt="icon phone" title="icon phone">
-          <a href="">Emergency Contact</a>
+          <a href="" class="js-open-modal-support">Emergency Contact</a>
         </div>
       </li>
       <li>
