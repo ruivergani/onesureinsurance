@@ -1,0 +1,86 @@
+.s-faq-content{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .table-of-content-faq, .main-content-faq{
+            padding-top: 4rem;
+        }
+        .table-of-content-faq{
+            width: 100%;
+            max-width: 28rem;
+            border-right: 2px solid #F1F0F5;
+            min-height: 100vh;
+            h3{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 150%;
+                letter-spacing: -0.5px;
+                color: $grey-500;
+                margin-bottom: 3rem;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    padding-right: 15px;
+                    transition: all 0.3s;
+                    display: flex;
+                    align-items: flex-start;
+                    &:before{
+                        content: "";
+                        min-width: 4px;
+                        min-height: 4px;
+                        display: inline-block;
+                        background-color: $brand-blue;
+                        margin-top: 1rem;
+                        margin-right: 1.2rem;
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        transition: all 0.3s;
+                        p{
+                            transition: all 0.3s;
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 600;
+                            font-size: 1.6rem;
+                            line-height: 150%;
+                            color: $brand-blue;
+                        }
+                        img{
+                            // hide the state default
+                            pointer-events: none;
+                            opacity: 0;
+                            transition: all .3s ease;
+                            transform: translateX(-15px); // put to right side
+                            margin-left: 40px;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            p{
+                                text-decoration: underline;
+                            }
+                            img{
+                                // hide the state default
+                                pointer-events: all;
+                                opacity: 1;
+                                transform: translateX(0px); // put to right side
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .main-content-faq{
+            width: 100%;
+            max-width: 87.9rem;
+        }
+    }
+}
