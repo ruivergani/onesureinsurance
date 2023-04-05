@@ -264,10 +264,10 @@
   <!-- Section Newsletter -->
   <section class="s-newsletter-faq">
     <div class="container">
-        <h3>Well, hello there!</h3>
-        <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
-        <span>Enter your email address</span>
-        <form class="form-apply">
+      <h3>Well, hello there!</h3>
+      <p>Donec vitae interdum nisl. Proin tincidunt malesuada viverra. Fusce porttitor lorem ut est cursus, et sollicitudin sapien pretium. Mauris placerat eros massa, quis semper mauris faucibus et.</p>
+      <span>Enter your email address</span>
+      <form class="form-newsletter">
         <input type="text" placeholder="Email address *" id="js-input-newsletter">
         <button type="button" id="js-btn-newsletter">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-right-white.svg" alt="arrow right white" title="arrow right white">
