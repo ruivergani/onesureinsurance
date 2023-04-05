@@ -1,4 +1,5 @@
 .s-faq-content{
+    margin-bottom: 107px;
     .container{
         display: flex;
         justify-content: flex-start;
@@ -348,11 +349,13 @@
         }
     }
     @media (max-width: 680px){
+        margin-bottom: 4rem;
         .container{
             .table-of-content-faq{
                 display: none;
             }
             .main-content-faq{
+                border-left: none;
                 padding-left: 0px;
                 padding-top: 2rem;
                 .title-main-content-faq{
@@ -475,7 +478,6 @@
     }
 }
 .s-newsletter-faq{
-    display: none;
     padding-bottom: 112px;
     .container{
         display: flex;
@@ -491,7 +493,7 @@
             font-weight: 600;
         }
         p, span{
-            font-size: 1.6rem;
+            font-size: 16px;
             line-height: 175%;
             color: $grey-600;
         }
@@ -534,6 +536,28 @@
                 border: 0.5px solid #C6C5CE;
                 border-top-left-radius: 3px;
                 border-bottom-left-radius: 3px;
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 480px){
+        padding-bottom: 4rem;
+        .container{
+            span{
+                margin-bottom: 1rem;
+            }
+            p{
+                margin-bottom: 2rem;
+            }
+            h3{
+                margin-bottom: 2rem;
+                font-size: 2.8rem;
+            }
+            .form-newsletter{
+                input{
+                    max-width: 230px;
+                    min-width: 230px;
+                }
             }
         }
     }
