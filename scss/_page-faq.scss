@@ -1,7 +1,7 @@
 .s-faq-content{
     .container{
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: flex-start;
         .table-of-content-faq, .main-content-faq{
             padding-top: 4rem;
@@ -9,8 +9,6 @@
         .table-of-content-faq{
             width: 100%;
             max-width: 28rem;
-            border-right: 2px solid #F1F0F5;
-            min-height: 100vh;
             h3{
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
@@ -84,11 +82,14 @@
         .main-content-faq{
             width: 100%;
             max-width: 87.9rem;
+            border-left: 2px solid #F1F0F5;
+            min-height: 100vh;
+            padding-left: 4rem;
             .title-main-content-faq{
                 width: 100%;
                 h1{
                     width: 100%;
-                    max-width: 45rem;
+                    max-width: 100%;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 500;
                     font-size: 32px;
