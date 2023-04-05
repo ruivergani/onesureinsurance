@@ -361,6 +361,7 @@
                     .faq-box{
                         h2{
                             text-align: center;
+                            font-size: 22px;
                         }
                         .accordion-plus{
                             .accordion-plus-item{
@@ -369,6 +370,9 @@
                                         max-width: 18px;
                                     }
                                     padding-bottom: 1.5rem;
+                                    span{
+                                        font-size: 17px;
+                                    }
                                 }
                                 .accordion-plus-content{
                                     padding-left: 4.8rem;
@@ -382,14 +386,13 @@
     }
 }
 .s-faq-link{
-    display: none;
     margin-top: 6rem;
     margin-bottom: 6rem;
     .container{
         border-top: 1px solid #C6C5CE;
         border-bottom: 1px solid #C6C5CE;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -404,8 +407,9 @@
             .f-item{
                 width: 100%;
                 max-width: 31.2rem;
+                text-align: center;
                 h4{
-                    margin-bottom: 30px;
+                    margin-bottom: 3rem;
                     font-family: 'Inter', sans-serif;
                     font-weight: 600;
                     font-size: 20px;
@@ -431,8 +435,42 @@
                 }
             }
         }
-        
-        
+    }
+    // Responsive
+    @media (max-width: 728px){
+        .container{
+            padding-top: 4rem !important;
+            padding-bottom: 4rem !important;
+            gap: 3rem;
+            .f-top, .f-bottom{
+                grid-template-columns: 1fr;
+                max-width: 100%;
+                .f-item{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    @media (max-width: 560px){
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        .container{
+            .f-top, .f-bottom{
+                .f-item{
+                    h4{
+                        margin-bottom: 20px;
+                        font-size: 18px;
+                    }
+                    ul{
+                        li{
+                            a{
+                                line-height: 120%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 .s-newsletter-faq{
