@@ -16,25 +16,8 @@
     <div class="container">
       <div class="table-of-content-faq">
         <h3>Help Centre</h3>
-        <ul>
-          <li>
-            <a href="">
-              <p>Software & Systems</p>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-side-category.svg" alt="arrow right" title="arrow right">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p>Software & Systems</p>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-side-category.svg" alt="arrow right" title="arrow right">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <p>Software & Systems</p>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-side-category.svg" alt="arrow right" title="arrow right">
-            </a>
-          </li>
+        <!-- Navigation FAQs -->
+        <ul class="js-nav-faq-post">
         </ul>
       </div>
       <div class="main-content-faq">

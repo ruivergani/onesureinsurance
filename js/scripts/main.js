@@ -108,7 +108,6 @@ if(question02){
     });
   });
 }
-
 // Script for Table of Contents
 const itemContent = document.querySelectorAll('.js-nav-product li a'); // all items from table content
 if(itemContent){
@@ -122,6 +121,61 @@ if(itemContent){
       event.classList.add("active");
     });
   });
+}
+
+// Script for the Topics Navigation
+const listTopicsFaq = document.querySelector('.js-nav-faq-post');
+const topicsFaq = document.querySelectorAll('.s-faq-content .container .main-content-faq .all-faqs-section .faq-box h2');
+if(listTopicsFaq){
+  topicsFaq.forEach(topic => {
+    let listElementFaq = document.createElement('li');
+    listTopicsFaq.appendChild(listElementFaq);
+
+    let ancorTopicFaq = document.createElement('a');
+    ancorTopicFaq.setAttribute('href', '#');
+    listElementFaq.appendChild(ancorTopicFaq);
+
+    let textTopicFaq = document.createElement('p');
+    textTopicFaq.textContent = topic.textContent;
+    ancorTopicFaq.appendChild(textTopicFaq);
+  });
+
+  const allTopicsFaq = document.querySelectorAll('.js-nav-faq-post li a');
+  allTopicsFaq[0].classList.add('active');
+
+  // Function to return the element position
+  function offset(el) {
+    if (document) {
+      const rect = el.getBoundingClientRect()
+      const scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+  }
+  // Function to scroll until the position H2
+  function handleScrollTop(position) {
+    if(document) {
+      const topicsFaq = document.querySelectorAll('.s-faq-content .container .main-content-faq .all-faqs-section .faq-box h2')[position];
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: offset(topicsFaq).top - 130
+      })
+    }
+  }
+
+  // Map and make the event click in the topics to scroll based on layout
+  allTopicsFaq.forEach((item, index) => {
+    item.addEventListener('click', (event) => {
+      event.preventDefault();
+      allTopicsFaq.forEach(all => {
+        all.classList.remove('active');
+      })
+      item.classList.add('active');
+      handleScrollTop(index);
+    })
+  })
 }
 
 // Script for the Topics Navigation
@@ -445,4 +499,4 @@ btnMenu.forEach((btn, index) => {
     // add active
     MenuDropdown[index].classList.add('active');
   })
-})
+});
