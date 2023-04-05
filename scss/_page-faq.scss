@@ -264,7 +264,7 @@
     // Responsive
 
 }
-.s-faq-links{
+.s-faq-link{
     margin-top: 6rem;
     margin-bottom: 6rem;
     .container{
@@ -293,10 +293,11 @@
                     font-size: 20px;
                     line-height: 120%;
                     color: #050110;
+                    text-align: center;
                 }
                 ul{
                     display: flex;
-                    align-items: flex-start;
+                    align-items: center;
                     gap: 15px;
                     flex-direction: column;
                     li{
