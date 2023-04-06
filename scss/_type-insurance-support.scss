@@ -243,4 +243,50 @@
             }
         }
     }
+    // Responsive
+    @media (max-width: 470px){
+        .box-support{
+            max-width: 37rem;
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+            span{
+                padding-left: 3rem;
+            }
+            .subtitle-p{
+                padding-left: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .close-support{
+                top: 17px;
+
+            }
+            ul{
+                padding-left: 3rem;
+            }
+        }
+    }
+    @media (max-width: 340px){
+        .box-support{
+            max-width: 31rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            span{
+                padding-left: 2rem;
+            }
+            .subtitle-p{
+                padding-left: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-right: 1rem;
+            }
+            .close-support{
+                top: 10px;
+                right: 8px;
+            }
+            ul{
+                padding-left: 1rem;
+            }
+        }
+    }
 }
