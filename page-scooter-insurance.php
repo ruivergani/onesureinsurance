@@ -2,7 +2,6 @@
   // Template name: scooter-insurance
 ?>
 
-
 <!-- Include Header -->
 <?php get_header(); ?>
 
