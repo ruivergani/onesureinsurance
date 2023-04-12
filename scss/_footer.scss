@@ -217,6 +217,9 @@ footer{
                 justify-content: center;
                 .share{
                     flex-direction: column;
+                    span{
+                        font-size: 15px;
+                    }
                 }
             }
             .main-footer{
@@ -226,6 +229,33 @@ footer{
                     gap: 3rem;
                     align-items: center;
                     justify-content: center;
+                    .item{
+                        strong{
+                            font-size: 15px;
+                        }
+                        ul{
+                            li{
+                                a{
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .item-contact{
+                    strong{
+                        font-size: 15px;
+                    }
+                    ul{
+                        li{
+                            a{
+                                span{
+                                    font-size: 14px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
                 }
             }
             .bottom-footer{
@@ -235,6 +265,7 @@ footer{
                 position: relative;
                 p{
                     text-align: center;
+                    font-size: 14px;
                 }
                 .js-btn-scroll-top{
                     position: absolute;

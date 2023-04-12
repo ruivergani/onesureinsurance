@@ -2,7 +2,7 @@
 .sm-text-product{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: 130%;
     letter-spacing: 0.12em;
     color: $grey-400;
@@ -39,7 +39,7 @@
                 a{
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    font-size: 1.5rem;
+                    font-size: 15px;
                     line-height: 130%;
                     letter-spacing: -0.04em;
                     color: $grey-400;
@@ -55,7 +55,7 @@
         a{
             font-family: 'Inter', sans-serif;
             font-weight: 400;
-            font-size: 1.5rem;
+            font-size: 15px;
             line-height: 130%;
             letter-spacing: -0.04em;
             color: $grey-400;
@@ -88,7 +88,7 @@
     }
 
 }
-// Section Product
+// Section Hero Product
 .s-hero-product{
     padding-top: 7rem;
     background: url('../assets/bg/bg-product.webp') no-repeat center center;
@@ -145,7 +145,7 @@
                         p{
                             font-family: 'Inter', sans-serif;
                             font-weight: 400;
-                            font-size: 1.6rem;
+                            font-size: 16px;
                             line-height: 1.9rem;
                             color: #363843;
                         }
@@ -202,7 +202,7 @@
                         p{
                             font-family: 'Inter', sans-serif;
                             font-weight: 400;
-                            font-size: 1.6rem;
+                            font-size: 16px;
                             line-height: 1.9rem;
                             color: #363843;
                         }
@@ -242,17 +242,17 @@
         }
     }
     @media (max-width: 480px){
-        height: 41rem;
+        height: 38rem;
         padding-top: 3rem;
         .container{
             .product{
                padding: 2rem;
                .right-text{
                     .sm-text-product {
-                        font-size: 1.3rem;
+                        font-size: 13px;
                     }
                     h2{
-                        font-size: 2.8rem;
+                        font-size: 24px;
                         max-width: 100%;
                         margin-bottom: 1.5rem;
                     }
@@ -262,32 +262,56 @@
                         gap: 1rem;
                         li{
                             gap: 1rem;
+                            p{
+                                font-size: 16px;
+                            }
+                            span{
+                                color: $brand-blue;
+                                font-weight: 500;
+                            }
                         }
                     }
                     button{
                         gap: 1rem;
                         padding: 0rem 2rem;
+                        font-size: 14px;
                     }
                }
             }
         }
     }
+    @media (max-width: 388px){
+        height: 41rem;
+    }
+    @media (max-width: 350px){
+        height: 38rem;
+        .container{
+            .product{
+                .right-text{
+                    ul{
+                        li{
+                            img{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media (max-width: 320px){
-        height: 40rem;
+        height: 37rem;
         .container{
             .product{
                 .right-text{
                     ul{
                         li{
                             p{
-                                font-size: 1.6rem;
+                                font-size: 16px;
                             }
                             span{
                                 color: $brand-blue;
                                 font-weight: 500;
-                            }
-                            img{
-                                display: none;
                             }
                         }
                     }
@@ -316,7 +340,19 @@
             color: $grey-600;
         }
     }
-    // Responsive
+    // Responsive  
+    @media (max-width: 768px){
+        padding: 4rem 0px;
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 2rem;
+        }
+    }
+    @media (max-width: 991px){
+        padding: 6rem 0px;
+    }
     @media (max-width: 480px){
         padding: 4rem 0px;
         .container{
@@ -330,18 +366,6 @@
                 display: none;
             }
         }
-    }
-    @media (max-width: 768px){
-        padding: 4rem 0px;
-        .container{
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            gap: 2rem;
-        }
-    }
-    @media (max-width: 991px){
-        padding: 6rem 0px;
     }
 }
 // Section Motor Trade Slide
@@ -433,7 +457,7 @@
     padding: 4rem 0px;
     .container{
         .top{
-            padding-bottom: 3rem;
+            padding-bottom: 2rem;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -562,7 +586,7 @@
                     }
                     p{
                         font-weight: 400;
-                        font-size: 1.6rem;
+                        font-size: 16px;
                         line-height: 150%;
                         color: $grey-400;
                     }
@@ -588,11 +612,6 @@
                 height: 100%;
                 border-radius: 2rem;
                 position: relative;
-            }
-            &:hover{
-                transform: scale(1.02);
-                -o-object-fit: cover;
-                object-fit: cover;
             }
             &::after{
                 content: "";
@@ -638,7 +657,8 @@
         }
     }
     @media (max-width: 768px){
-        padding: 4rem 0rem;
+        padding-top: 4rem;
+        padding-bottom: 0rem;
         .container{
             .text-top{
                 flex-direction: column;
@@ -677,6 +697,12 @@
                             max-width: 100%;
                             text-align: center;
                             padding: 2rem;
+                            h5{
+                                font-size: 17px;
+                            }
+                            img{
+                                max-width: 3.5rem;
+                            }
                         }
                     }
                 }
@@ -705,6 +731,7 @@
 .s-logos {
     padding-bottom: 6rem;
     @media (max-width: 768px){
+        padding-top: 4rem !important;
         padding-bottom: 4rem;
     }
 }
@@ -1613,5 +1640,16 @@
             }
         }
     }
+    }
+    @media (max-width: 480px){
+        .container{
+            .slide-van{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        max-width: 260px;
+                    }
+                }
+            }
+        }
     }
 }
