@@ -27,6 +27,24 @@
           <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
           <p>If you still can’t find an answer to your question, why not try our virtual assistant? Click the icon in the bottom right corner of your screen to start chatting! Alternatively, you can give our Customer Experience Team a call on +44 (0)330 124 0000 or drop us an email at customerservices@onesureinsurance.co.uk</p>
         </div>
+        <div class="mobile-faq-tags">
+          <!-- Mobile Configuration -->
+          <div class="select-custom">
+            <!-- item selected -->
+            <button class="item-selected js-open-select-custom">
+              <span>Select an </span>
+              <strong>item</strong>
+            </button>
+            <!-- Dropdown List -->
+            <ul class="dropdown-select">
+              <li>
+                <a href="" class="active">
+                  <p>teste</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <!-- All FAQs -->
         <div class="all-faqs-section">
           <!-- Each FAQ section -->
@@ -181,6 +199,7 @@
           <!-- End of FAQ each -->
         </div>
       </div>
+      
     </div>
   </section>
 
