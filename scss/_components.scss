@@ -885,7 +885,6 @@
     width: 100%;
     max-width: 80rem;
     height: 11.8rem;
-    padding-left: 7rem;
     background-image: url(../assets/bg/bg-cta-sm.jpg);
     display: flex;
     align-items: center;
@@ -894,7 +893,7 @@
     border-radius: 2rem;
     .text{
         width: 100%;
-        max-width: 38.3rem;
+        max-width: 36rem;
         h3{
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -912,7 +911,6 @@
     }
     // Responsive
     @media (max-width: 1380px){
-        padding-left: 3rem;
         gap: 4rem;
         border-radius: 2rem;
         .text{
@@ -928,12 +926,12 @@
         flex-direction: column;
         max-width: 100%;
         gap: 2rem;
-        padding-left: 0px;
         padding-top: 2rem;
         padding-bottom: 2rem;
         background-color: $brand-light-blue;
         height: 100%;
         .text{
+            max-width: 28.3rem;
             h3{
                 color: $brand-blue;
                 font-size: 2.4rem;

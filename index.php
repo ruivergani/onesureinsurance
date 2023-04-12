@@ -49,6 +49,37 @@
   </div>
 </section>
 
+<!-- Section Filter Tags Mobile -->
+<section class="s-mobile-tags">
+  <div class="container">
+    <!-- Mobile Configuration -->
+    <div class="select-custom">
+      <!-- item selected -->
+      <button class="item-selected js-open-select-custom">
+        <span>Select an </span>
+        <strong>item</strong>
+      </button>
+      <!-- Dropdown List -->
+      <ul class="dropdown-select">
+        <?php
+        $tags = get_tags(array(
+          'hide_empty' => false
+        ));
+        foreach($tags as $tag){
+        ?>
+          <li>
+            <a href="<?php echo get_tag_link($tag->term_id); ?>" class="active">
+              <p><?php echo $tag->name; ?></p>
+            </a>
+          </li>
+        <?php 
+        }
+        ?>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- Section Main Content -->
 <section class="s-main-content">
   <div class="container">
