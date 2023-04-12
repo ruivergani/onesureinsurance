@@ -212,29 +212,29 @@
 
   <!-- Section Bespoke -->
   <section class="s-bespoke" id="s-why-us">
-      <div class="container">
-        <div class="text-top">
-          <h6><?php the_field('mobile_title_section_why_us_commercial_insurance') ?></h6>
-          <h4 data-aos="fade-right"><?php the_field('title_section_why_us_commercial_insurance') ?></h4>
-          <p data-aos="fade-left"><?php the_field('subtitle_section_why_us_commercial_insurance') ?></p>
-        </div>
-        <div class="main-bespoke">
-          <div class="text-bottom" data-aos="fade-right">
-            <ul>
-              <!-- Repeater Slide Cards --> 
-              <?php if( have_rows('cards_section_why_us_commercial_insurance') ): while ( have_rows('cards_section_why_us_commercial_insurance') ) : the_row(); ?>
-                <!-- Card -->
-                <li>
-                  <img src="<?php the_sub_field('icon_card_commercial_insurance'); ?>" alt="icon house" title="icon house">
-                  <h5><?php the_sub_field('title_why_us_card_commercial_insurance'); ?></h5>
-                  <p><?php the_sub_field('description_why_us_card_commercial_insurance'); ?></p>
-                </li>
-              <?php endwhile; else : endif;?>
-            </ul>
-          </div>
-          <img src="<?php the_field('image_section_why_us_commercial_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
-        </div>
+    <div class="container">
+      <div class="text-top">
+        <h6><?php the_field('mobile_title_section_why_us_commercial_insurance') ?></h6>
+        <h4 data-aos="fade-right"><?php the_field('title_section_why_us_commercial_insurance') ?></h4>
+        <p data-aos="fade-left"><?php the_field('subtitle_section_why_us_commercial_insurance') ?></p>
       </div>
+      <div class="main-bespoke">
+        <div class="text-bottom" data-aos="fade-right">
+          <ul>
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('cards_section_why_us_commercial_insurance') ): while ( have_rows('cards_section_why_us_commercial_insurance') ) : the_row(); ?>
+              <!-- Card -->
+              <li>
+                <img src="<?php the_sub_field('icon_card_commercial_insurance'); ?>" alt="icon house" title="icon house">
+                <h5><?php the_sub_field('title_why_us_card_commercial_insurance'); ?></h5>
+                <p><?php the_sub_field('description_why_us_card_commercial_insurance'); ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
+        <img src="<?php the_field('image_section_why_us_commercial_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
+      </div>
+    </div>
   </section>
 
   <!-- Section Optional Extras -->
@@ -357,36 +357,8 @@
           <h4><?php the_field('title_section_articles_commercial_insurance'); ?></h4>
           <p><?php the_field('description_section_articles_commercial_insurance'); ?></p>
         </div>
-        <div class="article-cards">
-          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-            <a href="<?php the_permalink(); ?>" class="card-post-default">
-              <div class="image">
-                <?php the_post_thumbnail(); ?>
-              </div>
-              <div class="info">
-                <!-- Category Section -->
-                <?php
-                  $category = get_the_category($post -> ID); // return ID post
-                  if(!empty($category)){
-                    foreach($category as $nameCategory){
-                      echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
-                    }
-                  }
-                ?>
-                <h6><?php the_title(); ?></h6>
-                <ul>
-                    <li>
-                        <span><?php echo get_the_date('j, F'); ?></span>
-                    </li>
-                    <li>
-                        <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
-                    </li>
-                </ul>
-              </div>
-            </a>
-          <?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
-        </div>
+        <!-- Section Article Cards -->
+        <?php include(TEMPLATEPATH .'/includes/page-insurance-article-cards.php') ?>
       </div>
     </section>
   <?php endif; ?>

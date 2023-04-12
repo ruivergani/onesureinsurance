@@ -358,7 +358,7 @@
           <h4><?php the_field('title_section_articles_van_insurance'); ?></h4>
           <p><?php the_field('description_section_articles_van_insurance'); ?></p>
         </div>
-        <!-- Section Content -->
+        <!-- Section Article Cards -->
         <?php include(TEMPLATEPATH .'/includes/page-insurance-article-cards.php') ?>
       </div>
     </section>

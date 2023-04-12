@@ -324,18 +324,18 @@
 
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
-      <div class="container">
-        <a href="<?php the_field('link_cta_taxi_insurance') ?>" class="large-cta" data-aos="zoom-in">
-          <div class="text">
-              <span><?php the_field('subtitle_cta_taxi_insurance') ?></span>
-              <h3><?php the_field('title_cta_taxi_insurance') ?></h3>
-          </div>
-          <button class="btn btn-primary">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-              get a quote
-          </button>
-        </a>
-      </div>
+    <div class="container">
+      <a href="<?php the_field('link_cta_taxi_insurance') ?>" class="large-cta" data-aos="zoom-in">
+        <div class="text">
+            <span><?php the_field('subtitle_cta_taxi_insurance') ?></span>
+            <h3><?php the_field('title_cta_taxi_insurance') ?></h3>
+        </div>
+        <button class="btn btn-primary">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
   </div>
 
   <!-- Section Related Articles Filter By Tag -->
@@ -357,36 +357,8 @@
           <h4><?php the_field('title_section_articles_taxi_insurance'); ?></h4>
           <p><?php the_field('description_section_articles_taxi_insurance'); ?></p>
         </div>
-        <div class="article-cards">
-          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-            <a href="<?php the_permalink(); ?>" class="card-post-default">
-              <div class="image">
-                <?php the_post_thumbnail(); ?>
-              </div>
-              <div class="info">
-                <!-- Category Section -->
-                <?php
-                  $category = get_the_category($post -> ID); // return ID post
-                  if(!empty($category)){
-                    foreach($category as $nameCategory){
-                      echo '<span class="categorie">' .$nameCategory -> name.'</span>'; 
-                    }
-                  }
-                ?>
-                <h6><?php the_title(); ?></h6>
-                <ul>
-                    <li>
-                        <span><?php echo get_the_date('j, F'); ?></span>
-                    </li>
-                    <li>
-                        <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
-                    </li>
-                </ul>
-              </div>
-            </a>
-          <?php endwhile; ?>
-          <?php wp_reset_postdata(); ?>
-        </div>
+        <!-- Section Article Cards -->
+        <?php include(TEMPLATEPATH .'/includes/page-insurance-article-cards.php') ?>
       </div>
     </section>
   <?php endif; ?>
