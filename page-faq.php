@@ -36,12 +36,7 @@
               <strong>item</strong>
             </button>
             <!-- Dropdown List -->
-            <ul class="dropdown-select">
-              <li>
-                <a href="" class="active">
-                  <p>teste</p>
-                </a>
-              </li>
+            <ul class="dropdown-select js-dropdown-select">
             </ul>
           </div>
         </div>

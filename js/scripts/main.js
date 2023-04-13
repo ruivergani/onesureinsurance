@@ -122,6 +122,60 @@ if(itemContent){
     });
   });
 }
+// Script for the Topics Navigation Mobile Version
+const listTopicsFaqMobile = document.querySelector('.js-dropdown-select');
+const topicsFaqMobile = document.querySelectorAll('.s-faq-content .container .main-content-faq .all-faqs-section .faq-box h2');
+if(listTopicsFaqMobile){
+  topicsFaqMobile.forEach(topic => {
+    let listElementFaqMobile = document.createElement('li');
+    listTopicsFaqMobile.appendChild(listElementFaqMobile);
+
+    let ancorTopicFaqMobile = document.createElement('a');
+    ancorTopicFaqMobile.setAttribute('href', '#');
+    listElementFaqMobile.appendChild(ancorTopicFaqMobile);
+
+    let textTopicFaqMobile = document.createElement('p');
+    textTopicFaqMobile.textContent = topic.textContent;
+    ancorTopicFaqMobile.appendChild(textTopicFaqMobile);
+  });
+
+  const allTopicsFaqMobile = document.querySelectorAll('.js-dropdown-select li a');
+  allTopicsFaqMobile[0].classList.add('active');
+
+  // Function to return the element position
+  function offset(el) {
+    if (document) {
+      const rect = el.getBoundingClientRect()
+      const scrollLeft =
+        window.pageXOffset || document.documentElement.scrollLeft
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+      return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+  }
+  // Function to scroll until the position H2
+  function handleScrollTop(position) {
+    if(document) {
+      const topicsFaq = document.querySelectorAll('.s-faq-content .container .main-content-faq .all-faqs-section .faq-box h2')[position];
+      window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: offset(topicsFaq).top - 130
+      })
+    }
+  }
+
+  // Map and make the event click in the topics to scroll based on layout
+  allTopicsFaqMobile.forEach((item, index) => {
+    item.addEventListener('click', (event) => {
+      event.preventDefault();
+      allTopicsFaqMobile.forEach(all => {
+        all.classList.remove('active');
+      })
+      item.classList.add('active');
+      handleScrollTop(index);
+    })
+  })
+}
 
 // Script for the Topics Navigation
 const listTopicsFaq = document.querySelector('.js-nav-faq-post');
