@@ -17,21 +17,16 @@
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-modal.svg" alt="close button"  title="close button">
     </button>
     <span>GET IN TOUCH WITH US</span>
-    <h2>Emergency Contact</h2>
-    <p class="subtitle-p">If you need 24/7 emergency help at the roadside:</p>
+    <h2><?php the_field('title_car_support_modal_car') ?></h2>
+    <p class="subtitle-p"><?php the_field('subtitle_car_support_modal_car') ?></p>
     <ul>
-      <li>
-        <p>After an accident in the UK - Call us on</p>
-        <span>0800 081 5113</span>
-      </li>
-      <li>
-        <p>Outside of the UK</p>
-        <span>0800 081 5113</span>
-      </li>
-      <li>
-        <p>If your car has broken down</p>
-        <span>0800 081 5113</span>
-      </li>
+      <!-- Repeater Slide Cards --> 
+      <?php if( have_rows('emergency_support_list_car') ): while ( have_rows('emergency_support_list_car') ) : the_row(); ?>
+        <li>
+          <p><?php the_sub_field('text_emergency_modal_support_car') ?></p>
+          <span><?php the_sub_field('phone_emergency_modal_support_car') ?></span>
+        </li>
+      <?php endwhile; else : endif;?>
     </ul>
   </div>
 </section>
@@ -40,7 +35,7 @@
 <section class="s-hero-support-page">
   <div class="container">
     <div class="title-support-page">
-      <h1>Car Insurance Support</h1>
+      <h1><?php the_field('title_emergency_car_support_car') ?></h1>
     </div>
     <!-- Section Include Search Code Blog -->
     <?php include(TEMPLATEPATH .'/includes/section-search-blog.php') ?> 
@@ -57,36 +52,15 @@
           <a href="" class="js-open-modal-support">Emergency Contact</a>
         </div>
       </li>
-      <li>
-        <div class="cards-squared">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-newspaper-support.svg" alt="icon policy newspaper" title="icon policy newspaper">
-          <a href="">All abour your Policy</a>
-        </div>
-      </li>
-      <li>
-        <div class="cards-squared">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-wrench-support.svg" alt="icon wrench" title="icon wrench">
-          <a href="">Change or renew your policy</a>
-        </div>
-      </li>
-      <li>
-        <div class="cards-squared">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-policy-support.svg" alt="icon policy" title="icon policy">
-          <a href="">Our benefits and optional extras</a>
-        </div>
-      </li>
-      <li>
-        <div class="cards-squared">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-pen-support.svg" alt="icon pen" title="icon pen">
-          <a href="">Acidents and making claim</a>
-        </div>
-      </li>
-      <li>
-        <div class="cards-squared">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-handshake-support.svg" alt="icon handshake" title="icon handshake">
-          <a href="">Extra Support</a>
-        </div>
-      </li>
+      <!-- Repeater Slide Cards --> 
+      <?php if( have_rows('section_cards_support_page_car') ): while ( have_rows('section_cards_support_page_car') ) : the_row(); ?>
+        <li>
+          <div class="cards-squared">
+            <img src="<?php the_sub_field('card_image_support_car') ?>">
+            <a href="<?php the_sub_field('link_card_support_car') ?>"><?php the_sub_field('card_text_support_car') ?></a>
+          </div>
+        </li>
+      <?php endwhile; else : endif;?>
     </ul>
   </div>
 </section>
@@ -95,26 +69,26 @@
 <section class="s-text-support">
   <div class="container">
     <div class="left-text-support">
-      <h2>Trending questions</h2>
+      <h2><?php the_field('title_trending_questions_support_car') ?></h2>
       <ul>
         <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('') ): while ( have_rows('') ) : the_row(); ?>
+        <?php if( have_rows('section_trending_questions_support_car') ): while ( have_rows('section_trending_questions_support_car') ) : the_row(); ?>
           <li>
-            <a href="<?php the_sub_field('') ?>">
-              <?php the_sub_field('') ?>
+            <a href="<?php the_sub_field('link_trending_questions') ?>">
+              <?php the_sub_field('text_trending_questions') ?>
             </a>
           </li>
         <?php endwhile; else : endif;?>
       </ul>
     </div>
     <div class="right-text-support">
-      <h2>Featured Questions</h2>
+      <h2><?php the_field('title_featured_questions_support_car') ?></h2>
       <ul>
         <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('') ): while ( have_rows('') ) : the_row(); ?>
+        <?php if( have_rows('section_featured_questions_support_car') ): while ( have_rows('section_featured_questions_support_car') ) : the_row(); ?>
           <li>
-            <a href="<?php the_sub_field('') ?>">
-              <?php the_sub_field('') ?>
+            <a href="<?php the_sub_field('link_featured_questions') ?>">
+              <?php the_sub_field('text_featured_questions') ?>
             </a>
           </li>
         <?php endwhile; else : endif;?>
@@ -127,12 +101,12 @@
 <section class="s-policy-support">
   <div class="container">
     <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-invoice-support-page.svg" alt="icon policy" title="icon policy" class="policy">
-    <h2><?php the_field('') ?></h2>
+    <h2><?php the_field('title_policy_support_car') ?></h2>
     <ul>
       <!-- Repeater Slide Cards --> 
-      <?php if( have_rows('') ): while ( have_rows('') ) : the_row(); ?>
+      <?php if( have_rows('subtitle_policy_support_car') ): while ( have_rows('subtitle_policy_support_car') ) : the_row(); ?>
         <li>
-          <p><?php the_sub_field('') ?></p>
+          <p><?php the_sub_field('subtitle_p_support_car') ?></p>
         </li>
       <?php endwhile; else : endif;?>
     </ul>
