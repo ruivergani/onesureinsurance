@@ -248,7 +248,7 @@
         <?php if( have_rows('section_optional_extras_cards_hgv_insurance') ): while ( have_rows('section_optional_extras_cards_hgv_insurance') ) : the_row(); ?>
           <li>
             <a href="<?php the_sub_field('card_link_optional_extras_hgv_insurance') ?>">
-              <i class="fa-solid fa-house"></i>
+              <img src="<?php the_sub_field('image_card_optional_extras_hgv_insurance') ?>" alt="">
               <div class="text">
                 <h5><?php the_sub_field('card_title_optional_extras_hgv_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>

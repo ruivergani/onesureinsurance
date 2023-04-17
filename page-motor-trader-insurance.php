@@ -250,7 +250,7 @@
         <?php if( have_rows('section_optional_extras_cards') ): while ( have_rows('section_optional_extras_cards') ) : the_row(); ?>
           <li>
             <a href="<?php the_sub_field('link_for_card') ?>">
-              <i class="fa-solid fa-house"></i>
+              <img src="<?php the_sub_field('image_card_optional_extras_motortrade_insurance') ?>" alt="">
               <div class="text">
                 <h5><?php the_sub_field('title_for_card') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>

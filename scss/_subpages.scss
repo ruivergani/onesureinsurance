@@ -1143,6 +1143,12 @@
                 a{
                     display: flex;
                     gap: 2rem;
+                    img{
+                        width: 100%;
+                        max-width: 3rem;
+                        color: $brand-dark-blue;
+                        transition: all .3s;
+                    }
                     i{
                         font-size: 3rem;
                         color: $brand-dark-blue;
