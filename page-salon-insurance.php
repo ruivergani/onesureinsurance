@@ -1,5 +1,5 @@
 <?php
-  // Template name: tattoo-insurance
+  // Template name: salon-insurance
 ?>
 
 <!-- Include Header -->
@@ -17,14 +17,14 @@
       <div class="product">
         <!-- Left Text Area -->
         <div class="left-text" data-aos="fade-right">
-          <span class="sm-text-product"><?php the_field('get_quote_sub_title_tattoo_insurance') ?></span>
-          <h1><?php the_field('get_quote_title_tattoo_insurance') ?></h1>
+          <span class="sm-text-product"><?php the_field('get_quote_sub_title_salon_insurance') ?></span>
+          <h1><?php the_field('get_quote_title_salon_insurance') ?></h1>
           <ul>
             <!-- Repeater List Section Hero --> 
-            <?php if( have_rows('list_get_quote_tattoo_insurance') ): while ( have_rows('list_get_quote_tattoo_insurance') ) : the_row(); ?>
+            <?php if( have_rows('list_get_quote_salon_insurance') ): while ( have_rows('list_get_quote_salon_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_tattoo_insurance') ?>" alt="icon green checked" title="icon green checked">
-                <p><?php the_sub_field('text_tattoo_insurance') ?></p>
+                <img src="<?php the_sub_field('icon_checked_salon_insurance') ?>" alt="icon green checked" title="icon green checked">
+                <p><?php the_sub_field('text_salon_insurance') ?></p>
               </li>
             <?php endwhile; else : endif;?>
           </ul>
@@ -36,16 +36,16 @@
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in">
         <!-- Right Text Area -->
         <div class="right-text" data-aos="fade-left">
-          <span class="sm-text-product"><?php the_field('call_us_subtitle_tattoo_insurance') ?></span>
-          <h2><?php the_field('call_us_title_tattoo_insurance') ?></h2>
+          <span class="sm-text-product"><?php the_field('call_us_subtitle_salon_insurance') ?></span>
+          <h2><?php the_field('call_us_title_salon_insurance') ?></h2>
           <ul>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="icon phone" title="icon phone">
-              <p>Call our landline at <span><?php the_field('landline_phone_tattoo_insurance') ?></span></p>
+              <p>Call our landline at <span><?php the_field('landline_phone_salon_insurance') ?></span></p>
             </li>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="icon mobile phone" title="icon mobile phone">
-              <p>Call your mobile at <span><?php the_field('mobile_phone_tattoo_insurance') ?></span></p>
+              <p>Call your mobile at <span><?php the_field('mobile_phone_salon_insurance') ?></span></p>
             </li>
           </ul>
           <button class="btn btn-outline">
@@ -71,8 +71,8 @@
   <section class="s-slide-product">
     <div class="container">
       <div class="top">
-        <h6><?php the_field('mobile_title_section_product_slide_tattoo_insurance') ?></h6>
-        <h4><?php the_field('title_section_product_slide_tattoo_insurance') ?></h4>
+        <h6><?php the_field('mobile_title_section_product_slide_salon_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_slide_salon_insurance') ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -90,16 +90,16 @@
       <div class="slide-product">
         <div class="swiper-wrapper">
           <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('card_product_slide_tattoo_insurance') ): while ( have_rows('card_product_slide_tattoo_insurance') ) : the_row(); ?>
+          <?php if( have_rows('card_product_slide_salon_insurance') ): while ( have_rows('card_product_slide_salon_insurance') ) : the_row(); ?>
             <div class="swiper-slide">
               <!-- Card Product Type -->
-              <a href="<?php the_sub_field('card_link_tattoo_insurance') ?>" class="card-product">
+              <a href="<?php the_sub_field('card_link_salon_insurance') ?>" class="card-product">
                 <div class="image">
-                    <img src="<?php the_sub_field('image_card_tattoo_insurance') ?>" alt="card product page" title="card product page">
+                    <img src="<?php the_sub_field('image_card_salon_insurance') ?>" alt="card product page" title="card product page">
                 </div>
                 <div class="info">
-                    <h6><?php the_sub_field('card_title_tattoo_insurance') ?></h6>
-                    <p><?php the_sub_field('subtitle_card_tattoo_insurance') ?></p>
+                    <h6><?php the_sub_field('card_title_salon_insurance') ?></h6>
+                    <p><?php the_sub_field('subtitle_card_salon_insurance') ?></p>
                     <div class="learn-more">
                         <span>Learn more</span>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
@@ -116,10 +116,10 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
       <div class="container">
-        <a href="<?php the_field('link_cta_tattoo_insurance') ?>" class="large-cta" data-aos="zoom-in">
+        <a href="<?php the_field('link_cta_salon_insurance') ?>" class="large-cta" data-aos="zoom-in">
           <div class="text">
-              <span><?php the_field('subtitle_cta_tattoo_insurance') ?></span>
-              <h3><?php the_field('title_cta_tattoo_insurance') ?></h3>
+              <span><?php the_field('subtitle_cta_salon_insurance') ?></span>
+              <h3><?php the_field('title_cta_salon_insurance') ?></h3>
           </div>
           <button class="btn btn-primary">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
@@ -214,25 +214,25 @@
   <section class="s-bespoke" id="s-why-us">
       <div class="container">
         <div class="text-top">
-          <h6><?php the_field('mobile_title_section_why_us_tattoo_insurance') ?></h6>
-          <h4 data-aos="fade-right"><?php the_field('title_section_why_us_tattoo_insurance') ?></h4>
-          <p data-aos="fade-left"><?php the_field('subtitle_section_why_us_tattoo_insurance') ?></p>
+          <h6><?php the_field('mobile_title_section_why_us_salon_insurance') ?></h6>
+          <h4 data-aos="fade-right"><?php the_field('title_section_why_us_salon_insurance') ?></h4>
+          <p data-aos="fade-left"><?php the_field('subtitle_section_why_us_salon_insurance') ?></p>
         </div>
         <div class="main-bespoke">
           <div class="text-bottom" data-aos="fade-right">
             <ul>
               <!-- Repeater Slide Cards --> 
-              <?php if( have_rows('cards_section_why_us_tattoo_insurance') ): while ( have_rows('cards_section_why_us_tattoo_insurance') ) : the_row(); ?>
+              <?php if( have_rows('cards_section_why_us_salon_insurance') ): while ( have_rows('cards_section_why_us_salon_insurance') ) : the_row(); ?>
                 <!-- Card -->
                 <li>
-                  <img src="<?php the_sub_field('icon_card_tattoo_insurance'); ?>" alt="icon house" title="icon house">
-                  <h5><?php the_sub_field('title_why_us_card_tattoo_insurance'); ?></h5>
-                  <p><?php the_sub_field('description_why_us_card_tattoo_insurance'); ?></p>
+                  <img src="<?php the_sub_field('icon_card_salon_insurance'); ?>" alt="icon house" title="icon house">
+                  <h5><?php the_sub_field('title_why_us_card_salon_insurance'); ?></h5>
+                  <p><?php the_sub_field('description_why_us_card_salon_insurance'); ?></p>
                 </li>
               <?php endwhile; else : endif;?>
             </ul>
           </div>
-          <img src="<?php the_field('image_section_why_us_tattoo_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
+          <img src="<?php the_field('image_section_why_us_salon_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
         </div>
       </div>
   </section>
@@ -240,16 +240,16 @@
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up">
     <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_tattoo_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_tattoo_insurance') ?></h4>
+      <h6><?php the_field('mobile_title_section_optional_extras_salon_insurance') ?></h6>
+      <h4><?php the_field('title_section_optional_extras_salon_insurance') ?></h4>
       <ul>
         <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_tattoo_insurance') ): while ( have_rows('section_optional_extras_cards_tattoo_insurance') ) : the_row(); ?>
+        <?php if( have_rows('section_optional_extras_cards_salon_insurance') ): while ( have_rows('section_optional_extras_cards_salon_insurance') ) : the_row(); ?>
           <li>
-            <a href="<?php the_sub_field('link_card_optional_extras_tattoo_insurance') ?>">
-              <img src="<?php the_sub_field('image_card_optional_extras_tattoo_insurance') ?>" alt="">
+            <a href="<?php the_sub_field('link_card_optional_extras_salon_insurance') ?>">
+              <img src="<?php the_sub_field('image_card_optional_extras_salon_insurance') ?>" alt="">
               <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_tattoo_insurance') ?></h5>
+                <h5><?php the_sub_field('title_card_optional_extras_salon_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
               </div>
             </a>
@@ -262,18 +262,18 @@
   <!-- Section FAQs -->
   <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up">
     <div class="container">
-      <h4><?php the_field('title_section_tattoo_insurance') ?></h4>
+      <h4><?php the_field('title_section_salon_insurance') ?></h4>
       <div class="b-container">
         <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_faq_tattoo_insurance') ): while ( have_rows('section_faq_tattoo_insurance') ) : the_row(); ?>
+        <?php if( have_rows('section_faq_salon_insurance') ): while ( have_rows('section_faq_salon_insurance') ) : the_row(); ?>
           <!-- Question Card -->
           <div class="question">
             <div class="title js-question">
-              <strong><?php the_sub_field('title_faq_tattoo_insurance'); ?></strong>
+              <strong><?php the_sub_field('title_faq_salon_insurance'); ?></strong>
               <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="question-content">
-              <?php the_sub_field('description_faq_tattoo_insurance'); ?>
+              <?php the_sub_field('description_faq_salon_insurance'); ?>
             </div>
           </div>
         <?php endwhile; else : endif;?>
@@ -285,8 +285,8 @@
   <section class="s-slide-van">
     <div class="container">
       <div class="top">
-        <h6><?php the_field('mobile_title_section_slides_tattoo_insurance'); ?></h6>
-        <h4><?php the_field('title_section_slides_tattoo_insurance'); ?></h4>
+        <h6><?php the_field('mobile_title_section_slides_salon_insurance'); ?></h6>
+        <h4><?php the_field('title_section_slides_salon_insurance'); ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -304,15 +304,15 @@
       <div class="slide-van">
         <div class="swiper-wrapper">
           <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_slides_cards_tattoo_insurance') ): while ( have_rows('section_slides_cards_tattoo_insurance') ) : the_row(); ?>
+          <?php if( have_rows('section_slides_cards_salon_insurance') ): while ( have_rows('section_slides_cards_salon_insurance') ) : the_row(); ?>
             <div class="swiper-slide">
               <!-- Card Van Type -->
-              <a href="<?php the_sub_field('link_slide_card_tattoo_insurance'); ?>" class="card-van">
+              <a href="<?php the_sub_field('link_slide_card_salon_insurance'); ?>" class="card-van">
                 <div class="image">
-                  <img src="<?php the_sub_field('image_slide_card_tattoo_insurance'); ?>" alt="card product page" title="card product page">
+                  <img src="<?php the_sub_field('image_slide_card_salon_insurance'); ?>" alt="card product page" title="card product page">
                 </div>
                 <div class="info">
-                  <h6><?php the_sub_field('text_slide_card_tattoo_insurance'); ?></h6>
+                  <h6><?php the_sub_field('text_slide_card_salon_insurance'); ?></h6>
                 </div>
               </a>
             </div>
@@ -325,10 +325,10 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
       <div class="container">
-        <a href="<?php the_field('link_cta_tattoo_insurance') ?>" class="large-cta" data-aos="zoom-in">
+        <a href="<?php the_field('link_cta_salon_insurance') ?>" class="large-cta" data-aos="zoom-in">
           <div class="text">
-              <span><?php the_field('subtitle_cta_tattoo_insurance') ?></span>
-              <h3><?php the_field('title_cta_tattoo_insurance') ?></h3>
+              <span><?php the_field('subtitle_cta_salon_insurance') ?></span>
+              <h3><?php the_field('title_cta_salon_insurance') ?></h3>
           </div>
           <button class="btn btn-primary">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
@@ -345,7 +345,7 @@
         'post_type' => 'post',
         'order' => 'DESC',
         'posts_per_page' => 3,
-        'tag_id' => 57,
+        'tag_id' => 58,
     );
     $the_query = new WP_Query($args);
   ?>
@@ -353,9 +353,9 @@
     <section class="s-articles" id="s-articles">
       <div class="container">
         <div class="text-top">
-          <h6><?php the_field('mobile_title_section_articles_tattoo_insurance'); ?></h6>
-          <h4><?php the_field('title_section_articles_tattoo_insurance'); ?></h4>
-          <p><?php the_field('description_section_articles_tattoo_insurance'); ?></p>
+          <h6><?php the_field('mobile_title_section_articles_salon_insurance'); ?></h6>
+          <h4><?php the_field('title_section_articles_salon_insurance'); ?></h4>
+          <p><?php the_field('description_section_articles_salon_insurance'); ?></p>
         </div>
         <!-- Section Article Cards -->
         <?php include(TEMPLATEPATH .'/includes/page-insurance-article-cards.php') ?>
