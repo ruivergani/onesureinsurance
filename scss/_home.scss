@@ -562,6 +562,8 @@
                     max-height: 417px;
                     border-radius: 1.2rem;
                     transition: all .5s;
+                    object-fit: cover; // cover size img
+                    -o-object-fit: cover;
                     &:hover, &:focus{
                         transform: scale(1.05);
                     }
