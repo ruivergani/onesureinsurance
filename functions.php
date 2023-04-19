@@ -34,8 +34,8 @@ function register_my_resource_links_menu() {
 function register_my_resource_articles_menu() {
     register_nav_menu('header-resource-articles',__('Header Resource Articles'));
 }
-function register_my_resource_faq_menu() {
-    register_nav_menu('header-resource-faq',__('Header Resource Faq'));
+function register_my_resource_hub_menu() {
+    register_nav_menu('header-resource-hub',__('Header Resource Hub'));
 }
 function register_my_existing_customers_menu() {
     register_nav_menu('header-existing_customers',__('Header Existing Customers'));
@@ -89,7 +89,7 @@ add_action('init', 'register_my_business_commercial_menu');
 add_action('init', 'register_my_business_other_menu');
 add_action('init', 'register_my_resource_links_menu');
 add_action('init', 'register_my_resource_articles_menu');
-add_action('init', 'register_my_resource_faq_menu');
+add_action('init', 'register_my_resource_hub_menu');
 add_action('init', 'register_my_existing_customers_menu');
 add_action('init', 'register_my_existing_customers_guide_menu');
 add_action('init', 'register_my_existing_customers_contact_menu');

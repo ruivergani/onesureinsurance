@@ -237,12 +237,12 @@
               <div class="area-menu">
                 <div class="container">
                   <div class="item">
-                    <strong>Useful Links</strong>
+                    <strong>Resources</strong>
                     <!-- Dynamic Menu --> 
                     <?php
                       $args = array(
-                        'menu' => 'Header Resource Links',
-                        'theme_location' => 'header-resource-links',
+                        'menu' => 'Header Resource Hub',
+                        'theme_location' => 'header-resource-hub',
                         'container' => false
                       );
                       wp_nav_menu( $args );
@@ -261,12 +261,12 @@
                     ?>
                   </div>
                   <div class="item">
-                    <strong>Frequently Asked Questions</strong>
+                    <strong>Useful Links</strong>
                     <!-- Dynamic Menu --> 
                     <?php
                       $args = array(
-                        'menu' => 'Header Resource Faq',
-                        'theme_location' => 'header-resource-faq',
+                        'menu' => 'Header Resource Links',
+                        'theme_location' => 'header-resource-links',
                         'container' => false
                       );
                       wp_nav_menu( $args );
