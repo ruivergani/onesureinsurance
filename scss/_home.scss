@@ -3,9 +3,29 @@
     width: 100%;
     height: 66.4rem;
     padding-top: 8rem;
-    background: url('../assets/bg/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
+    position: relative;
+    transition: all .5s;
+    overflow: hidden;
+    &::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: url('../assets/bg/hero-bg.jpg') no-repeat center center;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: all .5s;
+    }
+    &:hover, &:focus{
+        &::after{
+            transform: scale(1.02);
+        }
+    }
     .container{
+        position: relative;
+        z-index: 200;
         @include flex(column, flex-start, flex-start);
         .heading{
             width: 100%;
@@ -180,6 +200,8 @@
 }
 // Section Trustpilot
 .s-trustpilot{
+    position: relative;
+    z-index: 200;
     margin-top: -10rem;
     display: flex;
     align-items: center;
@@ -529,19 +551,19 @@
             gap: 12rem;
             .image{
                 width: 100%;
-                max-width: 38.4rem;
-                border-radius: 1.2rem;
+                max-width: 368px;
+                max-height: 417px;
+                border-radius: 1.1rem;
+                overflow: hidden;
                 img{
                     width: 100%;
-                    transition: all .3s ease-in-out;
-                    object-fit: cover; // cover size img
+                    height: 100%;
+                    max-width: 368px;
+                    max-height: 417px;
                     border-radius: 1.2rem;
-                }
-                &:hover{
-                    img{
-                        transform: scale(1.01);
-                        -o-object-fit: cover;
-                        object-fit: cover;
+                    transition: all .5s;
+                    &:hover, &:focus{
+                        transform: scale(1.05);
                     }
                 }
             }
@@ -574,6 +596,7 @@
                 gap: 2rem;
                 .image{
                     max-width: 33rem;
+                    max-height: 358px;
                 }
             }
         }
@@ -597,6 +620,12 @@
                 text-align: center;
                 .image{
                     max-width: 38rem;
+                    max-height: 413px;
+                    img{
+                        &:hover, &:focus{
+                            transform: none;
+                        }
+                    }
                 }
                 .text{
                     ul{
