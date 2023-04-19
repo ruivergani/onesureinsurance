@@ -21,9 +21,9 @@
               </a>
           </li>
           <li data-aos="fade-up" data-aos-delay="150">
-              <a href="<?php echo get_permalink(get_page_by_title('FAQ')) ?>">
+              <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
                   <i class="fa-solid fa-question"></i>
-                  <p>Check our FAQs</p>
+                  <p>Support</p>
               </a>
           </li>
       </ul>
