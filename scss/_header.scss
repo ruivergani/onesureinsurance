@@ -441,38 +441,27 @@ header{
             }
         }
     }
-    
-}
-@media (max-width: 375px){
-    .menu-mobile{
-        .nav-top-mobile{
-            ul{
-                padding: 2rem 1rem;
-                gap: 1.5rem;
-                li{
-                    a{
-                        gap: 0.5rem;
+    @media (max-width: 375px){
+        .menu-mobile{
+            .nav-top-mobile{
+                ul{
+                    padding: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 15px;
+                    li{
+                        a{
+                            gap: 0.5rem;
+                        }
                     }
                 }
             }
         }
     }
 }
-@media (max-width: 320px){
-    .menu-mobile{
-        .nav-top-mobile{
-            ul{
-                padding: 2rem 0rem;
-                gap: 1rem;
-                li{
-                    a{
-                        gap: 0.5rem;
-                    }
-                }
-            }
-        }
-    }
-}
+
 // Configuration for menu mobile open
 .menu-opened{
     header{
