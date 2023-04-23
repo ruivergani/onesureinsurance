@@ -16,7 +16,7 @@
     <div class="container">
       <div class="product">
         <!-- Left Text Area -->
-        <div class="left-text" data-aos="fade-right">
+        <div class="left-text" data-aos="fade-right" data-aos-once="true">
           <span class="sm-text-product"><?php the_field('get_quote_sub_title_employer_insurance') ?></span>
           <h1><?php the_field('get_quote_title_employer_insurance') ?></h1>
           <ul>
@@ -33,9 +33,9 @@
             GET A QUOTE
           </button>
         </div>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in" data-aos-once="true">
         <!-- Right Text Area -->
-        <div class="right-text" data-aos="fade-left">
+        <div class="right-text" data-aos="fade-left" data-aos-once="true">
           <span class="sm-text-product"><?php the_field('call_us_subtitle_employer_insurance') ?></span>
           <h2><?php the_field('call_us_title_employer_insurance') ?></h2>
           <ul>
@@ -115,18 +115,18 @@
 
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
-      <div class="container">
-        <a href="<?php the_field('link_cta_employer_insurance') ?>" class="large-cta" data-aos="zoom-in">
-          <div class="text">
-              <span><?php the_field('subtitle_cta_employer_insurance') ?></span>
-              <h3><?php the_field('title_cta_employer_insurance') ?></h3>
-          </div>
-          <button class="btn btn-primary">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-              get a quote
-          </button>
-        </a>
-      </div>
+    <div class="container">
+      <a href="<?php the_field('link_cta_employer_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+            <span><?php the_field('subtitle_cta_employer_insurance') ?></span>
+            <h3><?php the_field('title_cta_employer_insurance') ?></h3>
+        </div>
+        <button class="btn btn-primary">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
   </div>
 
   <!-- Section Company Logos -->
@@ -212,33 +212,33 @@
 
   <!-- Section Bespoke -->
   <section class="s-bespoke" id="s-why-us">
-      <div class="container">
-        <div class="text-top">
-          <h6><?php the_field('mobile_title_section_why_us_employer_insurance') ?></h6>
-          <h4 data-aos="fade-right"><?php the_field('title_section_why_us_employer_insurance') ?></h4>
-          <p data-aos="fade-left"><?php the_field('subtitle_section_why_us_employer_insurance') ?></p>
-        </div>
-        <div class="main-bespoke">
-          <div class="text-bottom" data-aos="fade-right">
-            <ul>
-              <!-- Repeater Slide Cards --> 
-              <?php if( have_rows('cards_section_why_us_employer_insurance') ): while ( have_rows('cards_section_why_us_employer_insurance') ) : the_row(); ?>
-                <!-- Card -->
-                <li>
-                  <img src="<?php the_sub_field('icon_card_employer_insurance'); ?>" alt="icon house" title="icon house">
-                  <h5><?php the_sub_field('title_why_us_card_employer_insurance'); ?></h5>
-                  <p><?php the_sub_field('description_why_us_card_employer_insurance'); ?></p>
-                </li>
-              <?php endwhile; else : endif;?>
-            </ul>
-          </div>
-          <img src="<?php the_field('image_section_why_us_employer_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
-        </div>
+    <div class="container">
+      <div class="text-top">
+        <h6><?php the_field('mobile_title_section_why_us_employer_insurance') ?></h6>
+        <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_why_us_employer_insurance') ?></h4>
+        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_why_us_employer_insurance') ?></p>
       </div>
+      <div class="main-bespoke">
+        <div class="text-bottom" data-aos="fade-right" data-aos-once="true">
+          <ul>
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('cards_section_why_us_employer_insurance') ): while ( have_rows('cards_section_why_us_employer_insurance') ) : the_row(); ?>
+              <!-- Card -->
+              <li>
+                <img src="<?php the_sub_field('icon_card_employer_insurance'); ?>" alt="icon house" title="icon house">
+                <h5><?php the_sub_field('title_why_us_card_employer_insurance'); ?></h5>
+                <p><?php the_sub_field('description_why_us_card_employer_insurance'); ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
+        <img src="<?php the_field('image_section_why_us_employer_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
+      </div>
+    </div>
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up">
+  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_employer_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_employer_insurance') ?></h4>
@@ -260,7 +260,7 @@
   </section>
 
   <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up">
+  <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h4><?php the_field('title_section_employer_insurance') ?></h4>
       <div class="b-container">
@@ -324,18 +324,18 @@
 
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
-      <div class="container">
-        <a href="<?php the_field('link_cta_employer_insurance') ?>" class="large-cta" data-aos="zoom-in">
-          <div class="text">
-              <span><?php the_field('subtitle_cta_employer_insurance') ?></span>
-              <h3><?php the_field('title_cta_employer_insurance') ?></h3>
-          </div>
-          <button class="btn btn-primary">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-              get a quote
-          </button>
-        </a>
-      </div>
+    <div class="container">
+      <a href="<?php the_field('link_cta_employer_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+            <span><?php the_field('subtitle_cta_employer_insurance') ?></span>
+            <h3><?php the_field('title_cta_employer_insurance') ?></h3>
+        </div>
+        <button class="btn btn-primary">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
   </div>
 
   <!-- Section Related Articles Filter By Tag -->

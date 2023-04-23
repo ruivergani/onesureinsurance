@@ -21,7 +21,7 @@
 <section class="s-main-content">
   <div class="container-fluid">
       <!-- List all posts -->
-      <div class="s-all" data-aos="fade-left">
+      <div class="s-all" data-aos="fade-left" data-aos-once="true">
         <!-- Code to create query and search for posts -->
         <?php
             global $query_string;

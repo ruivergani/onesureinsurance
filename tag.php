@@ -4,12 +4,12 @@
 <!-- Section Hero -->
 <section class="s-blog-hero">
   <div class="container">
-      <div class="s-blog-hero-title">
-          <h1>Our <?php echo single_tag_title(); ?> Articles</h1>
-          <p><?php the_field('blog_section_hero_subtitle', 234) ?></p>
-      </div>
-      <!-- Section Include Search Code Blog -->
-      <?php include(TEMPLATEPATH .'/includes/section-search-blog.php') ?>
+    <div class="s-blog-hero-title">
+        <h1>Our <?php echo single_tag_title(); ?> Articles</h1>
+        <p><?php the_field('blog_section_hero_subtitle', 234) ?></p>
+    </div>
+    <!-- Section Include Search Code Blog -->
+    <?php include(TEMPLATEPATH .'/includes/section-search-blog.php') ?>
   </div>
 </section>
 
@@ -22,7 +22,7 @@
       <!-- Section Include Side Tags -->
       <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
       <!-- List all posts -->
-      <div class="s-all" data-aos="fade-left">
+      <div class="s-all" data-aos="fade-left" data-aos-once="true">
           <div class="alm-listing">
             <?php   
                 $tag = get_queried_object();
@@ -74,7 +74,7 @@
   <div class="container">
     <div class="resources-blog-left">
       <h4><?php the_field('title_resources', 234) ?></h4>
-      <ul data-aos="fade-up">
+      <ul data-aos="fade-up" data-aos-once="true">
         <!-- Repeater List --> 
         <?php if(have_rows('list_resources', 234)): while (have_rows('list_resources', 234)) : the_row(); ?>
           <li>
@@ -84,7 +84,7 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-      <a href="<?php the_field('link_cta', 234) ?>" class="small-cta" data-aos="zoom-in">
+      <a href="<?php the_field('link_cta', 234) ?>" class="small-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
             <h3><?php the_field('title_cta', 234) ?></h3>
         </div>
@@ -94,7 +94,7 @@
         </button>
       </a>
     </div>
-    <div class="resources-blog-right" data-aos="fade-left">
+    <div class="resources-blog-right" data-aos="fade-left" data-aos-once="true">
       <h5><?php the_field('title_right_cta', 234) ?></h5>
       <form class="form-subscribe">
         <input type="text" placeholder="Email address *" id="js-input-address">

@@ -16,7 +16,7 @@
     <div class="container">
       <div class="product">
         <!-- Left Text Area -->
-        <div class="left-text" data-aos="fade-right">
+        <div class="left-text" data-aos="fade-right" data-aos-once="true">
           <span class="sm-text-product"><?php the_field('get_quote_subtitle') ?></span>
           <h1><?php the_field('get_quote_title') ?></h1>
           <ul>
@@ -33,9 +33,9 @@
             GET A QUOTE
           </button>
         </div>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in" data-aos-once="true">
         <!-- Right Text Area -->
-        <div class="right-text" data-aos="fade-left">
+        <div class="right-text" data-aos="fade-left" data-aos-once="true">
           <span class="sm-text-product"><?php the_field('call_us_subtitle') ?></span>
           <h2><?php the_field('call_us_title') ?></h2>
           <ul>
@@ -115,18 +115,18 @@
 
   <!-- Section CTA Newsletter -->
   <div class="s-newsletter">
-      <div class="container">
-        <a href="<?php the_field('link_cta_desktop_motor_trade_insurance') ?>" class="large-cta" data-aos="zoom-in">
-          <div class="text">
-              <span><?php the_field('subtitle_cta_desktop_motor_trade_insurance') ?></span>
-              <h3><?php the_field('title_cta_desktop_motor_trade_insurance') ?> </h3>
-          </div>
-          <button class="btn btn-primary">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-              get a quote
-          </button>
-        </a>
-      </div>
+    <div class="container">
+      <a href="<?php the_field('link_cta_desktop_motor_trade_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+            <span><?php the_field('subtitle_cta_desktop_motor_trade_insurance') ?></span>
+            <h3><?php the_field('title_cta_desktop_motor_trade_insurance') ?> </h3>
+        </div>
+        <button class="btn btn-primary">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
   </div>
 
   <!-- Section Company Logos -->
@@ -213,7 +213,7 @@
   <!-- Section What to Cover -->
   <section class="s-cover" id="s-cover">
     <div class="container">
-      <div class="cover-on" data-aos="fade-right">
+      <div class="cover-on" data-aos="fade-right" data-aos-once="true">
         <h6><?php the_field('section_cover_motortrade_title'); ?></h6>
         <ul>
           <!-- Repeater Slide Cards --> 
@@ -225,7 +225,7 @@
           <?php endwhile; else : endif;?>
         </ul>
       </div>
-      <div class="cover-off" data-aos="fade-left">
+      <div class="cover-off" data-aos="fade-left" data-aos-once="true">
         <h6>What's not included:</h6>
         <ul>
           <!-- Repeater Slide Cards --> 
@@ -241,7 +241,7 @@
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up">
+  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_optional_extras') ?></h6>
       <h4><?php the_field('title_optional_extras') ?></h4>
@@ -264,33 +264,33 @@
 
   <!-- Section Why Us  -->
   <section class="s-bespoke" id="s-bespoke">
-      <div class="container">
-        <div class="text-top">
-          <h6><?php the_field('mobile_title_why_us_motortrade') ?></h6>
-          <h4 data-aos="fade-right"><?php the_field('title_why_us_motortrade') ?></h4>
-          <p data-aos="fade-left"><?php the_field('subtitle_why_us_motortrade') ?></p>
-        </div>
-        <div class="main-bespoke">
-          <div class="text-bottom" data-aos="fade-right">
-            <ul >
-              <!-- Repeater Slide Cards --> 
-              <?php if( have_rows('create_cards_section_about_us_motortrade') ): while ( have_rows('create_cards_section_about_us_motortrade') ) : the_row(); ?>
-                <!-- Card -->
-                <li>
-                  <img src="<?php the_sub_field('icon_card_motortrade'); ?>" alt="icon house" title="icon house">
-                  <h5><?php the_sub_field('title_card_motortrade'); ?></h5>
-                  <p><?php the_sub_field('description_card_motortrade'); ?></p>
-                </li>
-              <?php endwhile; else : endif;?>
-            </ul>
-          </div>
-          <img src="<?php the_field('image_why_us_motortrade') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
-        </div>
+    <div class="container">
+      <div class="text-top">
+        <h6><?php the_field('mobile_title_why_us_motortrade') ?></h6>
+        <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_why_us_motortrade') ?></h4>
+        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_why_us_motortrade') ?></p>
       </div>
+      <div class="main-bespoke">
+        <div class="text-bottom" data-aos="fade-right" data-aos-once="true">
+          <ul >
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('create_cards_section_about_us_motortrade') ): while ( have_rows('create_cards_section_about_us_motortrade') ) : the_row(); ?>
+              <!-- Card -->
+              <li>
+                <img src="<?php the_sub_field('icon_card_motortrade'); ?>" alt="icon house" title="icon house">
+                <h5><?php the_sub_field('title_card_motortrade'); ?></h5>
+                <p><?php the_sub_field('description_card_motortrade'); ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
+        <img src="<?php the_field('image_why_us_motortrade') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
+      </div>
+    </div>
   </section>
 
   <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom padding-top" id="s-faqs" data-aos="fade-up">
+  <section class="s-faqs padding-bottom padding-top" id="s-faqs" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h4><?php the_field('section_faqs_copy'); ?></h4>
       <div class="b-container">
