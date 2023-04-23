@@ -17,7 +17,7 @@
           <li data-aos="fade-up" data-aos-delay="50" data-aos-once="true">
               <a href="<?php echo get_category_link('15'); ?>">
                   <i class="fa-regular fa-message"></i>
-                  <p>Find our Blog Articles</p>
+                  <p>Find our News Articles</p>
               </a>
           </li>
           <li data-aos="fade-up" data-aos-delay="150" data-aos-once="true">

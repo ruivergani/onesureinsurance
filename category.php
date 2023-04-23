@@ -19,8 +19,8 @@
       <ul>
           <li data-aos="fade-up" data-aos-once="true">
             <a href="<?php echo get_permalink(234) ?>">
-                <i class="fa-solid fa-border-all"></i>
-                <p>All Posts</p>
+              <i class="fa-solid fa-border-all"></i>
+              <p>All Posts</p>
             </a>
           </li>
           <?php
@@ -28,38 +28,37 @@
           ?>
             <li data-aos="fade-up" data-aos-once="true" class="active">
               <a href="<?php echo get_category_link('16'); ?>">
-                  <i class="fa-solid fa-newspaper"></i>
-                  <p>Check our Guides</p>
+                <i class="fa-solid fa-newspaper"></i>
+                <p>Check our Guides</p>
               </a>
             </li>
             <li data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
               <a href="<?php echo get_category_link('15'); ?>">
-                  <i class="fa-regular fa-message"></i>
-                  <p>Find our Blog Articles</p>
+                <i class="fa-regular fa-message"></i>
+                <p>Find our News Articles</p>
               </a>
             </li>
           <?php } ?>
-
           <?php
-            if(is_category('Blog')){
+            if(is_category('News')){
           ?>
             <li data-aos="fade-up" data-aos-once="true">
               <a href="<?php echo get_category_link('16'); ?>">
-                  <i class="fa-solid fa-newspaper"></i>
-                  <p>Check our Guides</p>
+                <i class="fa-solid fa-newspaper"></i>
+                <p>Check our Guides</p>
               </a>
             </li>
             <li data-aos="fade-up" data-aos-delay="50" data-aos-once="true" class="active">
               <a href="<?php echo get_category_link('15'); ?>">
-                  <i class="fa-regular fa-message"></i>
-                  <p>Find our Blog Articles</p>
+                <i class="fa-regular fa-message"></i>
+                <p>Find our News Articles</p>
               </a>
             </li>
           <?php } ?>
           <li data-aos="fade-up" data-aos-delay="150" data-aos-once="true">
-            <a href="<?php echo get_permalink(get_page_by_title('FAQ')) ?>">
-                <i class="fa-solid fa-question"></i>
-                <p>Check our FAQs</p>
+            <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
+              <i class="fa-solid fa-question"></i>
+              <p>Support</p>
             </a>
           </li>
       </ul>
