@@ -17,7 +17,7 @@
 <section class="s-blog-links">
   <div class="container">
       <ul>
-          <li data-aos="fade-up">
+          <li data-aos="fade-up" data-aos-once="true">
             <a href="<?php echo get_permalink(234) ?>">
                 <i class="fa-solid fa-border-all"></i>
                 <p>All Posts</p>
@@ -26,13 +26,13 @@
           <?php
             if(is_category('Guides')){
           ?>
-            <li data-aos="fade-up" class="active">
+            <li data-aos="fade-up" data-aos-once="true" class="active">
               <a href="<?php echo get_category_link('16'); ?>">
                   <i class="fa-solid fa-newspaper"></i>
                   <p>Check our Guides</p>
               </a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="50">
+            <li data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
               <a href="<?php echo get_category_link('15'); ?>">
                   <i class="fa-regular fa-message"></i>
                   <p>Find our Blog Articles</p>
@@ -43,20 +43,20 @@
           <?php
             if(is_category('Blog')){
           ?>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-once="true">
               <a href="<?php echo get_category_link('16'); ?>">
                   <i class="fa-solid fa-newspaper"></i>
                   <p>Check our Guides</p>
               </a>
             </li>
-            <li data-aos="fade-up" data-aos-delay="50" class="active">
+            <li data-aos="fade-up" data-aos-delay="50" data-aos-once="true" class="active">
               <a href="<?php echo get_category_link('15'); ?>">
                   <i class="fa-regular fa-message"></i>
                   <p>Find our Blog Articles</p>
               </a>
             </li>
           <?php } ?>
-          <li data-aos="fade-up" data-aos-delay="150">
+          <li data-aos="fade-up" data-aos-delay="150" data-aos-once="true">
             <a href="<?php echo get_permalink(get_page_by_title('FAQ')) ?>">
                 <i class="fa-solid fa-question"></i>
                 <p>Check our FAQs</p>
@@ -72,7 +72,7 @@
       <!-- Section Include Side Tags -->
       <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
       <!-- List all posts -->
-      <div class="s-all" data-aos="fade-left">
+      <div class="s-all" data-aos="fade-left" data-aos-once="true">
           <div class="alm-listing">
             <?php   
                 $category = get_queried_object();
@@ -124,7 +124,7 @@
   <div class="container">
     <div class="resources-blog-left">
       <h4><?php the_field('title_resources', 234) ?></h4>
-      <ul data-aos="fade-up">
+      <ul data-aos="fade-up" data-aos-once="true">
         <!-- Repeater List --> 
         <?php if(have_rows('list_resources', 234)): while (have_rows('list_resources', 234)) : the_row(); ?>
           <li>
@@ -134,7 +134,7 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-      <a href="<?php the_field('link_cta', 234) ?>" class="small-cta" data-aos="zoom-in">
+      <a href="<?php the_field('link_cta', 234) ?>" class="small-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
             <h3><?php the_field('title_cta', 234) ?></h3>
         </div>
@@ -144,7 +144,7 @@
         </button>
       </a>
     </div>
-    <div class="resources-blog-right" data-aos="fade-left">
+    <div class="resources-blog-right" data-aos="fade-left" data-aos-once="true">
       <h5><?php the_field('title_right_cta', 234) ?></h5>
       <form class="form-subscribe">
         <input type="text" placeholder="Email address *" id="js-input-address">

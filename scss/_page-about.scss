@@ -228,13 +228,7 @@
             background-color: $white;
             color: $brand-dark-blue;
         }
-        &:hover{
-            border: 2px solid rgb(0, 52, 120);
-            background-color: white;
-            h3{
-                color: $brand-dark-blue;
-            }
-        }
+        
     }
     // Responsive
     @media (max-width: 1100px){

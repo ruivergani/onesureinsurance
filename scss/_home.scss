@@ -18,11 +18,6 @@
         z-index: 0;
         transition: all .5s;
     }
-    &:hover, &:focus{
-        &::after{
-            transform: scale(1.02);
-        }
-    }
     .container{
         position: relative;
         z-index: 200;

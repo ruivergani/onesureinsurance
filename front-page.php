@@ -11,36 +11,36 @@
   <!-- Section Hero -->
   <section class="s-hero">
     <div class="container">
-      <div class="heading" data-aos="fade-right">
+      <div class="heading" data-aos="fade-right" data-aos-once="true">
         <h2><?php the_field('subtitle_section_hero') ?></h2>
         <h1><?php the_field('title_section_hero') ?></h1>
       </div>
       <ul class="card-hero">
-        <li class="item-card" data-aos="fade-left" data-aos-delay="120">
+        <li class="item-card" data-aos="fade-left" data-aos-delay="150" data-aos-once="true">
           <a href="<?php echo get_permalink(get_page_by_title('Motor Trade Insurance')) ?>">
             <i class="fa-solid fa-key fa-2x"></i>
             <span>Motor Trade</span>
           </a>
         </li>
-        <li class="item-card" data-aos="fade-left" data-aos-delay="60">
+        <li class="item-card" data-aos="fade-left" data-aos-delay="100" data-aos-once="true">
           <a href="<?php echo get_permalink(get_page_by_title('Van Insurance')) ?>">
             <i class="fa-solid fa-van-shuttle fa-2x"></i>
             <span>Van Insurance</span>
           </a>
         </li>
-        <li class="item-card" data-aos="fade-left" data-aos-delay="30">
+        <li class="item-card" data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
           <a href="<?php echo get_permalink(get_page_by_title('HGV Insurance')) ?>">
             <i class="fa-solid fa-truck-front fa-2x"></i>
             <span>HGV & Lorry Insurance</span>
           </a>
         </li>
-        <li class="item-card"  data-aos="fade-left" data-aos-delay="10">
+        <li class="item-card"  data-aos="fade-left" data-aos-delay="10" data-aos-once="true">
           <a href="<?php echo get_permalink(get_page_by_title('Car Insurance')) ?>">
             <i class="fa-solid fa-car fa-2x"></i>
             <span>Car Insurance</span>
           </a>
         </li>
-        <li class="item-card" data-aos="fade-left" data-aos-delay="180">
+        <li class="item-card" data-aos="fade-left" data-aos-delay="0" data-aos-once="true">
           <a href="#s-insurance">
             <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
             <span>Others ...</span>
@@ -64,21 +64,21 @@
         <h2><?php the_field('title_section_call') ?></h2>
       </div>
       <div class="all-cards">
-        <div class="card-01" data-aos="fade-up" data-aos-delay="0">
+        <div class="card-01" data-aos="fade-up" data-aos-delay="0" data-aos-once="true">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-lg.svg" alt="icon phone" title="icon phone" loading="lazy">
           <div class="text">
             <h3><?php the_field('title_card_01_section_call') ?></h3>
             <p><?php the_field('phone_number_section_call') ?></p>
           </div>
         </div>
-        <div class="card-02" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-02" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
           <h3><?php the_field('title_card_02_section_call') ?></h3>
           <button class="btn btn-primary-lg">
             <i class="fa-solid fa-phone"></i>
             CALL ME BACK
           </button>
         </div>
-        <div class="card-03" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-03" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
           <h3><?php the_field('title_card_03_section_call') ?></h3>
           <button class="btn btn-primary-lg">
             <i class="fa-solid fa-envelope"></i>
@@ -97,12 +97,12 @@
   <section class="s-insurance" id="s-insurance">
     <div class="container">
       <div class="title">
-        <h6 data-aos="fade-right"><?php the_field('mobile_subtitle_section_all_types_insurance') ?></h6>
-        <h2 data-aos="fade-right"><?php the_field('title_section_all_types_insurance') ?></h2>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" loading="lazy" data-aos="zoom-in">
-        <p data-aos="fade-left"><?php the_field('subtitle_section_all_types_insurance') ?></p>
+        <h6 data-aos="fade-right" data-aos-once="true"><?php the_field('mobile_subtitle_section_all_types_insurance') ?></h6>
+        <h2 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_all_types_insurance') ?></h2>
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" loading="lazy" data-aos="zoom-in" data-aos-once="true">
+        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_all_types_insurance') ?></p>
       </div>
-      <div class="all-cards-type" data-aos="fade-up">
+      <div class="all-cards-type" data-aos="fade-up" data-aos-once="true">
         <!-- Repeater Insurance Types --> 
         <?php if( have_rows('register_insurance_types') ): while ( have_rows('register_insurance_types') ) : the_row(); ?>
           <a href="<?php the_sub_field('page_insurance_type') ?>" class="card-type-default">
@@ -133,16 +133,16 @@
   <section class="s-about">
     <div class="container">
       <div class="title">
-        <h6 data-aos="fade-right"><?php the_field('mobile_subtitle_section_about_us') ?></h6>
-        <h2 data-aos="fade-right"><?php the_field('title_section_about_us') ?></h2>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" loading="lazy" data-aos="zoom-in">
-        <p data-aos="fade-left"><?php the_field('subtitle_section_about_us') ?></p>
+        <h6 data-aos="fade-right" data-aos-once="true"><?php the_field('mobile_subtitle_section_about_us') ?></h6>
+        <h2 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_about_us') ?></h2>
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" loading="lazy" data-aos="zoom-in" data-aos-once="true">
+        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_about_us') ?></p>
       </div>
       <div class="main">
         <div class="image" >
-          <img src="<?php the_field('image_section_about_us') ?>" alt="about us image" title="about us image" loading="lazy" data-aos="fade-right">
+          <img src="<?php the_field('image_section_about_us') ?>" alt="about us image" title="about us image" loading="lazy" data-aos="fade-right" data-aos-once="true">
         </div>
-        <div class="text" data-aos="fade-left">
+        <div class="text" data-aos="fade-left"data-aos-once="true">
             <p><?php the_field('description_section_about_us') ?></p>
             <ul>
               <!-- Repeater Section About Us -->
@@ -169,13 +169,13 @@
   <section class="s-main-articles">
     <div class="container">
       <div class="title">
-        <h6 data-aos="fade-right"><?php the_field('mobile_subtitle_section_popular_articles') ?></h6>
-        <h2 data-aos="fade-right"><?php the_field('title_section_popular_articles') ?></h2>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" data-aos="zoom-in">
-        <p data-aos="fade-left"><?php the_field('subtitle_section_popular_articles') ?></p>
+        <h6 data-aos="fade-right" data-aos-once="true"><?php the_field('mobile_subtitle_section_popular_articles') ?></h6>
+        <h2 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_popular_articles') ?></h2>
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" data-aos="zoom-in" data-aos-once="true">
+        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_popular_articles') ?></p>
       </div>
       <!-- All 3 Latest Blog Posts -->
-      <div class="posts" data-aos="fade-up">
+      <div class="posts" data-aos="fade-up" data-aos-once="true">
           <?php 
             // the query
             $the_query = new WP_Query(array(
@@ -230,7 +230,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="#" class="large-cta" data-aos="zoom-in">
+      <a href="#" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
             <span>We Are Confident Of Our Pricing That We Challenge You To Beat Our Guarantee</span>
             <h3>We Are Britains Cheapest Insurer* </h3>
