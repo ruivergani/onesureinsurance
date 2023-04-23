@@ -1,5 +1,5 @@
 <!-- Section Text Content -->
-<section class="s-content" id="s-content" data-aos="fade-up">
+<section class="s-content" id="s-content" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Content Tab -->
       <div class="tab-product-content">

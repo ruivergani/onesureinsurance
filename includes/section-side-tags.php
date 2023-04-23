@@ -1,5 +1,5 @@
 <!-- List all Tags by post -->
-<div class="side-category" data-aos="fade-right">
+<div class="side-category" data-aos="fade-right" data-aos-once="true">
     <ul>
         <?php
         $tags = get_tags(array(
