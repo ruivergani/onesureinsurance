@@ -117,8 +117,10 @@
                     line-height: 130%;
                     text-align: center;
                     letter-spacing: -0.5px;
-                    text-decoration-line: underline;
                     color: $brand-blue;
+                    &:hover{
+                        text-decoration-line: underline;
+                    }
                 }
             }
         }
@@ -177,9 +179,12 @@
                         font-size: 16px;
                         line-height: 175%;
                         text-align: center;
-                        text-decoration-line: underline;
-                        color: $grey-600;          
+                        color: $grey-600;
+                        &:hover{
+                            text-decoration-line: underline;
+                        }          
                     }
+
                 }
             }
         }
