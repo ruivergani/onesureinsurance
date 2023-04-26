@@ -23,7 +23,7 @@
       <div class="main-footer">
         <nav>
           <div class="item">
-            <strong>Useful Links</strong>
+            <strong>Useful Linkss</strong>
             <!-- Dynamic Menu --> 
             <?php
               $args = array(
