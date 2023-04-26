@@ -397,6 +397,7 @@
     }
     .info{
         position: absolute;
+        border-radius: 5px;
         padding-top: 2rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -459,6 +460,7 @@
         }
         .info{
             padding-left: 2rem;
+            border-radius: 0px;
             p{
                 display: none;
             }
