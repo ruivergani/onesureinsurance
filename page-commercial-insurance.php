@@ -132,6 +132,28 @@
   <!-- Section Company Logos -->
   <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
 
+  <!-- Section Optional Extras -->
+  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+      <h6><?php the_field('mobile_title_section_optional_extras_commercial_insurance') ?></h6>
+      <h4><?php the_field('title_section_optional_extras_commercial_insurance') ?></h4>
+      <ul>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('section_optional_extras_cards_commercial_insurance') ): while ( have_rows('section_optional_extras_cards_commercial_insurance') ) : the_row(); ?>
+          <li>
+            <a href="<?php the_sub_field('link_card_optional_extras_commercial_insurance') ?>">
+              <img src="<?php the_sub_field('image_card_optional_extras_commercial_insurance') ?>" alt="">
+              <div class="text">
+                <h5><?php the_sub_field('title_card_optional_extras_commercial_insurance') ?></h5>
+                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
+              </div>
+            </a>
+          </li>
+        <?php endwhile; else : endif;?>
+      </ul>
+    </div>
+  </section>
+
   <!-- Table of Contents -->
   <section class="s-table-contents">
     <div class="container">
@@ -237,27 +259,6 @@
     </div>
   </section>
 
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_commercial_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_commercial_insurance') ?></h4>
-      <ul>
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_commercial_insurance') ): while ( have_rows('section_optional_extras_cards_commercial_insurance') ) : the_row(); ?>
-          <li>
-            <a href="<?php the_sub_field('link_card_optional_extras_commercial_insurance') ?>">
-              <img src="<?php the_sub_field('image_card_optional_extras_commercial_insurance') ?>" alt="">
-              <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_commercial_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </a>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-    </div>
-  </section>
 
   <!-- Section FAQs -->
   <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
