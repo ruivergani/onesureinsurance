@@ -105,11 +105,11 @@
             border-radius: 0.6rem;
             display: flex;
             align-items: flex-start;
-            gap: 6rem;
+            gap: 4rem;
             padding: 4rem 5rem;
             .left-text{
                 width: 100%;
-                max-width: 44.6rem;
+                max-width: 47.6rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -136,7 +136,7 @@
                     padding-bottom: 3.5rem;
                     li{
                         display: flex;
-                        align-items: center;
+                        align-items: flex-start;
                         gap: 1.5rem;
                         img{
                             width: 100%;
@@ -157,7 +157,7 @@
             }
             .right-text{
                 width: 100%;
-                max-width: 44.6rem;
+                max-width: 45.6rem;
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-start;
@@ -219,13 +219,28 @@
     @media (max-width: 991px){
         padding-top: 4rem;
     }
-    @media (max-width: 768px){
+    @media (max-width: 930px){
+        .container{
+            .product{
+                padding: 2rem;
+                gap: 2rem;
+                .left-text{
+                    ul{
+                        li{
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 798px){
         height: 48rem;
         .container{
             .product{
                 flex-direction: column;
                 gap: 2rem;
-                padding: 2rem 3rem;
+                padding: 3rem;
                 .right-text{
                     max-width: 100%;
                     align-items: center;
@@ -242,7 +257,7 @@
         }
     }
     @media (max-width: 480px){
-        height: 38rem;
+        height: 40rem;
         padding-top: 3rem;
         .container{
             .product{
@@ -1149,7 +1164,7 @@
                     gap: 2rem;
                     img{
                         width: 100%;
-                        max-width: 78px;
+                        max-width: 65px;
                         color: $brand-dark-blue;
                         transition: all .3s;
                     }
@@ -1299,7 +1314,7 @@
 }
 .s-faqs{
     scroll-margin-top: 17rem;
-    //padding: 9rem 0px;
+    padding-top: 3rem;
     .container{
         display: flex;
         flex-direction: column;
