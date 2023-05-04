@@ -135,12 +135,12 @@
       <div class="title">
         <h6 data-aos="fade-right" data-aos-once="true"><?php the_field('mobile_subtitle_section_about_us') ?></h6>
         <h2 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_about_us') ?></h2>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" loading="lazy" data-aos="fade-right" data-aos-once="true">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-border.webp" alt="icon border" title="icon border" loading="lazy" data-aos="zoom-in" data-aos-once="true">
         <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_about_us') ?></p>
       </div>
       <div class="main">
-        <div class="image" >
-          <img src="<?php the_field('image_section_about_us') ?>" alt="about us image" title="about us image" loading="lazy" data-aos="fade-right" data-aos-once="true">
+        <div class="image" data-aos="fade-right" data-aos-once="true">
+          <img src="<?php the_field('image_section_about_us') ?>" alt="about us image" title="about us image" loading="lazy" >
         </div>
         <div class="text" data-aos="fade-left"data-aos-once="true">
             <p><?php the_field('description_section_about_us') ?></p>
