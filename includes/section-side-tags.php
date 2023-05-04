@@ -1,6 +1,13 @@
 <!-- List all Tags by post -->
 <div class="side-category" data-aos="fade-right" data-aos-once="true">
     <ul>
+        <li class="active">
+            <a href="<?php echo get_permalink(234) ?>">
+                <p>All Insurance Types</p>
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="arrow right" title="arrow right">
+            </a>
+        </li>
+
         <?php
         $tags = get_tags(array(
             'hide_empty' => false

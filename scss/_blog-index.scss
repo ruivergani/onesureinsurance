@@ -77,19 +77,29 @@
                 width: 100%;
                 max-width: 29rem;
                 background-color: $brand-light-blue;
-                padding: 26px 20px;
+                padding: 0px;
                 border-radius: 4px;
                 border: 0.5px solid transparent;
-                transition: all 0.3s;
-                &:hover{
-                    background-color: $white;
-                    border-color:$brand-blue;
+                transition: all .3s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover, &.active{
+                    background-color: rgba(76,116,168,.8);
+                    
+                    a{
+                        p,i{
+                            color: white;
+                        }
+                    }
                 }
                 a{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    gap: 40px;
+                    gap: 20px;
+                    padding: 26px 20px;
+                    transition: all .3s;
                     p{
                         font-family: 'Poppins', sans-serif;
                         font-weight: 500;
@@ -97,30 +107,21 @@
                         line-height: 112%;
                         letter-spacing: -0.5px;
                         color: $brand-blue;
+                        transition: all .3s;
                     }
                     i{
                         font-size: 1.8rem;
                         line-height: 112%;
                         letter-spacing: -0.5px;
                         color: $brand-blue;
+                        transition: all .3s;
                     }
                 }
-                &.active{
-                    border-color: $brand-blue;
-                }
+                
             }
         }
     }
     // Responsive
-    @media (max-width: 1300px){
-        .container{
-            ul{
-                li{
-                    padding: 2.5rem;
-                }
-            }
-        }
-    }
     @media (max-width: 1100px){
         padding: 4rem 0px;
         .container{
@@ -298,7 +299,7 @@
                             transform: translateX(-15px); // put to right side
                         }
                     }
-                    &:hover{
+                    &:hover, &.active{
                         background: rgba(76, 116, 168, 0.8);
                         a{
                             p{
