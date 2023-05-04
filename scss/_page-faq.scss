@@ -540,8 +540,10 @@
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 175%;
-                            text-decoration-line: underline;
                             color: $grey-600;
+                            &:hover{
+                                text-decoration-line: underline;
+                            }
                         }
                     }
                 }
