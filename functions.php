@@ -166,4 +166,68 @@ function breadcrumbs($id = null){
     </section>
 <?php }
 
+
+if(function_exists('acf_add_options_page')) {
+    acf_add_options_page(array(
+        'page_title'    => 'Affinity Tracking',
+        'menu_title'    => 'Affinity Tracking',
+        'menu_slug'     => 'affinity-tracking',
+        'capability'    => 'edit_posts',
+        'icon_url'      => 'dashicons-performance',
+        'redirect'      => false
+    ));
+}
+
+add_shortcode('get-affinity-value', 'os_get_affinity_value');
+
+function os_get_affinity_value($atts){
+    $defaults = [
+        'telephone' => '0800 081 5113',
+        'mobile' => '03303139373',
+        'mobile_popup' => 'xxx-xxx-xxx-xxx'
+    ];
+
+    //get shortcode $value param
+    extract(shortcode_atts(array(
+        'value' => '',
+    ), $atts));
+	
+	//value provided incorrectly through shortcode
+    if (empty($value) || !array_key_exists($value, $defaults)) {
+        return "";
+    }
+    if (!empty($_COOKIE['os_affinity_code'])) {
+        $affinity = $_COOKIE['os_affinity_code'];
+    }
+    if (!empty($_GET['affinity'])) {
+        $affinity = $_GET['affinity'];
+    }
+
+    $codes = get_field('affinity', 'option');
+
+    foreach ($codes as $code) {
+        if (strtoupper($code['affinity']) == strtoupper($affinity)) {
+
+            return $code[$value] ?? $defaults[$value];
+        }
+    }
+    return $defaults[$value];
+}
+
+add_action('init', function () {
+    if (!array_key_exists('affinity', $_GET)) {
+        return;
+    }
+    //set the UMT affinity cookie
+    setcookie(
+        'os_affinity_code',
+        strtoupper($_GET['affinity']),
+        time() + (86400 * 30),
+        '/'
+    );
+});
+
+//allow acf text fields to output shortcodes	
+add_filter('acf/format_value/type=text', 'do_shortcode');
+
 ?>
