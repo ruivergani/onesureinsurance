@@ -9,7 +9,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
   
   <!-- Section Breadcrumbs -->
-  <?php breadcrumbs(); ?>
+  <?php breadcrumbs(1636); ?>
 
   <!-- Section Hero -->
   <section class="s-hero-product">

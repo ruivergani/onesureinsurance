@@ -166,7 +166,6 @@ function breadcrumbs($id = null){
     </section>
 <?php }
 
-
 if(function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
         'page_title'    => 'Affinity Tracking',
