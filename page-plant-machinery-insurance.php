@@ -1,5 +1,5 @@
 <?php
-  // Template name: employer-insurance
+  // Template name: plant-machinery-insurance
 ?>
 
 <!-- Include Header -->
@@ -17,14 +17,14 @@
       <div class="product">
         <!-- Left Text Area -->
         <div class="left-text" data-aos="fade-right" data-aos-once="true">
-          <span class="sm-text-product"><?php the_field('get_quote_sub_title_employer_insurance') ?></span>
-          <h1><?php the_field('get_quote_title_employer_insurance') ?></h1>
+          <span class="sm-text-product"><?php the_field('get_quote_sub_title_plant_machinery_insurance') ?></span>
+          <h1><?php the_field('get_quote_title_plant_machinery_insurance') ?></h1>
           <ul>
             <!-- Repeater List Section Hero --> 
-            <?php if( have_rows('list_get_quote_employer_insurance') ): while ( have_rows('list_get_quote_employer_insurance') ) : the_row(); ?>
+            <?php if( have_rows('list_get_quote_plant_machinery_insurance') ): while ( have_rows('list_get_quote_plant_machinery_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_employer_insurance') ?>" alt="icon green checked" title="icon green checked">
-                <p><?php the_sub_field('text_employer_insurance') ?></p>
+                <img src="<?php the_sub_field('icon_checked_plant_machinery_insurance') ?>" alt="icon green checked" title="icon green checked">
+                <p><?php the_sub_field('text_plant_machinery_insurance') ?></p>
               </li>
             <?php endwhile; else : endif;?>
           </ul>
@@ -36,16 +36,16 @@
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in" data-aos-once="true">
         <!-- Right Text Area -->
         <div class="right-text" data-aos="fade-left" data-aos-once="true">
-          <span class="sm-text-product"><?php the_field('call_us_subtitle_employer_insurance') ?></span>
-          <h2><?php the_field('call_us_title_employer_insurance') ?></h2>
+          <span class="sm-text-product"><?php the_field('call_us_subtitle_plant_machinery_insurance') ?></span>
+          <h2><?php the_field('call_us_title_plant_machinery_insurance') ?></h2>
           <ul>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="icon phone" title="icon phone">
-              <p>Call our landline at <span><?php the_field('landline_phone_employer_insurance') ?></span></p>
+              <p>Call our landline at <span><?php the_field('landline_phone_plant_machinery_insurance') ?></span></p>
             </li>
             <li>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="icon mobile phone" title="icon mobile phone">
-              <p>Call your mobile at <span><?php the_field('mobile_phone_employer_insurance') ?></span></p>
+              <p>Call your mobile at <span><?php the_field('mobile_phone_plant_machinery_insurance') ?></span></p>
             </li>
           </ul>
           <button class="btn btn-outline">
@@ -71,8 +71,8 @@
   <section class="s-slide-product">
     <div class="container">
       <div class="top">
-        <h6><?php the_field('mobile_title_section_product_slide_employer_insurance') ?></h6>
-        <h4><?php the_field('title_section_product_slide_employer_insurance') ?></h4>
+        <h6><?php the_field('mobile_title_section_product_slide_plant_machinery_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_slide_plant_machinery_insurance') ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -90,16 +90,16 @@
       <div class="slide-product">
         <div class="swiper-wrapper">
           <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('card_product_slide_employer_insurance') ): while ( have_rows('card_product_slide_employer_insurance') ) : the_row(); ?>
+          <?php if( have_rows('card_product_slide_plant_machinery_insurance') ): while ( have_rows('card_product_slide_plant_machinery_insurance') ) : the_row(); ?>
             <div class="swiper-slide">
               <!-- Card Product Type -->
-              <a href="<?php the_sub_field('card_link_employer_insurance') ?>" class="card-product">
+              <a href="<?php the_sub_field('card_link_plant_machinery_insurance') ?>" class="card-product">
                 <div class="image">
-                    <img src="<?php the_sub_field('image_card_employer_insurance') ?>" alt="card product page" title="card product page">
+                    <img src="<?php the_sub_field('image_card_plant_machinery_insurance') ?>" alt="card product page" title="card product page">
                 </div>
                 <div class="info">
-                    <h6><?php the_sub_field('card_title_employer_insurance') ?></h6>
-                    <p><?php the_sub_field('subtitle_card_employer_insurance') ?></p>
+                    <h6><?php the_sub_field('card_title_plant_machinery_insurance') ?></h6>
+                    <p><?php the_sub_field('subtitle_card_plant_machinery_insurance') ?></p>
                     <div class="learn-more">
                         <span>Learn more</span>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
@@ -116,10 +116,10 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_employer_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_plant_machinery_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
-            <span><?php the_field('subtitle_cta_employer_insurance') ?></span>
-            <h3><?php the_field('title_cta_employer_insurance') ?></h3>
+            <span><?php the_field('subtitle_cta_plant_machinery_insurance') ?></span>
+            <h3><?php the_field('title_cta_plant_machinery_insurance') ?></h3>
         </div>
         <button class="btn btn-primary">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
@@ -213,16 +213,16 @@
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
     <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_employer_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_employer_insurance') ?></h4>
+      <h6><?php the_field('mobile_title_section_optional_extras_plant_machinery_insurance') ?></h6>
+      <h4><?php the_field('title_section_optional_extras_plant_machinery_insurance') ?></h4>
       <ul>
         <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_employer_insurance') ): while ( have_rows('section_optional_extras_cards_employer_insurance') ) : the_row(); ?>
+        <?php if( have_rows('section_optional_extras_cards_plant_machinery_insurance') ): while ( have_rows('section_optional_extras_cards_plant_machinery_insurance') ) : the_row(); ?>
           <li>
-            <a href="<?php the_sub_field('link_card_optional_extras_employer_insurance') ?>">
-            <img src="<?php the_sub_field('image_card_optional_extras_employer_insurance') ?>" alt="">
+            <a href="<?php the_sub_field('link_card_optional_extras_plant_machinery_insurance') ?>">
+            <img src="<?php the_sub_field('image_card_optional_extras_plant_machinery_insurance') ?>" alt="">
               <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_employer_insurance') ?></h5>
+                <h5><?php the_sub_field('title_card_optional_extras_plant_machinery_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
               </div>
             </a>
@@ -236,25 +236,25 @@
   <section class="s-bespoke" id="s-why-us">
     <div class="container">
       <div class="text-top">
-        <h6><?php the_field('mobile_title_section_why_us_employer_insurance') ?></h6>
-        <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_why_us_employer_insurance') ?></h4>
-        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_why_us_employer_insurance') ?></p>
+        <h6><?php the_field('mobile_title_section_why_us_plant_machinery_insurance') ?></h6>
+        <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_why_us_plant_machinery_insurance') ?></h4>
+        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_why_us_plant_machinery_insurance') ?></p>
       </div>
       <div class="main-bespoke">
         <div class="text-bottom" data-aos="fade-right" data-aos-once="true">
           <ul>
             <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('cards_section_why_us_employer_insurance') ): while ( have_rows('cards_section_why_us_employer_insurance') ) : the_row(); ?>
+            <?php if( have_rows('cards_section_why_us_plant_machinery_insurance') ): while ( have_rows('cards_section_why_us_plant_machinery_insurance') ) : the_row(); ?>
               <!-- Card -->
               <li>
-                <img src="<?php the_sub_field('icon_card_employer_insurance'); ?>" alt="icon house" title="icon house">
-                <h5><?php the_sub_field('title_why_us_card_employer_insurance'); ?></h5>
-                <p><?php the_sub_field('description_why_us_card_employer_insurance'); ?></p>
+                <img src="<?php the_sub_field('icon_card_plant_machinery_insurance'); ?>" alt="icon house" title="icon house">
+                <h5><?php the_sub_field('title_why_us_card_plant_machinery_insurance'); ?></h5>
+                <p><?php the_sub_field('description_why_us_card_plant_machinery_insurance'); ?></p>
               </li>
             <?php endwhile; else : endif;?>
           </ul>
         </div>
-        <img src="<?php the_field('image_section_why_us_employer_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
+        <img src="<?php the_field('image_section_why_us_plant_machinery_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
       </div>
     </div>
   </section>
@@ -262,18 +262,18 @@
   <!-- Section FAQs -->
   <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
     <div class="container">
-      <h4><?php the_field('title_section_employer_insurance') ?></h4>
+      <h4><?php the_field('title_section_plant_machinery_insurance') ?></h4>
       <div class="b-container">
         <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_faq_employer_insurance') ): while ( have_rows('section_faq_employer_insurance') ) : the_row(); ?>
+        <?php if( have_rows('section_faq_plant_machinery_insurance') ): while ( have_rows('section_faq_plant_machinery_insurance') ) : the_row(); ?>
           <!-- Question Card -->
           <div class="question">
             <div class="title js-question">
-              <strong><?php the_sub_field('title_faq_employer_insurance'); ?></strong>
+              <strong><?php the_sub_field('title_faq_plant_machinery_insurance'); ?></strong>
               <i class="fa-solid fa-chevron-down"></i>
             </div>
             <div class="question-content">
-              <?php the_sub_field('description_faq_employer_insurance'); ?>
+              <?php the_sub_field('description_faq_plant_machinery_insurance'); ?>
             </div>
           </div>
         <?php endwhile; else : endif;?>
@@ -281,12 +281,12 @@
     </div>
   </section>
 
-  <!-- Section Slide -->
+  <!-- Section Top Vans -->
   <section class="s-slide-van">
     <div class="container">
       <div class="top">
-        <h6><?php the_field('mobile_title_section_slides_employer_insurance'); ?></h6>
-        <h4><?php the_field('title_section_slides_employer_insurance'); ?></h4>
+        <h6><?php the_field('mobile_title_section_slides_plant_machinery_insurance'); ?></h6>
+        <h4><?php the_field('title_section_slides_plant_machinery_insurance'); ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -304,15 +304,15 @@
       <div class="slide-van">
         <div class="swiper-wrapper">
           <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_slides_cards_employer_insurance') ): while ( have_rows('section_slides_cards_employer_insurance') ) : the_row(); ?>
+          <?php if( have_rows('section_slides_cards_plant_machinery_insurance') ): while ( have_rows('section_slides_cards_plant_machinery_insurance') ) : the_row(); ?>
             <div class="swiper-slide">
               <!-- Card Van Type -->
-              <a href="<?php the_sub_field('link_slide_card_employer_insurance'); ?>" class="card-van">
+              <a href="<?php the_sub_field('link_slide_card_plant_machinery_insurance'); ?>" class="card-van">
                 <div class="image">
-                  <img src="<?php the_sub_field('image_slide_card_employer_insurance'); ?>" alt="card product page" title="card product page">
+                  <img src="<?php the_sub_field('image_slide_card_plant_machinery_insurance'); ?>" alt="card product page" title="card product page">
                 </div>
                 <div class="info">
-                  <h6><?php the_sub_field('text_slide_card_employer_insurance'); ?></h6>
+                  <h6><?php the_sub_field('text_slide_card_plant_machinery_insurance'); ?></h6>
                 </div>
               </a>
             </div>
@@ -325,10 +325,10 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_employer_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_plant_machinery_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
-            <span><?php the_field('subtitle_cta_employer_insurance') ?></span>
-            <h3><?php the_field('title_cta_employer_insurance') ?></h3>
+            <span><?php the_field('subtitle_cta_plant_machinery_insurance') ?></span>
+            <h3><?php the_field('title_cta_plant_machinery_insurance') ?></h3>
         </div>
         <button class="btn btn-primary">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
@@ -353,9 +353,9 @@
     <section class="s-articles" id="s-articles">
       <div class="container">
         <div class="text-top">
-          <h6><?php the_field('mobile_title_section_articles_employer_insurance'); ?></h6>
-          <h4><?php the_field('title_section_articles_employer_insurance'); ?></h4>
-          <p><?php the_field('description_section_articles_employer_insurance'); ?></p>
+          <h6><?php the_field('mobile_title_section_articles_plant_machinery_insurance'); ?></h6>
+          <h4><?php the_field('title_section_articles_plant_machinery_insurance'); ?></h4>
+          <p><?php the_field('description_section_articles_plant_machinery_insurance'); ?></p>
         </div>
        <!-- Section Article Cards -->
        <?php include(TEMPLATEPATH .'/includes/page-insurance-article-cards.php') ?>
