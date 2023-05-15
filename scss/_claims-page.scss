@@ -24,9 +24,22 @@
         color: #FFFFFF;
         z-index: 1;
     }
-    
+    // Responsive
+    @media (max-width: 768px){
+        height: 220px;
+        .title-hero{
+            font-size: 36px;
+        }
+    }
+    @media (max-width: 560px){
+        height: 150px;
+        .title-hero{
+            font-size: 28px;
+        }
+    }
 }
 .s-breadcrumbs-claims{
+    display: none;
     background-color: $brand-light-blue;
     padding: 30px 0px;
     .container{
@@ -52,6 +65,7 @@
     }
 }
 .s-claims-content{
+    display: none;
     padding: 112px 0px;
     .container{
         display: flex;
@@ -171,6 +185,7 @@
     }   
 }
 .s-content-claims-faq{
+    display: none;
     background-color: $brand-light-blue;
     padding: 112px 0px;
     .container{
