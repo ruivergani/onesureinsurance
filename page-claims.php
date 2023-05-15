@@ -57,9 +57,75 @@
   </section>
 
   <!-- === SECTION CONTENT FAQs === -->
-  <section>
+  <section class="s-content-claims-faq">
     <div class="container">
-
+      <div class="title-content-claims-faq">
+        <h4>We’re here for you 24/7</h4>
+      </div>
+      <div class="content-highlight-claims-faq">
+        <!-- === HIGHLIGHT ACCORDION FAQ === -->
+        <div class="accordion-plus-claim">
+          <div class="accordion-plus-item-claim">
+            <h3>
+              What is Lorem Ipsum?
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
+            </h3>
+            <div class="accordion-plus-content-claim">
+              <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+              <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="all-claims-faq">
+        <!-- === EACH ACCORDION FAQ === -->
+        <div class="accordion-plus-claim">
+          <div class="accordion-plus-item-claim js-accordion-plus-item">
+            <h3>
+              What is Lorem Ipsum?
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
+            </h3>
+            <div class="accordion-plus-content-claim">
+              <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+              <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+            </div>
+          </div>
+        </div>
+        <!-- === EACH ACCORDION FAQ === -->
+        <div class="accordion-plus-claim">
+          <div class="accordion-plus-item-claim js-accordion-plus-item">
+            <h3>
+              What is Lorem Ipsum?
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
+            </h3>
+            <div class="accordion-plus-content-claim">
+              <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+              <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+            </div>
+          </div>
+        </div>
+        <!-- === EACH ACCORDION FAQ === -->
+        <div class="accordion-plus-claim">
+          <div class="accordion-plus-item-claim js-accordion-plus-item">
+            <h3>
+              What is Lorem Ipsum?
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
+            </h3>
+            <div class="accordion-plus-content-claim">
+              <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+              <h4>Lorem Ipsum is simply dummy text of the printing</h4>
+              <p>Need some help with your order or got a burning question that you need answered pronto? Just click on one of the sections below to find the answer...</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
