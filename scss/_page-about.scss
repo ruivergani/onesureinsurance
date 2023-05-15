@@ -1,6 +1,6 @@
 // === About Us Page ===
 .s-hero-about{
-    padding: 5rem 0px;
+    padding: 9rem 0px;
     background: url(../assets/bg/blog-index-bg.jpg) no-repeat center center;
     background-size: cover;
     .container{
@@ -18,12 +18,12 @@
                 font-family: 'Poppins', sans-serif;
             }
             h1{
+                font-family: 'Poppins', sans-serif;
                 font-weight: 700;
-                font-size: 3.6rem;
+                font-size: 40px;
                 line-height: 112%;
-                color: $white;
-                margin-bottom: 3rem;
-                text-transform: uppercase;
+                letter-spacing: -1px;
+                color: #FFFFFF;
             }
             ul{
                 display: flex;

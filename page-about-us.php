@@ -9,23 +9,14 @@
   <!-- Loop in the template -->
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+    <!-- Section Breadcrumbs -->
+    <?php breadcrumbs(); ?>
+    
     <!-- Section Hero -->
     <section class="s-hero-about">
       <div class="container">
           <div class="s-hero-about-title">
-              <h1><?php the_field('title_section_hero_about_us_page') ?></h1>
-              <ul>
-                  <li>
-                    <a href="<?php echo get_home_url(); ?>">
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="" aria-label="current-page">
-                      <?php the_title(); ?>
-                    </a>
-                  </li>
-              </ul>
+            <h1><?php the_field('title_section_hero_about_us_page') ?></h1>
           </div>
       </div>
     </section>
