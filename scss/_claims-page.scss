@@ -39,10 +39,10 @@
     }
 }
 .s-breadcrumbs-claims{
-    display: none;
     background-color: $brand-light-blue;
     padding: 30px 0px;
     .container{
+        overflow-x: visible;
         a{
             display: flex;
             align-items: center;
@@ -63,9 +63,22 @@
             }
         }
     }
+    // Responsive
+    @media (max-width: 768px){
+        padding: 15px 0px;
+        .container{
+            a{
+                flex-direction: column;
+                align-items: center;
+                gap: 5px;
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 .s-claims-content{
-    display: none;
     padding: 112px 0px;
     .container{
         display: flex;
@@ -82,6 +95,7 @@
             .image-card-claim{
                 width: 100%;
                 height: 100%;
+                min-height: 360px;
                 max-width: 400px;
                 max-height: 36rem;
                 overflow: hidden;
@@ -89,6 +103,7 @@
                     width: 100%;
                     height: 100%;
                     max-width: 400px;
+                    min-height: 360px;
                     max-height: 36rem;
                     transition: all .5s;
                     object-fit: cover; // cover size img
@@ -97,7 +112,6 @@
                         transform: scale(1.2);
                     }
                 }
-
             }
             .text-card-claim{
                 background-color: #FAF0F2;
@@ -181,18 +195,87 @@
             }
 
         }
-
     }   
+    // Responsive
+    @media (max-width:1200px){
+        .container{
+            .image-card-claim{
+                max-width: 300px;
+            }
+        }
+    }
+    @media (max-width: 1150px){
+        padding: 6rem 0px;
+        .container{
+            flex-direction: column;
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            .card-left-claim{
+                .image-card-claim{
+                    max-height: 320px;
+                    min-height: 320px;
+                    img{
+                        max-height: 320px;
+                        min-height: 320px;
+                    }
+                }
+                .text-card-claim{
+                    padding: 30px 0px;
+                    h2{
+                        margin-bottom: 2rem;
+                        font-size: 24px;
+                    }
+                    p{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 720px){
+        .container{
+            .card-left-claim{
+                flex-direction: column;
+                .text-card-claim{
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+    @media (max-width: 430px){
+        padding: 3rem 0px;
+        .container{
+            gap: 20px;
+            .card-left-claim{
+                .text-card-claim{
+                    padding: 20px 0px;
+                    p{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .card-right-claim{
+                height: 320px;
+                h3{
+                    margin-bottom: 20px;
+                }
+                p{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
 }
 .s-content-claims-faq{
-    display: none;
     background-color: $brand-light-blue;
     padding: 112px 0px;
     .container{
         background: #FFFFFF;
         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 112px;
+        padding-bottom: 112px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -207,6 +290,7 @@
                 line-height: 112%;
                 letter-spacing: -1px;
                 color: #33303E;
+                text-align: center;
             }
         }
         .content-highlight-claims-faq{
@@ -367,6 +451,56 @@
                     display: none;
                     pointer-events: none;
                     transition: all ease-in-out .3s;
+                }
+            }
+        }
+    }
+    // Responsive
+    @media(max-width: 1200px){
+        padding: 6rem 3rem;
+        .container{
+            .title-content-claims-faq{
+                padding-top: 6rem;
+            }
+            .all-claims-faq{
+                padding-bottom: 6rem;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        padding: 3rem 2rem;
+        .container{
+            .title-content-claims-faq{
+                padding-top: 6rem;
+                margin-bottom: 3rem;
+                h4{
+                    font-size: 28px;
+                }
+            }
+            .content-highlight-claims-faq, .all-claims-faq{
+                .accordion-plus-claim{
+                    .accordion-plus-item-claim{
+                        h3{
+                            padding: 20px 0px;
+                        }
+                    }
+                }
+            }
+            .all-claims-faq{
+                padding-bottom: 6rem;
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .container{
+            .title-content-claims-faq{
+                padding-top: 4rem;
+            }
+            .content-highlight-claims-faq, .all-claims-faq{
+                .accordion-plus-claim{
+                    .accordion-plus-content-claim{
+                        padding-bottom: 20px;
+                    }
                 }
             }
         }
