@@ -27,9 +27,32 @@
     </div>
   </section>
 
-  <section class="claims-content" id="claims-content">
+  <!-- === SECTION CARDS CLAIMS PAGE == -->
+  <section class="s-claims-content" id="claims-content">
     <div class="container">
-      content will be here
+      <div class="card-left-claim">
+        <div class="image-card-claim">
+          <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-claims-feedback.jpg" alt="card claims" title="card claims">
+        </div>
+        <div class="text-card-claim">
+          <h2>Your Claims Feedback</h2>
+          <p>Your claims feedback is important to us, it helps us to understand what’s important to you and how we’re delivering on our promises.</p>
+          <p>Read broker and policyholder claims testimonials along with some claims case studies.</p>
+          <a href="">
+            <p>YOUR CLAIMS FEEDBACK</p>
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-right-outline.svg" alt="icon right outline" title="icon right outline">
+          </a>
+        </div>
+      </div>
+      <div class="card-right-claim">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-comments.svg" alt="icon commets" title="icon comments">
+        <h3>Tell us if you’re not happy with our service</h3>
+        <p>We’ll do our best to put things right.</p>
+        <!-- Action Button -->
+        <button class="btn btn-primary btn-claims">
+          Make a complaint
+        </button>
+      </div>
     </div>
   </section>
 
