@@ -296,6 +296,7 @@
         .content-highlight-claims-faq{
             .accordion-plus-claim{
                 .accordion-plus-item-claim{
+                    padding-top: 20px;
                     h3{
                         border-bottom: 1px solid #C6C5CE;
                     }
@@ -348,7 +349,7 @@
                         font-weight: bold;
                         font-size: 16px;
                         line-height: 175%;
-                        color: $grey-400;
+                        color: $grey-600;
                         margin-right: 5px;
                         margin-bottom: 1.6rem;
                     }

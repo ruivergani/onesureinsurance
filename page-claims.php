@@ -1,5 +1,5 @@
 <?php
-  // Template name: claims
+  // Template name: page-claim
 ?>
 
 <!-- Include Header -->
@@ -104,10 +104,10 @@
           <span><?php the_field('subtitle_cta_claims_page') ?></span>
           <h3><?php the_field('title_cta_claims_page') ?></h3>
         </div>
-        <a class="btn btn-primary" href="<?php the_field('link_button_cta_claims_page') ?>">
+        <button class="btn btn-primary">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
           get a quote
-        </a>
+        </button>
       </a>
     </div>
   </div>
