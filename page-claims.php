@@ -70,7 +70,7 @@
               <?php the_field('title_highlight_section_claims') ?>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
             </h3>
-            <div class="accordion-plus-content-claim">
+            <div class="accordion-plus-content-claim pt-3">
               <?php the_content(); ?>
             </div>
           </div>

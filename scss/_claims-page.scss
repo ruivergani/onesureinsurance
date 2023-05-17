@@ -296,9 +296,11 @@
         .content-highlight-claims-faq{
             .accordion-plus-claim{
                 .accordion-plus-item-claim{
-                    padding-top: 20px;
                     h3{
                         border-bottom: 1px solid #C6C5CE;
+                    }
+                    &.pt-3{
+                        padding-top: 20px;
                     }
                 }
             }
