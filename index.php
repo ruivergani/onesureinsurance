@@ -87,7 +87,7 @@
     <?php include(TEMPLATEPATH .'/includes/section-side-tags.php') ?>
     <!-- List all posts -->
     <div class="s-all" data-aos="fade-left">
-      <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="9" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
+      <?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" posts_per_page="12" scroll="false" transition_container="false" button_loading_label="Loading Posts..." button_done_label="No Posts remain..."]') ?>
     </div>
   </div>
 </section>

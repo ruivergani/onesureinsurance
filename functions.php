@@ -229,4 +229,77 @@ add_action('init', function () {
 //allow acf text fields to output shortcodes	
 add_filter('acf/format_value/type=text', 'do_shortcode');
 
+/**
+ * ACF Load More Repeater
+*/
+
+// add action for logged in users
+add_action('wp_ajax_my_repeater_show_more', 'my_repeater_show_more');
+// add action for non logged in users
+add_action('wp_ajax_nopriv_my_repeater_show_more', 'my_repeater_show_more');
+
+function my_repeater_show_more() {
+	// validate the nonce
+	if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'my_repeater_field_nonce')) {
+		exit;
+	}
+	// make sure we have the other values
+	if (!isset($_POST['post_id']) || !isset($_POST['offset'])) {
+		return;
+	}
+	$show = 4; // how many more to show
+	$start = $_POST['offset'];
+	$end = $start+$show;
+	$post_id = $_POST['post_id'];
+	// use an object buffer to capture the html output
+	// alternately you could create a variable like $html
+	// and add the content to this string, but I find
+	// object buffers make the code easier to work with
+	ob_start();
+	if (have_rows('register_insurance_types', $post_id)) {
+		$total = count(get_field('register_insurance_types', $post_id));
+		$count = 0;
+		while (have_rows('register_insurance_types', $post_id)) {
+			the_row();
+			if ($count < $start) {
+				// we have not gotten to where
+				// we need to start showing
+				// increment count and continue
+				$count++;
+				continue;
+			}
+			?>
+			<a href="<?php the_sub_field('page_insurance_type') ?>" class="card-type-default">
+              <div class="image">
+                <img src="<?php the_sub_field('image_card_insurance_type') ?>" alt="image type of insurance default" title="image type of insurance default" loading="lazy">
+              </div>
+              <div class="icon">
+                <i class="<?php the_sub_field('icon_card_insurance_type')?>"></i>
+              </div>
+              <div class="info">
+                <h4><?php the_sub_field('title_card_insurance_type') ?></h4>
+                <p><?php the_sub_field('subtitle_card_insurance_type') ?></p>
+                <span class="small-text">
+                  <?php the_sub_field('description_card_insurance_type') ?>
+                </span>
+              </div>
+            </a>
+			<?php 
+			$count++;
+			if ($count == $end) {
+				// we have shown the number, break out of loop
+				break;
+			}
+		} // end while have rows
+	} // end if have rows
+	$content = ob_get_clean();
+	// check to see if we have shown the last item
+	$more = false;
+	if ($total > $count) {
+		$more = true;
+	}
+	// output our 3 values as a json encoded array
+	echo json_encode(array('content' => $content, 'more' => $more, 'offset' => $end));
+	exit;
+} // end function my_repeater_show_more
 ?>

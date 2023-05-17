@@ -455,10 +455,15 @@
         flex-direction: column;
         justify-content: center;
         gap: 9rem;
+        #cards-load-more{
+            cursor: pointer;
+        }
         .all-cards-type{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 6rem 3.2rem;
+            
+            
         }
     }
     // Responsive

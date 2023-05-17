@@ -103,29 +103,41 @@
         <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_all_types_insurance') ?></p>
       </div>
       <div class="all-cards-type" data-aos="fade-up" data-aos-once="true">
-        <!-- Repeater Insurance Types --> 
-        <?php if( have_rows('register_insurance_types') ): while ( have_rows('register_insurance_types') ) : the_row(); ?>
-          <a href="<?php the_sub_field('page_insurance_type') ?>" class="card-type-default">
-            <div class="image">
+        <!-- Repeater Insurance Types with Load More functionality --> 
+        <?php 
+        if( have_rows('register_insurance_types') ):
+          $total = count(get_field('register_insurance_types'));
+          $count = 1;
+          $number = 8;
+          while ( have_rows('register_insurance_types') ) : the_row(); ?>
+            <a href="<?php the_sub_field('page_insurance_type') ?>" class="card-type-default">
+              <div class="image">
                 <img src="<?php the_sub_field('image_card_insurance_type') ?>" alt="image type of insurance default" title="image type of insurance default" loading="lazy">
-            </div>
-            <div class="icon">
-              <i class="<?php the_sub_field('icon_card_insurance_type')?>"></i>
-            </div>
-            <div class="info">
+              </div>
+              <div class="icon">
+                <i class="<?php the_sub_field('icon_card_insurance_type')?>"></i>
+              </div>
+              <div class="info">
                 <h4><?php the_sub_field('title_card_insurance_type') ?></h4>
                 <p><?php the_sub_field('subtitle_card_insurance_type') ?></p>
                 <span class="small-text">
                   <?php the_sub_field('description_card_insurance_type') ?>
                 </span>
-            </div>
-          </a>
-        <?php endwhile; else : endif;?>
+              </div>
+            </a>
+          <?php
+          if ($count == $number){
+            // we've shown the number, break out of loop
+            break;
+          } ?>
+          <?php $count++; endwhile;
+        else : endif;
+        ?>
       </div>
-      <button class="btn btn-outline" id="btn-outline">
+      <a class="btn btn-outline load-more-button" id="cards-load-more" href="javascript: my_repeater_show_more();" <?php if ($total < $count) { ?> style="display: none;"<?php } ?>>
         <i class="fa-solid fa-arrows-rotate"></i>
         LOAD MORE
-      </button>
+      </a>
     </div>
   </section>
 
@@ -242,6 +254,42 @@
       </a>
     </div>
   </div>
+  
+  <!-- === LOAD MORE FUNCTION == -->
+  <script type="text/javascript">
+    var my_repeater_field_post_id = <?php echo $post->ID; ?>;
+    var my_repeater_field_offset = <?php echo $number + 1; ?>;
+    var my_repeater_field_nonce = '<?php echo wp_create_nonce('my_repeater_field_nonce'); ?>';
+    var my_repeater_ajax_url = '<?php echo admin_url('admin-ajax.php'); ?>';
+    var my_repeater_more = true;
+    
+    function my_repeater_show_more() {
+      // make ajax request
+      jQuery.post(
+        my_repeater_ajax_url, {
+          // this is the AJAX action we set up in PHP
+          'action': 'my_repeater_show_more',
+          'post_id': my_repeater_field_post_id,
+          'offset': my_repeater_field_offset,
+          'nonce': my_repeater_field_nonce
+        },
+        function (json) {
+          // add content to container
+          // this ID must match the containter 
+          // you want to append content to
+          jQuery('.all-cards-type').append(json['content']);
+          // update offset
+          my_repeater_field_offset = json['offset'];
+          // see if there is more, if not then hide the more link
+          if (!json['more']) {
+            // this ID must match the id of the show more link
+            jQuery('#cards-load-more').css('display', 'none');
+          }
+        },
+        'json'
+      );
+    }
+  </script>
 
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
