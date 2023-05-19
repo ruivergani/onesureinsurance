@@ -54,7 +54,7 @@
 </head>
 
 <body>
-  <!-- Modal Form -->
+  <!-- === Modal FORM  === -->
   <section class="modal">
     <div class="overlay">
     </div>
