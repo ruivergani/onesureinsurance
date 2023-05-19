@@ -372,7 +372,7 @@
             }
             h5{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 500;
+                font-weight: 600;
                 font-size: 1.8rem;
                 line-height: 120%;
                 letter-spacing: -0.5px;
@@ -501,10 +501,10 @@
             gap: 5rem;
             .title{
                 h2{
-                    font-size: 2.8rem;
+                    font-size: 28px;
                 }
                 p{
-                    font-size: 1.6rem;
+                    font-size: 16px;
                 }
             }
             .all-cards-type{
@@ -513,7 +513,7 @@
             }
         }
     }
-    @media(max-width: 480px){
+    @media(max-width: 560px){
         padding-bottom: 6rem;
         padding-top: 6rem;
         .container{
@@ -524,8 +524,8 @@
                 h6{
                     display: block;
                     font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
-                    font-size: 2.4rem;
+                    font-weight: 500;
+                    font-size: 24px;
                     line-height: 112%;
                     text-align: center;
                     letter-spacing: -1px;
@@ -533,7 +533,7 @@
                     opacity: 0.8;
                 }
                 h2{
-                    font-size: 2.8rem;
+                    font-size: 28px;
                     text-align: center;
                     text-transform: none;
                     max-width: 27rem;
@@ -587,7 +587,7 @@
                     object-fit: cover; // cover size img
                     -o-object-fit: cover;
                     &:hover, &:focus{
-                        transform: scale(1.07);
+                        transform: scale(1.2);
                     }
                 }
             }
@@ -625,15 +625,15 @@
             }
         }
     }
-    @media (max-width: 780px){
+    @media (max-width: 860px){
         .container{
             gap: 4rem;
             .title{
                 h2{
-                    font-size: 2.8rem;
+                    font-size: 28px;
                 }
                 p{
-                    font-size: 1.6rem;
+                    font-size: 16px;
                 }
             }
             .main{
@@ -662,7 +662,7 @@
             }
         }
     }
-    @media (max-width: 480px){
+    @media (max-width: 560px){
         padding: 6rem 0px;
         .container{
             .title{
@@ -671,7 +671,7 @@
                 h6{
                     display: block;
                     font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 2.4rem;
                     line-height: 112%;
                     text-align: center;
@@ -680,7 +680,7 @@
                     opacity: 0.9;
                 }
                 h2{
-                    font-size: 2.8rem;
+                    font-size: 28px;
                     text-align: center;
                     max-width: 100%;
                     text-transform: none;
@@ -699,7 +699,7 @@
                     justify-content: center;
                     p{
                         line-height: 150%;
-                        font-size: 1.8rem;
+                        font-size: 16px;
                     }
                     ul{
                         display: flex;
@@ -711,7 +711,7 @@
                             padding-bottom: 1rem;
                             align-items: flex-start;
                             p{
-                                font-size: 1.6rem;
+                                font-size: 16px;
                             }
                             img{
                                 margin-top: 4px;
@@ -736,6 +736,9 @@
     .container{
         overflow-x: visible;
         .title{
+            h2{
+                text-transform: uppercase;
+            }
             h2,p{
                 max-width: 45rem;
             }
@@ -774,14 +777,15 @@
             .title{
                 h2{
                     font-size: 2.8rem;
+                    max-width: 100%;
                 }
                 p{
-                    font-size: 1.6rem;
+                    font-size: 16px;
                 }
             }
         }
     }
-    @media (max-width: 480px){
+    @media (max-width: 560px){
         padding-top: 6rem;
         padding-bottom: 0px;
         .container{
@@ -791,7 +795,7 @@
                 h2{
                     text-transform: none;
                     text-align: center;
-                    max-width: 29rem;
+                    max-width: 100%;
                 }
                 p, img{
                     display: none;
@@ -799,7 +803,7 @@
                 h6{
                     display: block;
                     font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 2.4rem;
                     line-height: 112%;
                     text-align: center;
