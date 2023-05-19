@@ -991,6 +991,14 @@
         }
     }
 }
+// Prevent scroll body when modal is open
+body{
+    &.show-modal, &.show-modal-insurance{
+        overflow-y: hidden;
+        height: 100vh;
+        padding-right: 15px; /* Avoid width reflow */
+    }
+}
 // Modal
 .modal{
     position: fixed;

@@ -5,7 +5,7 @@ const btnCloseModal = document.querySelector('.js-close');
 if(btnOpenModal){
   btnOpenModal.addEventListener('click', (Event) => {
     Event.preventDefault();
-    let html = document.documentElement;
+    let html = document.body;
      // add the class to the html (not to the specific element)
      html.classList.add('show-modal'); // selecting
   })
@@ -13,7 +13,7 @@ if(btnOpenModal){
 if (btnCloseModal){
   btnCloseModal.addEventListener('click', (Event) => {
     Event.preventDefault();
-    let html = document.documentElement;
+    let html = document.body;
      // add the class to the html (not to the specific element)
      html.classList.remove('show-modal'); // selecting
   })
@@ -24,7 +24,7 @@ const btnCloseModalInsurance = document.querySelector('.js-close-insurance');
 if(btnOpenModalInsurance){
   btnOpenModalInsurance.addEventListener('click', (Event) => {
     Event.preventDefault();
-    let html = document.documentElement;
+    let html = document.body;
      // add the class to the html (not to the specific element)
      html.classList.add('show-modal-insurance'); // selecting
   })
@@ -32,7 +32,7 @@ if(btnOpenModalInsurance){
 if (btnCloseModalInsurance){
   btnCloseModalInsurance.addEventListener('click', (Event) => {
     Event.preventDefault();
-    let html = document.documentElement;
+    let html = document.body;
      // add the class to the html (not to the specific element)
      html.classList.remove('show-modal-insurance'); // selecting
   })
