@@ -165,7 +165,7 @@ footer{
         }
     }
     // Responsive
-    @media (max-width: 998px){
+    @media (max-width: 1200px){
         .container{
             .main-footer{
                 justify-content: flex-start;
@@ -175,7 +175,7 @@ footer{
             }
             .bottom-footer{
                 p{
-                    max-width: 550px;
+                    max-width: 58rem;
                 }
             }
         }
@@ -207,7 +207,7 @@ footer{
             }
         }
     }
-    @media (max-width: 740px){
+    @media (max-width: 780px){
         padding-top: 2rem;
         .container{
             .top-footer{

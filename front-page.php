@@ -43,7 +43,7 @@
         <li class="item-card" data-aos="fade-left" data-aos-delay="0" data-aos-once="true">
           <a href="#s-insurance">
             <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i>
-            <span>Others ...</span>
+            <span>Check Others</span>
           </a>
         </li>
       </ul>

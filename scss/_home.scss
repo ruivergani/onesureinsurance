@@ -28,7 +28,7 @@
             h1{
                 font-family: 'IBM Plex Sans', sans-serif;
                 font-weight: 700;
-                font-size: 8.8rem;
+                font-size: 80px;
                 line-height: 100%;
                 letter-spacing: -0.02em;
                 color: $white;
@@ -37,7 +37,7 @@
                 padding-bottom: 1.5rem;
                 font-family: 'IBM Plex Sans';
                 font-weight: 300;
-                font-size: 4rem;
+                font-size: 38px;
                 line-height: 100%;
                 letter-spacing: -0.01em;
                 color: $white;
@@ -46,12 +46,12 @@
         }
         ul{
             width: 100%;
-            max-width: 85rem;
+            max-width: 88rem;
             margin-top: 5.5rem;
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
-            gap: 2.5rem;
+            gap: 2rem;
             li{
                 width: 100%;
                 max-width: 15rem;
@@ -74,7 +74,7 @@
                     span{
                         font-family: 'Inter', sans-serif;
                         font-weight: 400;
-                        font-size: 1.5rem;
+                        font-size: 15px;
                         line-height: 1.8rem;
                         text-align: center;
                         color: $brand-black;
@@ -100,10 +100,10 @@
         .container{
             .heading{
                 h1{
-                    font-size: 6.8rem;
+                    font-size: 68px;
                 }
                 h2{
-                    font-size: 3.3rem;
+                    font-size: 33px;
                 }
             }
         }
@@ -112,6 +112,11 @@
         padding-top: 6rem;
         height: 85rem;
         .container{
+            .heading{
+                h1{
+                    font-size: 62px;
+                }
+            }
             ul{
                 margin-top: 4rem;
                 display: grid;
@@ -122,6 +127,13 @@
                 .item-card{
                     max-width: 90%;
                 }
+                li{
+                    a{
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -129,12 +141,12 @@
         .container{
             .heading{
                 h1{
-                    font-size: 4.3rem;
+                    font-size: 43px;
                     text-align: center;
                     width: 100%;
                 }
                 h2{
-                    font-size: 2.5rem;
+                    font-size: 25px;
                     text-align: center;
                     font-weight: 400;
                 }
@@ -155,7 +167,7 @@
                             font-size: 1.8em;
                         }
                         span{
-                            font-size: 1.4rem;
+                            font-size: 15px;
                         }
                     }
                 }
@@ -305,18 +317,19 @@
     }
 
     // Responsive
-    @media (max-width: 1150px){
+    @media (max-width: 1250px){
         .all-cards{
             gap: 1rem;
             .card-01, .card-02, .card-03{
-                min-width: 30rem;
+                min-width: 280px;
+                padding: 0px 4rem;
             }
         }
     }
     @media (max-width: 1063px){
         .all-cards{
             .card-03, .card-02, .card-01{
-                padding: 0px 5rem;
+                padding: 0px 4rem;
             }
         }
     }
@@ -462,11 +475,16 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 6rem 3.2rem;
-            
-            
         }
     }
     // Responsive
+    @media (max-width: 1200px){
+        .container{
+            .all-cards-type{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
     @media (max-width: 991px){
         .container{
             .all-cards-type{

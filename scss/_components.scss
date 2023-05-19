@@ -211,7 +211,7 @@
         padding-left: 2.5rem;
         h4{
             font-family: 'Inter', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 1.8rem;
             line-height: 2.2rem;
             /* brand/dark-blue */
@@ -343,7 +343,7 @@
             margin-bottom: 2rem;
             margin-top: 3rem;
             font-family: 'Inter', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 1.8rem;
             line-height: 2.2rem;
             color: $brand-black;
@@ -413,7 +413,7 @@
         left: 10px;
         h6{
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 1.8rem;
             line-height: 120%;
             color: $brand-dark-blue;
@@ -517,7 +517,7 @@
         border-end-start-radius: 4px;
         h6{
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 1.8rem;
             line-height: 120%;
             color: $brand-dark-blue;
@@ -539,7 +539,7 @@
             transition: all .3s ease;
             span{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 1.4rem;
                 line-height: 120%;
                 text-decoration-line: underline;
@@ -600,7 +600,7 @@
         flex: 1;
         h4{
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 3rem;
             line-height: 120%;
             color: $grey-600;
@@ -678,7 +678,7 @@
         line-height: 175%;
     }
     h6{
-        font-weight: 600;
+        font-weight: 500;
         font-size: 1.8rem;
         margin-top: 1.5rem;
     }
@@ -809,8 +809,10 @@
     width: 100%;
     max-width: 121.6rem;
     height: 17.9rem;
-    padding-left: 7rem;
+    padding-left: 6rem;
     background-image: url(../assets/bg/bg-cta-lg.jpg);
+    background-size: cover;
+    object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -821,7 +823,7 @@
         max-width: 79.7rem;
         span{
             font-family: 'Inter', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 1.4rem;
             line-height: 150%;
             color: $brand-dark-blue;
@@ -839,27 +841,30 @@
     }
     // Responsive
     @media (max-width: 1150px){
-        gap: 3rem;
-        padding-left: 2rem;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        padding: 0rem 3rem;
         .text{
-            span{
-                display: none;
-                pointer-events: none;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            gap: 5px;
+            max-width: 70rem;
             h3{
                 margin-top: 0px;
                 text-align: center;
             }
         }
     }
-    @media (max-width: 991px){
-        padding-left: 1rem;
-        gap: 3rem;
+    @media (max-width: 1030px){
+        padding: 0px 2rem;
         height: 15rem;
-        justify-content: center;
         border-radius: 3rem;
         .text{
-            max-width: 36rem;
+            max-width: 57rem;
             h3{
                 font-size: 2.6rem;
             }
@@ -869,7 +874,13 @@
             }
         }
     }
-    @media (max-width: 600px){
+    @media (max-width: 880px){
+        gap: 1rem;
+        .text{
+            max-width: 50rem;
+        }
+    }
+    @media (max-width: 760px){
         height: auto;
         flex-direction: column;
         align-items: center;
@@ -891,7 +902,7 @@
             span{
                 display: block;
                 font-family: "Poppins", sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 2.4rem;
                 line-height: 112%;
                 text-align: center;
@@ -918,7 +929,7 @@
         max-width: 36rem;
         h3{
             font-family: 'Poppins', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 3rem;
             line-height: 120%;
             color: $white;
@@ -1017,7 +1028,7 @@
         }
         span{
             font-family: 'Inter', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 1.4rem;
             line-height: 130%;
             letter-spacing: 0.12em;
@@ -1081,7 +1092,7 @@
     }
     h2{
         font-family: 'Poppins', sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 3.6rem;
         line-height: 112%;
         letter-spacing: -1px;
@@ -1104,6 +1115,8 @@
 }
 // Modal List of Insurance
 .modal-list-insurance{
+    display: none !important;
+    pointer-events: none;
     position: fixed;
     top: -10rem;
     left: 0;
@@ -1212,7 +1225,7 @@
                                 }
                                 h3{
                                     font-family: 'Inter', sans-serif;
-                                    font-weight: 600;
+                                    font-weight: 500;
                                     font-size: 20px;
                                     line-height: 22px;
                                     text-align: center;
@@ -1264,6 +1277,55 @@
                     height: max-content;
                     border-right: 1px solid #E0E0E0;
                     padding-right: 50px;
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 930px){
+        .modal-dialog{
+            max-width: 800px;
+            .modal-content{
+                .modal-body{
+                    gap: 30px;
+                    .left-column{
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 830px){
+        // make it one collum layout
+        .modal-dialog{
+            max-width: 450px;
+            padding-top: 4rem;
+            padding-bottom: 5rem;
+            .modal-content{
+                .modal-header{
+                    .modal-title{
+                        font-size: 24px;
+                    }
+                    .close{
+                        right: 16px;
+                        top: -25px;
+                    }
+                }
+                .modal-body{
+                    gap: 40px;
+                    flex-direction: column;
+                    max-height: 480px;
+                    padding-top: 20px;
+                    display: block;
+                    .left-column{
+                        padding-right: 0px;
+                        height: auto;
+                        border-right: 0px;
+                        padding-bottom: 40px;
+                    }
+                    ul{
+                        gap: 40px;
+                    }
                 }
             }
         }
