@@ -344,15 +344,15 @@ if(listTopics2){
 
 // Script for Swipper Slide Logos
 var swiper = new Swiper(".slide-logos", {
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 32,
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 60,
+      spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2.3,
+      slidesPerView: 1,
       spaceBetween: 30,
     },
     1200: {
