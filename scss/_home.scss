@@ -220,6 +220,7 @@
         border-radius: 0.6rem;
         padding: 5rem !important;
         text-align: center;
+        overflow-y: hidden;
     }
     // Responsive
     @media (max-width: 1160px){
@@ -235,6 +236,18 @@
     }
     @media (max-width: 600px){
         margin-top: -10rem;
+    }
+    @media (max-width: 480px){
+        .container{
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            padding-left: 0px;
+            padding-right: 0px;
+            .tp-widget-wrapper {
+                min-width: 100%;
+            }
+        }
+ 
     }
 }
 // Section Call Us
