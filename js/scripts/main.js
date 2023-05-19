@@ -18,6 +18,25 @@ if (btnCloseModal){
      html.classList.remove('show-modal'); // selecting
   })
 }
+// Configure modal list of insurance
+const btnOpenModalInsurance = document.querySelector('.js-open-modal-insurance');
+const btnCloseModalInsurance = document.querySelector('.js-close-insurance');
+if(btnOpenModalInsurance){
+  btnOpenModalInsurance.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.documentElement;
+     // add the class to the html (not to the specific element)
+     html.classList.add('show-modal-insurance'); // selecting
+  })
+}
+if (btnCloseModalInsurance){
+  btnCloseModalInsurance.addEventListener('click', (Event) => {
+    Event.preventDefault();
+    let html = document.documentElement;
+     // add the class to the html (not to the specific element)
+     html.classList.remove('show-modal-insurance'); // selecting
+  })
+}
 
 // Configure the modal Support
 const btnOpenModalSupport = document.querySelector('.js-open-modal-support');

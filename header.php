@@ -98,7 +98,7 @@
       <div class="modal-content">
         <!-- === HEADER MODAL === -->
         <div class="modal-header">
-          <button class="close js-close">
+          <button class="close js-close-insurance">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-modal.svg" alt="close button"  title="close button">
           </button>
           <h2 class="modal-title">Select an Insurance Type!</h2>
@@ -111,7 +111,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-car"></i>
-                  <h3>Motor Trade Insurance l</h3>
+                  <h3>Motor Trade Insurance</h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -130,7 +130,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-van-shuttle"></i>
-                  <h3>Van Insurance l</h3>
+                  <h3>Van Insurance </h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -149,7 +149,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-motorcycle"></i>
-                  <h3>Motorbike Insurance 01 l</h3>
+                  <h3>Motorbike Insurance 01</h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -168,7 +168,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-motorcycle"></i>
-                  <h3>Motorbike Insurance 02 l</h3>
+                  <h3>Motorbike Insurance 02</h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -189,7 +189,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-truck-front"></i>
-                  <h3>HGV & Lorry Insurance r</h3>
+                  <h3>HGV & Lorry Insurance</h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -208,7 +208,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-house"></i>
-                  <h3>Home Insurance r</h3>
+                  <h3>Home Insurance</h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -227,7 +227,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-person-biking"></i>
-                  <h3>Scooter Insurance 01 r</h3>
+                  <h3>Scooter Insurance 01</h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -246,7 +246,7 @@
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
                   <i class="fa-solid fa-person-biking"></i>
-                  <h3>Scooter Insurance 02 r</h3>
+                  <h3>Scooter Insurance</h3>
                 </div>
                 <div class="buttons-modal">
                   <a href="" class="btn-get-quote">
@@ -513,7 +513,7 @@
           </li>
         </ul>
         <!-- Action Button -->
-        <button class="btn btn-primary js-open-modal">
+        <button class="btn btn-primary js-open-modal-insurance">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
           GET A QUOTE
         </button>
