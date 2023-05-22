@@ -62,72 +62,12 @@
     <div class="container">
       <h3>We pay out on 99% of Car Insurance claims.</h3>
       <div class="t-pilot">
-        Section to be developed later
+        <!-- TrustBox widget - Carousel --> 
+        <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="55e56b2c0000ff000582d042" data-style-height="140px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en"> <a href="https://www.trustpilot.com/review/onesureinsurance.co.uk" target="_blank" rel="noopener">Trustpilot</a> </div> 
+        <!-- End TrustBox widget -->
       </div>
     </div>
   </section>
-
-  <!-- Section Product -->
-  <section class="s-slide-product">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('mobile_title_section_product_slide_goods_insurance') ?></h6>
-        <h4><?php the_field('title_section_product_slide_goods_insurance') ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-product">
-        <div class="swiper-wrapper">
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('card_product_slide_goods_insurance') ): while ( have_rows('card_product_slide_goods_insurance') ) : the_row(); ?>
-            <div class="swiper-slide">
-              <!-- Card Product Type -->
-              <a href="<?php the_sub_field('card_link_goods_insurance') ?>" class="card-product">
-                <div class="image">
-                    <img src="<?php the_sub_field('image_card_goods_insurance') ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                    <h6><?php the_sub_field('card_title_goods_insurance') ?></h6>
-                    <p><?php the_sub_field('subtitle_card_goods_insurance') ?></p>
-                    <div class="learn-more">
-                        <span>Learn more</span>
-                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
-                    </div>
-                </div>
-              </a>
-            </div>
-          <?php endwhile; else : endif;?>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section CTA Desktop -->
-  <div class="s-newsletter">
-    <div class="container">
-      <a href="<?php the_field('link_cta_goods_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
-        <div class="text">
-            <span><?php the_field('subtitle_cta_goods_insurance') ?></span>
-            <h3><?php the_field('title_cta_goods_insurance') ?></h3>
-        </div>
-        <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
-        </button>
-      </a>
-    </div>
-  </div>
 
   <!-- Section Company Logos -->
   <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
@@ -231,6 +171,68 @@
       </ul>
     </div>
   </section>
+
+  <!-- Section Product -->
+  <section class="s-slide-product">
+    <div class="container">
+      <div class="top">
+        <h6><?php the_field('mobile_title_section_product_slide_goods_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_slide_goods_insurance') ?></h4>
+        <div class="ctrl-slide">
+          <!-- Swipper pagination structure -->
+          <div class="swiper-pagination"></div>
+          <div class="ctrl">
+            <button class="btn-prev">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
+            </button>
+            <button class="btn-next">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper slide structure -->
+      <div class="slide-product">
+        <div class="swiper-wrapper">
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('card_product_slide_goods_insurance') ): while ( have_rows('card_product_slide_goods_insurance') ) : the_row(); ?>
+            <div class="swiper-slide">
+              <!-- Card Product Type -->
+              <a href="<?php the_sub_field('card_link_goods_insurance') ?>" class="card-product">
+                <div class="image">
+                    <img src="<?php the_sub_field('image_card_goods_insurance') ?>" alt="card product page" title="card product page">
+                </div>
+                <div class="info">
+                    <h6><?php the_sub_field('card_title_goods_insurance') ?></h6>
+                    <p><?php the_sub_field('subtitle_card_goods_insurance') ?></p>
+                    <div class="learn-more">
+                        <span>Learn more</span>
+                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
+                    </div>
+                </div>
+              </a>
+            </div>
+          <?php endwhile; else : endif;?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CTA Desktop -->
+  <div class="s-newsletter">
+    <div class="container">
+      <a href="<?php the_field('link_cta_goods_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+            <span><?php the_field('subtitle_cta_goods_insurance') ?></span>
+            <h3><?php the_field('title_cta_goods_insurance') ?></h3>
+        </div>
+        <button class="btn btn-primary">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
+  </div>
 
   <!-- Section Bespoke -->
   <section class="s-bespoke" id="s-why-us">

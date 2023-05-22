@@ -63,72 +63,12 @@
     <div class="container">
       <h3>We pay out on 99% of Car Insurance claims.</h3>
       <div class="t-pilot">
-        Section to be developed later
+        <!-- TrustBox widget - Carousel --> 
+        <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="55e56b2c0000ff000582d042" data-style-height="140px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en"> <a href="https://www.trustpilot.com/review/onesureinsurance.co.uk" target="_blank" rel="noopener">Trustpilot</a> </div> 
+        <!-- End TrustBox widget -->
       </div>
     </div>
   </section>
-
-  <!-- Section Product -->
-  <section class="s-slide-product">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('mobile_title_section_product_hgv_recovery_truck_insurance') ?></h6>
-        <h4><?php the_field('title_section_product_hgv_recovery_truck_insurance') ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-product">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('card_product_slide_hgv_recovery_truck_insurance') ): while ( have_rows('card_product_slide_hgv_recovery_truck_insurance') ) : the_row(); ?>
-              <!-- Card Product Type -->
-              <a href="<?php the_sub_field('card_link_hgv_recovery_truck_insurance') ?>" class="card-product">
-                <div class="image">
-                    <img src="<?php the_sub_field('card_image_hgv_recovery_truck_insurance') ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                    <h6><?php the_sub_field('card_title_hgv_recovery_truck_insurance') ?></h6>
-                    <p><?php the_sub_field('card_subtitle_hgv_recovery_truck_insurance') ?></p>
-                    <div class="learn-more">
-                        <span>Learn more</span>
-                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
-                    </div>
-                </div>
-              </a>
-            <?php endwhile; else : endif;?>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Newsletter -->
-  <div class="s-newsletter">
-    <div class="container">
-      <a href="<?php the_field('link_cta_hgv_recovery_truck_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
-        <div class="text">
-          <span><?php the_field('subtitle_cta_hgv_recovery_truck_insurance') ?></span>
-          <h3><?php the_field('title_cta_hgv_recovery_truck_insurance') ?></h3>
-        </div>
-        <button class="btn btn-primary">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
-        </button>
-      </a>
-    </div>
-  </div>
 
   <!-- Section Company Logos -->
   <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
@@ -233,31 +173,93 @@
     </div>
   </section>
 
-  <!-- Section Why Us -->
-  <section class="s-bespoke" id="s-why-us">
-      <div class="container">
-        <div class="text-top">
-          <h6><?php the_field('mobile_title_section_why_us_hgv_recovery_truck_insurance') ?></h6>
-          <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_why_us_hgv_recovery_truck_insurance') ?></h4>
-          <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_why_us_hgv_recovery_truck_insurance') ?></p>
-        </div>
-        <div class="main-bespoke">
-          <div class="text-bottom" data-aos="fade-right" data-aos-once="true">
-            <ul>
-               <!-- Repeater --> 
-               <?php if( have_rows('cards_section_why_us_hgv_recovery_truck_insurance') ): while ( have_rows('cards_section_why_us_hgv_recovery_truck_insurance') ) : the_row(); ?>
-                <!-- Card -->
-                <li>
-                  <img src="<?php the_sub_field('card_icon_hgv_recovery_truck_insurance') ?>" alt="icon house" title="icon house">
-                  <h5><?php the_sub_field('card_title_hgv_recovery_truck_insurance') ?></h5>
-                  <p><?php the_sub_field('card_subtitle_hgv_recovery_truck_insurance') ?></p>
-                </li>
-              <?php endwhile; else : endif;?>
-            </ul>
+  <!-- Section Product -->
+  <section class="s-slide-product">
+    <div class="container">
+      <div class="top">
+        <h6><?php the_field('mobile_title_section_product_hgv_recovery_truck_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_hgv_recovery_truck_insurance') ?></h4>
+        <div class="ctrl-slide">
+          <!-- Swipper pagination structure -->
+          <div class="swiper-pagination"></div>
+          <div class="ctrl">
+            <button class="btn-prev">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
+            </button>
+            <button class="btn-next">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
+            </button>
           </div>
-          <img src="<?php the_field('image_section_why_us_hgv_recovery_truck_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
         </div>
       </div>
+      <!-- Swiper slide structure -->
+      <div class="slide-product">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('card_product_slide_hgv_recovery_truck_insurance') ): while ( have_rows('card_product_slide_hgv_recovery_truck_insurance') ) : the_row(); ?>
+              <!-- Card Product Type -->
+              <a href="<?php the_sub_field('card_link_hgv_recovery_truck_insurance') ?>" class="card-product">
+                <div class="image">
+                    <img src="<?php the_sub_field('card_image_hgv_recovery_truck_insurance') ?>" alt="card product page" title="card product page">
+                </div>
+                <div class="info">
+                    <h6><?php the_sub_field('card_title_hgv_recovery_truck_insurance') ?></h6>
+                    <p><?php the_sub_field('card_subtitle_hgv_recovery_truck_insurance') ?></p>
+                    <div class="learn-more">
+                        <span>Learn more</span>
+                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
+                    </div>
+                </div>
+              </a>
+            <?php endwhile; else : endif;?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Newsletter -->
+  <div class="s-newsletter">
+    <div class="container">
+      <a href="<?php the_field('link_cta_hgv_recovery_truck_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+          <span><?php the_field('subtitle_cta_hgv_recovery_truck_insurance') ?></span>
+          <h3><?php the_field('title_cta_hgv_recovery_truck_insurance') ?></h3>
+        </div>
+        <button class="btn btn-primary">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Section Why Us -->
+  <section class="s-bespoke" id="s-why-us">
+    <div class="container">
+      <div class="text-top">
+        <h6><?php the_field('mobile_title_section_why_us_hgv_recovery_truck_insurance') ?></h6>
+        <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_why_us_hgv_recovery_truck_insurance') ?></h4>
+        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_why_us_hgv_recovery_truck_insurance') ?></p>
+      </div>
+      <div class="main-bespoke">
+        <div class="text-bottom" data-aos="fade-right" data-aos-once="true">
+          <ul>
+              <!-- Repeater --> 
+              <?php if( have_rows('cards_section_why_us_hgv_recovery_truck_insurance') ): while ( have_rows('cards_section_why_us_hgv_recovery_truck_insurance') ) : the_row(); ?>
+              <!-- Card -->
+              <li>
+                <img src="<?php the_sub_field('card_icon_hgv_recovery_truck_insurance') ?>" alt="icon house" title="icon house">
+                <h5><?php the_sub_field('card_title_hgv_recovery_truck_insurance') ?></h5>
+                <p><?php the_sub_field('card_subtitle_hgv_recovery_truck_insurance') ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
+        <img src="<?php the_field('image_section_why_us_hgv_recovery_truck_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
+      </div>
+    </div>
   </section>
 
   <!-- Section FAQs -->
