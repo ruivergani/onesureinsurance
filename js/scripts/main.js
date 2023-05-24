@@ -1,44 +1,3 @@
-// Configure Active Tab Navigation based on scroll
-$(document).ready(function () {
-
-  $(document).on("scroll", onScroll);
-
-  //smoothscroll
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
-    $('a').each(function () {
-      $(this).removeClass('active');
-    })
-    $(this).addClass('active');
-  
-    var target = this.hash,
-      menu = target;
-    target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': target.offset().top - 250
-    }, 500, 'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
-    });
-  });
-});
-
-function onScroll(event){
-  var scrollPos = $(document).scrollTop();
-  $('#js-nav-product a').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
-    if ((refElement.position().top - 250) <= scrollPos && (refElement.position().top - 200) + refElement.height() > scrollPos) {
-      $('#js-nav-product li a').removeClass("active");
-      currLink.addClass("active");
-    }
-    else{
-      currLink.removeClass("active");
-    }
-  });
-}
-
 // Configure the modal
 const btnOpenModal = document.querySelector('.js-open-modal');
 const btnCloseModal = document.querySelector('.js-close');
@@ -614,3 +573,70 @@ btnMenu.forEach((btn, index) => {
     MenuDropdown[index].classList.add('active');
   })
 });
+
+
+// Configure Active Tab Navigation based on scroll
+// $(document).ready(function () {
+
+//   $(document).on("scroll", onScroll);
+
+//   //smoothscroll
+//   $('a[href^="#"]').on('click', function (e) {
+//     e.preventDefault();
+//     $(this).addClass('active');
+//     $(document).off("scroll");
+//     $('a').each(function () {
+//       $(this).removeClass('active');
+//     })
+//     $(this).addClass('active');
+  
+//     var target = this.hash, menu = target;
+//     target = $(target);
+//     $('html, body').stop().animate({
+//       'scrollTop': target.offset().top - 200
+//     }, 500, 'swing', function () {
+//       window.location.hash = target;
+//       $(document).on("scroll", onScroll);
+//     });
+//   });
+// });
+
+// function onScroll(event){
+//   var scrollPos = $(document).scrollTop();
+//   $('#js-nav-product li a').each(function () {
+//     var currLink = $(this);
+//     var target = currLink.attr("href");
+//     var refElement = $(target);
+
+//     if ((refElement.position().top - 250) <= scrollPos && (refElement.position().top - 230) + refElement.height() > scrollPos) {
+//       $('#js-nav-product li a').removeClass("active");
+//       currLink.addClass("active");
+//     }
+//     else{
+//       currLink.removeClass("active");
+//     }
+//   });
+// };
+
+const navLi = document.querySelectorAll('.js-nav-product li a');
+const sections = document.querySelectorAll('section');
+
+if(navLi.length && sections.length){
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      let sectionTop = section.offsetTop;
+      if (scrollY >= sectionTop - 160) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLi.forEach(li => {
+      li.classList.remove('active');
+      const currentLink = document.querySelector('.js-nav-product li a[href*="' + current + '"]');
+      if (currentLink) {
+        currentLink.classList.add('active');
+      }
+    });
+    
+  });
+}

@@ -83,18 +83,18 @@
             <p>Insurance Overview</p>
           </a>
         </li>
+         <li class="js-item-content">
+          <a href="#extras">
+            <p>Optional Extras</p>
+          </a>
+        </li>
         <li class="js-item-content">
           <a href="#types">
             <p>Personal</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#whyus">
+          <a href="#why">
             <p>Why Choose Us?</p>
           </a>
         </li>
@@ -224,7 +224,7 @@
   </section>
 
   <!-- Section CTA  -->
-  <div class="s-newsletter" id="s-cta">
+  <div class="s-newsletter" id="cta">
     <div class="container">
       <a href="<?php the_field('link_cta_van_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
@@ -240,7 +240,7 @@
   </div>
 
   <!-- Section Bespoke -->
-  <section class="s-bespoke" id="whyus">
+  <section class="s-bespoke" id="why">
     <div class="container">
       <div class="text-top">
         <h6><?php the_field('mobile_title_section_why_us_van_insurance') ?></h6>
@@ -330,7 +330,7 @@
   </section>
 
   <!-- Section CTA  -->
-  <div class="s-newsletter" id="s-cta">
+  <div class="s-newsletter" id="cta">
     <div class="container">
       <a href="<?php the_field('link_cta_van_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">

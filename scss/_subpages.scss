@@ -378,7 +378,7 @@
 }
 // Section Motor Trade Slide
 .s-slide-product{
-    scroll-margin-top: 27rem;
+    scroll-margin-top: 140px;
     background-color: $brand-light-blue;
     padding: 6rem 0rem;
     .container{
@@ -518,7 +518,7 @@
 }
 // Section Bespoke
 .s-bespoke{
-    scroll-margin-top: 215px;
+    scroll-margin-top: 150px;
     background: url(../assets/bg/bg-bespoke.jpg) no-repeat left top;
     padding-top: 6rem;
     padding-bottom: 3rem;
@@ -891,7 +891,7 @@
 }
 // Section Content
 .s-content{
-    scroll-margin-top: 18rem;
+    scroll-margin-top: 140px;
     padding-bottom: 6rem;
     .container{
         .tab-product-content{
@@ -1050,7 +1050,7 @@
 }
 // Section Cover
 .s-cover{
-    scroll-margin-top: 16rem;
+    scroll-margin-top: 140px;
     border-top: 0.2rem solid #F0F4F9;
     padding: 6rem 0rem;
     .container{
@@ -1138,7 +1138,7 @@
 // Section Optional Extras
 .s-extras-opt{
     padding-bottom: 6rem;
-    scroll-margin-top: 27rem;
+    scroll-margin-top: 170px;
     .container{
         border-top: 0.2rem solid #f0f4f9;
         display: flex;
@@ -1320,7 +1320,7 @@
     padding-bottom: 6rem !important;
 }
 .s-faqs{
-    scroll-margin-top: 17rem;
+    scroll-margin-top: 140px;
     padding-top: 3rem;
     .container{
         display: flex;
@@ -1341,10 +1341,11 @@
             gap: 3rem;
             width: 100%;
             max-width: 110rem;
+            transition: all .5s ease-in-out !important;
             .question{
                 width: 100%;
                 background-color: $white;
-                transition: all .3s;
+                transition: all .5s ease-in-out !important;
                 border: 0.25rem solid rgb(240, 244, 249);
                 border-radius: 0.6rem;
                 .title{
@@ -1357,7 +1358,7 @@
                     padding-left: 4rem;
                     padding-right: 4rem;
                     border-radius: 4px;
-                    transition: all .3s ease-in-out; 
+                    transition: all .5s ease-in-out; 
                     cursor: pointer;
                     strong{
                         font-family: 'Poppins', sans-serif;
@@ -1365,7 +1366,7 @@
                         font-size: 1.8rem;
                         line-height: 130%;
                         color: $grey-600;
-                        transition: all .3s ease-in-out;
+                        transition: all .5s ease-in-out;
                         @media (max-width: 480px){
                             font-size: 16px;
                         }
@@ -1373,7 +1374,7 @@
                     i{
                         font-size: 2rem;
                         color: $brand-blue;
-                        transition: transform .3s ease-in-out;
+                        transition: transform .5s ease-in-out;
                     }
                     &:hover{
                         background-color: rgba(0, 69, 158, 0.2);
@@ -1390,6 +1391,7 @@
                     padding-left: 4rem;
                     padding-right: 2rem;
                     border-radius: 0.4rem;
+                    transition: all .5s ease-in-out !important;
                     padding-top: 2rem;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 400;
@@ -1474,12 +1476,12 @@
                 // JS open FAQs
                 &.active{
                     height: auto;
+                    transition: all .5s ease-in-out !important;
                     .title{
                         border-bottom-left-radius: 0px;
                         border-bottom-right-radius: 0px;
                         strong{
                             color: $brand-blue;
-
                         }
                         i{
                             transform: rotate(180deg);
@@ -1488,7 +1490,7 @@
                     .question-content{
                         display: block;
                         pointer-events: all;
-                        animation: fadeLeft .3s forwards
+                        animation: fadeLeft .5s forwards;
                     }
                 }
             }

@@ -153,7 +153,7 @@ function breadcrumbs($id = null){
                     </li>
                 <?php endif; ?>
                 <li>
-                    <a href="#" aria-label="current page">
+                    <a href="<?php echo get_permalink() ?>" aria-label="current page">
                     <?php the_title(); ?>
                     </a>
                 </li>
