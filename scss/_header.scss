@@ -21,7 +21,7 @@
                 span{
                     font-family: 'Inter', sans-serif;
                     font-weight: 400;
-                    font-size: 1.4rem;
+                    font-size: 14px;
                     line-height: 100%;
                     color: $grey-600;
                     transition: all .3s;
@@ -114,7 +114,7 @@ header{
                         strong{
                             font-family: 'Poppins', sans-serif;
                             font-weight: 600;
-                            font-size: 1.5rem;
+                            font-size: 15px;
                             line-height: 2.2rem;
                             color: $brand-blue;
                             padding-bottom: 3rem;
@@ -131,7 +131,7 @@ header{
                                 a{
                                     font-family: 'Poppins', sans-serif;
                                     font-weight: 500;
-                                    font-size: 1.5rem;
+                                    font-size: 15px;
                                     line-height: 2.2rem;
                                     color: $brand-blue;
                                 }
@@ -190,7 +190,7 @@ header{
         align-items: center;
         justify-content: space-between;
         flex: 1;
-        max-width: 104.6rem;
+        max-width: 100rem;
         ul{
             display: flex;
             align-items: center;
@@ -203,7 +203,7 @@ header{
                     span{
                         font-family: 'Poppins', sans-serif;
                         font-weight: 400;
-                        font-size: 1.5rem;
+                        font-size: 15px;
                         line-height: 2.2rem;
                         color: $grey-600;
                         text-transform: uppercase;
@@ -358,7 +358,7 @@ header{
                             a{
                                 font-family: 'Poppins', sans-serif;
                                 font-weight: 500;
-                                font-size: 1.6rem;
+                                font-size: 16px;
                                 line-height: 2.2rem;
                                 color: $brand-blue;
                             }

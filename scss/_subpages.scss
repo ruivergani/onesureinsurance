@@ -90,7 +90,7 @@
 }
 // Section Hero Product
 .s-hero-product{
-    padding-top: 7rem;
+    padding-top: 6rem;
     background: url('../assets/bg/bg-product.webp') no-repeat center center;
     background-size: cover;
     height: 55rem;
@@ -378,6 +378,7 @@
 }
 // Section Motor Trade Slide
 .s-slide-product{
+    scroll-margin-top: 27rem;
     background-color: $brand-light-blue;
     padding: 6rem 0rem;
     .container{
@@ -742,27 +743,41 @@
             margin-bottom: 2rem;
             li{
                 a{
+                    display: inline-block;
+                    text-decoration: none;
                     p{
                         font-family: 'Inter', sans-serif;
                         font-weight: 400;
-                        font-size: 1.6rem;
+                        font-size: 16px;
                         line-height: 175%;
                         color: $grey-400;
                         transition: all .3s;
                         padding-bottom: 1rem;
                         transition: all 0.3s;
-                        border-bottom: 0.2rem solid transparent;
+                        border-bottom: 2px solid transparent;
                         &:hover{
-                            color: $brand-dark-blue;
-                            border-bottom: 2px solid rgba(198, 197, 206, 0.5);
+                            color: $brand-blue;
                         }
+                    }
+                    &::after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 2px;
+                        background: $brand-blue;
+                        transition: width .3s;
+                    }
+                    &:hover::after{
+                        width: 100%;
                     }
                     &.active{
+                        &::after{
+                            width: 100%;
+                        }
                         p{
-                            border-bottom: 2px solid rgba(198, 197, 206, 0.5);
+                            color: $brand-blue;
                         }
                     }
-                    
                 }
             }
         }
@@ -903,7 +918,7 @@
                     font-size: 16px;
                     line-height: 175%;
                     color: $grey-400;
-                    margin-right: 5px;
+                    margin-right: 3px;
                     margin-bottom: 1.6rem;
                 }
                 a{
@@ -1032,7 +1047,6 @@
             }
         }
     }
-    
 }
 // Section Cover
 .s-cover{

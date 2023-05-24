@@ -77,34 +77,29 @@
   <section class="s-table-contents">
     <div class="container">
       <!-- Navbar Tab -->
-      <ul class="js-nav-product">
+      <ul class="js-nav-product" id="js-nav-product">
         <li class="js-item-content">
-          <a href="#s-content" class="active" title="content section">
-            <p>Insurance overview</p>
+          <a href="#overview">
+            <p>Insurance Overview</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-content" title="benefits section">
+          <a href="#types">
             <p>Personal</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-content" title="commercial section">
-            <p>Commercial</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-why-us" title="why us section">
-            <p>Why Choose Us?</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-extras-opt" title="extra section">
+          <a href="#extras">
             <p>Optional Extras</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-faqs" title="faq section">
+          <a href="#whyus">
+            <p>Why Choose Us?</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#faqs">
             <p>FAQs</p>
           </a>
         </li>
@@ -149,10 +144,19 @@
   </section>
 
   <!-- Section Content -->
-  <?php include(TEMPLATEPATH .'/includes/page-insurance-content.php') ?>
+  <section class="s-content" id="overview" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+      <!-- Content Tab -->
+      <div class="tab-product-content">
+        <div class="text-content active">
+          <?php the_content(); ?>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
+  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_van_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_van_insurance') ?></h4>
@@ -174,7 +178,7 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product">
+  <section class="s-slide-product" id="types">
     <div class="container">
       <div class="top">
         <h6><?php the_field('mobile_title_section_product_slide_van_insurance') ?></h6>
@@ -220,7 +224,7 @@
   </section>
 
   <!-- Section CTA  -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" id="s-cta">
     <div class="container">
       <a href="<?php the_field('link_cta_van_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
@@ -236,7 +240,7 @@
   </div>
 
   <!-- Section Bespoke -->
-  <section class="s-bespoke" id="s-why-us">
+  <section class="s-bespoke" id="whyus">
     <div class="container">
       <div class="text-top">
         <h6><?php the_field('mobile_title_section_why_us_van_insurance') ?></h6>
@@ -263,7 +267,7 @@
   </section>
 
   <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
+  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h4><?php the_field('title_section_van_insurance') ?></h4>
       <div class="b-container">
@@ -326,7 +330,7 @@
   </section>
 
   <!-- Section CTA  -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" id="s-cta">
     <div class="container">
       <a href="<?php the_field('link_cta_van_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
