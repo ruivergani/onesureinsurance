@@ -574,50 +574,7 @@ btnMenu.forEach((btn, index) => {
   })
 });
 
-
-// Configure Active Tab Navigation based on scroll
-// $(document).ready(function () {
-
-//   $(document).on("scroll", onScroll);
-
-//   //smoothscroll
-//   $('a[href^="#"]').on('click', function (e) {
-//     e.preventDefault();
-//     $(this).addClass('active');
-//     $(document).off("scroll");
-//     $('a').each(function () {
-//       $(this).removeClass('active');
-//     })
-//     $(this).addClass('active');
-  
-//     var target = this.hash, menu = target;
-//     target = $(target);
-//     $('html, body').stop().animate({
-//       'scrollTop': target.offset().top - 200
-//     }, 500, 'swing', function () {
-//       window.location.hash = target;
-//       $(document).on("scroll", onScroll);
-//     });
-//   });
-// });
-
-// function onScroll(event){
-//   var scrollPos = $(document).scrollTop();
-//   $('#js-nav-product li a').each(function () {
-//     var currLink = $(this);
-//     var target = currLink.attr("href");
-//     var refElement = $(target);
-
-//     if ((refElement.position().top - 250) <= scrollPos && (refElement.position().top - 230) + refElement.height() > scrollPos) {
-//       $('#js-nav-product li a').removeClass("active");
-//       currLink.addClass("active");
-//     }
-//     else{
-//       currLink.removeClass("active");
-//     }
-//   });
-// };
-
+// Configure tab navigation based on scroll
 const navLi = document.querySelectorAll('.js-nav-product li a');
 const sections = document.querySelectorAll('section');
 
