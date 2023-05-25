@@ -781,7 +781,8 @@
         top: 8rem;
     }
     @media (max-width: 991px){
-        position: initial; // reset the sticky position (mobile not recommended)
+        padding-top: 2rem;
+        background-color: $white;
         .container{
             overflow-x: visible;
             .js-nav-product{
@@ -791,7 +792,6 @@
                 display: block;
                 position: relative;
                 margin-bottom: 2rem;
-                position: sticky;
                 // make active the dropdown select option
                 &.active{
                     .item-selected{
