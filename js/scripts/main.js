@@ -58,15 +58,6 @@ if (btnCloseModalSupport){
   })
 }
 
-// Script for the Mobile Button
-const btnDropdownSelect = document.querySelector('.js-open-select-custom');
-const dropdownArea = document.querySelector('.select-custom');
-if(btnDropdownSelect){
-  btnDropdownSelect.addEventListener('click', () => {
-    dropdownArea.classList.toggle('active');
-  });
-}
-
 // Script for the mobile sub menu
 const btnMobileSubMenu = document.querySelectorAll('.js-mobile-menu-item');
 const subMenuDropdownArea = document.querySelectorAll('.js-menu-dropdown-mobile');
@@ -577,7 +568,7 @@ if (navLi.length && sections.length) {
       const currentLink = document.querySelector('.js-nav-product li a[href*="' + current + '"]');
       if (currentLink) {
         currentLink.classList.add('active');
-        window.location.hash = current;
+        //window.location.hash = current;
       }
     });
   });
@@ -598,4 +589,22 @@ if (navLi.length && sections.length) {
       }
     });
   });
+}
+
+// Script for the mobile tab navigation
+const btnDropdownSelect = document.querySelector('.js-open-select-custom');
+const dropdownArea = document.querySelector('.select-custom');
+const navMobileLink = document.querySelectorAll('.dropdown-select li a');
+console.log(navMobileLink);
+if(btnDropdownSelect){
+  btnDropdownSelect.addEventListener('click', () => {
+    dropdownArea.classList.toggle('active');
+  });
+
+ navMobileLink.forEach(item => {
+  item.classList.remove('active');
+  item.addEventListener('click', (event) => {
+    dropdownArea.classList.remove('active');
+  })
+ })
 }

@@ -723,7 +723,7 @@
     left: 0;
     background-color: $white;
     .container{
-        border-bottom: 1px solid rgba(198, 197, 206, 0.5);
+        border-bottom: 2px solid #f0f4f9;
         // Navigation Desktop
         .js-nav-product{
             display: flex;
@@ -814,14 +814,14 @@
                     display: flex; 
                     align-items: center;
                     span{
-                        color: #7a7d80;
-                        opacity: 0.6;
+                        color: $brand-blue;
+                        opacity: 0.9;
                         font-size: 1.6rem;
                         margin-right: 0.4rem;
                     }
                     strong{
                         font-size: 1.6rem;
-                        color: #7a7d80;
+                        color: $brand-blue;
                         font-weight: 600;
                     }   
                 }
@@ -833,7 +833,10 @@
                     border: 0.1rem solid #a0afba;
                     background-color: white;
                     border-top: 0;
-                    padding: 2.1rem;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
                     top: 5.6rem;
                     // configuration for JS (open/close dropdown)
                     opacity: 0;
@@ -856,6 +859,13 @@
                         border-radius: 0.5rem;
                     }
                     li{
+                        &.active{
+                            p{
+                                color: $brand-blue;
+                                font-size: 16px;
+                                font-weight: 600;
+                            }
+                        }
                         &:first-child{
                             button{
                                 padding-top: 0rem;
@@ -865,7 +875,8 @@
                             padding: 1.2rem;
                         }
                         p{
-                            padding: 1.5rem 0rem;
+                            font-size: 16px;
+                            padding: 15px 0rem;
                         }
                     }
                 }

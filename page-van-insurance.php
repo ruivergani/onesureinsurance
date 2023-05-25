@@ -108,33 +108,27 @@
       <div class="select-custom">
         <!-- item selected -->
         <button class="item-selected js-open-select-custom">
-          <span>Select an </span>
-          <strong>item</strong>
+          <span>Select an <strong>item</strong></span>
         </button>
         <!-- Dropdown List -->
-        <ul class="dropdown-select">
-          <li>
-            <a href="#s-content" class="active">
+        <ul class="dropdown-select" id="dropdown-select">
+          <li class="active">
+            <a href="#overview">
               <p>Insurance overview</p>
             </a>
           </li>
           <li>
-            <a href="#s-benefits">
-              <p>Compare our cover</p>
-            </a>
-          </li>
-          <li>
-            <a href="#s-why">
-              <p>Why choose us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#s-extras-opt">
+            <a href="#types">
               <p>Optional Extras</p>
             </a>
           </li>
           <li>
-            <a href="#s-faqs">
+            <a href="#why">
+              <p>Why Choose Us?</p>
+            </a>
+          </li>
+          <li>
+            <a href="#faqs">
               <p>FAQs</p>
             </a>
           </li>
