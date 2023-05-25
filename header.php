@@ -591,45 +591,6 @@
               );
               wp_nav_menu( $args );
             ?>
-            <!-- Sub Menu Level 2 --> 
-            <ul>
-              <!-- Sub Menu Level 2 -->
-              <li class="sub-item-menu">
-                <a href="#" class="js-mobile-sub-item-menu">
-                  <span>Commercial Insurance</span>
-                  <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-                </a>
-                <div class="sub-ul js-sub-area-level2">
-                  <!-- Dynamic Menu -->
-                  <?php
-                    $args = array(
-                      'menu' => 'Mobile Menu - Business Commercial Insurance',
-                      'theme_location' => 'mobile-business-commercial-insurance',
-                      'container' => false
-                    );
-                    wp_nav_menu( $args );
-                  ?>
-                </div>
-              </li>
-              <!-- Sub Menu Level 2 -->
-              <li class="sub-item-menu">
-                <a href="#" class="js-mobile-sub-item-menu">
-                  <span>Special Types Insurance</span>
-                  <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-                </a>
-                <div class="sub-ul js-sub-area-level2">
-                  <!-- Dynamic Menu -->
-                  <?php
-                    $args = array(
-                      'menu' => 'Mobile Menu - Business Special Types Insurance',
-                      'theme_location' => 'mobile-business-special-types-insurance',
-                      'container' => false
-                    );
-                    wp_nav_menu( $args );
-                  ?>
-                </div>
-              </li>
-            </ul>
           </div>
         </li>
         <!-- Resources Menu -->
