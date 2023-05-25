@@ -609,14 +609,4 @@ if(btnDropdownSelect){
     item.classList.add('active');
   })
  })
- 
-//  navMobileLink.forEach(item => {
-//   item.addEventListener('click', (event) => {
-//     dropdownArea.classList.remove('active');
-//     item.classList.add('active');
-//   });
-//  });
-
 }
-
-

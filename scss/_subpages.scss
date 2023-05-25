@@ -1656,7 +1656,9 @@
                     gap: 1rem;
                     .btn-prev{
                         transform: rotate(180deg);
-                        margin-top: -0.1rem;
+                    }
+                    .btn-next{
+                        margin-bottom: 4px;
                     }
                     // class by default from swiper pagination
                     .swiper-button-disabled{
