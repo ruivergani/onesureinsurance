@@ -578,12 +578,12 @@ btnMenu.forEach((btn, index) => {
 const navLi = document.querySelectorAll('.js-nav-product li a');
 const sections = document.querySelectorAll('section');
 
-if(navLi.length && sections.length){
+if (navLi.length && sections.length) {
   window.addEventListener('scroll', () => {
     let current = '';
     sections.forEach(section => {
       let sectionTop = section.offsetTop;
-      if (scrollY >= sectionTop - 160) {
+      if (window.pageYOffset >= sectionTop - 160) {
         current = section.getAttribute('id');
       }
     });
@@ -592,8 +592,25 @@ if(navLi.length && sections.length){
       const currentLink = document.querySelector('.js-nav-product li a[href*="' + current + '"]');
       if (currentLink) {
         currentLink.classList.add('active');
+        window.location.hash = current;
       }
     });
-    
+  });
+
+  // Add click event listeners to the navigation links
+  navLi.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent default navigation behavior
+      let targetId = link.getAttribute('href').substring(1); // Get the target section ID
+      let targetSection = document.getElementById(targetId); // Get the target section element
+
+      if (targetSection) {
+        let targetOffset = targetSection.offsetTop; // Get the target section's top offset
+        window.scrollTo({
+          top: targetOffset - 160,
+          behavior: 'smooth' // Enable smooth scrolling
+        });
+      }
+    });
   });
 }

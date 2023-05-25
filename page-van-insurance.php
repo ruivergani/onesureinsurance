@@ -79,27 +79,27 @@
       <!-- Navbar Tab -->
       <ul class="js-nav-product" id="js-nav-product">
         <li class="js-item-content">
-          <a href="#overview">
+          <a href="#overview" class="anchor">
             <p>Insurance Overview</p>
           </a>
         </li>
          <li class="js-item-content">
-          <a href="#extras">
+          <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#types">
+          <a href="#types" class="anchor">
             <p>Personal</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#why">
+          <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#faqs">
+          <a href="#faqs" class="anchor">
             <p>FAQs</p>
           </a>
         </li>
