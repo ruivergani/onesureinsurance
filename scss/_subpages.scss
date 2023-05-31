@@ -1763,6 +1763,7 @@
             font-size: 3rem;
             line-height: 120%;
             color: $grey-600;
+            text-align: center;
         }
         p{
             width: 100%;
@@ -1847,7 +1848,109 @@
             line-height: 175%;
             color: $grey-400;
         }
-        
-
+    }
+    // Responsive
+    @media (max-width: 1200px){
+        .container{
+            padding-top: 6rem !important;
+            padding-bottom: 6rem !important;
+        }
+    }
+    @media (max-width: 1150px){
+        margin-bottom: 0rem;
+        .container{
+            border-top: none;
+            .s-price-insurance__card{
+                padding: 40px 50px;
+            }
+            .s-price-insurance__card-quote{
+                max-width: 900px;
+            }
+            span{
+                max-width: 850px;
+            }
+        }
+    }
+    @media (max-width: 991px){
+        .container{
+            padding-top: 4rem !important;
+            .s-price-insurance__card{
+                padding: 35px 30px;
+                h5{
+                    font-size: 24px;
+                    max-width: 260px;
+                    span{
+                        font-size: 24px;
+                    }
+                }
+            }
+            .s-price-insurance__card-quote{
+                max-width: 100%;
+            }
+            span{
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+    }
+    @media (max-width: 768px){
+        .container{
+            h4{
+                font-size: 2.8rem;
+            }
+            .s-price-insurance__card{
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 20px;
+                padding: 40px 50px;
+                h5{
+                    font-size: 23px;
+                    text-align: center;
+                    span{
+                        font-size: 23px;
+                    }
+                }
+                p{
+                    max-width: 100%;
+                    text-align: center;
+                }
+            }
+            .s-price-insurance__card-quote{
+                padding: 15px 20px;
+            }
+        }
+    }
+    @media (max-width: 610px){
+        .container{
+            .s-price-insurance__card-quote{
+               flex-direction: column;
+               align-items: center;
+               gap: 10px;
+               justify-content: center;
+               p{
+                max-width: 100%;
+               }
+            }
+        }
+    }
+    @media (max-width: 480px){
+        .container{
+            gap: 20px;
+            padding-top: 0px !important;
+            padding-bottom: 4rem !important;
+            .s-price-insurance__card{
+                padding: 20px;
+                p{
+                    font-size: 18px;
+                }
+                h5{
+                    span{
+                        
+                    }
+                }
+            }
+        }
     }
 }
