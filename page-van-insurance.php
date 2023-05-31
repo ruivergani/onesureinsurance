@@ -163,6 +163,30 @@
     </div>
   </section>
 
+  <!-- Section Column Content -->
+  <section class="s-column-content">
+    <div class="container">
+      <div class="s-column-content-card">
+        <div class="s-column-content-card-image">
+          <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-featured-image-02.webp" alt="">
+        </div>
+        <h4>Protecting small businesses' big dreams</h4>
+        <p>Simply Business is one of the UK’s biggest business insurance providers, covering both small businesses and landlords.</p>
+        <p>We have more than 800,000 customers that trust us to support them with their insurance by providing fast, flexible cover.</p>
+        <p>If you need to speak to someone, you can, and a UK-based team will be there for you should you need to make a claim.</p>
+      </div>
+      <div class="s-column-content-card">
+        <div class="s-column-content-card-image">
+          <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-featured-image-02.webp" alt="">
+        </div>
+        <h4>Protecting small businesses' big dreams</h4>
+        <p>Simply Business is one of the UK’s biggest business insurance providers, covering both small businesses and landlords.</p>
+        <p>We have more than 800,000 customers that trust us to support them with their insurance by providing fast, flexible cover.</p>
+        <p>If you need to speak to someone, you can, and a UK-based team will be there for you should you need to make a claim.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
