@@ -740,7 +740,7 @@
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 175%;
-                        color: $grey-400;
+                        color: $grey-500;
                         transition: all .3s;
                         padding-bottom: 1rem;
                         transition: all 0.3s;
@@ -896,29 +896,29 @@
                 width: 100%;
                 blockquote{
                     p{
-                        font-family: 'Poppins', sans-serif;
+                        font-family: 'Inter', sans-serif;
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 175%;
-                        color: $grey-300;
+                        color: $grey-600;
                         margin-bottom: 0px;
                     }
                     margin-bottom: 3rem;
-                    border-left: 0.2rem solid rgba(92, 31, 166, 0.15);
+                    border-left: 2px solid rgba(92, 31, 166, 0.15);
                     padding-left: 2.4rem;
                 }
                 strong{
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Inter', sans-serif;
                     font-weight: 600;
                     font-size: 16px;
                     line-height: 175%;
-                    color: $grey-400;
+                    color: $grey-600;
                     margin-right: 3px;
                     margin-bottom: 1.6rem;
                 }
                 a{
                     color: #00449e;
-                    font-family: "Poppins",sans-serif;
+                    font-family: "Inter",sans-serif;
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 130%;
@@ -950,15 +950,15 @@
                     font-size: 18px;
                 }
                 p{
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Inter', sans-serif;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 175%;
-                    color: $grey-400;
+                    color: $grey-600;
                     margin-bottom: 1.6rem;
                     a{
                         color: #00449e;
-                        font-family: "Poppins",sans-serif;
+                        font-family: 'Inter',sans-serif;
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
@@ -971,15 +971,15 @@
                     margin-bottom: 2rem;
                     li{
                         margin-bottom: 0.7rem;
-                        font-family: 'Poppins', sans-serif;
+                        font-family: 'Inter', sans-serif;
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 175%;
-                        color: $grey-500;
+                        color: $grey-600;
                         a{
                             color: #00449e;
-                            font-family: "Poppins",sans-serif;
-                            font-weight: 500;
+                            font-family: 'Inter',sans-serif;
+                            font-weight: 600;
                             font-size: 16px;
                             line-height: 130%;
                             &:hover{
@@ -991,7 +991,7 @@
                             min-width: 4px;
                             min-height: 4px;
                             display: inline-block;
-                            background-color: #9995A6;
+                            background-color: $grey-600;
                             margin-right: 1.6rem;
                             transition: all .3s;
                             margin-bottom: 4px;
@@ -1388,17 +1388,17 @@
                     border-radius: 0.4rem;
                     transition: all .5s ease-in-out !important;
                     padding-top: 2rem;
-                    font-family: 'Poppins', sans-serif;
+                    font-family: 'Inter', sans-serif;
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 175%;
-                    color: $grey-500;
+                    color: $grey-600;
                     @media (max-width: 480px){
                         font-size: 16px;
                     }
                     a{
                         color: #00449e;
-                        font-family: "Poppins",sans-serif;
+                        font-family: 'Inter',sans-serif;
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
@@ -1408,11 +1408,11 @@
                     }
                     blockquote{
                         p{
-                            font-family: 'Poppins', sans-serif;
+                            font-family: 'Inter', sans-serif;
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 175%;
-                            color: $grey-300;
+                            color: $grey-600;
                             margin-bottom: 0px;
                             @media (max-width: 480px){
                                 font-size: 16px;
@@ -1423,18 +1423,18 @@
                         padding-left: 2.4rem;
                     }
                     p{
-                        font-family: 'Poppins', sans-serif;
+                        font-family: 'Inter', sans-serif;
                         font-weight: 400;
                         font-size: 16px;
                         line-height: 175%;
                         padding-bottom: 10px;
-                        color: $grey-500;
+                        color: $grey-600;
                         @media (max-width: 480px){
                             font-size: 16px;
                         }
                         a{
                             color: #00449e;
-                            font-family: "Poppins",sans-serif;
+                            font-family: 'Inter',sans-serif;
                             font-weight: 500;
                             font-size: 16px;
                             line-height: 130%;
@@ -1447,17 +1447,17 @@
                         padding-top: 12px;
                         li{
                             margin-bottom: 0.7rem;
-                            font-family: 'Poppins', sans-serif;
+                            font-family: 'Inter', sans-serif;
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 175%;
-                            color: $grey-500;
+                            color: $grey-600;
                             &:before{
                                 content: "";
                                 min-width: 4px;
                                 min-height: 4px;
                                 display: inline-block;
-                                background-color: #9995A6;
+                                background-color: $grey-600;
                                 margin-right: 1.6rem;
                                 transition: all .3s;
                                 margin-bottom: 4px;
@@ -1742,5 +1742,112 @@
                 }
             }
         }
+    }
+}
+.s-price-insurance{
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    .container{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-top: 2px solid $brand-light-blue;
+        border-bottom: 2px solid $brand-light-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-direction: column;
+        h4{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 3rem;
+            line-height: 120%;
+            color: $grey-600;
+        }
+        p{
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 175%;
+            color: $grey-600;
+            @media (max-width: 480px){
+                font-size: 16px;
+            }
+            a{
+                color: #00449e;
+                font-family: 'Inter',sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .s-price-insurance__card{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            background-color: $brand-dark-blue;
+            padding: 40px 100px;
+            h5{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 25px;
+                line-height: 120%;
+                color: $white;
+                width: 100%;
+                max-width: 300px;
+                span{
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 120%;
+                    color: #ffba00;
+                }
+            }
+            p{
+                font-family: 'Poppins', sans-serif;
+                width: 100%;
+                max-width: 500px;
+                text-align: right;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: $white;
+            }
+        }
+        .s-price-insurance__card-quote{
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F3F3F3;
+            border-radius: 40px;
+            padding: 15px 50px;
+            p{
+                width: 100%;
+                max-width: 350px;
+            }
+            .btn{
+                border-radius: 40px;
+            }
+        }
+        span{
+            width: 100%;
+            max-width: 1000px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 175%;
+            color: $grey-400;
+        }
+        
+
     }
 }

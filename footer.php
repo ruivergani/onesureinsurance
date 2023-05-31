@@ -113,7 +113,12 @@
   <script src="<?php echo get_template_directory_uri()?>/js/plugins.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/all.js"></script>
   <script>
-    AOS.init({disable: 'mobile'});
+    AOS.init({
+      disable: function() {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      }
+    });
   </script>
   <?php wp_footer(); ?>
 </body>
