@@ -149,6 +149,20 @@
     </div>
   </section>
 
+  <!-- Section Featured Content -->
+  <section class="s-featured-content">
+    <div class="container">
+      <div class="s-featured-content__left">
+        <h4>You name it. We insure it.</h4>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+      </div>
+      <div class="s-featured-content__right">
+        <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-featured-image.webp" alt="">
+      </div>
+    </div>
+  </section>
+
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
