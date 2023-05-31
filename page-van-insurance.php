@@ -152,13 +152,14 @@
   <!-- Section Featured Content -->
   <section class="s-featured-content">
     <div class="container">
-      <div class="s-featured-content__left">
-        <h4>You name it. We insure it.</h4>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+      <div class="s-featured-content__left" data-aos="fade-right" data-aos-once="true">
+        <h4><?php the_field('title_featured_content_van_insurance') ?></h4>
+        <div class="s-featured-content__text">
+          <?php the_field('description_featured_content_van_insurance') ?>
+        </div>
       </div>
-      <div class="s-featured-content__right">
-        <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-featured-image.webp" alt="">
+      <div class="s-featured-content__right" data-aos="fade-left" data-aos-once="true">
+        <img src="<?php the_field('image_featured_content_van_insurance_copy') ?>" alt="">
       </div>
     </div>
   </section>
@@ -166,7 +167,7 @@
   <!-- Section Column Content -->
   <section class="s-column-content">
     <div class="container">
-      <div class="s-column-content-card">
+      <div class="s-column-content-card" data-aos="fade-right" data-aos-once="true">
         <div class="s-column-content-card-image">
           <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-featured-image-02.webp" alt="">
         </div>
@@ -175,7 +176,7 @@
         <p>We have more than 800,000 customers that trust us to support them with their insurance by providing fast, flexible cover.</p>
         <p>If you need to speak to someone, you can, and a UK-based team will be there for you should you need to make a claim.</p>
       </div>
-      <div class="s-column-content-card">
+      <div class="s-column-content-card" data-aos="fade-left" data-aos-once="true">
         <div class="s-column-content-card-image">
           <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-featured-image-02.webp" alt="">
         </div>
@@ -301,21 +302,21 @@
   <!-- Section Price -->
   <section class="s-price-insurance">
     <div class="container">
-      <h4>How much does public liability insurance cost?</h4>
-      <p>Working out the cost of public liability insurance depends on a number of factors, like the type of business you run and the level of cover you choose. Usually, businesses who insurers see as risky will pay more for their public liability insurance.</p>
+      <h4 data-aos="fade-up" data-aos-once="true">How much does public liability insurance cost?</h4>
+      <p data-aos="fade-up" data-aos-once="true">Working out the cost of public liability insurance depends on a number of factors, like the type of business you run and the level of cover you choose. Usually, businesses who insurers see as risky will pay more for their public liability insurance.</p>
       <p>Find out how much you’ll pay by completing an insurance comparison from a range of <a href="">trusted insurers</a></p>
-      <div class="s-price-insurance__card">
+      <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
         <h5>Prices start from <span>£4.46<span> per month</h5>
         <p>Get your quotes in 7 minutes – prices are guaranteed for 30 days.</p>
       </div>
-      <div class="s-price-insurance__card-quote">
+      <div class="s-price-insurance__card-quote" data-aos="fade-up" data-aos-once="true">
         <p>Get your tailored quotes in 7 minutes</p>
-        <button class="btn btn-primary">
+        <a class="btn btn-primary" href="">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
           get a quote
-        </button>
+        </a>
       </div>
-      <span>* How we work out example prices 26% of our customers paid up to £53.50 a year for a public liability insurance policy between 1st Dec 2022 - 28th Feb 2023. Equivalent to £4.46 per month based on a monthly cost when paying for the policy in one annual payment. Paying monthly is usually more expensive as you'll pay interest. Most customers pay more than this but some pay less.</span>
+      <span data-aos="fade-up" data-aos-once="true">* How we work out example prices 26% of our customers paid up to £53.50 a year for a public liability insurance policy between 1st Dec 2022 - 28th Feb 2023. Equivalent to £4.46 per month based on a monthly cost when paying for the policy in one annual payment. Paying monthly is usually more expensive as you'll pay interest. Most customers pay more than this but some pay less.</span>
     </div>
   </section>
 
