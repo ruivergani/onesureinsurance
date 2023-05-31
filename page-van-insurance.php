@@ -302,21 +302,22 @@
   <!-- Section Price -->
   <section class="s-price-insurance">
     <div class="container">
-      <h4 data-aos="fade-up" data-aos-once="true">How much does public liability insurance cost?</h4>
-      <p data-aos="fade-up" data-aos-once="true">Working out the cost of public liability insurance depends on a number of factors, like the type of business you run and the level of cover you choose. Usually, businesses who insurers see as risky will pay more for their public liability insurance.</p>
-      <p>Find out how much you’ll pay by completing an insurance comparison from a range of <a href="">trusted insurers</a></p>
+      <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_van_insurance') ?></h4>
+      <div class="s-price-insurance-text" data-aos="fade-up" data-aos-once="true">
+        <?php the_field('description_section_price_van_insurance') ?>
+      </div>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
-        <h5>Prices start from <span>£4.46<span> per month</h5>
-        <p>Get your quotes in 7 minutes – prices are guaranteed for 30 days.</p>
+        <h5><?php the_field('title_card_section_price_van_insurance') ?></h5>
+        <p><?php the_field('description_card_section_price_van_insurance') ?></p>
       </div>
       <div class="s-price-insurance__card-quote" data-aos="fade-up" data-aos-once="true">
-        <p>Get your tailored quotes in 7 minutes</p>
-        <a class="btn btn-primary" href="">
+        <p><?php the_field('title_secondary_card_section_price_van_insurance') ?></p>
+        <a class="btn btn-primary" href="<?php the_field('link_secondary_card_section_price_van_insurance') ?>">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
           get a quote
         </a>
       </div>
-      <span data-aos="fade-up" data-aos-once="true">* How we work out example prices 26% of our customers paid up to £53.50 a year for a public liability insurance policy between 1st Dec 2022 - 28th Feb 2023. Equivalent to £4.46 per month based on a monthly cost when paying for the policy in one annual payment. Paying monthly is usually more expensive as you'll pay interest. Most customers pay more than this but some pay less.</span>
+      <span data-aos="fade-up" data-aos-once="true"><?php the_field('span_section_price_van_insurance') ?></span>
     </div>
   </section>
 
