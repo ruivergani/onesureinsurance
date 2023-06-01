@@ -77,7 +77,7 @@
       <ul class="js-nav-product" id="js-nav-product">
         <li class="js-item-content">
           <a href="#overview" class="anchor">
-            <p>Insurance Overview</p>
+            <p>Overview</p>
           </a>
         </li>
          <li class="js-item-content">
