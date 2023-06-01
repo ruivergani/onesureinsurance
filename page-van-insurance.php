@@ -188,7 +188,7 @@
           <?php the_field('description_left_column_van_insurance') ?>
         </div>
       </div>
-      <div class="s-column-content-card" data-aos="fade-right" data-aos-once="true">
+      <div class="s-column-content-card" data-aos="fade-left" data-aos-once="true">
         <div class="s-column-content-card-image">
           <img src="<?php the_field('image_right_column_van_insurance') ?>" alt="">
         </div>
@@ -219,6 +219,36 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
+    </div>
+  </section>
+
+  <!-- Section COVER / DO NOT COVER -->
+  <section class="s-cover" id="s-cover">
+    <div class="container">
+      <div class="cover-on" data-aos="fade-right" data-aos-once="true">
+        <h6><?php the_field('mobile_title_section_cover_van_insurance'); ?></h6>
+        <ul>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('section_cover_on_van_insurance') ): while ( have_rows('section_cover_on_van_insurance') ) : the_row(); ?>
+            <li>
+              <img src="<?php the_sub_field('icon_checked_cover_on_van_insurance'); ?>" alt="icon checked" title="icon checked">
+              <p><?php the_sub_field('text_cover_on_van_insurance'); ?></p>
+            </li>
+          <?php endwhile; else : endif;?>
+        </ul>
+      </div>
+      <div class="cover-off" data-aos="fade-left" data-aos-once="true">
+        <h6>What's not included:</h6>
+        <ul>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('section_cover_off_van_insurance') ): while ( have_rows('section_cover_off_van_insurance') ) : the_row(); ?>
+            <li>
+              <img src="<?php the_sub_field('icon_checked_cover_off_van_insurance'); ?>" alt="icon not checked" title="icon not checked">
+              <p><?php the_sub_field('text_cover_off_van_insurance'); ?></p>
+            </li>
+          <?php endwhile; else : endif;?>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -351,47 +381,6 @@
             </div>
           </div>
         <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Slide Product -->
-  <section class="s-slide-van">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('mobile_title_section_slides_van_insurance'); ?></h6>
-        <h4><?php the_field('title_section_slides_van_insurance'); ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-van">
-        <div class="swiper-wrapper">
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_slides_cards_van_insurance') ): while ( have_rows('section_slides_cards_van_insurance') ) : the_row(); ?>
-            <div class="swiper-slide">
-              <!-- Card Van Type -->
-              <a href="<?php the_sub_field('link_slide_card_van_insurance'); ?>" class="card-van">
-                <div class="image">
-                  <img src="<?php the_sub_field('image_slide_card_van_insurance'); ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                  <h6><?php the_sub_field('text_slide_card_van_insurance'); ?></h6>
-                </div>
-              </a>
-            </div>
-          <?php endwhile; else : endif;?>
-        </div>
       </div>
     </div>
   </section>

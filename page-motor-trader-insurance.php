@@ -172,7 +172,7 @@
     </div>
   </section>
 
-  <!-- Section What to Cover -->
+  <!-- Section COVER / DO NOT COVER -->
   <section class="s-cover" id="s-cover">
     <div class="container">
       <div class="cover-on" data-aos="fade-right" data-aos-once="true">
@@ -198,52 +198,6 @@
             </li>
           <?php endwhile; else : endif;?>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Product -->
-  <section class="s-slide-product" id="s-slide-product">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('section_product_slide_title_mobile') ?></h6>
-        <h4><?php the_field('section_product_slide_title') ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-product">
-        <div class="swiper-wrapper">
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('cards_product_slide_motortrade') ): while ( have_rows('cards_product_slide_motortrade') ) : the_row(); ?>
-            <div class="swiper-slide">
-              <!-- Card Product Type -->
-              <a href="<?php the_sub_field('card_link') ?>" class="card-product">
-                <div class="image">
-                    <img src="<?php the_sub_field('image_card') ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                    <h6><?php the_sub_field('card_title') ?></h6>
-                    <p><?php the_sub_field('subtitle_card') ?></p>
-                    <div class="learn-more">
-                        <span>Learn more</span>
-                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
-                    </div>
-                </div>
-              </a>
-            </div>
-          <?php endwhile; else : endif;?>
-        </div>
       </div>
     </div>
   </section>

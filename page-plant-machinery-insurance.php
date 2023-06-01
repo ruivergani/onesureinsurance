@@ -283,47 +283,6 @@
     </div>
   </section>
 
-  <!-- Section Slide Product -->
-  <section class="s-slide-van">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('mobile_title_section_slides_plant_machinery_insurance'); ?></h6>
-        <h4><?php the_field('title_section_slides_plant_machinery_insurance'); ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-van">
-        <div class="swiper-wrapper">
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_slides_cards_plant_machinery_insurance') ): while ( have_rows('section_slides_cards_plant_machinery_insurance') ) : the_row(); ?>
-            <div class="swiper-slide">
-              <!-- Card Van Type -->
-              <a href="<?php the_sub_field('link_slide_card_plant_machinery_insurance'); ?>" class="card-van">
-                <div class="image">
-                  <img src="<?php the_sub_field('image_slide_card_plant_machinery_insurance'); ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                  <h6><?php the_sub_field('text_slide_card_plant_machinery_insurance'); ?></h6>
-                </div>
-              </a>
-            </div>
-          <?php endwhile; else : endif;?>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Section CTA  -->
   <div class="s-newsletter">
     <div class="container">

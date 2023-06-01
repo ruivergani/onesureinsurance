@@ -172,6 +172,7 @@
     </div>
   </section>
 
+
   <!-- Section Product -->
   <section class="s-slide-product">
     <div class="container">
@@ -220,18 +221,18 @@
 
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
-      <div class="container">
-        <a href="<?php the_field('link_cta_cherry_picker_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
-          <div class="text">
-              <span><?php the_field('subtitle_cta_cherry_picker_insurance') ?></span>
-              <h3><?php the_field('title_cta_cherry_picker_insurance') ?></h3>
-          </div>
-          <button class="btn btn-primary">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-              get a quote
-          </button>
-        </a>
-      </div>
+    <div class="container">
+      <a href="<?php the_field('link_cta_cherry_picker_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+            <span><?php the_field('subtitle_cta_cherry_picker_insurance') ?></span>
+            <h3><?php the_field('title_cta_cherry_picker_insurance') ?></h3>
+        </div>
+        <button class="btn btn-primary">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
   </div>
 
   <!-- Section Bespoke -->
@@ -279,47 +280,6 @@
             </div>
           </div>
         <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Top Vans -->
-  <section class="s-slide-van">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('mobile_title_section_slides_cherry_picker_insurance'); ?></h6>
-        <h4><?php the_field('title_section_slides_cherry_picker_insurance'); ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-van">
-        <div class="swiper-wrapper">
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_slides_cards_cherry_picker_insurance') ): while ( have_rows('section_slides_cards_cherry_picker_insurance') ) : the_row(); ?>
-            <div class="swiper-slide">
-              <!-- Card Van Type -->
-              <a href="<?php the_sub_field('link_slide_card_cherry_picker_insurance'); ?>" class="card-van">
-                <div class="image">
-                  <img src="<?php the_sub_field('image_slide_card_cherry_picker_insurance'); ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                  <h6><?php the_sub_field('text_slide_card_cherry_picker_insurance'); ?></h6>
-                </div>
-              </a>
-            </div>
-          <?php endwhile; else : endif;?>
-        </div>
       </div>
     </div>
   </section>

@@ -60,7 +60,7 @@
   <!-- Section Trustpilot -->
   <section class="s-trustpilot-product">
     <div class="container">
-      <h3>We pay out on 99% of Car Insurance claims.</h3>
+      <h3>We pay out on 99% of Bulldozer Insurance claims.</h3>
       <div class="t-pilot">
         <!-- TrustBox widget - Carousel --> 
         <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="55e56b2c0000ff000582d042" data-style-height="140px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en"> <a href="https://www.trustpilot.com/review/onesureinsurance.co.uk" target="_blank" rel="noopener">Trustpilot</a> 
@@ -284,47 +284,6 @@
     </div>
   </section>
 
-  <!-- Section slide -->
-  <section class="s-slide-van">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('mobile_title_section_slides_bulldozer_insurance'); ?></h6>
-        <h4><?php the_field('title_section_slides_bulldozer_insurance'); ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-van">
-        <div class="swiper-wrapper">
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_slides_cards_bulldozer_insurance') ): while ( have_rows('section_slides_cards_bulldozer_insurance') ) : the_row(); ?>
-            <div class="swiper-slide">
-              <!-- Card Van Type -->
-              <a href="<?php the_sub_field('link_slide_card_bulldozer_insurance'); ?>" class="card-van">
-                <div class="image">
-                  <img src="<?php the_sub_field('image_slide_card_bulldozer_insurance'); ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                  <h6><?php the_sub_field('text_slide_card_bulldozer_insurance'); ?></h6>
-                </div>
-              </a>
-            </div>
-          <?php endwhile; else : endif;?>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
@@ -348,7 +307,7 @@
       'post_type' => 'post',
       'order' => 'DESC',
       'posts_per_page' => 3,
-      'tag_id' => 54,
+      'tag_id' => 37,
     );
     $the_query = new WP_Query($args);
   ?>
