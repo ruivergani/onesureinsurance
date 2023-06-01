@@ -167,9 +167,9 @@
   <!-- Section Featured Secondary Content -->
   <section class="s-featured-content">
     <div class="container">
-       <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
-        <img src="<?php the_field('title_featured_content_secondary_van_insurance') ?>" alt="">
-       </div>
+      <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
+        <img src="<?php the_field('image_featured_content_secondary_van_insurance') ?>" alt="">
+      </div>
       <div class="s-featured-content__left" data-aos="fade-left" data-aos-once="true">
         <h4><?php the_field('title_featured_content_secondary_van_insurance') ?></h4>
         <div class="s-featured-content__text">
