@@ -165,7 +165,7 @@
   </section>
 
   <!-- Section Featured Secondary Content -->
-  <section class="s-featured-content">
+  <section class="s-featured-secondary-content">
     <div class="container">
       <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
         <img src="<?php the_field('image_featured_content_secondary_van_insurance') ?>" alt="">
