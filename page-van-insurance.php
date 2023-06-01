@@ -62,11 +62,8 @@
   <section class="s-trustpilot-product">
     <div class="container">
       <h3>We pay out on 99% of Van Insurance claims.</h3>
-      <!-- TrustBox widget - Carousel --> 
-      <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="55e56b2c0000ff000582d042" data-style-height="140px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en"> 
-        <a href="https://www.trustpilot.com/review/onesureinsurance.co.uk" target="_blank" rel="noopener">Trustpilot</a> 
-      </div> 
-      <!-- End TrustBox widget -->
+      <!-- Section Company Logos -->
+      <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
     </div>
   </section>
 
