@@ -148,7 +148,70 @@
   </section>
 
   <!-- Section Content -->
-  <?php include(TEMPLATEPATH .'/includes/page-insurance-content.php') ?>
+  <section class="overview" id="overview" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+      <!-- Content Tab -->
+      <div class="tab-product-content">
+        <div class="text-content active">
+          <?php the_content(); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Featured Content -->
+  <section class="s-featured-content">
+    <div class="container">
+      <div class="s-featured-content__left" data-aos="fade-right" data-aos-once="true">
+        <h4><?php the_field('title_featured_content_motorbike_125cc_insurance') ?></h4>
+        <div class="s-featured-content__text">
+          <?php the_field('description_featured_content_motorbike_125cc_insurance') ?>
+        </div>
+      </div>
+      <div class="s-featured-content__right" data-aos="fade-left" data-aos-once="true">
+        <img src="<?php the_field('image_featured_content_motorbike_125cc_insurance') ?>" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Featured Secondary Content -->
+  <section class="s-featured-secondary-content">
+    <div class="container">
+      <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
+        <img src="<?php the_field('image_featured_content_secondary_motorbike_125cc_insurance') ?>" alt="">
+      </div>
+      <div class="s-featured-content__left" data-aos="fade-left" data-aos-once="true">
+        <h4><?php the_field('title_featured_content_secondary_motorbike_125cc_insurance') ?></h4>
+        <div class="s-featured-content__text">
+          <?php the_field('description_featured_content_secondary_motorbike_125cc_insurance') ?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Column Content -->
+  <section class="s-column-content">
+    <div class="container">
+      <div class="s-column-content-card" data-aos="fade-right" data-aos-once="true">
+        <div class="s-column-content-card-image">
+          <img src="<?php the_field('image_left_column_motorbike_125cc_insurance') ?>" alt="">
+        </div>
+        <h4><?php the_field('title_left_column_motorbike_125cc_insurance') ?></h4>
+        <div class="s-column-content-card-text">
+          <?php the_field('description_left_column_motorbike_125cc_insurance') ?>
+        </div>
+      </div>
+      <div class="s-column-content-card" data-aos="fade-left" data-aos-once="true">
+        <div class="s-column-content-card-image">
+          <img src="<?php the_field('image_right_column_motorbike_125cc_insurance') ?>" alt="">
+        </div>
+        <h4><?php the_field('title_right_column_motorbike_125cc_insurance') ?></h4>
+        <div class="s-column-content-card-text">
+          <?php the_field('description_right_column_motorbike_125cc_insurance') ?>
+        </div>
+      </div>
+    </div>
+  </section>
   
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
@@ -288,6 +351,28 @@
         </div>
         <img src="<?php the_field('image_section_why_us_motorbike_125cc_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
       </div>
+    </div>
+  </section>
+
+  <!-- Section Price -->
+  <section class="s-price-insurance">
+    <div class="container">
+      <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_motorbike_125cc_insurance') ?></h4>
+      <div class="s-price-insurance-text" data-aos="fade-up" data-aos-once="true">
+        <?php the_field('description_section_price_motorbike_125cc_insurance') ?>
+      </div>
+      <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
+        <h5><?php the_field('title_card_section_price_motorbike_125cc_insurance') ?></h5>
+        <p><?php the_field('description_card_section_price_motorbike_125cc_insurance') ?></p>
+      </div>
+      <div class="s-price-insurance__card-quote" data-aos="fade-up" data-aos-once="true">
+        <p><?php the_field('title_secondary_card_section_price_motorbike_125cc_insurance') ?></p>
+        <a class="btn btn-primary" href="<?php the_field('link_secondary_card_section_price_motorbike_125cc_insurance') ?>">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          get a quote
+        </a>
+      </div>
+      <span data-aos="fade-up" data-aos-once="true"><?php the_field('span_section_price_motorbike_125cc_insurance') ?></span>
     </div>
   </section>
 

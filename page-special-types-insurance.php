@@ -148,7 +148,70 @@
   </section>
 
   <!-- Section Content -->
-  <?php include(TEMPLATEPATH .'/includes/page-insurance-content.php') ?>
+  <section class="overview" id="overview" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+      <!-- Content Tab -->
+      <div class="tab-product-content">
+        <div class="text-content active">
+          <?php the_content(); ?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Featured Content -->
+  <section class="s-featured-content">
+    <div class="container">
+      <div class="s-featured-content__left" data-aos="fade-right" data-aos-once="true">
+        <h4><?php the_field('title_featured_content_special_insurance') ?></h4>
+        <div class="s-featured-content__text">
+          <?php the_field('description_featured_content_special_insurance') ?>
+        </div>
+      </div>
+      <div class="s-featured-content__right" data-aos="fade-left" data-aos-once="true">
+        <img src="<?php the_field('image_featured_content_special_insurance') ?>" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Featured Secondary Content -->
+  <section class="s-featured-secondary-content">
+    <div class="container">
+      <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
+        <img src="<?php the_field('image_featured_content_secondary_special_insurance') ?>" alt="">
+      </div>
+      <div class="s-featured-content__left" data-aos="fade-left" data-aos-once="true">
+        <h4><?php the_field('title_featured_content_secondary_special_insurance') ?></h4>
+        <div class="s-featured-content__text">
+          <?php the_field('description_featured_content_secondary_special_insurance') ?>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Column Content -->
+  <section class="s-column-content">
+    <div class="container">
+      <div class="s-column-content-card" data-aos="fade-right" data-aos-once="true">
+        <div class="s-column-content-card-image">
+          <img src="<?php the_field('image_left_column_special_insurance') ?>" alt="">
+        </div>
+        <h4><?php the_field('title_left_column_special_insurance') ?></h4>
+        <div class="s-column-content-card-text">
+          <?php the_field('description_left_column_special_insurance') ?>
+        </div>
+      </div>
+      <div class="s-column-content-card" data-aos="fade-left" data-aos-once="true">
+        <div class="s-column-content-card-image">
+          <img src="<?php the_field('image_right_column_special_insurance') ?>" alt="">
+        </div>
+        <h4><?php the_field('title_right_column_special_insurance') ?></h4>
+        <div class="s-column-content-card-text">
+          <?php the_field('description_right_column_special_insurance') ?>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
@@ -169,6 +232,36 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
+    </div>
+  </section>
+
+  <!-- Section COVER / DO NOT COVER -->
+  <section class="s-cover" id="s-cover">
+    <div class="container">
+      <div class="cover-on" data-aos="fade-right" data-aos-once="true">
+        <h6><?php the_field('mobile_title_section_cover_special_insurance'); ?></h6>
+        <ul>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('section_cover_on_special_insurance') ): while ( have_rows('section_cover_on_special_insurance') ) : the_row(); ?>
+            <li>
+              <img src="<?php the_sub_field('icon_checked_cover_on_special_insurance'); ?>" alt="icon checked" title="icon checked">
+              <p><?php the_sub_field('text_cover_on_special_insurance'); ?></p>
+            </li>
+          <?php endwhile; else : endif;?>
+        </ul>
+      </div>
+      <div class="cover-off" data-aos="fade-left" data-aos-once="true">
+        <h6>What's not included:</h6>
+        <ul>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('section_cover_off_special_insurance') ): while ( have_rows('section_cover_off_special_insurance') ) : the_row(); ?>
+            <li>
+              <img src="<?php the_sub_field('icon_checked_cover_off_special_insurance'); ?>" alt="icon not checked" title="icon not checked">
+              <p><?php the_sub_field('text_cover_off_special_insurance'); ?></p>
+            </li>
+          <?php endwhile; else : endif;?>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -261,6 +354,28 @@
     </div>
   </section>
 
+  <!-- Section Price -->
+  <section class="s-price-insurance">
+    <div class="container">
+      <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_special_insurance') ?></h4>
+      <div class="s-price-insurance-text" data-aos="fade-up" data-aos-once="true">
+        <?php the_field('description_section_price_special_insurance') ?>
+      </div>
+      <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
+        <h5><?php the_field('title_card_section_price_special_insurance') ?></h5>
+        <p><?php the_field('description_card_section_price_special_insurance') ?></p>
+      </div>
+      <div class="s-price-insurance__card-quote" data-aos="fade-up" data-aos-once="true">
+        <p><?php the_field('title_secondary_card_section_price_special_insurance') ?></p>
+        <a class="btn btn-primary" href="<?php the_field('link_secondary_card_section_price_special_insurance') ?>">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          get a quote
+        </a>
+      </div>
+      <span data-aos="fade-up" data-aos-once="true"><?php the_field('span_section_price_special_insurance') ?></span>
+    </div>
+  </section>
+
   <!-- Section FAQs -->
   <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
     <div class="container">
@@ -279,47 +394,6 @@
             </div>
           </div>
         <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Slide Product -->
-  <section class="s-slide-van">
-    <div class="container">
-      <div class="top">
-        <h6><?php the_field('mobile_title_section_slides_special_insurance'); ?></h6>
-        <h4><?php the_field('title_section_slides_special_insurance'); ?></h4>
-        <div class="ctrl-slide">
-          <!-- Swipper pagination structure -->
-          <div class="swiper-pagination"></div>
-          <div class="ctrl">
-            <button class="btn-prev">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow prev" title="arrow prev">
-            </button>
-            <button class="btn-next">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-slide.svg" alt="arrow next" title="arrow next">
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Swiper slide structure -->
-      <div class="slide-van">
-        <div class="swiper-wrapper">
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_slides_cards_special_insurance') ): while ( have_rows('section_slides_cards_special_insurance') ) : the_row(); ?>
-            <div class="swiper-slide">
-              <!-- Card Van Type -->
-              <a href="<?php the_sub_field('link_slide_card_special_insurance'); ?>" class="card-van">
-                <div class="image">
-                  <img src="<?php the_sub_field('image_slide_card_special_insurance'); ?>" alt="card product page" title="card product page">
-                </div>
-                <div class="info">
-                  <h6><?php the_sub_field('text_slide_card_special_insurance'); ?></h6>
-                </div>
-              </a>
-            </div>
-          <?php endwhile; else : endif;?>
-        </div>
       </div>
     </div>
   </section>
