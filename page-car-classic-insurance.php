@@ -149,7 +149,7 @@
   </section>
 
   <!-- Section Content -->
-  <section class="overview" id="overview" data-aos="fade-up" data-aos-once="true">
+  <section class="s-content" id="overview" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Content Tab -->
       <div class="tab-product-content">

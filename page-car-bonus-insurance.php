@@ -149,7 +149,16 @@
   </section>
 
   <!-- Section Content -->
-  <?php include(TEMPLATEPATH .'/includes/page-insurance-content.php') ?>
+  <section class="s-content" id="overview" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+      <!-- Content Tab -->
+      <div class="tab-product-content">
+        <div class="text-content active">
+          <?php the_content(); ?>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
