@@ -62,7 +62,7 @@
           <h2>How it Works </h2>
         </div>
         <div class="s-hero-insurance__right_content">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.png" alt="">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.jpg" alt="" class="line-right-hero">
           <div class="s-hero-insurance__right__list">
             <ul>
               <li>
@@ -79,11 +79,11 @@
               </li>
             </ul>
           </div>
-          <a href="" class="btn btn-primary-lg">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
-            GET A QUOTE
-          </a>
         </div>
+        <a href="" class="btn btn-primary-lg">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
+          GET A QUOTE
+        </a>
       </div>
     </div>
   </section>

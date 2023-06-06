@@ -205,8 +205,92 @@
             }
         }
         .s-hero-insurance__right{
-
+            width: 100%;
+            max-width: 448px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .line-right-hero{
+                width: 100%;
+                max-width: 30px;
+                height: 100%;
+                max-height: 160px;
+            }
+            .s-hero-insurance__right__title{
+                padding-top: 15px;
+                align-self: flex-start;
+                span{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 130%;
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+                    color: #868E96;
+                }
+                h2{
+                    width: 100%;
+                    max-width: 448px;
+                    margin-top: 15px;
+                    margin-bottom: 30px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 112%;
+                    letter-spacing: -1px;
+                    color: #343A40;
+                }
+            }
+            .s-hero-insurance__right_content{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                .s-hero-insurance__right__list{
+                    ul{
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 22px;
+                        flex-direction: column;
+                        li{
+                            p{
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #363843;
+                                margin-bottom: 5px;
+                            }
+                            span{
+                                font-family: 'Inter', sans-serif;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 16px;
+                                color: #5F5C6B;
+                            }
+                        }
+                    }
+                }
+            }
+            a{
+                margin-top: 43px;
+                align-self: center;
+            }
         }
+    }
+    // Responsive
+    @media (max-width: 1200px){
+        
+    }
+    @media (max-width: 991px){
+
+    }
+    @media (max-width: 768px){
+
+    }
+    @media (max-width: 480px){
+
     }
 }
 
