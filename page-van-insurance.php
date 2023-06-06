@@ -12,16 +12,89 @@
   <!-- Section Breadcrumbs -->
   <?php breadcrumbs(); ?>
 
-  <!-- Section Hero -->
-  <section class="s-hero-product">
+  <!-- === SECTION HERO === -->
+  <section class="s-hero-insurance">
+    <div class="container">
+      <div class="s-hero-insurance__left">
+        <div class="s-hero-insurance__left__title">
+          <span class="s-hero-insurance__span">GET A QUOTE</span>
+          <h1>Motor Trade Insurance. <br>Find the right cover to suit you.</h1>
+        </div>
+        <div class="s-hero-insurance__left__list">
+          <ul>
+            <li>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-blue.svg" alt="">
+              <p>We Offer Road Risk Policies!</p>
+            </li>
+            <li>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-blue.svg" alt="">
+              <p>Road Risks + Combined Premises</p>
+            </li>
+            <li>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-checked-blue.svg" alt="">
+              <p>Prices From Just £50.40 Per Month</p>
+            </li>
+          </ul>
+        </div>
+        <div class="s-hero-insurance__numbers">
+          <ul>
+            <li>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
+              <a class="text__numbers" href="">
+                <span>MOBILE FRIENDLY</span>
+                <p>03303139373</p>
+              </a>
+            </li>
+            <li>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
+              <a class="text__numbers" href="">
+                <span>TELEPHONE</span>
+                <p>0800 081 5113</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="">
+      <div class="s-hero-insurance__right">
+        <div class="s-hero-insurance__right__title">
+          <span class="s-hero-insurance__span">UNDERSTAND OUR PROCESS</span>
+          <h2>How it Works </h2>
+        </div>
+        <div class="s-hero-insurance__right_content">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.png" alt="">
+          <div class="s-hero-insurance__right__list">
+            <ul>
+              <li>
+                <p>Pick what goes into your policy and lorem ipsum aa</p>
+                <span>Only pay for what you need</span>
+              </li>
+              <li>
+                <p>Get prices from a range of insurers lorem ipsum</p>
+                <span>Choose the best fit for you</span>
+              </li>
+              <li>
+                <p>Buy online in minutes</p>
+                <span>Get your documents the same way</span>
+              </li>
+            </ul>
+          </div>
+          <a href="" class="btn btn-primary-lg">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
+            GET A QUOTE
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="s-hero-product">
     <div class="container">
       <div class="product">
-        <!-- Left Text Area -->
         <div class="left-text" data-aos="fade-right" data-aos-once="true">
           <span class="sm-text-product"><?php the_field('get_quote_sub_title_van_insurance') ?></span>
           <h1><?php the_field('get_quote_title_van_insurance') ?></h1>
           <ul>
-            <!-- Repeater List Section Hero --> 
             <?php if( have_rows('list_get_quote_van_insurance') ): while ( have_rows('list_get_quote_van_insurance') ) : the_row(); ?>
               <li>
                 <img src="<?php the_sub_field('icon_checked_van_insurance') ?>" alt="icon green checked" title="icon green checked">
@@ -35,7 +108,6 @@
           </button>
         </div>
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in" data-aos-once="true">
-        <!-- Right Text Area -->
         <div class="right-text" data-aos="fade-left" data-aos-once="true">
           <span class="sm-text-product"><?php the_field('call_us_subtitle_van_insurance') ?></span>
           <h2><?php the_field('call_us_title_van_insurance') ?></h2>
@@ -56,13 +128,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- Section Trustpilot -->
-  <section class="s-trustpilot-product">
+  <!-- Section TrustPilot -->
+  <section class="s-trustpilot-insurance" data-aos="fade-up" data-aos-once="true">
     <div class="container">
-      <h3>We pay out on 99% of Van Insurance claims.</h3>
-      <!-- Section Company Logos -->
       <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
     </div>
   </section>

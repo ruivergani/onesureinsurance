@@ -88,7 +88,128 @@
     }
 
 }
-// Section Hero Product
+// Section Hero Insurance
+.s-hero-insurance{
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background: url('../assets/bg/bg-product.webp') no-repeat center center;
+    background-size: cover;
+    .container{
+        background-color: white;
+        border-radius: 5px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 72px;
+        padding-right: 72px;
+        filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.15));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .s-hero-insurance__left{
+            width: 100%;
+            max-width: 448px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .s-hero-insurance__left__title{
+                span{
+                    font-family: 'Inter', sans-serif;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 130%;
+                    letter-spacing: 0.12em;
+                    color: #868E96;
+                }
+                h1{
+                    width: 100%;
+                    max-width: 448px;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 112%;
+                    letter-spacing: -1px;
+                    color: #343A40;
+                    margin-top: 15px;
+                    margin-bottom: 45px;
+                }
+            }
+            .s-hero-insurance__left__list{
+                padding-bottom: 65px;
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 25px;
+                    flex-direction: column;
+                    li{
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 18px;
+                        img{
+
+                        }
+                        p{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #363843;
+                        }
+                    }
+                }
+            }
+            .s-hero-insurance__numbers{
+                ul{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 50px;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        justify-content: center;
+                        img{
+
+                        }
+                        .text__numbers{
+                            span{
+                                font-family: 'Inter', sans-serif;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 130%;
+                                letter-spacing: 0.05em;
+                                color: #868E96;
+                            }
+                            p{
+                                margin-top: 5px;
+                                font-family: 'Poppins', sans-serif;
+                                font-weight: 500;
+                                font-size: 18px;
+                                line-height: 112%;
+                                letter-spacing: -0.5px;
+                                color: #00449E;
+                            }
+                            &:hover{
+                                p{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .s-hero-insurance__right{
+
+        }
+    }
+}
+
 .s-hero-product{
     padding-top: 6rem;
     background: url('../assets/bg/bg-product.webp') no-repeat center center;
@@ -328,49 +449,13 @@
         }
     }
 }
-// Section Trustpilot
-.s-trustpilot-product{
-    background-color: $white;
+
+// Section Trustpilot Insurance
+.s-trustpilot-insurance{
+    padding: 6rem 0px;
     width: 100%;
-    padding: 6rem 0rem;
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        h3{
-            width: 100%;
-            max-width: 26.4rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            font-size: 2.4rem;
-            line-height: 150%;
-            letter-spacing: -0.05rem;
-            color: $grey-600;
-            
-        }
-    }
-    // Responsive  
-    @media (max-width: 768px){
-        padding: 4rem 0px;
-        .container{
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            gap: 3rem;
-            h3{
-                text-align: center;
-            }
-        }
-    }
-    @media (max-width: 991px){
-        padding: 6rem 0px;
-    }
-    @media (max-width: 480px){
-        padding-top: 4rem;
-        padding-bottom: 0px;
-        
-    }
 }
+
 // Section Motor Trade Slide
 .s-slide-product{
     scroll-margin-top: 140px;
