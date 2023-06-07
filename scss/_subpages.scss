@@ -444,6 +444,13 @@
 .s-trustpilot-insurance{
     padding: 6rem 0px;
     width: 100%;
+    // Responsive
+    @media (max-width: 991px){
+        padding-bottom: 0rem;
+    }
+    @media (max-width: 768px){
+        padding-top: 3rem;
+    }
 }
 // Section Motor Trade Slide
 .s-slide-product{
