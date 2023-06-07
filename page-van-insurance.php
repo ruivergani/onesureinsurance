@@ -38,14 +38,14 @@
         </div>
         <div class="s-hero-insurance__numbers">
           <ul>
-            <li>
+            <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
               <a class="text__numbers" href="">
                 <span>MOBILE FRIENDLY</span>
                 <p>03303139373</p>
               </a>
             </li>
-            <li>
+            <li class="landline">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
               <a class="text__numbers" href="">
                 <span>TELEPHONE</span>
@@ -55,7 +55,7 @@
           </ul>
         </div>
       </div>
-      <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="">
+      <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
       <div class="s-hero-insurance__right">
         <div class="s-hero-insurance__right__title">
           <span class="s-hero-insurance__span">UNDERSTAND OUR PROCESS</span>
