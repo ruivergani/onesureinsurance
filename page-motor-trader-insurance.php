@@ -371,6 +371,22 @@
     </div>
   </section>
 
+  <!-- Section CTA  -->
+  <div class="s-newsletter" id="cta">
+    <div class="container">
+      <a href="<?php the_field('link_cta_motortrade_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+            <span><?php the_field('subtitle_cta_motortrade_insurance') ?></span>
+            <h3><?php the_field('title_cta_motortrade_insurance') ?></h3>
+        </div>
+        <button class="btn btn-primary">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+            get a quote
+        </button>
+      </a>
+    </div>
+  </div>
+
   <!-- Section Related Articles Filter By Tag -->
   <?php   
     $tag = get_queried_object();
