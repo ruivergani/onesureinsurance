@@ -1233,13 +1233,13 @@
                     img{
                         width: 100%;
                         max-width: 2.4rem;
-                        margin-top: 0.8rem;
+                        margin-top: 3px;
                     }
                     p{
                         font-family: 'Inter', sans-serif;
                         font-weight: 400;
-                        font-size: 1.8rem;
-                        line-height: 175%;
+                        font-size: 16px;
+                        line-height: 150%;
                         color: $grey-500;
                     }
                 }
@@ -1475,6 +1475,7 @@
 .s-faqs{
     scroll-margin-top: 140px;
     padding-top: 3rem;
+    padding-bottom: 0rem !important;
     .container{
         display: flex;
         flex-direction: column;
