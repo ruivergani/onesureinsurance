@@ -11,61 +11,80 @@
   <!-- Section Breadcrumbs -->
   <?php breadcrumbs(); ?>
 
-  <!-- Section Hero -->
-  <section class="s-hero-product">
+  <!-- === SECTION HERO === -->
+  <section class="s-hero-insurance">
     <div class="container">
-      <div class="product">
-        <!-- Left Text Area -->
-        <div class="left-text" data-aos="fade-right" data-aos-once="true">
-          <span class="sm-text-product"><?php the_field('get_quote_sub_title_caravan_insurance') ?></span>
-          <h1><?php the_field('get_quote_title_caravan_insurance') ?></h1>
+      <div class="s-hero-insurance__left">
+        <div class="s-hero-insurance__left__title">
+          <span class="s-hero-insurance__span"><?php the_field('subtitle_left_caravan_insurance') ?></span>
+          <h1><?php the_field('title_left_caravan_insurance') ?></h1>
+        </div>
+        <div class="s-hero-insurance__left__list">
           <ul>
-            <!-- Repeater List Section Hero --> 
-            <?php if( have_rows('list_get_quote_caravan_insurance') ): while ( have_rows('list_get_quote_caravan_insurance') ) : the_row(); ?>
+            <?php if( have_rows('list_left_caravan_insurance') ): while ( have_rows('list_left_caravan_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_caravan_insurance') ?>" alt="icon green checked" title="icon green checked">
+                <img src="<?php the_sub_field('icon_checked_caravan_insurance') ?>" alt="icon checked" title="icon checked">
                 <p><?php the_sub_field('text_caravan_insurance') ?></p>
               </li>
             <?php endwhile; else : endif;?>
           </ul>
-          <button class="btn btn-primary-lg">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
-            GET A QUOTE
-          </button>
         </div>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-line.svg" alt="icon line" title="icon line" class="img-line" data-aos="zoom-in" data-aos-once="true">
-        <!-- Right Text Area -->
-        <div class="right-text" data-aos="fade-left" data-aos-once="true">
-          <span class="sm-text-product"><?php the_field('call_us_subtitle_caravan_insurance') ?></span>
-          <h2><?php the_field('call_us_title_caravan_insurance') ?></h2>
+        <div class="s-hero-insurance__numbers">
           <ul>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="icon phone" title="icon phone">
-              <p>Call our landline at <span><?php the_field('landline_phone_caravan_insurance') ?></span></p>
+            <li class="mobile">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
+              <a class="text__numbers" href="">
+                <span>MOBILE FRIENDLY</span>
+                <p><?php the_field('mobile_phone_caravan_insurance') ?></p>
+              </a>
             </li>
-            <li>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="icon mobile phone" title="icon mobile phone">
-              <p>Call your mobile at <span><?php the_field('mobile_phone_caravan_insurance') ?></span></p>
+            <li class="landline">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
+              <a class="text__numbers" href="">
+                <span>TELEPHONE</span>
+                <p><?php the_field('landline_phone_caravan_insurance') ?></p>
+              </a>
             </li>
           </ul>
-          <button class="btn btn-outline">
-            <i class="fa-solid fa-phone"></i>
-            Call For Our Best Price
-          </button>
         </div>
+      </div>
+      <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
+      <div class="s-hero-insurance__right">
+        <div class="s-hero-insurance__right__title">
+          <span class="s-hero-insurance__span"><?php the_field('subtitle_right_caravan_insurance') ?></span>
+          <h2><?php the_field('title_right_caravan_insurance') ?></h2>
+        </div>
+        <div class="s-hero-insurance__right_content">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.jpg" alt="" class="line-right-hero">
+          <div class="s-hero-insurance__right__list">
+            <ul>
+              <li>
+                <p><?php the_field('title_01_caravan_insurance') ?></p>
+                <span><?php the_field('subtitle_01_caravan_insurance') ?></span>
+              </li>
+              <li>
+                <p><?php the_field('title_02_caravan_insurance') ?></p>
+                <span><?php the_field('subtitle_02_caravan_insurance') ?></span>
+              </li>
+              <li>
+                <p><?php the_field('title_03_caravan_insurance') ?></p>
+                <span><?php the_field('subtitle_03_caravan_insurance') ?></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="<?php the_field('link_right_caravan_insurance') ?>" class="btn btn-primary-lg">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
+          GET A QUOTE
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Section Trustpilot -->
-  <section class="s-trustpilot-product">
+  <!-- Section TrustPilot -->
+  <section class="s-trustpilot-insurance" data-aos="fade-up" data-aos-once="true">
     <div class="container">
-      <h3>We pay out on 99% of Car Insurance claims.</h3>
-      <div class="t-pilot">
-        <!-- TrustBox widget - Carousel --> 
-        <div class="trustpilot-widget" data-locale="en-US" data-template-id="53aa8912dec7e10d38f59f36" data-businessunit-id="55e56b2c0000ff000582d042" data-style-height="140px" data-style-width="100%" data-theme="light" data-stars="1,2,3,4,5" data-review-languages="en"> <a href="https://www.trustpilot.com/review/onesureinsurance.co.uk" target="_blank" rel="noopener">Trustpilot</a> 
-        </div> <!-- End TrustBox widget -->
-      </div>
+      <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
     </div>
   </section>
 

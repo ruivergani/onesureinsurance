@@ -69,7 +69,7 @@
               </li>
               <li>
                 <p><?php the_field('title_03_van_insurance') ?></p>
-                <span><?php the_field('title_03_van_insurance') ?></span>
+                <span><?php the_field('subtitle_03_van_insurance') ?></span>
               </li>
             </ul>
           </div>
