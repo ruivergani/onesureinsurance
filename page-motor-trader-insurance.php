@@ -88,11 +88,37 @@
     </div>
   </section>
 
-  <!-- Section Company Logos -->
-  <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
+  <section class="s-logos-insurance" id="s-logos" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+      <div class="title">
+        <h6>Have a look</h6>
+        <h5>Our Accreditations</h5>
+      </div>
+      <!-- Swipper -->
+      <div class="slide-logos">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="logo company" title="logo company" loading="lazy">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company03.svg" alt="logo company" title="logo company" loading="lazy">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company04.svg" alt="logo company" title="logo company" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Table of Contents -->
-  <section class="s-table-contents">
+  <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
       <ul class="js-nav-product">
@@ -285,7 +311,7 @@
   </section>
 
   <!-- Section CTA Newsletter -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" style="padding-top: 0px !important;">
     <div class="container">
       <a href="<?php the_field('link_cta_desktop_motor_trade_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">

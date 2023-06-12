@@ -89,14 +89,15 @@
     </div>
   </section>
 
-  <section class="s-logos-insurance" id="s-logos">
+  <!-- === SECTION ACCREDITATIONS === -->
+  <section class="s-logos-insurance" id="s-logos" data-aos="fade-up" data-aos-once="true">
     <div class="container">
-      <div class="title" data-aos="fade-right" data-aos-once="true">
+      <div class="title">
         <h6>Have a look</h6>
         <h5>Our Accreditations</h5>
       </div>
       <!-- Swipper -->
-      <div class="slide-logos" data-aos="fade-left" data-aos-once="true">
+      <div class="slide-logos">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card-image">
@@ -119,7 +120,7 @@
   </section>
 
   <!-- Table of Contents -->
-  <section class="s-table-contents">
+  <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
       <ul class="js-nav-product" id="js-nav-product">
@@ -301,7 +302,7 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product" id="types">
+  <section class="s-slide-product" id="types" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="top">
         <h6><?php the_field('mobile_title_section_product_slide_van_insurance') ?></h6>

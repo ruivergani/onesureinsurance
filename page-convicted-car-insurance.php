@@ -89,11 +89,38 @@
     </div>
   </section>
 
-  <!-- Section Company Logos -->
-  <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
+  <!-- === SECTION ACCREDITATIONS === -->
+  <section class="s-logos-insurance" id="s-logos" data-aos="fade-up" data-aos-once="true">
+    <div class="container">
+      <div class="title">
+        <h6>Have a look</h6>
+        <h5>Our Accreditations</h5>
+      </div>
+      <!-- Swipper -->
+      <div class="slide-logos">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="logo company" title="logo company" loading="lazy">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company03.svg" alt="logo company" title="logo company" loading="lazy">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-image">
+              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company04.svg" alt="logo company" title="logo company" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Table of Contents -->
-  <section class="s-table-contents">
+  <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
       <ul class="js-nav-product">
@@ -286,7 +313,7 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product">
+  <section class="s-slide-product" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="top">
         <h6><?php the_field('mobile_title_section_product_slide_convicted_car_insurance') ?></h6>
