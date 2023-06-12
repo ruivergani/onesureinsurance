@@ -794,6 +794,126 @@
         padding-top: 3rem !important;
     }
 }
+.s-logos-insurance{
+    padding-bottom: 5rem !important;
+    @media (max-width: 768px){
+        padding-top: 4rem !important;
+        padding-bottom: 4rem;
+    }
+    @media (max-width: 480px){
+        padding-bottom: 3rem !important;
+        padding-top: 3rem !important;
+    }
+}
+// Section Logos
+.s-logos-insurance{
+    padding-bottom: 10.7rem;
+    .container{
+        padding: 6rem 0px;
+        border-top: 2px solid $brand-light-blue;
+        border-bottom: 2px solid $brand-light-blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title{
+            border-left: 3px solid #003478;
+            padding-left: 2rem;
+            h6{
+                display: none;
+            }
+            h5{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 1.8rem;
+                line-height: 120%;
+                letter-spacing: -0.5px;
+                color: $brand-dark-blue;
+                width: 100%;
+                max-width: 15.2rem;
+                text-transform: uppercase;
+            }
+        }
+        .slide-logos{
+            overflow: hidden;
+            width: 100%;
+            max-width: 660px;
+            .swiper-wrapper{
+                width: 100%;
+                align-items: center;
+                .swiper-slide{
+                    width: auto !important;
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 220px;
+                    .card-image{
+                       width: 100%;
+                       max-width: 220px;
+                       height: 8rem;
+                       display: flex;
+                       align-items: center;
+                       justify-content: flex-end;
+                       &:last-child{
+                        margin-right: 0px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 1200px){
+        .container{
+            padding: 4rem 1.5rem !important;
+        }
+    }
+    @media (max-width: 991px){
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        .container{
+            flex-direction: column;
+            gap: 3rem;
+            .title{
+                border-left: 0px;
+                margin-left: 0px;
+                h5{
+                    max-width: 100%;
+                    font-size: 2.8rem;
+                }
+            }
+        }
+    }
+    // Mobile Device
+    @media (max-width: 480px){
+        padding-bottom: 0px !important;
+        .container{
+            .title{
+                border: none;
+                padding: 0px;
+                flex-direction: column;
+                gap: 0rem;
+                h6{
+                    display: block;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    font-size: 2.4rem;
+                    line-height: 112%;
+                    text-align: center;
+                    letter-spacing: -1px;
+                    color: $grey-300;
+                    opacity: 0.8;
+                    padding-bottom: 1rem;
+                }
+                h5{
+                    text-transform: none;
+                    font-size: 2.8rem;
+                    line-height: 112%;
+                    text-align: center;
+                    letter-spacing: -1px;
+                }
+            }
+        }
+    }
+}
 // Table of Contents
 .s-table-contents{
     // Sticky Position
