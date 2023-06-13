@@ -57,228 +57,6 @@
 </head>
 
 <body>
-  <!-- === FORM  === -->
-  <section class="modal">
-    <div class="overlay">
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <div class="box-content-title">
-          <span>GET A QUOTE</span>
-          <button class="close js-close">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-modal.svg" alt="close button"  title="close button">
-          </button>
-        </div>
-        <h2>Find the right cover to suit you. Fill the form to get a quote!</h2>
-        <div class="box-content-body">
-          <!-- === FORM === -->
-          <form action="" method="post">
-            <div class="form-group">
-              <label for="name">Name:</label><br>
-              <input type="text" name="name" id="name" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label for="surname">Surname:</label><br>
-              <input type="text" name="surname" id="surname" placeholder="Surname">
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number:</label><br>
-              <input type="number" name="phone" id="phone">
-            </div>
-            <div class="form-group-checkbox">
-              <input type="checkbox" checked="checked" name="conditions" id="checkbox_agree">
-              <label for="checkbox_agree">Agree to all terms and conditions</label>
-            </div>
-            <!-- === HIDDEN INPUT === -->
-            <input type="hidden" name="utm_source" value="your-source-value">
-            <input type="hidden" name="utm_medium" value="your-medium-value">
-            <input type="hidden" name="utm_campaign" value="your-campaign-value">
-            <!-- === END OF HIDDEN INPUT === -->
-            <button class="btn btn-primary" type="submit">
-              SEND
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- === MODAL INSURANCE TYPES === -->
-  <section class="modal-list-insurance">
-    <div class="overlay">
-    </div>
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <!-- === HEADER MODAL === -->
-        <div class="modal-header">
-          <button class="close js-close-insurance">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-modal.svg" alt="close button"  title="close button">
-          </button>
-          <h2 class="modal-title">Select an Insurance Type!</h2>
-        </div>
-        <!-- === BODY MODAL === -->
-        <div class="modal-body">
-          <ul class="left-column">
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-car"></i>
-                  <h3>Motor Trade Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-van-shuttle"></i>
-                  <h3>Van Insurance </h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-motorcycle"></i>
-                  <h3>Motorbike Insurance 01</h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-motorcycle"></i>
-                  <h3>Motorbike Insurance 02</h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <ul class="right-column">
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-truck-front"></i>
-                  <h3>HGV & Lorry Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-house"></i>
-                  <h3>Home Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-person-biking"></i>
-                  <h3>Scooter Insurance 01</h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-person-biking"></i>
-                  <h3>Scooter Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <a href="" class="btn-get-quote">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </a>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- === Top Navigation === -->
   <div class="nav-top">
     <div class="container">
@@ -525,11 +303,21 @@
             </a>
           </li>
         </ul>
-        <!-- BUTTON LINKS TO THE FORM  -->
-        <button class="btn btn-primary js-open-modal">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
-          GET A QUOTE
-        </button>
+        <?php
+          if(is_page('Home')){
+        ?>
+          <!-- BUTTON LINKS TO THE FORM  -->
+          <button class="btn btn-primary js-open-modal-insurance">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
+            GET A QUOTE
+          </button>
+        <?php } else { ?>
+          <!-- BUTTON LINKS TO THE FORM  -->
+          <button class="btn btn-primary js-open-modal">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
+            GET A QUOTE
+          </button>
+        <?php } ?>
         <!-- Hamburguer menu from lib -->
         <button class="hamburger hamburger--collapse" type="button" id="js-menu-button" loading="lazy">
           <span class="hamburger-box">
