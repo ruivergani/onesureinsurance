@@ -47,6 +47,11 @@
           </a>
         </li>
       </ul>
+      <!-- BUTTON LINKS TO THE FORM  -->
+      <button class="btn btn-primary btn-get-quote js-open-modal ">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mail-footer.svg" alt="icon email" title="icon email" loading="lazy">
+        GET A QUOTE
+      </button>
     </div>
   </section>
     

@@ -1007,6 +1007,8 @@
 body{
     &.show-modal, &.show-modal-insurance{
         // write code for body not scroll
+        height: 100vh;
+        overflow-y: hidden;
     }
 }
 // Modal
@@ -1040,79 +1042,195 @@ body{
         border: 1px solid #F1F0F5;
         background-color: $white;
         border-radius: 0.4rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         // to go down to make transition up
         transform: translateY(50px);
         transition: transform .3s;
-        .close{
-            position: absolute;
-            top: 24px;
-            right: 2.4rem;
-        }
-        span{
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            font-size: 1.4rem;
-            line-height: 130%;
-            letter-spacing: 0.12em;
-            color: #868E96;
-            margin-bottom: 2rem;
-            align-self: start;
-            padding-left: 5rem;
-        }
-        h2{
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
-            font-size: 2.8rem;
-            line-height: 130%;
-            text-align: center;
-            letter-spacing: -0.04em;
-            color: #343A40;
-            max-width: 41rem;
-        }
-        form{
+        .box-content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
             width: 100%;
-            max-width: 37rem;
-            margin-top: 4rem;
-            .form-group{
-                margin-bottom: 2.5rem;
+            height: 100%;
+            padding-right: 4rem;
+            padding-left: 4rem;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+            // customize the bar y
+            &::-webkit-scrollbar-track{
+                // the whole area
+                background-color: transparent;
             }
-            .form-group-checkbox{
-                margin-bottom: 2.5rem;
+            &::-webkit-scrollbar{
+                width: 0.5rem;
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb{
+                // the scrollbar itself
+                background-color: $brand-blue;
+                border-radius: 0.5rem;
+            }
+            .box-content-title{
+                width: 100%;
                 display: flex;
                 align-items: center;
-                gap: 15px;
-                label{
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 400;
-                    font-size: 1.6rem;
-                    line-height: 2.4rem;
-                    letter-spacing: -0.01em;
-                    color: #343a40;
-                    display: inline-block;
+                justify-content: space-between;
+                margin-bottom: 2rem;
+                .close{
+                    width: 100%;
+                    max-width: 32px;
                 }
-                input[type="checkbox"] {
-                    cursor: pointer;
-                    /* Double-sized Checkboxes */
-                    -ms-transform: scale(1.3); /* IE */
-                    -moz-transform: scale(1.3); /* FF */
-                    -webkit-transform: scale(1.3); /* Safari and Chrome */
-                    -o-transform: scale(1.3); /* Opera */
-                    transform: scale(1.3);
-                    padding: 10px;
-                    margin-left: 5px;
-                    color: $brand-dark-blue;
+                span{
+                    display: inline-block;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 130%;
+                    letter-spacing: 0.12em;
+                    color: #868E96;
                 }
             }
-            .btn{
-                width: 100%;
-                max-width: 37rem;
+            h2{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 2.8rem;
+                line-height: 130%;
+                text-align: center;
+                letter-spacing: -0.04em;
+                color: #343A40;
+                max-width: 41rem;
+            }
+            .box-content-body{
+                display: flex;
+                align-items: center;
                 justify-content: center;
-                margin-top: 1rem;
+                form{
+                    width: 100%;
+                    max-width: 37rem;
+                    margin-top: 4rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    .form-group{
+                        margin-bottom: 2.5rem;
+                    }
+                    .form-group-checkbox{
+                        align-self: flex-start;
+                        margin-bottom: 2.5rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        label{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            letter-spacing: -0.01em;
+                            color: #343a40;
+                            display: inline-block;
+                        }
+                        input[type="checkbox"] {
+                            cursor: pointer;
+                            /* Double-sized Checkboxes */
+                            -ms-transform: scale(1.3); /* IE */
+                            -moz-transform: scale(1.3); /* FF */
+                            -webkit-transform: scale(1.3); /* Safari and Chrome */
+                            -o-transform: scale(1.3); /* Opera */
+                            transform: scale(1.3);
+                            padding: 10px;
+                            margin-left: 5px;
+                            color: $brand-dark-blue;
+                        }
+                    }
+                    .btn{
+                        width: 100%;
+                        max-width: 37rem;
+                        justify-content: center;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 600px){
+        top: 0px;
+        .overlay{
+            display: none;
+            pointer-events: none;
+        }
+        .box{
+            height: 100vh;
+            max-width: 100%;
+            max-height: 100vh;
+            border-radius: 0px;
+            border: none;
+            width: 100%;
+            display: flex;
+            align-items: center !important;
+            justify-content: center !important;
+            .box-content{
+                width: 100%;
+                max-width: 450px;
+                .box-content-title{
+                    span{
+                        font-size: 13px;
+                    }
+                }
+                
+                h2{
+                    font-size: 24px;
+                }
+                .close{
+                    right: 4.4rem;
+                }
+                form{
+                    margin-top: 3rem;
+                    max-width: 32rem;
+                    .form-group{
+                        width: 100%;
+                        max-width: 32rem;
+                        margin-bottom: 2rem;
+                        label{
+                            font-size: 16px;
+                            padding-bottom: 8px;
+                        }
+                        input{
+                            width: 32rem;
+                            padding: 1rem 1.5rem;
+                        }
+                    }
+                    .form-group-checkbox{
+                        margin-bottom: 2rem;
+                    
+                    }
+                }
+            } 
+        }
+    }
+    @media (max-width: 380px){
+        .box{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            overflow-x: hidden;
+            .box-content{
+                padding: 0px;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+    @media (max-width: 335px){
+        .box{
+            padding-left: 1rem;
+            padding-right: 1rem;
+            overflow-x: hidden;
+            .box-content{
+                padding: 0px !important;
+                width: 100%;
+                max-width: 100%;
             }
         }
     }
