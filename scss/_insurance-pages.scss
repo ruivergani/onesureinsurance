@@ -104,7 +104,7 @@
         padding-right: 72px;
         filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.15));
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         .s-hero-insurance__left{
             width: 100%;
@@ -157,7 +157,6 @@
                         }
                         p{
                             width: 100%;
-                            max-width: 300px;
                             font-family: 'Inter', sans-serif;
                             font-weight: 400;
                             font-size: 16px;
@@ -223,7 +222,6 @@
                 max-height: 160px;
             }
             .s-hero-insurance__right__title{
-                padding-top: 15px;
                 align-self: flex-start;
                 span{
                     font-family: 'Inter', sans-serif;
@@ -238,7 +236,7 @@
                     width: 100%;
                     max-width: 448px;
                     margin-top: 15px;
-                    margin-bottom: 30px;
+                    margin-bottom: 50px;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 700;
                     font-size: 30px;
