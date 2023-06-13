@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/plugins.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/main.css">
   <title> 
-    <?php bloginfo('name')?> <?php wp_title('|') ?>
+    <?php bloginfo('name')?> <?php wp_title('-') ?>
   </title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -38,13 +38,13 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php get_home_url(); ?>">
-  <meta property="og:title" content="<?php bloginfo('name')?> <?php wp_title('|') ?>">
+  <meta property="og:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
   <meta property="og:description" content="<?php the_field('description_page'); ?>">
   <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="<?php get_home_url(); ?>">
-  <meta property="twitter:title" content="<?php bloginfo('name')?> <?php wp_title('|') ?>">
+  <meta property="twitter:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
   <meta property="twitter:description" content="<?php the_field('description_page'); ?>">
   <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -57,7 +57,7 @@
 </head>
 
 <body>
-  <!-- === Modal FORM  === -->
+  <!-- === FORM  === -->
   <section class="modal">
     <div class="overlay">
     </div>
@@ -81,13 +81,17 @@
           <label for="phone">Phone Number:</label><br>
           <input type="number" name="phone" id="phone">
         </div>
+        <div class="form-group-checkbox">
+          <input type="checkbox" checked="checked" name="conditions" id="checkbox_agree">
+          <label for="checkbox_agree">Agree to all terms and conditions</label>
+        </div>
         <!-- === HIDDEN INPUT === -->
         <input type="hidden" name="utm_source" value="your-source-value">
         <input type="hidden" name="utm_medium" value="your-medium-value">
         <input type="hidden" name="utm_campaign" value="your-campaign-value">
         <!-- === END OF HIDDEN INPUT === -->
         <button class="btn btn-primary" type="submit">
-          NEXT STEPS
+          SEND
         </button>
       </form>
     </div>
@@ -515,8 +519,8 @@
             </a>
           </li>
         </ul>
-        <!-- Action Button -->
-        <button class="btn btn-primary js-open-modal-insurance">
+        <!-- BUTTON LINKS TO THE FORM  -->
+        <button class="btn btn-primary js-open-modal">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
           GET A QUOTE
         </button>

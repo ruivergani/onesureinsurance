@@ -1081,6 +1081,33 @@ body{
             .form-group{
                 margin-bottom: 2.5rem;
             }
+            .form-group-checkbox{
+                margin-bottom: 2.5rem;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                label{
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    letter-spacing: -0.01em;
+                    color: #343a40;
+                    display: inline-block;
+                }
+                input[type="checkbox"] {
+                    cursor: pointer;
+                    /* Double-sized Checkboxes */
+                    -ms-transform: scale(1.3); /* IE */
+                    -moz-transform: scale(1.3); /* FF */
+                    -webkit-transform: scale(1.3); /* Safari and Chrome */
+                    -o-transform: scale(1.3); /* Opera */
+                    transform: scale(1.3);
+                    padding: 10px;
+                    margin-left: 5px;
+                    color: $brand-dark-blue;
+                }
+            }
             .btn{
                 width: 100%;
                 max-width: 37rem;

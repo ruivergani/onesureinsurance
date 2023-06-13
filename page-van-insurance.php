@@ -129,19 +129,24 @@
             <p>Overview</p>
           </a>
         </li>
-         <li class="js-item-content">
+        <li class="js-item-content">
+          <a href="#vaninsurance" class="anchor">
+            <p>Van Insurance</p>
+          </a>
+        </li>
+        <li class="js-item-content">
           <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#types" class="anchor">
-            <p>Personal</p>
+          <a href="#why" class="anchor">
+            <p>Why Choose Us?</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#why" class="anchor">
-            <p>Why Choose Us?</p>
+          <a href="#price" class="anchor">
+            <p>Price</p>
           </a>
         </li>
         <li class="js-item-content">
@@ -160,17 +165,27 @@
         <ul class="dropdown-select" id="dropdown-select">
           <li class="active">
             <a href="#overview">
-              <p>Insurance overview</p>
+              <p>Overview</p>
             </a>
           </li>
           <li>
-            <a href="#types">
+            <a href="#vaninsurance">
+              <p>Van Insurance</p>
+            </a>
+          </li>
+          <li>
+            <a href="#extras">
               <p>Optional Extras</p>
             </a>
           </li>
           <li>
             <a href="#why">
               <p>Why Choose Us?</p>
+            </a>
+          </li>
+          <li>
+            <a href="#price">
+              <p>Price</p>
             </a>
           </li>
           <li>
@@ -196,7 +211,7 @@
   </section>
 
   <!-- Section Featured Content -->
-  <section class="s-featured-content">
+  <section class="s-featured-content" id="vaninsurance">
     <div class="container">
       <div class="s-featured-content__left" data-aos="fade-right" data-aos-once="true">
         <h4><?php the_field('title_featured_content_van_insurance') ?></h4>
@@ -391,12 +406,9 @@
   </section>
 
   <!-- Section Price -->
-  <section class="s-price-insurance">
+  <section class="s-price-insurance" id="price">
     <div class="container">
       <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_van_insurance') ?></h4>
-      <div class="s-price-insurance-text" data-aos="fade-up" data-aos-once="true">
-        <?php the_field('description_section_price_van_insurance') ?>
-      </div>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
         <h5><?php the_field('title_card_section_price_van_insurance') ?></h5>
         <p><?php the_field('description_card_section_price_van_insurance') ?></p>

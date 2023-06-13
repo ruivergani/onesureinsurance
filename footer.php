@@ -1,5 +1,5 @@
- <!-- Footer -->
- <footer class="footer">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container">
       <!-- Top Section -->
       <div class="top-footer">

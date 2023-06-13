@@ -404,9 +404,6 @@
   <section class="s-price-insurance">
     <div class="container">
       <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_employer_insurance') ?></h4>
-      <div class="s-price-insurance-text" data-aos="fade-up" data-aos-once="true">
-        <?php the_field('description_section_price_employer_insurance') ?>
-      </div>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
         <h5><?php the_field('title_card_section_price_employer_insurance') ?></h5>
         <p><?php the_field('description_card_section_price_employer_insurance') ?></p>
