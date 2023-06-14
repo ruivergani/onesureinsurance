@@ -447,15 +447,15 @@
   <!-- Section CTA  -->
   <div class="s-newsletter" id="cta">
     <div class="container">
-      <a href="<?php the_field('link_cta_motortrade_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_desktop_motor_trade_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
-            <span><?php the_field('subtitle_cta_motortrade_insurance') ?></span>
-            <h3><?php the_field('title_cta_motortrade_insurance') ?></h3>
+            <span><?php the_field('subtitle_cta_desktop_motor_trade_insurance') ?></span>
+            <h3><?php the_field('title_cta_desktop_motor_trade_insurance') ?></h3>
         </div>
-        <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
-        </button>
+        <a class="btn btn-primary" href="<?php the_field('link_cta_desktop_motor_trade_insurance') ?>">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          get a quote
+        </a>
       </a>
     </div>
   </div>
