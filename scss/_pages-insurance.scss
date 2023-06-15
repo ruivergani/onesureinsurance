@@ -2594,6 +2594,7 @@
             height: 100%;
             max-width: 584px;
             max-height: 320px;
+            border-radius: 5px;
             img{
                 width: 100%;
                 height: 100%;
@@ -2601,6 +2602,7 @@
                 max-height: 320px;
                 min-height: 320px;
                 object-fit: cover;
+                border-radius: 5px;
             }
         }
     }
@@ -2848,6 +2850,7 @@
             height: 100%;
             max-width: 584px;
             max-height: 320px;
+            border-radius: 5px;
             img{
                 width: 100%;
                 height: 100%;
@@ -2855,6 +2858,7 @@
                 max-height: 320px;
                 min-height: 320px;
                 object-fit: cover;
+                border-radius: 5px;
             }
         }
     }
@@ -2947,12 +2951,14 @@
                 max-height: 320px;
                 min-height: 320px;
                 margin-bottom: 30px;
+                border-radius: 5px;
                 img{
                     width: 100%;
                     height: 100%;
                     max-width: 584px;
                     max-height: 320px;
                     min-height: 320px;
+                    border-radius: 5px;
                     object-fit: cover;
                 }
             }
