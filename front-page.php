@@ -424,10 +424,10 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="#" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_page_home_cta') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
-            <span>We Are Confident Of Our Pricing That We Challenge You To Beat Our Guarantee</span>
-            <h3>We Are Britains Cheapest Insurer* </h3>
+          <span><?php the_field('description_page_home_cta') ?></span>
+          <h3><?php the_field('title_page_home_cta') ?></h3>
         </div>
         <button class="btn btn-primary">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">

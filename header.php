@@ -304,7 +304,7 @@
           </li>
         </ul>
         <?php
-          if(is_page('Home')){
+          if(is_page('Home') || is_page('Claims') || is_page('')){
         ?>
           <!-- BUTTON LINKS TO THE FORM  -->
           <button class="btn btn-primary js-open-modal-insurance">

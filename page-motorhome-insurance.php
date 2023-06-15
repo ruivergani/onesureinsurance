@@ -168,34 +168,34 @@
   <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
-      <ul class="js-nav-product">
+      <ul class="js-nav-product" id="js-nav-product">
         <li class="js-item-content">
-          <a href="#s-content" class="active" title="content section">
-            <p>Insurance overview</p>
+          <a href="#overview" class="anchor">
+            <p>Overview</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-content" title="benefits section">
-            <p>Personal</p>
+          <a href="#motorhomeinsurance" class="anchor">
+            <p>Motorhome Insurance Cover</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-content" title="commercial section">
-            <p>Commercial</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-why-us" title="why us section">
-            <p>Why Choose Us?</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-extras-opt" title="extra section">
+          <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-faqs" title="faq section">
+          <a href="#why" class="anchor">
+            <p>Why Choose Us?</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#price" class="anchor">
+            <p>Price</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#faqs" class="anchor">
             <p>FAQs</p>
           </a>
         </li>
@@ -204,33 +204,37 @@
       <div class="select-custom">
         <!-- item selected -->
         <button class="item-selected js-open-select-custom">
-          <span>Select an </span>
-          <strong>item</strong>
+          <span>Select an <strong>item</strong></span>
         </button>
         <!-- Dropdown List -->
-        <ul class="dropdown-select">
-          <li>
-            <a href="#s-content" class="active">
-              <p>Insurance overview</p>
+        <ul class="dropdown-select" id="dropdown-select">
+          <li class="active">
+            <a href="#overview">
+              <p>Overview</p>
             </a>
           </li>
           <li>
-            <a href="#s-benefits">
-              <p>Compare our cover</p>
+            <a href="#motorhomeinsurance">
+              <p>Motorhome Insurance Cover</p>
             </a>
           </li>
           <li>
-            <a href="#s-why">
-              <p>Why choose us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#s-extras-opt">
+            <a href="#extras">
               <p>Optional Extras</p>
             </a>
           </li>
           <li>
-            <a href="#s-faqs">
+            <a href="#why">
+              <p>Why Choose Us?</p>
+            </a>
+          </li>
+          <li>
+            <a href="#price">
+              <p>Price</p>
+            </a>
+          </li>
+          <li>
+            <a href="#faqs">
               <p>FAQs</p>
             </a>
           </li>
@@ -267,7 +271,7 @@
   </section>
 
   <!-- Section Featured Secondary Content -->
-  <section class="s-featured-secondary-content">
+  <section class="s-featured-secondary-content" id="motorhome">
     <div class="container">
       <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
         <img src="<?php the_field('image_featured_content_secondary_motorhome_insurance') ?>" alt="">
@@ -306,7 +310,7 @@
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
+  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_motorhome_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_motorhome_insurance') ?></h4>
@@ -328,7 +332,7 @@
   </section>
 
   <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="s-cover">
+  <section class="s-cover" id="cover">
     <div class="container">
       <div class="cover-on" data-aos="fade-right" data-aos-once="true">
         <h6><?php the_field('mobile_title_section_cover_motorhome_insurance'); ?></h6>
@@ -420,7 +424,7 @@
   </div>
 
   <!-- Section Bespoke -->
-  <section class="s-bespoke" id="s-why-us">
+  <section class="s-bespoke" id="why">
     <div class="container">
       <div class="text-top">
         <h6><?php the_field('mobile_title_section_why_us_motorhome_insurance') ?></h6>
@@ -447,7 +451,7 @@
   </section>
 
   <!-- Section Price -->
-  <section class="s-price-insurance">
+  <section class="s-price-insurance" id="price">
     <div class="container">
       <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_motorhome_insurance') ?></h4>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
@@ -466,7 +470,7 @@
   </section>
 
   <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
+  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h4><?php the_field('title_section_motorhome_insurance') ?></h4>
       <div class="b-container">
