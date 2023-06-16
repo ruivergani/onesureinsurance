@@ -1543,6 +1543,15 @@ body{
         display: inline-block;
         padding-bottom: 0.5rem;
     }
+    textarea{
+        width: 37rem;
+        border: 1px solid #CED4DA;
+        border-radius: 0.8rem;
+        padding: 2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        color: rgba(52, 58, 64, 0.8);
+    }
     input{
         width: 37rem;
         border: 1px solid #CED4DA;

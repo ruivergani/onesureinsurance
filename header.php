@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/plugins.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/main.css">
   <title> 
-    <?php bloginfo('name')?> <?php wp_title('-') ?>
+    <?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>
   </title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -38,13 +38,13 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php get_home_url(); ?>">
-  <meta property="og:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
+  <meta property="og:title" content="<?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>">
   <meta property="og:description" content="<?php the_field('description_page'); ?>">
   <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="<?php get_home_url(); ?>">
-  <meta property="twitter:title" content="<?php bloginfo('name')?> <?php wp_title('-') ?>">
+  <meta property="twitter:title" content="<?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>">
   <meta property="twitter:description" content="<?php the_field('description_page'); ?>">
   <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
@@ -304,7 +304,7 @@
           </li>
         </ul>
         <?php
-          if(is_page('Home') || is_page('Claims') || is_page('')){
+          if(is_page('Home') || is_page('Claims') || is_page('Support') || is_page('About Us') || is_page('Contact')){
         ?>
           <!-- BUTTON LINKS TO THE FORM  -->
           <button class="btn btn-primary js-open-modal-insurance">

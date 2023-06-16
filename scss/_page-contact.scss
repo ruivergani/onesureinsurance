@@ -42,6 +42,78 @@
     padding-top: 90px;
     padding-bottom: 90px;
     .container{
-        
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .s-content-contact-left{
+            width: 100%;
+            max-width: 275px;
+            border: 1px solid #CED4DA;
+            border-radius: 5px;
+            padding-left: 32px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            h2{
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 150%;
+                color: #003478;
+                letter-spacing: 0.1em;
+            }
+            ul{
+                margin-top: 40px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                width: 100%;
+                gap: 15px;
+                li{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        img{
+                            opacity: 0.5;
+                            transition: all .2s ease-in-out;
+                        }
+                        p{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 150%;
+                            transition: all .3s ease-in-out;
+                        }
+                        &.active, &:hover{
+                            p{
+                                color: #050110;
+                                text-decoration: underline;
+                            }
+                            img{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .s-content-contact-right{
+            width: 100%;
+            max-width: 832px;
+            .form-contact{
+                form{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 40px 92px;
+                    button{
+                        grid-row-start: 5;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
     }
 }
