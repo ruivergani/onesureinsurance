@@ -454,30 +454,8 @@
     </div>
   </section>
 
-  <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h4><?php the_field('title_section_scooter_insurance') ?></h4>
-      <div class="b-container">
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_faq_scooter_insurance') ): while ( have_rows('section_faq_scooter_insurance') ) : the_row(); ?>
-          <!-- Question Card -->
-          <div class="question">
-            <div class="title js-question">
-              <strong><?php the_sub_field('title_faq_scooter_insurance'); ?></strong>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="question-content">
-              <?php the_sub_field('description_faq_scooter_insurance'); ?>
-            </div>
-          </div>
-        <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
   <!-- Section CTA  -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" style="padding-top: 0px;">
     <div class="container">
       <a href="<?php the_field('link_cta_scooter_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">

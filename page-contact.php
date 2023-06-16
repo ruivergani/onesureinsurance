@@ -240,31 +240,31 @@
           <!-- === FORM === -->
           <form action="" method="post">
             <div class="form-group">
-              <label for="reference_number">Your Reference Number</label><br>
+              <label for="reference_number">Your Reference Number</label>
               <input type="number" name="reference_number" id="reference_number" placeholder="Type here..." required>
             </div>
             <div class="form-group">
-              <label for="name_contact">Your Name</label><br>
+              <label for="name_contact">Your Name</label>
               <input type="text" name="name_contact" id="name_contact" required>
             </div>
             <div class="form-group">
-              <label for="company_name">Company Name</label><br>
+              <label for="company_name">Company Name</label>
               <input type="text" name="company_name" id="company_name" required>
             </div>
             <div class="form-group">
-              <label for="landline_phone_number_contact">Landline Phone Number</label><br>
-              <input type="phone" name="landline_phone_number_contact" id="landline_phone_number_contact">
+              <label for="landline_phone_number_contact">Landline Phone Number</label>
+              <input type="tel" name="landline_phone_number_contact" id="landline_phone_number_contact">
             </div>
             <div class="form-group">
-              <label for="mobile_phone_number_contact">Mobile Phone Number </label><br>
-              <input type="phone" name="mobile_phone_number_contact" id="mobile_phone_number_contact">
+              <label for="mobile_phone_number_contact">Mobile Phone Number </label>
+              <input type="tel" name="mobile_phone_number_contact" id="mobile_phone_number_contact">
             </div>
             <div class="form-group">
-              <label for="mobile_phone_number_contact">Mobile Phone Number </label><br>
-              <input type="phone" name="mobile_phone_number_contact" id="mobile_phone_number_contact" required>
+              <label for="email_contact">E-mail </label>
+              <input type="email" name="email_contact" id="email_contact" required>
             </div>
             <div class="form-group">
-              <label for="message_contact">Message </label><br>
+              <label for="message_contact">Message </label>
               <textarea id="message_contact" name="message_contact" rows="5">
               </textarea>
             </div>

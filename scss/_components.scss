@@ -152,15 +152,9 @@
     border-radius: 1rem;
     transition: all 0.5s ease-in-out;
     &:hover{
-        //box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
-        //z-index: 500;
+        box-shadow: 0px 0px 999px 999px rgba(255, 255, 255, 0.5);
+        z-index: 500;
         transition: all .5s ease-in-out;
-        .image{
-            img{
-                transition: all .3s;
-                transform: scale(1.05);
-            }
-        }
         .info{
             h6{
                 color: $brand-dark-blue;
@@ -173,7 +167,6 @@
         right: 2.5rem;
         width: 5.6rem;
         height: 5.6rem;
-        /* brand/light-blue */
         border: 1px solid $grey-100;
         i{
             font-size: 1.5em;
@@ -188,20 +181,24 @@
     .image{
         position: relative;
         width: 100%;
-        max-width: 28rem;
-        padding: 1rem;
+        max-width: 100%;
         height: 21rem;
-        overflow: hidden;
-        border-top-right-radius: 0.8rem;
-        border-top-left-radius: 0.8rem;
+        padding: 2rem;
+        padding-top: 0px;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
         background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img{
             transition: all .3s;
             width: 100%;
             height: 100%;
+            max-width: 220px;
             object-fit: cover;
-            border-top-right-radius: 0.8rem;
-            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
         }
     }
     .info{
@@ -1551,12 +1548,21 @@ body{
         font-family: 'Inter', sans-serif;
         font-weight: 400;
         color: rgba(52, 58, 64, 0.8);
+        resize: none;
     }
     input{
         width: 37rem;
         border: 1px solid #CED4DA;
         border-radius: 0.8rem;
         padding: 1.3rem 2rem;
+    }
+    // Responsive 
+    @media (max-width: 480px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 .title{

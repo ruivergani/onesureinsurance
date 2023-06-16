@@ -488,7 +488,7 @@
   </section>
 
   <!-- Section CTA Desktop -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" style="padding-top: 0px;">
     <div class="container">
       <a href="<?php the_field('link_cta_commercial_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
         <div class="text">

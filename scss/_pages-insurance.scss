@@ -1411,7 +1411,7 @@
                 ul{
                     li{
                         p{
-                            font-size: 1.6rem;
+                            font-size: 16px;
                             line-height: 150%;
                         }
                     }
@@ -2917,6 +2917,7 @@
     }
     @media (max-width: 480px){
         padding-bottom: 4rem;
+        padding-top:0px;
         .container{
             .s-featured-content__left{
                 h4{
