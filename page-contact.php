@@ -277,7 +277,96 @@
       </div>
     </div>
   </section>
+
+  <!-- === SECTION HELP CONTACT == -->
+  <section class="s-help-contact">
+    <div class="container">
+        <h3>Can’t find what you’re looking for?</h3>
+        <div class="s-help-description"> 
+          <p>We've got a team of UK-based experts ready to help. You can give them a call on 0333 014 6683. See our opening hours.</p>
+          <p>Or use the contact form whenever suits you and one of our team will get back to you as soon as possible.</p>  
+        </div>
+        <!-- === END OF HIDDEN INPUT === -->
+        <a class="btn btn-primary" type="submit" href="">
+          SUBMIT REQUEST
+        </a>
+    </div>
+  </section>
+
+  <!-- === SECTION MAP CONTACT == -->
+  <section class="s-map-contact">
+    <div class="container">
+      <div class="s-map-contact-left">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.339631649307!2d-2.2619363223603006!3d53.086135094160234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487a42dc78ebec17%3A0xd30519b5b926b92b!2sOne%20Sure%20Insurance!5e0!3m2!1sen!2suk!4v1686911354330!5m2!1sen!2suk" width="592" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="s-map-contact-right">
+        <h4>One Sure Insurance</h4>
+        <p>
+          Spitfire House<br>
+          142-154 Congleton Road<br>
+          Talke<br>
+          Stoke on Trent<br>
+          ST7 1LX<br>
+        </p>
+        <ul>
+          <li>
+            <a href="">
+              <p>Customer Services</p>
+              <span>01782 880140</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <p>Sales Number</p>
+              <span>0800 377 7390</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   
+  <!-- === SECTION EXTRA INFO CONTACT === -->
+  <section class="s-extra-info-contact">
+    <div class="container">
+      <h2>More Information</h2>
+      <ul>
+        <div class="info-01">
+          <div class="info-01-hours">
+            <h5>Business Opening Hours:</h5>
+            <p>Monday - Friday - 9.00am - 5:30pm</p>
+          </div>
+          <div class="info-01-content">
+            <h5>Claims Department:</h5>
+            <p>For our full list of claim numbers please <a href="">click here.</a>
+            Available 24hrs a day.</p>
+          </div>
+        </div>
+        <div class="info-02">
+          <div class="info-02-hours">
+            <h5>Sales Opening Hours:</h5>
+            <p>Monday - Friday - 8:30am - 7:00pm <br>
+            Saturday - 9:00am - 2:00pm</p>
+          </div>
+          <div class="info-02-content">
+            <h5>Call Sales: <a href="">0800 377 7390</a></h5>
+          </div>
+        </div>
+        <div class="info-03">
+          <div class="info-03-hours">
+            <h5>Renewals Opening Hours:</h5>
+            <p>Monday - Friday - 8:30am - 6:00pm <br>
+            Saturday - 9:00am - 1:00pm</p>
+          </div>
+          <div class="info-03-content">
+            <h5>Call Sales: <a href="">0800 107 1266</a></h5>
+          </div>
+        </div>
+      </ul>
+      <p class="message-info">Send us an email fill out the form found above. Required fields are highlighted in red.</p>
+      <span>* Take out an insurance policy, or renew an insurance policy with One Sure Insurance, and if you find a cheaper quotation within 48 hours that is on a like for like basis that you can provide written proof of, we will cancel your insurance policy and issue a full refund. Subject to terms and conditions.</span>
+    </div>
+  </section>
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
 
