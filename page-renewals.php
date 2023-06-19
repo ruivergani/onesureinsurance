@@ -215,17 +215,17 @@
           <p><?php the_field('subtitle_card_renewals_feedback_01') ?></p>
           <p><?php the_field('subtitle_card_renewals_feedback_02') ?></p>
           <a href="<?php the_field('link_card_renewals_feedback') ?>">
-            <p>YOUR renewals FEEDBACK</p>
+            <p>YOUR RENEWALS FEEDBACK</p>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-right-outline.svg" alt="icon right outline" title="icon right outline">
           </a>
         </div>
       </div>
       <div class="card-right-renewal">
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-comments.svg" alt="icon commets" title="icon comments">
-        <h3><?php the_field('title_card_make_complaint') ?></h3>
-        <p><?php the_field('subtitle_card_make_complaint') ?></p>
+        <h3><?php the_field('title_card_make_complaint_renewal') ?></h3>
+        <p><?php the_field('subtitle_card_make_complaint_renewal') ?></p>
         <!-- Action Button -->
-        <a class="btn btn-primary btn-renewals" href="<?php the_field('link_card_make_complaint') ?>">
+        <a class="btn btn-primary btn-renewals" href="<?php the_field('link_card_make_complaint_renewals') ?>">
           Make a complaint
         </a>
       </div>

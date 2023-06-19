@@ -86,13 +86,13 @@
         justify-content: center;
         overflow-x: visible;
         gap: 32px;
-        .card-left-claim{
+        .card-left-renewal{
             width: 100%;
             max-width: 800px;
             display: flex;
             align-items: center;
             justify-content: center;
-            .image-card-claim{
+            .image-card-renewal{
                 width: 100%;
                 height: 100%;
                 min-height: 360px;
@@ -113,7 +113,7 @@
                     }
                 }
             }
-            .text-card-claim{
+            .text-card-renewal{
                 background-color: #FAF0F2;
                 width: 100%;
                 display: flex;
@@ -161,7 +161,7 @@
                 }
             }
         }
-        .card-right-claim{
+        .card-right-renewal{
             background-color: #F3F3F3;
             width: 100%;
             max-width: 384px;
@@ -199,7 +199,7 @@
     // Responsive
     @media (max-width:1200px){
         .container{
-            .image-card-claim{
+            .image-card-renewal{
                 max-width: 300px;
             }
         }
@@ -212,8 +212,8 @@
     }
     @media (max-width: 768px){
         .container{
-            .card-left-claim{
-                .image-card-claim{
+            .card-left-renewal{
+                .image-card-renewal{
                     max-height: 320px;
                     min-height: 320px;
                     img{
@@ -221,7 +221,7 @@
                         min-height: 320px;
                     }
                 }
-                .text-card-claim{
+                .text-card-renewal{
                     padding: 30px 0px;
                     h2{
                         margin-bottom: 2rem;
@@ -236,9 +236,9 @@
     }
     @media (max-width: 720px){
         .container{
-            .card-left-claim{
+            .card-left-renewal{
                 flex-direction: column;
-                .text-card-claim{
+                .text-card-renewal{
                     max-width: 400px;
                 }
             }
@@ -248,15 +248,15 @@
         padding: 3rem 0px;
         .container{
             gap: 20px;
-            .card-left-claim{
-                .text-card-claim{
+            .card-left-renewal{
+                .text-card-renewal{
                     padding: 20px 0px;
                     p{
                         margin-bottom: 10px;
                     }
                 }
             }
-            .card-right-claim{
+            .card-right-renewal{
                 height: 320px;
                 h3{
                     margin-bottom: 20px;
@@ -294,8 +294,8 @@
             }
         }
         .content-highlight-renewals-faq{
-            .accordion-plus-claim{
-                .accordion-plus-item-claim{
+            .accordion-plus-renewal{
+                .accordion-plus-item-renewal{
                     h3{
                         border-bottom: 1px solid #C6C5CE;
                     }
@@ -305,9 +305,9 @@
         .content-highlight-renewals-faq, .all-renewals-faq{
             width: 100%;
             max-width: 83.3rem;
-            .accordion-plus-claim{
+            .accordion-plus-renewal{
                 border-bottom: 1px solid #C6C5CE;
-                .accordion-plus-item-claim{
+                .accordion-plus-item-renewal{
                     h3{
                         cursor: pointer;
                         display: flex;
@@ -329,7 +329,7 @@
                         padding-top: 20px !important;
                     }
                 }
-                .accordion-plus-content-claim{
+                .accordion-plus-content-renewal{
                     padding-bottom: 30px;
                     transition: all ease-in-out .3s;
                     width: 100%;
@@ -433,8 +433,8 @@
             }
         }
         .all-renewals-faq{
-            .accordion-plus-claim{
-                .accordion-plus-item-claim{
+            .accordion-plus-renewal{
+                .accordion-plus-item-renewal{
                     // JS open FAQs
                     &.active{
                         height: auto;
@@ -443,14 +443,14 @@
                                 transform: rotate(180deg);
                             }
                         }
-                        .accordion-plus-content-claim{
+                        .accordion-plus-content-renewal{
                             display: block;
                             pointer-events: all;
                             animation: fadeIn .3s forwards;
                         }
                     }
                 }
-                .accordion-plus-content-claim{
+                .accordion-plus-content-renewal{
                     display: none;
                     pointer-events: none;
                     transition: all ease-in-out .3s;
@@ -481,8 +481,8 @@
                 }
             }
             .content-highlight-renewals-faq, .all-renewals-faq{
-                .accordion-plus-claim{
-                    .accordion-plus-item-claim{
+                .accordion-plus-renewal{
+                    .accordion-plus-item-renewal{
                         h3{
                             padding: 20px 0px;
                         }
@@ -500,8 +500,8 @@
                 padding-top: 4rem;
             }
             .content-highlight-renewals-faq, .all-renewals-faq{
-                .accordion-plus-claim{
-                    .accordion-plus-content-claim{
+                .accordion-plus-renewal{
+                    .accordion-plus-content-renewal{
                         padding-bottom: 20px;
                     }
                 }
