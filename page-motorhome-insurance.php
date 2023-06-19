@@ -76,6 +76,7 @@
           </ul>
         </div>
         <div class="s-hero-insurance__numbers">
+          <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
@@ -175,11 +176,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#motorhomeinsurance" class="anchor">
-            <p>Motorhome Insurance Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
@@ -211,11 +207,6 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
-            </a>
-          </li>
-          <li>
-            <a href="#motorhomeinsurance">
-              <p>Motorhome Insurance Cover</p>
             </a>
           </li>
           <li>

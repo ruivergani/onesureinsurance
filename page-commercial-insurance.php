@@ -76,6 +76,7 @@
           </ul>
         </div>
         <div class="s-hero-insurance__numbers">
+          <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
@@ -168,35 +169,25 @@
   <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
-      <ul class="js-nav-product">
+      <ul class="js-nav-product" id="js-nav-product">
         <li class="js-item-content">
-          <a href="#s-content" class="active" title="content section">
-            <p>Insurance overview</p>
+          <a href="#overview" class="anchor">
+            <p>Overview</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-content" title="benefits section">
-            <p>Personal</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-content" title="commercial section">
-            <p>Commercial</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-why-us" title="why us section">
-            <p>Why Choose Us?</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-extras-opt" title="extra section">
+          <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-faqs" title="faq section">
-            <p>FAQs</p>
+          <a href="#why" class="anchor">
+            <p>Why Choose Us?</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#price" class="anchor">
+            <p>Price</p>
           </a>
         </li>
       </ul>
@@ -204,34 +195,28 @@
       <div class="select-custom">
         <!-- item selected -->
         <button class="item-selected js-open-select-custom">
-          <span>Select an </span>
-          <strong>item</strong>
+          <span>Select an <strong>item</strong></span>
         </button>
         <!-- Dropdown List -->
-        <ul class="dropdown-select">
-          <li>
-            <a href="#s-content" class="active">
-              <p>Insurance overview</p>
+        <ul class="dropdown-select" id="dropdown-select">
+          <li class="active">
+            <a href="#overview">
+              <p>Overview</p>
             </a>
           </li>
           <li>
-            <a href="#s-benefits">
-              <p>Compare our cover</p>
-            </a>
-          </li>
-          <li>
-            <a href="#s-why">
-              <p>Why choose us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#s-extras-opt">
+            <a href="#extras">
               <p>Optional Extras</p>
             </a>
           </li>
           <li>
-            <a href="#s-faqs">
-              <p>FAQs</p>
+            <a href="#why">
+              <p>Why Choose Us?</p>
+            </a>
+          </li>
+          <li>
+            <a href="#price">
+              <p>Price</p>
             </a>
           </li>
         </ul>
@@ -306,7 +291,7 @@
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
+  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_commercial_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_commercial_insurance') ?></h4>
@@ -420,7 +405,7 @@
   </div>
 
   <!-- Section Bespoke -->
-  <section class="s-bespoke" id="s-why-us">
+  <section class="s-bespoke" id="why">
     <div class="container">
       <div class="text-top">
         <h6><?php the_field('mobile_title_section_why_us_commercial_insurance') ?></h6>
@@ -447,7 +432,7 @@
   </section>
 
   <!-- Section Price -->
-  <section class="s-price-insurance">
+  <section class="s-price-insurance" id="price">
     <div class="container">
       <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_commercial_insurance') ?></h4>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
@@ -462,28 +447,6 @@
         </a>
       </div>
       <span data-aos="fade-up" data-aos-once="true"><?php the_field('span_section_price_commercial_insurance') ?></span>
-    </div>
-  </section>
-
-  <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h4><?php the_field('title_section_commercial_insurance') ?></h4>
-      <div class="b-container">
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_faq_commercial_insurance') ): while ( have_rows('section_faq_commercial_insurance') ) : the_row(); ?>
-          <!-- Question Card -->
-          <div class="question">
-            <div class="title js-question">
-              <strong><?php the_sub_field('title_faq_commercial_insurance'); ?></strong>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="question-content">
-              <?php the_sub_field('description_faq_commercial_insurance'); ?>
-            </div>
-          </div>
-        <?php endwhile; else : endif;?>
-      </div>
     </div>
   </section>
 

@@ -76,6 +76,7 @@
           </ul>
         </div>
         <div class="s-hero-insurance__numbers">
+          <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
@@ -175,11 +176,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#scooterinsurance" class="anchor">
-            <p>Scooter Insurance Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
@@ -192,11 +188,6 @@
         <li class="js-item-content">
           <a href="#price" class="anchor">
             <p>Price</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#faqs" class="anchor">
-            <p>FAQs</p>
           </a>
         </li>
       </ul>
@@ -214,11 +205,6 @@
             </a>
           </li>
           <li>
-            <a href="#scooterinsurance">
-              <p>Scooter Insurance Cover</p>
-            </a>
-          </li>
-          <li>
             <a href="#extras">
               <p>Optional Extras</p>
             </a>
@@ -231,11 +217,6 @@
           <li>
             <a href="#price">
               <p>Price</p>
-            </a>
-          </li>
-          <li>
-            <a href="#faqs">
-              <p>FAQs</p>
             </a>
           </li>
         </ul>

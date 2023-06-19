@@ -77,6 +77,7 @@
           </ul>
         </div>
         <div class="s-hero-insurance__numbers">
+          <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
@@ -165,7 +166,7 @@
     </div>
   </section>
 
-  <!-- Table of Contents -->
+  <!-- === Table of Contents === -->
   <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
@@ -173,11 +174,6 @@
         <li class="js-item-content">
           <a href="#overview" class="anchor">
             <p>Overview</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#hgvinsurance" class="anchor">
-            <p>7.5 Tonne Lorry Insurance Cover</p>
           </a>
         </li>
         <li class="js-item-content">
@@ -212,11 +208,6 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
-            </a>
-          </li>
-          <li>
-            <a href="#hgvinsurance">
-              <p>7.5 Tonne Lorry Insurance Cover</p>
             </a>
           </li>
           <li>

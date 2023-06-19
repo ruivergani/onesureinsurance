@@ -281,7 +281,7 @@
                     ?>
                   </div>
                   <div class="item">
-                    <strong>Lorem ipsum ...</strong>
+                    <strong>Help Section</strong>
                     <!-- Dynamic Menu --> 
                     <?php
                       $args = array(

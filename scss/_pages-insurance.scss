@@ -133,11 +133,11 @@
                     letter-spacing: -1px;
                     color: #343A40;
                     margin-top: 15px;
-                    margin-bottom: 45px;
+                    margin-bottom: 35px;
                 }
             }
             .s-hero-insurance__left__list{
-                padding-bottom: 65px;
+                padding-bottom: 50px;
                 ul{
                     display: flex;
                     align-items: flex-start;
@@ -167,12 +167,29 @@
                 }
             }
             .s-hero-insurance__numbers{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                width: 100%;
+                .s-hero-insurance__span__text{
+                    font-family: "Inter",sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 130%;
+                    letter-spacing: .12em;
+                    text-transform: uppercase;
+                    color: #868e96;
+                    padding-bottom: 25px;
+                    padding-left: 5px;
+                    display: inline-block;
+                    align-self: flex-start;
+                }
                 ul{
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    gap: 50px;
                     li{
                         display: flex;
                         align-items: center;
@@ -316,6 +333,13 @@
                 }
                 .s-hero-insurance__left__list{
                     padding-bottom: 40px;
+                }
+                .s-hero-insurance__numbers{
+                    align-items: center;
+                    .s-hero-insurance__span__text{
+                        align-self: center;
+                        text-align: center;
+                    }
                 }
             }
             .s-hero-insurance__right{
@@ -1457,7 +1481,7 @@
                     gap: 2rem;
                     img{
                         width: 100%;
-                        max-width: 65px;
+                        max-width: 55px;
                         color: $brand-dark-blue;
                         transition: all .3s;
                     }
@@ -1476,9 +1500,10 @@
                             font-weight: 600;
                             font-size: 2rem;
                             color: $grey-600;
-                            margin-bottom: 1rem;
                         }
                         p{
+                            display: none;
+                            pointer-events: none;
                             color: $brand-dark-blue;
                             font-weight: 800;
                             font-size: 1.6rem;

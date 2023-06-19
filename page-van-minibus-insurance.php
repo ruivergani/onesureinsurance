@@ -77,6 +77,7 @@
           </ul>
         </div>
         <div class="s-hero-insurance__numbers">
+         <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
@@ -306,7 +307,7 @@
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="s-extras-opt" data-aos="fade-up" data-aos-once="true">
+  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_van_minibus_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_van_minibus_insurance') ?></h4>
@@ -420,7 +421,7 @@
   </div>
 
   <!-- Section Bespoke -->
-  <section class="s-bespoke" id="s-why-us">
+  <section class="s-bespoke" id="why">
     <div class="container">
       <div class="text-top">
         <h6><?php the_field('mobile_title_section_why_us_van_minibus_insurance') ?></h6>
@@ -447,7 +448,7 @@
   </section>
 
   <!-- Section Price -->
-  <section class="s-price-insurance">
+  <section class="s-price-insurance" id="price">
     <div class="container">
       <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_van_minibus_insurance') ?></h4>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
@@ -466,7 +467,7 @@
   </section>
 
   <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="s-faqs" data-aos="fade-up" data-aos-once="true">
+  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h4><?php the_field('title_section_van_minibus_insurance') ?></h4>
       <div class="b-container">
