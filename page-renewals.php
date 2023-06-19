@@ -221,11 +221,11 @@
         </div>
       </div>
       <div class="card-right-renewal">
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-comments.svg" alt="icon commets" title="icon comments">
+        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-comments.svg" alt="icon comments" title="icon comments">
         <h3><?php the_field('title_card_make_complaint_renewal') ?></h3>
         <p><?php the_field('subtitle_card_make_complaint_renewal') ?></p>
         <!-- Action Button -->
-        <a class="btn btn-primary btn-renewals" href="<?php the_field('link_card_make_complaint_renewals') ?>">
+        <a class="btn btn-primary btn-renewals" href="<?php the_field('link_card_make_complaint_renewal') ?>">
           Make a complaint
         </a>
       </div>
@@ -260,7 +260,7 @@
             <div class="accordion-plus-item-renewal js-accordion-plus-item">
               <h3>
                 <?php the_sub_field('title_card_renewal_faq') ?>
-                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-renewal-faq.svg" alt="arrow down" title="arrow down">
+                <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
               </h3>
               <div class="accordion-plus-content-renewal">
                 <?php the_sub_field('description_card_renewal_faq') ?>
