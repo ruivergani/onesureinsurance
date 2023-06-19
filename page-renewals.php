@@ -203,12 +203,12 @@
     </div>
   </section>
 
-  <!-- === SECTION CARDS renewals PAGE == -->
+  <!-- === SECTION CARDS == -->
   <section class="s-renewals-content" id="renewals-content">
     <div class="container">
       <div class="card-left-renewal">
         <div class="image-card-renewal">
-          <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-renewals-feedback.jpg" alt="card renewals" title="card renewals">
+          <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-claims-feedback.jpg" alt="card renewals" title="card renewals">
         </div>
         <div class="text-card-renewal">
           <h2><?php the_field('title_card_renewals_feedback') ?></h2>
@@ -244,7 +244,7 @@
           <div class="accordion-plus-item-renewal">
             <h3>
               <?php the_field('title_highlight_section_renewals') ?>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-renewal-faq.svg" alt="arrow down" title="arrow down">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
             </h3>
             <div class="accordion-plus-content-renewal pt-3">
               <?php the_content(); ?>
