@@ -236,7 +236,7 @@
   <section class="s-content-supports-faq">
     <div class="container">
       <div class="title-content-supports-faq">
-        <h4><?php the_field('title_section_supports') ?></h4>
+        <h4><?php the_field('title_section_support') ?></h4>
       </div>
       <div class="content-highlight-supports-faq">
         <!-- === HIGHLIGHT ACCORDION FAQ === -->
@@ -292,7 +292,7 @@
   <section class="s-policy-support">
     <div class="container">
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-invoice-support-page.svg" alt="icon policy" title="icon policy" class="policy">
-      <h2>Log In To Your Account</h2>
+      <h2><?php the_field('title_section_log_in_support_page') ?></h2>
       <ul>
         <!-- Repeater Slide Cards --> 
         <?php if( have_rows('content_section_log_in_support_page') ): while ( have_rows('content_section_log_in_support_page') ) : the_row(); ?>
@@ -301,7 +301,7 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-      <a class="btn btn-primary" href="">
+      <a class="btn btn-primary" href="<?php the_field('content_section_log_in_support_page') ?>">
         Log in to your account
       </a>
     </div>
