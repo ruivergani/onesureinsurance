@@ -189,7 +189,7 @@
 
   <!-- === SECTION HERO === -->
   <section class="s-hero-renewals">
-    <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-hero-renewals.jpg" alt="hero renewals" title="hero renewals">
+    <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-01.jpg" alt="hero renewals" title="hero renewals">
     <h1 class="title-hero"><?php the_field('title_page_renewal') ?></h1>
   </section>
 

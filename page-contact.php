@@ -216,7 +216,7 @@
             </a>
           </li>
           <li>
-            <a href="<?php the_field('link_customer_service_contact_page') ?>">
+            <a href="<?php the_field('link_renewals_contact_page') ?>">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-contact.svg" alt="arrow right" title="arrow right">
               <p>Renewals</p>
             </a>
