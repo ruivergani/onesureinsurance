@@ -105,6 +105,9 @@ add_action('init', 'register_mobile_business_menu');
 add_action('init', 'register_mobile_business_commercial_insurance_menu');
 add_action('init', 'register_mobile_business_special_types_insurance_menu');
 
+// Remove <p> and <br/> from Contact Form 7
+add_filter('wpcf7_autop_or_not', '__return_false');
+
 // Function to enable the Footer edit options in the WordPress acf_add_options_page
 acf_add_options_page(array(
 	'page_title' 	=> 'Edit Footer',

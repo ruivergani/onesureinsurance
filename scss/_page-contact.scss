@@ -102,15 +102,119 @@
             width: 100%;
             max-width: 832px;
             .form-contact{
-                form{
-                    display: grid;
+                display: block;
+                // FORM
+                .wpcf7-form{
+                    display: grid !important;
                     grid-template-columns: 1fr 1fr;
-                    grid-gap: 40px 92px;
-                    button{
+                    grid-gap: 20px 92px;
+                    width: 100%;
+                    div{
+                        br{
+                            display:none;
+                            pointer-events: none;
+                        }
+                        label{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.6rem;
+                            line-height: 2.4rem;
+                            letter-spacing: -0.01em;
+                            color: #343a40;
+                            display: inline-block;
+                            padding-bottom: 0.5rem;
+                        }
+                        textarea{
+                            width: 37rem;
+                            border: 1px solid #CED4DA;
+                            border-radius: 0.8rem;
+                            padding: 2rem;
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            color: rgba(52, 58, 64, 0.8);
+                            resize: none;
+                        }
+                        input{
+                            width: 37rem;
+                            border: 1px solid #CED4DA;
+                            border-radius: 0.8rem;
+                            padding: 1.3rem 2rem;
+                        }
+                        .wpcf7-submit{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 0px 2.8rem;
+                            line-height: 4.8rem;
+                            border-radius: 0.4rem;
+                            color: #fff;
+                            text-align: center;
+                            font-size: 14px;
+                            border: 1px solid transparent;
+                            align-items: center;
+                            gap: 1rem;
+                            transition: color .3s, background-color .3s;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            background-color: $brand-dark-blue;
+                            border-color: $brand-dark-blue;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: $brand-dark-red;
+                                border-color: $brand-dark-red;
+                            }
+                        }
+                    }
+                    #btn-submit{
                         grid-row-start: 5;
+                    }
+                    .wpcf7-form-control-wrap{
+                        .wpcf7-not-valid-tip{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 24px;
+                            letter-spacing: -0.01em;
+                            display: block;
+                            margin-top: 10px;
+                        }
+                    }
+                    // Responsive 
+                    @media (max-width: 480px){
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                    .wpcf7-response-output{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        letter-spacing: -0.01em;
+                        height: 100%;
+                        max-height: 100px;
+                        margin-left: 0px;
+                    }
+                    &.sent{
+                        .wpcf7-response-output{
+                            color: green;
+                            padding: 10px 15px;
+                            background-color: #99f899;
+                        }
+                    }
+                    &.invalid{
+                        .wpcf7-response-output{
+                            padding-top: 10px;
+                            color: white;
+                            background-color: #dc3232;
+                            border: none;
+                        }
+                    }
+                    .wpcf7-spinner{
+                        display: none;
+                        pointer-events: none;
                     }
                 }
             }
@@ -127,6 +231,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
             gap: 40px;
             .s-content-contact-left{
                 padding-left: 0px;
@@ -151,18 +256,19 @@
                 width: 100%;
                 max-width: 370px;
                 .form-contact{
-                    form{
+                    .wpcf7-form{
                         width: 100%;
                         max-width: 370px;
-                        grid-gap: 30px 0px;
+                        grid-gap: 15px 0px;
                         grid-template-columns: 1fr;
                         align-items: center;
-                        .form-group{
+                        div{
                             input, textarea{
                                 width: 370px;
                             }
                         }
-                        button{
+                        
+                        #btn-submit{
                             grid-row-start: 8;
                             width: 100%;
                             max-width: 370px;
@@ -198,20 +304,21 @@
         .container{
             .s-content-contact-right{
                 .form-contact{
-                    form{
+                    .wpcf7-form{
                         width: 100%;
                         display: flex;
+                        align-items: center !important;
                         flex-direction: column;
                         gap: 20px;
                         max-width: 100%;
-                        .form-group{
+                        div{
+                            align-items: center;
                             input,textarea{
                                 width: 100% !important;
-                                min-width: 320px;
-                                max-width: 320px;
+                                padding: 10px 15px;
                             }
                         }
-                        button{
+                        #btn-submit{
                             width: 100% !important;
                             max-width: 320px;
                             align-self: center;
