@@ -1359,7 +1359,7 @@
 // Section Cover
 .s-cover{
     scroll-margin-top: 140px;
-    border-top: 0.2rem solid #F0F4F9;
+    border-top: 3px solid #F0F4F9;
     padding: 6rem 0rem;
     .container{
         display: flex;
@@ -1416,7 +1416,7 @@
         }
         .cover-off{
             background-color: $white;
-            border: 0.2rem solid #F0F4F9;
+            border: 3px solid #F0F4F9;
         }
     }
     // Responsive
@@ -1479,6 +1479,7 @@
                     display: flex;
                     align-items: center;
                     gap: 2rem;
+                    cursor: auto; // CURSOR NOT POINTER
                     img{
                         width: 100%;
                         max-width: 55px;
@@ -2291,7 +2292,9 @@
             justify-content: space-between;
             border-radius: 10px;
             background-color: $brand-dark-blue;
-            padding: 40px 100px;
+            padding: 40px 60px;
+            width: 100%;
+            max-width: 1000px;
             gap: 100px;
             h5{
                 font-family: 'Poppins', sans-serif;
@@ -2300,7 +2303,7 @@
                 line-height: 120%;
                 color: $white;
                 width: 100%;
-                max-width: 300px;
+                max-width: 350px;
                 span{
                     font-family: 'Poppins', sans-serif;
                     font-weight: 700;
@@ -2417,6 +2420,7 @@
             }
             .s-price-insurance__card-quote{
                 padding: 15px 20px;
+                text-align: center;
             }
         }
     }
