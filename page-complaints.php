@@ -191,8 +191,8 @@
   <section class="s-hero-complaints">
     <div class="container">
       <div class="title-s-hero-complaints">
-        <h1 class="title-hero">Complaints</h1>
-        <p>We always aim to provide our clients with a high quality service. But if we don't meet your expectations, we want you to let us know straight away.</p>
+        <h1 class="title-hero"><?php the_field('title_section_hero_complaints_page') ?></h1>
+        <p><?php the_field('subtitle_section_hero_complaints_page') ?></p>
       </div>
     </div>
   </section>
@@ -200,15 +200,15 @@
   <!-- === SECTION LINK === -->
   <section class="s-breadcrumbs-complaints">
     <div class="container">
-      <a href="#s-content-contact">
-        <p>Need Assistance? Check our content below</p>
+      <a href="#s-content-complaints">
+        <p><?php the_field('link_text_section_hero_complaints_page') ?></p>
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-keyboard.svg" alt="icon arrow down" title="arrow down">
       </a>
     </div>
   </section>
 
   <!-- === SECTION CONTENT === -->
-  <section class="s-content-complaints">
+  <section class="s-content-complaints" id="s-content-complaints">
     <div class="container">
       <?php the_content(); ?>
     </div>
@@ -217,13 +217,12 @@
   <!-- === SECTION HELP CONTACT == -->
   <section class="s-help-contact">
     <div class="container">
-      <h3>Can’t find what you’re looking for?</h3>
+      <h3><?php the_field('title_section_contact_help_us_complaints_page') ?></h3>
       <div class="s-help-description">
-        <p>We've got a team of UK-based experts ready to help. You can give them a call on 0333 014 6683. See our opening hours.</p>
-        <p>Or use the contact form whenever suits you and one of our team will get back to you as soon as possible.</p>
+        <p><?php the_field('subtitle_section_contact_help_us_complaints_page') ?></p>
       </div>
       <!-- === END OF HIDDEN INPUT === -->
-      <a class="btn btn-primary" type="submit" href="">
+      <a class="btn btn-primary" type="submit" href="<?php the_field('link_section_contact_help_us_complaints_page') ?>">
         SUBMIT REQUEST
       </a>
     </div>
@@ -232,33 +231,31 @@
   <!-- === SECTION CONTACT ONE SURE === -->
   <section class="s-contact-complaints">
     <div class="container">
-      <h2>You can contact the One Sure Insurance Service at:</h2>
+      <h2><?php the_field('title_section_complaints_contact') ?></h2>
       <div class="s-contact-content">
         <div class="s-contact-section-left">
           <ul>
             <li>
               <span>Telephone:</span>
-              <p>08000234567 / 03001239123</p>
+              <p><?php the_field('telephone_text_complaints') ?></p>
             </li>
             <li>
               <span>From abroad:</span>
-              <p>+44 20 7964 0500</p>
+              <p><?php the_field('telephone_abroad_text_complaints') ?></p>
             </li>
             <li>
               <span>Email:</span>
-              <p>complaint.info@financial-ombudsman.org.uk</p>
+              <p><?php the_field('email_text_complaints') ?></p>
             </li>
             <li>
               <span>Website:</span>
-              <p> www.financial-ombudsman.org.uk</p>
+              <p><?php the_field('website_text_complaints') ?></p>
             </li>
           </ul>
         </div>
         <div class="s-contact-section-right">
-          <p>The Financial Ombudsman Service
-            Exchange Tower
-            London
-            E14 9SR
+          <p>
+            <?php the_field('address_text_complaints') ?>
           </p>
         </div>
       </div>
