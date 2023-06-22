@@ -208,7 +208,62 @@
   </section>
 
   <!-- === SECTION CONTENT === -->
+  <section class="s-content-complaints">
+    <div class="container">
+      <?php the_content(); ?>
+    </div>
+  </section>
 
+  <!-- === SECTION HELP CONTACT == -->
+  <section class="s-help-contact">
+    <div class="container">
+      <h3>Can’t find what you’re looking for?</h3>
+      <div class="s-help-description">
+        <p>We've got a team of UK-based experts ready to help. You can give them a call on 0333 014 6683. See our opening hours.</p>
+        <p>Or use the contact form whenever suits you and one of our team will get back to you as soon as possible.</p>
+      </div>
+      <!-- === END OF HIDDEN INPUT === -->
+      <a class="btn btn-primary" type="submit" href="">
+        SUBMIT REQUEST
+      </a>
+    </div>
+  </section>
+
+  <!-- === SECTION CONTACT ONE SURE === -->
+  <section class="s-contact-complaints">
+    <div class="container">
+      <h2>You can contact the One Sure Insurance Service at:</h2>
+      <div class="s-contact-content">
+        <div class="s-contact-section-left">
+          <ul>
+            <li>
+              <span>Telephone:</span>
+              <p>08000234567 / 03001239123</p>
+            </li>
+            <li>
+              <span>From abroad:</span>
+              <p>+44 20 7964 0500</p>
+            </li>
+            <li>
+              <span>Email:</span>
+              <p>complaint.info@financial-ombudsman.org.uk</p>
+            </li>
+            <li>
+              <span>Website:</span>
+              <p> www.financial-ombudsman.org.uk</p>
+            </li>
+          </ul>
+        </div>
+        <div class="s-contact-section-right">
+          <p>The Financial Ombudsman Service
+            Exchange Tower
+            London
+            E14 9SR
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
