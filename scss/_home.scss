@@ -43,6 +43,12 @@
                 color: $white;
                 span{
                     font-weight: 400;
+                    font-family: 'IBM Plex Sans';
+                    font-weight: 300;
+                    font-size: 38px;
+                    line-height: 100%;
+                    letter-spacing: -0.01em;
+                    color: $white;
                 }
             }
         }
