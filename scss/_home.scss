@@ -766,6 +766,9 @@
 }
 // Section Articles
 .s-main-articles{
+    // HIDE SECTION
+    display: none;
+    pointer-events: none;
     padding-top: 9rem;
     .container{
         overflow-x: visible;
