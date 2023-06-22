@@ -120,10 +120,10 @@
             </ul>
           </div>
         </div>
-        <a href="<?php the_field('link_right_mechanic_insurance') ?>" class="btn btn-primary-lg">
+        <button class="btn btn-primary-lg js-open-modal">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
           GET A QUOTE
-        </a>
+        </button>
       </div>
     </div>
   </section>
@@ -411,7 +411,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_mechanic_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_mechanic_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
             <span><?php the_field('subtitle_cta_mechanic_insurance') ?></span>
             <h3><?php the_field('title_cta_mechanic_insurance') ?></h3>
@@ -495,7 +495,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_mechanic_insurance') ?>" class="large-cta" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_mechanic_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
             <span><?php the_field('subtitle_cta_mechanic_insurance') ?></span>
             <h3><?php the_field('title_cta_mechanic_insurance') ?></h3>

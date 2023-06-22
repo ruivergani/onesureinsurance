@@ -1,23 +1,25 @@
 // Configure the modal
-const btnOpenModal = document.querySelector('.js-open-modal');
+const btnOpenModalList = document.querySelectorAll('.js-open-modal');
 const btnCloseModal = document.querySelector('.js-close');
 
-if(btnOpenModal){
-  btnOpenModal.addEventListener('click', (Event) => {
-    Event.preventDefault();
-    let html = document.body;
-     // add the class to the html (not to the specific element)
-     html.classList.add('show-modal'); // selecting
-  })
+if (btnOpenModalList.length > 0) {
+  btnOpenModalList.forEach((btnOpenModal) => {
+    btnOpenModal.addEventListener('click', (event) => {
+      event.preventDefault();
+      let html = document.body;
+      html.classList.add('show-modal');
+    });
+  });
 }
-if (btnCloseModal){
-  btnCloseModal.addEventListener('click', (Event) => {
-    Event.preventDefault();
+
+if (btnCloseModal) {
+  btnCloseModal.addEventListener('click', (event) => {
+    event.preventDefault();
     let html = document.body;
-     // add the class to the html (not to the specific element)
-     html.classList.remove('show-modal'); // selecting
-  })
+    html.classList.remove('show-modal');
+  });
 }
+
 // Configure modal list of insurance
 const btnOpenModalInsurance = document.querySelector('.js-open-modal-insurance');
 const btnCloseModalInsurance = document.querySelector('.js-close-insurance');
