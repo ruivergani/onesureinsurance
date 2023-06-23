@@ -197,7 +197,7 @@
             </div>
           </li>
           <!-- Resources Menu -->
-          <li>
+          <li class="hide">
             <a href="#" class="js-btn-menu">
               <span>Resources</span>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
@@ -269,18 +269,6 @@
                     ?>
                   </div>
                   <div class="item">
-                    <strong>Guides</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Existing Customers Guide',
-                        'theme_location' => 'header-existing_customers_guide',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
-                  </div>
-                  <div class="item">
                     <strong>Help Section</strong>
                     <!-- Dynamic Menu --> 
                     <?php
@@ -295,6 +283,12 @@
                 </div>
               </div>
             </div>
+          </li>
+          <!-- About Us -->
+          <li>
+            <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>" class="js-btn-menu">
+              <span>About Us</span>
+            </a>
           </li>
           <!-- Contact Us -->
           <li>
