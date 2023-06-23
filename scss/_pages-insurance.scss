@@ -452,6 +452,27 @@
                         gap: 15px;
                     }
                 }
+                .s-hero-insurance__numbers{
+                    ul{
+                        li{
+                            background-color: $brand-dark-blue;
+                            border-radius: 20px;
+                            padding: 10px 20px;
+                            .text__numbers{
+                                span, p{
+                                    color: white;
+                                    
+                                }
+                                &:hover{
+                                    p, span{
+                                        color: white;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .s-hero-insurance__right{
                 .s-hero-insurance__right__title{
@@ -473,6 +494,22 @@
                 }
                 .btn{
                     margin-top: 30px;
+                }
+            }
+        }
+    }
+    @media (max-width: 360px){
+        .container{
+            .s-hero-insurance__left{
+                .s-hero-insurance__left__list{
+                    ul{
+                        li{
+                            img{
+                                display:none;
+                                pointer-events: none;
+                            }
+                        }
+                    }
                 }
             }
         }
