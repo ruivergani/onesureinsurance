@@ -41,8 +41,12 @@
               <input type="number" name="phone" id="phone">
             </div>
             <div class="form-group-checkbox">
-              <input type="checkbox" checked="checked" name="conditions" id="checkbox_agree">
-              <label for="checkbox_agree">Agree to all terms and conditions</label>
+              <input type="checkbox"  name="conditions" id="checkbox_agree">
+              <label for="checkbox_agree">
+                <a href="<?php echo get_permalink(get_page_by_title('Terms of Business')) ?>">
+                  Agree To All Terms & Conditions
+                </a>
+              </label>
             </div>
             <!-- === HIDDEN INPUT === -->
             <input type="hidden" name="utm_source" value="your-source-value">
