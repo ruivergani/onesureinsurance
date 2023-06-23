@@ -271,7 +271,7 @@
         </div>
       </div>
       <div class="s-featured-content__right" data-aos="fade-left" data-aos-once="true">
-        <img src="<?php the_field('image_featured_content_van_insurance_copy') ?>" alt="">
+        <img src="<?php the_field('image_featured_content_van_insurance') ?>" alt="">
       </div>
     </div>
   </section>

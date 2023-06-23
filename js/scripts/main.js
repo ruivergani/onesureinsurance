@@ -409,7 +409,7 @@ var slide_product = new Swiper(".slide-product", {
   },
 });
 // Swiper Slide Van Page
-var slide_product = new Swiper(".slide-van", {
+var slide_product_van = new Swiper(".slide-van", {
   slidesPerView: 4,
   spaceBetween: 32,
   pagination: {
@@ -454,7 +454,7 @@ var slide_product = new Swiper(".slide-van", {
   },
 });
 // Swiper Slide About Us
-var slide_product = new Swiper(".slide-about", {
+var slide_product_about = new Swiper(".slide-about", {
   slidesPerView: 5,
   spaceBetween: 20,
   pagination: {

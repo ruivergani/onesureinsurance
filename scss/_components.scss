@@ -370,7 +370,7 @@
     &:hover{
         .image{
             img{
-                transform: scale(1.05);
+                transform: scale(1.1);
                 -o-object-fit: cover;
                 object-fit: cover;
             }
@@ -383,8 +383,8 @@
         min-height: 20rem;
         max-height: 20rem;
         overflow: hidden;
-        border-top-right-radius: 0.6rem;
-        border-top-left-radius: 0.6rem;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
         img{
             transition: all .3s ease-in;
             width: 100%;
@@ -392,8 +392,8 @@
             min-height: 20rem;
             max-height: 20rem;
             object-fit: cover; // cover size img
-            border-top-right-radius: 0.6rem;
-            border-top-left-radius: 0.6rem;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
         }
     }
     .info{

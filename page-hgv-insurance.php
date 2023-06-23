@@ -368,11 +368,11 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product" data-aos="fade-up" data-aos-once="true">
+  <section class="s-slide-product" id="types" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="top">
-        <h6><?php the_field('mobile_title_section_product_hgv_insurance') ?></h6>
-        <h4><?php the_field('title_section_product_hgv_insurance') ?></h4>
+        <h6><?php the_field('mobile_title_section_product_slide_hgv_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_slide_hgv_insurance') ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -389,25 +389,25 @@
       <!-- Swiper slide structure -->
       <div class="slide-product">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('card_product_slide_hgv_insurance') ): while ( have_rows('card_product_slide_hgv_insurance') ) : the_row(); ?>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('card_product_slide_hgv_insurance') ): while ( have_rows('card_product_slide_hgv_insurance') ) : the_row(); ?>
+            <div class="swiper-slide">
               <!-- Card Product Type -->
               <a href="<?php the_sub_field('card_link_hgv_insurance') ?>" class="card-product">
                 <div class="image">
-                    <img src="<?php the_sub_field('card_image_hgv_insurance') ?>" alt="card product page" title="card product page">
+                    <img src="<?php the_sub_field('image_card_hgv_insurance') ?>" alt="card product page" title="card product page">
                 </div>
                 <div class="info">
                     <h6><?php the_sub_field('card_title_hgv_insurance') ?></h6>
-                    <p><?php the_sub_field('card_subtitle_hgv_insurance') ?></p>
+                    <p><?php the_sub_field('subtitle_card_hgv_insurance') ?></p>
                     <div class="learn-more">
                         <span>Learn more</span>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
                     </div>
                 </div>
               </a>
-            <?php endwhile; else : endif;?>
-          </div>
+            </div>
+          <?php endwhile; else : endif;?>
         </div>
       </div>
     </div>

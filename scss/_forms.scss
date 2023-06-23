@@ -596,12 +596,4 @@ body{
         border-radius: 0.8rem;
         padding: 1.3rem 2rem;
     }
-    // Responsive 
-    @media (max-width: 480px){
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-    }
 }
