@@ -338,29 +338,32 @@
   <!-- Section COVER / DO NOT COVER -->
   <section class="s-cover" id="s-cover">
     <div class="container">
-      <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-        <h6><?php the_field('section_cover_motortrade_title'); ?></h6>
-        <ul>
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_cover_on') ): while ( have_rows('section_cover_on') ) : the_row(); ?>
-            <li>
-              <img src="<?php the_sub_field('icon_checked_cover_on'); ?>" alt="icon checked" title="icon checked">
-              <p><?php the_sub_field('text_cover_on'); ?></p>
-            </li>
-          <?php endwhile; else : endif;?>
-        </ul>
-      </div>
-      <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-        <h6>What's not included:</h6>
-        <ul>
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_cover_off') ): while ( have_rows('section_cover_off') ) : the_row(); ?>
-            <li>
-              <img src="<?php the_sub_field('icon_checked_cover_off'); ?>" alt="icon not checked" title="icon not checked">
-              <p><?php the_sub_field('text_cover_off'); ?></p>
-            </li>
-          <?php endwhile; else : endif;?>
-        </ul>
+      <h4>What we can cover! </h4>
+      <div class="cover-section">
+        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
+          <h6><?php the_field('section_cover_motortrade_title'); ?></h6>
+          <ul>
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('section_cover_on') ): while ( have_rows('section_cover_on') ) : the_row(); ?>
+              <li>
+                <img src="<?php the_sub_field('icon_checked_cover_on'); ?>" alt="icon checked" title="icon checked">
+                <p><?php the_sub_field('text_cover_on'); ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
+        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
+          <h6>What's not included:</h6>
+          <ul>
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('section_cover_off') ): while ( have_rows('section_cover_off') ) : the_row(); ?>
+              <li>
+                <img src="<?php the_sub_field('icon_checked_cover_off'); ?>" alt="icon not checked" title="icon not checked">
+                <p><?php the_sub_field('text_cover_off'); ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
       </div>
     </div>
   </section>

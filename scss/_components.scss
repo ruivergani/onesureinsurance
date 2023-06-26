@@ -367,15 +367,6 @@
     border-top-right-radius: 0.6rem;
     border-top-left-radius: 0.6rem;
     transition: all .5s;
-    &:hover{
-        .image{
-            img{
-                transform: scale(1.1);
-                -o-object-fit: cover;
-                object-fit: cover;
-            }
-        }
-    }
     .image{
         position: relative;
         width: 100%;

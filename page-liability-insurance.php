@@ -329,29 +329,32 @@
   <!-- Section COVER / DO NOT COVER -->
   <section class="s-cover" id="cover">
     <div class="container">
-      <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-        <h6><?php the_field('mobile_title_section_cover_liability_insurance'); ?></h6>
-        <ul>
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_cover_on_liability_insurance') ): while ( have_rows('section_cover_on_liability_insurance') ) : the_row(); ?>
-            <li>
-              <img src="<?php the_sub_field('icon_checked_cover_on_liability_insurance'); ?>" alt="icon checked" title="icon checked">
-              <p><?php the_sub_field('text_cover_on_liability_insurance'); ?></p>
-            </li>
-          <?php endwhile; else : endif;?>
-        </ul>
-      </div>
-      <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-        <h6>What's not included:</h6>
-        <ul>
-          <!-- Repeater Slide Cards --> 
-          <?php if( have_rows('section_cover_off_liability_insurance') ): while ( have_rows('section_cover_off_liability_insurance') ) : the_row(); ?>
-            <li>
-              <img src="<?php the_sub_field('icon_checked_cover_off_liability_insurance'); ?>" alt="icon not checked" title="icon not checked">
-              <p><?php the_sub_field('text_cover_off_liability_insurance'); ?></p>
-            </li>
-          <?php endwhile; else : endif;?>
-        </ul>
+      <h4>What we can cover! </h4>
+      <div class="cover-section">
+        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
+          <h6><?php the_field('mobile_title_section_cover_liability_insurance'); ?></h6>
+          <ul>
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('section_cover_on_liability_insurance') ): while ( have_rows('section_cover_on_liability_insurance') ) : the_row(); ?>
+              <li>
+                <img src="<?php the_sub_field('icon_checked_cover_on_liability_insurance'); ?>" alt="icon checked" title="icon checked">
+                <p><?php the_sub_field('text_cover_on_liability_insurance'); ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
+        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
+          <h6>What's not included:</h6>
+          <ul>
+            <!-- Repeater Slide Cards --> 
+            <?php if( have_rows('section_cover_off_liability_insurance') ): while ( have_rows('section_cover_off_liability_insurance') ) : the_row(); ?>
+              <li>
+                <img src="<?php the_sub_field('icon_checked_cover_off_liability_insurance'); ?>" alt="icon not checked" title="icon not checked">
+                <p><?php the_sub_field('text_cover_off_liability_insurance'); ?></p>
+              </li>
+            <?php endwhile; else : endif;?>
+          </ul>
+        </div>
       </div>
     </div>
   </section>

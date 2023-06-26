@@ -180,50 +180,60 @@ if(function_exists('acf_add_options_page')) {
     ));
 }
 
-add_shortcode('get-affinity-value', 'os_get_affinity_value');
+if (class_exists('ACF')) {
+    add_shortcode('get-affinity-number', 'os_get_affinity_value');
 
-function os_get_affinity_value($atts){
-    $defaults = [
-        'telephone' => '0800 081 5113',
-        'mobile' => '03303139373',
-        'mobile_popup' => 'xxx-xxx-xxx-xxx'
-    ];
+    function os_get_affinity_value(array $atts):string
+    {
+        $fallbacks = [
+            'telephone' => '0800 081 5113',
+            'mobile' => '03303139373',
+            'mobile_popup' => 'xxx-xxx-xxx-xxx'
+        ];
 
-    //get shortcode $value param
-    extract(shortcode_atts(array(
-        'value' => '',
-    ), $atts));
-	
-	//value provided incorrectly through shortcode
-    if (empty($value) || !array_key_exists($value, $defaults)) {
-        return "";
-    }
-    if (!empty($_COOKIE['os_affinity_code'])) {
-        $affinity = $_COOKIE['os_affinity_code'];
-    }
-    if (!empty($_GET['affinity'])) {
-        $affinity = $_GET['affinity'];
-    }
+        //get shortcode for $for,$default params
+        extract(shortcode_atts(array(
+            'for' => '',
+            'default' => ''
+        ), $atts));
 
-    $codes = get_field('affinity', 'option');
-
-    foreach ($codes as $code) {
-        if (strtoupper($code['affinity']) == strtoupper($affinity)) {
-
-            return $code[$value] ?? $defaults[$value];
+        //value provided incorrectly through shortcode
+        if (empty($for) || !array_key_exists($for, $fallbacks)) {
+            return "Incorrect 'for' value. Please use one of the following:" . implode(",", array_keys($fallbacks));
         }
+
+        $affinity = "";
+
+        if (!empty($_COOKIE['os_affinity_code'])) {
+            $affinity = $_COOKIE['os_affinity_code'];
+        }
+        if (!empty($_GET['utm_campaign'])) {
+            $affinity = $_GET['utm_campaign'];
+        }
+
+        $codes = get_field('affinity', 'option');
+
+        foreach ($codes as $code) {
+            if (strtoupper($code['affinity']) == strtoupper($affinity)) {
+
+                return $code[$for] ?? $fallbacks[$for];
+            }
+        }
+        if(!empty($default)) {
+            return $default;
+        }
+        return $fallbacks[$for];
     }
-    return $defaults[$value];
-}
+ }
 
 add_action('init', function () {
-    if (!array_key_exists('affinity', $_GET)) {
+    if (!array_key_exists('utm_campaign', $_GET)) {
         return;
     }
     //set the UMT affinity cookie
     setcookie(
         'os_affinity_code',
-        strtoupper($_GET['affinity']),
+        strtoupper($_GET['utm_campaign']),
         time() + (86400 * 30),
         '/'
     );

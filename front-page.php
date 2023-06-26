@@ -309,63 +309,6 @@
                 </div>
               </div>
             </li>
-            <!-- === CARD INSURANCE 16 === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-truck"></i>
-                  <h3>Bulldozer Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <button class="btn-get-quote js-open-modal">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </button>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE 17 === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-truck"></i>
-                  <h3>Cherry Picker Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <button class="btn-get-quote js-open-modal">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </button>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE 18 === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-dumpster"></i>
-                  <h3>Commercial Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <button class="btn-get-quote js-open-modal">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </button>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
           </ul>
           <ul class="right-column">
             <!-- === CARD INSURANCE 01 === -->
@@ -638,46 +581,8 @@
             <li>
               <div class="card-insurance-modal">
                 <div class="card-header-modal">
-                  <i class="fa-solid fa-truck"></i>
-                  <h3>Crane Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <button class="btn-get-quote js-open-modal">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </button>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE 16 === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-truck"></i>
-                  <h3>Dump Truck Insurance</h3>
-                </div>
-                <div class="buttons-modal">
-                  <button class="btn-get-quote js-open-modal">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>get a quote</span>
-                  </button>
-                  <a href="" class="btn-call-us">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>0800 081 5113</span>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <!-- === CARD INSURANCE 17 === -->
-            <li>
-              <div class="card-insurance-modal">
-                <div class="card-header-modal">
-                  <i class="fa-solid fa-truck"></i>
-                  <h3>Mini Digger Insurance</h3>
+                  <i class="fa-solid fa-dumpster"></i>
+                  <h3>Commercial Insurance</h3>
                 </div>
                 <div class="buttons-modal">
                   <button class="btn-get-quote js-open-modal">
@@ -816,13 +721,13 @@
             <p><?php the_field('phone_number_section_call') ?></p>
           </div>
         </div>
-        <div class="card-02" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
+        <!-- <div class="card-02 hide" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
           <h3><?php the_field('title_card_02_section_call') ?></h3>
           <button class="btn btn-primary-lg">
             <i class="fa-solid fa-phone"></i>
             CALL ME BACK
           </button>
-        </div>
+        </div> -->
         <div class="card-03" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
           <h3><?php the_field('title_card_03_section_call') ?></h3>
           <button class="btn btn-primary-lg">
