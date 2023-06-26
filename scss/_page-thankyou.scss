@@ -1,0 +1,87 @@
+.s-thankyou{
+    padding-top: 112px;
+    padding-bottom: 112px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        .s-thankyoutitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+            span{
+                color: #868E96;
+                font-size: 14px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                line-height: 130%;
+                letter-spacing: 1.68px;
+            }
+            h1, p{
+                color: #343A40;
+                text-align: center;
+            }
+            h1{
+                font-size: 28px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                line-height: 130%;
+                letter-spacing: -1.12px;
+            }
+            p{
+                font-size: 16px;
+                font-family: 'Inter', sans-serif;
+                line-height: 24px;
+                letter-spacing: -0.16px;
+            }
+            
+        }
+        .s-thankyou-bullet{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;   
+            img{
+                width: 100%;
+                max-width: 30px;
+            }
+            .s-thankyou-bullet__list{
+                ul{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 22px;
+                    flex-direction: column;
+                    li{
+                        p{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #363843;
+                            margin-bottom: 5px;
+                        }
+                        span{
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 16px;
+                            color: #5F5C6B;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 768px){
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .container{
+            gap: 30px;
+        }
+    }
+}
