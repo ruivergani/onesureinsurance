@@ -1678,12 +1678,16 @@
             }
             ul{
                 grid-template-columns: 1fr;
+                align-items: center !important;
+                justify-items: center !important;
                 li{
-                    max-width: 225px;
+                    max-width: 100%;
                     justify-self: center;
                     align-self: center;
                     a{
                         width: 100%;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }

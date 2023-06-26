@@ -5,6 +5,7 @@ footer{
     padding-top: 4rem;
     border-top: 1px solid rgba(0, 52, 120, 0.3);
     z-index: 3000;
+    z-index: -30;
     .container{
         .top-footer{
             display: flex;
