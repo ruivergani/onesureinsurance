@@ -298,7 +298,7 @@
           </li>
         </ul>
         <?php
-          if(is_page('Home') || is_page('Claims') || is_page('Support') || is_page('About Us') || is_page('Contact')){
+          if(is_page('Home') || is_page('Support') || is_page('Claims') || is_page('Renewals') || is_page('Privacy Notice and Cookie Policy') || is_page('Terms of Business') || is_page('Modern Slavery Act') || is_page('About Us') || is_page('Contact') || is_page('Complaints')){
         ?>
           <!-- BUTTON LINKS TO THE FORM  -->
           <button class="btn btn-primary js-open-modal-insurance">

@@ -40,6 +40,7 @@ body{
     opacity: 0; // hide with opacity otherwise we can not make the transition with modal
     pointer-events: none; // cancel click area
     transition: opacity .3s;
+    z-index: 3001;
     .overlay{
         position: fixed; // does not apply the display flex
         top: 0;
@@ -276,6 +277,7 @@ body{
     opacity: 0; // hide with opacity otherwise we can not make the transition with modal
     pointer-events: none; // cancel click area
     transition: opacity .3s;
+    z-index: 3001;
     .overlay{
         position: fixed; // does not apply the display flex
         top: 0;
