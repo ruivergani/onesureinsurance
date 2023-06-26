@@ -1397,7 +1397,7 @@
 // Section Cover
 .s-cover{
     scroll-margin-top: 140px;
-    border-top: 3px solid #F0F4F9;
+    border-top: 2px solid #F0F4F9;
     padding: 6rem 0rem;
     .container{
         display: flex;
@@ -1457,7 +1457,7 @@
             }
             .cover-on{
                 background-color: #F0F4F9;
-                border: 0.2rem solid transparent;
+                border: 2px solid transparent;
                 ul{
                     li{
                         img{
@@ -1469,7 +1469,7 @@
             }
             .cover-off{
                 background-color: $white;
-                border: 3px solid #F0F4F9;
+                border: 2px solid #F0F4F9;
             }
         }
         
@@ -1514,7 +1514,7 @@
     padding-bottom: 6rem;
     scroll-margin-top: 160px;
     .container{
-        border-top: 0.2rem solid #f0f4f9;
+        border-top: 2px solid #f0f4f9;
         display: flex;
         flex-direction: column;
         align-items: flex-start;

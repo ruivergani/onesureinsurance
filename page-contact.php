@@ -247,14 +247,14 @@
   <!-- === SECTION HELP CONTACT == -->
   <section class="s-help-contact">
     <div class="container">
-        <h3><?php the_field('title_help_contact_page') ?></h3>
-        <div class="s-help-description"> 
-          <?php the_field('description_help_contact_page') ?>
-        </div>
-        <!-- === END OF HIDDEN INPUT === -->
-        <a class="btn btn-primary" type="submit" href="<?php the_field('link_button_help_contact_page') ?>">
-          SUBMIT REQUEST
-        </a>
+      <h3><?php the_field('title_help_contact_page') ?></h3>
+      <div class="s-help-description"> 
+        <?php the_field('description_help_contact_page') ?>
+      </div>
+      <!-- === END OF HIDDEN INPUT === -->
+      <a class="btn btn-primary" type="submit" href="<?php the_field('link_button_help_contact_page') ?>">
+        SUBMIT REQUEST
+      </a>
     </div>
   </section>
 
@@ -326,6 +326,7 @@
       <span>* Take out an insurance policy, or renew an insurance policy with One Sure Insurance, and if you find a cheaper quotation within 48 hours that is on a like for like basis that you can provide written proof of, we will cancel your insurance policy and issue a full refund. Subject to terms and conditions.</span>
     </div>
   </section>
+  
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
 

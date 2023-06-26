@@ -214,8 +214,8 @@
           <h2><?php the_field('title_card_supports_feedback') ?></h2>
           <p><?php the_field('subtitle_card_supports_feedback_01') ?></p>
           <p><?php the_field('subtitle_card_supports_feedback_02') ?></p>
-          <a href="<?php the_field('link_card_supports_feedback') ?>">
-            <p>YOUR SUPPORT FEEDBACK</p>
+          <a href="">
+            <p><?php the_field('phone_number_support') ?></p>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-right-outline.svg" alt="icon right outline" title="icon right outline">
           </a>
         </div>
@@ -225,9 +225,20 @@
         <h3><?php the_field('title_card_make_complaint_support') ?></h3>
         <p><?php the_field('subtitle_card_make_complaint_support') ?></p>
         <!-- Action Button -->
-        <a class="btn btn-primary btn-supports" href="<?php the_field('link_card_make_complaint_support') ?>">
-          Make a complaint
+        <a class="btn btn-primary btn-supports" href="#s-forms-support">
+          SEND US A MESSAGE
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SECTION FORMS === --> 
+  <section class="s-forms-support" id="s-forms-support">
+    <div class="container">
+      <h3>Send us a message</h3>
+      <div class="form-support">
+        <!-- === FORM === -->
+        <?= do_shortcode('[contact-form-7 id="8135" title="Contact Form Support"]') ?>
       </div>
     </div>
   </section>
