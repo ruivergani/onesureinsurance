@@ -339,7 +339,7 @@
   <!-- Section COVER / DO NOT COVER -->
   <section class="s-cover" id="cover">
     <div class="container">
-      <h4>What we can cover! </h4>
+      <h4><?php the_field('cover_title_car_classic_insurance'); ?></h4>
       <div class="cover-section">
         <div class="cover-on" data-aos="fade-right" data-aos-once="true">
           <h6><?php the_field('mobile_title_section_cover_car_classic_insurance'); ?></h6>
@@ -477,30 +477,8 @@
     </div>
   </section>
 
-  <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h4><?php the_field('title_section_car_classic_insurance') ?></h4>
-      <div class="b-container">
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_faq_car_classic_insurance') ): while ( have_rows('section_faq_car_classic_insurance') ) : the_row(); ?>
-          <!-- Question Card -->
-          <div class="question">
-            <div class="title js-question">
-              <strong><?php the_sub_field('title_faq_car_classic_insurance'); ?></strong>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="question-content">
-              <?php the_sub_field('description_faq_car_classic_insurance'); ?>
-            </div>
-          </div>
-        <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
   <!-- Section CTA Desktop -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" style="padding-top: 0px;">
     <div class="container">
       <a href="<?php the_field('link_cta_car_classic_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
         <div class="text">

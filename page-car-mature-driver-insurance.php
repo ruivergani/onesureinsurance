@@ -329,7 +329,7 @@
   <!-- Section COVER / DO NOT COVER -->
   <section class="s-cover" id="cover">
     <div class="container">
-      <h4>What we can cover! </h4>
+      <h4><?php the_field('cover_title_car_mature_insurance'); ?></h4>
       <div class="cover-section">
         <div class="cover-on" data-aos="fade-right" data-aos-once="true">
           <h6><?php the_field('mobile_title_section_cover_car_mature_insurance'); ?></h6>

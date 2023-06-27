@@ -450,6 +450,12 @@
                     padding-bottom: 30px;
                     ul{
                         gap: 15px;
+                        li{
+                            p{
+                                font-size: 15px;
+                                line-height: 16px;
+                            }
+                        }
                     }
                 }
                 .s-hero-insurance__numbers{
