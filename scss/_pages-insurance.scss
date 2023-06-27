@@ -633,7 +633,7 @@
             h6{
                 display: block;
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 2.4rem;
                 line-height: 112%;
                 text-align: center;
@@ -1661,34 +1661,21 @@
     }
     @media (max-width: 600px){
         .container{
-            align-items: center;
-            gap: 2rem;
-            h6{
-                display: block;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 600;
-                font-size: 2.4rem;
-                line-height: 112%;
-                text-align: center;
-                letter-spacing: -0.1rem;
-                color: $grey-300;
-                opacity: 0.8;
-            }
+            gap: 3rem;
             h4{
                 margin-bottom: 0rem;
             }
             ul{
                 grid-template-columns: 1fr;
-                align-items: center !important;
-                justify-items: center !important;
+                width: 100%;
+                max-width: 250px;
                 li{
                     max-width: 100%;
-                    justify-self: center;
-                    align-self: center;
                     a{
                         width: 100%;
-                        justify-content: center;
-                        align-items: center;
+                        img{
+                            max-width: 36px;
+                        }
                     }
                 }
             }
@@ -2770,6 +2757,7 @@
             .s-featured-content__right{
                 max-height: 270px;
                 img{
+                    min-height: 270px;
                     max-height: 270px;
                 }
             }
@@ -3027,6 +3015,7 @@
             .s-featured-content__right{
                 max-height: 270px;
                 img{
+                    min-height: 270px;
                     max-height: 270px;
                 }
             }
@@ -3242,6 +3231,13 @@
                 h1,h2,h3,h4,h5,h6{
                     margin-bottom: 15px;
                     font-size: 2.4rem;
+                }
+                .s-column-content-card-image{
+                    max-height: 270px;
+                    img{
+                        min-height: 270px;
+                        max-height: 270px;
+                    }
                 }
                 .s-column-content-card-text{
                     p{
