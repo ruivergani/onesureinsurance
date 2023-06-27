@@ -1272,7 +1272,7 @@
                             min-height: 4px;
                             display: inline-block;
                             background-color: $grey-600;
-                            margin-right: 1.6rem;
+                            margin-right: 1.4rem;
                             transition: all .3s;
                             margin-bottom: 4px;
                         }
@@ -1355,7 +1355,7 @@
     }
     // Responsive
     @media (max-width: 768px){
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         .container{
             .tab-product-content{
                 .text-content{
@@ -1490,7 +1490,9 @@
                 align-items: center;
                 gap: 2rem;
                 .cover-on, .cover-off{
-                    padding: 2.5rem;
+                    padding-top: 2.5rem;
+                    padding-right: 1.5rem;
+                    padding-left: 1.5rem;
                     width: 100%;
                     h6, h4{
                         font-size: 24px;
@@ -1857,7 +1859,7 @@
                                 min-height: 4px;
                                 display: inline-block;
                                 background-color: $grey-600;
-                                margin-right: 1.6rem;
+                                margin-right: 1.4rem;
                                 transition: all .3s;
                                 margin-bottom: 4px;
                             }
@@ -2303,7 +2305,7 @@
                         min-height: 4px;
                         display: inline-block;
                         background-color: $grey-600;
-                        margin-right: 1.6rem;
+                        margin-right: 1.4rem;
                         transition: all .3s;
                         margin-bottom: 4px;
                     }
@@ -2633,7 +2635,7 @@
                             min-height: 4px;
                             display: inline-block;
                             background-color: $grey-600;
-                            margin-right: 1.6rem;
+                            margin-right: 1.4rem;
                             transition: all .3s;
                             margin-bottom: 4px;
                         }
@@ -2890,7 +2892,7 @@
                             min-height: 4px;
                             display: inline-block;
                             background-color: $grey-600;
-                            margin-right: 1.6rem;
+                            margin-right: 1.4rem;
                             transition: all .3s;
                             margin-bottom: 4px;
                         }
@@ -3161,7 +3163,7 @@
                             min-height: 4px;
                             display: inline-block;
                             background-color: $grey-600;
-                            margin-right: 1.6rem;
+                            margin-right: 1.4rem;
                             transition: all .3s;
                             margin-bottom: 4px;
                         }

@@ -445,7 +445,7 @@
     }
     @media (max-width: 600px){
         height: 11rem;
-        border-radius: 0px;
+        border-radius: 8px;
         .image{
             display: none;
         }
@@ -454,13 +454,13 @@
             padding-right: 1rem;
             padding-top: 2rem;
             padding-bottom: 2rem;
-            border-radius: 0px;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             gap: 1rem;
+            border-radius: 8px;
             p{
                 display: none;
             }
