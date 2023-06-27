@@ -223,6 +223,10 @@
                         }
                     }
                 }
+                .cta-mobile{
+                    display: none;
+                    pointer-events: none;
+                }
             }
         }
         .s-hero-insurance__right{
@@ -478,6 +482,11 @@
                             }
                         }
                     }
+                    .cta-mobile{
+                        display: flex;
+                        pointer-events: all;
+                        margin-top: 3rem;
+                    }
                 }
             }
             .s-hero-insurance__right{
@@ -495,6 +504,8 @@
                 }
                 .btn{
                     margin-top: 30px;
+                    display: none;
+                    pointer-events: none;
                 }
             }
         }
@@ -810,17 +821,6 @@
                 text-align: center;
                 h4{
                     font-size: 2.8rem; 
-                }
-                h6{
-                    display: block;
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
-                    font-size: 2.4rem;
-                    line-height: 112%;
-                    text-align: center;
-                    letter-spacing: -0.1rem;
-                    color: $grey-300;
-                    opacity: 0.8;
                 }
                 p{
                     display: none;
@@ -3234,6 +3234,7 @@
                 }
                 .s-column-content-card-image{
                     max-height: 270px;
+                    min-height: 270px;
                     img{
                         min-height: 270px;
                         max-height: 270px;

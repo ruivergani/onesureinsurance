@@ -98,6 +98,10 @@
               </a>
             </li>
           </ul>
+          <button class="btn btn-primary-lg cta-mobile js-open-modal ">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white">
+            GET A QUOTE
+          </button>
         </div>
       </div>
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
