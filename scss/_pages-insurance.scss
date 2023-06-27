@@ -379,9 +379,9 @@
                     }
                 }
                 .s-hero-insurance__left__list{
-                    text-align: center;
+                    text-align: left;
                     ul{
-                        align-items: center;
+                        align-items: flex-start;
                         gap: 20px;
                         li{
                             align-items: flex-start;
@@ -483,12 +483,7 @@
                 .s-hero-insurance__right_content{
                     .s-hero-insurance__right__list{
                         ul{
-                            gap: 20px;
-                            li{
-                                span{
-                                    display: none;
-                                }
-                            }
+                            gap: 8px;
                         }
                     }
                 }
