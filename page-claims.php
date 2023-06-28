@@ -710,13 +710,30 @@
   </div>
 
   <!-- === SECTION CARDS === -->
-  <section class="s-cards-section">
+  <section class="s-cards-claims">
     <div class="container">
-
+      <ul>
+        <!-- SECTION REPEATER -->
+        <?php if( have_rows('cards_repeater_claim_page') ): while ( have_rows('cards_repeater_claim_page') ) : the_row(); ?>
+          <li>
+            <div class="s-card-claim">
+              <div class="s-card-claim-title">
+                <h2><?php the_sub_field('title_insurance_card_claim_page') ?></h2>
+              </div>
+              <div class="s-card-claim-image">
+                <img src="<?php the_sub_field('image_insurance_card_claim_page') ?>" alt="">
+              </div>
+              <div class="s-card-claim-button">
+                <a class="btn btn-primary" href="<?php the_sub_field('link_insurance_card_claim_page') ?>">
+                  MAKE A CLAIM
+                </a>
+              </div>
+            </div>
+          </li>
+        <?php endwhile; else : endif;?>
+      </ul>
     </div>
   </section>
-
-
 
   <!-- === Section CTA === -->
   <div class="s-newsletter s-claims-newsletter">

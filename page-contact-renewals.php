@@ -184,6 +184,9 @@
     </div>
   </section>
 
+  <!-- === FORM  === -->
+  <?php echo do_shortcode('[merlin-dialler-form]'); ?>
+
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
 

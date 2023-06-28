@@ -187,6 +187,9 @@
     </div>
   </section>
 
+  <!-- === FORM  === -->
+  <?php echo do_shortcode('[merlin-dialler-form]'); ?>
+
   <!-- Section Content Main -->
   <section class="s-faq-content">
     <div class="container">

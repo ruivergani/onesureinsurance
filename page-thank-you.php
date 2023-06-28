@@ -14,9 +14,9 @@
   <section class="s-thankyou">
     <div class="container">
         <div class="s-thankyoutitle">
-            <span><?php the_field('small_subtitle_thankyou_page') ?></span>
-            <h1><?php the_field('title_thankyou_page') ?></h1>
-            <p><?php the_field('subtitle_thankyou_page') ?></p>
+          <span><?php the_field('small_subtitle_thankyou_page') ?></span>
+          <h1><?php the_field('title_thankyou_page') ?></h1>
+          <p><?php the_field('subtitle_thankyou_page') ?></p>
         </div>
         <div class="s-thankyou-bullet">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.jpg" alt="" class="line-right-hero">

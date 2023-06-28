@@ -187,6 +187,9 @@
     </div>
   </section>
 
+  <!-- === FORM  === -->
+  <?php echo do_shortcode('[merlin-dialler-form]'); ?>
+
  <section class="s-title">
     <div class="container">
       <h1><?php wp_title('') ?></h1>

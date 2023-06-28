@@ -8,6 +8,9 @@
 <!-- Loop in the template -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 
+  <!-- === FORM  === -->
+  <?php echo do_shortcode('[merlin-dialler-form]'); ?>
+
   <!-- Section Hero -->
   <section class="s-hero-support">
     <div class="container">

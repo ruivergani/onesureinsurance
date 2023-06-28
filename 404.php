@@ -5,6 +5,9 @@
 <!-- Include Header -->
 <?php get_header(); ?>
 
+<!-- === FORM  === -->
+<?php echo do_shortcode('[merlin-dialler-form]'); ?>
+
 <section class="page-not-found">
     <div class="container">
         <h1>Page Not Found</h1>
