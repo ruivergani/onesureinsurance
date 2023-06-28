@@ -13,14 +13,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="<?php the_field('description_page'); ?>">
-  <meta name="googlebot" content="notranslate">
+
+  <!-- <meta name="googlebot" content="notranslate">
   <meta name="google" content="nositelinkssearchbox">
   <meta name="google" content="nopagereadaloud">
   <meta property="og:locale" content="en_US"/>
   <link rel="alternate" href="https://www.onesureinsurance.co.uk/" hreflang="en"/>
   <meta name="robots" content="noindex,nofollow">
-  <link rel="canonical" href="https://www.onesureinsurance.co.uk/"/>
+  <link rel="canonical" href="https://www.onesureinsurance.co.uk/"/> -->
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="<?php echo get_template_directory_uri()?>/favicon.png">

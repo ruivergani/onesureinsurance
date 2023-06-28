@@ -606,54 +606,7 @@
   </section>
 
   <!-- === FORM  === -->
-  <section class="modal">
-    <div class="overlay">
-    </div>
-    <div class="box">
-      <div class="box-content">
-        <div class="box-content-title">
-          <span>GET A QUOTE</span>
-          <button class="close js-close">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-close-modal.svg" alt="close button"  title="close button">
-          </button>
-        </div>
-        <h2>Find the right cover to suit you. Fill the form to get a quote!</h2>
-        <div class="box-content-body">
-          <!-- === FORM === -->
-          <form action="" method="post">
-            <div class="form-group">
-              <label for="name">Name:</label><br>
-              <input type="text" name="name" id="name" placeholder="Name">
-            </div>
-            <div class="form-group">
-              <label for="surname">Surname:</label><br>
-              <input type="text" name="surname" id="surname" placeholder="Surname">
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone Number:</label><br>
-              <input type="number" name="phone" id="phone">
-            </div>
-            <div class="form-group-checkbox">
-              <input type="checkbox"  name="conditions" id="checkbox_agree">
-              <label for="checkbox_agree">
-                <a href="<?php echo get_permalink(get_page_by_title('Terms of Business')) ?>">
-                  Agree To All Terms & Conditions
-                </a>
-              </label>
-            </div>
-            <!-- === HIDDEN INPUT === -->
-            <input type="hidden" name="utm_source" value="your-source-value">
-            <input type="hidden" name="utm_medium" value="your-medium-value">
-            <input type="hidden" name="utm_campaign" value="your-campaign-value">
-            <!-- === END OF HIDDEN INPUT === -->
-            <button class="btn btn-primary" type="submit">
-              SEND
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php echo do_shortcode('[merlin-dialler-form]'); ?>
 
   <!-- === SECTION HERO === -->
   <section class="s-hero-claims">
@@ -739,6 +692,31 @@
       </div>
     </div>
   </section>
+
+  <!-- === Section CTA === -->
+  <div class="s-newsletter s-claims-newsletter">
+    <div class="container">
+      <button class="large-cta js-open-modal-insurance" data-aos="zoom-in" data-aos-once="true">
+        <div class="text">
+          <span><?php the_field('subtitle_cta_claims_page') ?></span>
+          <h3><?php the_field('title_cta_claims_page') ?></h3>
+        </div>
+        <a class="btn btn-primary">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          get a quote
+        </a>
+      </button>
+    </div>
+  </div>
+
+  <!-- === SECTION CARDS === -->
+  <section class="s-cards-section">
+    <div class="container">
+
+    </div>
+  </section>
+
+
 
   <!-- === Section CTA === -->
   <div class="s-newsletter s-claims-newsletter">
