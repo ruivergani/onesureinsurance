@@ -553,7 +553,7 @@
                     .s-card-claim-image{
                         width: 100%;
                         height: 100%;
-                        max-width: 279px;
+                        max-width: 250px;
                         max-height: 186px;
                         overflow: hidden;
                         img{
@@ -561,9 +561,8 @@
                             height: 100%;
                             -o-object-fit: cover;
                             object-fit: cover;
-                            max-width: 279px;
+                            max-width: 250px;
                             max-height: 186px;
-
                         }
                     }
                     .s-card-claim-button{

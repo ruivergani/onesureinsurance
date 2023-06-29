@@ -11,6 +11,9 @@
  <!-- Section Breadcrumbs -->
  <?php breadcrumbs(); ?>
 
+ <!-- === MODAL INSURANCE TYPES === -->
+ <?php echo do_shortcode('[merlin-dialler-modal-list]'); ?> 
+
  <!-- === FORM  === -->
  <?php echo do_shortcode('[merlin-dialler-form]'); ?>
 

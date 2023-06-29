@@ -5,6 +5,12 @@
 <!-- Include Header -->
 <?php get_header(); ?>
 
+<!-- === MODAL INSURANCE TYPES === -->
+<?php echo do_shortcode('[merlin-dialler-modal-list]'); ?> 
+
+<!-- === FORM  === -->
+<?php echo do_shortcode('[merlin-dialler-form]'); ?>
+
 <!-- Section Hero -->
 <section class="s-blog-hero">
   <div class="container">

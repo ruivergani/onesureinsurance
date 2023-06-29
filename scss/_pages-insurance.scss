@@ -567,7 +567,7 @@
                 align-items: center;
                 flex: 1;
                 justify-content: space-between;
-                max-width: 20rem;
+                max-width: 26rem;
                 .swiper-pagination{
                     position: relative; // by default is absolute
                     bottom: 0.3rem; // by default pagination
@@ -594,7 +594,7 @@
                         transform: rotate(180deg);
                     }
                     .btn-next{
-                        margin-top: 1px;
+                        margin-top: 3px;
                     }
                     // class by default from swiper pagination
                     .swiper-button-disabled{
@@ -616,11 +616,11 @@
         .container{
             .top{
                 .ctrl-slide{
-                    max-width: 25rem;
+                    max-width: 29rem;
                     .ctrl{
                         gap: 2rem;
                         .btn-prev{
-                            margin-top: -0.8rem !important;
+                            margin-top: -4px !important;
                         }
                     }
                 }

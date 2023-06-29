@@ -426,7 +426,7 @@
       </div>
       <div class="s-price-insurance__card-quote" data-aos="fade-up" data-aos-once="true">
         <p><?php the_field('title_secondary_card_section_price_van_insurance') ?></p>
-        <a class="btn btn-primary" href="<?php the_field('link_secondary_card_section_price_van_insurance') ?>">
+        <a class="btn btn-primary js-open-modal" href="<?php the_field('link_secondary_card_section_price_van_insurance') ?>">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
           get a quote
         </a>
