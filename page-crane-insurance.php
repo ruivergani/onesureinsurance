@@ -315,6 +315,7 @@
         </div>
         <img src="<?php the_field('image_section_why_us_crane_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
       </div>
+      <p class="terms-conditions-why-us"><?php the_field('terms_conditions_why_us_crane_insurance') ?></p>
     </div>
   </section>
 

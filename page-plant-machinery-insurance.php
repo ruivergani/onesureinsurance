@@ -315,6 +315,7 @@
         </div>
         <img src="<?php the_field('image_section_why_us_plant_machinery_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
       </div>
+      <p class="terms-conditions-why-us"><?php the_field('terms_conditions_why_us_plant_machinery_insurance') ?></p>
     </div>
   </section>
 
