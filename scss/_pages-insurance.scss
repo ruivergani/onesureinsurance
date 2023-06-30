@@ -466,8 +466,8 @@
                     ul{
                         li{
                             background-color: $brand-dark-blue;
-                            border-radius: 20px;
-                            padding: 10px 20px;
+                            border-radius: 0.4rem;
+                            padding: 13px 20px;
                             .text__numbers{
                                 span, p{
                                     color: white;
@@ -1559,12 +1559,13 @@
             width: 100%;
             li{
                 width: 100%;
-                max-width: 280px;
+                max-width: 240px;
                 a{
                     display: flex;
                     align-items: center;
                     gap: 2rem;
                     cursor: auto; // CURSOR NOT POINTER
+                    pointer-events: none;
                     img{
                         width: 100%;
                         max-width: 55px;

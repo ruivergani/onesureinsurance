@@ -19,7 +19,7 @@
 
   <!-- === SECTION HERO === -->
   <section class="s-hero-supports">
-    <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-support-hero.webp" alt="hero supports" title="hero supports">
+    <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-subpages.jpg" alt="support image background" title="support image background">
     <h1 class="title-hero"><?php the_field('title_page_support') ?></h1>
   </section>
 

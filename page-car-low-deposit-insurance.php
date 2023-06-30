@@ -142,6 +142,11 @@
           </a>
         </li>
         <li class="js-item-content">
+          <a href="#cover" class="anchor">
+            <p>What We Cover</p>
+          </a>
+        </li>
+        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -173,6 +178,11 @@
           <li>
             <a href="#extras">
               <p>Optional Extras</p>
+            </a>
+          </li>
+          <li>
+            <a href="#cover">
+              <p>What We Cover</p>
             </a>
           </li>
           <li>
@@ -284,7 +294,7 @@
   </section>
 
   <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="s-cover">
+  <section class="s-cover" id="cover">
     <div class="container">
       <h4><?php the_field('cover_title_car_low_deposit_insurance'); ?></h4>
       <div class="cover-section">
@@ -367,11 +377,11 @@
     <div class="container">
       <a href="<?php the_field('link_cta_car_low_deposit_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
-            <span><?php the_field('subtitle_cta_car_low_deposit_insurance') ?></span>
-            <h3><?php the_field('title_cta_car_low_deposit_insurance') ?></h3>
+          <span><?php the_field('subtitle_cta_car_low_deposit_insurance') ?></span>
+          <h3><?php the_field('title_cta_car_low_deposit_insurance') ?></h3>
         </div>
         <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
             get a quote
         </button>
       </a>

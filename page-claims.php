@@ -19,7 +19,7 @@
 
   <!-- === SECTION HERO === -->
   <section class="s-hero-claims">
-    <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-hero-claims.webp" alt="hero claims" title="hero claims">
+    <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-subpages.jpg" alt="background image claims" title="background image claims">
     <h1 class="title-hero"><?php the_field('title_page_claim') ?></h1>
   </section>
 
@@ -33,32 +33,29 @@
     </div>
   </section>
 
-  <!-- === SECTION CARDS CLAIMS PAGE == -->
-  <section class="s-claims-content" id="claims-content">
+  <!-- === SECTION CARDS === -->
+  <section class="s-cards-claims" id="claims-content">
     <div class="container">
-      <div class="card-left-claim">
-        <div class="image-card-claim">
-          <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-claims-feedback.webp" alt="card claims" title="card claims">
-        </div>
-        <div class="text-card-claim">
-          <h2><?php the_field('title_card_claims_feedback') ?></h2>
-          <p><?php the_field('subtitle_card_claims_feedback_01') ?></p>
-          <p><?php the_field('subtitle_card_claims_feedback_02') ?></p>
-          <a href="<?php the_field('link_card_claims_feedback') ?>">
-            <p>YOUR CLAIMS FEEDBACK</p>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-right-outline.svg" alt="icon right outline" title="icon right outline">
-          </a>
-        </div>
-      </div>
-      <div class="card-right-claim">
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-comments.svg" alt="icon commets" title="icon comments">
-        <h3><?php the_field('title_card_make_complaint') ?></h3>
-        <p><?php the_field('subtitle_card_make_complaint') ?></p>
-        <!-- Action Button -->
-        <a class="btn btn-primary btn-claims" href="<?php the_field('link_card_make_complaint') ?>">
-          Make a complaint
-        </a>
-      </div>
+      <ul>
+        <!-- SECTION REPEATER -->
+        <?php if( have_rows('cards_repeater_claim_page') ): while ( have_rows('cards_repeater_claim_page') ) : the_row(); ?>
+          <li>
+            <div class="s-card-claim">
+              <div class="s-card-claim-title">
+                <h2><?php the_sub_field('title_insurance_card_claim_page') ?></h2>
+              </div>
+              <div class="s-card-claim-image">
+                <img src="<?php the_sub_field('image_insurance_card_claim_page') ?>" alt="">
+              </div>
+              <div class="s-card-claim-button">
+                <a class="btn btn-primary" href="<?php the_sub_field('link_insurance_card_claim_page') ?>">
+                  MAKE A CLAIM
+                </a>
+              </div>
+            </div>
+          </li>
+        <?php endwhile; else : endif;?>
+      </ul>
     </div>
   </section>
 
@@ -102,64 +99,7 @@
     </div>
   </section>
 
-  <!-- === Section CTA === -->
-  <div class="s-newsletter s-claims-newsletter">
-    <div class="container">
-      <button class="large-cta js-open-modal-insurance" data-aos="zoom-in" data-aos-once="true">
-        <div class="text">
-          <span><?php the_field('subtitle_cta_claims_page') ?></span>
-          <h3><?php the_field('title_cta_claims_page') ?></h3>
-        </div>
-        <a class="btn btn-primary">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-          get a quote
-        </a>
-      </button>
-    </div>
-  </div>
-
-  <!-- === SECTION CARDS === -->
-  <section class="s-cards-claims">
-    <div class="container">
-      <ul>
-        <!-- SECTION REPEATER -->
-        <?php if( have_rows('cards_repeater_claim_page') ): while ( have_rows('cards_repeater_claim_page') ) : the_row(); ?>
-          <li>
-            <div class="s-card-claim">
-              <div class="s-card-claim-title">
-                <h2><?php the_sub_field('title_insurance_card_claim_page') ?></h2>
-              </div>
-              <div class="s-card-claim-image">
-                <img src="<?php the_sub_field('image_insurance_card_claim_page') ?>" alt="">
-              </div>
-              <div class="s-card-claim-button">
-                <a class="btn btn-primary" href="<?php the_sub_field('link_insurance_card_claim_page') ?>">
-                  MAKE A CLAIM
-                </a>
-              </div>
-            </div>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-    </div>
-  </section>
-
-  <!-- === Section CTA === -->
-  <div class="s-newsletter s-claims-newsletter">
-    <div class="container">
-      <button class="large-cta js-open-modal-insurance" data-aos="zoom-in" data-aos-once="true">
-        <div class="text">
-          <span><?php the_field('subtitle_cta_claims_page') ?></span>
-          <h3><?php the_field('title_cta_claims_page') ?></h3>
-        </div>
-        <a class="btn btn-primary">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-          get a quote
-        </a>
-      </button>
-    </div>
-  </div>
-
+ 
   <!-- === Section Policy === -->
   <section class="s-policy-support">
     <div class="container">

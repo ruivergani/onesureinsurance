@@ -208,7 +208,7 @@
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras-" data-aos="fade-up" data-aos-once="true">
+  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_forklift_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_forklift_insurance') ?></h4>

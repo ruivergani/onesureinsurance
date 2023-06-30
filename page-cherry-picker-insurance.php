@@ -126,8 +126,8 @@
     </div>
   </section>
 
-   <!-- Table of Contents -->
-   <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
+  <!-- Table of Contents -->
+  <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
       <ul class="js-nav-product" id="js-nav-product">

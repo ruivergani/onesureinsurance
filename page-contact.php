@@ -19,7 +19,7 @@
 
   <!-- === SECTION HERO === -->
   <section class="s-hero-contact">
-    <img src="<?php echo get_template_directory_uri()?>/assets/bg/contact-us-hero.webp" alt="contact us image" title="contact us image">
+    <img src="<?php echo get_template_directory_uri()?>/assets/bg/bg-subpages.jpg" alt="contact us image" title="contact us image">
     <h1 class="title-hero"><?php the_field('title_section_hero_page_contact') ?></h1>
   </section>
 

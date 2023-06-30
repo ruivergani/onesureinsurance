@@ -17,13 +17,39 @@
 
   <!-- === FORM  === -->
   <?php echo do_shortcode('[merlin-dialler-form]'); ?>
-  
+
   <!-- Section Hero -->
   <section class="s-hero-about">
     <div class="container">
       <div class="s-hero-about-title">
         <h1><?php the_field('title_section_hero_about_us_page') ?></h1>
       </div>
+    </div>
+  </section>
+
+  <!-- === SECTION CONTENT === -->
+  <section class="s-content-about-us">
+    <div class="container">
+      <div class="s-content-about-us-text">
+        <?php the_content(); ?>
+      </div>
+    </div>
+  </section>
+
+  <!-- === SECTION ACCREDITATIONS === -->
+  <section class="s-logos-brands">
+    <div class="container">
+      <ul class="s-logos-brands-list">
+        <li>
+          <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="">
+        </li>
+        <li>
+          <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="">
+        </li>
+      </ul>
     </div>
   </section>
 

@@ -126,7 +126,7 @@
     </div>
   </section>
 
-  <!-- === Table of Contents === -->
+  <!-- Table of Contents -->
   <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
@@ -139,6 +139,11 @@
         <li class="js-item-content">
           <a href="#extras" class="anchor">
             <p>Optional Extras</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#cover" class="anchor">
+            <p>What We Cover</p>
           </a>
         </li>
         <li class="js-item-content">
@@ -173,6 +178,11 @@
           <li>
             <a href="#extras">
               <p>Optional Extras</p>
+            </a>
+          </li>
+          <li>
+            <a href="#cover">
+              <p>What We Cover</p>
             </a>
           </li>
           <li>
@@ -284,7 +294,7 @@
   </section>
 
   <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="s-cover">
+  <section class="s-cover" id="cover">
     <div class="container">
       <h4><?php the_field('cover_title_shop_insurance'); ?></h4>
       <div class="cover-section">

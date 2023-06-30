@@ -279,7 +279,7 @@
   </section>
 
   <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="s-cover">
+  <section class="s-cover" id="cover">
     <div class="container">
       <h4><?php the_field('cover_title_goods_insurance'); ?></h4>
       <div class="cover-section">

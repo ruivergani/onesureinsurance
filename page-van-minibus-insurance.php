@@ -130,34 +130,34 @@
   <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <!-- Navbar Tab -->
-      <ul class="js-nav-product">
+      <ul class="js-nav-product" id="js-nav-product">
         <li class="js-item-content">
-          <a href="#s-content" class="active" title="content section">
-            <p>Insurance overview</p>
+          <a href="#overview" class="anchor">
+            <p>Overview</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-content" title="benefits section">
-            <p>Personal</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-content" title="commercial section">
-            <p>Commercial</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-why-us" title="why us section">
-            <p>Why Choose Us?</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#s-extras-opt" title="extra section">
+          <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#s-faqs" title="faq section">
+          <a href="#cover" class="anchor">
+            <p>What We Cover</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#why" class="anchor">
+            <p>Why Choose Us?</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#price" class="anchor">
+            <p>Price</p>
+          </a>
+        </li>
+        <li class="js-item-content">
+          <a href="#faqs" class="anchor">
             <p>FAQs</p>
           </a>
         </li>
@@ -166,33 +166,37 @@
       <div class="select-custom">
         <!-- item selected -->
         <button class="item-selected js-open-select-custom">
-          <span>Select an </span>
-          <strong>item</strong>
+          <span>Select an <strong>item</strong></span>
         </button>
         <!-- Dropdown List -->
-        <ul class="dropdown-select">
-          <li>
-            <a href="#s-content" class="active">
-              <p>Insurance overview</p>
+        <ul class="dropdown-select" id="dropdown-select">
+          <li class="active">
+            <a href="#overview">
+              <p>Overview</p>
             </a>
           </li>
           <li>
-            <a href="#s-benefits">
-              <p>Compare our cover</p>
-            </a>
-          </li>
-          <li>
-            <a href="#s-why">
-              <p>Why choose us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#s-extras-opt">
+            <a href="#extras">
               <p>Optional Extras</p>
             </a>
           </li>
           <li>
-            <a href="#s-faqs">
+            <a href="#cover">
+              <p>What We Cover</p>
+            </a>
+          </li>
+          <li>
+            <a href="#why">
+              <p>Why Choose Us?</p>
+            </a>
+          </li>
+          <li>
+            <a href="#price">
+              <p>Price</p>
+            </a>
+          </li>
+          <li>
+            <a href="#faqs">
               <p>FAQs</p>
             </a>
           </li>
@@ -290,7 +294,7 @@
   </section>
 
   <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="s-cover">
+  <section class="s-cover" id="cover">
     <div class="container">
       <h4><?php the_field('cover_title_van_minibus_insurance'); ?></h4>
       <div class="cover-section">
