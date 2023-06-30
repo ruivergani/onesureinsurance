@@ -99,9 +99,8 @@
     </div>
   </section>
 
- 
   <!-- === Section Policy === -->
-  <section class="s-policy-support">
+  <section class="s-policy-support-claim">
     <div class="container">
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-invoice-support-page.svg" alt="icon policy" title="icon policy" class="policy">
       <h2>Log In To Your Account</h2>

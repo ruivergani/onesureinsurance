@@ -40,15 +40,13 @@
   <section class="s-logos-brands">
     <div class="container">
       <ul class="s-logos-brands-list">
-        <li>
-          <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="">
-        </li>
-        <li>
-          <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="">
-        </li>
-        <li>
-          <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="">
-        </li>
+        <!-- Repeater --> 
+        <?php if( have_rows('logos_brands_about_us') ): while ( have_rows('logos_brands_about_us') ) : the_row(); ?>
+          <li>
+            <img src="<?php the_sub_field('image_card_logo_about_us') ?>" alt="">
+          </li>
+        <?php endwhile; else : endif;?>
+        <!-- End Repeater --> 
       </ul>
     </div>
   </section>

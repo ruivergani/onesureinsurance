@@ -330,7 +330,7 @@
             grid-gap: 6rem 3.2rem;
             li{
                 .s-card-claim{
-                    background-color: white;
+                    background-color: $brand-light-blue;
                     border-radius: 5px;
                     width: 100%;
                     max-width: 279px;
@@ -343,8 +343,8 @@
                         align-items: center;
                         justify-content: center;
                         text-align: center;
-                        padding-top: 25px;
-                        padding-bottom: 25px;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
                         padding-right: 15px;
                         padding-left: 15px;
                         h2{
@@ -434,6 +434,61 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.s-policy-support-claim{
+    background-color: white;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .policy{
+            width: 100%;
+            max-width: 70px;
+            margin-bottom: 6rem;
+        }
+        h2{
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 3.2rem;
+            line-height: 120%;
+            text-align: center;
+            color: #050110;
+            margin-bottom: 2rem;
+        }
+        ul{
+            width: 100%;
+            max-width: 59rem;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-direction: column;
+            text-align: center;
+        }
+        .btn{
+            margin-top: 6rem;
+            font-weight: 500;
+        }
+    }
+    // Responsive
+    @media (max-width: 480px){
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .container{
+            .policy{
+                max-width: 50px;
+                margin-bottom: 3rem;
+            }
+            h2{
+                font-size: 2.8rem;
             }
         }
     }

@@ -44,8 +44,8 @@
           </div>
         </div>
         <!-- === END OF HIDDEN INPUT === -->
-        <a class="btn btn-primary" type="submit" href="">
-            SAVE OUR NUMBER
+        <a class="btn btn-primary" type="submit" href="<?php the_field('link_thankyou_page') ?>">
+          <?php the_field('text_thankyou_page') ?>
         </a>
     </div>
   </section>
