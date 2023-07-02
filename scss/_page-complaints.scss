@@ -355,7 +355,7 @@
         }
         .s-contact-content{
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-between;
             flex-direction: row;
             width: 100%;
@@ -369,13 +369,14 @@
                 ul{
                     display: flex;
                     align-items: flex-start;
-                    gap: 10px;
+                    gap: 30px;
                     flex-direction: column;
                     li{
                         display: flex;
                         align-items: flex-start;
                         justify-content: flex-start;
-                        gap: 5px;
+                        flex-direction: column;
+                        gap: 10px;
                         span, p{
                             color: var(--grey-500, #4E4B59);
                             font-size: 16px;

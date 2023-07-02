@@ -30,7 +30,7 @@
   <!-- === SECTION LINK === -->
   <section class="s-breadcrumbs-complaints">
     <div class="container">
-      <a href="#s-content-complaints">
+      <a href="#s-help-contact">
         <p><?php the_field('link_text_section_hero_complaints_page') ?></p>
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-keyboard.svg" alt="icon arrow down" title="arrow down">
       </a>
@@ -45,7 +45,7 @@
   </section>
 
   <!-- === SECTION HELP CONTACT == -->
-  <section class="s-help-contact">
+  <section class="s-help-contact" id="s-help-contact">
     <div class="container">
       <h3><?php the_field('title_section_contact_help_us_complaints_page') ?></h3>
       <div class="s-help-description">
@@ -66,20 +66,12 @@
         <div class="s-contact-section-left">
           <ul>
             <li>
-              <span>Telephone:</span>
+              <span><?php the_field('title_telephone_abroad_text_complaints') ?></span>
               <p><?php the_field('telephone_text_complaints') ?></p>
             </li>
             <li>
-              <span>From abroad:</span>
-              <p><?php the_field('telephone_abroad_text_complaints') ?></p>
-            </li>
-            <li>
-              <span>Email:</span>
+              <span><?php the_field('title_email_abroad_text_complaints') ?></span>
               <p><?php the_field('email_text_complaints') ?></p>
-            </li>
-            <li>
-              <span>Website:</span>
-              <p><?php the_field('website_text_complaints') ?></p>
             </li>
           </ul>
         </div>

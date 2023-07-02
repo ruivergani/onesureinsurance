@@ -39,6 +39,7 @@
   <!-- === SECTION ACCREDITATIONS === -->
   <section class="s-logos-brands">
     <div class="container">
+      <h2>test<?php the_field('') ?></h2>
       <ul class="s-logos-brands-list">
         <!-- Repeater --> 
         <?php if( have_rows('logos_brands_about_us') ): while ( have_rows('logos_brands_about_us') ) : the_row(); ?>
