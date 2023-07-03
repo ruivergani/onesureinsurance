@@ -38,7 +38,7 @@
     <div class="container">
       <div class="card-left-support">
         <div class="image-card-support">
-          <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-claims-feedback.webp" alt="card supports" title="card supports">
+          <img src="<?php the_field('image_card_make_complaint_support') ?>">
         </div>
         <div class="text-card-support">
           <h2><?php the_field('title_card_supports_feedback') ?></h2>
@@ -78,20 +78,6 @@
     <div class="container">
       <div class="title-content-supports-faq">
         <h4><?php the_field('title_section_support') ?></h4>
-      </div>
-      <div class="content-highlight-supports-faq">
-        <!-- === HIGHLIGHT ACCORDION FAQ === -->
-        <div class="accordion-plus-support">
-          <div class="accordion-plus-item-support">
-            <h3>
-              <?php the_field('title_highlight_section_supports') ?>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
-            </h3>
-            <div class="accordion-plus-content-support pt-3">
-              <?php the_content(); ?>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="all-supports-faq">
         <!-- Repeater Slide Cards --> 

@@ -65,20 +65,6 @@
       <div class="title-content-claims-faq">
         <h4><?php the_field('title_section_claims') ?></h4>
       </div>
-      <div class="content-highlight-claims-faq">
-        <!-- === HIGHLIGHT ACCORDION FAQ === -->
-        <div class="accordion-plus-claim">
-          <div class="accordion-plus-item-claim">
-            <h3>
-              <?php the_field('title_highlight_section_claims') ?>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
-            </h3>
-            <div class="accordion-plus-content-claim pt-3">
-              <?php the_content(); ?>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="all-claims-faq">
         <!-- Repeater Slide Cards --> 
         <?php if( have_rows('card_repeater_claims_faq') ): while ( have_rows('card_repeater_claims_faq') ) : the_row(); ?>

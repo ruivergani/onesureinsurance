@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: url(../assets/bg/bg-support-page.webp) no-repeat center center;
+    background: url(../assets/bg/bg-subpages.jpg) no-repeat center center;
     background-size: cover;
     .container{
         display: flex;
@@ -259,7 +259,8 @@
         align-items: flex-start;
         justify-content: flex-start;
         overflow: hidden;
-        gap: 30px;
+        flex-direction: column;
+        gap: 60px;
         h2{
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -295,7 +296,7 @@
     }
 }
 .s-about-us-text{
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
     padding-top: 4rem;
     .container{
         display: flex;
@@ -413,7 +414,7 @@
     }
 }
 .s-card-blue{
-    padding-bottom: 6rem;
+    padding-bottom: 8rem;
     .card-dark-blue{
         background-color: $brand-dark-blue;
         border-radius: 0.8rem;

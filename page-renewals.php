@@ -38,7 +38,7 @@
     <div class="container">
       <div class="card-left-renewal">
         <div class="image-card-renewal">
-          <img src="<?php echo get_template_directory_uri()?>/assets/bg/card-claims-feedback.webp" alt="card renewals" title="card renewals">
+          <img src="<?php the_field('image_card_renewals_feedback') ?>">
         </div>
         <div class="text-card-renewal">
           <h2><?php the_field('title_card_renewals_feedback') ?></h2>
@@ -78,20 +78,6 @@
     <div class="container">
       <div class="title-content-renewals-faq">
         <h4><?php the_field('title_section_renewals') ?></h4>
-      </div>
-      <div class="content-highlight-renewals-faq">
-        <!-- === HIGHLIGHT ACCORDION FAQ === -->
-        <div class="accordion-plus-renewal">
-          <div class="accordion-plus-item-renewal">
-            <h3>
-              <?php the_field('title_highlight_section_renewals') ?>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-accordion-claim-faq.svg" alt="arrow down" title="arrow down">
-            </h3>
-            <div class="accordion-plus-content-renewal pt-3">
-              <?php the_content(); ?>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="all-renewals-faq">
         <!-- Repeater Slide Cards --> 
