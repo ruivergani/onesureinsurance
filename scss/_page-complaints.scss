@@ -359,10 +359,8 @@
             justify-content: space-between;
             flex-direction: row;
             width: 100%;
-            max-width: 900px;
+            max-width: 700px;
             .s-contact-section-left{
-                width: 100%;
-                max-width: 400px;
                 display: flex;
                 align-items: flex-start;
                 justify-content: space-between;
@@ -396,8 +394,6 @@
                 }
             }
             .s-contact-section-right{
-                width: 100%;
-                max-width: 400px;
                 p{
                     color: var(--grey-500, #4E4B59);
                     font-size: 16px;
@@ -411,9 +407,6 @@
         .container{
             padding-top: 40px !important;
             padding-bottom: 40px !important;
-            h2{
-
-            }
             .s-contact-content{
                 flex-direction: column;
                 align-items: center;
