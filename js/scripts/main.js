@@ -1,7 +1,6 @@
 // Configure the modal
 const btnOpenModalList = document.querySelectorAll('.js-open-modal');
 const btnCloseModal = document.querySelector('.js-close');
-
 if (btnOpenModalList.length > 0) {
   btnOpenModalList.forEach((btnOpenModal) => {
     btnOpenModal.addEventListener('click', (event) => {
@@ -12,7 +11,6 @@ if (btnOpenModalList.length > 0) {
     });
   });
 }
-
 if (btnCloseModal) {
   btnCloseModal.addEventListener('click', (event) => {
     event.preventDefault();
@@ -20,11 +18,9 @@ if (btnCloseModal) {
     html.classList.remove('show-modal');
   });
 }
-
 // Configure modal list of insurance
 const btnOpenModalInsuranceList = document.querySelectorAll('.js-open-modal-insurance');
 const btnCloseModalInsurance = document.querySelector('.js-close-insurance');
-
 if(btnOpenModalInsuranceList.length > 0){
   btnOpenModalInsuranceList.forEach((btnOpenModalInsurance) => {
     btnOpenModalInsurance.addEventListener('click', (event) => {
@@ -35,7 +31,6 @@ if(btnOpenModalInsuranceList.length > 0){
     });
   });
 }
-
 if (btnCloseModalInsurance){
   btnCloseModalInsurance.addEventListener('click', (Event) => {
     Event.preventDefault();
@@ -68,22 +63,29 @@ if (btnCloseModalSupport){
 // Script for the mobile sub menu
 const btnMobileSubMenu = document.querySelectorAll('.js-mobile-menu-item');
 const subMenuDropdownArea = document.querySelectorAll('.js-menu-dropdown-mobile');
-// link which menu dropdown you need to click
+
+// Check if 'btnMobileSubMenu' elements exist
 if (btnMobileSubMenu) {
+  // Iterate over each 'btnMobileSubMenu' element (tag a)
   btnMobileSubMenu.forEach((btn, index) => {
+    // Add a click event listener to each 'btnMobileSubMenu' element
     btn.addEventListener('click', (event) => {
       event.preventDefault();
-
+      // Remove 'active' class from all 'btnMobileSubMenu' elements except the current one
       btnMobileSubMenu.forEach(itemBtn => {
-        itemBtn.classList.remove('active');
-        btn.classList.remove('active');
+        if (itemBtn !== btn) {
+          itemBtn.classList.remove('active');
+        }
       });
-
-      subMenuDropdownArea.forEach((dropdown) => {
-        dropdown.classList.remove('active');
+      // Remove 'active' class from all 'subMenuDropdownArea' elements except the corresponding one
+      subMenuDropdownArea.forEach((dropdown, dropdownIndex) => {
+        if (dropdownIndex !== index) {
+          dropdown.classList.remove('active');
+        }
       });
-
+      // Toggle 'active' class on the current 'btnMobileSubMenu' element
       btn.classList.toggle('active');
+      // Toggle 'active' class on the corresponding 'subMenuDropdownArea' element
       subMenuDropdownArea[index].classList.toggle('active');
     });
   });
@@ -99,7 +101,6 @@ if(question){
     });
   });
 }
-
 // Script for the FAQs open main page
 const question02 = document.querySelectorAll(".js-accordion-plus-item"); // all cards question
 // Check if the question exists or not
