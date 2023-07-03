@@ -98,10 +98,10 @@
       <!-- Bottom Section -->
       <div class="bottom-footer">
         <p><?php the_field('message_footer', 'options') ?></p>
-        <button id="js-support" class="js-support" type="button">
+        <a id="js-support" href="<?php the_field('link_footer', 'options') ?>" class="js-support" type="button">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-support-footer.svg" alt="icon support footer" title="icon support footer" loading="lazy">
           <span>Support</span>
-        </button>
+        </a>
         <button id="js-btn-scroll-top" class="js-btn-scroll-top" type="button">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-up-footer.svg" alt="icon arrow up footer" title="icon arrow up footer" loading="lazy">
         </button>
