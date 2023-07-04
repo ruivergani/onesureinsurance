@@ -40,7 +40,6 @@
   <!-- Function WP HEAD -->
   <?php wp_head(); ?>
 </head>
-
 <body>
   <!-- === Top Navigation === -->
   <div class="nav-top">
@@ -334,10 +333,10 @@
       <ul class="mobile-menu-list">
         <!-- Personal Menu -->
         <li>
-          <a href="" class="js-mobile-menu-item">
+          <button class="js-mobile-menu-item" aria-label="Personal Menu">
             <span>Personal</span>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-          </a>
+          </button>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
             <!-- Dynamic Menu -->
@@ -353,10 +352,10 @@
         </li>
         <!-- Business Menu -->
         <li>
-          <a href="" class="js-mobile-menu-item">
+          <button class="js-mobile-menu-item" aria-label="Business Menu">
             <span>Business</span>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-          </a>
+          </button>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
             <!-- Dynamic Menu -->
@@ -372,10 +371,10 @@
         </li>
         <!-- Resources Menu -->
         <li>
-          <a href="" class="js-mobile-menu-item"> 
+          <button class="js-mobile-menu-item" aria-label="Resources Menu"> 
             <span>Resources</span>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-          </a>
+          </button>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
             <!-- Dynamic Menu -->
@@ -391,10 +390,10 @@
         </li>
         <!-- Existing Customers Menu -->
         <li>
-          <a href="" class="js-mobile-menu-item">
+          <button class="js-mobile-menu-item" aria-label="Existing Customers Menu">
             <span>Existing Customers</span>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-          </a>
+          </button>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
             <!-- Dynamic Menu -->
@@ -410,10 +409,10 @@
         </li>
         <!-- Contact Us Menu -->
         <li>
-          <a href="" class="js-mobile-menu-item">
+          <button class="js-mobile-menu-item" aria-label="Existing Contact Us Menu">
             <span>Contact Us</span>
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-          </a>
+          </button>
           <!-- Sub Menu Dropdown Mobile -->
           <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
             <!-- Dynamic Menu -->
