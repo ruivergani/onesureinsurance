@@ -236,6 +236,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            .s-trustpilot-insurance-mobile{
+                display: none;
+                pointer-events: none;
+            }
             .line-right-hero{
                 width: 100%;
                 max-width: 30px;
@@ -367,7 +371,7 @@
         background: none;
         padding-top: 0px;
         padding-bottom: 0px;
-        border-bottom: 2px solid #f0f4f9;
+        //border-bottom: 2px solid #f0f4f9;
         .container{
             padding-left: 15px !important;
             padding-right: 15px !important;
@@ -414,6 +418,11 @@
                 }
             }
             .s-hero-insurance__right{
+                gap: 10px;
+                .s-trustpilot-insurance-mobile{
+                    display: block;
+                    pointer-events: all;
+                }
                 .s-hero-insurance__right__title{
                     h2{
                         font-size: 26px;
@@ -537,6 +546,10 @@
     }
     @media (max-width: 768px){
         padding-top: 3rem;
+    }
+    @media (max-width: 580px){
+        display: none;
+        pointer-events: none;
     }
 }
 // Section Motor Trade Slide
@@ -1071,7 +1084,7 @@
     }
     // Responsive
     @media (max-width: 1300px){
-        top: 8rem;
+        top: 7.9rem;
     }
     @media (max-width: 991px){
         padding-top: 2rem;

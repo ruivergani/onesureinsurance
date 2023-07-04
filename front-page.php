@@ -54,7 +54,7 @@
         </li>
       </ul>
       <!-- BUTTON LINKS TO THE FORM  -->
-      <button class="btn btn-primary btn-get-quote js-open-modal-insurance">
+      <button class="btn btn-primary btn-get-quote js-open-modal-insurance" aria-label="Get Quote Button">
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mail-footer.svg" alt="icon email" title="icon email" loading="lazy">
         GET A QUOTE
       </button>
@@ -83,16 +83,9 @@
             <p><?php the_field('phone_number_section_call') ?></p>
           </div>
         </div>
-        <!-- <div class="card-02 hide" data-aos="fade-up" data-aos-delay="100" data-aos-once="true">
-          <h3><?php the_field('title_card_02_section_call') ?></h3>
-          <button class="btn btn-primary-lg">
-            <i class="fa-solid fa-phone"></i>
-            CALL ME BACK
-          </button>
-        </div> -->
         <div class="card-03" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
           <h3><?php the_field('title_card_03_section_call') ?></h3>
-          <button class="btn btn-primary-lg">
+          <button class="btn btn-primary-lg js-open-modal-insurance" aria-label="Get Quote Button">
             <i class="fa-solid fa-envelope"></i>
             GET A QUOTE
           </button>
@@ -178,8 +171,8 @@
               <?php endwhile; else : endif;?>
             </ul>
             <p class="none"><?php the_field('second_description_section_about_us') ?></p>
-            <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>">
-              <button class="btn btn-primary">
+            <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>" title="about us link" alt="about us link">
+              <button class="btn btn-primary" aria-label="Learn More Button">
                 <i class="fa-solid fa-chevron-right"></i>
                 Learn More
               </button> 
@@ -254,7 +247,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <button class="large-cta js-open-modal-insurance" data-aos="zoom-in" data-aos-once="true">
+      <button class="large-cta js-open-modal-insurance" data-aos="zoom-in" data-aos-once="true" aria-label="Get Quote Button">
         <div class="text">
           <span><?php the_field('description_page_home_cta') ?></span>
           <h3><?php the_field('title_page_home_cta') ?></h3>

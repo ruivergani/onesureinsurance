@@ -301,19 +301,19 @@
           if(is_page('Home') || is_page('Support') || is_page('Claims') || is_page('Renewals') || is_page('Privacy Notice and Cookie Policy') || is_page('Terms of Business') || is_page('Modern Slavery Act') || is_page('About Us') || is_page('Contact') || is_page('Complaints')){
         ?>
           <!-- BUTTON LINKS TO THE FORM  -->
-          <button class="btn btn-primary js-open-modal-insurance">
+          <button class="btn btn-primary js-open-modal-insurance" aria-label="Get Quote Button">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
             GET A QUOTE
           </button>
         <?php } else { ?>
           <!-- BUTTON LINKS TO THE FORM  -->
-          <button class="btn btn-primary js-open-modal">
+          <button class="btn btn-primary js-open-modal" aria-label="Get Quote Button">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
             GET A QUOTE
           </button>
         <?php } ?>
         <!-- Hamburguer menu from lib -->
-        <button class="hamburger hamburger--collapse" type="button" id="js-menu-button" loading="lazy">
+        <button class="hamburger hamburger--collapse" type="button" id="js-menu-button" loading="lazy" aria-label="Menu Button">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>

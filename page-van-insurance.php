@@ -59,6 +59,10 @@
       </div>
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
       <div class="s-hero-insurance__right">
+        <!-- Section TrustPilot -->
+        <div class="s-trustpilot-insurance-mobile" data-aos="fade-up" data-aos-once="true">
+          <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
+        </div>
         <div class="s-hero-insurance__right__title">
           <span class="s-hero-insurance__span"><?php the_field('subtitle_right_van_insurance') ?></span>
           <h2><?php the_field('title_right_van_insurance') ?></h2>

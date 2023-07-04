@@ -3,7 +3,7 @@
   <div class="container">
     <div class="title" data-aos="fade-right" data-aos-once="true">
       <h6>Have a look</h6>
-      <h5>Our Accreditations</h5>
+      <h4>Our Accreditations</h4>
     </div>
     <!-- Swipper -->
     <div class="slide-logos" data-aos="fade-left" data-aos-once="true">

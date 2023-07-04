@@ -254,13 +254,13 @@ header{
                         }
                     }
                 }
-                
             }
         }
         // Hambuger configuration from lib 
         .hamburger{
             display: none;
             margin-left: 2rem;
+            padding: 0px !important;
             &.is-active{
             .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
                 background-color: $grey-600;
