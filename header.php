@@ -13,15 +13,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- <meta name="googlebot" content="notranslate">
-  <meta name="google" content="nositelinkssearchbox">
-  <meta name="google" content="nopagereadaloud">
-  <meta property="og:locale" content="en_US"/>
-  <link rel="alternate" href="https://www.onesureinsurance.co.uk/" hreflang="en"/>
-  <meta name="robots" content="noindex,nofollow">
-  <link rel="canonical" href="https://www.onesureinsurance.co.uk/"/> -->
-
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="<?php echo get_template_directory_uri()?>/favicon.png">
   <!-- Font Awesome Links -->
@@ -34,7 +25,6 @@
   </title>
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php get_home_url(); ?>">
@@ -47,11 +37,6 @@
   <meta property="twitter:title" content="<?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>">
   <meta property="twitter:description" content="<?php the_field('description_page'); ?>">
   <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
-  <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
   <!-- Function WP HEAD -->
   <?php wp_head(); ?>
 </head>
@@ -92,7 +77,7 @@
   <header class="js-header" id="js-header">
     <div class="container">
       <!-- Logo -->
-      <a href="<?php echo get_home_url(); ?>" class="logo" id="logo">
+      <a href="<?php echo get_home_url(); ?>" class="logo" id="logo" title="Logo">
         <!-- Picture Tags -->
         <picture>
           <source media="(max-width: 668px)" srcset="<?php echo get_template_directory_uri()?>/assets/logo-mobile.svg" class="mobile-logo">
@@ -106,10 +91,10 @@
         <ul>
           <!-- Personal Menu --> 
           <li>
-            <a href="#" class="js-btn-menu">
+            <button class="js-btn-menu" aria-label="Personal Menu">
               <span>Personal</span>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-            </a>
+            </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu js-menu">
               <div class="area-menu">
@@ -132,10 +117,10 @@
           </li>
           <!-- Business Menu -->
           <li>
-            <a href="#" class="js-btn-menu">
+            <button class="js-btn-menu" aria-label="Business Menu">
               <span>Business</span>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-            </a>
+            </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu business js-menu">
               <div class="area-menu">
@@ -198,10 +183,10 @@
           </li>
           <!-- Resources Menu -->
           <li class="hide">
-            <a href="#" class="js-btn-menu">
+            <button class="js-btn-menu" aria-label="Resources Menu">
               <span>Resources</span>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-            </a>
+            </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu resources js-menu">
               <div class="area-menu">
@@ -248,10 +233,10 @@
           </li>
           <!-- Existing Customers -->
           <li>
-            <a href="#" class="js-btn-menu">
+            <button class="js-btn-menu" aria-label="Existing Customers Menu">
               <span>Existing Customers</span>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-            </a>
+            </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu existing js-menu">
               <div class="area-menu">
@@ -326,7 +311,7 @@
       <div class="nav-top-mobile">
         <ul>
           <li>
-            <a href="#">
+            <a href="https://www.onesureinsurance.co.uk/existing-customers">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user.svg" alt="icon user" title="icon user" loading="lazy">
               <span>My Account</span>
             </a>

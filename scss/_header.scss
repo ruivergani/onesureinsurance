@@ -227,7 +227,7 @@ header{
             align-items: center;
             gap: 2.5rem;
             li{
-                a{
+                a, button{
                     display: flex;
                     align-items: center;
                     gap: 0.8rem;
@@ -384,7 +384,7 @@ header{
                 background: #e9eef5;
                 border-bottom: 0.5px solid rgba(0, 52, 120, 0.3);
                 position: relative;
-                a{
+                a, button{
                     padding: 15px 20px;
                     display: flex;
                     align-items: center;
@@ -423,7 +423,7 @@ header{
                         width: 100%;
                         li{
                             background-color: $white;
-                            a{
+                            a,button{
                                 font-family: 'Poppins', sans-serif;
                                 font-weight: 500;
                                 font-size: 15px;
