@@ -68,7 +68,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.onesureinsurance.co.uk/existing-customers" target="_blank">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user.svg" alt="icon user" title="icon user" loading="lazy">
             <span>My Account</span>
           </a>

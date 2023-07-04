@@ -98,7 +98,7 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-      <a class="btn btn-primary" href="">
+      <a class="btn btn-primary" href="<?php the_field('link_section_log_in_claim_page') ?>">
         Log in to your account
       </a>
     </div>
