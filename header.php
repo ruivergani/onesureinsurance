@@ -121,7 +121,7 @@
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
             </button>
             <!-- Static Menu Dropdown -->
-            <div class="dropdown-sub-menu business js-menu">
+            <div class="dropdown-sub-menu business js-menu active">
               <div class="area-menu">
                 <div class="container">
                   <div class="item">

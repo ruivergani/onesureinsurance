@@ -228,7 +228,7 @@
   </section>
 
   <!-- Section Featured Content -->
-  <section class="s-featured-content">
+  <section class="s-featured-content" id="motorbikeinsurance">
     <div class="container">
       <div class="s-featured-content__left" data-aos="fade-right" data-aos-once="true">
         <h4><?php the_field('title_featured_content_motorbike_insurance') ?></h4>
@@ -243,7 +243,7 @@
   </section>
 
   <!-- Section Featured Secondary Content -->
-  <section class="s-featured-secondary-content" id="motorbikeinsurance">
+  <section class="s-featured-secondary-content">
     <div class="container">
       <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
         <img src="<?php the_field('image_featured_content_secondary_motorbike_insurance') ?>" alt="">

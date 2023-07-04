@@ -137,6 +137,10 @@ header{
                                     font-size: 1.6rem;
                                     line-height: 2.2rem;
                                     color: $brand-blue;
+                                    transition: all .3s;
+                                    &:hover{
+                                        color: $brand-dark-blue;
+                                    }
                                 }
                             }
                         }
@@ -158,8 +162,12 @@ header{
                             ul{
                                 width: 100%;
                                 grid-template-columns: repeat(2, 1fr);
-                                grid-gap: 20px;
+                                grid-gap: 20px 30px;
                                 align-items: flex-start;
+                                li{
+                                    min-width: 180px;
+                                    max-width: 182px;
+                                }
                             }
                         }
                     }
