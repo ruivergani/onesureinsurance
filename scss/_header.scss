@@ -147,6 +147,7 @@ header{
             &.business{
                 padding-top: 6rem;
                 .area-menu{
+                    min-height: 44rem;
                     .container{
                         padding-top: 0rem;
                         display: flex;
@@ -168,6 +169,7 @@ header{
             &.resources{
                 padding-top: 6rem;
                 .area-menu{
+                    min-height: 44rem;
                     .container{
                         padding-top: 0rem;
                         display: flex;
@@ -189,6 +191,7 @@ header{
             &.existing{
                 padding-top: 6rem;
                 .area-menu{
+                    min-height: 44rem;
                     .container{
                         padding-top: 0rem;
                         display: flex;
@@ -273,6 +276,7 @@ header{
         position: absolute;
         width: 100%;
         height: 100%;
+        pointer-events: none;
         top: 1rem !important;
         min-height: calc(100vh - 100px);
         background-color: white;
@@ -485,6 +489,7 @@ header{
         opacity: 1;
         transform: translateY(0%);
         position: relative;
+        pointer-events: all;
         top: 0rem;
       }
     }
