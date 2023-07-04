@@ -527,14 +527,14 @@
     @media (max-width: 1200px){
         .container{
             .all-cards-type{
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
         }
     }
     @media (max-width: 991px){
         .container{
             .all-cards-type{
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
         }
     }
