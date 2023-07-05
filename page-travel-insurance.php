@@ -261,28 +261,6 @@
     </div>
   </section>
 
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_travel_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_travel_insurance') ?></h4>
-      <ul>
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_travel_insurance') ): while ( have_rows('section_optional_extras_cards_travel_insurance') ) : the_row(); ?>
-          <li>
-            <a href="<?php the_sub_field('link_card_optional_extras_travel_insurance') ?>">
-              <img src="<?php the_sub_field('image_card_optional_extras_travel_insurance') ?>" alt="">
-              <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_travel_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </a>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-    </div>
-  </section>
-
   <!-- Section CTA  -->
   <div class="s-newsletter" style="padding-top: 0px !important;">
     <div class="container">

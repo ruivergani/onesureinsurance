@@ -63,7 +63,7 @@
           <h2><?php the_field('title_right_motorbike_insurance') ?></h2>
         </div>
         <div class="s-hero-insurance__right_content">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.jpg" alt="" class="line-right-hero">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero">
           <div class="s-hero-insurance__right__list">
             <ul>
               <li>
