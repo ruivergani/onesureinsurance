@@ -38,14 +38,14 @@
           <ul>
             <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
-              <a class="text__numbers" href="">
+              <a class="text__numbers" href="<?php the_field('link_mobile_phone_van_insurance') ?>">
                 <span>MOBILE FRIENDLY</span>
                 <p><?php the_field('mobile_phone_van_insurance') ?></p>
               </a>
             </li>
             <li class="landline">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
-              <a class="text__numbers" href="">
+              <a class="text__numbers" href="<?php the_field('link_text_landline_phone_van_insurance') ?>">
                 <span>TELEPHONE</span>
                 <p><?php the_field('landline_phone_van_insurance') ?></p>
               </a>
@@ -295,13 +295,13 @@
         <!-- Repeater Slide Cards --> 
         <?php if( have_rows('section_optional_extras_cards_van_insurance') ): while ( have_rows('section_optional_extras_cards_van_insurance') ) : the_row(); ?>
           <li>
-            <a href="<?php the_sub_field('link_card_optional_extras_van_insurance') ?>">
+            <div class="extra-button">
               <img src="<?php the_sub_field('image_card_optional_extras_van_insurance') ?>" alt="">
               <div class="text">
                 <h5><?php the_sub_field('title_card_optional_extras_van_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
               </div>
-            </a>
+            </div>
           </li>
         <?php endwhile; else : endif;?>
       </ul>

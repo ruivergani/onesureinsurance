@@ -1577,7 +1577,7 @@
             li{
                 width: 100%;
                 max-width: 240px;
-                a{
+                .extra-button{
                     display: flex;
                     align-items: center;
                     gap: 2rem;
@@ -1681,7 +1681,7 @@
                 width: 100%;
                 max-width: 630px;
                 li{
-                    a{
+                    .extra-button{
                         img{
                             max-width: 58px;
                         }
@@ -1707,7 +1707,7 @@
                 max-width: 250px;
                 li{
                     max-width: 100%;
-                    a{
+                    .extra-button{
                         width: 100%;
                         img{
                             max-width: 36px;
