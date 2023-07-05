@@ -10,17 +10,17 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card-image">
-            <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="logo company" title="logo company" loading="lazy">
+            <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="logo company" title="logo company" loading="lazy" width="130" height="60">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card-image">
-            <img src="<?php echo get_template_directory_uri()?>/assets/logo-company03.svg" alt="logo company" title="logo company" loading="lazy">
+            <img src="<?php echo get_template_directory_uri()?>/assets/logo-company03.svg" alt="logo company" title="logo company" loading="lazy" width="130" height="64">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card-image">
-            <img src="<?php echo get_template_directory_uri()?>/assets/logo-company04.svg" alt="logo company" title="logo company" loading="lazy">
+            <img src="<?php echo get_template_directory_uri()?>/assets/logo-company04.svg" alt="logo company" title="logo company" loading="lazy" width="220" height="49">
           </div>
         </div>
       </div>

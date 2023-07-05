@@ -53,7 +53,7 @@
       </div>
       <!-- === END OF HIDDEN INPUT === -->
       <a class="btn btn-primary" type="submit" href="<?php the_field('link_section_contact_help_us_complaints_page') ?>">
-        SUBMIT REQUEST
+        <?php the_field('text_button_section_contact_help_us_complaints_page') ?>
       </a>
     </div>
   </section>

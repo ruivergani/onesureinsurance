@@ -37,14 +37,14 @@
           <ul>
             <li class="mobile">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
-              <a class="text__numbers" href="">
+              <a class="text__numbers" href="<?php the_field('link_text_mobile_phone_convicted_van_insurance') ?>">
                 <span>MOBILE FRIENDLY</span>
                 <p><?php the_field('mobile_phone_convicted_van_insurance') ?></p>
               </a>
             </li>
             <li class="landline">
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
-              <a class="text__numbers" href="">
+              <a class="text__numbers" href="<?php the_field('link_text_landline_phone_convicted_van_insurance') ?>">
                 <span>TELEPHONE</span>
                 <p><?php the_field('landline_phone_convicted_van_insurance') ?></p>
               </a>
@@ -97,34 +97,7 @@
   </section>
 
   <!-- === SECTION ACCREDITATIONS === -->
-  <section class="s-logos-insurance" id="s-logos" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <div class="title">
-        <h6>Have a look</h6>
-        <h5>Our Accreditations</h5>
-      </div>
-      <!-- Swipper -->
-      <div class="slide-logos">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company01.svg" alt="logo company" title="logo company" loading="lazy">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company03.svg" alt="logo company" title="logo company" loading="lazy">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-image">
-              <img src="<?php echo get_template_directory_uri()?>/assets/logo-company04.svg" alt="logo company" title="logo company" loading="lazy">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <?php include(TEMPLATEPATH .'/includes/section-company-logos-insurance.php') ?>
 
   <!-- Table of Contents -->
   <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
@@ -280,13 +253,13 @@
         <!-- Repeater Slide Cards --> 
         <?php if( have_rows('section_optional_extras_cards_convicted_van_insurance') ): while ( have_rows('section_optional_extras_cards_convicted_van_insurance') ) : the_row(); ?>
           <li>
-            <a href="<?php the_sub_field('link_card_optional_extras_convicted_van_insurance') ?>">
-            <img src="<?php the_sub_field('image_card_optional_extras_convicted_van_insurance') ?>" alt="">
+            <div class="extra-button">
+              <img src="<?php the_sub_field('image_card_optional_extras_convicted_van_insurance') ?>" alt="">
               <div class="text">
                 <h5><?php the_sub_field('title_card_optional_extras_convicted_van_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
               </div>
-            </a>
+            </div>
           </li>
         <?php endwhile; else : endif;?>
       </ul>
