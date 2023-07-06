@@ -660,15 +660,8 @@
                 text-align: center;
             }
             h6{
-                display: block;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 500;
-                font-size: 2.4rem;
-                line-height: 112%;
-                text-align: center;
-                letter-spacing: -0.1rem;
-                color: $grey-300;
-                opacity: 0.8;
+                display: none;
+                pointer-events: none;
             }
             .ctrl-slide{
                 max-width: 100%;
@@ -1712,6 +1705,8 @@
                         width: 100%;
                         img{
                             max-width: 36px;
+                            height: 36px !important;
+                            width: 36px !important;
                         }
                     }
                 }

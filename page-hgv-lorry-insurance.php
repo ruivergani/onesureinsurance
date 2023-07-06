@@ -27,7 +27,7 @@
           <ul>
             <?php if( have_rows('list_left_hgv_lorry_insurance') ): while ( have_rows('list_left_hgv_lorry_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_hgv_lorry_insurance') ?>" alt="icon checked" title="icon checked">
+                <img src="<?php the_sub_field('icon_checked_hgv_lorry_insurance') ?>" alt="icon checked" title="icon checked" width="18" height="18">
                 <p><?php the_sub_field('text_hgv_lorry_insurance') ?></p>
               </li>
             <?php endwhile; else : endif;?>
@@ -37,14 +37,14 @@
           <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="" width="40" height="40">
               <a class="text__numbers" href="<?php the_field('link_text_mobile_phone_hgv_lorry_insurance') ?>">
                 <span>MOBILE FRIENDLY</span>
                 <p><?php the_field('mobile_phone_hgv_lorry_insurance') ?></p>
               </a>
             </li>
             <li class="landline">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="" width="40" height="40">
               <a class="text__numbers" href="<?php the_field('link_text_landline_phone_hgv_lorry_insurance') ?>">
                 <span>TELEPHONE</span>
                 <p><?php the_field('landline_phone_hgv_lorry_insurance') ?></p>
@@ -59,6 +59,11 @@
       </div>
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
       <div class="s-hero-insurance__right">
+        <!-- Section TrustPilot -->
+        <div class="s-trustpilot-insurance-mobile" data-aos="fade-up" data-aos-once="true">
+          <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
+        </div>
+        <!-- End Trustpilot -->
         <div class="s-hero-insurance__right__title">
           <span class="s-hero-insurance__span"><?php the_field('subtitle_right_hgv_lorry_insurance') ?></span>
           <h2><?php the_field('title_right_hgv_lorry_insurance') ?></h2>
@@ -255,7 +260,7 @@
         <?php if( have_rows('section_optional_extras_cards_hgv_lorry_insurance') ): while ( have_rows('section_optional_extras_cards_hgv_lorry_insurance') ) : the_row(); ?>
           <li>
             <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_hgv_lorry_insurance') ?>" alt="">
+              <img src="<?php the_sub_field('image_card_optional_extras_hgv_lorry_insurance') ?>" alt="" height="45" width="45">
               <div class="text">
                 <h5><?php the_sub_field('card_title_optional_extras_hgv_lorry_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
@@ -278,7 +283,7 @@
             <!-- Repeater Slide Cards --> 
             <?php if( have_rows('section_cover_on_hgv_lorry_insurance') ): while ( have_rows('section_cover_on_hgv_lorry_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_hgv_lorry_insurance'); ?>" alt="icon checked" title="icon checked">
+                <img src="<?php the_sub_field('icon_checked_cover_on_hgv_lorry_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
                 <p><?php the_sub_field('text_cover_on_hgv_lorry_insurance'); ?></p>
               </li>
             <?php endwhile; else : endif;?>
@@ -290,7 +295,7 @@
             <!-- Repeater Slide Cards --> 
             <?php if( have_rows('section_cover_off_hgv_lorry_insurance') ): while ( have_rows('section_cover_off_hgv_lorry_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_hgv_lorry_insurance'); ?>" alt="icon not checked" title="icon not checked">
+                <img src="<?php the_sub_field('icon_checked_cover_off_hgv_lorry_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
                 <p><?php the_sub_field('text_cover_off_hgv_lorry_insurance'); ?></p>
               </li>
             <?php endwhile; else : endif;?>
@@ -301,11 +306,11 @@
   </section>
   
   <!-- Section Product -->
-  <section class="s-slide-product" data-aos="fade-up" data-aos-once="true">
+  <section class="s-slide-product" id="types" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="top">
-        <h6><?php the_field('mobile_title_section_product_hgv_lorry_insurance') ?></h6>
-        <h4><?php the_field('title_section_product_hgv_lorry_insurance') ?></h4>
+        <h6><?php the_field('mobile_title_section_product_slide_hgv_lorry_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_slide_hgv_lorry_insurance') ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -322,25 +327,25 @@
       <!-- Swiper slide structure -->
       <div class="slide-product">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('card_product_slide_hgv_lorry_insurance') ): while ( have_rows('card_product_slide_hgv_lorry_insurance') ) : the_row(); ?>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('card_product_slide_hgv_lorry_insurance') ): while ( have_rows('card_product_slide_hgv_lorry_insurance') ) : the_row(); ?>
+            <div class="swiper-slide">
               <!-- Card Product Type -->
               <a href="<?php the_sub_field('card_link_hgv_lorry_insurance') ?>" class="card-product">
                 <div class="image">
-                    <img src="<?php the_sub_field('card_image_hgv_lorry_insurance') ?>" alt="card product page" title="card product page">
+                    <img src="<?php the_sub_field('image_card_hgv_lorry_insurance') ?>" alt="card product page" title="card product page">
                 </div>
                 <div class="info">
                     <h6><?php the_sub_field('card_title_hgv_lorry_insurance') ?></h6>
-                    <p><?php the_sub_field('card_subtitle_hgv_lorry_insurance') ?></p>
+                    <p><?php the_sub_field('subtitle_card_hgv_lorry_insurance') ?></p>
                     <div class="learn-more">
-                        <span>Learn more</span>
+                        <span><?php the_sub_field('link_card_title_hgv_lorry_insurance') ?></span>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
                     </div>
                 </div>
               </a>
-            <?php endwhile; else : endif;?>
-          </div>
+            </div>
+          <?php endwhile; else : endif;?>
         </div>
       </div>
     </div>

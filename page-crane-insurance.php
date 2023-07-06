@@ -26,7 +26,7 @@
           <ul>
             <?php if( have_rows('list_left_crane_insurance') ): while ( have_rows('list_left_crane_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_crane_insurance') ?>" alt="icon checked" title="icon checked">
+                <img src="<?php the_sub_field('icon_checked_crane_insurance') ?>" alt="icon checked" title="icon checked" width="18" height="18">
                 <p><?php the_sub_field('text_crane_insurance') ?></p>
               </li>
             <?php endwhile; else : endif;?>
@@ -36,14 +36,14 @@
           <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="" width="40" height="40">
               <a class="text__numbers" href="<?php the_field('link_text_mobile_phone_crane_insurance') ?>">
                 <span>MOBILE FRIENDLY</span>
                 <p><?php the_field('mobile_phone_crane_insurance') ?></p>
               </a>
             </li>
             <li class="landline">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="" width="40" height="40">
               <a class="text__numbers" href="<?php the_field('link_text_landline_phone_crane_insurance') ?>">
                 <span>TELEPHONE</span>
                 <p><?php the_field('landline_phone_crane_insurance') ?></p>
@@ -58,6 +58,11 @@
       </div>
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
       <div class="s-hero-insurance__right">
+        <!-- Section TrustPilot -->
+        <div class="s-trustpilot-insurance-mobile" data-aos="fade-up" data-aos-once="true">
+          <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
+        </div>
+        <!-- End Trustpilot -->
         <div class="s-hero-insurance__right__title">
           <span class="s-hero-insurance__span"><?php the_field('subtitle_right_crane_insurance') ?></span>
           <h2><?php the_field('title_right_crane_insurance') ?></h2>
@@ -190,7 +195,7 @@
         <?php if( have_rows('section_optional_extras_cards_crane_insurance') ): while ( have_rows('section_optional_extras_cards_crane_insurance') ) : the_row(); ?>
           <li>
             <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_crane_insurance') ?>" alt="">
+              <img src="<?php the_sub_field('image_card_optional_extras_crane_insurance') ?>" height="45" width="45" alt="">
               <div class="text">
                 <h5><?php the_sub_field('title_card_optional_extras_crane_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
@@ -236,7 +241,7 @@
                     <h6><?php the_sub_field('card_title_crane_insurance') ?></h6>
                     <p><?php the_sub_field('subtitle_card_crane_insurance') ?></p>
                     <div class="learn-more">
-                        <span>Learn more</span>
+                        <span><?php the_sub_field('link_card_title_crane_insurance') ?></span>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
                     </div>
                 </div>

@@ -47,25 +47,25 @@
       <ul>
         <li>
           <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-question.svg" alt="icon question" title="icon question" loading="lazy">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-question.svg" alt="icon question" title="icon question" loading="lazy" width="20" height="20">
             <span>Support</span>
           </a>
         </li>
         <li>
           <a href="https://www.onesureinsurance.co.uk/existing-customers" target="_blank">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user.svg" alt="icon user" title="icon user" loading="lazy">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-user.svg" alt="icon user" title="icon user" loading="lazy" width="21" height="21">
             <span>My Account</span>
           </a>
         </li>
         <li>
           <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-paper.svg" alt="icon paper" title="icon paper" loading="lazy">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-paper.svg" alt="icon paper" title="icon paper" loading="lazy" width="20" height="20">
             <span>Claims</span>
           </a>
         </li>
         <li>
           <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-autorenew.svg" alt="icon renewals"  title="icon renewals" loading="lazy">
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-autorenew.svg" alt="icon renewals"  title="icon renewals" loading="lazy" width="20" height="20">
             <span>Renewals</span>
           </a>
         </li>
@@ -79,9 +79,9 @@
       <a href="<?php echo get_home_url(); ?>" class="logo" id="logo" title="Logo">
         <!-- Picture Tags -->
         <picture>
-          <source media="(max-width: 668px)" srcset="<?php echo get_template_directory_uri()?>/assets/logo-mobile.svg" class="mobile-logo">
+          <source media="(max-width: 668px)" srcset="<?php echo get_template_directory_uri()?>/assets/logo-mobile.svg" class="mobile-logo" width="186" height="54">
           <source media="" srcset="">
-          <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="Logo One Sure Insurance" title="Logo One Sure Insurance" loading="lazy">
+          <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="Logo One Sure Insurance" title="Logo One Sure Insurance" loading="lazy" width="80" height="52">
         </picture>
       </a>
       <!-- Nav Section -->
@@ -92,7 +92,7 @@
           <li>
             <button class="js-btn-menu" aria-label="Personal Menu">
               <span>Personal</span>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="" width="22" height="22">
             </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu js-menu">
@@ -115,10 +115,10 @@
             </div>
           </li>
           <!-- Business Menu -->
-          <li>
+          <li> 
             <button class="js-btn-menu" aria-label="Business Menu">
               <span>Business</span>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="22" height="22">
             </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu business js-menu">
@@ -184,7 +184,7 @@
           <li class="hide">
             <button class="js-btn-menu" aria-label="Resources Menu">
               <span>Resources</span>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="22" height="22">
             </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu resources js-menu">
@@ -234,7 +234,7 @@
           <li>
             <button class="js-btn-menu" aria-label="Existing Customers Menu">
               <span>Existing Customers</span>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="22" height="22">
             </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu existing js-menu">

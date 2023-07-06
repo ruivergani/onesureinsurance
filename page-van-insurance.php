@@ -27,7 +27,7 @@
           <ul>
             <?php if( have_rows('list_left_van_insurance') ): while ( have_rows('list_left_van_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_van_insurance') ?>" alt="icon checked" title="icon checked">
+                <img src="<?php the_sub_field('icon_checked_van_insurance') ?>" alt="icon checked" title="icon checked" width="18" height="18">
                 <p><?php the_sub_field('text_van_insurance') ?></p>
               </li>
             <?php endwhile; else : endif;?>
@@ -37,14 +37,14 @@
           <span class="s-hero-insurance__span__text">Call Today for Our Best Price</span>
           <ul>
             <li class="mobile">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mobile-blue.svg" alt="" width="40" height="40">
               <a class="text__numbers" href="<?php the_field('link_mobile_phone_van_insurance') ?>">
                 <span>MOBILE FRIENDLY</span>
                 <p><?php the_field('mobile_phone_van_insurance') ?></p>
               </a>
             </li>
             <li class="landline">
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="">
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-blue.svg" alt="" width="40" height="40">
               <a class="text__numbers" href="<?php the_field('link_text_landline_phone_van_insurance') ?>">
                 <span>TELEPHONE</span>
                 <p><?php the_field('landline_phone_van_insurance') ?></p>
@@ -63,6 +63,7 @@
         <div class="s-trustpilot-insurance-mobile" data-aos="fade-up" data-aos-once="true">
           <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
         </div>
+        <!-- End Trustpilot -->
         <div class="s-hero-insurance__right__title">
           <span class="s-hero-insurance__span"><?php the_field('subtitle_right_van_insurance') ?></span>
           <h2><?php the_field('title_right_van_insurance') ?></h2>
@@ -269,7 +270,7 @@
         <?php if( have_rows('section_optional_extras_cards_van_insurance') ): while ( have_rows('section_optional_extras_cards_van_insurance') ) : the_row(); ?>
           <li>
             <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_van_insurance') ?>" alt="">
+              <img src="<?php the_sub_field('image_card_optional_extras_van_insurance') ?>" alt="" height="45" width="45">
               <div class="text">
                 <h5><?php the_sub_field('title_card_optional_extras_van_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
@@ -292,7 +293,7 @@
             <!-- Repeater Slide Cards --> 
             <?php if( have_rows('section_cover_on_van_insurance') ): while ( have_rows('section_cover_on_van_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_van_insurance'); ?>" alt="icon checked" title="icon checked">
+                <img src="<?php the_sub_field('icon_checked_cover_on_van_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
                 <p><?php the_sub_field('text_cover_on_van_insurance'); ?></p>
               </li>
             <?php endwhile; else : endif;?>
@@ -304,7 +305,7 @@
             <!-- Repeater Slide Cards --> 
             <?php if( have_rows('section_cover_off_van_insurance') ): while ( have_rows('section_cover_off_van_insurance') ) : the_row(); ?>
               <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_van_insurance'); ?>" alt="icon not checked" title="icon not checked">
+                <img src="<?php the_sub_field('icon_checked_cover_off_van_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
                 <p><?php the_sub_field('text_cover_off_van_insurance'); ?></p>
               </li>
             <?php endwhile; else : endif;?>
