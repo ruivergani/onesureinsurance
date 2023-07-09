@@ -14,10 +14,10 @@
             flex-direction: column;
             gap: 15px;
             span{
-                color: #868E96;
+                color: $grey-500;
                 font-size: 14px;
                 font-family: 'Inter', sans-serif;
-                font-weight: 600;
+                font-weight: 700;
                 line-height: 130%;
                 letter-spacing: 1.68px;
             }
@@ -28,7 +28,6 @@
             h1{
                 font-size: 28px;
                 font-family: 'Poppins', sans-serif;
-                font-weight: 700;
                 line-height: 130%;
                 letter-spacing: -1.12px;
             }

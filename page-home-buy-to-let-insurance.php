@@ -195,60 +195,6 @@
     </div>
   </section>
 
-  <!-- Section Featured Content -->
-  <section class="s-featured-content">
-    <div class="container">
-      <div class="s-featured-content__left" data-aos="fade-right" data-aos-once="true">
-        <h4><?php the_field('title_featured_content_home_buy_to_let_insurance') ?></h4>
-        <div class="s-featured-content__text">
-          <?php the_field('description_featured_content_home_buy_to_let_insurance') ?>
-        </div>
-      </div>
-      <div class="s-featured-content__right" data-aos="fade-left" data-aos-once="true">
-        <img src="<?php the_field('image_featured_content_home_buy_to_let_insurance') ?>" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Featured Secondary Content -->
-  <section class="s-featured-secondary-content">
-    <div class="container">
-      <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
-        <img src="<?php the_field('image_featured_content_secondary_home_buy_to_let_insurance') ?>" alt="">
-      </div>
-      <div class="s-featured-content__left" data-aos="fade-left" data-aos-once="true">
-        <h4><?php the_field('title_featured_content_secondary_home_buy_to_let_insurance') ?></h4>
-        <div class="s-featured-content__text">
-          <?php the_field('description_featured_content_secondary_home_buy_to_let_insurance') ?>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Column Content -->
-  <section class="s-column-content">
-    <div class="container">
-      <div class="s-column-content-card" data-aos="fade-right" data-aos-once="true">
-        <div class="s-column-content-card-image">
-          <img src="<?php the_field('image_left_column_home_buy_to_let_insurance') ?>" alt="">
-        </div>
-        <h4><?php the_field('title_left_column_home_buy_to_let_insurance') ?></h4>
-        <div class="s-column-content-card-text">
-          <?php the_field('description_left_column_home_buy_to_let_insurance') ?>
-        </div>
-      </div>
-      <div class="s-column-content-card" data-aos="fade-left" data-aos-once="true">
-        <div class="s-column-content-card-image">
-          <img src="<?php the_field('image_right_column_home_buy_to_let_insurance') ?>" alt="">
-        </div>
-        <h4><?php the_field('title_right_column_home_buy_to_let_insurance') ?></h4>
-        <div class="s-column-content-card-text">
-          <?php the_field('description_right_column_home_buy_to_let_insurance') ?>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Section Optional Extras -->
   <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">

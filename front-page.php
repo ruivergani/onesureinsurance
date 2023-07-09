@@ -171,10 +171,10 @@
               <?php endwhile; else : endif;?>
             </ul>
             <p class="none"><?php the_field('second_description_section_about_us') ?></p>
-            <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>" title="about us link" alt="about us link">
-              <button class="btn btn-primary" aria-label="Learn More Button">
+            <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>" title="about us link" alt="about us link" aria-label="About Us">
+              <button class="btn btn-primary" aria-label="About Us Button">
                 <i class="fa-solid fa-chevron-right"></i>
-                Learn More
+                About Us
               </button> 
             </a>
         </div>

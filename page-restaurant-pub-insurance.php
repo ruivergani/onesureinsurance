@@ -338,7 +338,7 @@
                     <h6><?php the_sub_field('card_title_restaurant_pub_insurance') ?></h6>
                     <p><?php the_sub_field('subtitle_card_restaurant_pub_insurance') ?></p>
                     <div class="learn-more">
-                        <span>Learn more</span>
+                        <span><?php the_sub_field('link_card_title_restaurant_pub_insurance') ?></span>
                         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
                     </div>
                 </div>

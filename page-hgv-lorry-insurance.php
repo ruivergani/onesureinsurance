@@ -333,7 +333,7 @@
               <!-- Card Product Type -->
               <a href="<?php the_sub_field('card_link_hgv_lorry_insurance') ?>" class="card-product">
                 <div class="image">
-                    <img src="<?php the_sub_field('image_card_hgv_lorry_insurance') ?>" alt="card product page" title="card product page">
+                    <img src="<?php the_sub_field('image_card_hgv_lorry_insurance') ?>">
                 </div>
                 <div class="info">
                     <h6><?php the_sub_field('card_title_hgv_lorry_insurance') ?></h6>
