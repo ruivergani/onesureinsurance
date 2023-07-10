@@ -120,11 +120,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#cover" class="anchor">
-            <p>What We Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -132,11 +127,6 @@
         <li class="js-item-content">
           <a href="#price" class="anchor">
             <p>Price</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#faqs" class="anchor">
-            <p>FAQs</p>
           </a>
         </li>
       </ul>
@@ -159,11 +149,6 @@
             </a>
           </li>
           <li>
-            <a href="#cover">
-              <p>What We Cover</p>
-            </a>
-          </li>
-          <li>
             <a href="#why">
               <p>Why Choose Us?</p>
             </a>
@@ -171,11 +156,6 @@
           <li>
             <a href="#price">
               <p>Price</p>
-            </a>
-          </li>
-          <li>
-            <a href="#faqs">
-              <p>FAQs</p>
             </a>
           </li>
         </ul>
@@ -268,39 +248,6 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-    </div>
-  </section>
-
-  <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="cover">
-    <div class="container">
-      <h4><?php the_field('cover_title_liability_insurance'); ?></h4>
-      <div class="cover-section">
-        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-          <h6><?php the_field('mobile_title_section_cover_liability_insurance'); ?></h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_on_liability_insurance') ): while ( have_rows('section_cover_on_liability_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_liability_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
-                <p><?php the_sub_field('text_cover_on_liability_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-          <h6>What's not included:</h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_off_liability_insurance') ): while ( have_rows('section_cover_off_liability_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_liability_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
-                <p><?php the_sub_field('text_cover_off_liability_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -413,39 +360,17 @@
     </div>
   </section>
 
-  <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h4><?php the_field('title_section_liability_insurance') ?></h4>
-      <div class="b-container">
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_faq_liability_insurance') ): while ( have_rows('section_faq_liability_insurance') ) : the_row(); ?>
-          <!-- Question Card -->
-          <div class="question">
-            <div class="title js-question">
-              <strong><?php the_sub_field('title_faq_liability_insurance'); ?></strong>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="question-content">
-              <?php the_sub_field('description_faq_liability_insurance'); ?>
-            </div>
-          </div>
-        <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
   <!-- Section CTA -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" style="padding-top: 0px;">
     <div class="container">
       <a href="<?php the_field('link_cta_liability_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
         <div class="text">
-            <span><?php the_field('subtitle_cta_liability_insurance') ?></span>
-            <h3><?php the_field('title_cta_liability_insurance') ?></h3>
+          <span><?php the_field('subtitle_cta_liability_insurance') ?></span>
+          <h3><?php the_field('title_cta_liability_insurance') ?></h3>
         </div>
         <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          get a quote
         </button>
       </a>
     </div>

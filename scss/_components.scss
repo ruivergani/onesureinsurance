@@ -848,20 +848,15 @@
     // Responsive
     @media (max-width: 1150px){
         justify-content: space-between;
-        align-items: center;
         max-width: 100%;
         padding: 0rem 3rem;
         .text{
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
             flex-direction: column;
             gap: 5px;
             max-width: 70rem;
             h3{
                 margin-top: 0px;
-                text-align: center;
             }
         }
     }
@@ -876,7 +871,6 @@
             }
             span{
                 text-transform: none;
-                text-align: center;
             }
         }
     }

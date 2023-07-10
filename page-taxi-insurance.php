@@ -269,7 +269,7 @@
         <?php if( have_rows('section_optional_extras_cards_taxi_insurance') ): while ( have_rows('section_optional_extras_cards_taxi_insurance') ) : the_row(); ?>
           <li>
             <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_taxi_insurance') ?>" height="45" width="45" alt="">
+              <img src="<?php the_sub_field('image_card_optional_extras_taxi_insurance') ?>" height="45" width="45" >
               <div class="text">
                 <h5><?php the_sub_field('title_card_optional_extras_taxi_insurance') ?></h5>
                 <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>

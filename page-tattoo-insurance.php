@@ -120,11 +120,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#cover" class="anchor">
-            <p>What We Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -156,11 +151,6 @@
           <li>
             <a href="#extras">
               <p>Optional Extras</p>
-            </a>
-          </li>
-          <li>
-            <a href="#cover">
-              <p>What We Cover</p>
             </a>
           </li>
           <li>
@@ -244,61 +234,6 @@
         <h4><?php the_field('title_right_column_tattoo_insurance') ?></h4>
         <div class="s-column-content-card-text">
           <?php the_field('description_right_column_tattoo_insurance') ?>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_tattoo_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_tattoo_insurance') ?></h4>
-      <ul>
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_tattoo_insurance') ): while ( have_rows('section_optional_extras_cards_tattoo_insurance') ) : the_row(); ?>
-          <li>
-            <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_tattoo_insurance') ?>" height="45" width="45" alt="">
-              <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_tattoo_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </div>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="cover">
-    <div class="container">
-      <h4><?php the_field('cover_title_tattoo_insurance'); ?></h4>
-      <div class="cover-section">
-        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-          <h6><?php the_field('mobile_title_section_cover_tattoo_insurance'); ?></h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_on_tattoo_insurance') ): while ( have_rows('section_cover_on_tattoo_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_tattoo_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
-                <p><?php the_sub_field('text_cover_on_tattoo_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-          <h6>What's not included:</h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_off_tattoo_insurance') ): while ( have_rows('section_cover_off_tattoo_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_tattoo_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
-                <p><?php the_sub_field('text_cover_off_tattoo_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
         </div>
       </div>
     </div>

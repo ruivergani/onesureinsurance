@@ -83,7 +83,7 @@
       </div>
       <!-- === END OF HIDDEN INPUT === -->
       <a class="btn btn-primary" type="submit" href="<?php the_field('link_button_help_contact_page') ?>">
-        SUBMIT REQUEST
+         <?php the_field('button_description_help_contact_page') ?>
       </a>
     </div>
   </section>
@@ -139,7 +139,7 @@
             <p><?php the_field('sales_hours_contact_page') ?></p>
           </div>
           <div class="info-02-content">
-            <h5>Call Sales: <a href="<?php the_field('') ?>"><?php the_field('sales_number_contact_page') ?></a></h5>
+            <h5>Call Sales: <a href="<?php the_field('link_phone_sales_number_contact_page') ?>"><?php the_field('sales_number_contact_page') ?></a></h5>
           </div>
         </div>
         <div class="info-03">
@@ -148,7 +148,7 @@
             <p><?php the_field('renewals_hours_contact_page') ?></p>
           </div>
           <div class="info-03-content">
-            <h5>Call Renewals: <a href="<?php the_field('') ?>"><?php the_field('renewals_number_contact_page') ?></a></h5>
+            <h5>Call Renewals: <a href="<?php the_field('link_phone_renewals_number_contact_page') ?>"><?php the_field('renewals_number_contact_page') ?></a></h5>
           </div>
         </div>
       </ul>

@@ -121,11 +121,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#cover" class="anchor">
-            <p>What We Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -133,11 +128,6 @@
         <li class="js-item-content">
           <a href="#price" class="anchor">
             <p>Price</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#faqs" class="anchor">
-            <p>FAQs</p>
           </a>
         </li>
       </ul>
@@ -160,11 +150,6 @@
             </a>
           </li>
           <li>
-            <a href="#cover">
-              <p>What We Cover</p>
-            </a>
-          </li>
-          <li>
             <a href="#why">
               <p>Why Choose Us?</p>
             </a>
@@ -172,11 +157,6 @@
           <li>
             <a href="#price">
               <p>Price</p>
-            </a>
-          </li>
-          <li>
-            <a href="#faqs">
-              <p>FAQs</p>
             </a>
           </li>
         </ul>
@@ -272,39 +252,6 @@
     </div>
   </section>
 
-  <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="cover">
-    <div class="container">
-      <h4><?php the_field('cover_title_hgv_lorry_insurance'); ?></h4>
-      <div class="cover-section">
-        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-          <h6><?php the_field('mobile_title_section_cover_hgv_lorry_insurance'); ?></h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_on_hgv_lorry_insurance') ): while ( have_rows('section_cover_on_hgv_lorry_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_hgv_lorry_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
-                <p><?php the_sub_field('text_cover_on_hgv_lorry_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-          <h6>What's not included:</h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_off_hgv_lorry_insurance') ): while ( have_rows('section_cover_off_hgv_lorry_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_hgv_lorry_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
-                <p><?php the_sub_field('text_cover_off_hgv_lorry_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
   <!-- Section Product -->
   <section class="s-slide-product" id="types" data-aos="fade-up" data-aos-once="true">
     <div class="container">
@@ -414,30 +361,8 @@
     </div>
   </section>
 
-  <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h4><?php the_field('title_section_faq_hgv_lorry_insurance') ?></h4>
-      <div class="b-container">
-        <!-- Repeater --> 
-        <?php if( have_rows('create_card_faq_hgv_lorry_insurance') ): while ( have_rows('create_card_faq_hgv_lorry_insurance') ) : the_row(); ?>
-          <!-- Question Card -->
-          <div class="question">
-            <div class="title js-question">
-              <strong><?php the_sub_field('title_card_faq_hgv_lorry_insurance') ?></strong>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="question-content">
-              <?php the_sub_field('description_card_faq_hgv_lorry_insurance') ?>
-            </div>
-          </div>
-        <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
   <!-- Section CTA Desktop -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" style="padding-top: 0px;">
     <div class="container">
       <a href="<?php the_field('link_cta_hgv_lorry_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
         <div class="text">

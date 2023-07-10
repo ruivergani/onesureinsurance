@@ -129,11 +129,6 @@
             <p>Price</p>
           </a>
         </li>
-        <li class="js-item-content">
-          <a href="#faqs" class="anchor">
-            <p>FAQs</p>
-          </a>
-        </li>
       </ul>
       <!-- Mobile Configuration -->
       <div class="select-custom">
@@ -161,11 +156,6 @@
           <li>
             <a href="#price">
               <p>Price</p>
-            </a>
-          </li>
-          <li>
-            <a href="#faqs">
-              <p>FAQs</p>
             </a>
           </li>
         </ul>
@@ -370,30 +360,8 @@
     </div>
   </section>
 
-  <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h4><?php the_field('title_section_special_insurance') ?></h4>
-      <div class="b-container">
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_faq_special_insurance') ): while ( have_rows('section_faq_special_insurance') ) : the_row(); ?>
-          <!-- Question Card -->
-          <div class="question">
-            <div class="title js-question">
-              <strong><?php the_sub_field('title_faq_special_insurance'); ?></strong>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="question-content">
-              <?php the_sub_field('description_faq_special_insurance'); ?>
-            </div>
-          </div>
-        <?php endwhile; else : endif;?>
-      </div>
-    </div>
-  </section>
-
   <!-- Section CTA -->
-  <div class="s-newsletter">
+  <div class="s-newsletter" style="padding-top: 0px;">
     <div class="container">
       <a href="<?php the_field('link_cta_special_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in">
         <div class="text">

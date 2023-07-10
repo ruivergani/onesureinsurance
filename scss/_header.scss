@@ -105,7 +105,7 @@ header{
             }
             .area-menu{
                 border-bottom: 5.5rem solid $brand-light-blue;
-                min-height: 40rem;
+                min-height: 30rem;
                 .container{
                     padding-top: 5rem;
                     padding-bottom: 5rem;
@@ -151,7 +151,7 @@ header{
             &.business{
                 padding-top: 6rem;
                 .area-menu{
-                    min-height: 44rem;
+                    min-height: 40rem;
                     .container{
                         padding-top: 0rem;
                         display: flex;
@@ -199,7 +199,7 @@ header{
             &.existing{
                 padding-top: 6rem;
                 .area-menu{
-                    min-height: 44rem;
+                    min-height: 25rem;
                     .container{
                         padding-top: 0rem;
                         display: flex;
@@ -416,6 +416,10 @@ header{
                         max-width: 1.6rem;
                         transition: transform .3s;
                         transform: rotate(0deg); 
+
+                    }
+                    .image-rotate-link{
+                        transform: rotate(-90deg); 
                     }
                     &.active{
                         img{

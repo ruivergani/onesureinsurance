@@ -369,25 +369,6 @@
             ?>
           </div>
         </li>
-        <!-- Resources Menu -->
-        <li>
-          <button class="js-mobile-menu-item" aria-label="Resources Menu"> 
-            <span>Resources</span>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-          </button>
-          <!-- Sub Menu Dropdown Mobile -->
-          <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
-            <!-- Dynamic Menu -->
-            <?php
-              $args = array(
-                'menu' => 'Mobile Menu - Resources',
-                'theme_location' => 'mobile-resources',
-                'container' => false
-              );
-              wp_nav_menu( $args );
-            ?>
-          </div>
-        </li>
         <!-- Existing Customers Menu -->
         <li>
           <button class="js-mobile-menu-item" aria-label="Existing Customers Menu">
@@ -425,6 +406,13 @@
               wp_nav_menu( $args );
             ?>
           </div>
+        </li>
+        <!-- About Us Menu -->
+        <li>
+          <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>" aria-label="About Us Menu"> 
+            <span>About Us</span>
+            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow right" title="icon arrow right" loading="lazy" class="image-rotate-link">
+          </a>
         </li>
       </ul>
     </div>

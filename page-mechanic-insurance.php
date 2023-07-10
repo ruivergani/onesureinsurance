@@ -125,11 +125,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#cover" class="anchor">
-            <p>What We Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -166,11 +161,6 @@
           <li>
             <a href="#extras">
               <p>Optional Extras</p>
-            </a>
-          </li>
-          <li>
-            <a href="#cover">
-              <p>What We Cover</p>
             </a>
           </li>
           <li>
@@ -278,39 +268,6 @@
           </li>
         <?php endwhile; else : endif;?>
       </ul>
-    </div>
-  </section>
-
-  <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="cover">
-    <div class="container">
-      <h4><?php the_field('cover_title_mechanic_insurance'); ?></h4>
-      <div class="cover-section">
-        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-          <h6><?php the_field('mobile_title_section_cover_mechanic_insurance'); ?></h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_on_mechanic_insurance') ): while ( have_rows('section_cover_on_mechanic_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_mechanic_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
-                <p><?php the_sub_field('text_cover_on_mechanic_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-          <h6>What's not included:</h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_off_mechanic_insurance') ): while ( have_rows('section_cover_off_mechanic_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_mechanic_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
-                <p><?php the_sub_field('text_cover_off_mechanic_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
 
