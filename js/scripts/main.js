@@ -1,3 +1,23 @@
+// Configure Claim modal
+const btnOpenModalListClaims = document.querySelectorAll('.js-open-claim-modal');
+const btnCloseModalClaims = document.querySelector('.js-close-claim');
+if (btnOpenModalListClaims.length > 0) {
+  btnOpenModalListClaims.forEach((btnOpenModalClaim) => {
+    btnOpenModalClaim.addEventListener('click', (event) => {
+      event.preventDefault();
+      let html = document.body;
+      html.classList.add('show-modal-claim');
+    });
+  });
+}
+if (btnCloseModalClaims) {
+  btnCloseModalClaims.addEventListener('click', (event) => {
+    event.preventDefault();
+    let html = document.body;
+    html.classList.remove('show-modal-claim');
+  });
+}
+
 // Configure the modal
 const btnOpenModalList = document.querySelectorAll('.js-open-modal');
 const btnCloseModal = document.querySelector('.js-close');

@@ -23,16 +23,6 @@
     <h1 class="title-hero"><?php the_field('title_page_claim') ?></h1>
   </section>
 
-  <!-- === SECTION LINK == -->
-  <section class="s-breadcrumbs-claims">
-    <div class="container">
-      <a href="#claims-content">
-        <p><?php the_field('title_link_page_claim') ?></p>
-        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-keyboard.svg" alt="icon arrow down" title="arrow down">
-      </a>
-    </div>
-  </section>
-
   <!-- === SECTION CARDS === -->
   <section class="s-cards-claims" id="claims-content">
     <div class="container">
@@ -48,11 +38,33 @@
                 <img src="<?php the_sub_field('image_insurance_card_claim_page') ?>" alt="">
               </div>
               <div class="s-card-claim-button">
-                <a class="btn btn-primary" href="<?php the_sub_field('link_insurance_card_claim_page') ?>">
+                <button class="btn btn-primary js-open-claim-modal" href="">
                   MAKE A CLAIM
-                </a>
+                </button>
               </div>
             </div>
+            <!-- === POP UP CLAIM === -->
+            <section class="modal-claim">
+              <div class="overlay">
+              </div>
+              <div class="box">
+                <div class="box-content">
+                  <div class="box-content-title">
+                    <button class="close js-close-claim">
+                      <img src="https://www.onesureinsurance.co.uk/wp-content/themes/theme-onesureinsurance/assets/icons/icon-close-modal.svg"
+                      alt="close button" title="close button">
+                    </button>
+                  </div>
+                  <h2><?php the_sub_field('name_pop_up_insurance_card_claim_page') ?></h2>
+                  <div class="box-content-body">
+                    <a href="<?php the_sub_field('phone_text_pop_up_insurance_card_claim_page') ?>">
+                      <p><?php the_sub_field('phone_pop_up_insurance_card_claim_page') ?></p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- === END OF POP UP CLAIM === -->
           </li>
         <?php endwhile; else : endif;?>
       </ul>

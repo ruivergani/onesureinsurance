@@ -69,7 +69,7 @@
           <h2><?php the_field('title_right_hgv_skip_insurance') ?></h2>
         </div>
         <div class="s-hero-insurance__right_content">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero" width="30" height="160">
           <div class="s-hero-insurance__right__list">
             <ul>
               <li>
@@ -121,16 +121,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras" class="anchor">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#cover" class="anchor">
-            <p>What We Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -138,11 +128,6 @@
         <li class="js-item-content">
           <a href="#price" class="anchor">
             <p>Price</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#faqs" class="anchor">
-            <p>FAQs</p>
           </a>
         </li>
       </ul>
@@ -165,16 +150,6 @@
             </a>
           </li>
           <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
-            </a>
-          </li>
-          <li>
-            <a href="#cover">
-              <p>What We Cover</p>
-            </a>
-          </li>
-          <li>
             <a href="#why">
               <p>Why Choose Us?</p>
             </a>
@@ -182,11 +157,6 @@
           <li>
             <a href="#price">
               <p>Price</p>
-            </a>
-          </li>
-          <li>
-            <a href="#faqs">
-              <p>FAQs</p>
             </a>
           </li>
         </ul>
@@ -260,67 +230,12 @@
     </div>
   </section>
 
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_hgv_skip_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_hgv_skip_insurance') ?></h4>
-      <ul>
-        <!-- Repeater --> 
-        <?php if( have_rows('section_optional_extras_cards_hgv_skip_insurance') ): while ( have_rows('section_optional_extras_cards_hgv_skip_insurance') ) : the_row(); ?>
-          <li>
-            <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_hgv_skip_insurance') ?>" height="45" width="45" alt="">
-              <div class="text">
-                <h5><?php the_sub_field('card_title_optional_extras_hgv_skip_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </div>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="cover">
-    <div class="container">
-      <h4><?php the_field('cover_title_hgv_skip_insurance'); ?></h4>
-      <div class="cover-section">
-        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-          <h6><?php the_field('mobile_title_section_cover_hgv_skip_insurance'); ?></h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_on_hgv_skip_insurance') ): while ( have_rows('section_cover_on_hgv_skip_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_hgv_skip_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
-                <p><?php the_sub_field('text_cover_on_hgv_skip_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-          <h6>What's not included:</h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_off_hgv_skip_insurance') ): while ( have_rows('section_cover_off_hgv_skip_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_hgv_skip_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
-                <p><?php the_sub_field('text_cover_off_hgv_skip_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Section Product -->
-  <section class="s-slide-product" data-aos="fade-up" data-aos-once="true">
+  <section class="s-slide-product" id="types" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <div class="top">
-        <h6><?php the_field('mobile_title_section_product_hgv_skip_insurance') ?></h6>
-        <h4><?php the_field('title_section_product_hgv_skip_insurance') ?></h4>
+        <h6><?php the_field('mobile_title_section_product_slide_hgv_skip_insurance') ?></h6>
+        <h4><?php the_field('title_section_product_slide_hgv_skip_insurance') ?></h4>
         <div class="ctrl-slide">
           <!-- Swipper pagination structure -->
           <div class="swiper-pagination"></div>
@@ -337,25 +252,25 @@
       <!-- Swiper slide structure -->
       <div class="slide-product">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('card_product_slide_hgv_skip_insurance') ): while ( have_rows('card_product_slide_hgv_skip_insurance') ) : the_row(); ?>
+          <!-- Repeater Slide Cards --> 
+          <?php if( have_rows('card_product_slide_hgv_skip_insurance') ): while ( have_rows('card_product_slide_hgv_skip_insurance') ) : the_row(); ?>
+            <div class="swiper-slide">
               <!-- Card Product Type -->
               <a href="<?php the_sub_field('card_link_hgv_skip_insurance') ?>" class="card-product">
                 <div class="image">
-                    <img src="<?php the_sub_field('card_image_hgv_skip_insurance') ?>" alt="card product page" title="card product page">
+                  <img src="<?php the_sub_field('image_card_hgv_skip_insurance') ?>">
                 </div>
                 <div class="info">
                     <h6><?php the_sub_field('card_title_hgv_skip_insurance') ?></h6>
                     <p><?php the_sub_field('card_subtitle_hgv_skip_insurance') ?></p>
                     <div class="learn-more">
-                        <span><?php the_sub_field('link_card_title_hgv_skip_insurance') ?></span>
-                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
+                      <span><?php the_sub_field('link_card_title_hgv_skip_insurance') ?></span>
+                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
                     </div>
                 </div>
               </a>
-            <?php endwhile; else : endif;?>
-          </div>
+            </div>
+          <?php endwhile; else : endif;?>
         </div>
       </div>
     </div>
@@ -421,28 +336,6 @@
         </a>
       </div>
       <span data-aos="fade-up" data-aos-once="true"><?php the_field('span_section_price_hgv_skip_insurance') ?></span>
-    </div>
-  </section>
-
-  <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h4><?php the_field('title_section_faq_hgv_skip_insurance') ?></h4>
-      <div class="b-container">
-        <!-- Repeater --> 
-        <?php if( have_rows('create_card_faq_hgv_skip_insurance') ): while ( have_rows('create_card_faq_hgv_skip_insurance') ) : the_row(); ?>
-          <!-- Question Card -->
-          <div class="question">
-            <div class="title js-question">
-              <strong><?php the_sub_field('title_card_faq_hgv_skip_insurance') ?></strong>
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="question-content">
-              <?php the_sub_field('description_card_faq_hgv_skip_insurance') ?>
-            </div>
-          </div>
-        <?php endwhile; else : endif;?>
-      </div>
     </div>
   </section>
 

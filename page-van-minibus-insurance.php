@@ -69,7 +69,7 @@
           <h2><?php the_field('title_right_van_minibus_insurance') ?></h2>
         </div>
         <div class="s-hero-insurance__right_content">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero" width="30" height="160">
           <div class="s-hero-insurance__right__list">
             <ul>
               <li>
@@ -116,16 +116,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras" class="anchor">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#cover" class="anchor">
-            <p>What We Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -155,16 +145,6 @@
             </a>
           </li>
           <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
-            </a>
-          </li>
-          <li>
-            <a href="#cover">
-              <p>What We Cover</p>
-            </a>
-          </li>
-          <li>
             <a href="#why">
               <p>Why Choose Us?</p>
             </a>
@@ -191,61 +171,6 @@
       <div class="tab-product-content">
         <div class="text-content active">
           <?php the_content(); ?>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_van_minibus_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_van_minibus_insurance') ?></h4>
-      <ul>
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_van_minibus_insurance') ): while ( have_rows('section_optional_extras_cards_van_minibus_insurance') ) : the_row(); ?>
-          <li>
-            <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_van_minibus_insurance') ?>" height="45" width="45">
-              <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_van_minibus_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </div>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="cover">
-    <div class="container">
-      <h4><?php the_field('cover_title_van_minibus_insurance'); ?></h4>
-      <div class="cover-section">
-        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-          <h6><?php the_field('mobile_title_section_cover_van_minibus_insurance'); ?></h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_on_van_minibus_insurance') ): while ( have_rows('section_cover_on_van_minibus_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_van_minibus_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
-                <p><?php the_sub_field('text_cover_on_van_minibus_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-          <h6>What's not included:</h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_off_van_minibus_insurance') ): while ( have_rows('section_cover_off_van_minibus_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_van_minibus_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
-                <p><?php the_sub_field('text_cover_off_van_minibus_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
         </div>
       </div>
     </div>

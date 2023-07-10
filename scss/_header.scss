@@ -28,7 +28,7 @@
                 }
                 &:hover{
                     span{
-                        color: $grey-300;
+                        color: $grey-400;
                     }
                 }
             }
@@ -199,7 +199,7 @@ header{
             &.existing{
                 padding-top: 6rem;
                 .area-menu{
-                    min-height: 25rem;
+                    min-height: 28rem;
                     .container{
                         padding-top: 0rem;
                         display: flex;
@@ -467,7 +467,7 @@ header{
             max-width: 87%;
         }
     }
-    @media(max-width: 1050px){
+    @media(max-width: 1270px){
         nav{
             .hamburger{
                 display: block;

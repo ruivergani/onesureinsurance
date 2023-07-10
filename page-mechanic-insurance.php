@@ -68,7 +68,7 @@
           <h2><?php the_field('title_right_mechanic_insurance') ?></h2>
         </div>
         <div class="s-hero-insurance__right_content">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero" width="30" height="160">
           <div class="s-hero-insurance__right__list">
             <ul>
               <li>
@@ -120,11 +120,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras" class="anchor">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -156,11 +151,6 @@
           <li>
             <a href="#mechanicinsurance">
               <p>Mechanic Insurance Cover</p>
-            </a>
-          </li>
-          <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
             </a>
           </li>
           <li>
@@ -246,28 +236,6 @@
           <?php the_field('description_right_column_mechanic_insurance') ?>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_mechanic_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_mechanic_insurance') ?></h4>
-      <ul>
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_mechanic_insurance') ): while ( have_rows('section_optional_extras_cards_mechanic_insurance') ) : the_row(); ?>
-          <li>
-            <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_mechanic_insurance') ?>" height="45" width="45" alt="">
-              <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_mechanic_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </div>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
     </div>
   </section>
 

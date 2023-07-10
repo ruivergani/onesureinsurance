@@ -80,7 +80,7 @@
 }
 .s-content-claims-faq{
     background-color: $brand-light-blue;
-    padding: 112px 0px;
+    padding: 90px 0px;
     .container{
         background: #FFFFFF;
         box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.05);
@@ -95,7 +95,7 @@
             margin-bottom: 6rem;
             h4{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 32px;
                 line-height: 112%;
                 letter-spacing: -1px;
@@ -305,6 +305,7 @@
         }
     }
     @media (max-width: 480px){
+        padding: 0px;
         .container{
             .title-content-claims-faq{
                 padding-top: 4rem;
@@ -313,6 +314,12 @@
                 .accordion-plus-claim{
                     .accordion-plus-content-claim{
                         padding-bottom: 20px;
+                        h3{
+                            font-size: 20px;
+                            img{
+                                max-width: 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -333,6 +340,7 @@
                     background-color: $brand-light-blue;
                     border-radius: 5px;
                     width: 100%;
+                    min-width: 279px;
                     max-width: 279px;
                     display: flex;
                     align-items: center;
@@ -361,22 +369,22 @@
                     .s-card-claim-image{
                         width: 100%;
                         height: 100%;
-                        max-width: 250px;
-                        max-height: 186px;
+                        max-width: 220px;
+                        max-height: 180px;
                         overflow: hidden;
                         img{
                             width: 100%;
                             height: 100%;
                             -o-object-fit: cover;
                             object-fit: cover;
-                            max-width: 250px;
-                            max-height: 186px;
+                            max-width: 220px;
+                            max-height: 180px;
                         }
                     }
                     .s-card-claim-button{
                         padding-top: 25px;
                         padding-bottom: 25px;
-                        a{
+                        a,button{
                             cursor: pointer;
                         }
                     }
@@ -428,7 +436,7 @@
                         .s-card-claim-button{
                             padding-top: 20px;
                             padding-bottom: 20px;
-                            a{
+                            a,button{
                                 cursor: pointer;
                             }
                         }
@@ -492,4 +500,116 @@
             }
         }
     }
+}
+// Pop up Claim
+.show-modal-claim{
+    .modal-claim{
+        opacity: 1;
+        pointer-events: all;
+        .box{
+            transform: translateY(0px);
+        }
+    }
+}
+// Modal
+.modal-claim{
+    position: fixed;
+    top: -3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; // hide with opacity otherwise we can not make the transition with modal
+    pointer-events: none; // cancel click area
+    transition: opacity .3s;
+    z-index: 30019999;
+    .overlay{
+        position: fixed; // does not apply the display flex
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .box{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        max-width: 50.8rem;
+        border: 1px solid #F1F0F5;
+        background-color: $white;
+        border-radius: 0.4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        // to go down to make transition up
+        transform: translateY(50px);
+        transition: transform .3s;
+        .box-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .box-content-title{
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                padding-right: 30px;
+                position: absolute;
+                top: 30px;
+                .close{
+                    
+                }
+            }
+            h2{
+                font-size: 2.4rem;
+                text-align: center;
+                width: 100%;
+                word-wrap: break-word;
+                padding-top: 2rem;
+                padding-right: 3rem;
+                padding-left: 3rem;
+            }
+            .box-content-body{
+                margin-top: 20px;
+                a{
+                    p{
+                        color: #00449e;
+                        font-family: "Inter",sans-serif;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 130%;
+                    }
+                    &:hover{
+                        p{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 490px){
+        .box{
+            max-width: 38rem;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            .box-content{
+                .box-content-title{
+                    top: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+    @media (max-width: 370px){
+        .box{
+            max-width: 32rem;
+        }
+    }
+
 }

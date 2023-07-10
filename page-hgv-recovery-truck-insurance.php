@@ -69,7 +69,7 @@
           <h2><?php the_field('title_right_hgv_recovery_truck_insurance') ?></h2>
         </div>
         <div class="s-hero-insurance__right_content">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.webp" alt="" class="line-right-hero" width="30" height="160">
           <div class="s-hero-insurance__right__list">
             <ul>
               <li>
@@ -116,16 +116,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras" class="anchor">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#cover" class="anchor">
-            <p>What We Cover</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -152,16 +142,6 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
-            </a>
-          </li>
-          <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
-            </a>
-          </li>
-          <li>
-            <a href="#cover">
-              <p>What We Cover</p>
             </a>
           </li>
           <li>
@@ -196,61 +176,6 @@
     </div>
   </section>
 
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_hgv_recovery_truck_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_hgv_recovery_truck_insurance') ?></h4>
-      <ul>
-        <!-- Repeater --> 
-        <?php if( have_rows('section_optional_extras_cards_hgv_recovery_truck_insurance') ): while ( have_rows('section_optional_extras_cards_hgv_recovery_truck_insurance') ) : the_row(); ?>
-          <li>
-            <div class="extra-button">
-              <img src="<?php the_sub_field('image_card_optional_extras_hgv_recovery_truck_insurance') ?>" alt="" height="45" width="45">
-              <div class="text">
-                <h5><?php the_sub_field('card_title_optional_extras_hgv_recovery_truck_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </div>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Section COVER / DO NOT COVER -->
-  <section class="s-cover" id="cover">
-    <div class="container">
-      <h4><?php the_field('cover_title_hgv_recovery_truck_insurance'); ?></h4>
-      <div class="cover-section">
-        <div class="cover-on" data-aos="fade-right" data-aos-once="true">
-          <h6><?php the_field('mobile_title_section_cover_hgv_recovery_truck_insurance'); ?></h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_on_hgv_recovery_truck_insurance') ): while ( have_rows('section_cover_on_hgv_recovery_truck_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_on_hgv_recovery_truck_insurance'); ?>" alt="icon checked" title="icon checked" width="18" height="18">
-                <p><?php the_sub_field('text_cover_on_hgv_recovery_truck_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-        <div class="cover-off" data-aos="fade-left" data-aos-once="true">
-          <h6>What's not included:</h6>
-          <ul>
-            <!-- Repeater Slide Cards --> 
-            <?php if( have_rows('section_cover_off_hgv_recovery_truck_insurance') ): while ( have_rows('section_cover_off_hgv_recovery_truck_insurance') ) : the_row(); ?>
-              <li>
-                <img src="<?php the_sub_field('icon_checked_cover_off_hgv_recovery_truck_insurance'); ?>" alt="icon not checked" title="icon not checked" width="23" height="23">
-                <p><?php the_sub_field('text_cover_off_hgv_recovery_truck_insurance'); ?></p>
-              </li>
-            <?php endwhile; else : endif;?>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Section Product -->
   <section class="s-slide-product" id="types" data-aos="fade-up" data-aos-once="true">
     <div class="container">
@@ -279,14 +204,14 @@
               <!-- Card Product Type -->
               <a href="<?php the_sub_field('card_link_hgv_recovery_truck_insurance') ?>" class="card-product">
                 <div class="image">
-                    <img src="<?php the_sub_field('image_card_hgv_recovery_truck_insurance') ?>" alt="card product page" title="card product page">
+                  <img src="<?php the_sub_field('card_image_hgv_recovery_truck_insurance') ?>">
                 </div>
                 <div class="info">
                     <h6><?php the_sub_field('card_title_hgv_recovery_truck_insurance') ?></h6>
-                    <p><?php the_sub_field('subtitle_card_hgv_recovery_truck_insurance') ?></p>
+                    <p><?php the_sub_field('card_subtitle_hgv_recovery_truck_insurance') ?></p>
                     <div class="learn-more">
-                        <span><?php the_sub_field('link_card_title_hgv_recovery_truck_insurance') ?></span>
-                        <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
+                      <span><?php the_sub_field('link_card_title_hgv_recovery_truck_insurance') ?></span>
+                      <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="arrow right rounded" title="arrow right rounded">
                     </div>
                 </div>
               </a>

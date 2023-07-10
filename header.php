@@ -29,13 +29,11 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php get_home_url(); ?>">
   <meta property="og:title" content="<?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>">
-  <meta property="og:description" content="<?php the_field('description_page'); ?>">
   <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="<?php get_home_url(); ?>">
   <meta property="twitter:title" content="<?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>">
-  <meta property="twitter:description" content="<?php the_field('description_page'); ?>">
   <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
   <!-- Function WP HEAD -->
   <?php wp_head(); ?>
