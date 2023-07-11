@@ -38,13 +38,13 @@
                 <img src="<?php the_sub_field('image_insurance_card_claim_page') ?>" alt="">
               </div>
               <div class="s-card-claim-button">
-                <button class="btn btn-primary js-open-claim-modal" href="">
+                <button class="btn btn-primary js-open-claim-modal" data-modal-target="<?php the_sub_field('link_modal_target') ?>">
                   MAKE A CLAIM
                 </button>
               </div>
             </div>
             <!-- === POP UP CLAIM === -->
-            <section class="modal-claim">
+            <section class="modal-claim" id="<?php the_sub_field('id_modal_target') ?>">
               <div class="overlay">
               </div>
               <div class="box">

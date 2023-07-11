@@ -1,20 +1,32 @@
 // Configure Claim modal
 const btnOpenModalListClaims = document.querySelectorAll('.js-open-claim-modal');
-const btnCloseModalClaims = document.querySelector('.js-close-claim');
+const btnCloseModalClaims = document.querySelectorAll('.js-close-claim');
+
 if (btnOpenModalListClaims.length > 0) {
   btnOpenModalListClaims.forEach((btnOpenModalClaim) => {
     btnOpenModalClaim.addEventListener('click', (event) => {
       event.preventDefault();
-      let html = document.body;
-      html.classList.add('show-modal-claim');
+      let modalId = btnOpenModalClaim.dataset.modalTarget;
+      let modal = document.querySelector(modalId);
+      console.log(modalId);
+      console.log(modal);
+      if (modal) {
+        modal.classList.add('show-modal-claim');
+      }
     });
   });
 }
-if (btnCloseModalClaims) {
-  btnCloseModalClaims.addEventListener('click', (event) => {
-    event.preventDefault();
-    let html = document.body;
-    html.classList.remove('show-modal-claim');
+
+if (btnCloseModalClaims.length > 0) {
+  btnCloseModalClaims.forEach((btnCloseModal) => {
+    btnCloseModal.addEventListener('click', (event) => {
+      event.preventDefault();
+      let modal = btnCloseModal.closest('.modal-claim');
+      
+      if (modal) {
+        modal.classList.remove('show-modal-claim');
+      }
+    });
   });
 }
 

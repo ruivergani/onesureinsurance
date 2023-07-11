@@ -501,16 +501,6 @@
         }
     }
 }
-// Pop up Claim
-.show-modal-claim{
-    .modal-claim{
-        opacity: 1;
-        pointer-events: all;
-        .box{
-            transform: translateY(0px);
-        }
-    }
-}
 // Modal
 .modal-claim{
     position: fixed;
@@ -592,6 +582,13 @@
             }
         }
     }
+    &.show-modal-claim{
+        opacity: 1;
+        pointer-events: all;
+        .box{
+            transform: translateY(0px);
+        }
+    }
     // Responsive
     @media (max-width: 490px){
         .box{
@@ -611,5 +608,4 @@
             max-width: 32rem;
         }
     }
-
 }
