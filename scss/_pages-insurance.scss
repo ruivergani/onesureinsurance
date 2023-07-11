@@ -1029,9 +1029,9 @@
         .js-nav-product{
             display: flex;
             align-items: flex-start;
-            gap: 3rem;
-            padding-top: 3rem;
-            margin-bottom: 2rem;
+            gap: 30px;
+            padding-top: 30px;
+            margin-bottom: 20px;
             li{
                 a{
                     display: inline-block;
@@ -1043,7 +1043,7 @@
                         line-height: 175%;
                         color: $grey-500;
                         transition: all .3s;
-                        padding-bottom: 1rem;
+                        padding-bottom: 10px;
                         transition: all 0.3s;
                         border-bottom: 2px solid transparent;
                         &:hover{
