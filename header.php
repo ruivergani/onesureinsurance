@@ -40,7 +40,7 @@
 </head>
 <body>
   <!-- === Top Navigation === -->
-  <div class="nav-top">
+  <div class="nav-top" role="banner">
     <div class="container">
       <ul>
         <li>
@@ -71,10 +71,10 @@
     </div>
   </div>
   <!-- === Header === -->
-  <header class="js-header" id="js-header">
+  <header class="js-header" id="js-header" role="banner">
     <div class="container">
       <!-- Logo -->
-      <a href="<?php echo get_home_url(); ?>" class="logo" id="logo" title="Logo">
+      <a href="<?php echo get_home_url(); ?>" class="logo" id="logo" title="logo">
         <!-- Picture Tags -->
         <picture>
           <source media="(max-width: 668px)" srcset="<?php echo get_template_directory_uri()?>/assets/logo-mobile.svg" class="mobile-logo" width="186" height="54">
@@ -415,3 +415,4 @@
       </ul>
     </div>
   </header>
+  <main role="main">

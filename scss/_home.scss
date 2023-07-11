@@ -148,6 +148,10 @@
         }
     }
     @media (max-width: 600px){
+        &::after{
+            background-image: none !important;
+            background-color: rgba(0, 52, 120, 0.8) !important;
+        }
         .container{
             display: flex;
             align-items: center;
@@ -409,12 +413,12 @@
             border-left: 3px solid #003478;
             padding-left: 2rem;
             margin-left: 5rem;
-            h6{
+            h2{
                 display: none;
             }
-            h4{
+            h3{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 1.8rem;
                 line-height: 120%;
                 letter-spacing: -0.5px;
@@ -464,7 +468,7 @@
             .title{
                 border-left: 0px;
                 margin-left: 0px;
-                h4{
+                h3{
                     max-width: 100%;
                     font-size: 2.8rem;
                 }
@@ -480,21 +484,22 @@
                 padding: 0px;
                 flex-direction: column;
                 gap: 0rem;
-                h6{
+                h2{
                     display: block;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 500;
-                    font-size: 2.4rem;
+                    font-size: 24px;
                     line-height: 112%;
                     text-align: center;
                     letter-spacing: -1px;
-                    color: $grey-300;
+                    color: $grey-400;
                     opacity: 0.8;
                     padding-bottom: 1rem;
+                    text-transform: capitalize;
                 }
-                h4{
-                    text-transform: none;
-                    font-size: 2.8rem;
+                h3{
+                    text-transform: capitalize;
+                    font-size: 28px;
                     line-height: 112%;
                     text-align: center;
                     letter-spacing: -1px;
@@ -571,7 +576,7 @@
                     line-height: 112%;
                     text-align: center;
                     letter-spacing: -1px;
-                    color: $grey-300;
+                    color: $grey-400;
                     opacity: 0.8;
                 }
                 h2{
@@ -711,7 +716,7 @@
                     display: block;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 500;
-                    font-size: 2.4rem;
+                    font-size: 24px;
                     line-height: 112%;
                     text-align: center;
                     letter-spacing: -1px;

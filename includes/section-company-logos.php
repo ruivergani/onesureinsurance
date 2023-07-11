@@ -1,9 +1,8 @@
-<!-- Section Company Logos -->
 <section class="s-logos" id="s-logos">
   <div class="container">
     <div class="title" data-aos="fade-right" data-aos-once="true">
-      <h6>Have a look</h6>
-      <h4>Our Accreditations</h4>
+      <h2>Have a look</h2>
+      <h3>Our Accreditations</h3>
     </div>
     <!-- Swipper -->
     <div class="slide-logos" data-aos="fade-left" data-aos-once="true">

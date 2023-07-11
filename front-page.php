@@ -252,7 +252,7 @@
           <span><?php the_field('description_page_home_cta') ?></span>
           <h3><?php the_field('title_page_home_cta') ?></h3>
         </div>
-        <a class="btn btn-primary">
+        <a class="btn btn-primary" aria-label="Get Quote Button" >
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
           get a quote
         </a>
