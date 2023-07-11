@@ -115,18 +115,8 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras" class="anchor">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
-          </a>
-        </li>
-        <li class="js-item-content">
-          <a href="#price" class="anchor">
-            <p>Price</p>
           </a>
         </li>
         <li class="js-item-content">
@@ -149,18 +139,8 @@
             </a>
           </li>
           <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
-            </a>
-          </li>
-          <li>
             <a href="#why">
               <p>Why Choose Us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#price">
-              <p>Price</p>
             </a>
           </li>
           <li>
@@ -186,7 +166,7 @@
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
+  <section class="s-extras-opt hide" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_bulldozer_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_bulldozer_insurance') ?></h4>

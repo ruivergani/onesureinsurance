@@ -120,11 +120,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#price" class="anchor">
-            <p>Price</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#faqs" class="anchor">
             <p>FAQs</p>
           </a>
@@ -146,11 +141,6 @@
           <li>
             <a href="#why">
               <p>Why Choose Us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#price">
-              <p>Price</p>
             </a>
           </li>
           <li>
@@ -274,7 +264,7 @@
   </section>
 
   <!-- Section Price -->
-  <section class="s-price-insurance" id="price">
+  <section class="s-price-insurance hide" id="price">
     <div class="container">
       <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_travel_insurance') ?></h4>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">

@@ -115,11 +115,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras" class="anchor">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -146,11 +141,6 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
-            </a>
-          </li>
-          <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
             </a>
           </li>
           <li>
@@ -186,7 +176,7 @@
   </section>
 
   <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
+  <section class="s-extras-opt hide" id="extras" data-aos="fade-up" data-aos-once="true">
     <div class="container">
       <h6><?php the_field('mobile_title_section_optional_extras_crane_insurance') ?></h6>
       <h4><?php the_field('title_section_optional_extras_crane_insurance') ?></h4>

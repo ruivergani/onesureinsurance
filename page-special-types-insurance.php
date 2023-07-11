@@ -342,7 +342,7 @@
   </section>
 
   <!-- Section Price -->
-  <section class="s-price-insurance" id="price">
+  <section class="s-price-insurance hide" id="price">
     <div class="container">
       <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_special_insurance') ?></h4>
       <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
