@@ -327,7 +327,7 @@
     }
 }
 .s-cards-claims{
-    padding: 112px 0px;
+    padding: 90px 0px;
     .container{
         width: 100%;
         ul{
@@ -335,6 +335,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 6rem 3.2rem;
+            
             li{
                 .s-card-claim{
                     background-color: $brand-light-blue;
@@ -393,22 +394,21 @@
         }
     }
     // Responsive
-    @media (max-width: 1005px){
+    @media (max-width: 1300px){
         padding: 60px 0px;
         .container{
             ul{
                 grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 4rem 3.2rem;
+                justify-items: center;
             }
         }
     }
-    @media (max-width: 768px){
+    @media (max-width: 991px){
         padding: 60px 0px;
         .container{
             ul{
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 4rem 3.2rem;
-                align-items: center;
                 justify-items: center;
                 li{
 
@@ -416,7 +416,7 @@
             }
         }
     }
-    @media (max-width: 600px){
+    @media (max-width: 668px){
         padding: 40px 0px;
         .container{
             ul{
