@@ -1,35 +1,29 @@
 // Configure Claim modal
 const btnOpenModalListClaims = document.querySelectorAll('.js-open-claim-modal');
 const btnCloseModalClaims = document.querySelectorAll('.js-close-claim');
-
 if (btnOpenModalListClaims.length > 0) {
   btnOpenModalListClaims.forEach((btnOpenModalClaim) => {
     btnOpenModalClaim.addEventListener('click', (event) => {
       event.preventDefault();
       let modalId = btnOpenModalClaim.dataset.modalTarget;
       let modal = document.querySelector(modalId);
-      console.log(modalId);
-      console.log(modal);
       if (modal) {
         modal.classList.add('show-modal-claim');
       }
     });
   });
 }
-
 if (btnCloseModalClaims.length > 0) {
   btnCloseModalClaims.forEach((btnCloseModal) => {
     btnCloseModal.addEventListener('click', (event) => {
       event.preventDefault();
       let modal = btnCloseModal.closest('.modal-claim');
-      
       if (modal) {
         modal.classList.remove('show-modal-claim');
       }
     });
   });
 }
-
 // Configure the modal
 const btnOpenModalList = document.querySelectorAll('.js-open-modal');
 const btnCloseModal = document.querySelector('.js-close');
@@ -71,7 +65,6 @@ if (btnCloseModalInsurance){
      html.classList.remove('show-modal-insurance'); // selecting
   })
 }
-
 // Configure the modal Support
 const btnOpenModalSupport = document.querySelector('.js-open-modal-support');
 const btnCloseModalSupport = document.querySelector('.js-close-support');
@@ -91,11 +84,9 @@ if (btnCloseModalSupport){
      html.classList.remove('show-modal-support'); // selecting
   })
 }
-
 // Script for the mobile sub menu
 const btnMobileSubMenu = document.querySelectorAll('.js-mobile-menu-item');
 const subMenuDropdownArea = document.querySelectorAll('.js-menu-dropdown-mobile');
-
 // Check if 'btnMobileSubMenu' elements exist
 if (btnMobileSubMenu) {
   // Iterate over each 'btnMobileSubMenu' element (tag a)
@@ -122,7 +113,6 @@ if (btnMobileSubMenu) {
     });
   });
 }
-
 // Script for the FAQs open
 const question = document.querySelectorAll(".js-question"); // all cards question
 // Check if the question exists or not
@@ -173,10 +163,8 @@ if(listTopicsFaqMobile){
     textTopicFaqMobile.textContent = topic.textContent;
     ancorTopicFaqMobile.appendChild(textTopicFaqMobile);
   });
-
   const allTopicsFaqMobile = document.querySelectorAll('.js-dropdown-select li a');
   allTopicsFaqMobile[0].classList.add('active');
-
   // Function to return the element position
   function offset(el) {
     if (document) {
@@ -198,7 +186,6 @@ if(listTopicsFaqMobile){
       })
     }
   }
-
   // Map and make the event click in the topics to scroll based on layout
   allTopicsFaqMobile.forEach((item, index) => {
     item.addEventListener('click', (event) => {
@@ -228,10 +215,8 @@ if(listTopicsFaq){
     textTopicFaq.textContent = topic.textContent;
     ancorTopicFaq.appendChild(textTopicFaq);
   });
-
   const allTopicsFaq = document.querySelectorAll('.js-nav-faq-post li a');
   allTopicsFaq[0].classList.add('active');
-
   // Function to return the element position
   function offset(el) {
     if (document) {
@@ -253,7 +238,6 @@ if(listTopicsFaq){
       })
     }
   }
-
   // Map and make the event click in the topics to scroll based on layout
   allTopicsFaq.forEach((item, index) => {
     item.addEventListener('click', (event) => {
@@ -266,7 +250,6 @@ if(listTopicsFaq){
     })
   })
 }
-
 // Script for the Topics Navigation
 const listTopics = document.querySelector('.js-nav-blog-post');
 const topics = document.querySelectorAll('.info-post-general .container .info-post-bottom .left-content .content-post h2');
@@ -285,7 +268,6 @@ if(listTopics){
   });
   const allTopics = document.querySelectorAll('.js-nav-blog-post li a');
   allTopics[0].classList.add('active');
-
   // Function to return the element position
   function offset(el) {
     if (document) {
@@ -296,7 +278,6 @@ if(listTopics){
       return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
     }
   }
-
   // Function to scroll until the position H2
   function handleScrollTop(position) {
     if(document) {
@@ -308,7 +289,6 @@ if(listTopics){
       })
     }
   }
-
   // Map and make the event click in the topics to scroll based on layout
   allTopics.forEach((item, index) => {
     item.addEventListener('click', (event) => {
@@ -321,7 +301,6 @@ if(listTopics){
     })
   })
 }
-
 // Script for the Topics Navigation Template Text
 const listTopics2 = document.querySelector('.js-nav-template-text');
 const topics2 = document.querySelectorAll('.s-page-text .container .left-page-text .content-post h2');
@@ -340,7 +319,6 @@ if(listTopics2){
   });
   const allTopics2 = document.querySelectorAll('.js-nav-template-text li a');
   allTopics2[0].classList.add('active');
-
   // Function to return the element position
   function offset(el) {
     if (document) {
@@ -351,7 +329,6 @@ if(listTopics2){
       return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
     }
   }
-
   // Function to scroll until the position H2
   function handleScrollTop(position) {
     if(document) {
@@ -363,7 +340,6 @@ if(listTopics2){
       })
     }
   }
-
   // Map and make the event click in the topics to scroll based on layout
   allTopics2.forEach((item, index) => {
     item.addEventListener('click', (event) => {
@@ -376,7 +352,6 @@ if(listTopics2){
     })
   })
 }
-
 // Script for Swipper Slide Logos
 var swiper = new Swiper(".slide-logos", {
   slidesPerView: 'auto',
@@ -531,7 +506,6 @@ var slide_product_about = new Swiper(".slide-about", {
     },
   },
 });
-
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
 btnScrollTop.addEventListener("click", () => {
@@ -540,7 +514,6 @@ btnScrollTop.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-
 // Add class active to menu button
 const menuButton = document.getElementById("js-menu-button");
 menuButton.addEventListener("click", () => {
@@ -548,7 +521,6 @@ menuButton.addEventListener("click", () => {
   document.documentElement.classList.toggle("menu-opened");
   document.body.classList.toggle('fixed-position');
 });
-
 // Menu Header Change >20 scroll
 const header = document.getElementById("js-header");
 function fixedMenu() {
@@ -559,11 +531,9 @@ function fixedMenu() {
   }
 }
 document.addEventListener("scroll", fixedMenu);
-
 // Sub Menu Configuration
 const btnMenu = document.querySelectorAll('.js-btn-menu');
 const MenuDropdown = document.querySelectorAll('.js-menu');
-
 if(MenuDropdown.length > 0){
   // link which menu dropdown you need to click
   btnMenu.forEach((btn, index) => {
@@ -591,12 +561,9 @@ if(MenuDropdown.length > 0){
     })
   });
 }
-
-
 // Configure tab navigation based on scroll
 const navLi = document.querySelectorAll('.js-nav-product li a');
 const sections = document.querySelectorAll('section');
-
 if (navLi.length && sections.length) {
   window.addEventListener('scroll', () => {
     let current = '';
@@ -615,7 +582,6 @@ if (navLi.length && sections.length) {
       }
     });
   });
-
   // Add click event listeners to the navigation links
   navLi.forEach(link => {
     link.addEventListener('click', (event) => {
@@ -633,7 +599,6 @@ if (navLi.length && sections.length) {
     });
   });
 }
-
 // Script for the mobile tab navigation
 const btnDropdownSelect = document.querySelector('.js-open-select-custom');
 const dropdownArea = document.querySelector('.select-custom');
@@ -642,7 +607,6 @@ if(btnDropdownSelect){
   btnDropdownSelect.addEventListener('click', () => {
     dropdownArea.classList.toggle('active');
   });
-
  navMobileLink.forEach((item, index) => {
   item.addEventListener('click', (event) => {
     navMobileLink.forEach(all => {

@@ -129,8 +129,7 @@
           </div>
           <div class="info-01-content">
             <h5>Claims Department:</h5>
-            <p>For our full list of claim numbers please <a href="<?php the_field('claims_link_contact_page') ?>">click here.</a>
-            Available 24hrs a day.</p>
+            <p><?php the_field('claims_department_text') ?></p>
           </div>
         </div>
         <div class="info-02">
@@ -152,8 +151,8 @@
           </div>
         </div>
       </ul>
-      <p class="message-info">Send us an email fill out the form found above. Required fields are highlighted in red.</p>
-      <span>* Take out an insurance policy, or renew an insurance policy with One Sure Insurance, and if you find a cheaper quotation within 48 hours that is on a like for like basis that you can provide written proof of, we will cancel your insurance policy and issue a full refund. Subject to terms and conditions.</span>
+      <p class="message-info"><?php the_field('title_small_message_info_text_contact') ?></p>
+      <span><?php the_field('small_message_info_text_contact') ?></span>
     </div>
   </section>
   
