@@ -126,7 +126,7 @@
         </li>
         <li class="js-item-content">
           <a href="#cover" class="anchor">
-            <p>What We Cover</p>
+            <p>What is Covered</p>
           </a>
         </li>
         <li class="js-item-content">
@@ -170,7 +170,7 @@
           </li>
           <li>
             <a href="#cover">
-              <p>What We Cover</p>
+              <p>What is Covered</p>
             </a>
           </li>
           <li>

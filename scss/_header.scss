@@ -287,8 +287,8 @@ header{
         position: absolute;
         width: 100%;
         height: 100%;
-        top: 1rem !important;
-        min-height: calc(100vh - 100px);
+        top: 15px !important;
+        min-height: calc(100vh - 80px);
         background-color: white;
         transform: translateY(100%);
         transition: all .3s ease;
@@ -469,6 +469,17 @@ header{
         }
     }
     @media(max-width: 1270px){
+        &.changeHeight{
+            height: 10rem;
+            .container{
+                .dropdown-sub-menu{
+                    top: 7.8rem;
+                }
+            }
+            .menu-mobile{
+                top: 8rem;
+            }
+        }
         nav{
             .hamburger{
                 display: block;
@@ -515,6 +526,6 @@ header{
       }
     }
 }
-// .fixed-position {
-//     position: fixed;
-// }
+.fixed-position {
+    overflow-y: hidden;
+}

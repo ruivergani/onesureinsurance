@@ -44,7 +44,7 @@
           </div>
         </div>
         <!-- === END OF HIDDEN INPUT === -->
-        <a class="btn btn-primary" type="submit" href="<?php the_field('link_thankyou_page') ?>">
+        <a class="btn btn-primary" type="submit" href="<?php echo get_template_directory_uri()?>/assets/downloads/vcard.vcf" target="_blank">
           <?php the_field('text_thankyou_page') ?>
         </a>
     </div>

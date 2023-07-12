@@ -115,11 +115,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#extras" class="anchor">
-            <p>Optional Extras</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -141,11 +136,6 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
-            </a>
-          </li>
-          <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
             </a>
           </li>
           <li>
@@ -172,28 +162,6 @@
           <?php the_content(); ?>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Section Optional Extras -->
-  <section class="s-extras-opt" id="extras" data-aos="fade-up" data-aos-once="true">
-    <div class="container">
-      <h6><?php the_field('mobile_title_section_optional_extras_dump_truck_insurance') ?></h6>
-      <h4><?php the_field('title_section_optional_extras_dump_truck_insurance') ?></h4>
-      <ul>
-        <!-- Repeater Slide Cards --> 
-        <?php if( have_rows('section_optional_extras_cards_dump_truck_insurance') ): while ( have_rows('section_optional_extras_cards_dump_truck_insurance') ) : the_row(); ?>
-          <li>
-            <div class="extra-button">
-             <img src="<?php the_sub_field('image_card_optional_extras_dump_truck_insurance') ?>" height="45" width="45" alt="">
-              <div class="text">
-                <h5><?php the_sub_field('title_card_optional_extras_dump_truck_insurance') ?></h5>
-                <p>Find Out More <i class="fa-solid fa-arrow-right"></i></p>
-              </div>
-            </div>
-          </li>
-        <?php endwhile; else : endif;?>
-      </ul>
     </div>
   </section>
 
