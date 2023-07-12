@@ -86,8 +86,7 @@
         .container{
             .s-hero-about-title{
                 h1{
-                    font-size: 2.8rem;
-                    margin-bottom: 1.5rem;
+                    font-size: 28px;
                 }
             }
         }
@@ -212,6 +211,7 @@
     }
     // Responsive
     @media (max-width: 768px){
+        padding-top: 1rem;
         padding-bottom: 3rem;
         .container{
             .s-content-about-us-text{
@@ -288,8 +288,11 @@
     @media (max-width: 768px){
         padding-bottom: 2rem;
         .container{
+            align-items: center;
+            justify-content: center;
             .s-logos-brands-list{
                 flex-direction: column;
+
                 gap: 20px;
             }
         }

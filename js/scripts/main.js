@@ -5,8 +5,10 @@ if (btnOpenModalListClaims.length > 0) {
   btnOpenModalListClaims.forEach((btnOpenModalClaim) => {
     btnOpenModalClaim.addEventListener('click', (event) => {
       event.preventDefault();
+      //It retrieves the value of the 'data-modalTarget' attribute from the clicked element using btnOpenModalClaim.dataset.modalTarget and stores it in the modalId variable. This attribute is expected to contain a valid selector for the modal window.
       let modalId = btnOpenModalClaim.dataset.modalTarget;
       let modal = document.querySelector(modalId);
+      //It then uses document.querySelector to find the modal element based on the modalId selector. If a modal element is found, it adds the 'show-modal-claim' class to it. This class is likely used to control the visibility of the modal window.
       if (modal) {
         modal.classList.add('show-modal-claim');
       }
