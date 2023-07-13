@@ -80,7 +80,9 @@
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-phone-lg.svg" alt="icon phone" title="icon phone" loading="lazy">
           <div class="text">
             <h3><?php the_field('title_card_01_section_call') ?></h3>
-            <p><?php the_field('phone_number_section_call') ?></p>
+            <a href="<?php the_field('phone_number_section_call_text') ?>" class="p_call">
+              <p><?php the_field('phone_number_section_call') ?></p>
+            </p>
           </div>
         </div>
         <div class="card-03" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">

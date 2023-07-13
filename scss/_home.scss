@@ -342,6 +342,16 @@
             padding: 0px 6.9rem;
             gap: 2rem;
             .text{
+                .p_call{
+                    p{
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 600;
+                        font-size: 2.8rem;
+                        line-height: 112%;
+                        letter-spacing: -0.5px;
+                        color: $brand-blue;
+                    }
+                }
                 p{
                     font-family: 'Poppins', sans-serif;
                     font-weight: 600;

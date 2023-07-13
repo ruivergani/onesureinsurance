@@ -68,10 +68,6 @@
           <?php endwhile; else : endif;?>
         </ul>
         <p><?php the_field('description_section_content_about_us') ?></p>
-        <button class="btn btn-primary">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/arrow-right-blog-white.svg" alt="icon arrow white" title="icon arrow white">
-          LEARN MORE
-        </button>
       </div>
       <div class="image-right">
         <img src="<?php the_field('image_section_content_about_us') ?>" alt="about us image" title="about us image">
