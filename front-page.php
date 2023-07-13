@@ -82,7 +82,7 @@
             <h3><?php the_field('title_card_01_section_call') ?></h3>
             <a href="<?php the_field('phone_number_section_call_text') ?>" class="p_call">
               <p><?php the_field('phone_number_section_call') ?></p>
-            </p>
+            </a>
           </div>
         </div>
         <div class="card-03" data-aos="fade-up" data-aos-delay="200" data-aos-once="true">
