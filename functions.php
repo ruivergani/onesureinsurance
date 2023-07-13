@@ -182,7 +182,6 @@ if(function_exists('acf_add_options_page')) {
 
 if (class_exists('ACF')) {
     add_shortcode('get-affinity-number', 'os_get_affinity_value');
-
     function os_get_affinity_value(array $atts):string
     {
         $fallbacks = [
@@ -226,16 +225,26 @@ if (class_exists('ACF')) {
     }
  }
 
-add_action('init', function () {
-    if (!array_key_exists('utm_campaign', $_GET)) {
-        return;
+ 
+ add_action('init', function () {
+    $gdprCookie = json_decode(stripslashes(@$_COOKIE['moove_gdpr_popup']), true);
+    //third party cookies must be enabled
+    if (empty($gdprCookie) || $gdprCookie["thirdparty"] != 1) {
+     if (!empty($_COOKIE['os_affinity_code'])) {
+      unset($_COOKIE['os_affinity_code']);
+     }
+     return;
+    }
+    //checking to see if the cookie needs to be updated
+    if (empty($_GET['utm_campaign'])) {
+     return;
     }
     //set the UMT affinity cookie
     setcookie(
-        'os_affinity_code',
-        strtoupper($_GET['utm_campaign']),
-        time() + (86400 * 30),
-        '/'
+     'os_affinity_code',
+     strtoupper($_GET['utm_campaign']),
+     time() + (86400 * 30),
+     '/'
     );
 });
 

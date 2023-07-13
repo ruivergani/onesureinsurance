@@ -125,11 +125,6 @@
             <p>Why Choose Us?</p>
           </a>
         </li>
-        <li class="js-item-content">
-          <a href="#price" class="anchor">
-            <p>Price</p>
-          </a>
-        </li>
       </ul>
       <!-- Mobile Configuration -->
       <div class="select-custom">
@@ -152,11 +147,6 @@
           <li>
             <a href="#why">
               <p>Why Choose Us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#price">
-              <p>Price</p>
             </a>
           </li>
         </ul>
@@ -317,25 +307,6 @@
         <img src="<?php the_field('image_section_why_us_hgv_skip_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left" data-aos-once="true">
       </div>
       <p class="terms-conditions-why-us"><?php the_field('terms_conditions_why_us_hgv_skip_insurance') ?></p>
-    </div>
-  </section>
-
-  <!-- Section Price -->
-  <section class="s-price-insurance" id="price">
-    <div class="container">
-      <h4 data-aos="fade-up" data-aos-once="true"><?php the_field('title_section_price_hgv_skip_insurance') ?></h4>
-      <div class="s-price-insurance__card" data-aos="fade-up" data-aos-once="true">
-        <h5><?php the_field('title_card_section_price_hgv_skip_insurance') ?></h5>
-        <p><?php the_field('description_card_section_price_hgv_skip_insurance') ?></p>
-      </div>
-      <div class="s-price-insurance__card-quote" data-aos="fade-up" data-aos-once="true">
-        <p><?php the_field('title_secondary_card_section_price_hgv_skip_insurance') ?></p>
-        <a class="btn btn-primary js-open-modal" href="<?php the_field('link_secondary_card_section_price_hgv_skip_insurance') ?>">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-          get a quote
-        </a>
-      </div>
-      <span data-aos="fade-up" data-aos-once="true"><?php the_field('span_section_price_hgv_skip_insurance') ?></span>
     </div>
   </section>
 

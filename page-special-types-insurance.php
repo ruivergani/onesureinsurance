@@ -124,11 +124,6 @@
             <p>Why Choose Us?</p>
           </a>
         </li>
-        <li class="js-item-content">
-          <a href="#price" class="anchor">
-            <p>Price</p>
-          </a>
-        </li>
       </ul>
       <!-- Mobile Configuration -->
       <div class="select-custom">
@@ -151,11 +146,6 @@
           <li>
             <a href="#why">
               <p>Why Choose Us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#price">
-              <p>Price</p>
             </a>
           </li>
         </ul>

@@ -98,13 +98,13 @@
       <!-- Repeater Card Download --> 
       <?php if( have_rows('card_download') ): while ( have_rows('card_download') ) : the_row(); ?>
         <!-- Card Download PDF -->
-        <div class="card-download">
+        <a class="card-download" href="<?php echo get_template_directory_uri()?>/assets/downloads/Privacy_Notice_and_Cookie_Policy.pdf">
           <div class="download-text">
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-file.svg" alt="icon file" title="icon file">
             <p><?php the_sub_field('title_card_download'); ?></p>
           </div>
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-download.svg" alt="icon download" title="icon download" class="icon-download">
-        </div>
+        </a>
       <?php endwhile; else : endif;?>
     </div>
   </div>
