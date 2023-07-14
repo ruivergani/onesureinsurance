@@ -13,7 +13,7 @@
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="<?php echo get_template_directory_uri()?>/favicon.png">
   <!-- Font Awesome Links -->
-  <link href="<?php echo get_template_directory_uri()?>/assets/fontawesome/css/all.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri()?>/assets/fontawesome/css/all.min.css" rel="stylesheet">
   <!-- CSS Links -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/plugins.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/main.css">
