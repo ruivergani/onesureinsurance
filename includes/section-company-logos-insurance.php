@@ -1,4 +1,4 @@
-<section class="s-logos-insurance" id="s-logos" data-aos="fade-up" data-aos-once="true">
+<section class="s-logos-insurance" id="s-logos">
   <div class="container">
     <div class="title">
       <h2>Have a look</h2>

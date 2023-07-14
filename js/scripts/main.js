@@ -463,51 +463,6 @@ var slide_product_van = new Swiper(".slide-van", {
     },
   },
 });
-// Swiper Slide About Us
-var slide_product_about = new Swiper(".slide-about", {
-  slidesPerView: 5,
-  spaceBetween: 20,
-  pagination: {
-    el: ".s-slide-about .container .top .ctrl-slide .swiper-pagination",
-    clickable: true,
-  },
-  // navigation section
-  navigation: {
-    nextEl: ".s-slide-about .top .btn-next",
-    prevEl: ".s-slide-about .top .btn-prev",
-  },
-  // smooth pagination
-  speed: 600,
-  // responsive part of the slide
-  breakpoints: {
-    // mobile
-    275: {
-      slidesPerView: 1.1, // part of the other slide
-      spaceBetween: 15,
-    },
-    // tablet
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 15,
-    },
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 15,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 15,
-    },
-    991: {
-      slidesPerView: 5,
-      spaceBetween: 15,
-    },
-    1200: {
-      slidesPerView: 5,
-      spaceBetween: 32,
-    },
-  },
-});
 // Button Scroll Top
 const btnScrollTop = document.getElementById("js-btn-scroll-top");
 btnScrollTop.addEventListener("click", () => {
@@ -536,7 +491,7 @@ document.addEventListener("scroll", fixedMenu);
 // Sub Menu Configuration
 const btnMenu = document.querySelectorAll('.js-btn-menu');
 const MenuDropdown = document.querySelectorAll('.js-menu');
-if(MenuDropdown.length > 0){
+if((MenuDropdown.length > 0) && (btnMenu)){
   // link which menu dropdown you need to click
   btnMenu.forEach((btn, index) => {
     btn.addEventListener('mouseenter', (event) => {

@@ -1,11 +1,11 @@
 <section class="s-logos" id="s-logos">
   <div class="container">
-    <div class="title" data-aos="fade-right" data-aos-once="true">
+    <div class="title">
       <h2>Have a look</h2>
       <h3>Our Accreditations</h3>
     </div>
     <!-- Swipper -->
-    <div class="slide-logos" data-aos="fade-left" data-aos-once="true">
+    <div class="slide-logos">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card-image">

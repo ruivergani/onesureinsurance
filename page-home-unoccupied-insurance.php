@@ -59,7 +59,7 @@
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
       <div class="s-hero-insurance__right">
         <!-- Section TrustPilot -->
-        <div class="s-trustpilot-insurance-mobile" data-aos="fade-up" data-aos-once="true">
+        <div class="s-trustpilot-insurance-mobile">
           <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
         </div>
         <!-- End Trustpilot -->
@@ -95,7 +95,7 @@
   </section>
 
   <!-- Section TrustPilot -->
-  <section class="s-trustpilot-insurance" data-aos="fade-up" data-aos-once="true">
+  <section class="s-trustpilot-insurance">
     <div class="container">
       <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
     </div>
@@ -105,7 +105,7 @@
   <?php include(TEMPLATEPATH .'/includes/section-company-logos-insurance.php') ?>
 
   <!-- === Table of Contents === -->
-  <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
+  <section class="s-table-contents">
     <div class="container">
       <!-- Navbar Tab -->
       <ul class="js-nav-product" id="js-nav-product">
@@ -154,7 +154,7 @@
   </section>
 
   <!-- Section Content -->
-  <section class="s-content" id="overview" data-aos="fade-up" data-aos-once="true">
+  <section class="s-content" id="overview">
     <div class="container">
       <!-- Content Tab -->
       <div class="tab-product-content">
@@ -168,13 +168,13 @@
   <!-- Section Featured Content -->
   <section class="s-featured-content">
     <div class="container">
-      <div class="s-featured-content__left" data-aos="fade-right" data-aos-once="true">
+      <div class="s-featured-content__left">
         <h4><?php the_field('title_featured_content_home_unoccupied_insurance') ?></h4>
         <div class="s-featured-content__text">
           <?php the_field('description_featured_content_home_unoccupied_insurance') ?>
         </div>
       </div>
-      <div class="s-featured-content__right" data-aos="fade-left" data-aos-once="true">
+      <div class="s-featured-content__right">
         <img src="<?php the_field('image_featured_content_home_unoccupied_insurance') ?>" alt="">
       </div>
     </div>
@@ -183,10 +183,10 @@
   <!-- Section Featured Secondary Content -->
   <section class="s-featured-secondary-content">
     <div class="container">
-      <div class="s-featured-content__right" data-aos="fade-right" data-aos-once="true">
+      <div class="s-featured-content__right">
         <img src="<?php the_field('image_featured_content_secondary_home_unoccupied_insurance') ?>" alt="">
       </div>
-      <div class="s-featured-content__left" data-aos="fade-left" data-aos-once="true">
+      <div class="s-featured-content__left">
         <h4><?php the_field('title_featured_content_secondary_home_unoccupied_insurance') ?></h4>
         <div class="s-featured-content__text">
           <?php the_field('description_featured_content_secondary_home_unoccupied_insurance') ?>
@@ -198,7 +198,7 @@
   <!-- Section Column Content -->
   <section class="s-column-content">
     <div class="container">
-      <div class="s-column-content-card" data-aos="fade-right" data-aos-once="true">
+      <div class="s-column-content-card">
         <div class="s-column-content-card-image">
           <img src="<?php the_field('image_left_column_home_unoccupied_insurance') ?>" alt="">
         </div>
@@ -207,7 +207,7 @@
           <?php the_field('description_left_column_home_unoccupied_insurance') ?>
         </div>
       </div>
-      <div class="s-column-content-card" data-aos="fade-left" data-aos-once="true">
+      <div class="s-column-content-card">
         <div class="s-column-content-card-image">
           <img src="<?php the_field('image_right_column_home_unoccupied_insurance') ?>" alt="">
         </div>
@@ -220,7 +220,7 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product" data-aos="fade-up" data-aos-once="true">
+  <section class="s-slide-product">
     <div class="container">
       <div class="top">
         <h6><?php the_field('mobile_title_section_product_slide_home_unoccupied_insurance') ?></h6>
@@ -268,7 +268,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_home_unoccupied_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_home_unoccupied_insurance') ?>" class="large-cta js-open-modal">
         <div class="text">
             <span><?php the_field('subtitle_cta_home_unoccupied_insurance') ?></span>
             <h3><?php the_field('title_cta_home_unoccupied_insurance') ?></h3>
@@ -286,11 +286,11 @@
     <div class="container">
       <div class="text-top">
         <h6><?php the_field('mobile_title_section_why_us_home_unoccupied_insurance') ?></h6>
-        <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_why_us_home_unoccupied_insurance') ?></h4>
-        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_why_us_home_unoccupied_insurance') ?></p>
+        <h4><?php the_field('title_section_why_us_home_unoccupied_insurance') ?></h4>
+        <p><?php the_field('subtitle_section_why_us_home_unoccupied_insurance') ?></p>
       </div>
       <div class="main-bespoke">
-        <div class="text-bottom" data-aos="fade-right" data-aos-once="true">
+        <div class="text-bottom">
           <ul>
             <!-- Repeater Slide Cards --> 
             <?php if( have_rows('cards_section_why_us_home_unoccupied_insurance') ): while ( have_rows('cards_section_why_us_home_unoccupied_insurance') ) : the_row(); ?>
@@ -303,7 +303,7 @@
             <?php endwhile; else : endif;?>
           </ul>
         </div>
-        <img src="<?php the_field('image_section_why_us_home_unoccupied_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
+        <img src="<?php the_field('image_section_why_us_home_unoccupied_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img">
       </div>
       <p class="terms-conditions-why-us"><?php the_field('terms_conditions_why_us_home_unoccupied_insurance') ?></p>
     </div>
@@ -312,7 +312,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter" style="padding-top: 0px;">
     <div class="container">
-      <a href="<?php the_field('link_cta_home_unoccupied_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_home_unoccupied_insurance') ?>" class="large-cta js-open-modal">
         <div class="text">
             <span><?php the_field('subtitle_cta_home_unoccupied_insurance') ?></span>
             <h3><?php the_field('title_cta_home_unoccupied_insurance') ?></h3>

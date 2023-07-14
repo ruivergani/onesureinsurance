@@ -1,5 +1,5 @@
 <!-- List all Tags by post -->
-<div class="side-category" data-aos="fade-right" data-aos-once="true">
+<div class="side-category">
     <ul>
         <li class="active">
             <a href="<?php echo get_permalink(234) ?>">

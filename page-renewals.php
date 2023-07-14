@@ -102,7 +102,7 @@
   <!-- === Section CTA === -->
   <div class="s-newsletter s-renewals-newsletter">
     <div class="container">
-      <button class="large-cta js-open-modal-insurance" data-aos="zoom-in" data-aos-once="true">
+      <button class="large-cta js-open-modal-insurance">
         <div class="text">
           <span><?php the_field('subtitle_cta_renewals_page') ?></span>
           <h3><?php the_field('title_cta_renewals_page') ?></h3>

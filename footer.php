@@ -1,5 +1,4 @@
   </main>
-
   <!-- Footer -->
   <footer class="footer" role="contentinfo">
     <div class="container">
@@ -77,7 +76,7 @@
           <strong>Contact Us</strong>
           <ul>
             <li>
-              <a href="mailto:<?php the_field('email_footer_link', 'options') ?>" target="_blank">
+              <a href="mailto:<?php the_field('email_footer_link', 'options') ?>">
                 <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mail-footer.svg" alt="icon email footer" title="icon email footer" loading="lazy">
                 <span><?php the_field('contact_us_email', 'options') ?></span>
               </a>
@@ -114,14 +113,6 @@
   <!-- JavaScript Links -->
   <script src="<?php echo get_template_directory_uri()?>/js/plugins.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/all.js"></script>
-  <script>
-    AOS.init({
-      disable: function() {
-        var maxWidth = 800;
-        return window.innerWidth < maxWidth;
-      }
-    });
-  </script>
   <?php wp_footer(); ?>
 </body>
 </html>

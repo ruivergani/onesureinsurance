@@ -59,7 +59,7 @@
       <img src="<?php echo get_template_directory_uri()?>/assets/icons/line-section-hero.svg" alt="" class="line-middle">
       <div class="s-hero-insurance__right">
         <!-- Section TrustPilot -->
-        <div class="s-trustpilot-insurance-mobile" data-aos="fade-up" data-aos-once="true">
+        <div class="s-trustpilot-insurance-mobile">
           <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
         </div>
         <!-- End Trustpilot -->
@@ -95,7 +95,7 @@
   </section>
 
   <!-- Section TrustPilot -->
-  <section class="s-trustpilot-insurance" data-aos="fade-up" data-aos-once="true">
+  <section class="s-trustpilot-insurance">
     <div class="container">
       <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
     </div>
@@ -105,7 +105,7 @@
   <?php include(TEMPLATEPATH .'/includes/section-company-logos-insurance.php') ?>
 
   <!-- === Table of Contents === -->
-  <section class="s-table-contents" data-aos="fade-up" data-aos-once="true">
+  <section class="s-table-contents">
     <div class="container">
       <!-- Navbar Tab -->
       <ul class="js-nav-product" id="js-nav-product">
@@ -154,7 +154,7 @@
   </section>
 
   <!-- Section Content -->
-  <section class="s-content" id="overview" data-aos="fade-up" data-aos-once="true">
+  <section class="s-content" id="overview">
     <div class="container">
       <!-- Content Tab -->
       <div class="tab-product-content">
@@ -166,7 +166,7 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product" data-aos="fade-up" data-aos-once="true">
+  <section class="s-slide-product">
     <div class="container">
       <div class="top">
         <h6><?php the_field('mobile_title_section_product_slide_dump_truck_insurance') ?></h6>
@@ -214,7 +214,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_dump_truck_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_dump_truck_insurance') ?>" class="large-cta js-open-modal">
         <div class="text">
           <span><?php the_field('subtitle_cta_dump_truck_insurance') ?></span>
           <h3><?php the_field('title_cta_dump_truck_insurance') ?></h3>
@@ -232,11 +232,11 @@
     <div class="container">
       <div class="text-top">
         <h6><?php the_field('mobile_title_section_why_us_dump_truck_insurance') ?></h6>
-        <h4 data-aos="fade-right" data-aos-once="true"><?php the_field('title_section_why_us_dump_truck_insurance') ?></h4>
-        <p data-aos="fade-left" data-aos-once="true"><?php the_field('subtitle_section_why_us_dump_truck_insurance') ?></p>
+        <h4><?php the_field('title_section_why_us_dump_truck_insurance') ?></h4>
+        <p><?php the_field('subtitle_section_why_us_dump_truck_insurance') ?></p>
       </div>
       <div class="main-bespoke">
-        <div class="text-bottom" data-aos="fade-right" data-aos-once="true">
+        <div class="text-bottom">
           <ul>
             <!-- Repeater Slide Cards --> 
             <?php if( have_rows('cards_section_why_us_dump_truck_insurance') ): while ( have_rows('cards_section_why_us_dump_truck_insurance') ) : the_row(); ?>
@@ -249,14 +249,14 @@
             <?php endwhile; else : endif;?>
           </ul>
         </div>
-        <img src="<?php the_field('image_section_why_us_dump_truck_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img" data-aos="fade-left">
+        <img src="<?php the_field('image_section_why_us_dump_truck_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img">
       </div>
       <p class="terms-conditions-why-us"><?php the_field('terms_conditions_why_us_dump_truck_insurance') ?></p>
     </div>
   </section>
 
   <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" data-aos="fade-up" data-aos-once="true">
+  <section class="s-faqs padding-bottom" id="faqs">
     <div class="container">
       <h4><?php the_field('title_section_dump_truck_insurance') ?></h4>
       <div class="b-container">
@@ -280,7 +280,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_dump_truck_insurance') ?>" class="large-cta js-open-modal" data-aos="zoom-in" data-aos-once="true">
+      <a href="<?php the_field('link_cta_dump_truck_insurance') ?>" class="large-cta js-open-modal">
         <div class="text">
             <span><?php the_field('subtitle_cta_dump_truck_insurance') ?></span>
             <h3><?php the_field('title_cta_dump_truck_insurance') ?></h3>

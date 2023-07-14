@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Jquery Link -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="<?php echo get_template_directory_uri()?>/js/scripts/jquery-3.6.4.min.js"></script>
   <!-- TrustBox script --> 
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script> 
   <!-- End TrustBox script -->
@@ -168,56 +168,6 @@
                       <li><a href="#">Restaurant & Pub Insurancee</a></li>
                       <li><a href="#">Hotel Insurance</a></li>
                     </ul> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <!-- Resources Menu -->
-          <li class="hide">
-            <button class="js-btn-menu" aria-label="Resources Menu">
-              <span>Resources</span>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="22" height="22">
-            </button>
-            <!-- Static Menu Dropdown -->
-            <div class="dropdown-sub-menu resources js-menu">
-              <div class="area-menu">
-                <div class="container">
-                  <div class="item">
-                    <strong>Resources</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Resource Hub',
-                        'theme_location' => 'header-resource-hub',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
-                  </div>
-                  <div class="item">
-                    <strong>Popular Articles</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Resource Articles',
-                        'theme_location' => 'header-resource-articles',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
-                  </div>
-                  <div class="item">
-                    <strong>Useful Links</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Resource Links',
-                        'theme_location' => 'header-resource-links',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
                   </div>
                 </div>
               </div>

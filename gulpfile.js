@@ -44,7 +44,7 @@ gulp.task('allJS', gulpJS);
 // Concat all plugins JS
 function pluginsJS(){
     return gulp
-    .src(['./js/lib/aos.min.js', './js/lib/swiper.min.js']) // name of files
+    .src(['./js/lib/swiper.min.js']) // name of files
     .pipe(concat('plugins.js')) // all these files will be going into plugins.js
     .pipe(gulp.dest('js/'))
     .pipe(browserSync.stream())
@@ -54,7 +54,7 @@ gulp.task('pluginjs', pluginsJS);
 // Browser Function
 function browser(){
     browserSync.init({
-        proxy: "localhost:10019/"
+        proxy: "localhost:10018/"
       })
 }
 gulp.task('browser-sync', browser);
