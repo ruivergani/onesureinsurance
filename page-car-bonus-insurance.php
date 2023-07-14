@@ -299,7 +299,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_car_bonus_insurance') ?>" class="large-cta js-open-modal">
+      <span class="large-cta js-open-modal">
         <div class="text">
           <span><?php the_field('subtitle_cta_car_bonus_insurance') ?></span>
           <h3><?php the_field('title_cta_car_bonus_insurance') ?></h3>
@@ -308,7 +308,7 @@
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
           get a quote
         </button>
-      </a>
+      </span>
     </div>
   </div>
 
@@ -365,7 +365,7 @@
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
-      <a href="<?php the_field('link_cta_car_bonus_insurance') ?>" class="large-cta js-open-modal">
+      <span class="large-cta js-open-modal">
         <div class="text">
             <span><?php the_field('subtitle_cta_car_bonus_insurance') ?></span>
             <h3><?php the_field('title_cta_car_bonus_insurance') ?></h3>
@@ -374,7 +374,7 @@
             <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
             get a quote
         </button>
-      </a>
+      </span>
     </div>
   </div>
 
