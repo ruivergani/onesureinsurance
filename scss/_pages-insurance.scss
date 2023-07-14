@@ -1017,7 +1017,7 @@
 // Table of Contents
 .s-table-contents{
     // Sticky Position
-    top: 75px;
+    top: 85px;
     position: sticky;
     width: 100%;
     z-index: 2019;
@@ -1083,7 +1083,7 @@
     }
     // Responsive
     @media (max-width: 1300px){
-        top: 90px;
+        top: 70px;
     }
     @media (max-width: 991px){
         padding-top: 20px;

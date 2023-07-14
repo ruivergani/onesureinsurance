@@ -77,13 +77,13 @@
           <strong>Contact Us</strong>
           <ul>
             <li>
-              <a href="#">
+              <a href="<?php the_field('email_footer_link', 'options') ?>">
                 <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-mail-footer.svg" alt="icon email footer" title="icon email footer" loading="lazy">
                 <span><?php the_field('contact_us_email', 'options') ?></span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="<?php the_field('address_footer_link', 'options') ?>">
                 <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-location-footer.svg" alt="icon location footer" title="icon location footer" loading="lazy">
                 <span><?php the_field('contact_us_address', 'options') ?></span>
               </a>

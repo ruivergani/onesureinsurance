@@ -50,7 +50,7 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
-    height: 10rem;
+    height: 11rem;
     z-index: 2022;
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ header{
     border-bottom: 0.5px solid rgba(0,52,120,.2);
     &.changeHeight{
         border-bottom: 0.5px solid rgba(0, 52, 120, 0.2);
-        height: 8rem;
+        height: 9rem;
         .container{
             .dropdown-sub-menu{
                 top: 7.8rem;
@@ -79,14 +79,14 @@ header{
         .logo{
             img{
                 width: 100%;
-                max-width: 8.3rem !important;
+                max-width: 9.3rem !important;
             }
         }
         // Sub Dropdown Menu
         .dropdown-sub-menu{
             border-top: 0.5px solid rgba(0,52,120,.3);
             position: absolute;
-            top: 9.8rem;
+            top: 10.8rem;
             left: 0;
             z-index: 2023;
             background-color: $white;
@@ -493,6 +493,27 @@ header{
             .btn-primary{
                 display: none;
                 pointer-events: none;
+            }
+        }
+    }
+    @media (max-width: 991px){
+        height: 10rem;
+        .container{
+            .logo{
+                img{
+                    max-width: 8.3rem !important;
+                }
+            }
+        }
+        &.changeHeight{
+            height: 10rem;
+            .container{
+                .dropdown-sub-menu{
+                    top: 7.8rem;
+                }
+            }
+            .menu-mobile{
+                top: 8rem;
             }
         }
     }
