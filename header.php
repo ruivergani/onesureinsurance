@@ -140,15 +140,6 @@
                       );
                       wp_nav_menu( $args );
                      ?>
-                    <!-- <ul>
-                      <li><a href="#">HGV | Lorry Insurance</a></li>
-                      <li><a href="#">Courier Insurance</a></li>
-                      <li><a href="#">Commercial Van Insurance</a></li>
-                      <li><a href="#">Fleet Insurance</a></li>
-                      <li><a href="#">Special Types Insurance</a></li>
-                      <li><a href="#">Goods in Transit</a></li>
-                      <li><a href="#">Taxi Insurance</a></li>
-                    </ul> -->
                   </div>
                   <div class="item">
                     <strong>Other</strong>
@@ -161,13 +152,6 @@
                       );
                       wp_nav_menu( $args );
                      ?>
-                    <!-- <ul>
-                      <li><a href="#">Commercial Insurance</a></li>
-                      <li><a href="#">Employer Insurance</a></li>
-                      <li><a href="#">Shop Insurance</a></li>
-                      <li><a href="#">Restaurant & Pub Insurancee</a></li>
-                      <li><a href="#">Hotel Insurance</a></li>
-                    </ul> -->
                   </div>
                 </div>
               </div>

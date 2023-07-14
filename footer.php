@@ -109,7 +109,6 @@
       </div>
     </div>
   </footer>
-  
   <!-- JavaScript Links -->
   <script src="<?php echo get_template_directory_uri()?>/js/plugins.js"></script>
   <script src="<?php echo get_template_directory_uri()?>/js/all.js"></script>

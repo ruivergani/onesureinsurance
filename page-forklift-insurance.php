@@ -286,7 +286,7 @@
             <h3><?php the_field('title_cta_forklift_insurance') ?></h3>
         </div>
         <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
             get a quote
         </button>
       </a>

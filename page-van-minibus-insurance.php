@@ -276,10 +276,10 @@
       </div>
       <div class="s-price-insurance__card-quote">
         <p><?php the_field('title_secondary_card_section_price_van_minibus_insurance') ?></p>
-        <a class="btn btn-primary js-open-modal" href="<?php the_field('link_secondary_card_section_price_van_minibus_insurance') ?>">
+        <button class="btn btn-primary js-open-modal">
           <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
           get a quote
-        </a>
+        </button>
       </div>
       <span><?php the_field('span_section_price_van_minibus_insurance') ?></span>
     </div>
@@ -316,8 +316,8 @@
             <h3><?php the_field('title_cta_van_minibus_insurance') ?></h3>
         </div>
         <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
+          get a quote
         </button>
       </a>
     </div>
