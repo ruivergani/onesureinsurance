@@ -115,6 +115,11 @@
           </a>
         </li>
         <li class="js-item-content">
+          <a href="#cover" class="anchor">
+            <p>What is Covered</p>
+          </a>
+        </li>
+        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -136,6 +141,11 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
+            </a>
+          </li>
+          <li>
+            <a href="#cover">
+              <p>What is Covered</p>
             </a>
           </li>
           <li>
@@ -196,7 +206,7 @@
   </section>
 
   <!-- Section Column Content -->
-  <section class="s-column-content">
+  <section class="s-column-content" id="cover">
     <div class="container">
       <div class="s-column-content-card">
         <div class="s-column-content-card-image">

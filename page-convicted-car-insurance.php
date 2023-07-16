@@ -116,11 +116,6 @@
           </a>
         </li>
         <li class="js-item-content">
-          <a href="#vaninsurance" class="anchor">
-            <p>Van Insurance</p>
-          </a>
-        </li>
-        <li class="js-item-content">
           <a href="#extras" class="anchor">
             <p>Optional Extras</p>
           </a>
@@ -147,11 +142,6 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
-            </a>
-          </li>
-          <li>
-            <a href="#vaninsurance">
-              <p>Van Insurance</p>
             </a>
           </li>
           <li>

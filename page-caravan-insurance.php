@@ -115,6 +115,11 @@
           </a>
         </li>
         <li class="js-item-content">
+          <a href="#cover" class="anchor">
+            <p>What is Covered</p>
+          </a>
+        </li>
+        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -136,6 +141,11 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
+            </a>
+          </li>
+          <li>
+            <a href="#cover">
+              <p>What is Covered</p>
             </a>
           </li>
           <li>
@@ -339,25 +349,6 @@
         <img src="<?php the_field('image_section_why_us_caravan_insurance') ?>" alt="bespoke image" title="bespoke image" class="bespoke-img">
       </div>
       <p class="terms-conditions-why-us"><?php the_field('terms_conditions_why_us_caravan_insurance') ?></p>
-    </div>
-  </section>
-
-  <!-- Section Price -->
-  <section class="s-price-insurance hide" id="price">
-    <div class="container">
-      <h4><?php the_field('title_section_price_caravan_insurance') ?></h4>
-      <div class="s-price-insurance__card">
-        <h5><?php the_field('title_card_section_price_caravan_insurance') ?></h5>
-        <p><?php the_field('description_card_section_price_caravan_insurance') ?></p>
-      </div>
-      <div class="s-price-insurance__card-quote">
-        <p><?php the_field('title_secondary_card_section_price_caravan_insurance') ?></p>
-        <button class="btn btn-primary js-open-modal">
-          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-          get a quote
-        </button>
-      </div>
-      <span><?php the_field('span_section_price_caravan_insurance') ?></span>
     </div>
   </section>
 

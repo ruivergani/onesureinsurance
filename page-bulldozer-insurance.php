@@ -105,7 +105,7 @@
   <?php include(TEMPLATEPATH .'/includes/section-company-logos-insurance.php') ?>
 
   <!-- Table of Contents -->
-  <section class="s-table-contents" >
+  <section class="s-table-contents">
     <div class="container">
       <!-- Navbar Tab -->
       <ul class="js-nav-product" id="js-nav-product">
@@ -166,7 +166,7 @@
   </section>
 
   <!-- Section Product -->
-  <section class="s-slide-product" >
+  <section class="s-slide-product">
     <div class="container">
       <div class="top">
         <h6><?php the_field('mobile_title_section_product_slide_bulldozer_insurance') ?></h6>
@@ -256,7 +256,7 @@
   </section>
 
   <!-- Section FAQs -->
-  <section class="s-faqs padding-bottom" id="faqs" >
+  <section class="s-faqs padding-bottom" id="faqs">
     <div class="container">
       <h4><?php the_field('title_section_bulldozer_insurance') ?></h4>
       <div class="b-container">

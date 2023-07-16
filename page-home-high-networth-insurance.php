@@ -115,6 +115,11 @@
           </a>
         </li>
         <li class="js-item-content">
+          <a href="#cover" class="anchor">
+            <p>What is Covered</p>
+          </a>
+        </li>
+        <li class="js-item-content">
           <a href="#why" class="anchor">
             <p>Why Choose Us?</p>
           </a>
@@ -136,6 +141,11 @@
           <li class="active">
             <a href="#overview">
               <p>Overview</p>
+            </a>
+          </li>
+          <li>
+            <a href="#cover">
+              <p>What is Covered</p>
             </a>
           </li>
           <li>
@@ -181,7 +191,7 @@
   </section>
 
   <!-- Section Featured Secondary Content -->
-  <section class="s-featured-secondary-content">
+  <section class="s-featured-secondary-content" id="cover">
     <div class="container">
       <div class="s-featured-content__right">
         <img src="<?php the_field('image_featured_content_secondary_home_networth_insurance') ?>" alt="">

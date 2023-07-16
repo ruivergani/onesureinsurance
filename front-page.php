@@ -1,19 +1,14 @@
 <?php
   // Template name: Home
 ?>
-
 <!-- Include Header -->
 <?php get_header(); ?>
-
 <!-- Loop in the template -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
   <!-- === MODAL INSURANCE TYPES === -->
   <?php echo do_shortcode('[merlin-dialler-modal-list]'); ?> 
-
   <!-- === FORM  === -->
   <?php echo do_shortcode('[merlin-dialler-form]'); ?>
-
   <!-- Section Hero -->
   <section class="s-hero">
     <div class="container">
@@ -60,7 +55,6 @@
       </button>
     </div>
   </section>
-    
   <!-- Section Trust pilot -->
   <section class="s-trustpilot">
     <div class="container">
@@ -68,7 +62,6 @@
       <?php include(TEMPLATEPATH .'/includes/section-trustpilot-insurance.php') ?>
     </div>
   </section>
-
   <!-- Section Call Us Now -->
   <section class="s-call">
     <div class="container">
@@ -96,10 +89,8 @@
       
     </div>
   </section>
-
   <!-- Section Company Logos -->
   <?php include(TEMPLATEPATH .'/includes/section-company-logos.php') ?>
-
   <!-- Section Types of Insurance -->
   <section class="s-insurance" id="s-insurance">
     <div class="container">
@@ -147,7 +138,6 @@
       </a>
     </div>
   </section>
-
   <!-- Section About Us -->
   <section class="s-about">
     <div class="container">
@@ -183,7 +173,6 @@
       </div>
     </div>
   </section>
-
   <!-- Section Articles -->
   <section class="s-main-articles">
     <div class="container">
@@ -245,7 +234,6 @@
       </div>
     </div>
   </section>
-
   <!-- Section CTA Desktop -->
   <div class="s-newsletter">
     <div class="container">
@@ -261,7 +249,6 @@
       </button>
     </div>
   </div>
-  
   <!-- === LOAD MORE FUNCTION == -->
   <script type="text/javascript">
     var my_repeater_field_post_id = <?php echo $post->ID; ?>;
@@ -297,9 +284,7 @@
       );
     }
   </script>
-
 <!-- End loop -->
 <?php endwhile; else: endif; ?>
- 
 <!-- Include Footer -->
 <?php get_footer(); ?>
