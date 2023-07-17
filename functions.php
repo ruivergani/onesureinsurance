@@ -352,4 +352,10 @@ function my_repeater_show_more() {
 	echo json_encode(array('content' => $content, 'more' => $more, 'offset' => $end));
 	exit;
 } // end function my_repeater_show_more
+function os_define_ignored_parameters( array $params ) {
+    unset ( $params['utm_campaign'] );
+    return $params;
+}
+// Filter rocket_cache_ignored_parameters parameters
+add_filter( 'rocket_cache_ignored_parameters', 'os_define_ignored_parameters', 999 );
 ?>

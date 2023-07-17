@@ -15,11 +15,10 @@
             gap: 15px;
             span{
                 color: $grey-500;
-                font-size: 14px;
+                font-size: 15px;
                 font-family: 'Inter', sans-serif;
-                font-weight: 700;
+                font-weight: 600;
                 line-height: 130%;
-                letter-spacing: 1.68px;
             }
             h1, p{
                 color: #343A40;
@@ -43,7 +42,8 @@
             display:flex;
             justify-content: center;
             align-items: center;
-            gap: 30px;   
+            gap: 30px; 
+            margin-left: 50px;  
             img{
                 width: 100%;
                 max-width: 30px;
