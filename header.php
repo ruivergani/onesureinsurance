@@ -315,30 +315,22 @@
             ?>
           </div>
         </li>
+        <!-- Support Menu -->
+        <li>
+          <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>" aria-label="Support Menu"> 
+            <span>Support</span>
+          </a>
+        </li>
         <!-- Contact Us Menu -->
         <li>
-          <button class="js-mobile-menu-item" aria-label="Existing Contact Us Menu">
+          <a href="<?php echo get_permalink(get_page_by_title('Contact')) ?>" aria-label="Contact Menu"> 
             <span>Contact Us</span>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow down" title="icon arrow down" loading="lazy">
-          </button>
-          <!-- Sub Menu Dropdown Mobile -->
-          <div class="dropdown-sub-menu-mobile js-menu-dropdown-mobile">
-            <!-- Dynamic Menu -->
-            <?php
-              $args = array(
-                'menu' => 'Mobile Menu - Contact Us',
-                'theme_location' => 'mobile-contact-us',
-                'container' => false
-              );
-              wp_nav_menu( $args );
-            ?>
-          </div>
+          </a>
         </li>
         <!-- About Us Menu -->
         <li>
           <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>" aria-label="About Us Menu"> 
             <span>About Us</span>
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-down-mobile.svg" alt="icon arrow right" title="icon arrow right" loading="lazy" class="image-rotate-link">
           </a>
         </li>
       </ul>
