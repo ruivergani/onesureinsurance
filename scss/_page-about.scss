@@ -211,8 +211,8 @@
     }
     // Responsive
     @media (max-width: 768px){
-        padding-top: 1rem;
-        padding-bottom: 3rem;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
         .container{
             .s-content-about-us-text{
                 text-align: center;
@@ -348,16 +348,16 @@
         .image-right{
             position: relative;
             width: 100%;
-            height: 50rem;
-            max-width: 40rem;
+            height: 40rem;
+            max-width: 37rem;
             overflow: hidden;
             border-radius: 5px;
             img{
                 transition: all .3s ease-in;
                 width: 100%;
                 height: 100%;
-                height: 50rem;
-                max-width: 40rem;
+                height: 40rem;
+                max-width: 37rem;
                 object-fit: cover;
                 border-radius: 5px;
             }
@@ -389,21 +389,22 @@
         .container{
             .s-about-us-text-left{
                 h2{
-                    font-size: 2.6rem;
+                    font-size: 26px;
                 }
                 ul{
+                    text-align: left;
                     li{
                         align-items: flex-start;
                         img{
                             display: none;
                         }
                         p{
-                            font-size: 1.6rem;
+                            font-size: 16px;
                         }
                     }
                 }
                 p{
-                    font-size: 1.6rem;
+                    font-size: 16px;
                 }
             }
             .image-right{
@@ -473,6 +474,9 @@
             font-family: 'Poppins', sans-serif;
             text-align: center;
         }
+        p{
+
+        }
         h3{
             font-weight: 600;
             font-size: 3rem;
@@ -516,7 +520,7 @@
                         max-width: 36rem;
                         font-family: 'Poppins', sans-serif;
                         font-weight: 400;
-                        font-size: 1.6rem;
+                        font-size: 16px;
                         line-height: 150%;
                         color: $grey-400;
                         text-align: left;
@@ -548,7 +552,7 @@
                 font-size: 2.6rem;
             }
             p{
-                font-size: 1.6rem;
+                font-size: 16px;
             }
             ul{
                 margin-top: 1rem;
@@ -557,123 +561,6 @@
                         flex-direction: column;
                         p{
                             text-align: center;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-.s-slide-about{
-    padding-bottom: 6rem;
-    .top{
-        padding-bottom: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        h6{
-            display: none;
-        }
-        h4{
-            width: 100%;
-            max-width: 50rem;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 3rem;
-            line-height: 120%;
-            color: $grey-600;
-        }
-        .ctrl-slide{
-            display: flex;
-            align-items: center;
-            flex: 1;
-            justify-content: space-between;
-            max-width: 18.4rem;
-            .swiper-pagination{
-                position: relative; // by default is absolute
-                bottom: 0.3rem; // by default pagination
-                margin-right: 4rem;
-                width: auto; // by default pagination
-                .swiper-pagination-bullet{
-                    background-color: $brand-dark-blue;
-                    width: 2.4rem;
-                    height: 0.3rem;
-                    border-radius: 0px;
-                    opacity: 0.25;
-                    transition: all .3s ease;
-                    // active class by default
-                    &-active{
-                        opacity: 1;
-                    }
-                }
-            }
-            .ctrl{
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-                .btn-prev{
-                    transform: rotate(180deg);
-                    margin-top: -0.1rem;
-                }
-                // class by default from swiper pagination
-                .swiper-button-disabled{
-                    opacity: 0.25;
-                    pointer-events: none;
-                }
-            }
-        }
-    }
-     // Responsive
-     @media (max-width: 1400px){
-        .container{
-            .top{
-                .ctrl-slide{
-                    max-width: 25rem;
-                    .ctrl{
-                        gap: 2rem;
-                        .btn-prev{
-                            margin-top: 0.1px !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    @media (max-width: 768px){
-        padding: 4rem 0px;
-        .container{
-            .top{
-                padding-bottom: 3rem;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 1rem;
-                h4{
-                    font-size: 2.8rem;
-                    max-width: 100%;
-                    text-align: center;
-                }
-                h6{
-                    display: block;
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
-                    font-size: 2.4rem;
-                    line-height: 112%;
-                    text-align: center;
-                    letter-spacing: -0.1rem;
-                    color: $grey-300;
-                    opacity: 0.8;
-                }
-                .ctrl-slide{
-                    max-width: 100%;
-                    margin-top: 1rem;
-                    .swiper-pagination{
-                        display: none;
-                    }
-                    .ctrl{
-                        gap: 2rem;
-                        .btn-prev{
-                            margin-top: -0.8rem !important;
                         }
                     }
                 }

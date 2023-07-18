@@ -20,7 +20,6 @@
         font-weight: 700;
         font-size: 40px;
         line-height: 112%;
-        letter-spacing: -1px;
         color: #FFFFFF;
         z-index: 1;
     }
@@ -578,6 +577,7 @@
         }
     }
     @media (max-width: 600px){
+        margin-bottom: 40px;
         .container{
             .s-map-contact-right{
                 h4, p{

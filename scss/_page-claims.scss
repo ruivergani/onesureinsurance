@@ -20,7 +20,6 @@
         font-weight: 700;
         font-size: 40px;
         line-height: 0% !important;
-        letter-spacing: -1px;
         color: #FFFFFF;
         z-index: 1;
     }
@@ -152,7 +151,7 @@
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 175%;
-                            color: $grey-300;
+                            color: $grey-600;
                             margin-bottom: 0px;
                         }
                         margin-bottom: 3rem;
@@ -191,15 +190,14 @@
                         color: $grey-600;
                         margin-bottom: 2rem;
                         margin-top: 2rem;
-                        letter-spacing: -1px;
                     }
                     p{
                         font-family: 'Inter', sans-serif;
                         font-weight: 400;
                         font-size: 16px;
-                        line-height: 175%;
-                        color: $grey-400;
-                        margin-bottom: 1.6rem;
+                        line-height: 150%;
+                        color: $grey-600;
+                        margin-bottom: 1.5rem;
                         a{
                             color: #00449e;
                             font-family: "Inter",sans-serif;
@@ -218,8 +216,8 @@
                             font-family: 'Inter', sans-serif;
                             font-weight: 400;
                             font-size: 16px;
-                            line-height: 175%;
-                            color: $grey-500;
+                            line-height: 150%;
+                            color: $grey-600;
                             a{
                                 color: #00449e;
                                 font-family: "Inter",sans-serif;
