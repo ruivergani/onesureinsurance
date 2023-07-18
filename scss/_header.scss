@@ -309,6 +309,12 @@ header{
             background-color: $brand-blue;
             border-radius: 0.5rem;
         }
+        .btn-cta-mobile{
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         // Nav Top Configuration
         .nav-top-mobile{
             display: none;
@@ -390,6 +396,7 @@ header{
         }
         // Menu Mobile Nav
         .mobile-menu-list{
+            margin-bottom: 6rem;
             li{
                 background: #e9eef5;
                 border-bottom: 0.5px solid rgba(0, 52, 120, 0.3);

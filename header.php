@@ -328,12 +328,18 @@
           </a>
         </li>
         <!-- About Us Menu -->
-        <li>
+        <li style="margin-bottom: 3rem;">
           <a href="<?php echo get_permalink(get_page_by_title('About Us')) ?>" aria-label="About Us Menu"> 
             <span>About Us</span>
           </a>
         </li>
+        <!-- BUTTON LINKS TO THE FORM  -->
+        <button class="btn btn-primary btn-cta-mobile js-open-modal-insurance" aria-label="Get Quote Button">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
+          GET A QUOTE
+        </button>
       </ul>
+      
     </div>
   </header>
   <main role="main">

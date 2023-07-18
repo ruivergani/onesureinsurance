@@ -124,17 +124,17 @@
       <ul>
         <div class="info-01">
           <div class="info-01-hours">
-            <h5>Business Opening Hours:</h5>
+            <h5><?php the_field('title_business_hours_contact_page') ?></h5>
             <p><?php the_field('business_hours_contact_page') ?></p>
           </div>
           <div class="info-01-content">
-            <h5>Claims Department:</h5>
+            <h5><?php the_field('title_claims_department_text') ?></h5>
             <p><?php the_field('claims_department_text') ?></p>
           </div>
         </div>
         <div class="info-02">
           <div class="info-02-hours">
-            <h5>Sales Opening Hours:</h5>
+            <h5><?php the_field('title_sales_hours_contact_page') ?></h5>
             <p><?php the_field('sales_hours_contact_page') ?></p>
           </div>
           <div class="info-02-content">
@@ -143,7 +143,7 @@
         </div>
         <div class="info-03">
           <div class="info-03-hours">
-            <h5>Renewals Opening Hours:</h5>
+            <h5><?php the_field('title_renewals_number_contact_page') ?><</h5>
             <p><?php the_field('renewals_hours_contact_page') ?></p>
           </div>
           <div class="info-03-content">

@@ -79,7 +79,7 @@
   <section class="s-card-blue">
     <div class="container">
       <div class="card-dark-blue">
-        <h3>Learn in seconds which types of insurance match your business</h3>
+        <h3>Discover how much you can save on your insurance now.</h3>
         <button class="btn btn-primary js-open-modal-insurance">
           <i class="fa-solid fa-envelope"></i>
           GET A QUOTE
