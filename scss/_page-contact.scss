@@ -299,8 +299,8 @@
         }
     }
     @media (max-width: 480px){
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         .container{
             .s-content-contact-right{
                 .form-contact{
@@ -321,6 +321,7 @@
                         #btn-submit{
                             width: 100% !important;
                             max-width: 320px;
+                            display: flex;
                             align-self: center;
                         }
                     }

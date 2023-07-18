@@ -290,9 +290,9 @@
         .container{
             align-items: center;
             justify-content: center;
+            gap: 40px;
             .s-logos-brands-list{
                 flex-direction: column;
-
                 gap: 20px;
             }
         }
@@ -412,6 +412,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                height: 35rem;
+                img{
+                    height: 35rem;
+                }
             }
         }
     }
