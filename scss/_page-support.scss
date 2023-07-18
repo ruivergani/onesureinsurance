@@ -351,6 +351,15 @@
                         text-transform: uppercase;
                         margin-bottom: 0px;
                     }
+                    span{
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 105%;
+                        color: #003478;
+                        text-transform: uppercase;
+                        margin-bottom: 0px;
+                    }
                     &:hover{
                         p{
                             text-decoration: underline;
@@ -701,6 +710,19 @@
             }
             .all-supports-faq{
                 padding-bottom: 0rem !important;
+                .accordion-plus-support{
+                    .accordion-plus-item-support{
+                        h3{
+                            font-size: 20px !important;
+                            gap: 10px !important;
+                            line-height: 112%;
+                            img{
+                                max-width: 20px !important;
+                                margin-right: 0px !important;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -720,9 +742,10 @@
                             h3{
                                 font-size: 20px !important;
                                 gap: 10px !important;
-                                line-height: 150%;
+                                line-height: 112%;
                                 img{
                                     max-width: 20px !important;
+                                    margin-right: 0px !important;
                                 }
                             }
                         }

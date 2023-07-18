@@ -44,8 +44,8 @@
           <h2><?php the_field('title_card_supports_feedback') ?></h2>
           <p><?php the_field('subtitle_card_supports_feedback_01') ?></p>
           <p><?php the_field('subtitle_card_supports_feedback_02') ?></p>
-          <a href="">
-            <p>CALL US: </p>
+          <a href="tel:<?php the_field('phone_number_support') ?>">
+            <span>CALL US: </span>
             <p><?php the_field('phone_number_support') ?></p>
           </a>
         </div>

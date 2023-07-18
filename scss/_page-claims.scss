@@ -301,7 +301,20 @@
                 }
             }
             .all-claims-faq{
-                padding-bottom: 4rem;
+                padding-bottom: 0rem;
+                .accordion-plus-support{
+                    .accordion-plus-item-support{
+                        h3{
+                            font-size: 20px !important;
+                            gap: 20px !important;
+                            line-height: 120%;
+                            img{
+                                max-width: 20px !important;
+                                margin-right: 0px !important;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -309,7 +322,7 @@
         padding: 0px;
         .container{
             .title-content-claims-faq{
-                padding-top: 4rem;
+                padding-top: 2rem;
             }
             .content-highlight-claims-faq, .all-claims-faq{
                 .accordion-plus-claim{
@@ -317,8 +330,8 @@
                         padding-bottom: 20px;
                         h3{
                             font-size: 20px !important;
-                            gap: 10px !important;
-                            line-height: 150%;
+                            gap: 20px !important;
+                            line-height: 120%;
                             img{
                                 max-width: 20px !important;
                             }
@@ -338,7 +351,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 6rem 3.2rem;
-            
             li{
                 .s-card-claim{
                     background-color: $brand-light-blue;
@@ -499,7 +511,7 @@
                 margin-bottom: 3rem;
             }
             h2{
-                font-size: 2.8rem;
+                font-size: 2.6rem;
             }
             .btn{
                 margin-top: 4rem;
