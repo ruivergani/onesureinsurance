@@ -15,6 +15,30 @@
   <!-- === FORM  === -->
   <?php echo do_shortcode('[merlin-dialler-form]'); ?>
 
+  <!-- === FAQ SCHEMA === -->
+  <?php
+    // Assuming your Repeater field name is "faq_items"
+    $faq_items = get_field('faq_items');
+    if ($faq_items) {
+      echo '<script type="application/ld+json">';
+      echo json_encode([
+        '@context' => 'https://schema.org',
+        '@type' => 'FAQPage',
+        'mainEntity' => array_map(function ($item) {
+          return [
+            '@type' => 'Question',
+            'name' => $item['question'],
+            'acceptedAnswer' => [
+              '@type' => 'Answer',
+              'text' => $item['answer'],
+            ],
+          ];
+        }, $faq_items),
+      ]);
+      echo '</script>';
+    }
+  ?>
+
   <!-- === SECTION HERO === -->
   <section class="s-hero-insurance">
     <div class="container">
