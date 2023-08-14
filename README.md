@@ -23,7 +23,7 @@ ___
 
 ## 🎨 Layout
 The page in desktop format is seen in the image below:
-
+<br>
 <img width="760" alt="02" src="https://github.com/ruivergani/onesureinsurance/assets/70537459/ac7072f7-3870-4fe3-9961-50ffc1943199">
 
 ___
