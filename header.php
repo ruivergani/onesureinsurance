@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Jquery Link -->
   <script src="<?php echo get_template_directory_uri()?>/js/scripts/jquery-3.6.4.min.js"></script>
-  <!-- TrustBox script --> 
+  <!-- Trustpilot script --> 
   <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script> 
-  <!-- End TrustBox script -->
+  <!-- End Trustpilot script -->
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/svg" href="<?php echo get_template_directory_uri()?>/favicon.png">
   <!-- Font Awesome Links -->
