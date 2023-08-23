@@ -54,8 +54,9 @@ gulp.task('pluginjs', pluginsJS);
 // Browser Function
 function browser(){
     browserSync.init({
-        proxy: "localhost:10018/"
-      })
+        proxy: "localhost:10019/",
+        browser: "/Applications/Google Chrome.app/" // default Chrome
+    });
 }
 gulp.task('browser-sync', browser);
 

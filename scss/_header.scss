@@ -86,12 +86,11 @@ header{
         .dropdown-sub-menu{
             border-top: 0.5px solid rgba(0,52,120,.3);
             position: absolute;
-            top: 10.8rem;
+            top: 11rem;
             left: 0;
             z-index: 2023;
             background-color: $white;
             width: 100%;
-            padding-top: 10rem; // height of current menu
             // hide menus and apply transition
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             backdrop-filter: blur(12px);
@@ -104,42 +103,67 @@ header{
                 z-index: -2000;
             }
             .area-menu{
-                border-bottom: 5.5rem solid $brand-light-blue;
-                min-height: 30rem;
-                .container{
-                    padding-top: 5rem;
-                    padding-bottom: 5rem;
+                width: 100%;
+                max-width: 124.6rem;
+                margin: 0 auto;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                h2{
+                    color: #003478;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 150%; /* 18px */
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                }
+                .container-list{
                     width: 100%;
-                    .item{
-                        width: 100%;
-                        strong{
-                            font-family: 'Poppins', sans-serif;
-                            font-weight: 600;
-                            font-size: 1.6rem;
-                            line-height: 2.2rem;
-                            color: $brand-blue;
-                            padding-bottom: 3rem;
-                            border-bottom: 0.5px solid #C6C5CE;
-                            display: block;
-                        }
-                        ul{
+                    margin-top: 20px;
+                    margin-bottom: 35px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    row-gap: 15px;
+                    justify-content: space-between;
+                    align-content: space-around;
+                    li{
+                        width:100%;
+                        a{
+                            padding: 15px;
+                            border-radius: 6px;
                             width: 100%;
-                            padding-top: 3rem;
-                            // using grid to display 
-                            display: grid;
-                            grid-template-columns: repeat(4, 1fr);
-                            grid-gap: 20px 0px;
-                            align-items: flex-start;
-                            li{
-                                a{
-                                    font-family: 'Poppins', sans-serif;
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            transition: all .2s ease-in-out;
+                            cursor: pointer;
+                            i{
+                                color:#003478;
+                                font-size: 22px;
+                            }
+                            .item-text{
+                                h3{
+                                    color: #111B29;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: 16px;
                                     font-weight: 500;
-                                    font-size: 1.6rem;
-                                    line-height: 2.2rem;
-                                    color: $brand-blue;
+                                    line-height: 150%;
                                     transition: all .3s;
-                                    &:hover{
-                                        color: $brand-dark-blue;
+                                    margin-bottom: 2px;
+                                }
+                                p{
+                                    color: #677489;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    line-height: 150%;
+                                    transition: all .3s;
+                                }
+                            }
+                            &:hover{
+                                background-color: rgba(240, 244, 249, 0.6);
+                                .item-text{
+                                    h3{
                                         text-decoration: underline;
                                     }
                                 }
@@ -147,73 +171,235 @@ header{
                         }
                     }
                 }
-            }
-            // Business Menu Configuration
-            &.business{
-                padding-top: 6rem;
-                .area-menu{
-                    min-height: 40rem;
-                    .container{
-                        padding-top: 0rem;
+                .bottom-contact{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-between;
+                    border-radius: 16px;
+                    background: rgba(240, 244, 249, 0.6);
+                    padding: 15px 50px;
+                    .bottom-contact-list{
                         display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        .item{
-                            max-width: 38.4rem;
-                            ul{
-                                width: 100%;
-                                grid-template-columns: repeat(2, 1fr);
-                                grid-gap: 20px 30px;
-                                align-items: flex-start;
-                                li{
-                                    min-width: 180px;
-                                    max-width: 182px;
+                        align-items: center;
+                        gap: 60px;
+                        li{
+                            a{
+                                display: flex;
+                                align-items: center;
+                                i{
+                                    color: #003478;
+                                    font-size: 16px;
+                                    transition: all .3s;
+                                }
+                                p{
+                                    color: #003478;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 150%; /* 24px */
+                                    padding-left: 10px;
+                                    transition: all .3s;
+                                }
+                            }
+                            &:hover{
+                                a{
+                                    i{
+                                        color: #C00037;
+                                    }
+                                    p{
+                                        color: #C00037;
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
-            // Resources Menu Configuration
-            &.resources{
-                padding-top: 6rem;
-                .area-menu{
-                    min-height: 44rem;
-                    .container{
-                        padding-top: 0rem;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: flex-start;
-                        .item{
-                            max-width: 38.4rem;
-                            ul{
-                                width: 100%;
-                                grid-template-columns: repeat(2, 1fr);
-                                grid-gap: 20px;
-                                align-items: flex-start;
+            .area-menu-business{
+                width: 100%;
+                max-width: 124.6rem;
+                margin: 0 auto;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                .area-menu-business-items{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 79px;
+                    width: 100%;
+                    .area-menu-item{
+                        h2{
+                            color: #003478;
+                            font-family: 'Inter', sans-serif;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 150%; /* 18px */
+                            letter-spacing: 0.5px;
+                            text-transform: uppercase;
+                        }
+                        .container-list-01{
+                            width: 100%;
+                            margin-top: 20px;
+                            margin-bottom: 35px;
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            row-gap: 10px;
+                            justify-content: space-between;
+                            align-content: space-around;
+                            li{
+                                width:100%;
+                                max-width: 250px;
+                                a{
+                                    padding: 15px;
+                                    border-radius: 6px;
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+                                    transition: all .2s ease-in-out;
+                                    cursor: pointer;
+                                    i{
+                                        color:#003478;
+                                        font-size: 22px;
+                                    }
+                                    .item-text{
+                                        h3{
+                                            color: #111B29;
+                                            font-family: 'Inter', sans-serif;
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                            transition: all .3s;
+                                            margin-bottom: 2px;
+                                        }
+                                        p{
+                                            color: #677489;
+                                            font-family: 'Inter', sans-serif;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 150%;
+                                            transition: all .3s;
+                                        }
+                                    }
+                                    &:hover{
+                                        background-color: rgba(240, 244, 249, 0.6);
+                                        .item-text{
+                                            h3{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .area-menu-item-02{
+                        h2{
+                            color: #003478;
+                            font-family: 'Inter', sans-serif;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 150%; /* 18px */
+                            letter-spacing: 0.5px;
+                            text-transform: uppercase;
+                        }
+                        .container-list-01{
+                            width: 100%;
+                            margin-top: 20px;
+                            margin-bottom: 35px;
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            row-gap: 10px;
+                            column-gap: 50px;
+                            justify-content: space-between;
+                            align-content: space-around;
+                            li{
+                                width:100%;
+                                a{
+                                    padding: 15px;
+                                    border-radius: 6px;
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+                                    transition: all .2s ease-in-out;
+                                    cursor: pointer;
+                                    i{
+                                        color:#003478;
+                                        font-size: 22px;
+                                    }
+                                    .item-text{
+                                        h3{
+                                            color: #111B29;
+                                            font-family: 'Inter', sans-serif;
+                                            font-size: 16px;
+                                            font-weight: 500;
+                                            line-height: 150%;
+                                            transition: all .3s;
+                                            margin-bottom: 2px;
+                                        }
+                                        p{
+                                            color: #677489;
+                                            font-family: 'Inter', sans-serif;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                            line-height: 150%;
+                                            transition: all .3s;
+                                        }
+                                    }
+                                    &:hover{
+                                        background-color: rgba(240, 244, 249, 0.6);
+                                        .item-text{
+                                            h3{
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
                 }
-            }
-            // Existing Menu Configuration
-            &.existing{
-                padding-top: 6rem;
-                .area-menu{
-                    min-height: 28rem;
-                    .container{
-                        padding-top: 0rem;
+                .bottom-contact{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: space-between;
+                    border-radius: 16px;
+                    background: rgba(240, 244, 249, 0.6);
+                    padding: 15px 50px;
+                    .bottom-contact-list{
                         display: flex;
-                        justify-content: flex-start;
-                        align-items: flex-start;
-                        gap: 50px;
-                        .item{
-                            max-width: 38.4rem;
-                            ul{
-                                width: 100%;
-                                grid-template-columns: repeat(2, 1fr);
-                                grid-gap: 20px;
-                                align-items: flex-start;
+                        align-items: center;
+                        gap: 60px;
+                        li{
+                            a{
+                                display: flex;
+                                align-items: center;
+                                i{
+                                    color: #003478;
+                                    font-size: 16px;
+                                    transition: all .3s;
+                                }
+                                p{
+                                    color: #003478;
+                                    font-family: 'Inter', sans-serif;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 150%; /* 24px */
+                                    padding-left: 10px;
+                                    transition: all .3s;
+                                }
+                            }
+                            &:hover{
+                                a{
+                                    i{
+                                        color: #C00037;
+                                    }
+                                    p{
+                                        color: #C00037;
+                                    }
+                                }
                             }
                         }
                     }
@@ -236,6 +422,7 @@ header{
             align-items: center;
             gap: 2.5rem;
             li{
+                cursor: default;
                 a, button{
                     display: flex;
                     align-items: center;
@@ -245,7 +432,7 @@ header{
                         font-weight: 400;
                         font-size: 15px;
                         line-height: 2.2rem;
-                        color: $grey-600;
+                        color: $brand-black;
                         text-transform: uppercase;
                         transition: all .3s;
                     }

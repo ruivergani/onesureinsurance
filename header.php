@@ -83,114 +83,417 @@
         <ul>
           <!-- Personal Menu --> 
           <li>
-            <button class="js-btn-menu" aria-label="Personal Menu">
+            <button class="js-btn-menu" aria-label="Personal Menu" tabindex="0">
               <span>Personal</span>
               <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="" width="22" height="22">
             </button>
             <!-- Static Menu Dropdown -->
             <div class="dropdown-sub-menu js-menu">
               <div class="area-menu">
-                <div class="container">
-                  <div class="item">
-                    <strong>Types of Insurance</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Personal',
-                        'theme_location' => 'header-personal',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
-                  </div>
+                <h2>Types of Insurance</h2>
+                <ul class="container-list">
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Car Insurance')) ?>">
+                      <i class="fa-solid fa-car"></i>
+                      <div class="item-text">
+                        <h3>Car Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Motorbike Insurance')) ?>">
+                      <i class="fa-solid fa-motorcycle"></i>
+                      <div class="item-text">
+                        <h3>Motorbike Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Motorbike Insurance')) ?>">
+                      <i class="fa-solid fa-bicycle"></i>
+                      <div class="item-text">
+                        <h3>Scooter Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Convicted Car Insurance')) ?>">
+                      <i class="fa-solid fa-car"></i>
+                      <div class="item-text">
+                        <h3>Convicted Car Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Caravan Insurance')) ?>">
+                      <i class="fa-solid fa-van-shuttle"></i>
+                      <div class="item-text">
+                        <h3>Caravan Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Home Insurance')) ?>">
+                      <i class="fa-solid fa-house"></i>
+                      <div class="item-text">
+                        <h3>Home Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Travel Insurance')) ?>">
+                      <i class="fa-solid fa-suitcase"></i>
+                      <div class="item-text">
+                        <h3>Travel Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Convicted Van Insurance')) ?>">
+                      <i class="fa-solid fa-van-shuttle"></i>
+                      <div class="item-text">
+                        <h3>Convicted Van Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Convicted Van Insurance')) ?>">
+                      <i class="fa-solid fa-caravan"></i>
+                      <div class="item-text">
+                        <h3>Motorhome Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="<?php echo get_permalink(get_page_by_title('Van Insurance')) ?>">
+                      <i class="fa-solid fa-truck-front"></i>
+                      <div class="item-text">
+                        <h3>Van Insurance</h3>
+                        <p>Lorem Ipsum is simply dummy</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="bottom-contact">
+                  <ul class="bottom-contact-list">
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Contact')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Contact Us</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Support</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Claims</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- BUTTON LINKS TO THE FORM  -->
+                  <button class="btn btn-primary-rounded js-open-modal" aria-label="Get Quote Button">
+                    GET A QUOTE
+                  </button>
                 </div>
               </div>
             </div>
           </li>
-          <!-- Business Menu -->
-          <li> 
-            <button class="js-btn-menu" aria-label="Business Menu">
-              <span>Business</span>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="22" height="22">
-            </button>
-            <!-- Static Menu Dropdown -->
-            <div class="dropdown-sub-menu business js-menu">
-              <div class="area-menu">
-                <div class="container">
-                  <div class="item">
-                    <strong>Motor</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Business Motor',
-                        'theme_location' => 'header-business-motor-trade',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
-                  </div>
-                  <div class="item">
-                    <strong>Commercial Vehicle</strong>
-                     <!-- Dynamic Menu --> 
-                     <?php
-                      $args = array(
-                        'menu' => 'Header Business Commercial',
-                        'theme_location' => 'header-business-commercial',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                     ?>
-                  </div>
-                  <div class="item">
-                    <strong>Other</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Business Other',
-                        'theme_location' => 'header-business-commercial',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                     ?>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <!-- Existing Customers -->
+          <!-- Business Menu --> 
           <li>
-            <button class="js-btn-menu" aria-label="Existing Customers Menu">
-              <span>Existing Customers</span>
-              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="22" height="22">
+            <button class="js-btn-menu" aria-label="Business Menu" tabindex="0">
+              <span>Business</span>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="" width="22" height="22">
             </button>
             <!-- Static Menu Dropdown -->
-            <div class="dropdown-sub-menu existing js-menu">
-              <div class="area-menu">
-                <div class="container">
-                  <div class="item">
-                    <strong>Existing Customers</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Existing Customers',
-                        'theme_location' => 'header-existing_customers',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
+            <div class="dropdown-sub-menu js-menu">
+              <div class="area-menu-business">
+                <div class="area-menu-business-items">
+                  <!-- Area Menu Item 01 -->
+                  <div class="area-menu-item">
+                    <h2>MOTOR</h2>
+                    <ul class="container-list-01">
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Motor Trade Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Motor Trade Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Mechanic Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Mechanic Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Motor Trade Combined Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Motor Trade Combined Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Valeters Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Valeters Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="item">
-                    <strong>Help Section</strong>
-                    <!-- Dynamic Menu --> 
-                    <?php
-                      $args = array(
-                        'menu' => 'Header Existing Customers Contact',
-                        'theme_location' => 'header-existing_contact_guide',
-                        'container' => false
-                      );
-                      wp_nav_menu( $args );
-                    ?>
+                  <!-- Area Menu Item 01 -->
+                  <div class="area-menu-item-02">
+                    <h2>COMMERCIAL VEHICLE</h2>
+                    <ul class="container-list-01">
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('HGV Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>HGV Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Goods In Transit')) ?>">
+                          <div class="item-text">
+                            <h3>Goods In Transit</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Taxi Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Taxi Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Special Types Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Special Types Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Fleet Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Fleet Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Courier Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Courier Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Van Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Van Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
+                  <!-- Area Menu Item 01 -->
+                  <div class="area-menu-item">
+                    <h2>OTHER</h2>
+                    <ul class="container-list-01">
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Commercial Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Commercial Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Hotel Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Hotel Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Pub & Restaurant Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Pub & Restaurant Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Employers’ & Public Liability Insurance')) ?>">
+                          <div class="item-text">
+                            <h3>Employers’ & Public Liability Insurance</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="bottom-contact">
+                  <ul class="bottom-contact-list">
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Contact')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Contact Us</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Support</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Claims</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- BUTTON LINKS TO THE FORM  -->
+                  <button class="btn btn-primary-rounded js-open-modal" aria-label="Get Quote Button">
+                    GET A QUOTE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Existing Customers Menu --> 
+          <li>
+            <button class="js-btn-menu" aria-label="Existing Customers Menu" tabindex="0">
+              <span>Existing Customers</span>
+              <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrowdown.svg" alt="icon arrow down" title="icon arrow down" loading="lazy" width="" width="22" height="22">
+            </button>
+            <!-- Static Menu Dropdown -->
+            <div class="dropdown-sub-menu js-menu">
+              <div class="area-menu-business">
+                <div class="area-menu-business-items">
+                  <!-- Area Menu Item 01 -->
+                  <div class="area-menu-item-02">
+                    <h2>Current Customers</h2>
+                    <ul class="container-list-01">
+                      <li>
+                        <a href="https://www.onesureinsurance.co.uk/existing-customers" target="_blank">
+                          <div class="item-text">
+                            <h3>My Account</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Renewals')) ?>">
+                          <div class="item-text">
+                            <h3>Renewals</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
+                          <div class="item-text">
+                            <h3>Claims</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Payments')) ?>">
+                          <div class="item-text">
+                            <h3>Payments</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Area Menu Item 01 -->
+                  <div class="area-menu-item-02">
+                    <h2>HELP SECTION</h2>
+                    <ul class="container-list-01">
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Complaints')) ?>">
+                          <div class="item-text">
+                            <h3>Complaints</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Contact')) ?>">
+                          <div class="item-text">
+                            <h3>Contact</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
+                          <div class="item-text">
+                            <h3>Support</h3>
+                            <p>Lorem Ipsum is simply dummy</p>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="bottom-contact">
+                  <ul class="bottom-contact-list">
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Contact')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Contact Us</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Support</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="<?php echo get_permalink(get_page_by_title('Claims')) ?>">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Claims</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- BUTTON LINKS TO THE FORM  -->
+                  <button class="btn btn-primary-rounded js-open-modal" aria-label="Get Quote Button">
+                    GET A QUOTE
+                  </button>
                 </div>
               </div>
             </div>

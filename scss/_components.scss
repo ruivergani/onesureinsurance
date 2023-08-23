@@ -10,7 +10,7 @@
     align-items: center;
     gap: 1rem;
     transition: color .3s, background-color .3s;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     &-primary{
         background-color: $brand-dark-blue;
@@ -20,6 +20,17 @@
             border-color: $brand-dark-red;
         }
     }
+    &-primary-rounded{
+        background-color: $brand-dark-blue;
+        border-color: $brand-dark-blue;
+        border-radius: 50px;
+        
+        &:hover{
+            background-color: $brand-dark-red;
+            border-color: $brand-dark-red;
+        }
+    }
+
     &-primary-lg{
         padding: 0px 5.8rem;
         background-color: $brand-dark-blue;
