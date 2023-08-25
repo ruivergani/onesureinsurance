@@ -48,7 +48,7 @@
 <!-- Section Tags -->
 <section class="s-navigation-tags">
   <div class="container">
-    <ul>
+    <ul class="js-nav-product" id="js-nav-product">
       <li class="js-nav-item-tag active">
         <a href="#section-frequently-asked-questions" class="anchor">
           Frequently Asked Questions
@@ -90,6 +90,56 @@
         </a>
       </li>
     </ul>
+    <!-- Mobile Configuration -->
+    <div class="select-custom">
+      <!-- item selected -->
+      <button class="item-selected js-open-select-custom">
+        <span>Select an <strong>item</strong></span>
+      </button>
+      <!-- Dropdown List -->
+      <ul class="dropdown-select" id="dropdown-select">
+        <li class="active">
+          <a href="#section-frequently-asked-questions" class="anchor">
+            Frequently Asked Questions
+          </a>
+        </li>
+        <li class="">
+          <a href="#section-making-changes" class="anchor">
+            Making Changes
+          </a>
+        </li>
+        <li class="">
+          <a href="#section-contact" class="anchor">
+            Contact
+          </a>
+        </li>
+        <li class="">
+          <a href="#section-claims" class="anchor">
+            Claims
+          </a>
+        </li>
+        <li class="">
+          <a href="#section-fraud-prevention" class="anchor">
+            Fraud Prevention
+          </a>
+        </li>
+        <li class="">
+          <a href="#section-payments" class="anchor">
+            Payments
+          </a>
+        </li>
+        <li class="">
+          <a href="#section-my-details" class="anchor">
+            My Details
+          </a>
+        </li>
+        <li class="">
+          <a href="#section-accessibility-support" class="anchor">
+            Accessibility & Support
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
 

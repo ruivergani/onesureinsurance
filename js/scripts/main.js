@@ -136,7 +136,7 @@ if(question02){
   });
 }
 // Script for Table of Contents
-const itemContent = document.querySelectorAll('.js-nav-product li a'); // all items from table content
+const itemContent = document.querySelectorAll('.js-nav-product li'); // all items from table content
 if(itemContent){
   itemContent.forEach(function (event) {
     event.addEventListener("click", () => {
