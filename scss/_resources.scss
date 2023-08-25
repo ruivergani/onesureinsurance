@@ -367,12 +367,12 @@
                   gap: 1rem;
                   &:before{
                       content: "";
-                      min-width: 6px;
+                      min-width: 4px;
                       min-height: 4px;
                       display: inline-block;
                       background-color: #9995A6;
                       margin-top: 1.3rem;
-                      margin-right: 1.6rem;
+                      margin-right: 1rem;
                       transition: all .3s;
                   }
                   p{

@@ -1,5 +1,5 @@
 <?php
-// Template name: Blog
+// Template name: Resources
 ?>
 
 <!-- Include Header -->
@@ -15,9 +15,8 @@
 <section class="s-hero-resources">
   <div class="container">
     <div class="s-hero-resources-title">
-      <h1>Resources</h1>
-      <p>Get tips and advice on delivering exceptional customer service, engaging and delighting your customers, and
-        building a customer-centric company.</p>
+      <h1><?php the_field('title_page_resources', 234) ?></h1>
+      <p><?php the_field('subtitle_page_resources', 234) ?></p>
     </div>
     <!-- Section Include Search Code Blog -->
     <?php include(TEMPLATEPATH . '/includes/section-search-blog.php') ?>
@@ -35,13 +34,13 @@
         </a>
       </li>
       <li>
-        <a href="<?php echo get_permalink(get_page_by_title('News')) ?>">
+        <a href="<?php echo get_category_link(59); ?>">
           <i class="fa-solid fa-pager"></i>
           <p>Blog</p>
         </a>
       </li>
       <li>
-        <a href="<?php echo get_permalink(get_page_by_title('Support')) ?>">
+        <a href="<?php echo get_category_link(15); ?>">
           <i class="fa-solid fa-circle-info"></i>
           <p>Support</p>
         </a>
@@ -56,18 +55,15 @@
     <div class="s-main-resources-left">
       <h3>QUICK LINKS</h3>
       <ul>
-        <li>
-          <a href="">
-            <i class="fa-solid fa-arrow-right"></i>
-            <p>Ambulance covers of fire on insurance serving?</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <i class="fa-solid fa-arrow-right"></i>
-            <p>Ambulance covers of fire on insurance serving?</p>
-          </a>
-        </li>
+        <!-- Repeater Slide Cards --> 
+        <?php if( have_rows('links_list_page_resources',234) ): while ( have_rows('links_list_page_resources',234) ) : the_row(); ?>
+          <li>
+            <a href="<?php the_sub_field('link_item_page_resources',234) ?>">
+              <i class="fa-solid fa-arrow-right"></i>
+              <p><?php the_sub_field('link_text_item_page_resources',234) ?></p>
+            </a>
+          </li>
+        <?php endwhile; else : endif;?>
       </ul>
     </div>
     <div class="s-main-resources-right">
@@ -132,8 +128,8 @@
   <div class="container">
     <span class="large-cta js-open-modal">
       <div class="text">
-        <span><?php the_field('') ?></span>
-        <h3><?php the_field('') ?></h3>
+        <span><?php the_field('subtitle_cta_page_resources',234) ?></span>
+        <h3><?php the_field('title_cta_page_resources',234) ?></h3>
       </div>
       <button class="btn btn-primary">
         <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
