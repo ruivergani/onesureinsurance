@@ -1,21 +1,26 @@
 <!-- Include Header -->
 <?php get_header(); ?>
+
+<!-- === MODAL INSURANCE TYPES === -->
+<?php echo do_shortcode('[merlin-dialler-modal-list]'); ?>
+
+<!-- === FORM  === -->
+<?php echo do_shortcode('[merlin-dialler-form]'); ?>
+
 <!-- Include the Page Reference -->
 <?php
   $blog_page = get_page_by_title('Blog');
 ?>
-<!-- Section Hero -->
-<section class="s-blog-hero">
+
+<!-- Section Hero Resources -->
+<section class="s-hero-resources">
   <div class="container">
-      <div class="s-blog-hero-title">
-          <h1>Results from your search</h1>
-          <p>Word searched:&nbsp;<?php echo get_query_var('s') ?></p>
-      </div>
+    <div class="s-hero-resources-title">
+      <h1>Results from your search</h1>
+      <p>Word searched:&nbsp;<?php echo get_query_var('s') ?></p>
+    </div>
   </div>
 </section>
-
-<!-- Section Include Links Blog -->
-<?php include(TEMPLATEPATH .'/includes/section-links-blog-index.php') ?>
 
 <!-- Section Main Content -->
 <section class="s-main-content">
@@ -54,12 +59,12 @@
                             <!-- End of Category Section -->
                             <h6><?php the_title(); ?></h6>
                             <ul>
-                            <li>
-                                <span><?php echo get_the_date('j, F'); ?></span>
-                            </li>
-                            <li>
-                                <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
-                            </li>
+                                <li>
+                                    <span><?php echo get_the_date('j, F'); ?></span>
+                                </li>
+                                <li>
+                                    <span><?php echo do_shortcode('[rt_reading_time postfix="min" postfix_singular="min"]') ?> of read</span>
+                                </li>
                             </ul>
                         </div>
                     </a>
