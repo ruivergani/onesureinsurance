@@ -24,7 +24,7 @@
 
 <!-- Section Main Content -->
 <section class="s-main-content">
-  <div class="container-fluid">
+  <div class="container">
       <!-- List all posts -->
       <div class="s-all">
         <!-- Code to create query and search for posts -->
@@ -32,7 +32,6 @@
             global $query_string;
             $query_args = explode("&", $query_string);
             $search_query = array();
-
             foreach($query_args as $key => $string) {
                 $query_split = explode("=", $string);
                 $search_query[$query_split[0]] = urldecode($query_split[1]);

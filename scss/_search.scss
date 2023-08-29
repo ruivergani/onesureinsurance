@@ -10,3 +10,34 @@
     text-align: center;
   }
 }
+.s-main-content{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .container{
+    .s-all{
+      .alm-listing{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px 30px;
+      }
+    }
+  }
+  // Responsive
+  @media (max-width: 991px){
+    .container{
+      .s-all{
+        .alm-listing{
+          grid-template-columns: 1fr;
+          grid-gap: 30px;
+          align-items: center;
+          justify-items: center;
+        }
+      }
+    }
+  }
+  @media(max-width: 480px){
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
