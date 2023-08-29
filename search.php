@@ -7,11 +7,6 @@
 <!-- === FORM  === -->
 <?php echo do_shortcode('[merlin-dialler-form]'); ?>
 
-<!-- Include the Page Reference -->
-<?php
-  $blog_page = get_page_by_title('Blog');
-?>
-
 <!-- Section Hero Resources -->
 <section class="s-hero-resources">
   <div class="container">
@@ -19,6 +14,32 @@
       <h1>Results from your search</h1>
       <p>Word searched:&nbsp;<?php echo get_query_var('s') ?></p>
     </div>
+  </div>
+</section>
+
+<!-- Section Navigation Resources -->
+<section class="s-navigation-resources">
+  <div class="container">
+    <ul class="s-navigation-resources-list">
+      <li>
+        <a href="<?php echo get_permalink(get_page_by_title('Resources')) ?>">
+          <i class="fa-solid fa-book"></i>
+          <p>All Resources</p>
+        </a>
+      </li>
+      <li>
+        <a href="<?php echo get_category_link(59); ?>">
+          <i class="fa-solid fa-pager"></i>
+          <p>Blog</p>
+        </a>
+      </li>
+      <li>
+        <a href="<?php echo get_category_link(15); ?>">
+          <i class="fa-solid fa-circle-info"></i>
+          <p>Support</p>
+        </a>
+      </li>
+    </ul>
   </div>
 </section>
 
