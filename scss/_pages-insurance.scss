@@ -1021,11 +1021,17 @@
             justify-content: flex-start;
             gap: 35px;
             border-bottom: 1px solid #D6D6D6;
-            
             li{
                 margin-bottom: 10px;
                 position: relative;
                 a{
+                    display: flex;
+                    align-items: center;
+                    gap: 13px;
+                    i{
+                        color: #1a1a1a;
+                        font-size: 16px;
+                    }
                     p{
                         color: #1a1a1a;
                         font-family: 'Poppins', sans-serif;
@@ -1048,7 +1054,7 @@
                         &::after{
                             width: 100%;
                         }
-                        p{
+                        p,i{
                             color: $brand-blue;
                         }
                     }
@@ -1056,7 +1062,7 @@
                         width: 100%;
                     }
                     &:hover{
-                        p{
+                        p,i{
                             color: $brand-blue;
                         }
                     }
