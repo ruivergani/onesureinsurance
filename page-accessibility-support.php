@@ -29,45 +29,38 @@
         <ul class="js-nav-product overflow-x" id="js-nav-product">
           <li class="js-item-content">
             <a href="#visual-audio" class="anchor" aria-label="Visual and Audio Support" title="Visual and Audio Support">
-              <i class="fa-solid fa-arrow-right"></i>
               <p>Visual and Audio Support</p>
             </a>
           </li>
           <li class="js-item-content">
             <a href="#alternative-content" class="anchor" aria-label="Alternative Document Format"
               title="Alternative Document Format">
-              <i class="fa-solid fa-arrow-right"></i>
               <p>Alternative Document Format</p>
             </a>
           </li>
           <li class="js-item-content">
             <a href="#disability-support" class="anchor" aria-label="Disability Support" title="Disability Support">
-              <i class="fa-solid fa-arrow-right"></i>
               <p>Disability Support</p>
             </a>
           </li>
           <li class="js-item-content">
             <a href="#mental-health" class="anchor" aria-label="Mental Health Support" title="Mental Health Support">
-              <i class="fa-solid fa-arrow-right"></i>
               <p>Mental Health Support</p>
             </a>
           </li>
           <li class="js-item-content">
             <a href="#money-worries" class="anchor" aria-label="Money Worries" title="Money Worries">
-              <i class="fa-solid fa-arrow-right"></i>
               <p>Money Worries</p>
             </a>
           </li>
           <li class="js-item-content">
             <a href="#trusted-alternative" class="anchor" aria-label="Trusted Alternative Contact"
               title="Trusted Alternative Contact">
-              <i class="fa-solid fa-arrow-right"></i>
               <p>Trusted Alternative Contact</p>
             </a>
           </li>
           <li class="js-item-content">
             <a href="#contact-us" class="anchor" aria-label="Contact Us" title="Contact Us">
-              <i class="fa-solid fa-arrow-right"></i>
               <p>Contact Us</p>
             </a>
           </li>
