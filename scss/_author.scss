@@ -39,4 +39,37 @@
       }
     }
   }
+  // Responsive
+  @media (max-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      text-align: center;
+      ul{
+        justify-content: center;
+      }
+    }
+  }
+  @media (max-width: 480px) {
+    .container{
+      .s-author-image{
+        width: 130px;
+        height: 130px;
+      }
+      .s-author-right{
+        h1{
+          font-size: 26px;
+        }
+        ul{
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+  }
 }
