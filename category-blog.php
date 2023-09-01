@@ -231,7 +231,6 @@
               <?php the_post_thumbnail(); ?>
             </div>
             <div class="info">
-              <!-- End of Category Section -->
               <h6><?php the_title(); ?></h6>
               <p>
                 <?php

@@ -1,36 +1,38 @@
-.s-author{
+.s-author {
   padding-top: 70px;
   padding-bottom: 70px;
-  .container{
+  .container {
     display: flex;
     align-items: flex-start;
     gap: 46px;
-    .s-author-image{
+    .s-author-image {
       width: 144px;
       height: 144px;
       background-size: cover;
     }
-    .s-author-right{
-      h1, span, p{
-        font-family: 'Inter', sans-serif;
+    .s-author-right {
+      h1,
+      span,
+      p {
+        font-family: "Inter", sans-serif;
         color: $grey-500;
       }
-      h1{
+      h1 {
         font-size: 28px;
         margin-bottom: 7px;
       }
-      span{
+      span {
         font-size: 16px;
         line-height: 24px;
       }
-      ul{
+      ul {
         display: flex;
         gap: 12px;
         padding-top: 25px;
         padding-bottom: 25px;
-        li{
-          a{
-            i{
+        li {
+          a {
+            i {
               font-size: 22px;
               color: $brand-blue;
             }
@@ -43,33 +45,186 @@
   @media (max-width: 768px) {
     padding-top: 40px;
     padding-bottom: 40px;
-    .container{
+    .container {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 30px;
       text-align: center;
-      ul{
+      ul {
         justify-content: center;
       }
     }
   }
   @media (max-width: 480px) {
-    .container{
-      .s-author-image{
+    .container {
+      .s-author-image {
         width: 130px;
         height: 130px;
       }
-      .s-author-right{
-        h1{
+      .s-author-right {
+        h1 {
           font-size: 26px;
         }
-        ul{
+        ul {
           padding-top: 20px;
           padding-bottom: 20px;
         }
       }
     }
-
+  }
+}
+.s-author-navbar {
+  margin-bottom: 90px;
+  padding: 0px 10px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border-radius: 5px;
+    overflow: visible !important;
+    background: var(--brand-light-blue, #f0f4f9);
+    h2 {
+      color: var(--brand-blue, #003478);
+      font-family: "Inter", sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+    .select-custom {
+      display: block;
+      position: relative;
+      // make active the dropdown select option
+      &.active {
+        .item-selected {
+          border-radius: 1rem 1rem 0 0;
+        }
+        .dropdown-select {
+          opacity: 1;
+          pointer-events: all;
+        }
+      }
+      // main item
+      .item-selected {
+        cursor: pointer;
+        width: 100%;
+        height: 45px;
+        border: 0.1rem solid #a0afba;
+        border-radius: 1rem;
+        background: url("../assets/icons/arrow-down-select.svg") no-repeat  right 3rem center;
+        padding-left: 3rem;
+        padding-right: 5rem;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        span {
+          color: $brand-blue;
+          font-size: 16px;
+          font-weight: 500;
+          margin-right: 0.4rem;
+        }
+      }
+      .dropdown-select {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 22.3rem;
+        border: 0.1rem solid #a0afba;
+        background-color: white;
+        border-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        top: 45px;
+        // configuration for JS (open/close dropdown)
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s;
+        // hide all elements which are not part of the dropdown
+        overflow-y: auto; // barra the rolagem
+        // customize the bar y
+        &::-webkit-scrollbar-track {
+          // the whole area
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar {
+          width: 0.5rem;
+          background-color: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+          // the scrollbar itself
+          background-color: $brand-blue;
+          border-radius: 0.5rem;
+        }
+        li {
+          &.active, &:hover {
+            p {
+              color: $brand-blue;
+              font-size: 16px;
+            }
+          }
+          &:first-child {
+            button {
+              padding-top: 0rem;
+            }
+          }
+          button {
+            padding: 1.2rem;
+          }
+          p {
+            font-size: 16px;
+            padding: 10px 0rem;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  // Responsive
+  @media (max-width:1250px){
+    .container{
+      padding: 30px 40px !important;
+    }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+    .container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 480px){
+    margin-bottom: 40px;
+    .container{
+      h2{
+        text-align: center;
+      }
+    }
+  }
+}
+.s-author-posts{
+  margin-bottom: 90px;
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 42px 32px;
+  }
+  // Responsive
+  @media (max-width: 1200px){
+    .container{
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+  @media (max-width: 480px){
+    margin-bottom: 40px;
+    .container{
+      grid-gap: 20px;
+    }
   }
 }
