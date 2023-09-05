@@ -103,7 +103,7 @@
                 span{
                     font-family: 'Inter', sans-serif;
                     text-transform: uppercase;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 14px;
                     line-height: 130%;
                     letter-spacing: 0.12em;
@@ -116,7 +116,6 @@
                     font-weight: 600;
                     font-size: 30px;
                     line-height: 112%;
-                    letter-spacing: -1px;
                     color: #343A40;
                     margin-top: 15px;
                     margin-bottom: 35px;
@@ -160,7 +159,7 @@
                 width: 100%;
                 .s-hero-insurance__span__text{
                     font-family: "Inter",sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 14px;
                     line-height: 130%;
                     letter-spacing: .12em;
@@ -185,7 +184,7 @@
                             span{
                                 font-family: 'Inter', sans-serif;
                                 text-transform: uppercase;
-                                font-weight: 600;
+                                font-weight: 500;
                                 font-size: 13px;
                                 line-height: 130%;
                                 letter-spacing: 0.05em;
@@ -236,7 +235,7 @@
                 align-self: flex-start;
                 span{
                     font-family: 'Inter', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 14px;
                     line-height: 130%;
                     letter-spacing: 0.12em;
@@ -252,7 +251,6 @@
                     font-weight: 600;
                     font-size: 30px;
                     line-height: 112%;
-                    letter-spacing: -1px;
                     color: #343A40;
                 }
             }
@@ -294,7 +292,7 @@
         }
     }
     // Responsive
-    @media (max-width: 1225px){
+    @media (max-width: 1260px){
         .container{
             max-width: 1035px !important;
             padding-top: 35px !important;
@@ -514,10 +512,17 @@
             .s-hero-insurance__left{
                 .s-hero-insurance__left__list{
                     ul{
+                        text-align: center;
+                        align-items: center;
                         li{
+                            text-align: center;
+                            align-items: center;
                             img{
                                 display:none;
                                 pointer-events: none;
+                            }
+                            p{
+                                text-align: center;
                             }
                         }
                     }
@@ -745,7 +750,7 @@
                         font-family: 'Poppins', sans-serif;
                     }
                     h5{
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 1.8rem;
                         line-height: 130%;
                         color: #4F4A47;
@@ -844,6 +849,7 @@
                 justify-content: center;
                 .text-bottom{
                     max-width: 100%;
+                    margin-bottom: 3rem;
                     ul{
                         grid-template-columns: 1fr;
                         li{
@@ -910,7 +916,7 @@
             }
             h3{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 1.8rem;
                 line-height: 120%;
                 letter-spacing: -0.5px;
@@ -1122,7 +1128,7 @@
                     strong{
                         font-size: 1.6rem;
                         color: $brand-blue;
-                        font-weight: 600;
+                        font-weight: 500;
                     }   
                 }
                 .dropdown-select{
@@ -1163,7 +1169,7 @@
                             p{
                                 color: $brand-blue;
                                 font-size: 16px;
-                                font-weight: 600;
+                                font-weight: 500;
                             }
                         }
                         &:first-child{
@@ -1212,7 +1218,7 @@
                 }
                 strong{
                     font-family: 'Inter', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 175%;
                     color: $grey-600;
@@ -1222,7 +1228,7 @@
                 a{
                     color: #00449e;
                     font-family: "Inter",sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 130%;
                     &:hover{
@@ -1262,7 +1268,7 @@
                     a{
                         color: #00449e;
                         font-family: 'Inter',sans-serif;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
                         &:hover{
@@ -1282,7 +1288,7 @@
                         a{
                             color: #00449e;
                             font-family: 'Inter',sans-serif;
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 16px;
                             line-height: 130%;
                             &:hover{
@@ -1591,7 +1597,7 @@
                             transition: all .3s;
                         }
                         h5{
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 2rem;
                             color: $grey-600;
                         }
@@ -1804,7 +1810,7 @@
                     a{
                         color: #00449e;
                         font-family: 'Inter',sans-serif;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
                         &:hover{
@@ -1818,7 +1824,7 @@
                     h5,
                     h6{
                         font-family: 'Poppins', sans-serif;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 26px;
                         line-height: 120%;
                         color: $grey-600;
@@ -1863,7 +1869,7 @@
                         a{
                             color: #00449e;
                             font-family: 'Inter',sans-serif;
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 16px;
                             line-height: 130%;
                             &:hover{
@@ -2040,7 +2046,7 @@
                 h6{
                     display: block;
                     font-family: 'Poppins', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 2.4rem;
                     line-height: 112%;
                     text-align: center;
@@ -2105,7 +2111,7 @@
             }
             strong{
                 font-family: 'Inter', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 175%;
                 color: $grey-600;
@@ -2115,7 +2121,7 @@
             a{
                 color: #00449e;
                 font-family: "Inter",sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 16px;
                 line-height: 130%;
                 &:hover{
@@ -2155,7 +2161,7 @@
                 a{
                     color: #00449e;
                     font-family: 'Inter',sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 130%;
                     &:hover{
@@ -2175,7 +2181,7 @@
                     a{
                         color: #00449e;
                         font-family: 'Inter',sans-serif;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
                         &:hover{
@@ -2241,7 +2247,7 @@
             gap: 100px;
             h5{
                 font-family: 'Poppins', sans-serif;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 25px;
                 line-height: 120%;
                 color: $white;
@@ -2435,7 +2441,7 @@
                 }
                 strong{
                     font-family: 'Inter', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 175%;
                     color: $grey-600;
@@ -2445,7 +2451,7 @@
                 a{
                     color: #00449e;
                     font-family: "Inter",sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 130%;
                     &:hover{
@@ -2485,7 +2491,7 @@
                     a{
                         color: #00449e;
                         font-family: 'Inter',sans-serif;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
                         &:hover{
@@ -2505,7 +2511,7 @@
                         a{
                             color: #00449e;
                             font-family: 'Inter',sans-serif;
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 16px;
                             line-height: 130%;
                             &:hover{
@@ -2640,10 +2646,10 @@
                 }
             }
             .s-featured-content__right{
-                max-height: 270px;
+                max-height: 250px;
                 img{
-                    min-height: 270px;
-                    max-height: 270px;
+                    min-height: 250px;
+                    max-height: 250px;
                 }
             }
         }
@@ -2692,7 +2698,7 @@
                 }
                 strong{
                     font-family: 'Inter', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 175%;
                     color: $grey-600;
@@ -2702,7 +2708,7 @@
                 a{
                     color: #00449e;
                     font-family: "Inter",sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 130%;
                     &:hover{
@@ -2742,7 +2748,7 @@
                     a{
                         color: #00449e;
                         font-family: 'Inter',sans-serif;
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 16px;
                         line-height: 130%;
                         &:hover{
@@ -2762,7 +2768,7 @@
                         a{
                             color: #00449e;
                             font-family: 'Inter',sans-serif;
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 16px;
                             line-height: 130%;
                             &:hover{
@@ -2899,10 +2905,10 @@
                 }
             }
             .s-featured-content__right{
-                max-height: 270px;
+                max-height: 250px;
                 img{
-                    min-height: 270px;
-                    max-height: 270px;
+                    min-height: 250px;
+                    max-height: 250px;
                 }
             }
         }
@@ -2964,7 +2970,7 @@
                 }
                 strong{
                     font-family: 'Inter', sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 175%;
                     color: $grey-600;
@@ -2974,7 +2980,7 @@
                 a{
                     color: #00449e;
                     font-family: "Inter",sans-serif;
-                    font-weight: 600;
+                    font-weight: 500;
                     font-size: 16px;
                     line-height: 130%;
                     &:hover{
@@ -3034,7 +3040,7 @@
                         a{
                             color: #00449e;
                             font-family: 'Inter',sans-serif;
-                            font-weight: 600;
+                            font-weight: 500;
                             font-size: 16px;
                             line-height: 130%;
                             &:hover{
@@ -3121,11 +3127,11 @@
                     font-size: 2.4rem;
                 }
                 .s-column-content-card-image{
-                    max-height: 270px;
-                    min-height: 270px;
+                    max-height: 250px;
+                    min-height: 250px;
                     img{
-                        min-height: 270px;
-                        max-height: 270px;
+                        min-height: 250px;
+                        max-height: 250px;
                     }
                 }
                 .s-column-content-card-text{

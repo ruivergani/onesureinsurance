@@ -151,8 +151,8 @@
     }
     @media (max-width: 600px){
         &::after{
-            background-image: none !important;
-            background-color: rgba(0, 52, 120, 0.8) !important;
+            //background-image: none !important;
+            //background-color: rgba(0, 52, 120, 0.8) !important;
         }
         .container{
             display: flex;

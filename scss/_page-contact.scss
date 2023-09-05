@@ -255,12 +255,14 @@
                 width: 100%;
                 max-width: 370px;
                 .form-contact{
+                    justify-items: center;
                     .wpcf7-form{
                         width: 100%;
                         max-width: 370px;
                         grid-gap: 15px 0px;
                         grid-template-columns: 1fr;
                         align-items: center;
+                        justify-items: center;
                         div{
                             input, textarea{
                                 width: 370px;
