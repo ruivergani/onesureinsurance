@@ -17,19 +17,7 @@
   <!-- CSS Links -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/plugins.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/css/main.css">
-  <title> 
-    <?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>
-  </title>
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="<?php get_home_url(); ?>">
-  <meta property="og:title" content="<?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>">
-  <meta property="og:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="<?php get_home_url(); ?>">
-  <meta property="twitter:title" content="<?php bloginfo('name'); echo ' - '; is_front_page() ? bloginfo('description') : wp_title(''); ?>">
-  <meta property="twitter:image" content="<?php echo get_the_post_thumbnail_url(); ?>">
+  <title> <?php wp_title(''); ?></title>
   <!-- Function WP HEAD -->
   <?php wp_head(); ?>
 </head>
@@ -74,7 +62,7 @@
         <picture>
           <source media="(max-width: 668px)" srcset="<?php echo get_template_directory_uri()?>/assets/logo-mobile.svg" class="mobile-logo" width="186" height="54">
           <source media="" srcset="">
-          <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="Logo One Sure Insurance" title="Logo One Sure Insurance" loading="lazy">
+          <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="Logo One Sure Insurance" title="Logo One Sure Insurance">
         </picture>
       </a>
       <!-- Nav Section -->
@@ -97,7 +85,7 @@
                       <i class="fa-solid fa-car"></i>
                       <div class="item-text">
                         <h3>Car Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Find quality cover for your vehicle.</p>
                       </div>
                     </a>
                   </li>
@@ -106,7 +94,7 @@
                       <i class="fa-solid fa-motorcycle"></i>
                       <div class="item-text">
                         <h3>Motorbike Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Find quality cover for your bike here.</p>
                       </div>
                     </a>
                   </li>
@@ -115,7 +103,7 @@
                       <i class="fa-solid fa-bicycle"></i>
                       <div class="item-text">
                         <h3>Scooter Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Go from A to B with the right cover.</p>
                       </div>
                     </a>
                   </li>
@@ -124,7 +112,7 @@
                       <i class="fa-solid fa-car"></i>
                       <div class="item-text">
                         <h3>Convicted Car Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Insurance for motorists with driving offences.</p>
                       </div>
                     </a>
                   </li>
@@ -133,7 +121,7 @@
                       <i class="fa-solid fa-van-shuttle"></i>
                       <div class="item-text">
                         <h3>Caravan Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Enjoy your holiday, knowing you’re covered.</p>
                       </div>
                     </a>
                   </li>
@@ -142,7 +130,7 @@
                       <i class="fa-solid fa-house"></i>
                       <div class="item-text">
                         <h3>Home Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Protect your contents and property.</p>
                       </div>
                     </a>
                   </li>
@@ -151,7 +139,7 @@
                       <i class="fa-solid fa-suitcase"></i>
                       <div class="item-text">
                         <h3>Travel Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Discover the cover you need for your destination.</p>
                       </div>
                     </a>
                   </li>
@@ -160,7 +148,7 @@
                       <i class="fa-solid fa-van-shuttle"></i>
                       <div class="item-text">
                         <h3>Convicted Van Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Get insured after a motoring conviction.</p>
                       </div>
                     </a>
                   </li>
@@ -169,7 +157,7 @@
                       <i class="fa-solid fa-caravan"></i>
                       <div class="item-text">
                         <h3>Motorhome Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>From RVs to campers, we’ll cover it.</p>
                       </div>
                     </a>
                   </li>
@@ -178,7 +166,7 @@
                       <i class="fa-solid fa-truck-front"></i>
                       <div class="item-text">
                         <h3>Van Insurance</h3>
-                        <p>Lorem Ipsum is simply dummy</p>
+                        <p>Personal and commercial cover available.</p>
                       </div>
                     </a>
                   </li>

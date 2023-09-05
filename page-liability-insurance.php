@@ -384,7 +384,7 @@
   </section>
 
   <!-- Section CTA -->
-  <div class="s-newsletter" style="padding-top: 0px;">
+  <div class="s-newsletter">
     <div class="container">
       <span class="large-cta js-open-modal">
         <div class="text">

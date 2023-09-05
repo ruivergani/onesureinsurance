@@ -1,5 +1,5 @@
 <?php
-// Template name: Author
+// Template name: author-admin
 ?>
 <!-- Include Header -->
 <?php get_header(); ?>
@@ -43,8 +43,12 @@
   <div class="container">
     <img src="<?php echo get_template_directory_uri() ?>/assets/bg/ellipse.png" alt="" class="s-author-image">
     <div class="s-author-right">
-      <h1>Chris Lear</h1>
-      <span>Managing Director</span>
+      <h1>
+        <?php echo get_the_author(); ?>
+      </h1>
+      <span>
+        Web Developer
+      </span>
       <ul>
         <li>
           <a href="">
@@ -67,10 +71,19 @@
           </a>
         </li>
       </ul>
-      <p>Lorem ipsum dolor sit amet consectetur. Eget potenti nibh pretium id risus tellus blandit. Morbi donec nisi et
-        sapien. Condimentum vestibulum convallis accumsan orci convallis. Lorem ipsum dolor sit amet consectetur. Eget
-        potenti nibh pretium id risus tellus blandit. Morbi donec nisi et sapien. Condimentum vestibulum convallis
-        accumsan orci convallis.</p>
+      <p>
+        <?php
+        // Get the biographical information of the author for the current post
+        $author_bio = get_the_author_meta('description');
+
+        // Display the biographical information
+        if (!empty($author_bio)) {
+          echo 'Biographical Info: ' . esc_html($author_bio);
+        } else {
+          echo 'No biographical information available.';
+        }
+        ?>
+      </p>
     </div>
   </div>
 </section>
@@ -87,16 +100,28 @@
       </button>
       <!-- Dropdown List -->
       <ul class="dropdown-select" id="dropdown-select">
-        <li class="active">
-          <a href="">
-            <p>Overview</p>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <p>Cover Options</p>
-          </a>
-        </li>
+        <?php
+        // Query WordPress users
+        $users = get_users();
+        // Check if there are users
+        if (!empty($users)) {
+          foreach ($users as $user) {
+            $author_name = $user->display_name;
+            $author_id = $user->ID;
+            $author_bio = get_the_author_meta('description', $author_id);
+
+            echo '<li>';
+            echo '<a href="' . get_author_posts_url($author_id) . '">';
+            echo '<p>';
+            echo esc_html($author_name);
+            echo '</p>';
+            echo '</a>';
+            echo '</li>';
+          }
+        } else {
+          echo 'No authors found.';
+        }
+        ?>
       </ul>
     </div>
   </div>
@@ -176,27 +201,29 @@
       <h2>Other Blog Posts</h2>
     </div>
     <div class="s-template-support-content">
-      <?php   
-        $tag = get_term_by('slug', 'featured', 'post_tag'); // Get the tag object by slug
-        if ($tag) {
-          $args = array(
-            'post_type' => 'post',
-            'order' => 'DESC',
-            'tag__in' => $tag->term_id, // Use tag ID in 'tag__in' parameter
-          );
-          $the_query = new WP_Query($args);
-        }
+      <?php
+      $tag = get_term_by('slug', 'featured', 'post_tag'); // Get the tag object by slug
+      if ($tag) {
+        $args = array(
+          'post_type' => 'post',
+          'order' => 'DESC',
+          'tag__in' => $tag->term_id, // Use tag ID in 'tag__in' parameter
+        );
+        $the_query = new WP_Query($args);
+      }
       ?>
-      <?php if(isset($the_query) && $the_query->have_posts()) : while($the_query->have_posts()) : $the_query->the_post(); ?>
-        <!-- Card post SM -->
-        <a href="<?php the_permalink(); ?>" class="card-blog-post-xs">
-          <div class="image">
-            <!-- WordPress image de destaque -->
-            <?php the_post_thumbnail(); ?>
-          </div>
-          <div class="info">
-            <h6>
-              <?php
+      <?php if (isset($the_query) && $the_query->have_posts()):
+        while ($the_query->have_posts()):
+          $the_query->the_post(); ?>
+          <!-- Card post SM -->
+          <a href="<?php the_permalink(); ?>" class="card-blog-post-xs">
+            <div class="image">
+              <!-- WordPress image de destaque -->
+              <?php the_post_thumbnail(); ?>
+            </div>
+            <div class="info">
+              <h6>
+                <?php
                 $the_title = get_the_title(); // get the title of the post
                 $char_limit = 40; // Change this value to your desired character limit
                 if (strlen($the_title) > $char_limit) {
@@ -205,10 +232,10 @@
                 } else {
                   echo $the_title;
                 }
-              ?>
-            </h6>
-            <p>
-              <?php
+                ?>
+              </h6>
+              <p>
+                <?php
                 $description = get_field('description_post_general');
                 $char_limit = 51; // Change this value to your desired character limit
                 if (strlen($description) > $char_limit) {
@@ -217,11 +244,11 @@
                 } else {
                   echo $description;
                 }
-              ?>
-            </p>
-          </div>
-        </a>
-      <?php endwhile; endif; ?>
+                ?>
+              </p>
+            </div>
+          </a>
+        <?php endwhile; endif; ?>
     </div>
   </div>
 </section>
