@@ -330,21 +330,22 @@
     </div>
   </section>
 
-  <!-- Section CTA Desktop -->
-  <div class="s-newsletter">
+  <!-- Section Banner CTA 02 -->
+  <section class="s-banner-cta"> 
     <div class="container">
-      <span class="large-cta js-open-modal">
-        <div class="text">
-            <span><?php the_field('subtitle_cta_hgv_recovery_truck_insurance') ?></span>
-            <h3><?php the_field('title_cta_hgv_recovery_truck_insurance') ?></h3>
-        </div>
-        <button class="btn btn-primary">
-            <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-arrow-forward.svg" alt="icon forward arrow white" title="icon forward arrow white" loading="lazy">
-            get a quote
+      <img src="<?php the_field('image_01_banner_hgv_recovery_truck_insurance') ?>" alt="" class="img-banner">
+      <img src="<?php the_field('image_02_banner_hgv_recovery_truck_insurance') ?>" alt="" class="img-banner">
+      <div class="s-banner-cta-text">
+        <h2><?php the_field('title_banner_hgv_recovery_truck_insurance') ?></h2>
+        <p><?php the_field('subtitle_banner_hgv_recovery_truck_insurance') ?></p>
+        <!-- BUTTON LINKS TO THE FORM  -->
+        <button class="btn btn-primary js-open-modal-insurance" aria-label="Get Quote Button">
+          <img src="<?php echo get_template_directory_uri()?>/assets/icons/icon-email-white.svg" alt="icon email white" title="icon email white" loading="lazy">
+          GET A QUOTE
         </button>
-      </span>
+      </div>
     </div>
-  </div>
+  </section>
 
   <!-- Section Related Articles Filter By Tag -->
   <?php   
