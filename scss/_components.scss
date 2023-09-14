@@ -752,6 +752,15 @@
         align-items: center;
         justify-content: center;
         gap: 2.5rem;
+        &:hover{
+            transition: none;
+            box-shadow: none;
+            .info{
+                h6{
+                    color: normal;
+                }
+            }
+        }
         .image{
             display: none;
         }

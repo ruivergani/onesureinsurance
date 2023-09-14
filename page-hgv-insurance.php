@@ -165,44 +165,31 @@
         </li>
       </ul>
       <!-- Mobile Configuration -->
-      <div class="select-custom">
-        <!-- item selected -->
-        <button class="item-selected js-open-select-custom">
-          <span>Select an <strong>item</strong></span>
-        </button>
-        <!-- Dropdown List -->
-        <ul class="dropdown-select" id="dropdown-select">
-          <li class="active">
-            <a href="#overview">
-              <p>Overview</p>
-            </a>
-          </li>
-          <li>
-            <a href="#hgvinsurance">
-              <p>HGV Insurance Cover</p>
-            </a>
-          </li>
-          <li>
-            <a href="#extras">
-              <p>Optional Extras</p>
-            </a>
-          </li>
-          <li>
-            <a href="#why">
-              <p>Why Choose Us?</p>
-            </a>
-          </li>
-          <li>
-            <a href="#price">
-              <p>Price</p>
-            </a>
-          </li>
-          <li>
-            <a href="#faqs">
-              <p>FAQs</p>
-            </a>
-          </li>
-        </ul>
+      <div class="custom-select-content">
+        <select id="dropdown-select-content" class="select-mobile-config">
+          <option value="">
+            <p>Select an item</p>
+          </option>
+          <option value="#overview">
+            <p>Overview</p>
+          </option>
+          <option value="#hgvinsurance">
+            <p>HGV Insurance Cover</p>
+          </option>
+          <option value="#extras">
+            <p>Optional Extras</p>
+          </option>
+          <option value="#why">
+            <p>Why Choose Us?</p>
+          </option>
+          <option value="#price">
+            <p>Price</p>
+          </option>
+          <option value="#faqs">
+            <p>FAQs</p>
+          </option>
+          <!-- Add more options as needed -->
+        </select>
       </div>
     </div>
   </section>

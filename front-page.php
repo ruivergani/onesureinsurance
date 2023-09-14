@@ -110,7 +110,7 @@
           while ( have_rows('register_insurance_types') ) : the_row(); ?>
             <a href="<?php the_sub_field('page_insurance_type') ?>" class="card-type-default">
               <div class="image">
-                <img src="<?php the_sub_field('image_card_insurance_type') ?>" alt="image type of insurance default" title="image type of insurance default" loading="lazy">
+                <img src="<?php the_sub_field('image_card_insurance_type') ?>">
               </div>
               <div class="icon">
                 <i class="<?php the_sub_field('icon_card_insurance_type')?>"></i>

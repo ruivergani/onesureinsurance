@@ -5,7 +5,7 @@
       <!-- Top Section -->
       <div class="top-footer">
         <a href="<?php echo get_home_url(); ?>" class="logo-footer">
-          <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="logo one sure insurance" title="one sure insurance" loading="lazy">
+          <img src="<?php echo get_template_directory_uri()?>/assets/logo-official.png" alt="logo one sure insurance" title="one sure insurance">
         </a>
         <div class="share">
           <span><?php the_field('title_social_media', 'options') ?></span>
@@ -13,7 +13,7 @@
             <?php if( have_rows('register_social_media', 'options') ): while ( have_rows('register_social_media', 'options') ) : the_row(); ?>
               <li>
                 <a href="<?php the_sub_field('url_social_media') ?>">
-                  <img src="<?php the_sub_field('icon_social_media') ?>" alt="icon youtube" title="icon youtube" loading="lazy">
+                  <img src="<?php the_sub_field('icon_social_media') ?>" alt="icon youtube" title="icon youtube">
                 </a>
               </li>
             <?php endwhile; else : endif;?>

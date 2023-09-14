@@ -60,8 +60,7 @@
       <a href="<?php echo get_home_url(); ?>" class="logo" id="logo" title="logo">
         <!-- Picture Tags -->
         <picture>
-          <source media="(max-width: 668px)" srcset="<?php echo get_template_directory_uri()?>/assets/logo-mobile.svg" class="mobile-logo" width="186" height="54">
-          <source media="" srcset="">
+          <source media="(max-width: 668px)" srcset="<?php echo get_template_directory_uri()?>/assets/logo-official.png" class="mobile-logo">
           <img src="<?php echo get_template_directory_uri()?>/assets/logo-onesure.svg" alt="Logo One Sure Insurance" title="Logo One Sure Insurance">
         </picture>
       </a>

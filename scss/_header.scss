@@ -712,8 +712,10 @@ header{
     @media (max-width: 668px){
         .container{
             .logo{
+                height: 57px !important;
                 img{
-                    max-width: 20rem !important;
+                    max-width: 10rem !important;
+                    height: 57px !important;
                 }
             }
         }

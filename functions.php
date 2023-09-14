@@ -321,7 +321,7 @@ function my_repeater_show_more() {
 			?>
 			<a href="<?php the_sub_field('page_insurance_type') ?>" class="card-type-default">
               <div class="image">
-                <img src="<?php the_sub_field('image_card_insurance_type') ?>" alt="image type of insurance default" title="image type of insurance default" loading="lazy">
+                <img src="<?php the_sub_field('image_card_insurance_type') ?>">
               </div>
               <div class="icon">
                 <i class="<?php the_sub_field('icon_card_insurance_type')?>"></i>
@@ -349,7 +349,12 @@ function my_repeater_show_more() {
 		$more = true;
 	}
 	// output our 3 values as a json encoded array
-	echo json_encode(array('content' => $content, 'more' => $more, 'offset' => $end));
+	//echo json_encode(array('content' => $content, 'more' => $more, 'offset' => $end));
+    
+    // Instead of echoing the JSON response, return it as an array
+    $response = array('content' => $content, 'more' => $more, 'offset' => $end);
+    wp_send_json($response); // Send the JSON response
+
 	exit;
 } // end function my_repeater_show_more
 function os_define_ignored_parameters( array $params ) {
